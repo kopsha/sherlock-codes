@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+
+    <!-- D3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    
+</head>
+<body>
+
+    <div id="chart"></div>
+    <script>
+        ////////////////////////////////////////////////////////////// 
+        ////////////////// Create Set-up variables  ////////////////// 
+        ////////////////////////////////////////////////////////////// 
+
+        var width = Math.max(document.getElementById("chart").offsetWidth,350) - 20,
+            height = (window.innerWidth < 768 ? width : window.innerHeight - 20);
+        
+        //Size of the circle pack layout
+        var diameter = Math.min(width*0.9, height*0.9);
+
+        //The grey colors of the circles depend on the depth
+        var colorCircle = d3.scale.ordinal()
+                .domain([0,1,2,3])
+                .range(['#bfbfbf','#838383','#4c4c4c','#1c1c1c']);
+
+        //Initialize the circle pack layout
+        var pack = d3.layout.pack()
+            .padding(1)
+            .size([diameter, diameter])
+            .value(function(d) { return d.value; })
+            .sort(function(d) { return d.name; }); //Creates a more interesting visual I think
+            
+        ////////////////////////////////////////////////////////////// 
+        /////////////////////// Create Canvas //////////////////////// 
+        ////////////////////////////////////////////////////////////// 
+        
+        //Create the canvas and context
+        var canvas  = d3.select("#chart").append("canvas")
+            .attr("id", "canvas")
+            .attr("width", width)
+            .attr("height", height);
+            
+        var context = canvas.node().getContext("2d");
+            context.clearRect(0, 0, width, height);
+
+        ////////////////////////////////////////////////////////////// 
+        ////////////////// Create Circle Packing /////////////////////
+        ////////////////////////////////////////////////////////////// 
+
+        //Create a custom element, that will not be attached to the DOM, to which we can bind the data
+        var detachedContainer = document.createElement("custom");
+        var dataContainer = d3.select(detachedContainer);
+            
+        d3.json("turbo-connect-core.json", function(error, dataset) {
+        
+            var nodes = pack.nodes(dataset)
+
+            //Create the circle packing as if it was a normal D3 thing
+            var dataBinding = dataContainer.selectAll(".node")
+                .data(nodes)
+                .enter().append("circle")
+                .attr("class", function(d,i) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
+                .attr("cx", function(d) { return d.x; })
+                .attr("cy", function(d) { return d.y; })
+                .attr("r", function(d) { return d.r; })
+                .attr("fill", function(d) { return d.children ? colorCircle(d.depth) : "white"; });
+
+            dataBinding.append("text")
+                .text(function (d) { return d.name })
+
+            //Select our dummy nodes and draw the data to canvas.
+            dataBinding.each(function(d) { 
+                //Select one of the nodes/circles
+                var node = d3.select(this);
+
+                //Draw each circle
+                context.fillStyle = node.attr("fill");
+                context.beginPath();
+                context.arc(node.attr("cx"), node.attr("cy"), node.attr("r"), 0,  2 * Math.PI, true);
+                context.fill();
+                context.closePath();
+            }); 
+            
+        });
+                
+    </script>
+    
+</body>
+</html>
