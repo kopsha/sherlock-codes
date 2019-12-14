@@ -49,7 +49,7 @@ def parse_git_repository(path, output):
                     parent = Node(folder.split(os.sep)[-1], parent=grandparent)
 
         file_size = os.path.getsize(f'{path}/{f}') >> 8
-        node = Node(file, parent=parent, value=file_size)
+        node = Node(file, parent=parent, value=file_size or 1)
 
     exporter = JsonExporter(indent=4)
     with open(output, "wt") as out:
