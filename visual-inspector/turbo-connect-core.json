@@ -1,0 +1,265 @@
+{
+    "name": "turbo-connect-core",
+    "children": [
+        {
+            "value": 2,
+            "name": "CMakeLists.txt"
+        },
+        {
+            "value": 6,
+            "name": "Jenkinsfile"
+        },
+        {
+            "value": 5,
+            "name": "README.md"
+        },
+        {
+            "value": 6,
+            "name": "run"
+        },
+        {
+            "value": 1,
+            "name": "start-tdd.sh"
+        },
+        {
+            "name": "scripts",
+            "children": [
+                {
+                    "value": 45,
+                    "name": "run-clang-format.py"
+                },
+                {
+                    "value": 8,
+                    "name": "unit_tests_and_coverage.sh"
+                }
+            ]
+        },
+        {
+            "name": "src",
+            "children": [
+                {
+                    "value": 2,
+                    "name": "CMakeLists.txt"
+                },
+                {
+                    "value": 13,
+                    "name": "identification_sequence.cpp"
+                },
+                {
+                    "value": 3,
+                    "name": "identification_sequence.h"
+                },
+                {
+                    "value": 18,
+                    "name": "identify.cpp"
+                },
+                {
+                    "value": 2,
+                    "name": "identify.h"
+                },
+                {
+                    "value": 5,
+                    "name": "parameter.cpp"
+                },
+                {
+                    "value": 2,
+                    "name": "parameter.h"
+                },
+                {
+                    "value": 17,
+                    "name": "parameter_info.cpp"
+                },
+                {
+                    "value": 7,
+                    "name": "parameter_info.h"
+                },
+                {
+                    "value": 11,
+                    "name": "protocol_factory.cpp"
+                },
+                {
+                    "value": 1,
+                    "name": "protocol_factory.h"
+                },
+                {
+                    "value": 1,
+                    "name": "turbo-connect-core.h"
+                },
+                {
+                    "name": "protocol",
+                    "children": [
+                        {
+                            "value": 13,
+                            "name": "BikeParameter.kt"
+                        },
+                        {
+                            "value": 13,
+                            "name": "BikeParameter.swift"
+                        },
+                        {
+                            "value": 11,
+                            "name": "bike_parameters.h"
+                        },
+                        {
+                            "value": 64,
+                            "name": "generate_protocol_sources.py"
+                        },
+                        {
+                            "value": 10,
+                            "name": "iprotocol.cpp"
+                        },
+                        {
+                            "value": 2,
+                            "name": "iprotocol.h"
+                        },
+                        {
+                            "value": 8,
+                            "name": "protocol_identification.cpp"
+                        },
+                        {
+                            "value": 1,
+                            "name": "protocol_identification.h"
+                        },
+                        {
+                            "value": 54,
+                            "name": "protocol_legacy20.cpp"
+                        },
+                        {
+                            "value": 1,
+                            "name": "protocol_legacy20.h"
+                        },
+                        {
+                            "value": 54,
+                            "name": "protocol_legacy22.cpp"
+                        },
+                        {
+                            "value": 1,
+                            "name": "protocol_legacy22.h"
+                        },
+                        {
+                            "value": 84,
+                            "name": "protocol_rx0c.cpp"
+                        },
+                        {
+                            "value": 1,
+                            "name": "protocol_rx0c.h"
+                        },
+                        {
+                            "value": 84,
+                            "name": "protocol_rx0d.cpp"
+                        },
+                        {
+                            "value": 1,
+                            "name": "protocol_rx0d.h"
+                        },
+                        {
+                            "value": 91,
+                            "name": "protocol_rx0e.cpp"
+                        },
+                        {
+                            "value": 1,
+                            "name": "protocol_rx0e.h"
+                        },
+                        {
+                            "value": 91,
+                            "name": "protocol_rx0f.cpp"
+                        },
+                        {
+                            "value": 1,
+                            "name": "protocol_rx0f.h"
+                        },
+                        {
+                            "value": 91,
+                            "name": "protocol_rx10.cpp"
+                        },
+                        {
+                            "value": 1,
+                            "name": "protocol_rx10.h"
+                        },
+                        {
+                            "value": 92,
+                            "name": "protocol_rx11.cpp"
+                        },
+                        {
+                            "value": 1,
+                            "name": "protocol_rx11.h"
+                        },
+                        {
+                            "value": 92,
+                            "name": "protocol_rx12.cpp"
+                        },
+                        {
+                            "value": 1,
+                            "name": "protocol_rx12.h"
+                        },
+                        {
+                            "value": 92,
+                            "name": "protocol_rx13.cpp"
+                        },
+                        {
+                            "value": 1,
+                            "name": "protocol_rx13.h"
+                        },
+                        {
+                            "value": 93,
+                            "name": "protocol_rx14.cpp"
+                        },
+                        {
+                            "value": 1,
+                            "name": "protocol_rx14.h"
+                        },
+                        {
+                            "value": 99,
+                            "name": "protocol_rx15.cpp"
+                        },
+                        {
+                            "value": 1,
+                            "name": "protocol_rx15.h"
+                        },
+                        {
+                            "value": 1,
+                            "name": "requirements.txt"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "test",
+            "children": [
+                {
+                    "value": 3,
+                    "name": "CMakeLists.txt"
+                },
+                {
+                    "value": 1,
+                    "name": "available_parameters_test.cpp"
+                },
+                {
+                    "value": 9,
+                    "name": "bike_identification_test.cpp"
+                },
+                {
+                    "value": 11,
+                    "name": "ble_service_identification_test.cpp"
+                },
+                {
+                    "value": 28,
+                    "name": "identification_sequence_test.cpp"
+                },
+                {
+                    "value": 27,
+                    "name": "property_decoding_test.cpp"
+                },
+                {
+                    "value": 4,
+                    "name": "property_encoding_test.cpp"
+                },
+                {
+                    "value": 16,
+                    "name": "protocol_factory_test.cpp"
+                }
+            ]
+        }
+    ]
+}
