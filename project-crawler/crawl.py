@@ -271,7 +271,7 @@ def main():
         print(f'Error: the {args.root} is not a directory.')
         return -1
 
-    parse_git_repository(args.root, output=args.output)
+    parse_git_repository(os.path.abspath(args.root), output=args.output)
 
 
 if __name__ == '__main__':
