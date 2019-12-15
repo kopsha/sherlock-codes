@@ -257,7 +257,7 @@ def parse_git_repository(src_root, output=None):
         node = anytree.Node(file, parent=parent, value=value, meta=file_meta)
 
     exporter = anytree.exporter.JsonExporter(indent=4, sort_keys=True)
-    with open(output, "wt") as out:
+    with open(os.path.abspath(output, "wt")) as out:
         exporter.write(root, out)
 
 
