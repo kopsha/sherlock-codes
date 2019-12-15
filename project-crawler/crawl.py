@@ -249,14 +249,14 @@ def parse_git_repository(src_root, output=None):
             parent = root
         else:
             try:
-                parent = resolver.get(root, f'{folder}')
+                parent = resolver.get(root, folder)
             except anytree.ChildResolverError:
                 parent = make_path(root, folder)
 
-        value = inspect(f'{src_root}/{filepath}', file_meta)
+        value = inspect(os.path.join(src_root,filepath), file_meta)
         node = anytree.Node(file, parent=parent, value=value, meta=file_meta)
 
-    exporter = anytree.exporter.JsonExporter(indent=4)
+    exporter = anytree.exporter.JsonExporter(indent=4, sort_keys=True)
     with open(output, "wt") as out:
         exporter.write(root, out)
 
