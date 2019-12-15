@@ -2,34 +2,54 @@
     "name": "turbo-connect-core",
     "children": [
         {
-            "value": 2,
-            "name": "CMakeLists.txt"
-        },
-        {
-            "value": 6,
-            "name": "Jenkinsfile"
-        },
-        {
-            "value": 5,
-            "name": "README.md"
-        },
-        {
-            "value": 6,
+            "value": 66,
+            "meta": {
+                "name": "run",
+                "extension": "",
+                "mime": "text/x-shellscript; charset=us-ascii",
+                "type": "Bourne-Again shell script, ASCII text executable",
+                "size": 1586,
+                "is_code": true
+            },
             "name": "run"
         },
         {
-            "value": 1,
+            "value": 3,
+            "meta": {
+                "name": "start-tdd",
+                "extension": ".sh",
+                "mime": "text/plain; charset=us-ascii",
+                "type": "ASCII text",
+                "size": 106,
+                "is_code": true
+            },
             "name": "start-tdd.sh"
         },
         {
             "name": "scripts",
             "children": [
                 {
-                    "value": 45,
+                    "value": 379,
+                    "meta": {
+                        "name": "run-clang-format",
+                        "extension": ".py",
+                        "mime": "text/x-python; charset=us-ascii",
+                        "type": "Python script, ASCII text executable",
+                        "size": 11581,
+                        "is_code": true
+                    },
                     "name": "run-clang-format.py"
                 },
                 {
-                    "value": 8,
+                    "value": 72,
+                    "meta": {
+                        "name": "unit_tests_and_coverage",
+                        "extension": ".sh",
+                        "mime": "text/plain; charset=us-ascii",
+                        "type": "ASCII text",
+                        "size": 2143,
+                        "is_code": true
+                    },
                     "name": "unit_tests_and_coverage.sh"
                 }
             ]
@@ -38,187 +58,523 @@
             "name": "src",
             "children": [
                 {
-                    "value": 2,
-                    "name": "CMakeLists.txt"
-                },
-                {
-                    "value": 13,
+                    "value": 132,
+                    "meta": {
+                        "name": "identification_sequence",
+                        "extension": ".cpp",
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "type": "C++ source, ASCII text",
+                        "size": 3551,
+                        "is_code": true
+                    },
                     "name": "identification_sequence.cpp"
                 },
                 {
-                    "value": 3,
+                    "value": 38,
+                    "meta": {
+                        "name": "identification_sequence",
+                        "extension": ".h",
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "type": "C++ source, ASCII text",
+                        "size": 824,
+                        "is_code": true
+                    },
                     "name": "identification_sequence.h"
                 },
                 {
-                    "value": 18,
+                    "value": 171,
+                    "meta": {
+                        "name": "identify",
+                        "extension": ".cpp",
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "type": "C++ source, ASCII text",
+                        "size": 4784,
+                        "is_code": true
+                    },
                     "name": "identify.cpp"
                 },
                 {
-                    "value": 2,
+                    "value": 32,
+                    "meta": {
+                        "name": "identify",
+                        "extension": ".h",
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "type": "C++ source, ASCII text",
+                        "size": 663,
+                        "is_code": true
+                    },
                     "name": "identify.h"
                 },
                 {
-                    "value": 5,
+                    "value": 63,
+                    "meta": {
+                        "name": "parameter",
+                        "extension": ".cpp",
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "type": "C++ source, ASCII text",
+                        "size": 1453,
+                        "is_code": true
+                    },
                     "name": "parameter.cpp"
                 },
                 {
-                    "value": 2,
+                    "value": 34,
+                    "meta": {
+                        "name": "parameter",
+                        "extension": ".h",
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "type": "C++ source, ASCII text",
+                        "size": 644,
+                        "is_code": true
+                    },
                     "name": "parameter.h"
                 },
                 {
-                    "value": 17,
+                    "value": 139,
+                    "meta": {
+                        "name": "parameter_info",
+                        "extension": ".cpp",
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "type": "C++ source, ASCII text",
+                        "size": 4408,
+                        "is_code": true
+                    },
                     "name": "parameter_info.cpp"
                 },
                 {
-                    "value": 7,
+                    "value": 46,
+                    "meta": {
+                        "name": "parameter_info",
+                        "extension": ".h",
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "type": "C++ source, ASCII text",
+                        "size": 1910,
+                        "is_code": true
+                    },
                     "name": "parameter_info.h"
                 },
                 {
-                    "value": 11,
+                    "value": 84,
+                    "meta": {
+                        "name": "protocol_factory",
+                        "extension": ".cpp",
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "type": "C++ source, ASCII text",
+                        "size": 3066,
+                        "is_code": true
+                    },
                     "name": "protocol_factory.cpp"
                 },
                 {
-                    "value": 1,
+                    "value": 14,
+                    "meta": {
+                        "name": "protocol_factory",
+                        "extension": ".h",
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "type": "C++ source, ASCII text",
+                        "size": 295,
+                        "is_code": true
+                    },
                     "name": "protocol_factory.h"
                 },
                 {
-                    "value": 1,
+                    "value": 7,
+                    "meta": {
+                        "name": "turbo-connect-core",
+                        "extension": ".h",
+                        "mime": "text/x-c; charset=us-ascii",
+                        "type": "C source, ASCII text",
+                        "size": 154,
+                        "is_code": true
+                    },
                     "name": "turbo-connect-core.h"
                 },
                 {
                     "name": "protocol",
                     "children": [
                         {
-                            "value": 13,
+                            "value": 109,
+                            "meta": {
+                                "name": "BikeParameter",
+                                "extension": ".kt",
+                                "mime": "text/plain; charset=us-ascii",
+                                "type": "ASCII text",
+                                "size": 3488,
+                                "is_code": true
+                            },
                             "name": "BikeParameter.kt"
                         },
                         {
-                            "value": 13,
+                            "value": 102,
+                            "meta": {
+                                "name": "BikeParameter",
+                                "extension": ".swift",
+                                "mime": "text/plain; charset=us-ascii",
+                                "type": "ASCII text",
+                                "size": 3460,
+                                "is_code": true
+                            },
                             "name": "BikeParameter.swift"
                         },
                         {
-                            "value": 11,
+                            "value": 108,
+                            "meta": {
+                                "name": "bike_parameters",
+                                "extension": ".h",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 2889,
+                                "is_code": true
+                            },
                             "name": "bike_parameters.h"
                         },
                         {
-                            "value": 64,
+                            "value": 491,
+                            "meta": {
+                                "name": "generate_protocol_sources",
+                                "extension": ".py",
+                                "mime": "text/x-python; charset=us-ascii",
+                                "type": "Python script, ASCII text executable",
+                                "size": 16574,
+                                "is_code": true
+                            },
                             "name": "generate_protocol_sources.py"
                         },
                         {
-                            "value": 10,
+                            "value": 90,
+                            "meta": {
+                                "name": "iprotocol",
+                                "extension": ".cpp",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 2662,
+                                "is_code": true
+                            },
                             "name": "iprotocol.cpp"
                         },
                         {
-                            "value": 2,
+                            "value": 30,
+                            "meta": {
+                                "name": "iprotocol",
+                                "extension": ".h",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 578,
+                                "is_code": true
+                            },
                             "name": "iprotocol.h"
                         },
                         {
-                            "value": 8,
+                            "value": 34,
+                            "meta": {
+                                "name": "protocol_identification",
+                                "extension": ".cpp",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 2138,
+                                "is_code": true
+                            },
                             "name": "protocol_identification.cpp"
                         },
                         {
-                            "value": 1,
+                            "value": 12,
+                            "meta": {
+                                "name": "protocol_identification",
+                                "extension": ".h",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 239,
+                                "is_code": true
+                            },
                             "name": "protocol_identification.h"
                         },
                         {
-                            "value": 54,
+                            "value": 118,
+                            "meta": {
+                                "name": "protocol_legacy20",
+                                "extension": ".cpp",
+                                "mime": "text/x-c++; charset=utf-8",
+                                "type": "C++ source, UTF-8 Unicode text",
+                                "size": 14069,
+                                "is_code": true
+                            },
                             "name": "protocol_legacy20.cpp"
                         },
                         {
-                            "value": 1,
+                            "value": 12,
+                            "meta": {
+                                "name": "protocol_legacy20",
+                                "extension": ".h",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 221,
+                                "is_code": true
+                            },
                             "name": "protocol_legacy20.h"
                         },
                         {
-                            "value": 54,
+                            "value": 118,
+                            "meta": {
+                                "name": "protocol_legacy22",
+                                "extension": ".cpp",
+                                "mime": "text/x-c++; charset=utf-8",
+                                "type": "C++ source, UTF-8 Unicode text",
+                                "size": 14069,
+                                "is_code": true
+                            },
                             "name": "protocol_legacy22.cpp"
                         },
                         {
-                            "value": 1,
+                            "value": 12,
+                            "meta": {
+                                "name": "protocol_legacy22",
+                                "extension": ".h",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 221,
+                                "is_code": true
+                            },
                             "name": "protocol_legacy22.h"
                         },
                         {
-                            "value": 84,
+                            "value": 172,
+                            "meta": {
+                                "name": "protocol_rx0c",
+                                "extension": ".cpp",
+                                "mime": "text/x-c++; charset=utf-8",
+                                "type": "C++ source, UTF-8 Unicode text",
+                                "size": 21703,
+                                "is_code": true
+                            },
                             "name": "protocol_rx0c.cpp"
                         },
                         {
-                            "value": 1,
+                            "value": 12,
+                            "meta": {
+                                "name": "protocol_rx0c",
+                                "extension": ".h",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 209,
+                                "is_code": true
+                            },
                             "name": "protocol_rx0c.h"
                         },
                         {
-                            "value": 84,
+                            "value": 172,
+                            "meta": {
+                                "name": "protocol_rx0d",
+                                "extension": ".cpp",
+                                "mime": "text/x-c++; charset=utf-8",
+                                "type": "C++ source, UTF-8 Unicode text",
+                                "size": 21703,
+                                "is_code": true
+                            },
                             "name": "protocol_rx0d.cpp"
                         },
                         {
-                            "value": 1,
+                            "value": 12,
+                            "meta": {
+                                "name": "protocol_rx0d",
+                                "extension": ".h",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 209,
+                                "is_code": true
+                            },
                             "name": "protocol_rx0d.h"
                         },
                         {
-                            "value": 91,
+                            "value": 184,
+                            "meta": {
+                                "name": "protocol_rx0e",
+                                "extension": ".cpp",
+                                "mime": "text/x-c++; charset=utf-8",
+                                "type": "C++ source, UTF-8 Unicode text",
+                                "size": 23423,
+                                "is_code": true
+                            },
                             "name": "protocol_rx0e.cpp"
                         },
                         {
-                            "value": 1,
+                            "value": 12,
+                            "meta": {
+                                "name": "protocol_rx0e",
+                                "extension": ".h",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 209,
+                                "is_code": true
+                            },
                             "name": "protocol_rx0e.h"
                         },
                         {
-                            "value": 91,
+                            "value": 184,
+                            "meta": {
+                                "name": "protocol_rx0f",
+                                "extension": ".cpp",
+                                "mime": "text/x-c++; charset=utf-8",
+                                "type": "C++ source, UTF-8 Unicode text",
+                                "size": 23423,
+                                "is_code": true
+                            },
                             "name": "protocol_rx0f.cpp"
                         },
                         {
-                            "value": 1,
+                            "value": 12,
+                            "meta": {
+                                "name": "protocol_rx0f",
+                                "extension": ".h",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 209,
+                                "is_code": true
+                            },
                             "name": "protocol_rx0f.h"
                         },
                         {
-                            "value": 91,
+                            "value": 184,
+                            "meta": {
+                                "name": "protocol_rx10",
+                                "extension": ".cpp",
+                                "mime": "text/x-c++; charset=utf-8",
+                                "type": "C++ source, UTF-8 Unicode text",
+                                "size": 23423,
+                                "is_code": true
+                            },
                             "name": "protocol_rx10.cpp"
                         },
                         {
-                            "value": 1,
+                            "value": 12,
+                            "meta": {
+                                "name": "protocol_rx10",
+                                "extension": ".h",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 209,
+                                "is_code": true
+                            },
                             "name": "protocol_rx10.h"
                         },
                         {
-                            "value": 92,
+                            "value": 186,
+                            "meta": {
+                                "name": "protocol_rx11",
+                                "extension": ".cpp",
+                                "mime": "text/x-c++; charset=utf-8",
+                                "type": "C++ source, UTF-8 Unicode text",
+                                "size": 23708,
+                                "is_code": true
+                            },
                             "name": "protocol_rx11.cpp"
                         },
                         {
-                            "value": 1,
+                            "value": 12,
+                            "meta": {
+                                "name": "protocol_rx11",
+                                "extension": ".h",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 209,
+                                "is_code": true
+                            },
                             "name": "protocol_rx11.h"
                         },
                         {
-                            "value": 92,
+                            "value": 186,
+                            "meta": {
+                                "name": "protocol_rx12",
+                                "extension": ".cpp",
+                                "mime": "text/x-c++; charset=utf-8",
+                                "type": "C++ source, UTF-8 Unicode text",
+                                "size": 23708,
+                                "is_code": true
+                            },
                             "name": "protocol_rx12.cpp"
                         },
                         {
-                            "value": 1,
+                            "value": 12,
+                            "meta": {
+                                "name": "protocol_rx12",
+                                "extension": ".h",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 209,
+                                "is_code": true
+                            },
                             "name": "protocol_rx12.h"
                         },
                         {
-                            "value": 92,
+                            "value": 186,
+                            "meta": {
+                                "name": "protocol_rx13",
+                                "extension": ".cpp",
+                                "mime": "text/x-c++; charset=utf-8",
+                                "type": "C++ source, UTF-8 Unicode text",
+                                "size": 23708,
+                                "is_code": true
+                            },
                             "name": "protocol_rx13.cpp"
                         },
                         {
-                            "value": 1,
+                            "value": 12,
+                            "meta": {
+                                "name": "protocol_rx13",
+                                "extension": ".h",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 209,
+                                "is_code": true
+                            },
                             "name": "protocol_rx13.h"
                         },
                         {
-                            "value": 93,
+                            "value": 188,
+                            "meta": {
+                                "name": "protocol_rx14",
+                                "extension": ".cpp",
+                                "mime": "text/x-c++; charset=utf-8",
+                                "type": "C++ source, UTF-8 Unicode text",
+                                "size": 23992,
+                                "is_code": true
+                            },
                             "name": "protocol_rx14.cpp"
                         },
                         {
-                            "value": 1,
+                            "value": 12,
+                            "meta": {
+                                "name": "protocol_rx14",
+                                "extension": ".h",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 209,
+                                "is_code": true
+                            },
                             "name": "protocol_rx14.h"
                         },
                         {
-                            "value": 99,
+                            "value": 198,
+                            "meta": {
+                                "name": "protocol_rx15",
+                                "extension": ".cpp",
+                                "mime": "text/x-c++; charset=utf-8",
+                                "type": "C++ source, UTF-8 Unicode text",
+                                "size": 25451,
+                                "is_code": true
+                            },
                             "name": "protocol_rx15.cpp"
                         },
                         {
-                            "value": 1,
+                            "value": 12,
+                            "meta": {
+                                "name": "protocol_rx15",
+                                "extension": ".h",
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "type": "C++ source, ASCII text",
+                                "size": 209,
+                                "is_code": true
+                            },
                             "name": "protocol_rx15.h"
-                        },
-                        {
-                            "value": 1,
-                            "name": "requirements.txt"
                         }
                     ]
                 }
@@ -228,35 +584,87 @@
             "name": "test",
             "children": [
                 {
-                    "value": 3,
-                    "name": "CMakeLists.txt"
-                },
-                {
-                    "value": 1,
+                    "value": 13,
+                    "meta": {
+                        "name": "available_parameters_test",
+                        "extension": ".cpp",
+                        "mime": "text/x-c; charset=us-ascii",
+                        "type": "C source, ASCII text",
+                        "size": 286,
+                        "is_code": true
+                    },
                     "name": "available_parameters_test.cpp"
                 },
                 {
-                    "value": 9,
+                    "value": 104,
+                    "meta": {
+                        "name": "bike_identification_test",
+                        "extension": ".cpp",
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "type": "C++ source, ASCII text",
+                        "size": 2435,
+                        "is_code": true
+                    },
                     "name": "bike_identification_test.cpp"
                 },
                 {
-                    "value": 11,
+                    "value": 74,
+                    "meta": {
+                        "name": "ble_service_identification_test",
+                        "extension": ".cpp",
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "type": "C++ source, ASCII text",
+                        "size": 2838,
+                        "is_code": true
+                    },
                     "name": "ble_service_identification_test.cpp"
                 },
                 {
-                    "value": 28,
+                    "value": 235,
+                    "meta": {
+                        "name": "identification_sequence_test",
+                        "extension": ".cpp",
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "type": "C++ source, ASCII text",
+                        "size": 7207,
+                        "is_code": true
+                    },
                     "name": "identification_sequence_test.cpp"
                 },
                 {
-                    "value": 27,
+                    "value": 190,
+                    "meta": {
+                        "name": "property_decoding_test",
+                        "extension": ".cpp",
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "type": "C++ source, ASCII text",
+                        "size": 7046,
+                        "is_code": true
+                    },
                     "name": "property_decoding_test.cpp"
                 },
                 {
-                    "value": 4,
+                    "value": 55,
+                    "meta": {
+                        "name": "property_encoding_test",
+                        "extension": ".cpp",
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "type": "C++ source, ASCII text",
+                        "size": 1186,
+                        "is_code": true
+                    },
                     "name": "property_encoding_test.cpp"
                 },
                 {
-                    "value": 16,
+                    "value": 100,
+                    "meta": {
+                        "name": "protocol_factory_test",
+                        "extension": ".cpp",
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "type": "C++ source, ASCII text",
+                        "size": 4272,
+                        "is_code": true
+                    },
                     "name": "protocol_factory_test.cpp"
                 }
             ]

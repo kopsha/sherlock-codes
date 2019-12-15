@@ -3,6 +3,8 @@ import re
 import timeit
 import os
 
+import magic
+
 from datetime import datetime
 from git.cmd import Git
 from anytree import Node, Resolver, RenderTree, LevelOrderIter
@@ -16,20 +18,67 @@ def print_stage(text):
     print(f"{'*'*row_size}");
 
 
-def parse_git_repository(path, output):
-    git = Git(path)
-    repository_name = os.path.basename(path)
-    print_stage(f'Analyzing {repository_name}')
+def quick_look(filepath):
+    meta = {}
 
-    root = Node(repository_name)
+    filename,ext = os.path.splitext(filepath)
+    meta['name'] = os.path.basename(filename)
+    meta['extension'] = ext
+
+    mage = magic.Magic(mime=True, mime_encoding=True) 
+    meta['mime'] = mage.from_file(filepath)
+    meta['type'] = magic.from_file(filepath)
+
+    meta['size'] = os.path.getsize(filepath)
+
+    extra_source_extension = [
+        '.swift',
+        '.kt',
+        '.sh'
+    ]
+    meta['is_code'] = False
+
+    if meta['mime'].startswith('text'):
+        meta['is_code'] = any([
+            'script' in meta['mime'],
+            'text/x' in meta['mime'],
+            meta['extension'] in extra_source_extension
+        ])
+
+    return meta
+
+
+def inspect(filepath, meta):
+    print(f'Scanning {meta.get("name")}{meta.get("extension")}')
+    with open(filepath, 'rt') as source_file:
+        source_code = source_file.read()
+
+    source_lines = source_code.splitlines()
+
+    return len(source_lines)
+
+
+def parse_git_repository(src_root, output=None):
+    project_name = os.path.basename(src_root)
+    print_stage(f'Analyzing {project_name}')
+
+    if not output:
+        output = f'{project_name}.json'
+
+    git = Git(src_root)
+
+    root = Node(project_name)
     resolver = Resolver()
     parent = root
 
-    for f in sorted(git.ls_files().split(), key=lambda s : s.count(os.sep)):
-        folder = os.path.dirname(f)
-        file = os.path.basename(f)
+    for filepath in sorted(git.ls_files().split(), key=lambda s : s.count(os.sep)):
+        folder = os.path.dirname(filepath)
+        file = os.path.basename(filepath)
         
-        if file.startswith('.'):
+        file_meta = quick_look(f'{src_root}/{filepath}')
+
+        if not file_meta.get('is_code'):
+            # we are interested only in source files
             continue
 
         if not folder:
@@ -48,8 +97,8 @@ def parse_git_repository(path, output):
                     grandparent = resolver.get(root, grandparent_folder)
                     parent = Node(folder.split(os.sep)[-1], parent=grandparent)
 
-        file_size = os.path.getsize(f'{path}/{f}') >> 8
-        node = Node(file, parent=parent, value=file_size or 1)
+        value = inspect(f'{src_root}/{filepath}', file_meta)
+        node = Node(file, parent=parent, value=value, meta=file_meta)
 
     exporter = JsonExporter(indent=4)
     with open(output, "wt") as out:
@@ -59,7 +108,7 @@ def parse_git_repository(path, output):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-r', '--root', required=True, help='git repository root')
-    parser.add_argument('-o', '--output', required=True, help='output json file')
+    parser.add_argument('-o', '--output', help='name of the output json')
     args = parser.parse_args()
 
     if not os.path.isdir(args.root):
