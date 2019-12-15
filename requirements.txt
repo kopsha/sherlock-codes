@@ -1,6 +1,8 @@
 anytree==2.7.3
+clang==6.0.0.2
 gitdb2==2.0.6
 GitPython==3.0.5
+python-magic==0.4.15
 Send2Trash==1.5.0
 six==1.13.0
 smmap2==2.0.5
