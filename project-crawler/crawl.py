@@ -92,6 +92,44 @@ def parse_cpp(filepath):
 
     return list(cpp_pool)
 
+
+def compute_indentation(effective_lines, tab_size=4):
+    # find deepest indentation
+    indent_capture = re.compile(r'^(\s*)')
+    tabs = re.compile(r'(\t)')
+    max_indentation = 0
+    for line in effective_lines:
+        indentation = indent_capture.match(line)
+        assert(indentation)
+        spaced_indentation = tabs.sub(' '*tab_size, indentation.group(1))
+        max_indentation = max(len(spaced_indentation), max_indentation)
+    max_indentation = max_indentation // tab_size
+    return max_indentation
+
+
+def compute_decision_complexity(effective_lines):
+    markers = [
+        'elif',
+        'for',
+        'guard',
+        'if',
+        'repeat',
+        'switch',
+        'try',
+        'until',
+        'when',
+        'while',
+    ]
+    decisions = re.compile(r'(?:^|\W)('+'|'.join(markers)+')(?:$|\W)')
+
+    count = 0
+    for line in effective_lines:
+        found = decisions.findall(line)
+        count += len(found)
+
+    return count
+
+
 def inspect(filepath, meta):
     print(f'Scanning {meta.get("name")}{meta.get("extension")}')
     filepath = os.path.realpath(filepath)
@@ -118,15 +156,8 @@ def inspect(filepath, meta):
     meta['blank_lines'] = blank_lines
     assert(meta['loc'] == (meta['sloc'] + meta['blank_lines']))
 
-    # find deepest indentation
-    capture_indentation = re.compile(r'^(\s*)')
-    max_indentation = 0
-    for line in effective_lines:
-        indentation = capture_indentation.match(line)
-        assert(indentation)
-        max_indentation = max(len(indentation.group(1)), max_indentation)
-
-    meta['easy_complexity'] = max_indentation >> 2
+    meta['easy_complexity'] = compute_indentation(effective_lines)
+    meta['decision_complexity'] = compute_decision_complexity(effective_lines)
 
     if meta.get('extension') in ['.cpp', '.cxx']:
         meta['exports'] = parse_cpp(filepath)
@@ -134,6 +165,7 @@ def inspect(filepath, meta):
     meta['aggregate_complexity'] = sum([
         meta.get('easy_complexity') or 1,
         len(meta.get('exports', [])),
+        meta.get('decision_complexity'),
     ])
 
     return meta['aggregate_complexity']
