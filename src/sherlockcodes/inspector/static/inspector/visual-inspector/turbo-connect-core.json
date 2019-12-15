@@ -2,7 +2,7 @@
     "name": "turbo-connect-core",
     "children": [
         {
-            "value": 2,
+            "value": 4,
             "meta": {
                 "name": "run",
                 "extension": "",
@@ -13,12 +13,16 @@
                 "loc": 66,
                 "sloc": 52,
                 "blank_lines": 14,
-                "easy_complexity": 2
+                "nested_complexity": 2,
+                "decision_complexity": 2,
+                "risks_points": 0,
+                "risks": [],
+                "aggregate_complexity": 4
             },
             "name": "run"
         },
         {
-            "value": 0,
+            "value": 1,
             "meta": {
                 "name": "start-tdd",
                 "extension": ".sh",
@@ -29,7 +33,11 @@
                 "loc": 3,
                 "sloc": 2,
                 "blank_lines": 1,
-                "easy_complexity": 0
+                "nested_complexity": 0,
+                "decision_complexity": 0,
+                "risks_points": 0,
+                "risks": [],
+                "aggregate_complexity": 1
             },
             "name": "start-tdd.sh"
         },
@@ -37,7 +45,7 @@
             "name": "scripts",
             "children": [
                 {
-                    "value": 12,
+                    "value": 75,
                     "meta": {
                         "name": "run-clang-format",
                         "extension": ".py",
@@ -48,12 +56,19 @@
                         "loc": 379,
                         "sloc": 293,
                         "blank_lines": 86,
-                        "easy_complexity": 12
+                        "nested_complexity": 12,
+                        "decision_complexity": 53,
+                        "risks_points": 10,
+                        "risks": [
+                            "[info] Arguably many decisions, it is ok if it makes other files less complicated.",
+                            "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
+                        ],
+                        "aggregate_complexity": 75
                     },
                     "name": "run-clang-format.py"
                 },
                 {
-                    "value": 3,
+                    "value": 12,
                     "meta": {
                         "name": "unit_tests_and_coverage",
                         "extension": ".sh",
@@ -64,7 +79,11 @@
                         "loc": 72,
                         "sloc": 60,
                         "blank_lines": 12,
-                        "easy_complexity": 3
+                        "nested_complexity": 3,
+                        "decision_complexity": 9,
+                        "risks_points": 0,
+                        "risks": [],
+                        "aggregate_complexity": 12
                     },
                     "name": "unit_tests_and_coverage.sh"
                 }
@@ -74,7 +93,7 @@
             "name": "src",
             "children": [
                 {
-                    "value": 3,
+                    "value": 19,
                     "meta": {
                         "name": "identification_sequence",
                         "extension": ".cpp",
@@ -85,7 +104,14 @@
                         "loc": 132,
                         "sloc": 108,
                         "blank_lines": 24,
-                        "easy_complexity": 3
+                        "nested_complexity": 3,
+                        "decision_complexity": 15,
+                        "risks_points": 0,
+                        "risks": [],
+                        "exports": [
+                            "class IdentificationSequence"
+                        ],
+                        "aggregate_complexity": 19
                     },
                     "name": "identification_sequence.cpp"
                 },
@@ -101,12 +127,16 @@
                         "loc": 38,
                         "sloc": 22,
                         "blank_lines": 16,
-                        "easy_complexity": 1
+                        "nested_complexity": 1,
+                        "decision_complexity": 0,
+                        "risks_points": 0,
+                        "risks": [],
+                        "aggregate_complexity": 1
                     },
                     "name": "identification_sequence.h"
                 },
                 {
-                    "value": 4,
+                    "value": 24,
                     "meta": {
                         "name": "identify",
                         "extension": ".cpp",
@@ -117,7 +147,21 @@
                         "loc": 171,
                         "sloc": 128,
                         "blank_lines": 43,
-                        "easy_complexity": 4
+                        "nested_complexity": 4,
+                        "decision_complexity": 12,
+                        "risks_points": 0,
+                        "risks": [],
+                        "exports": [
+                            "function toLowerCase",
+                            "function isBleNotifyService",
+                            "function isBike",
+                            "function isBleWriteService",
+                            "function makeBikeTypeFrom",
+                            "function isBleReadService",
+                            "function isTurboLevoBike",
+                            "function getBikeName"
+                        ],
+                        "aggregate_complexity": 24
                     },
                     "name": "identify.cpp"
                 },
@@ -133,12 +177,16 @@
                         "loc": 32,
                         "sloc": 19,
                         "blank_lines": 13,
-                        "easy_complexity": 1
+                        "nested_complexity": 1,
+                        "decision_complexity": 0,
+                        "risks_points": 0,
+                        "risks": [],
+                        "aggregate_complexity": 1
                     },
                     "name": "identify.h"
                 },
                 {
-                    "value": 3,
+                    "value": 8,
                     "meta": {
                         "name": "parameter",
                         "extension": ".cpp",
@@ -149,7 +197,15 @@
                         "loc": 63,
                         "sloc": 48,
                         "blank_lines": 15,
-                        "easy_complexity": 3
+                        "nested_complexity": 3,
+                        "decision_complexity": 3,
+                        "risks_points": 0,
+                        "risks": [],
+                        "exports": [
+                            "struct ParameterInfo",
+                            "struct Parameter"
+                        ],
+                        "aggregate_complexity": 8
                     },
                     "name": "parameter.cpp"
                 },
@@ -165,12 +221,16 @@
                         "loc": 34,
                         "sloc": 23,
                         "blank_lines": 11,
-                        "easy_complexity": 1
+                        "nested_complexity": 1,
+                        "decision_complexity": 0,
+                        "risks_points": 0,
+                        "risks": [],
+                        "aggregate_complexity": 1
                     },
                     "name": "parameter.h"
                 },
                 {
-                    "value": 3,
+                    "value": 15,
                     "meta": {
                         "name": "parameter_info",
                         "extension": ".cpp",
@@ -181,7 +241,14 @@
                         "loc": 139,
                         "sloc": 121,
                         "blank_lines": 18,
-                        "easy_complexity": 3
+                        "nested_complexity": 3,
+                        "decision_complexity": 11,
+                        "risks_points": 0,
+                        "risks": [],
+                        "exports": [
+                            "struct ParameterInfo"
+                        ],
+                        "aggregate_complexity": 15
                     },
                     "name": "parameter_info.cpp"
                 },
@@ -197,12 +264,16 @@
                         "loc": 46,
                         "sloc": 30,
                         "blank_lines": 16,
-                        "easy_complexity": 1
+                        "nested_complexity": 1,
+                        "decision_complexity": 0,
+                        "risks_points": 0,
+                        "risks": [],
+                        "aggregate_complexity": 1
                     },
                     "name": "parameter_info.h"
                 },
                 {
-                    "value": 5,
+                    "value": 22,
                     "meta": {
                         "name": "protocol_factory",
                         "extension": ".cpp",
@@ -213,12 +284,19 @@
                         "loc": 84,
                         "sloc": 62,
                         "blank_lines": 22,
-                        "easy_complexity": 5
+                        "nested_complexity": 5,
+                        "decision_complexity": 16,
+                        "risks_points": 0,
+                        "risks": [],
+                        "exports": [
+                            "function makeProtocol"
+                        ],
+                        "aggregate_complexity": 22
                     },
                     "name": "protocol_factory.cpp"
                 },
                 {
-                    "value": 0,
+                    "value": 1,
                     "meta": {
                         "name": "protocol_factory",
                         "extension": ".h",
@@ -229,12 +307,16 @@
                         "loc": 14,
                         "sloc": 4,
                         "blank_lines": 10,
-                        "easy_complexity": 0
+                        "nested_complexity": 0,
+                        "decision_complexity": 0,
+                        "risks_points": 0,
+                        "risks": [],
+                        "aggregate_complexity": 1
                     },
                     "name": "protocol_factory.h"
                 },
                 {
-                    "value": 0,
+                    "value": 1,
                     "meta": {
                         "name": "turbo-connect-core",
                         "extension": ".h",
@@ -245,7 +327,11 @@
                         "loc": 7,
                         "sloc": 0,
                         "blank_lines": 7,
-                        "easy_complexity": 0
+                        "nested_complexity": 0,
+                        "decision_complexity": 0,
+                        "risks_points": 0,
+                        "risks": [],
+                        "aggregate_complexity": 1
                     },
                     "name": "turbo-connect-core.h"
                 },
@@ -253,7 +339,7 @@
                     "name": "protocol",
                     "children": [
                         {
-                            "value": 2,
+                            "value": 3,
                             "meta": {
                                 "name": "BikeParameter",
                                 "extension": ".kt",
@@ -264,7 +350,11 @@
                                 "loc": 109,
                                 "sloc": 107,
                                 "blank_lines": 2,
-                                "easy_complexity": 2
+                                "nested_complexity": 2,
+                                "decision_complexity": 1,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 3
                             },
                             "name": "BikeParameter.kt"
                         },
@@ -280,7 +370,11 @@
                                 "loc": 102,
                                 "sloc": 102,
                                 "blank_lines": 0,
-                                "easy_complexity": 1
+                                "nested_complexity": 1,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "BikeParameter.swift"
                         },
@@ -296,12 +390,16 @@
                                 "loc": 108,
                                 "sloc": 104,
                                 "blank_lines": 4,
-                                "easy_complexity": 1
+                                "nested_complexity": 1,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "bike_parameters.h"
                         },
                         {
-                            "value": 4,
+                            "value": 74,
                             "meta": {
                                 "name": "generate_protocol_sources",
                                 "extension": ".py",
@@ -312,12 +410,19 @@
                                 "loc": 491,
                                 "sloc": 383,
                                 "blank_lines": 108,
-                                "easy_complexity": 4
+                                "nested_complexity": 4,
+                                "decision_complexity": 60,
+                                "risks_points": 10,
+                                "risks": [
+                                    "[info] Arguably many lines of code, this may be ok for now.",
+                                    "[warning] Quite many decisions, consider adding more unit tests and review the entire file."
+                                ],
+                                "aggregate_complexity": 74
                             },
                             "name": "generate_protocol_sources.py"
                         },
                         {
-                            "value": 4,
+                            "value": 10,
                             "meta": {
                                 "name": "iprotocol",
                                 "extension": ".cpp",
@@ -328,7 +433,14 @@
                                 "loc": 90,
                                 "sloc": 67,
                                 "blank_lines": 23,
-                                "easy_complexity": 4
+                                "nested_complexity": 4,
+                                "decision_complexity": 5,
+                                "risks_points": 0,
+                                "risks": [],
+                                "exports": [
+                                    "class IProtocol"
+                                ],
+                                "aggregate_complexity": 10
                             },
                             "name": "iprotocol.cpp"
                         },
@@ -344,12 +456,16 @@
                                 "loc": 30,
                                 "sloc": 16,
                                 "blank_lines": 14,
-                                "easy_complexity": 1
+                                "nested_complexity": 1,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "iprotocol.h"
                         },
                         {
-                            "value": 2,
+                            "value": 3,
                             "meta": {
                                 "name": "protocol_identification",
                                 "extension": ".cpp",
@@ -360,7 +476,14 @@
                                 "loc": 34,
                                 "sloc": 25,
                                 "blank_lines": 9,
-                                "easy_complexity": 2
+                                "nested_complexity": 2,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "exports": [
+                                    "class ProtocolIdentification"
+                                ],
+                                "aggregate_complexity": 3
                             },
                             "name": "protocol_identification.cpp"
                         },
@@ -376,12 +499,16 @@
                                 "loc": 12,
                                 "sloc": 8,
                                 "blank_lines": 4,
-                                "easy_complexity": 1
+                                "nested_complexity": 1,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "protocol_identification.h"
                         },
                         {
-                            "value": 2,
+                            "value": 3,
                             "meta": {
                                 "name": "protocol_legacy20",
                                 "extension": ".cpp",
@@ -392,7 +519,14 @@
                                 "loc": 118,
                                 "sloc": 109,
                                 "blank_lines": 9,
-                                "easy_complexity": 2
+                                "nested_complexity": 2,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "exports": [
+                                    "class ProtocolLegacy20"
+                                ],
+                                "aggregate_complexity": 3
                             },
                             "name": "protocol_legacy20.cpp"
                         },
@@ -408,12 +542,16 @@
                                 "loc": 12,
                                 "sloc": 8,
                                 "blank_lines": 4,
-                                "easy_complexity": 1
+                                "nested_complexity": 1,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "protocol_legacy20.h"
                         },
                         {
-                            "value": 2,
+                            "value": 3,
                             "meta": {
                                 "name": "protocol_legacy22",
                                 "extension": ".cpp",
@@ -424,7 +562,14 @@
                                 "loc": 118,
                                 "sloc": 109,
                                 "blank_lines": 9,
-                                "easy_complexity": 2
+                                "nested_complexity": 2,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "exports": [
+                                    "class ProtocolLegacy22"
+                                ],
+                                "aggregate_complexity": 3
                             },
                             "name": "protocol_legacy22.cpp"
                         },
@@ -440,12 +585,16 @@
                                 "loc": 12,
                                 "sloc": 8,
                                 "blank_lines": 4,
-                                "easy_complexity": 1
+                                "nested_complexity": 1,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "protocol_legacy22.h"
                         },
                         {
-                            "value": 2,
+                            "value": 3,
                             "meta": {
                                 "name": "protocol_rx0c",
                                 "extension": ".cpp",
@@ -456,7 +605,14 @@
                                 "loc": 172,
                                 "sloc": 163,
                                 "blank_lines": 9,
-                                "easy_complexity": 2
+                                "nested_complexity": 2,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "exports": [
+                                    "class ProtocolRx0C"
+                                ],
+                                "aggregate_complexity": 3
                             },
                             "name": "protocol_rx0c.cpp"
                         },
@@ -472,12 +628,16 @@
                                 "loc": 12,
                                 "sloc": 8,
                                 "blank_lines": 4,
-                                "easy_complexity": 1
+                                "nested_complexity": 1,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "protocol_rx0c.h"
                         },
                         {
-                            "value": 2,
+                            "value": 3,
                             "meta": {
                                 "name": "protocol_rx0d",
                                 "extension": ".cpp",
@@ -488,7 +648,14 @@
                                 "loc": 172,
                                 "sloc": 163,
                                 "blank_lines": 9,
-                                "easy_complexity": 2
+                                "nested_complexity": 2,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "exports": [
+                                    "class ProtocolRx0D"
+                                ],
+                                "aggregate_complexity": 3
                             },
                             "name": "protocol_rx0d.cpp"
                         },
@@ -504,12 +671,16 @@
                                 "loc": 12,
                                 "sloc": 8,
                                 "blank_lines": 4,
-                                "easy_complexity": 1
+                                "nested_complexity": 1,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "protocol_rx0d.h"
                         },
                         {
-                            "value": 2,
+                            "value": 3,
                             "meta": {
                                 "name": "protocol_rx0e",
                                 "extension": ".cpp",
@@ -520,7 +691,14 @@
                                 "loc": 184,
                                 "sloc": 175,
                                 "blank_lines": 9,
-                                "easy_complexity": 2
+                                "nested_complexity": 2,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "exports": [
+                                    "class ProtocolRx0E"
+                                ],
+                                "aggregate_complexity": 3
                             },
                             "name": "protocol_rx0e.cpp"
                         },
@@ -536,12 +714,16 @@
                                 "loc": 12,
                                 "sloc": 8,
                                 "blank_lines": 4,
-                                "easy_complexity": 1
+                                "nested_complexity": 1,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "protocol_rx0e.h"
                         },
                         {
-                            "value": 2,
+                            "value": 3,
                             "meta": {
                                 "name": "protocol_rx0f",
                                 "extension": ".cpp",
@@ -552,7 +734,14 @@
                                 "loc": 184,
                                 "sloc": 175,
                                 "blank_lines": 9,
-                                "easy_complexity": 2
+                                "nested_complexity": 2,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "exports": [
+                                    "class ProtocolRx0F"
+                                ],
+                                "aggregate_complexity": 3
                             },
                             "name": "protocol_rx0f.cpp"
                         },
@@ -568,12 +757,16 @@
                                 "loc": 12,
                                 "sloc": 8,
                                 "blank_lines": 4,
-                                "easy_complexity": 1
+                                "nested_complexity": 1,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "protocol_rx0f.h"
                         },
                         {
-                            "value": 2,
+                            "value": 3,
                             "meta": {
                                 "name": "protocol_rx10",
                                 "extension": ".cpp",
@@ -584,7 +777,14 @@
                                 "loc": 184,
                                 "sloc": 175,
                                 "blank_lines": 9,
-                                "easy_complexity": 2
+                                "nested_complexity": 2,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "exports": [
+                                    "class ProtocolRx10"
+                                ],
+                                "aggregate_complexity": 3
                             },
                             "name": "protocol_rx10.cpp"
                         },
@@ -600,12 +800,16 @@
                                 "loc": 12,
                                 "sloc": 8,
                                 "blank_lines": 4,
-                                "easy_complexity": 1
+                                "nested_complexity": 1,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "protocol_rx10.h"
                         },
                         {
-                            "value": 2,
+                            "value": 3,
                             "meta": {
                                 "name": "protocol_rx11",
                                 "extension": ".cpp",
@@ -616,7 +820,14 @@
                                 "loc": 186,
                                 "sloc": 177,
                                 "blank_lines": 9,
-                                "easy_complexity": 2
+                                "nested_complexity": 2,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "exports": [
+                                    "class ProtocolRx11"
+                                ],
+                                "aggregate_complexity": 3
                             },
                             "name": "protocol_rx11.cpp"
                         },
@@ -632,12 +843,16 @@
                                 "loc": 12,
                                 "sloc": 8,
                                 "blank_lines": 4,
-                                "easy_complexity": 1
+                                "nested_complexity": 1,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "protocol_rx11.h"
                         },
                         {
-                            "value": 2,
+                            "value": 3,
                             "meta": {
                                 "name": "protocol_rx12",
                                 "extension": ".cpp",
@@ -648,7 +863,14 @@
                                 "loc": 186,
                                 "sloc": 177,
                                 "blank_lines": 9,
-                                "easy_complexity": 2
+                                "nested_complexity": 2,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "exports": [
+                                    "class ProtocolRx12"
+                                ],
+                                "aggregate_complexity": 3
                             },
                             "name": "protocol_rx12.cpp"
                         },
@@ -664,12 +886,16 @@
                                 "loc": 12,
                                 "sloc": 8,
                                 "blank_lines": 4,
-                                "easy_complexity": 1
+                                "nested_complexity": 1,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "protocol_rx12.h"
                         },
                         {
-                            "value": 2,
+                            "value": 3,
                             "meta": {
                                 "name": "protocol_rx13",
                                 "extension": ".cpp",
@@ -680,7 +906,14 @@
                                 "loc": 186,
                                 "sloc": 177,
                                 "blank_lines": 9,
-                                "easy_complexity": 2
+                                "nested_complexity": 2,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "exports": [
+                                    "class ProtocolRx13"
+                                ],
+                                "aggregate_complexity": 3
                             },
                             "name": "protocol_rx13.cpp"
                         },
@@ -696,12 +929,16 @@
                                 "loc": 12,
                                 "sloc": 8,
                                 "blank_lines": 4,
-                                "easy_complexity": 1
+                                "nested_complexity": 1,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "protocol_rx13.h"
                         },
                         {
-                            "value": 2,
+                            "value": 3,
                             "meta": {
                                 "name": "protocol_rx14",
                                 "extension": ".cpp",
@@ -712,7 +949,14 @@
                                 "loc": 188,
                                 "sloc": 179,
                                 "blank_lines": 9,
-                                "easy_complexity": 2
+                                "nested_complexity": 2,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "exports": [
+                                    "class ProtocolRx14"
+                                ],
+                                "aggregate_complexity": 3
                             },
                             "name": "protocol_rx14.cpp"
                         },
@@ -728,12 +972,16 @@
                                 "loc": 12,
                                 "sloc": 8,
                                 "blank_lines": 4,
-                                "easy_complexity": 1
+                                "nested_complexity": 1,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "protocol_rx14.h"
                         },
                         {
-                            "value": 2,
+                            "value": 3,
                             "meta": {
                                 "name": "protocol_rx15",
                                 "extension": ".cpp",
@@ -744,7 +992,14 @@
                                 "loc": 198,
                                 "sloc": 189,
                                 "blank_lines": 9,
-                                "easy_complexity": 2
+                                "nested_complexity": 2,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "exports": [
+                                    "class ProtocolRx15"
+                                ],
+                                "aggregate_complexity": 3
                             },
                             "name": "protocol_rx15.cpp"
                         },
@@ -760,7 +1015,11 @@
                                 "loc": 12,
                                 "sloc": 8,
                                 "blank_lines": 4,
-                                "easy_complexity": 1
+                                "nested_complexity": 1,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "protocol_rx15.h"
                         }
@@ -772,7 +1031,7 @@
             "name": "test",
             "children": [
                 {
-                    "value": 1,
+                    "value": 2,
                     "meta": {
                         "name": "available_parameters_test",
                         "extension": ".cpp",
@@ -783,12 +1042,19 @@
                         "loc": 13,
                         "sloc": 7,
                         "blank_lines": 6,
-                        "easy_complexity": 1
+                        "nested_complexity": 1,
+                        "decision_complexity": 0,
+                        "risks_points": 0,
+                        "risks": [],
+                        "exports": [
+                            "function TEST"
+                        ],
+                        "aggregate_complexity": 2
                     },
                     "name": "available_parameters_test.cpp"
                 },
                 {
-                    "value": 1,
+                    "value": 2,
                     "meta": {
                         "name": "bike_identification_test",
                         "extension": ".cpp",
@@ -799,12 +1065,19 @@
                         "loc": 104,
                         "sloc": 68,
                         "blank_lines": 36,
-                        "easy_complexity": 1
+                        "nested_complexity": 1,
+                        "decision_complexity": 0,
+                        "risks_points": 0,
+                        "risks": [],
+                        "exports": [
+                            "function TEST"
+                        ],
+                        "aggregate_complexity": 2
                     },
                     "name": "bike_identification_test.cpp"
                 },
                 {
-                    "value": 1,
+                    "value": 2,
                     "meta": {
                         "name": "ble_service_identification_test",
                         "extension": ".cpp",
@@ -815,12 +1088,19 @@
                         "loc": 74,
                         "sloc": 56,
                         "blank_lines": 18,
-                        "easy_complexity": 1
+                        "nested_complexity": 1,
+                        "decision_complexity": 0,
+                        "risks_points": 0,
+                        "risks": [],
+                        "exports": [
+                            "function TEST"
+                        ],
+                        "aggregate_complexity": 2
                     },
                     "name": "ble_service_identification_test.cpp"
                 },
                 {
-                    "value": 1,
+                    "value": 2,
                     "meta": {
                         "name": "identification_sequence_test",
                         "extension": ".cpp",
@@ -831,12 +1111,19 @@
                         "loc": 235,
                         "sloc": 166,
                         "blank_lines": 69,
-                        "easy_complexity": 1
+                        "nested_complexity": 1,
+                        "decision_complexity": 0,
+                        "risks_points": 0,
+                        "risks": [],
+                        "exports": [
+                            "function TEST"
+                        ],
+                        "aggregate_complexity": 2
                     },
                     "name": "identification_sequence_test.cpp"
                 },
                 {
-                    "value": 3,
+                    "value": 6,
                     "meta": {
                         "name": "property_decoding_test",
                         "extension": ".cpp",
@@ -847,12 +1134,20 @@
                         "loc": 190,
                         "sloc": 158,
                         "blank_lines": 32,
-                        "easy_complexity": 3
+                        "nested_complexity": 3,
+                        "decision_complexity": 1,
+                        "risks_points": 0,
+                        "risks": [],
+                        "exports": [
+                            "function TEST_F",
+                            "class ProtocolDecodingTest"
+                        ],
+                        "aggregate_complexity": 6
                     },
                     "name": "property_decoding_test.cpp"
                 },
                 {
-                    "value": 3,
+                    "value": 6,
                     "meta": {
                         "name": "property_encoding_test",
                         "extension": ".cpp",
@@ -863,12 +1158,20 @@
                         "loc": 55,
                         "sloc": 37,
                         "blank_lines": 18,
-                        "easy_complexity": 3
+                        "nested_complexity": 3,
+                        "decision_complexity": 1,
+                        "risks_points": 0,
+                        "risks": [],
+                        "exports": [
+                            "function TEST_F",
+                            "class ProtocolEncodingTest"
+                        ],
+                        "aggregate_complexity": 6
                     },
                     "name": "property_encoding_test.cpp"
                 },
                 {
-                    "value": 2,
+                    "value": 6,
                     "meta": {
                         "name": "protocol_factory_test",
                         "extension": ".cpp",
@@ -879,7 +1182,17 @@
                         "loc": 100,
                         "sloc": 80,
                         "blank_lines": 20,
-                        "easy_complexity": 2
+                        "nested_complexity": 2,
+                        "decision_complexity": 0,
+                        "risks_points": 0,
+                        "risks": [],
+                        "exports": [
+                            "function TEST_P",
+                            "function INSTANTIATE_TEST_SUITE_P",
+                            "function TEST",
+                            "class ProtocolFactoryTest"
+                        ],
+                        "aggregate_complexity": 6
                     },
                     "name": "protocol_factory_test.cpp"
                 }

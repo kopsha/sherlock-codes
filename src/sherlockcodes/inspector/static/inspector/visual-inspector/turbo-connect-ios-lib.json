@@ -19,7 +19,11 @@
                                 "loc": 95,
                                 "sloc": 73,
                                 "blank_lines": 22,
-                                "easy_complexity": 2
+                                "nested_complexity": 2,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 2
                             },
                             "name": "IOS-Integration-Tests.swift"
                         },
@@ -35,7 +39,11 @@
                                 "loc": 20,
                                 "sloc": 8,
                                 "blank_lines": 12,
-                                "easy_complexity": 2
+                                "nested_complexity": 2,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 2
                             },
                             "name": "TurboConnectTests.swift"
                         },
@@ -43,7 +51,7 @@
                             "name": "Features",
                             "children": [
                                 {
-                                    "value": 2,
+                                    "value": 3,
                                     "meta": {
                                         "name": "TurboConnectTests",
                                         "extension": ".swift",
@@ -54,7 +62,11 @@
                                         "loc": 22,
                                         "sloc": 12,
                                         "blank_lines": 10,
-                                        "easy_complexity": 2
+                                        "nested_complexity": 2,
+                                        "decision_complexity": 1,
+                                        "risks_points": 0,
+                                        "risks": [],
+                                        "aggregate_complexity": 3
                                     },
                                     "name": "TurboConnectTests.swift"
                                 }
@@ -75,7 +87,11 @@
                                         "loc": 21,
                                         "sloc": 9,
                                         "blank_lines": 12,
-                                        "easy_complexity": 2
+                                        "nested_complexity": 2,
+                                        "decision_complexity": 0,
+                                        "risks_points": 0,
+                                        "risks": [],
+                                        "aggregate_complexity": 2
                                     },
                                     "name": "BluetoothConnectionDelegateMock.swift"
                                 },
@@ -91,7 +107,11 @@
                                         "loc": 25,
                                         "sloc": 13,
                                         "blank_lines": 12,
-                                        "easy_complexity": 2
+                                        "nested_complexity": 2,
+                                        "decision_complexity": 0,
+                                        "risks_points": 0,
+                                        "risks": [],
+                                        "aggregate_complexity": 2
                                     },
                                     "name": "BluetoothDelegateParameterDelegate.swift"
                                 },
@@ -107,7 +127,11 @@
                                         "loc": 23,
                                         "sloc": 12,
                                         "blank_lines": 11,
-                                        "easy_complexity": 2
+                                        "nested_complexity": 2,
+                                        "decision_complexity": 0,
+                                        "risks_points": 0,
+                                        "risks": [],
+                                        "aggregate_complexity": 2
                                     },
                                     "name": "BluetoothDeviceDelegateMock.swift"
                                 },
@@ -123,7 +147,11 @@
                                         "loc": 41,
                                         "sloc": 26,
                                         "blank_lines": 15,
-                                        "easy_complexity": 2
+                                        "nested_complexity": 2,
+                                        "decision_complexity": 0,
+                                        "risks_points": 0,
+                                        "risks": [],
+                                        "aggregate_complexity": 2
                                     },
                                     "name": "BluetoothScannerDelegateMock.swift"
                                 }
@@ -133,7 +161,7 @@
                             "name": "StepDefinitions",
                             "children": [
                                 {
-                                    "value": 4,
+                                    "value": 9,
                                     "meta": {
                                         "name": "LoginSteps",
                                         "extension": ".swift",
@@ -144,12 +172,16 @@
                                         "loc": 96,
                                         "sloc": 70,
                                         "blank_lines": 26,
-                                        "easy_complexity": 4
+                                        "nested_complexity": 4,
+                                        "decision_complexity": 5,
+                                        "risks_points": 0,
+                                        "risks": [],
+                                        "aggregate_complexity": 9
                                     },
                                     "name": "LoginSteps.swift"
                                 },
                                 {
-                                    "value": 5,
+                                    "value": 24,
                                     "meta": {
                                         "name": "TurboConnectSteps",
                                         "extension": ".swift",
@@ -160,7 +192,11 @@
                                         "loc": 244,
                                         "sloc": 186,
                                         "blank_lines": 58,
-                                        "easy_complexity": 5
+                                        "nested_complexity": 5,
+                                        "decision_complexity": 19,
+                                        "risks_points": 0,
+                                        "risks": [],
+                                        "aggregate_complexity": 24
                                     },
                                     "name": "TurboConnectSteps.swift"
                                 }
@@ -175,7 +211,7 @@
                             "name": "XCTest-Gherkin",
                             "children": [
                                 {
-                                    "value": 11,
+                                    "value": 38,
                                     "meta": {
                                         "name": "README",
                                         "extension": ".md",
@@ -186,7 +222,13 @@
                                         "loc": 355,
                                         "sloc": 226,
                                         "blank_lines": 129,
-                                        "easy_complexity": 11
+                                        "nested_complexity": 11,
+                                        "decision_complexity": 22,
+                                        "risks_points": 5,
+                                        "risks": [
+                                            "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
+                                        ],
+                                        "aggregate_complexity": 38
                                     },
                                     "name": "README.md"
                                 },
@@ -208,12 +250,16 @@
                                                         "loc": 19,
                                                         "sloc": 10,
                                                         "blank_lines": 9,
-                                                        "easy_complexity": 2
+                                                        "nested_complexity": 2,
+                                                        "decision_complexity": 0,
+                                                        "risks_points": 0,
+                                                        "risks": [],
+                                                        "aggregate_complexity": 2
                                                     },
                                                     "name": "Background.swift"
                                                 },
                                                 {
-                                                    "value": 3,
+                                                    "value": 9,
                                                     "meta": {
                                                         "name": "ClassHelperMethods",
                                                         "extension": ".swift",
@@ -224,12 +270,16 @@
                                                         "loc": 69,
                                                         "sloc": 40,
                                                         "blank_lines": 29,
-                                                        "easy_complexity": 3
+                                                        "nested_complexity": 3,
+                                                        "decision_complexity": 6,
+                                                        "risks_points": 0,
+                                                        "risks": [],
+                                                        "aggregate_complexity": 9
                                                     },
                                                     "name": "ClassHelperMethods.swift"
                                                 },
                                                 {
-                                                    "value": 5,
+                                                    "value": 10,
                                                     "meta": {
                                                         "name": "Example",
                                                         "extension": ".swift",
@@ -240,12 +290,16 @@
                                                         "loc": 147,
                                                         "sloc": 105,
                                                         "blank_lines": 42,
-                                                        "easy_complexity": 5
+                                                        "nested_complexity": 5,
+                                                        "decision_complexity": 5,
+                                                        "risks_points": 0,
+                                                        "risks": [],
+                                                        "aggregate_complexity": 10
                                                     },
                                                     "name": "Example.swift"
                                                 },
                                                 {
-                                                    "value": 5,
+                                                    "value": 8,
                                                     "meta": {
                                                         "name": "LevenshteinDistance",
                                                         "extension": ".swift",
@@ -256,12 +310,16 @@
                                                         "loc": 60,
                                                         "sloc": 36,
                                                         "blank_lines": 24,
-                                                        "easy_complexity": 5
+                                                        "nested_complexity": 5,
+                                                        "decision_complexity": 3,
+                                                        "risks_points": 0,
+                                                        "risks": [],
+                                                        "aggregate_complexity": 8
                                                     },
                                                     "name": "LevenshteinDistance.swift"
                                                 },
                                                 {
-                                                    "value": 4,
+                                                    "value": 10,
                                                     "meta": {
                                                         "name": "MatchedStringRepresentable",
                                                         "extension": ".swift",
@@ -272,12 +330,16 @@
                                                         "loc": 73,
                                                         "sloc": 52,
                                                         "blank_lines": 21,
-                                                        "easy_complexity": 4
+                                                        "nested_complexity": 4,
+                                                        "decision_complexity": 6,
+                                                        "risks_points": 0,
+                                                        "risks": [],
+                                                        "aggregate_complexity": 10
                                                     },
                                                     "name": "MatchedStringRepresentable.swift"
                                                 },
                                                 {
-                                                    "value": 4,
+                                                    "value": 6,
                                                     "meta": {
                                                         "name": "PageObject",
                                                         "extension": ".swift",
@@ -288,12 +350,16 @@
                                                         "loc": 43,
                                                         "sloc": 28,
                                                         "blank_lines": 15,
-                                                        "easy_complexity": 4
+                                                        "nested_complexity": 4,
+                                                        "decision_complexity": 2,
+                                                        "risks_points": 0,
+                                                        "risks": [],
+                                                        "aggregate_complexity": 6
                                                     },
                                                     "name": "PageObject.swift"
                                                 },
                                                 {
-                                                    "value": 4,
+                                                    "value": 14,
                                                     "meta": {
                                                         "name": "Step",
                                                         "extension": ".swift",
@@ -304,12 +370,16 @@
                                                         "loc": 157,
                                                         "sloc": 123,
                                                         "blank_lines": 34,
-                                                        "easy_complexity": 4
+                                                        "nested_complexity": 4,
+                                                        "decision_complexity": 10,
+                                                        "risks_points": 0,
+                                                        "risks": [],
+                                                        "aggregate_complexity": 14
                                                     },
                                                     "name": "Step.swift"
                                                 },
                                                 {
-                                                    "value": 4,
+                                                    "value": 18,
                                                     "meta": {
                                                         "name": "StepDefiner",
                                                         "extension": ".swift",
@@ -320,12 +390,16 @@
                                                         "loc": 205,
                                                         "sloc": 149,
                                                         "blank_lines": 56,
-                                                        "easy_complexity": 4
+                                                        "nested_complexity": 4,
+                                                        "decision_complexity": 14,
+                                                        "risks_points": 0,
+                                                        "risks": [],
+                                                        "aggregate_complexity": 18
                                                     },
                                                     "name": "StepDefiner.swift"
                                                 },
                                                 {
-                                                    "value": 4,
+                                                    "value": 10,
                                                     "meta": {
                                                         "name": "StringGherkinExtension",
                                                         "extension": ".swift",
@@ -336,12 +410,16 @@
                                                         "loc": 89,
                                                         "sloc": 69,
                                                         "blank_lines": 20,
-                                                        "easy_complexity": 4
+                                                        "nested_complexity": 4,
+                                                        "decision_complexity": 6,
+                                                        "risks_points": 0,
+                                                        "risks": [],
+                                                        "aggregate_complexity": 10
                                                     },
                                                     "name": "StringGherkinExtension.swift"
                                                 },
                                                 {
-                                                    "value": 0,
+                                                    "value": 1,
                                                     "meta": {
                                                         "name": "UnusedStepsTracker",
                                                         "extension": ".h",
@@ -352,12 +430,16 @@
                                                         "loc": 20,
                                                         "sloc": 6,
                                                         "blank_lines": 14,
-                                                        "easy_complexity": 0
+                                                        "nested_complexity": 0,
+                                                        "decision_complexity": 0,
+                                                        "risks_points": 0,
+                                                        "risks": [],
+                                                        "aggregate_complexity": 1
                                                     },
                                                     "name": "UnusedStepsTracker.h"
                                                 },
                                                 {
-                                                    "value": 3,
+                                                    "value": 5,
                                                     "meta": {
                                                         "name": "UnusedStepsTracker",
                                                         "extension": ".m",
@@ -368,12 +450,16 @@
                                                         "loc": 65,
                                                         "sloc": 45,
                                                         "blank_lines": 20,
-                                                        "easy_complexity": 3
+                                                        "nested_complexity": 3,
+                                                        "decision_complexity": 2,
+                                                        "risks_points": 0,
+                                                        "risks": [],
+                                                        "aggregate_complexity": 5
                                                     },
                                                     "name": "UnusedStepsTracker.m"
                                                 },
                                                 {
-                                                    "value": 14,
+                                                    "value": 49,
                                                     "meta": {
                                                         "name": "XCTestCase+Gherkin",
                                                         "extension": ".swift",
@@ -384,7 +470,13 @@
                                                         "loc": 345,
                                                         "sloc": 250,
                                                         "blank_lines": 95,
-                                                        "easy_complexity": 14
+                                                        "nested_complexity": 14,
+                                                        "decision_complexity": 27,
+                                                        "risks_points": 8,
+                                                        "risks": [
+                                                            "[error] Way too many nested code blocks, all of the code is off the screen."
+                                                        ],
+                                                        "aggregate_complexity": 49
                                                     },
                                                     "name": "XCTestCase+Gherkin.swift"
                                                 }
@@ -401,7 +493,7 @@
                                     "name": "Pods-TurboConnect_Example",
                                     "children": [
                                         {
-                                            "value": 0,
+                                            "value": 1,
                                             "meta": {
                                                 "name": "Pods-TurboConnect_Example-dummy",
                                                 "extension": ".m",
@@ -412,12 +504,16 @@
                                                 "loc": 5,
                                                 "sloc": 4,
                                                 "blank_lines": 1,
-                                                "easy_complexity": 0
+                                                "nested_complexity": 0,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "Pods-TurboConnect_Example-dummy.m"
                                         },
                                         {
-                                            "value": 1,
+                                            "value": 23,
                                             "meta": {
                                                 "name": "Pods-TurboConnect_Example-frameworks",
                                                 "extension": ".sh",
@@ -428,12 +524,16 @@
                                                 "loc": 175,
                                                 "sloc": 126,
                                                 "blank_lines": 49,
-                                                "easy_complexity": 1
+                                                "nested_complexity": 1,
+                                                "decision_complexity": 22,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 23
                                             },
                                             "name": "Pods-TurboConnect_Example-frameworks.sh"
                                         },
                                         {
-                                            "value": 0,
+                                            "value": 1,
                                             "meta": {
                                                 "name": "Pods-TurboConnect_Example-umbrella",
                                                 "extension": ".h",
@@ -444,7 +544,11 @@
                                                 "loc": 16,
                                                 "sloc": 2,
                                                 "blank_lines": 14,
-                                                "easy_complexity": 0
+                                                "nested_complexity": 0,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "Pods-TurboConnect_Example-umbrella.h"
                                         }
@@ -454,7 +558,7 @@
                                     "name": "Pods-TurboConnect_Tests",
                                     "children": [
                                         {
-                                            "value": 0,
+                                            "value": 1,
                                             "meta": {
                                                 "name": "Pods-TurboConnect_Tests-dummy",
                                                 "extension": ".m",
@@ -465,12 +569,16 @@
                                                 "loc": 5,
                                                 "sloc": 4,
                                                 "blank_lines": 1,
-                                                "easy_complexity": 0
+                                                "nested_complexity": 0,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "Pods-TurboConnect_Tests-dummy.m"
                                         },
                                         {
-                                            "value": 1,
+                                            "value": 23,
                                             "meta": {
                                                 "name": "Pods-TurboConnect_Tests-frameworks",
                                                 "extension": ".sh",
@@ -481,12 +589,16 @@
                                                 "loc": 171,
                                                 "sloc": 122,
                                                 "blank_lines": 49,
-                                                "easy_complexity": 1
+                                                "nested_complexity": 1,
+                                                "decision_complexity": 22,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 23
                                             },
                                             "name": "Pods-TurboConnect_Tests-frameworks.sh"
                                         },
                                         {
-                                            "value": 0,
+                                            "value": 1,
                                             "meta": {
                                                 "name": "Pods-TurboConnect_Tests-umbrella",
                                                 "extension": ".h",
@@ -497,7 +609,11 @@
                                                 "loc": 16,
                                                 "sloc": 2,
                                                 "blank_lines": 14,
-                                                "easy_complexity": 0
+                                                "nested_complexity": 0,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "Pods-TurboConnect_Tests-umbrella.h"
                                         }
@@ -507,7 +623,7 @@
                                     "name": "TurboConnect",
                                     "children": [
                                         {
-                                            "value": 0,
+                                            "value": 1,
                                             "meta": {
                                                 "name": "TurboConnect-dummy",
                                                 "extension": ".m",
@@ -518,12 +634,16 @@
                                                 "loc": 5,
                                                 "sloc": 4,
                                                 "blank_lines": 1,
-                                                "easy_complexity": 0
+                                                "nested_complexity": 0,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "TurboConnect-dummy.m"
                                         },
                                         {
-                                            "value": 0,
+                                            "value": 1,
                                             "meta": {
                                                 "name": "TurboConnect-prefix",
                                                 "extension": ".pch",
@@ -534,12 +654,16 @@
                                                 "loc": 12,
                                                 "sloc": 0,
                                                 "blank_lines": 12,
-                                                "easy_complexity": 0
+                                                "nested_complexity": 0,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "TurboConnect-prefix.pch"
                                         },
                                         {
-                                            "value": 0,
+                                            "value": 1,
                                             "meta": {
                                                 "name": "TurboConnect-umbrella",
                                                 "extension": ".h",
@@ -550,7 +674,11 @@
                                                 "loc": 18,
                                                 "sloc": 2,
                                                 "blank_lines": 16,
-                                                "easy_complexity": 0
+                                                "nested_complexity": 0,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "TurboConnect-umbrella.h"
                                         }
@@ -560,7 +688,7 @@
                                     "name": "XCTest-Gherkin",
                                     "children": [
                                         {
-                                            "value": 0,
+                                            "value": 1,
                                             "meta": {
                                                 "name": "XCTest-Gherkin-dummy",
                                                 "extension": ".m",
@@ -571,12 +699,16 @@
                                                 "loc": 5,
                                                 "sloc": 4,
                                                 "blank_lines": 1,
-                                                "easy_complexity": 0
+                                                "nested_complexity": 0,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "XCTest-Gherkin-dummy.m"
                                         },
                                         {
-                                            "value": 0,
+                                            "value": 1,
                                             "meta": {
                                                 "name": "XCTest-Gherkin-prefix",
                                                 "extension": ".pch",
@@ -587,12 +719,16 @@
                                                 "loc": 12,
                                                 "sloc": 0,
                                                 "blank_lines": 12,
-                                                "easy_complexity": 0
+                                                "nested_complexity": 0,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "XCTest-Gherkin-prefix.pch"
                                         },
                                         {
-                                            "value": 0,
+                                            "value": 1,
                                             "meta": {
                                                 "name": "XCTest-Gherkin-umbrella",
                                                 "extension": ".h",
@@ -603,7 +739,11 @@
                                                 "loc": 19,
                                                 "sloc": 2,
                                                 "blank_lines": 17,
-                                                "easy_complexity": 0
+                                                "nested_complexity": 0,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "XCTest-Gherkin-umbrella.h"
                                         }
@@ -613,7 +753,7 @@
                                     "name": "Zip",
                                     "children": [
                                         {
-                                            "value": 0,
+                                            "value": 1,
                                             "meta": {
                                                 "name": "Zip-dummy",
                                                 "extension": ".m",
@@ -624,12 +764,16 @@
                                                 "loc": 5,
                                                 "sloc": 4,
                                                 "blank_lines": 1,
-                                                "easy_complexity": 0
+                                                "nested_complexity": 0,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "Zip-dummy.m"
                                         },
                                         {
-                                            "value": 0,
+                                            "value": 1,
                                             "meta": {
                                                 "name": "Zip-prefix",
                                                 "extension": ".pch",
@@ -640,12 +784,16 @@
                                                 "loc": 12,
                                                 "sloc": 0,
                                                 "blank_lines": 12,
-                                                "easy_complexity": 0
+                                                "nested_complexity": 0,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "Zip-prefix.pch"
                                         },
                                         {
-                                            "value": 0,
+                                            "value": 1,
                                             "meta": {
                                                 "name": "Zip-umbrella",
                                                 "extension": ".h",
@@ -656,7 +804,11 @@
                                                 "loc": 17,
                                                 "sloc": 2,
                                                 "blank_lines": 15,
-                                                "easy_complexity": 0
+                                                "nested_complexity": 0,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "Zip-umbrella.h"
                                         }
@@ -671,7 +823,7 @@
                                     "name": "Zip",
                                     "children": [
                                         {
-                                            "value": 3,
+                                            "value": 17,
                                             "meta": {
                                                 "name": "QuickZip",
                                                 "extension": ".swift",
@@ -682,12 +834,16 @@
                                                 "loc": 97,
                                                 "sloc": 61,
                                                 "blank_lines": 36,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 14,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 17
                                             },
                                             "name": "QuickZip.swift"
                                         },
                                         {
-                                            "value": 9,
+                                            "value": 73,
                                             "meta": {
                                                 "name": "Zip",
                                                 "extension": ".swift",
@@ -698,12 +854,20 @@
                                                 "loc": 413,
                                                 "sloc": 303,
                                                 "blank_lines": 110,
-                                                "easy_complexity": 9
+                                                "nested_complexity": 9,
+                                                "decision_complexity": 52,
+                                                "risks_points": 12,
+                                                "risks": [
+                                                    "[info] Arguably many lines of code, this may be ok for now.",
+                                                    "[info] Arguably many decisions, it is ok if it makes other files less complicated.",
+                                                    "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
+                                                ],
+                                                "aggregate_complexity": 73
                                             },
                                             "name": "Zip.swift"
                                         },
                                         {
-                                            "value": 6,
+                                            "value": 12,
                                             "meta": {
                                                 "name": "ZipUtilities",
                                                 "extension": ".swift",
@@ -714,7 +878,11 @@
                                                 "loc": 108,
                                                 "sloc": 80,
                                                 "blank_lines": 28,
-                                                "easy_complexity": 6
+                                                "nested_complexity": 6,
+                                                "decision_complexity": 6,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 12
                                             },
                                             "name": "ZipUtilities.swift"
                                         },
@@ -722,7 +890,7 @@
                                             "name": "minizip",
                                             "children": [
                                                 {
-                                                    "value": 5,
+                                                    "value": 14,
                                                     "meta": {
                                                         "name": "crypt",
                                                         "extension": ".h",
@@ -733,12 +901,16 @@
                                                         "loc": 131,
                                                         "sloc": 101,
                                                         "blank_lines": 30,
-                                                        "easy_complexity": 5
+                                                        "nested_complexity": 5,
+                                                        "decision_complexity": 9,
+                                                        "risks_points": 0,
+                                                        "risks": [],
+                                                        "aggregate_complexity": 14
                                                     },
                                                     "name": "crypt.h"
                                                 },
                                                 {
-                                                    "value": 3,
+                                                    "value": 50,
                                                     "meta": {
                                                         "name": "ioapi",
                                                         "extension": ".c",
@@ -749,12 +921,19 @@
                                                         "loc": 369,
                                                         "sloc": 305,
                                                         "blank_lines": 64,
-                                                        "easy_complexity": 3
+                                                        "nested_complexity": 3,
+                                                        "decision_complexity": 40,
+                                                        "risks_points": 7,
+                                                        "risks": [
+                                                            "[info] Arguably many lines of code, this may be ok for now.",
+                                                            "[info] Arguably many decisions, it is ok if it makes other files less complicated."
+                                                        ],
+                                                        "aggregate_complexity": 50
                                                     },
                                                     "name": "ioapi.c"
                                                 },
                                                 {
-                                                    "value": 1,
+                                                    "value": 5,
                                                     "meta": {
                                                         "name": "ioapi",
                                                         "extension": ".h",
@@ -765,12 +944,16 @@
                                                         "loc": 175,
                                                         "sloc": 73,
                                                         "blank_lines": 102,
-                                                        "easy_complexity": 1
+                                                        "nested_complexity": 1,
+                                                        "decision_complexity": 4,
+                                                        "risks_points": 0,
+                                                        "risks": [],
+                                                        "aggregate_complexity": 5
                                                     },
                                                     "name": "ioapi.h"
                                                 },
                                                 {
-                                                    "value": 10,
+                                                    "value": 361,
                                                     "meta": {
                                                         "name": "unzip",
                                                         "extension": ".c",
@@ -781,12 +964,20 @@
                                                         "loc": 1947,
                                                         "sloc": 1567,
                                                         "blank_lines": 380,
-                                                        "easy_complexity": 10
+                                                        "nested_complexity": 10,
+                                                        "decision_complexity": 325,
+                                                        "risks_points": 26,
+                                                        "risks": [
+                                                            "[error] Way too many lines of code, refactoring is required.",
+                                                            "[error] Way too many decisions, full code coverage is required.",
+                                                            "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
+                                                        ],
+                                                        "aggregate_complexity": 361
                                                     },
                                                     "name": "unzip.c"
                                                 },
                                                 {
-                                                    "value": 2,
+                                                    "value": 51,
                                                     "meta": {
                                                         "name": "unzip",
                                                         "extension": ".h",
@@ -797,12 +988,18 @@
                                                         "loc": 319,
                                                         "sloc": 218,
                                                         "blank_lines": 101,
-                                                        "easy_complexity": 2
+                                                        "nested_complexity": 2,
+                                                        "decision_complexity": 44,
+                                                        "risks_points": 5,
+                                                        "risks": [
+                                                            "[info] Arguably many decisions, it is ok if it makes other files less complicated."
+                                                        ],
+                                                        "aggregate_complexity": 51
                                                     },
                                                     "name": "unzip.h"
                                                 },
                                                 {
-                                                    "value": 6,
+                                                    "value": 351,
                                                     "meta": {
                                                         "name": "zip",
                                                         "extension": ".c",
@@ -813,12 +1010,19 @@
                                                         "loc": 2020,
                                                         "sloc": 1614,
                                                         "blank_lines": 406,
-                                                        "easy_complexity": 6
+                                                        "nested_complexity": 6,
+                                                        "decision_complexity": 324,
+                                                        "risks_points": 21,
+                                                        "risks": [
+                                                            "[error] Way too many lines of code, refactoring is required.",
+                                                            "[error] Way too many decisions, full code coverage is required."
+                                                        ],
+                                                        "aggregate_complexity": 351
                                                     },
                                                     "name": "zip.c"
                                                 },
                                                 {
-                                                    "value": 1,
+                                                    "value": 19,
                                                     "meta": {
                                                         "name": "zip",
                                                         "extension": ".h",
@@ -829,7 +1033,11 @@
                                                         "loc": 198,
                                                         "sloc": 122,
                                                         "blank_lines": 76,
-                                                        "easy_complexity": 1
+                                                        "nested_complexity": 1,
+                                                        "decision_complexity": 18,
+                                                        "risks_points": 0,
+                                                        "risks": [],
+                                                        "aggregate_complexity": 19
                                                     },
                                                     "name": "zip.h"
                                                 }
@@ -851,7 +1059,7 @@
                                     "name": "Controller",
                                     "children": [
                                         {
-                                            "value": 3,
+                                            "value": 4,
                                             "meta": {
                                                 "name": "AppDelegate",
                                                 "extension": ".swift",
@@ -862,12 +1070,16 @@
                                                 "loc": 31,
                                                 "sloc": 16,
                                                 "blank_lines": 15,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 1,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 4
                                             },
                                             "name": "AppDelegate.swift"
                                         },
                                         {
-                                            "value": 4,
+                                            "value": 17,
                                             "meta": {
                                                 "name": "BikeDetailsViewController",
                                                 "extension": ".swift",
@@ -878,12 +1090,16 @@
                                                 "loc": 183,
                                                 "sloc": 140,
                                                 "blank_lines": 43,
-                                                "easy_complexity": 4
+                                                "nested_complexity": 4,
+                                                "decision_complexity": 13,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 17
                                             },
                                             "name": "BikeDetailsViewController.swift"
                                         },
                                         {
-                                            "value": 4,
+                                            "value": 8,
                                             "meta": {
                                                 "name": "DiagnosePropertiesViewController",
                                                 "extension": ".swift",
@@ -894,12 +1110,16 @@
                                                 "loc": 88,
                                                 "sloc": 58,
                                                 "blank_lines": 30,
-                                                "easy_complexity": 4
+                                                "nested_complexity": 4,
+                                                "decision_complexity": 4,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 8
                                             },
                                             "name": "DiagnosePropertiesViewController.swift"
                                         },
                                         {
-                                            "value": 4,
+                                            "value": 14,
                                             "meta": {
                                                 "name": "DiscoverBikesViewController",
                                                 "extension": ".swift",
@@ -910,12 +1130,16 @@
                                                 "loc": 206,
                                                 "sloc": 163,
                                                 "blank_lines": 43,
-                                                "easy_complexity": 4
+                                                "nested_complexity": 4,
+                                                "decision_complexity": 10,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 14
                                             },
                                             "name": "DiscoverBikesViewController.swift"
                                         },
                                         {
-                                            "value": 4,
+                                            "value": 26,
                                             "meta": {
                                                 "name": "KnownBikesViewController",
                                                 "extension": ".swift",
@@ -926,12 +1150,16 @@
                                                 "loc": 279,
                                                 "sloc": 213,
                                                 "blank_lines": 66,
-                                                "easy_complexity": 4
+                                                "nested_complexity": 4,
+                                                "decision_complexity": 22,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 26
                                             },
                                             "name": "KnownBikesViewController.swift"
                                         },
                                         {
-                                            "value": 5,
+                                            "value": 6,
                                             "meta": {
                                                 "name": "SignInViewController",
                                                 "extension": ".swift",
@@ -942,7 +1170,11 @@
                                                 "loc": 45,
                                                 "sloc": 30,
                                                 "blank_lines": 15,
-                                                "easy_complexity": 5
+                                                "nested_complexity": 5,
+                                                "decision_complexity": 1,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 6
                                             },
                                             "name": "SignInViewController.swift"
                                         }
@@ -963,7 +1195,11 @@
                                                 "loc": 22,
                                                 "sloc": 12,
                                                 "blank_lines": 10,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 3
                                             },
                                             "name": "TurboConnectLogin.swift"
                                         }
@@ -984,7 +1220,11 @@
                                                 "loc": 28,
                                                 "sloc": 15,
                                                 "blank_lines": 13,
-                                                "easy_complexity": 2
+                                                "nested_complexity": 2,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 2
                                             },
                                             "name": "UserPersistentData.swift"
                                         }
@@ -1003,7 +1243,7 @@
                     "name": "Classes",
                     "children": [
                         {
-                            "value": 0,
+                            "value": 1,
                             "meta": {
                                 "name": "TurboConnect",
                                 "extension": ".swift",
@@ -1014,7 +1254,11 @@
                                 "loc": 6,
                                 "sloc": 0,
                                 "blank_lines": 6,
-                                "easy_complexity": 0
+                                "nested_complexity": 0,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "TurboConnect.swift"
                         }
@@ -1029,7 +1273,7 @@
                     "name": "Headers",
                     "children": [
                         {
-                            "value": 0,
+                            "value": 1,
                             "meta": {
                                 "name": "TurboConnectLibrary-Swift",
                                 "extension": ".h",
@@ -1040,12 +1284,16 @@
                                 "loc": 400,
                                 "sloc": 136,
                                 "blank_lines": 264,
-                                "easy_complexity": 0
+                                "nested_complexity": 0,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "TurboConnectLibrary-Swift.h"
                         },
                         {
-                            "value": 0,
+                            "value": 1,
                             "meta": {
                                 "name": "TurboConnectLibrary",
                                 "extension": ".h",
@@ -1056,7 +1304,11 @@
                                 "loc": 18,
                                 "sloc": 2,
                                 "blank_lines": 16,
-                                "easy_complexity": 0
+                                "nested_complexity": 0,
+                                "decision_complexity": 0,
+                                "risks_points": 0,
+                                "risks": [],
+                                "aggregate_complexity": 1
                             },
                             "name": "TurboConnectLibrary.h"
                         }
@@ -1074,7 +1326,7 @@
                             "name": "TurboConnectFramework",
                             "children": [
                                 {
-                                    "value": 0,
+                                    "value": 1,
                                     "meta": {
                                         "name": "Private-TurboConnect",
                                         "extension": ".h",
@@ -1085,12 +1337,16 @@
                                         "loc": 10,
                                         "sloc": 0,
                                         "blank_lines": 10,
-                                        "easy_complexity": 0
+                                        "nested_complexity": 0,
+                                        "decision_complexity": 0,
+                                        "risks_points": 0,
+                                        "risks": [],
+                                        "aggregate_complexity": 1
                                     },
                                     "name": "Private-TurboConnect.h"
                                 },
                                 {
-                                    "value": 4,
+                                    "value": 38,
                                     "meta": {
                                         "name": "TurboConnect",
                                         "extension": ".swift",
@@ -1101,12 +1357,16 @@
                                         "loc": 291,
                                         "sloc": 235,
                                         "blank_lines": 56,
-                                        "easy_complexity": 4
+                                        "nested_complexity": 4,
+                                        "decision_complexity": 34,
+                                        "risks_points": 0,
+                                        "risks": [],
+                                        "aggregate_complexity": 38
                                     },
                                     "name": "TurboConnect.swift"
                                 },
                                 {
-                                    "value": 0,
+                                    "value": 1,
                                     "meta": {
                                         "name": "TurboConnectLibrary",
                                         "extension": ".h",
@@ -1117,7 +1377,11 @@
                                         "loc": 18,
                                         "sloc": 2,
                                         "blank_lines": 16,
-                                        "easy_complexity": 0
+                                        "nested_complexity": 0,
+                                        "decision_complexity": 0,
+                                        "risks_points": 0,
+                                        "risks": [],
+                                        "aggregate_complexity": 1
                                     },
                                     "name": "TurboConnectLibrary.h"
                                 },
@@ -1125,7 +1389,7 @@
                                     "name": "Bike",
                                     "children": [
                                         {
-                                            "value": 3,
+                                            "value": 7,
                                             "meta": {
                                                 "name": "Bike",
                                                 "extension": ".swift",
@@ -1136,7 +1400,11 @@
                                                 "loc": 82,
                                                 "sloc": 61,
                                                 "blank_lines": 21,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 4,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 7
                                             },
                                             "name": "Bike.swift"
                                         }
@@ -1146,7 +1414,7 @@
                                     "name": "BluetoothStack",
                                     "children": [
                                         {
-                                            "value": 3,
+                                            "value": 9,
                                             "meta": {
                                                 "name": "BikeCommunication",
                                                 "extension": ".swift",
@@ -1157,12 +1425,16 @@
                                                 "loc": 59,
                                                 "sloc": 40,
                                                 "blank_lines": 19,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 6,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 9
                                             },
                                             "name": "BikeCommunication.swift"
                                         },
                                         {
-                                            "value": 3,
+                                            "value": 20,
                                             "meta": {
                                                 "name": "BikeIdentification",
                                                 "extension": ".swift",
@@ -1173,12 +1445,16 @@
                                                 "loc": 132,
                                                 "sloc": 100,
                                                 "blank_lines": 32,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 17,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 20
                                             },
                                             "name": "BikeIdentification.swift"
                                         },
                                         {
-                                            "value": 4,
+                                            "value": 30,
                                             "meta": {
                                                 "name": "BluetoothManager",
                                                 "extension": ".swift",
@@ -1189,12 +1465,16 @@
                                                 "loc": 315,
                                                 "sloc": 250,
                                                 "blank_lines": 65,
-                                                "easy_complexity": 4
+                                                "nested_complexity": 4,
+                                                "decision_complexity": 26,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 30
                                             },
                                             "name": "BluetoothManager.swift"
                                         },
                                         {
-                                            "value": 5,
+                                            "value": 16,
                                             "meta": {
                                                 "name": "DiscoveredBikesDatasource",
                                                 "extension": ".swift",
@@ -1205,12 +1485,16 @@
                                                 "loc": 107,
                                                 "sloc": 82,
                                                 "blank_lines": 25,
-                                                "easy_complexity": 5
+                                                "nested_complexity": 5,
+                                                "decision_complexity": 11,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 16
                                             },
                                             "name": "DiscoveredBikesDatasource.swift"
                                         },
                                         {
-                                            "value": 8,
+                                            "value": 31,
                                             "meta": {
                                                 "name": "ServicesDiscovery",
                                                 "extension": ".swift",
@@ -1221,7 +1505,13 @@
                                                 "loc": 130,
                                                 "sloc": 99,
                                                 "blank_lines": 31,
-                                                "easy_complexity": 8
+                                                "nested_complexity": 8,
+                                                "decision_complexity": 18,
+                                                "risks_points": 5,
+                                                "risks": [
+                                                    "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
+                                                ],
+                                                "aggregate_complexity": 31
                                             },
                                             "name": "ServicesDiscovery.swift"
                                         }
@@ -1242,12 +1532,16 @@
                                                 "loc": 52,
                                                 "sloc": 25,
                                                 "blank_lines": 27,
-                                                "easy_complexity": 1
+                                                "nested_complexity": 1,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "CoreManager.h"
                                         },
                                         {
-                                            "value": 3,
+                                            "value": 16,
                                             "meta": {
                                                 "name": "CoreManager",
                                                 "extension": ".mm",
@@ -1258,12 +1552,16 @@
                                                 "loc": 186,
                                                 "sloc": 131,
                                                 "blank_lines": 55,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 13,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 16
                                             },
                                             "name": "CoreManager.mm"
                                         },
                                         {
-                                            "value": 0,
+                                            "value": 1,
                                             "meta": {
                                                 "name": "NSString+Core",
                                                 "extension": ".h",
@@ -1274,7 +1572,11 @@
                                                 "loc": 18,
                                                 "sloc": 5,
                                                 "blank_lines": 13,
-                                                "easy_complexity": 0
+                                                "nested_complexity": 0,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "NSString+Core.h"
                                         },
@@ -1290,7 +1592,11 @@
                                                 "loc": 15,
                                                 "sloc": 5,
                                                 "blank_lines": 10,
-                                                "easy_complexity": 1
+                                                "nested_complexity": 1,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "NSString+Core.m"
                                         }
@@ -1300,7 +1606,7 @@
                                     "name": "Helpers",
                                     "children": [
                                         {
-                                            "value": 3,
+                                            "value": 4,
                                             "meta": {
                                                 "name": "Helpers",
                                                 "extension": ".swift",
@@ -1311,12 +1617,16 @@
                                                 "loc": 27,
                                                 "sloc": 16,
                                                 "blank_lines": 11,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 1,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 4
                                             },
                                             "name": "Helpers.swift"
                                         },
                                         {
-                                            "value": 0,
+                                            "value": 1,
                                             "meta": {
                                                 "name": "NSData+Core",
                                                 "extension": ".h",
@@ -1327,12 +1637,16 @@
                                                 "loc": 17,
                                                 "sloc": 4,
                                                 "blank_lines": 13,
-                                                "easy_complexity": 0
+                                                "nested_complexity": 0,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "NSData+Core.h"
                                         },
                                         {
-                                            "value": 2,
+                                            "value": 3,
                                             "meta": {
                                                 "name": "NSData+Core",
                                                 "extension": ".m",
@@ -1343,7 +1657,11 @@
                                                 "loc": 28,
                                                 "sloc": 13,
                                                 "blank_lines": 15,
-                                                "easy_complexity": 2
+                                                "nested_complexity": 2,
+                                                "decision_complexity": 1,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 3
                                             },
                                             "name": "NSData+Core.m"
                                         }
@@ -1353,7 +1671,7 @@
                                     "name": "Known Bikes",
                                     "children": [
                                         {
-                                            "value": 6,
+                                            "value": 23,
                                             "meta": {
                                                 "name": "KnownBikes",
                                                 "extension": ".swift",
@@ -1364,7 +1682,11 @@
                                                 "loc": 126,
                                                 "sloc": 97,
                                                 "blank_lines": 29,
-                                                "easy_complexity": 6
+                                                "nested_complexity": 6,
+                                                "decision_complexity": 17,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 23
                                             },
                                             "name": "KnownBikes.swift"
                                         }
@@ -1374,7 +1696,7 @@
                                     "name": "Logger",
                                     "children": [
                                         {
-                                            "value": 4,
+                                            "value": 13,
                                             "meta": {
                                                 "name": "Logger",
                                                 "extension": ".swift",
@@ -1385,7 +1707,11 @@
                                                 "loc": 143,
                                                 "sloc": 109,
                                                 "blank_lines": 34,
-                                                "easy_complexity": 4
+                                                "nested_complexity": 4,
+                                                "decision_complexity": 9,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 13
                                             },
                                             "name": "Logger.swift"
                                         }
@@ -1406,7 +1732,11 @@
                                                 "loc": 57,
                                                 "sloc": 36,
                                                 "blank_lines": 21,
-                                                "easy_complexity": 2
+                                                "nested_complexity": 2,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 2
                                             },
                                             "name": "EndpointProvider.swift"
                                         },
@@ -1422,12 +1752,16 @@
                                                 "loc": 17,
                                                 "sloc": 7,
                                                 "blank_lines": 10,
-                                                "easy_complexity": 2
+                                                "nested_complexity": 2,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 2
                                             },
                                             "name": "NetworkingError.swift"
                                         },
                                         {
-                                            "value": 9,
+                                            "value": 14,
                                             "meta": {
                                                 "name": "NetworkingManager",
                                                 "extension": ".swift",
@@ -1438,12 +1772,18 @@
                                                 "loc": 72,
                                                 "sloc": 53,
                                                 "blank_lines": 19,
-                                                "easy_complexity": 9
+                                                "nested_complexity": 9,
+                                                "decision_complexity": 0,
+                                                "risks_points": 5,
+                                                "risks": [
+                                                    "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
+                                                ],
+                                                "aggregate_complexity": 14
                                             },
                                             "name": "NetworkingManager.swift"
                                         },
                                         {
-                                            "value": 9,
+                                            "value": 15,
                                             "meta": {
                                                 "name": "NetworkingWorker",
                                                 "extension": ".swift",
@@ -1454,7 +1794,13 @@
                                                 "loc": 36,
                                                 "sloc": 26,
                                                 "blank_lines": 10,
-                                                "easy_complexity": 9
+                                                "nested_complexity": 9,
+                                                "decision_complexity": 1,
+                                                "risks_points": 5,
+                                                "risks": [
+                                                    "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
+                                                ],
+                                                "aggregate_complexity": 15
                                             },
                                             "name": "NetworkingWorker.swift"
                                         },
@@ -1470,7 +1816,11 @@
                                                 "loc": 33,
                                                 "sloc": 19,
                                                 "blank_lines": 14,
-                                                "easy_complexity": 2
+                                                "nested_complexity": 2,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 2
                                             },
                                             "name": "TokenStorage.swift"
                                         }
@@ -1480,7 +1830,7 @@
                                     "name": "Parameter",
                                     "children": [
                                         {
-                                            "value": 4,
+                                            "value": 6,
                                             "meta": {
                                                 "name": "Parameter",
                                                 "extension": ".swift",
@@ -1491,12 +1841,16 @@
                                                 "loc": 39,
                                                 "sloc": 27,
                                                 "blank_lines": 12,
-                                                "easy_complexity": 4
+                                                "nested_complexity": 4,
+                                                "decision_complexity": 2,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 6
                                             },
                                             "name": "Parameter.swift"
                                         },
                                         {
-                                            "value": 2,
+                                            "value": 3,
                                             "meta": {
                                                 "name": "ParameterInfo",
                                                 "extension": ".swift",
@@ -1507,7 +1861,11 @@
                                                 "loc": 51,
                                                 "sloc": 38,
                                                 "blank_lines": 13,
-                                                "easy_complexity": 2
+                                                "nested_complexity": 2,
+                                                "decision_complexity": 1,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 3
                                             },
                                             "name": "ParameterInfo.swift"
                                         }
@@ -1523,7 +1881,7 @@
                                                     "name": "Headers",
                                                     "children": [
                                                         {
-                                                            "value": 0,
+                                                            "value": 1,
                                                             "meta": {
                                                                 "name": "Alamofire-Swift",
                                                                 "extension": ".h",
@@ -1534,7 +1892,11 @@
                                                                 "loc": 266,
                                                                 "sloc": 51,
                                                                 "blank_lines": 215,
-                                                                "easy_complexity": 0
+                                                                "nested_complexity": 0,
+                                                                "decision_complexity": 0,
+                                                                "risks_points": 0,
+                                                                "risks": [],
+                                                                "aggregate_complexity": 1
                                                             },
                                                             "name": "Alamofire-Swift.h"
                                                         }
@@ -1564,7 +1926,11 @@
                                                 "loc": 125,
                                                 "sloc": 59,
                                                 "blank_lines": 66,
-                                                "easy_complexity": 2
+                                                "nested_complexity": 2,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 2
                                             },
                                             "name": "BikeTests.swift"
                                         }
@@ -1585,7 +1951,11 @@
                                                 "loc": 137,
                                                 "sloc": 82,
                                                 "blank_lines": 55,
-                                                "easy_complexity": 6
+                                                "nested_complexity": 6,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 6
                                             },
                                             "name": "BikeCommunicationTests.swift"
                                         },
@@ -1601,12 +1971,16 @@
                                                 "loc": 223,
                                                 "sloc": 130,
                                                 "blank_lines": 93,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 3
                                             },
                                             "name": "BikeIdentificationTests.swift"
                                         },
                                         {
-                                            "value": 3,
+                                            "value": 6,
                                             "meta": {
                                                 "name": "BluetoothManagerTests",
                                                 "extension": ".swift",
@@ -1617,12 +1991,18 @@
                                                 "loc": 591,
                                                 "sloc": 323,
                                                 "blank_lines": 268,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 1,
+                                                "risks_points": 2,
+                                                "risks": [
+                                                    "[info] Arguably many lines of code, this may be ok for now."
+                                                ],
+                                                "aggregate_complexity": 6
                                             },
                                             "name": "BluetoothManagerTests.swift"
                                         },
                                         {
-                                            "value": 3,
+                                            "value": 9,
                                             "meta": {
                                                 "name": "CoreBluetoothTestHelpers",
                                                 "extension": ".swift",
@@ -1633,12 +2013,16 @@
                                                 "loc": 307,
                                                 "sloc": 238,
                                                 "blank_lines": 69,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 6,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 9
                                             },
                                             "name": "CoreBluetoothTestHelpers.swift"
                                         },
                                         {
-                                            "value": 3,
+                                            "value": 5,
                                             "meta": {
                                                 "name": "DiscoveredBikesDatasourceTests",
                                                 "extension": ".swift",
@@ -1649,12 +2033,16 @@
                                                 "loc": 160,
                                                 "sloc": 90,
                                                 "blank_lines": 70,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 2,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 5
                                             },
                                             "name": "DiscoveredBikesDatasourceTests.swift"
                                         },
                                         {
-                                            "value": 3,
+                                            "value": 8,
                                             "meta": {
                                                 "name": "ServicesDiscoveryTests",
                                                 "extension": ".swift",
@@ -1665,7 +2053,11 @@
                                                 "loc": 180,
                                                 "sloc": 109,
                                                 "blank_lines": 71,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 5,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 8
                                             },
                                             "name": "ServicesDiscoveryTests.swift"
                                         }
@@ -1675,7 +2067,7 @@
                                     "name": "KnownBikes Tests",
                                     "children": [
                                         {
-                                            "value": 3,
+                                            "value": 6,
                                             "meta": {
                                                 "name": "KnownBikesTests",
                                                 "extension": ".swift",
@@ -1686,7 +2078,11 @@
                                                 "loc": 240,
                                                 "sloc": 138,
                                                 "blank_lines": 102,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 3,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 6
                                             },
                                             "name": "KnownBikesTests.swift"
                                         }
@@ -1707,7 +2103,11 @@
                                                 "loc": 154,
                                                 "sloc": 89,
                                                 "blank_lines": 65,
-                                                "easy_complexity": 2
+                                                "nested_complexity": 2,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 2
                                             },
                                             "name": "LoggerTests.swift"
                                         }
@@ -1728,12 +2128,16 @@
                                                 "loc": 23,
                                                 "sloc": 12,
                                                 "blank_lines": 11,
-                                                "easy_complexity": 2
+                                                "nested_complexity": 2,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 2
                                             },
                                             "name": "NetworkingManagerMock.swift"
                                         },
                                         {
-                                            "value": 3,
+                                            "value": 7,
                                             "meta": {
                                                 "name": "NetworkingManagerTests",
                                                 "extension": ".swift",
@@ -1744,7 +2148,11 @@
                                                 "loc": 116,
                                                 "sloc": 82,
                                                 "blank_lines": 34,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 4,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 7
                                             },
                                             "name": "NetworkingManagerTests.swift"
                                         }
@@ -1765,7 +2173,11 @@
                                                 "loc": 471,
                                                 "sloc": 281,
                                                 "blank_lines": 190,
-                                                "easy_complexity": 2
+                                                "nested_complexity": 2,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 2
                                             },
                                             "name": "TurboConnectTests.swift"
                                         }

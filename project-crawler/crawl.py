@@ -57,18 +57,115 @@ def quick_look(filepath):
 cpp_parser = clang.cindex.Index.create()
 def parse_cpp(filepath):
 
-    def explore_tree(node):
-        if node.kind.is_declaration():
-            print(f'-> class declaration: {node.spelling} @ {node.location.line},{node.location.column}')
-        # Recurse for children of this node
+    cpp_pool = set()
+
+    translate_decl = {
+        clang.cindex.CursorKind.CLASS_DECL : "class",
+        clang.cindex.CursorKind.STRUCT_DECL : "struct",
+        clang.cindex.CursorKind.UNION_DECL : "union",
+        clang.cindex.CursorKind.FUNCTION_DECL : "function",
+        clang.cindex.CursorKind.FUNCTION_TEMPLATE : "function template",
+        clang.cindex.CursorKind.CLASS_TEMPLATE : "class template",
+        clang.cindex.CursorKind.CLASS_TEMPLATE_PARTIAL_SPECIALIZATION : "class template specialization",
+    }
+
+    def explore_tree(node, current_file):
+        try:
+            kind = node.kind
+        except ValueError as e:
+            print('Silenced Error:', e)
+            kind = clang.cindex.CursorKind.UNEXPOSED_DECL
+
+        if kind in translate_decl:
+            name_only,ext = os.path.splitext(node.location.file.name)
+            current_name_only,ext = os.path.splitext(current_file)
+            if name_only == current_name_only:
+                cpp_pool.add(f'{translate_decl[kind]} {node.spelling}')
+
         for c in node.get_children():
-            print(f'    - {c.spelling}')
+            explore_tree(c, filepath)
 
 
-    translation_unit = cpp_parser.parse(filepath)
-    explore_tree(translation_unit.cursor)
+    cpp_pool = set()
+    translation_unit = cpp_parser.parse(filepath, options=clang.cindex.TranslationUnit.PARSE_INCOMPLETE|clang.cindex.TranslationUnit.PARSE_SKIP_FUNCTION_BODIES)
+    explore_tree(translation_unit.cursor, filepath)
 
-    return {}
+    return list(cpp_pool)
+
+
+def nested_code_complexity(effective_lines, tab_size=4):
+    # find deepest indentation
+    indent_capture = re.compile(r'^(\s*)')
+    tabs = re.compile(r'(\t)')
+    max_indentation = 0
+    for line in effective_lines:
+        indentation = indent_capture.match(line)
+        assert(indentation)
+        spaced_indentation = tabs.sub(' '*tab_size, indentation.group(1))
+        max_indentation = max(len(spaced_indentation), max_indentation)
+    max_indentation = max_indentation // tab_size
+    return max_indentation
+
+
+def compute_decision_complexity(effective_lines):
+    markers = [
+        'elif',
+        'for',
+        'guard',
+        'if',
+        'repeat',
+        'switch',
+        'try',
+        'until',
+        'when',
+        'while',
+    ]
+    decisions = re.compile(r'(?:^|\W)('+'|'.join(markers)+')(?:$|\W)')
+
+    count = 0
+    for line in effective_lines:
+        found = decisions.findall(line)
+        count += len(found)
+
+    return count
+
+
+def risk_assesment(meta):
+    risks = []
+    points = 0
+
+    sloc = meta.get('sloc', 0)
+    if 300 <= sloc and sloc < 500:
+        risks.append('[info] Arguably many lines of code, this may be ok for now.')
+        points += 2
+    elif 500 <= sloc and sloc < 1000:
+        risks.append('[warning] Quite many lines of code, plan on refactoring.')
+        points += 5
+    elif 1000 <= sloc:
+        risks.append('[error] Way too many lines of code, refactoring is required.')
+        points += 8
+
+    decisions = meta.get('decision_complexity', 0)
+    if 40 <= decisions and decisions < 60:
+        risks.append('[info] Arguably many decisions, it is ok if it makes other files less complicated.')
+        points += 5
+    elif 60 <= decisions and decisions < 100:
+        risks.append('[warning] Quite many decisions, consider adding more unit tests and review the entire file.')
+        points += 8
+    elif 100 <= decisions:
+        risks.append('[error] Way too many decisions, full code coverage is required.')
+        points += 13
+
+    nested = meta.get('nested_complexity', 0)
+    if 8 <= nested and nested < 13:
+        risks.append('[warning] Quite many nested code blocks, most of the code is in the right half of the screen.')
+        points += 5
+    elif 13 <= nested:
+        risks.append('[error] Way too many nested code blocks, all of the code is off the screen.')
+        points += 8
+
+    return (points, risks)
+
 
 def inspect(filepath, meta):
     print(f'Scanning {meta.get("name")}{meta.get("extension")}')
@@ -96,20 +193,22 @@ def inspect(filepath, meta):
     meta['blank_lines'] = blank_lines
     assert(meta['loc'] == (meta['sloc'] + meta['blank_lines']))
 
-    # find deepest indentation
-    capture_indentation = re.compile(r'^(\s*)')
-    max_indentation = 0
-    for line in effective_lines:
-        indentation = capture_indentation.match(line)
-        assert(indentation)
-        max_indentation = max(len(indentation.group(1)), max_indentation)
+    meta['nested_complexity'] = nested_code_complexity(effective_lines)
+    meta['decision_complexity'] = compute_decision_complexity(effective_lines)
 
-    meta['easy_complexity'] = max_indentation >> 2
+    meta['risks_points'],meta['risks'] = risk_assesment(meta)
 
-    if meta.get('extension') in ['.cpp', '.mm']:
-        meta['cpp_exports'] = parse_cpp(filepath)
+    if meta.get('extension') in ['.cpp', '.cxx']:
+        meta['exports'] = parse_cpp(filepath)
 
-    return meta['easy_complexity']
+    meta['aggregate_complexity'] = sum([
+        meta.get('nested_complexity') or 1,
+        len(meta.get('exports', [])),
+        meta.get('decision_complexity'),
+        meta.get('risks_points'),
+    ])
+
+    return meta['aggregate_complexity']
 
 
 def parse_git_repository(src_root, output=None):

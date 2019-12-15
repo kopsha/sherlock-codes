@@ -2,7 +2,7 @@
     "name": "turbo-connect-android-lib",
     "children": [
         {
-            "value": 0,
+            "value": 17,
             "meta": {
                 "name": "gradlew",
                 "extension": ".bat",
@@ -13,7 +13,11 @@
                 "loc": 100,
                 "sloc": 76,
                 "blank_lines": 24,
-                "easy_complexity": 0
+                "nested_complexity": 0,
+                "decision_complexity": 16,
+                "risks_points": 0,
+                "risks": [],
+                "aggregate_complexity": 17
             },
             "name": "gradlew.bat"
         },
@@ -41,7 +45,11 @@
                                                 "loc": 16,
                                                 "sloc": 14,
                                                 "blank_lines": 2,
-                                                "easy_complexity": 2
+                                                "nested_complexity": 2,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 2
                                             },
                                             "name": "Config.kt"
                                         },
@@ -57,7 +65,11 @@
                                                 "loc": 104,
                                                 "sloc": 82,
                                                 "blank_lines": 22,
-                                                "easy_complexity": 4
+                                                "nested_complexity": 4,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 4
                                             },
                                             "name": "Depends.kt"
                                         },
@@ -73,12 +85,16 @@
                                                 "loc": 346,
                                                 "sloc": 282,
                                                 "blank_lines": 64,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 3
                                             },
                                             "name": "Libs.kt"
                                         },
                                         {
-                                            "value": 3,
+                                            "value": 4,
                                             "meta": {
                                                 "name": "Versions",
                                                 "extension": ".kt",
@@ -89,7 +105,11 @@
                                                 "loc": 111,
                                                 "sloc": 68,
                                                 "blank_lines": 43,
-                                                "easy_complexity": 3
+                                                "nested_complexity": 3,
+                                                "decision_complexity": 1,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 4
                                             },
                                             "name": "Versions.kt"
                                         }
@@ -114,7 +134,7 @@
                                     "name": "cpp",
                                     "children": [
                                         {
-                                            "value": 4,
+                                            "value": 11,
                                             "meta": {
                                                 "name": "jni-utils",
                                                 "extension": ".cpp",
@@ -125,12 +145,22 @@
                                                 "loc": 85,
                                                 "sloc": 58,
                                                 "blank_lines": 27,
-                                                "easy_complexity": 4
+                                                "nested_complexity": 4,
+                                                "decision_complexity": 3,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "exports": [
+                                                    "function getParameterId",
+                                                    "function jByteArrayToStdVector",
+                                                    "function corePacketToByteArray",
+                                                    "function jstringToStdString"
+                                                ],
+                                                "aggregate_complexity": 11
                                             },
                                             "name": "jni-utils.cpp"
                                         },
                                         {
-                                            "value": 0,
+                                            "value": 1,
                                             "meta": {
                                                 "name": "jni-utils",
                                                 "extension": ".h",
@@ -141,12 +171,16 @@
                                                 "loc": 17,
                                                 "sloc": 5,
                                                 "blank_lines": 12,
-                                                "easy_complexity": 0
+                                                "nested_complexity": 0,
+                                                "decision_complexity": 0,
+                                                "risks_points": 0,
+                                                "risks": [],
+                                                "aggregate_complexity": 1
                                             },
                                             "name": "jni-utils.h"
                                         },
                                         {
-                                            "value": 15,
+                                            "value": 30,
                                             "meta": {
                                                 "name": "native-lib",
                                                 "extension": ".cpp",
@@ -157,7 +191,14 @@
                                                 "loc": 224,
                                                 "sloc": 170,
                                                 "blank_lines": 54,
-                                                "easy_complexity": 15
+                                                "nested_complexity": 15,
+                                                "decision_complexity": 7,
+                                                "risks_points": 8,
+                                                "risks": [
+                                                    "[error] Way too many nested code blocks, all of the code is off the screen."
+                                                ],
+                                                "exports": [],
+                                                "aggregate_complexity": 30
                                             },
                                             "name": "native-lib.cpp"
                                         }
@@ -187,12 +228,16 @@
                                                                         "loc": 32,
                                                                         "sloc": 25,
                                                                         "blank_lines": 7,
-                                                                        "easy_complexity": 1
+                                                                        "nested_complexity": 1,
+                                                                        "decision_complexity": 0,
+                                                                        "risks_points": 0,
+                                                                        "risks": [],
+                                                                        "aggregate_complexity": 1
                                                                     },
                                                                     "name": "ITurboConnect.kt"
                                                                 },
                                                                 {
-                                                                    "value": 7,
+                                                                    "value": 19,
                                                                     "meta": {
                                                                         "name": "TurboConnect",
                                                                         "extension": ".kt",
@@ -203,7 +248,13 @@
                                                                         "loc": 384,
                                                                         "sloc": 324,
                                                                         "blank_lines": 60,
-                                                                        "easy_complexity": 7
+                                                                        "nested_complexity": 7,
+                                                                        "decision_complexity": 10,
+                                                                        "risks_points": 2,
+                                                                        "risks": [
+                                                                            "[info] Arguably many lines of code, this may be ok for now."
+                                                                        ],
+                                                                        "aggregate_complexity": 19
                                                                     },
                                                                     "name": "TurboConnect.kt"
                                                                 },
@@ -222,12 +273,16 @@
                                                                                 "loc": 29,
                                                                                 "sloc": 23,
                                                                                 "blank_lines": 6,
-                                                                                "easy_complexity": 3
+                                                                                "nested_complexity": 3,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 3
                                                                             },
                                                                             "name": "BikeParameterDelegate.kt"
                                                                         },
                                                                         {
-                                                                            "value": 7,
+                                                                            "value": 14,
                                                                             "meta": {
                                                                                 "name": "BluetoothChannel",
                                                                                 "extension": ".kt",
@@ -238,12 +293,16 @@
                                                                                 "loc": 92,
                                                                                 "sloc": 79,
                                                                                 "blank_lines": 13,
-                                                                                "easy_complexity": 7
+                                                                                "nested_complexity": 7,
+                                                                                "decision_complexity": 7,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 14
                                                                             },
                                                                             "name": "BluetoothChannel.kt"
                                                                         },
                                                                         {
-                                                                            "value": 3,
+                                                                            "value": 7,
                                                                             "meta": {
                                                                                 "name": "BluetoothConnectionDelegate",
                                                                                 "extension": ".kt",
@@ -254,12 +313,16 @@
                                                                                 "loc": 50,
                                                                                 "sloc": 42,
                                                                                 "blank_lines": 8,
-                                                                                "easy_complexity": 3
+                                                                                "nested_complexity": 3,
+                                                                                "decision_complexity": 4,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 7
                                                                             },
                                                                             "name": "BluetoothConnectionDelegate.kt"
                                                                         },
                                                                         {
-                                                                            "value": 5,
+                                                                            "value": 10,
                                                                             "meta": {
                                                                                 "name": "BluetoothDevice",
                                                                                 "extension": ".kt",
@@ -270,7 +333,11 @@
                                                                                 "loc": 56,
                                                                                 "sloc": 47,
                                                                                 "blank_lines": 9,
-                                                                                "easy_complexity": 5
+                                                                                "nested_complexity": 5,
+                                                                                "decision_complexity": 5,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 10
                                                                             },
                                                                             "name": "BluetoothDevice.kt"
                                                                         },
@@ -286,12 +353,16 @@
                                                                                 "loc": 42,
                                                                                 "sloc": 35,
                                                                                 "blank_lines": 7,
-                                                                                "easy_complexity": 3
+                                                                                "nested_complexity": 3,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 3
                                                                             },
                                                                             "name": "BluetoothDeviceDelegate.kt"
                                                                         },
                                                                         {
-                                                                            "value": 7,
+                                                                            "value": 21,
                                                                             "meta": {
                                                                                 "name": "BluetoothGattCallback",
                                                                                 "extension": ".kt",
@@ -302,12 +373,16 @@
                                                                                 "loc": 199,
                                                                                 "sloc": 170,
                                                                                 "blank_lines": 29,
-                                                                                "easy_complexity": 7
+                                                                                "nested_complexity": 7,
+                                                                                "decision_complexity": 14,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 21
                                                                             },
                                                                             "name": "BluetoothGattCallback.kt"
                                                                         },
                                                                         {
-                                                                            "value": 10,
+                                                                            "value": 43,
                                                                             "meta": {
                                                                                 "name": "BluetoothHandler",
                                                                                 "extension": ".kt",
@@ -318,12 +393,19 @@
                                                                                 "loc": 525,
                                                                                 "sloc": 446,
                                                                                 "blank_lines": 79,
-                                                                                "easy_complexity": 10
+                                                                                "nested_complexity": 10,
+                                                                                "decision_complexity": 26,
+                                                                                "risks_points": 7,
+                                                                                "risks": [
+                                                                                    "[info] Arguably many lines of code, this may be ok for now.",
+                                                                                    "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
+                                                                                ],
+                                                                                "aggregate_complexity": 43
                                                                             },
                                                                             "name": "BluetoothHandler.kt"
                                                                         },
                                                                         {
-                                                                            "value": 3,
+                                                                            "value": 7,
                                                                             "meta": {
                                                                                 "name": "BluetoothScannerDelegate",
                                                                                 "extension": ".kt",
@@ -334,7 +416,11 @@
                                                                                 "loc": 61,
                                                                                 "sloc": 51,
                                                                                 "blank_lines": 10,
-                                                                                "easy_complexity": 3
+                                                                                "nested_complexity": 3,
+                                                                                "decision_complexity": 4,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 7
                                                                             },
                                                                             "name": "BluetoothScannerDelegate.kt"
                                                                         },
@@ -350,7 +436,11 @@
                                                                                 "loc": 39,
                                                                                 "sloc": 33,
                                                                                 "blank_lines": 6,
-                                                                                "easy_complexity": 3
+                                                                                "nested_complexity": 3,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 3
                                                                             },
                                                                             "name": "KnownBikesDelegate.kt"
                                                                         }
@@ -371,7 +461,11 @@
                                                                                 "loc": 27,
                                                                                 "sloc": 22,
                                                                                 "blank_lines": 5,
-                                                                                "easy_complexity": 1
+                                                                                "nested_complexity": 1,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 1
                                                                             },
                                                                             "name": "CoroutineContextProvider.kt"
                                                                         }
@@ -392,7 +486,11 @@
                                                                                 "loc": 72,
                                                                                 "sloc": 53,
                                                                                 "blank_lines": 19,
-                                                                                "easy_complexity": 3
+                                                                                "nested_complexity": 3,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 3
                                                                             },
                                                                             "name": "CoreJni.kt"
                                                                         },
@@ -408,7 +506,11 @@
                                                                                 "loc": 16,
                                                                                 "sloc": 11,
                                                                                 "blank_lines": 5,
-                                                                                "easy_complexity": 1
+                                                                                "nested_complexity": 1,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 1
                                                                             },
                                                                             "name": "IProtocol.kt"
                                                                         },
@@ -424,12 +526,16 @@
                                                                                 "loc": 12,
                                                                                 "sloc": 10,
                                                                                 "blank_lines": 2,
-                                                                                "easy_complexity": 1
+                                                                                "nested_complexity": 1,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 1
                                                                             },
                                                                             "name": "ITurboCore.kt"
                                                                         },
                                                                         {
-                                                                            "value": 3,
+                                                                            "value": 4,
                                                                             "meta": {
                                                                                 "name": "IdentificationSequence",
                                                                                 "extension": ".kt",
@@ -440,7 +546,11 @@
                                                                                 "loc": 32,
                                                                                 "sloc": 25,
                                                                                 "blank_lines": 7,
-                                                                                "easy_complexity": 3
+                                                                                "nested_complexity": 3,
+                                                                                "decision_complexity": 1,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 4
                                                                             },
                                                                             "name": "IdentificationSequence.kt"
                                                                         },
@@ -456,7 +566,11 @@
                                                                                 "loc": 42,
                                                                                 "sloc": 34,
                                                                                 "blank_lines": 8,
-                                                                                "easy_complexity": 3
+                                                                                "nested_complexity": 3,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 3
                                                                             },
                                                                             "name": "Protocol.kt"
                                                                         },
@@ -472,7 +586,11 @@
                                                                                 "loc": 26,
                                                                                 "sloc": 20,
                                                                                 "blank_lines": 6,
-                                                                                "easy_complexity": 2
+                                                                                "nested_complexity": 2,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 2
                                                                             },
                                                                             "name": "TurboCore.kt"
                                                                         }
@@ -493,12 +611,16 @@
                                                                                 "loc": 126,
                                                                                 "sloc": 107,
                                                                                 "blank_lines": 19,
-                                                                                "easy_complexity": 4
+                                                                                "nested_complexity": 4,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 4
                                                                             },
                                                                             "name": "CoreModule.kt"
                                                                         },
                                                                         {
-                                                                            "value": 5,
+                                                                            "value": 9,
                                                                             "meta": {
                                                                                 "name": "NetworkModule",
                                                                                 "extension": ".kt",
@@ -509,7 +631,11 @@
                                                                                 "loc": 169,
                                                                                 "sloc": 150,
                                                                                 "blank_lines": 19,
-                                                                                "easy_complexity": 5
+                                                                                "nested_complexity": 5,
+                                                                                "decision_complexity": 4,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 9
                                                                             },
                                                                             "name": "NetworkModule.kt"
                                                                         },
@@ -525,7 +651,11 @@
                                                                                 "loc": 10,
                                                                                 "sloc": 7,
                                                                                 "blank_lines": 3,
-                                                                                "easy_complexity": 1
+                                                                                "nested_complexity": 1,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 1
                                                                             },
                                                                             "name": "TurboSDKKoinComponent.kt"
                                                                         }
@@ -535,7 +665,7 @@
                                                                     "name": "log",
                                                                     "children": [
                                                                         {
-                                                                            "value": 3,
+                                                                            "value": 5,
                                                                             "meta": {
                                                                                 "name": "FileLoggingTree",
                                                                                 "extension": ".kt",
@@ -546,7 +676,11 @@
                                                                                 "loc": 96,
                                                                                 "sloc": 77,
                                                                                 "blank_lines": 19,
-                                                                                "easy_complexity": 3
+                                                                                "nested_complexity": 3,
+                                                                                "decision_complexity": 2,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 5
                                                                             },
                                                                             "name": "FileLoggingTree.kt"
                                                                         }
@@ -556,7 +690,7 @@
                                                                     "name": "model",
                                                                     "children": [
                                                                         {
-                                                                            "value": 2,
+                                                                            "value": 8,
                                                                             "meta": {
                                                                                 "name": "Bike",
                                                                                 "extension": ".kt",
@@ -567,12 +701,36 @@
                                                                                 "loc": 58,
                                                                                 "sloc": 49,
                                                                                 "blank_lines": 9,
-                                                                                "easy_complexity": 2
+                                                                                "nested_complexity": 2,
+                                                                                "decision_complexity": 6,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 8
                                                                             },
                                                                             "name": "Bike.kt"
                                                                         },
                                                                         {
-                                                                            "value": 0,
+                                                                            "value": 3,
+                                                                            "meta": {
+                                                                                "name": "BikeParameter",
+                                                                                "extension": ".kt",
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "type": "ASCII text",
+                                                                                "size": 3488,
+                                                                                "is_code": true,
+                                                                                "loc": 109,
+                                                                                "sloc": 107,
+                                                                                "blank_lines": 2,
+                                                                                "nested_complexity": 2,
+                                                                                "decision_complexity": 1,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 3
+                                                                            },
+                                                                            "name": "BikeParameter.kt"
+                                                                        },
+                                                                        {
+                                                                            "value": 1,
                                                                             "meta": {
                                                                                 "name": "LoginCredentials",
                                                                                 "extension": ".kt",
@@ -583,7 +741,11 @@
                                                                                 "loc": 3,
                                                                                 "sloc": 2,
                                                                                 "blank_lines": 1,
-                                                                                "easy_complexity": 0
+                                                                                "nested_complexity": 0,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 1
                                                                             },
                                                                             "name": "LoginCredentials.kt"
                                                                         },
@@ -599,7 +761,11 @@
                                                                                 "loc": 9,
                                                                                 "sloc": 7,
                                                                                 "blank_lines": 2,
-                                                                                "easy_complexity": 1
+                                                                                "nested_complexity": 1,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 1
                                                                             },
                                                                             "name": "NetworkParams.kt"
                                                                         },
@@ -615,7 +781,11 @@
                                                                                 "loc": 18,
                                                                                 "sloc": 16,
                                                                                 "blank_lines": 2,
-                                                                                "easy_complexity": 1
+                                                                                "nested_complexity": 1,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 1
                                                                             },
                                                                             "name": "ParameterInfo.kt"
                                                                         },
@@ -631,12 +801,16 @@
                                                                                 "loc": 21,
                                                                                 "sloc": 18,
                                                                                 "blank_lines": 3,
-                                                                                "easy_complexity": 2
+                                                                                "nested_complexity": 2,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 2
                                                                             },
                                                                             "name": "ParameterValue.kt"
                                                                         },
                                                                         {
-                                                                            "value": 3,
+                                                                            "value": 7,
                                                                             "meta": {
                                                                                 "name": "Result",
                                                                                 "extension": ".kt",
@@ -647,7 +821,11 @@
                                                                                 "loc": 76,
                                                                                 "sloc": 63,
                                                                                 "blank_lines": 13,
-                                                                                "easy_complexity": 3
+                                                                                "nested_complexity": 3,
+                                                                                "decision_complexity": 4,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 7
                                                                             },
                                                                             "name": "Result.kt"
                                                                         },
@@ -666,7 +844,11 @@
                                                                                         "loc": 27,
                                                                                         "sloc": 20,
                                                                                         "blank_lines": 7,
-                                                                                        "easy_complexity": 1
+                                                                                        "nested_complexity": 1,
+                                                                                        "decision_complexity": 0,
+                                                                                        "risks_points": 0,
+                                                                                        "risks": [],
+                                                                                        "aggregate_complexity": 1
                                                                                     },
                                                                                     "name": "OauthTokenResponse.kt"
                                                                                 }
@@ -689,7 +871,11 @@
                                                                                 "loc": 51,
                                                                                 "sloc": 43,
                                                                                 "blank_lines": 8,
-                                                                                "easy_complexity": 2
+                                                                                "nested_complexity": 2,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 2
                                                                             },
                                                                             "name": "TurboConnectInitProvider.kt"
                                                                         }
@@ -710,12 +896,16 @@
                                                                                 "loc": 74,
                                                                                 "sloc": 63,
                                                                                 "blank_lines": 11,
-                                                                                "easy_complexity": 4
+                                                                                "nested_complexity": 4,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 4
                                                                             },
                                                                             "name": "KnownBikesRepository.kt"
                                                                         },
                                                                         {
-                                                                            "value": 6,
+                                                                            "value": 8,
                                                                             "meta": {
                                                                                 "name": "TokenRepository",
                                                                                 "extension": ".kt",
@@ -726,7 +916,11 @@
                                                                                 "loc": 86,
                                                                                 "sloc": 72,
                                                                                 "blank_lines": 14,
-                                                                                "easy_complexity": 6
+                                                                                "nested_complexity": 6,
+                                                                                "decision_complexity": 2,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 8
                                                                             },
                                                                             "name": "TokenRepository.kt"
                                                                         },
@@ -742,7 +936,11 @@
                                                                                 "loc": 9,
                                                                                 "sloc": 5,
                                                                                 "blank_lines": 4,
-                                                                                "easy_complexity": 1
+                                                                                "nested_complexity": 1,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 1
                                                                             },
                                                                             "name": "UserRepository.kt"
                                                                         },
@@ -761,7 +959,11 @@
                                                                                         "loc": 42,
                                                                                         "sloc": 35,
                                                                                         "blank_lines": 7,
-                                                                                        "easy_complexity": 5
+                                                                                        "nested_complexity": 5,
+                                                                                        "decision_complexity": 0,
+                                                                                        "risks_points": 0,
+                                                                                        "risks": [],
+                                                                                        "aggregate_complexity": 5
                                                                                     },
                                                                                     "name": "LocalFileDataSource.kt"
                                                                                 },
@@ -777,7 +979,11 @@
                                                                                         "loc": 85,
                                                                                         "sloc": 69,
                                                                                         "blank_lines": 16,
-                                                                                        "easy_complexity": 4
+                                                                                        "nested_complexity": 4,
+                                                                                        "decision_complexity": 0,
+                                                                                        "risks_points": 0,
+                                                                                        "risks": [],
+                                                                                        "aggregate_complexity": 4
                                                                                     },
                                                                                     "name": "TokenLocalDataSource.kt"
                                                                                 },
@@ -793,7 +999,11 @@
                                                                                         "loc": 23,
                                                                                         "sloc": 20,
                                                                                         "blank_lines": 3,
-                                                                                        "easy_complexity": 3
+                                                                                        "nested_complexity": 3,
+                                                                                        "decision_complexity": 0,
+                                                                                        "risks_points": 0,
+                                                                                        "risks": [],
+                                                                                        "aggregate_complexity": 3
                                                                                     },
                                                                                     "name": "TokenRemoteDataSource.kt"
                                                                                 }
@@ -805,7 +1015,7 @@
                                                                     "name": "service",
                                                                     "children": [
                                                                         {
-                                                                            "value": 4,
+                                                                            "value": 5,
                                                                             "meta": {
                                                                                 "name": "NotificationHelper",
                                                                                 "extension": ".kt",
@@ -816,12 +1026,16 @@
                                                                                 "loc": 82,
                                                                                 "sloc": 70,
                                                                                 "blank_lines": 12,
-                                                                                "easy_complexity": 4
+                                                                                "nested_complexity": 4,
+                                                                                "decision_complexity": 1,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 5
                                                                             },
                                                                             "name": "NotificationHelper.kt"
                                                                         },
                                                                         {
-                                                                            "value": 5,
+                                                                            "value": 13,
                                                                             "meta": {
                                                                                 "name": "TurboConnectService",
                                                                                 "extension": ".kt",
@@ -832,7 +1046,11 @@
                                                                                 "loc": 248,
                                                                                 "sloc": 202,
                                                                                 "blank_lines": 46,
-                                                                                "easy_complexity": 5
+                                                                                "nested_complexity": 5,
+                                                                                "decision_complexity": 8,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 13
                                                                             },
                                                                             "name": "TurboConnectService.kt"
                                                                         },
@@ -843,7 +1061,7 @@
                                                                                     "name": "oauth",
                                                                                     "children": [
                                                                                         {
-                                                                                            "value": 5,
+                                                                                            "value": 6,
                                                                                             "meta": {
                                                                                                 "name": "ExpireTokenAuthenticator",
                                                                                                 "extension": ".kt",
@@ -854,7 +1072,11 @@
                                                                                                 "loc": 42,
                                                                                                 "sloc": 37,
                                                                                                 "blank_lines": 5,
-                                                                                                "easy_complexity": 5
+                                                                                                "nested_complexity": 5,
+                                                                                                "decision_complexity": 1,
+                                                                                                "risks_points": 0,
+                                                                                                "risks": [],
+                                                                                                "aggregate_complexity": 6
                                                                                             },
                                                                                             "name": "ExpireTokenAuthenticator.kt"
                                                                                         },
@@ -870,7 +1092,11 @@
                                                                                                 "loc": 24,
                                                                                                 "sloc": 20,
                                                                                                 "blank_lines": 4,
-                                                                                                "easy_complexity": 2
+                                                                                                "nested_complexity": 2,
+                                                                                                "decision_complexity": 0,
+                                                                                                "risks_points": 0,
+                                                                                                "risks": [],
+                                                                                                "aggregate_complexity": 2
                                                                                             },
                                                                                             "name": "OauthService.kt"
                                                                                         }
@@ -895,12 +1121,16 @@
                                                                                 "loc": 24,
                                                                                 "sloc": 20,
                                                                                 "blank_lines": 4,
-                                                                                "easy_complexity": 2
+                                                                                "nested_complexity": 2,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 2
                                                                             },
                                                                             "name": "BikeParameterSerializer.kt"
                                                                         },
                                                                         {
-                                                                            "value": 4,
+                                                                            "value": 11,
                                                                             "meta": {
                                                                                 "name": "EndpointSettings",
                                                                                 "extension": ".kt",
@@ -911,12 +1141,16 @@
                                                                                 "loc": 55,
                                                                                 "sloc": 46,
                                                                                 "blank_lines": 9,
-                                                                                "easy_complexity": 4
+                                                                                "nested_complexity": 4,
+                                                                                "decision_complexity": 7,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 11
                                                                             },
                                                                             "name": "EndpointSettings.kt"
                                                                         },
                                                                         {
-                                                                            "value": 3,
+                                                                            "value": 14,
                                                                             "meta": {
                                                                                 "name": "Extensions",
                                                                                 "extension": ".kt",
@@ -927,12 +1161,16 @@
                                                                                 "loc": 99,
                                                                                 "sloc": 88,
                                                                                 "blank_lines": 11,
-                                                                                "easy_complexity": 3
+                                                                                "nested_complexity": 3,
+                                                                                "decision_complexity": 11,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 14
                                                                             },
                                                                             "name": "Extensions.kt"
                                                                         },
                                                                         {
-                                                                            "value": 4,
+                                                                            "value": 8,
                                                                             "meta": {
                                                                                 "name": "FileHelper",
                                                                                 "extension": ".kt",
@@ -943,7 +1181,11 @@
                                                                                 "loc": 61,
                                                                                 "sloc": 54,
                                                                                 "blank_lines": 7,
-                                                                                "easy_complexity": 4
+                                                                                "nested_complexity": 4,
+                                                                                "decision_complexity": 4,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 8
                                                                             },
                                                                             "name": "FileHelper.kt"
                                                                         }
@@ -986,12 +1228,16 @@
                                                                         "loc": 17,
                                                                         "sloc": 13,
                                                                         "blank_lines": 4,
-                                                                        "easy_complexity": 3
+                                                                        "nested_complexity": 3,
+                                                                        "decision_complexity": 0,
+                                                                        "risks_points": 0,
+                                                                        "risks": [],
+                                                                        "aggregate_complexity": 3
                                                                     },
                                                                     "name": "MockResponseFileReader.kt"
                                                                 },
                                                                 {
-                                                                    "value": 4,
+                                                                    "value": 11,
                                                                     "meta": {
                                                                         "name": "TurboConnectTest",
                                                                         "extension": ".kt",
@@ -1002,7 +1248,13 @@
                                                                         "loc": 457,
                                                                         "sloc": 304,
                                                                         "blank_lines": 153,
-                                                                        "easy_complexity": 4
+                                                                        "nested_complexity": 4,
+                                                                        "decision_complexity": 5,
+                                                                        "risks_points": 2,
+                                                                        "risks": [
+                                                                            "[info] Arguably many lines of code, this may be ok for now."
+                                                                        ],
+                                                                        "aggregate_complexity": 11
                                                                     },
                                                                     "name": "TurboConnectTest.kt"
                                                                 },
@@ -1010,7 +1262,7 @@
                                                                     "name": "bluetooth",
                                                                     "children": [
                                                                         {
-                                                                            "value": 5,
+                                                                            "value": 8,
                                                                             "meta": {
                                                                                 "name": "BluetoothHandlerTest",
                                                                                 "extension": ".kt",
@@ -1021,12 +1273,16 @@
                                                                                 "loc": 237,
                                                                                 "sloc": 203,
                                                                                 "blank_lines": 34,
-                                                                                "easy_complexity": 5
+                                                                                "nested_complexity": 5,
+                                                                                "decision_complexity": 3,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 8
                                                                             },
                                                                             "name": "BluetoothHandlerTest.kt"
                                                                         },
                                                                         {
-                                                                            "value": 7,
+                                                                            "value": 15,
                                                                             "meta": {
                                                                                 "name": "ShadowBluetoothLEAdapter",
                                                                                 "extension": ".kt",
@@ -1037,7 +1293,11 @@
                                                                                 "loc": 149,
                                                                                 "sloc": 130,
                                                                                 "blank_lines": 19,
-                                                                                "easy_complexity": 7
+                                                                                "nested_complexity": 7,
+                                                                                "decision_complexity": 8,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 15
                                                                             },
                                                                             "name": "ShadowBluetoothLEAdapter.kt"
                                                                         }
@@ -1058,7 +1318,11 @@
                                                                                 "loc": 10,
                                                                                 "sloc": 8,
                                                                                 "blank_lines": 2,
-                                                                                "easy_complexity": 1
+                                                                                "nested_complexity": 1,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 1
                                                                             },
                                                                             "name": "TestContextProvider.kt"
                                                                         },
@@ -1074,7 +1338,11 @@
                                                                                 "loc": 33,
                                                                                 "sloc": 27,
                                                                                 "blank_lines": 6,
-                                                                                "easy_complexity": 3
+                                                                                "nested_complexity": 3,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 3
                                                                             },
                                                                             "name": "TestCoroutineRule.kt"
                                                                         }
@@ -1095,7 +1363,11 @@
                                                                                 "loc": 146,
                                                                                 "sloc": 124,
                                                                                 "blank_lines": 22,
-                                                                                "easy_complexity": 5
+                                                                                "nested_complexity": 5,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 5
                                                                             },
                                                                             "name": "TestModules.kt"
                                                                         }
@@ -1116,7 +1388,11 @@
                                                                                 "loc": 232,
                                                                                 "sloc": 198,
                                                                                 "blank_lines": 34,
-                                                                                "easy_complexity": 5
+                                                                                "nested_complexity": 5,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 5
                                                                             },
                                                                             "name": "KnownBikesRepositoryTest.kt"
                                                                         },
@@ -1132,7 +1408,11 @@
                                                                                 "loc": 186,
                                                                                 "sloc": 138,
                                                                                 "blank_lines": 48,
-                                                                                "easy_complexity": 6
+                                                                                "nested_complexity": 6,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 6
                                                                             },
                                                                             "name": "TokenRepositoryTest.kt"
                                                                         },
@@ -1151,12 +1431,16 @@
                                                                                         "loc": 83,
                                                                                         "sloc": 68,
                                                                                         "blank_lines": 15,
-                                                                                        "easy_complexity": 4
+                                                                                        "nested_complexity": 4,
+                                                                                        "decision_complexity": 0,
+                                                                                        "risks_points": 0,
+                                                                                        "risks": [],
+                                                                                        "aggregate_complexity": 4
                                                                                     },
                                                                                     "name": "LocalFileDataSourceTest.kt"
                                                                                 },
                                                                                 {
-                                                                                    "value": 5,
+                                                                                    "value": 6,
                                                                                     "meta": {
                                                                                         "name": "TokenRemoteDataSourceTest",
                                                                                         "extension": ".kt",
@@ -1167,7 +1451,11 @@
                                                                                         "loc": 80,
                                                                                         "sloc": 68,
                                                                                         "blank_lines": 12,
-                                                                                        "easy_complexity": 5
+                                                                                        "nested_complexity": 5,
+                                                                                        "decision_complexity": 1,
+                                                                                        "risks_points": 0,
+                                                                                        "risks": [],
+                                                                                        "aggregate_complexity": 6
                                                                                     },
                                                                                     "name": "TokenRemoteDataSourceTest.kt"
                                                                                 }
@@ -1222,7 +1510,11 @@
                                                                         "loc": 10,
                                                                         "sloc": 8,
                                                                         "blank_lines": 2,
-                                                                        "easy_complexity": 1
+                                                                        "nested_complexity": 1,
+                                                                        "decision_complexity": 0,
+                                                                        "risks_points": 0,
+                                                                        "risks": [],
+                                                                        "aggregate_complexity": 1
                                                                     },
                                                                     "name": "OnBikeClickListener.kt"
                                                                 },
@@ -1238,7 +1530,11 @@
                                                                         "loc": 11,
                                                                         "sloc": 9,
                                                                         "blank_lines": 2,
-                                                                        "easy_complexity": 2
+                                                                        "nested_complexity": 2,
+                                                                        "decision_complexity": 0,
+                                                                        "risks_points": 0,
+                                                                        "risks": [],
+                                                                        "aggregate_complexity": 2
                                                                     },
                                                                     "name": "SampleApplication.kt"
                                                                 },
@@ -1257,7 +1553,11 @@
                                                                                 "loc": 8,
                                                                                 "sloc": 7,
                                                                                 "blank_lines": 1,
-                                                                                "easy_complexity": 2
+                                                                                "nested_complexity": 2,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 2
                                                                             },
                                                                             "name": "Section.kt"
                                                                         }
@@ -1278,7 +1578,11 @@
                                                                                 "loc": 17,
                                                                                 "sloc": 13,
                                                                                 "blank_lines": 4,
-                                                                                "easy_complexity": 4
+                                                                                "nested_complexity": 4,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 4
                                                                             },
                                                                             "name": "EmailValidator.kt"
                                                                         },
@@ -1294,7 +1598,11 @@
                                                                                 "loc": 20,
                                                                                 "sloc": 16,
                                                                                 "blank_lines": 4,
-                                                                                "easy_complexity": 4
+                                                                                "nested_complexity": 4,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 4
                                                                             },
                                                                             "name": "PasswordValidator.kt"
                                                                         },
@@ -1310,7 +1618,11 @@
                                                                                 "loc": 5,
                                                                                 "sloc": 4,
                                                                                 "blank_lines": 1,
-                                                                                "easy_complexity": 1
+                                                                                "nested_complexity": 1,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 1
                                                                             },
                                                                             "name": "Validator.kt"
                                                                         }
@@ -1320,7 +1632,7 @@
                                                                     "name": "view",
                                                                     "children": [
                                                                         {
-                                                                            "value": 3,
+                                                                            "value": 4,
                                                                             "meta": {
                                                                                 "name": "LoginActivity",
                                                                                 "extension": ".kt",
@@ -1331,12 +1643,16 @@
                                                                                 "loc": 35,
                                                                                 "sloc": 30,
                                                                                 "blank_lines": 5,
-                                                                                "easy_complexity": 3
+                                                                                "nested_complexity": 3,
+                                                                                "decision_complexity": 1,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 4
                                                                             },
                                                                             "name": "LoginActivity.kt"
                                                                         },
                                                                         {
-                                                                            "value": 8,
+                                                                            "value": 43,
                                                                             "meta": {
                                                                                 "name": "MainActivity",
                                                                                 "extension": ".kt",
@@ -1347,12 +1663,19 @@
                                                                                 "loc": 547,
                                                                                 "sloc": 475,
                                                                                 "blank_lines": 72,
-                                                                                "easy_complexity": 8
+                                                                                "nested_complexity": 8,
+                                                                                "decision_complexity": 28,
+                                                                                "risks_points": 7,
+                                                                                "risks": [
+                                                                                    "[info] Arguably many lines of code, this may be ok for now.",
+                                                                                    "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
+                                                                                ],
+                                                                                "aggregate_complexity": 43
                                                                             },
                                                                             "name": "MainActivity.kt"
                                                                         },
                                                                         {
-                                                                            "value": 6,
+                                                                            "value": 9,
                                                                             "meta": {
                                                                                 "name": "ParametersActivity",
                                                                                 "extension": ".kt",
@@ -1363,7 +1686,11 @@
                                                                                 "loc": 107,
                                                                                 "sloc": 91,
                                                                                 "blank_lines": 16,
-                                                                                "easy_complexity": 6
+                                                                                "nested_complexity": 6,
+                                                                                "decision_complexity": 3,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 9
                                                                             },
                                                                             "name": "ParametersActivity.kt"
                                                                         },
@@ -1371,7 +1698,7 @@
                                                                             "name": "adapter",
                                                                             "children": [
                                                                                 {
-                                                                                    "value": 4,
+                                                                                    "value": 8,
                                                                                     "meta": {
                                                                                         "name": "BikeAdapter",
                                                                                         "extension": ".kt",
@@ -1382,12 +1709,16 @@
                                                                                         "loc": 132,
                                                                                         "sloc": 110,
                                                                                         "blank_lines": 22,
-                                                                                        "easy_complexity": 4
+                                                                                        "nested_complexity": 4,
+                                                                                        "decision_complexity": 4,
+                                                                                        "risks_points": 0,
+                                                                                        "risks": [],
+                                                                                        "aggregate_complexity": 8
                                                                                     },
                                                                                     "name": "BikeAdapter.kt"
                                                                                 },
                                                                                 {
-                                                                                    "value": 4,
+                                                                                    "value": 8,
                                                                                     "meta": {
                                                                                         "name": "BikeViewHolder",
                                                                                         "extension": ".kt",
@@ -1398,7 +1729,11 @@
                                                                                         "loc": 71,
                                                                                         "sloc": 62,
                                                                                         "blank_lines": 9,
-                                                                                        "easy_complexity": 4
+                                                                                        "nested_complexity": 4,
+                                                                                        "decision_complexity": 4,
+                                                                                        "risks_points": 0,
+                                                                                        "risks": [],
+                                                                                        "aggregate_complexity": 8
                                                                                     },
                                                                                     "name": "BikeViewHolder.kt"
                                                                                 },
@@ -1414,12 +1749,16 @@
                                                                                         "loc": 23,
                                                                                         "sloc": 19,
                                                                                         "blank_lines": 4,
-                                                                                        "easy_complexity": 2
+                                                                                        "nested_complexity": 2,
+                                                                                        "decision_complexity": 0,
+                                                                                        "risks_points": 0,
+                                                                                        "risks": [],
+                                                                                        "aggregate_complexity": 2
                                                                                     },
                                                                                     "name": "KnownBikeViewHolder.kt"
                                                                                 },
                                                                                 {
-                                                                                    "value": 6,
+                                                                                    "value": 10,
                                                                                     "meta": {
                                                                                         "name": "SectionAdapter",
                                                                                         "extension": ".kt",
@@ -1430,7 +1769,11 @@
                                                                                         "loc": 162,
                                                                                         "sloc": 135,
                                                                                         "blank_lines": 27,
-                                                                                        "easy_complexity": 6
+                                                                                        "nested_complexity": 6,
+                                                                                        "decision_complexity": 4,
+                                                                                        "risks_points": 0,
+                                                                                        "risks": [],
+                                                                                        "aggregate_complexity": 10
                                                                                     },
                                                                                     "name": "SectionAdapter.kt"
                                                                                 },
@@ -1438,7 +1781,7 @@
                                                                                     "name": "stickysection",
                                                                                     "children": [
                                                                                         {
-                                                                                            "value": 5,
+                                                                                            "value": 17,
                                                                                             "meta": {
                                                                                                 "name": "AvailableParametersAdapter",
                                                                                                 "extension": ".kt",
@@ -1449,12 +1792,16 @@
                                                                                                 "loc": 205,
                                                                                                 "sloc": 180,
                                                                                                 "blank_lines": 25,
-                                                                                                "easy_complexity": 5
+                                                                                                "nested_complexity": 5,
+                                                                                                "decision_complexity": 12,
+                                                                                                "risks_points": 0,
+                                                                                                "risks": [],
+                                                                                                "aggregate_complexity": 17
                                                                                             },
                                                                                             "name": "AvailableParametersAdapter.kt"
                                                                                         },
                                                                                         {
-                                                                                            "value": 5,
+                                                                                            "value": 15,
                                                                                             "meta": {
                                                                                                 "name": "SitckySectionItemDecoration",
                                                                                                 "extension": ".kt",
@@ -1465,12 +1812,16 @@
                                                                                                 "loc": 132,
                                                                                                 "sloc": 121,
                                                                                                 "blank_lines": 11,
-                                                                                                "easy_complexity": 5
+                                                                                                "nested_complexity": 5,
+                                                                                                "decision_complexity": 10,
+                                                                                                "risks_points": 0,
+                                                                                                "risks": [],
+                                                                                                "aggregate_complexity": 15
                                                                                             },
                                                                                             "name": "SitckySectionItemDecoration.kt"
                                                                                         },
                                                                                         {
-                                                                                            "value": 1,
+                                                                                            "value": 5,
                                                                                             "meta": {
                                                                                                 "name": "StickyHeaderInterface",
                                                                                                 "extension": ".kt",
@@ -1481,7 +1832,11 @@
                                                                                                 "loc": 34,
                                                                                                 "sloc": 29,
                                                                                                 "blank_lines": 5,
-                                                                                                "easy_complexity": 1
+                                                                                                "nested_complexity": 1,
+                                                                                                "decision_complexity": 4,
+                                                                                                "risks_points": 0,
+                                                                                                "risks": [],
+                                                                                                "aggregate_complexity": 5
                                                                                             },
                                                                                             "name": "StickyHeaderInterface.kt"
                                                                                         }
@@ -1493,7 +1848,7 @@
                                                                             "name": "fragment",
                                                                             "children": [
                                                                                 {
-                                                                                    "value": 6,
+                                                                                    "value": 11,
                                                                                     "meta": {
                                                                                         "name": "LoginFragment",
                                                                                         "extension": ".kt",
@@ -1504,7 +1859,11 @@
                                                                                         "loc": 139,
                                                                                         "sloc": 125,
                                                                                         "blank_lines": 14,
-                                                                                        "easy_complexity": 6
+                                                                                        "nested_complexity": 6,
+                                                                                        "decision_complexity": 5,
+                                                                                        "risks_points": 0,
+                                                                                        "risks": [],
+                                                                                        "aggregate_complexity": 11
                                                                                     },
                                                                                     "name": "LoginFragment.kt"
                                                                                 }
@@ -1527,7 +1886,11 @@
                                                                                 "loc": 25,
                                                                                 "sloc": 21,
                                                                                 "blank_lines": 4,
-                                                                                "easy_complexity": 3
+                                                                                "nested_complexity": 3,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 3
                                                                             },
                                                                             "name": "LoginViewModel.kt"
                                                                         }
@@ -1573,7 +1936,11 @@
                                                                                 "loc": 14,
                                                                                 "sloc": 12,
                                                                                 "blank_lines": 2,
-                                                                                "easy_complexity": 1
+                                                                                "nested_complexity": 1,
+                                                                                "decision_complexity": 0,
+                                                                                "risks_points": 0,
+                                                                                "risks": [],
+                                                                                "aggregate_complexity": 1
                                                                             },
                                                                             "name": "CucumberTestCase.kt"
                                                                         },
@@ -1581,7 +1948,7 @@
                                                                             "name": "rules",
                                                                             "children": [
                                                                                 {
-                                                                                    "value": 5,
+                                                                                    "value": 6,
                                                                                     "meta": {
                                                                                         "name": "DisableAnimationsRule",
                                                                                         "extension": ".kt",
@@ -1592,7 +1959,11 @@
                                                                                         "loc": 45,
                                                                                         "sloc": 40,
                                                                                         "blank_lines": 5,
-                                                                                        "easy_complexity": 5
+                                                                                        "nested_complexity": 5,
+                                                                                        "decision_complexity": 1,
+                                                                                        "risks_points": 0,
+                                                                                        "risks": [],
+                                                                                        "aggregate_complexity": 6
                                                                                     },
                                                                                     "name": "DisableAnimationsRule.kt"
                                                                                 }
@@ -1618,7 +1989,11 @@
                                                                                         "loc": 65,
                                                                                         "sloc": 54,
                                                                                         "blank_lines": 11,
-                                                                                        "easy_complexity": 3
+                                                                                        "nested_complexity": 3,
+                                                                                        "decision_complexity": 0,
+                                                                                        "risks_points": 0,
+                                                                                        "risks": [],
+                                                                                        "aggregate_complexity": 3
                                                                                     },
                                                                                     "name": "LoginScreenRobot.kt"
                                                                                 },
@@ -1634,7 +2009,11 @@
                                                                                         "loc": 52,
                                                                                         "sloc": 44,
                                                                                         "blank_lines": 8,
-                                                                                        "easy_complexity": 4
+                                                                                        "nested_complexity": 4,
+                                                                                        "decision_complexity": 0,
+                                                                                        "risks_points": 0,
+                                                                                        "risks": [],
+                                                                                        "aggregate_complexity": 4
                                                                                     },
                                                                                     "name": "TurboConnectSDKRobot.kt"
                                                                                 }
@@ -1655,7 +2034,11 @@
                                                                                         "loc": 46,
                                                                                         "sloc": 35,
                                                                                         "blank_lines": 11,
-                                                                                        "easy_complexity": 3
+                                                                                        "nested_complexity": 3,
+                                                                                        "decision_complexity": 0,
+                                                                                        "risks_points": 0,
+                                                                                        "risks": [],
+                                                                                        "aggregate_complexity": 3
                                                                                     },
                                                                                     "name": "LoginSteps.kt"
                                                                                 },
@@ -1671,7 +2054,11 @@
                                                                                         "loc": 26,
                                                                                         "sloc": 20,
                                                                                         "blank_lines": 6,
-                                                                                        "easy_complexity": 3
+                                                                                        "nested_complexity": 3,
+                                                                                        "decision_complexity": 0,
+                                                                                        "risks_points": 0,
+                                                                                        "risks": [],
+                                                                                        "aggregate_complexity": 3
                                                                                     },
                                                                                     "name": "ScanSteps.kt"
                                                                                 }
