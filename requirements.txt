@@ -6,3 +6,4 @@ python-magic==0.4.15
 Send2Trash==1.5.0
 six==1.13.0
 smmap2==2.0.5
+django==3.0
