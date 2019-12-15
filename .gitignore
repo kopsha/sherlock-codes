@@ -3,3 +3,5 @@
 .env
 *.log
 .DS_Store
+.python-version
+.idea/
