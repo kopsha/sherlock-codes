@@ -57,18 +57,40 @@ def quick_look(filepath):
 cpp_parser = clang.cindex.Index.create()
 def parse_cpp(filepath):
 
-    def explore_tree(node):
-        if node.kind.is_declaration():
-            print(f'-> class declaration: {node.spelling} @ {node.location.line},{node.location.column}')
-        # Recurse for children of this node
+    cpp_pool = set()
+
+    translate_decl = {
+        clang.cindex.CursorKind.CLASS_DECL : "class",
+        clang.cindex.CursorKind.STRUCT_DECL : "struct",
+        clang.cindex.CursorKind.UNION_DECL : "union",
+        clang.cindex.CursorKind.FUNCTION_DECL : "function",
+        clang.cindex.CursorKind.FUNCTION_TEMPLATE : "function template",
+        clang.cindex.CursorKind.CLASS_TEMPLATE : "class template",
+        clang.cindex.CursorKind.CLASS_TEMPLATE_PARTIAL_SPECIALIZATION : "class template specialization",
+    }
+
+    def explore_tree(node, current_file):
+        try:
+            kind = node.kind
+        except ValueError as e:
+            print('Silenced Error:', e)
+            kind = clang.cindex.CursorKind.UNEXPOSED_DECL
+
+        if kind in translate_decl:
+            name_only,ext = os.path.splitext(node.location.file.name)
+            current_name_only,ext = os.path.splitext(current_file)
+            if name_only == current_name_only:
+                cpp_pool.add(f'{translate_decl[kind]} {node.spelling}')
+
         for c in node.get_children():
-            print(f'    - {c.spelling}')
+            explore_tree(c, filepath)
 
 
-    translation_unit = cpp_parser.parse(filepath)
-    explore_tree(translation_unit.cursor)
+    cpp_pool = set()
+    translation_unit = cpp_parser.parse(filepath, options=clang.cindex.TranslationUnit.PARSE_INCOMPLETE|clang.cindex.TranslationUnit.PARSE_SKIP_FUNCTION_BODIES)
+    explore_tree(translation_unit.cursor, filepath)
 
-    return {}
+    return list(cpp_pool)
 
 def inspect(filepath, meta):
     print(f'Scanning {meta.get("name")}{meta.get("extension")}')
@@ -106,10 +128,15 @@ def inspect(filepath, meta):
 
     meta['easy_complexity'] = max_indentation >> 2
 
-    if meta.get('extension') in ['.cpp', '.mm']:
-        meta['cpp_exports'] = parse_cpp(filepath)
+    if meta.get('extension') in ['.cpp', '.cxx']:
+        meta['exports'] = parse_cpp(filepath)
 
-    return meta['easy_complexity']
+    meta['aggregate_complexity'] = sum([
+        meta.get('easy_complexity') or 1,
+        len(meta.get('exports', [])),
+    ])
+
+    return meta['aggregate_complexity']
 
 
 def parse_git_repository(src_root, output=None):
