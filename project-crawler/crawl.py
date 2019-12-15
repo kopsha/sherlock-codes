@@ -93,7 +93,7 @@ def parse_cpp(filepath):
     return list(cpp_pool)
 
 
-def compute_indentation(effective_lines, tab_size=4):
+def nested_code_complexity(effective_lines, tab_size=4):
     # find deepest indentation
     indent_capture = re.compile(r'^(\s*)')
     tabs = re.compile(r'(\t)')
@@ -130,6 +130,43 @@ def compute_decision_complexity(effective_lines):
     return count
 
 
+def risk_assesment(meta):
+    risks = []
+    points = 0
+
+    sloc = meta.get('sloc', 0)
+    if 300 <= sloc and sloc < 500:
+        risks.append('[info] Arguably many lines of code, this may be ok for now.')
+        points += 2
+    elif 500 <= sloc and sloc < 1000:
+        risks.append('[warning] Quite many lines of code, plan on refactoring.')
+        points += 5
+    elif 1000 <= sloc:
+        risks.append('[error] Way too many lines of code, refactoring is required.')
+        points += 8
+
+    decisions = meta.get('decision_complexity', 0)
+    if 40 <= decisions and decisions < 60:
+        risks.append('[info] Arguably many decisions, it is ok if it makes other files less complicated.')
+        points += 5
+    elif 60 <= decisions and decisions < 100:
+        risks.append('[warning] Quite many decisions, consider adding more unit tests and review the entire file.')
+        points += 8
+    elif 100 <= decisions:
+        risks.append('[error] Way too many decisions, full code coverage is required.')
+        points += 13
+
+    nested = meta.get('nested_complexity', 0)
+    if 8 <= nested and nested < 13:
+        risks.append('[warning] Quite many nested code blocks, most of the code is in the right half of the screen.')
+        points += 5
+    elif 13 <= nested:
+        risks.append('[error] Way too many nested code blocks, all of the code is off the screen.')
+        points += 8
+
+    return (points, risks)
+
+
 def inspect(filepath, meta):
     print(f'Scanning {meta.get("name")}{meta.get("extension")}')
     filepath = os.path.realpath(filepath)
@@ -156,16 +193,19 @@ def inspect(filepath, meta):
     meta['blank_lines'] = blank_lines
     assert(meta['loc'] == (meta['sloc'] + meta['blank_lines']))
 
-    meta['easy_complexity'] = compute_indentation(effective_lines)
+    meta['nested_complexity'] = nested_code_complexity(effective_lines)
     meta['decision_complexity'] = compute_decision_complexity(effective_lines)
+
+    meta['risks_points'],meta['risks'] = risk_assesment(meta)
 
     if meta.get('extension') in ['.cpp', '.cxx']:
         meta['exports'] = parse_cpp(filepath)
 
     meta['aggregate_complexity'] = sum([
-        meta.get('easy_complexity') or 1,
+        meta.get('nested_complexity') or 1,
         len(meta.get('exports', [])),
         meta.get('decision_complexity'),
+        meta.get('risks_points'),
     ])
 
     return meta['aggregate_complexity']
