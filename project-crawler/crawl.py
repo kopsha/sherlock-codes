@@ -239,7 +239,7 @@ def parse_git_repository(src_root, output=None):
         folder = os.path.dirname(filepath)
         file = os.path.basename(filepath)
         
-        file_meta = quick_look(f'{src_root}/{filepath}')
+        file_meta = quick_look(os.path.join(src_root,filepath))
 
         if not file_meta.get('is_code'):
             # we are interested only in source files
