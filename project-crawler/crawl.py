@@ -20,7 +20,7 @@ def print_stage(text):
 
 def quick_look(filepath):
     meta = {}
-
+    filepath = os.path.realpath(filepath)
     filename,ext = os.path.splitext(filepath)
     meta['name'] = os.path.basename(filename)
     meta['extension'] = ext
@@ -55,6 +55,7 @@ def quick_look(filepath):
 
 def inspect(filepath, meta):
     print(f'Scanning {meta.get("name")}{meta.get("extension")}')
+    filepath = os.path.realpath(filepath)
     with open(filepath, 'rt') as source_file:
         source_code = source_file.read()
 
@@ -115,7 +116,7 @@ def parse_git_repository(src_root, output=None):
     resolver = anytree.Resolver()
     parent = root
 
-    for filepath in sorted(git.ls_files().split(), key=lambda s : s.count(os.sep)):
+    for filepath in sorted(git.ls_files().split('\n'), key=lambda s : s.count(os.sep)):
         folder = os.path.dirname(filepath)
         file = os.path.basename(filepath)
         
