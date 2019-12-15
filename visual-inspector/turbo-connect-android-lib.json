@@ -572,6 +572,22 @@
                                                                             "name": "Bike.kt"
                                                                         },
                                                                         {
+                                                                            "value": 2,
+                                                                            "meta": {
+                                                                                "name": "BikeParameter",
+                                                                                "extension": ".kt",
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "type": "ASCII text",
+                                                                                "size": 3488,
+                                                                                "is_code": true,
+                                                                                "loc": 109,
+                                                                                "sloc": 107,
+                                                                                "blank_lines": 2,
+                                                                                "easy_complexity": 2
+                                                                            },
+                                                                            "name": "BikeParameter.kt"
+                                                                        },
+                                                                        {
                                                                             "value": 0,
                                                                             "meta": {
                                                                                 "name": "LoginCredentials",
