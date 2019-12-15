@@ -6,6 +6,7 @@ import os
 import anytree
 import anytree.exporter
 import magic
+import clang.cindex
 
 from datetime import datetime
 from git.cmd import Git
@@ -52,6 +53,22 @@ def quick_look(filepath):
 
     return meta
 
+# global for better speed
+cpp_parser = clang.cindex.Index.create()
+def parse_cpp(filepath):
+
+    def explore_tree(node):
+        if node.kind.is_declaration():
+            print(f'-> class declaration: {node.spelling} @ {node.location.line},{node.location.column}')
+        # Recurse for children of this node
+        for c in node.get_children():
+            print(f'    - {c.spelling}')
+
+
+    translation_unit = cpp_parser.parse(filepath)
+    explore_tree(translation_unit.cursor)
+
+    return {}
 
 def inspect(filepath, meta):
     print(f'Scanning {meta.get("name")}{meta.get("extension")}')
@@ -88,6 +105,9 @@ def inspect(filepath, meta):
         max_indentation = max(len(indentation.group(1)), max_indentation)
 
     meta['easy_complexity'] = max_indentation >> 2
+
+    if meta.get('extension') in ['.cpp', '.mm']:
+        meta['cpp_exports'] = parse_cpp(filepath)
 
     return meta['easy_complexity']
 
