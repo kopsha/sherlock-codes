@@ -41,7 +41,7 @@
             <option value="{{ file_name }}"> {{ file_name }} </option>
         {% endfor %}
     </select>
-    <svg width="800" height="800"></svg>
+    <div id="content"></div>
 {% endblock %}
 
 
@@ -51,6 +51,7 @@
     <script>
 
     let select = $("#select");
+    let content = $("#content");
     const BASE_URL = "{{ base_url }}";
 
     select.change(function () {
@@ -59,7 +60,19 @@
 
     select.change();
 
+    function parseSVG(s) {
+        let div= document.createElementNS('http://www.w3.org/1999/xhtml', 'div');
+        div.innerHTML= '<svg xmlns="http://www.w3.org/2000/svg">'+s+'</svg>';
+        let frag= document.createDocumentFragment();
+        while (div.firstChild.firstChild)
+            frag.appendChild(div.firstChild.firstChild);
+        return frag;
+    }
+
     function render_svg(url) {
+        let svg_tag = parseSVG('<svg width="800" height="800">');
+        content.empty();
+        content.append(svg_tag);
         let svg = d3.select("svg"),
             margin = 20,
             diameter = +svg.attr("width"),
