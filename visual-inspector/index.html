@@ -6,23 +6,15 @@
 
 {% block style %}
 <style>
-    html, body {
-        width: 100%;
+    body {
+        width: 96%;
         height: 100%;
-        padding: 8px;
+        padding: 2px;
         background: rgb(163, 245, 207);
     }
 
     .pretty-text {
-        font: 12pt "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-
-    .full-height {
-        height: 100%;
-    }
-
-    .full-width {
-        width: 100%;
+        font: 9pt "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     .node {
@@ -50,18 +42,31 @@
         pointer-events: none;
     }
 
-    #project_selector {
+    #project_selector, .palign {
         display: inline;
-        vertical-align: bottom;
         line-height: 23px;
+    }
+
+    #main {
+        display: flex;
+    }
+
+    #graphic_view {
+        width: 768px;
+        height: 768px;
+    }
+
+    #info_view {
+        background: lightblue;
+        width: 256px;
+        height: 768px;
     }
 </style>
 {% endblock %}
 
 {% block content %}
-    <div id="banner" class="full-width pretty-text">
-        <p>Watson just peeked into your code,</p>
-        <p>which one is it:
+    <div id="top_view" class="full-width pretty-text">
+        <p class="palign">Watson just peeked into your code, which one is it:
             <select id="project_selector">
                 {% for file_name in datafiles %}
                     <option value="{{ file_name }}"> {{ file_name }} </option>
@@ -69,8 +74,10 @@
             </select>
         </p>
     </div>
-    <hr>
-    <div id="content"></div>
+    <div id="main" class="full-height">
+        <div id="graphic_view"></div>
+        <div id="info_view">data will be shown here</div>
+    </div>
 {% endblock %}
 
 
@@ -80,7 +87,7 @@
     <script>
 
     let select = $("#project_selector");
-    let content = $("#content");
+    let content = $("#graphic_view");
     const BASE_URL = "{{ base_url }}";
 
     select.change(function () {
@@ -99,7 +106,7 @@
     }
 
     function render_svg(url) {
-        let svg_tag = parseSVG('<svg width="800" height="800">');
+        let svg_tag = parseSVG('<svg width="768" height="768">');
         content.empty();
         content.append(svg_tag);
         let svg = d3.select("svg"),
