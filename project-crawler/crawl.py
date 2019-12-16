@@ -247,7 +247,7 @@ def parse_git_repository(src_root, output=None):
     if not output:
         output = f'{project_name}.json'
     exporter = anytree.exporter.JsonExporter(indent=4, sort_keys=True)
-    with open(os.path.abspath(output, "wt")) as out:
+    with open(output, "wt") as out:
         exporter.write(root, out)
 
 
