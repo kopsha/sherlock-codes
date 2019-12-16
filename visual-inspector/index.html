@@ -4,47 +4,72 @@
     Sherlock Reports Page
 {% endblock %}
 
-
 {% block style %}
 <style>
+    html, body {
+        width: 100%;
+        height: 100%;
+        padding: 8px;
+        background: rgb(163, 245, 207);
+    }
+
+    .pretty-text {
+        font: 12pt "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .full-height {
+        height: 100%;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+
     .node {
-      cursor: pointer;
+        cursor: pointer;
     }
 
     .node:hover {
-      stroke: #000;
-      stroke-width: 1.5px;
+        stroke: #000;
+        stroke-width: 1.5px;
     }
 
     .node--leaf {
-      fill: white;
+        fill: white;
     }
 
     .label {
-      font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
-      text-anchor: middle;
-      text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+        font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-anchor: middle;
+        text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
     }
 
     .label,
     .node--root,
     .node--leaf {
-      pointer-events: none;
+        pointer-events: none;
     }
 
-    #select {
-        margin-left: 45%;
+    #project_selector {
+        display: inline;
+        vertical-align: bottom;
+        line-height: 23px;
     }
 </style>
 {% endblock %}
 
 {% block content %}
-    <p>hello</p>
-    <select id="select">
-        {% for file_name in datafiles %}
-            <option value="{{ file_name }}"> {{ file_name }} </option>
-        {% endfor %}
-    </select>
+    <div id="banner" class="full-width pretty-text">
+        <p>Watson just peeked into your code,</p>
+        <p>which one is it:
+            <select id="project_selector">
+                {% for file_name in datafiles %}
+                    <option value="{{ file_name }}"> {{ file_name }} </option>
+                {% endfor %}
+            </select>
+        </p>
+    </div>
+    <hr>
     <div id="content"></div>
 {% endblock %}
 
@@ -54,7 +79,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
 
-    let select = $("#select");
+    let select = $("#project_selector");
     let content = $("#content");
     const BASE_URL = "{{ base_url }}";
 
