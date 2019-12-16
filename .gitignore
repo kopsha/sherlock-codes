@@ -1,10 +1,23 @@
+.DS_Store
+Thumbs.db
+
+# tipycal python ignores
+__pycache__/
 *.py[cod]
+*$py.class
+.python-version
+
+.Python
+build/
+dist/
+sdist/
+var/
+
+.idea/
 
 .env
 *.log
-.DS_Store
-.python-version
-.idea/
 
-visual-inspector/html/
+# project specific ignore list
 common/settings/__init__.py
+visual-inspector/html/
