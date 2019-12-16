@@ -16,13 +16,13 @@ def render_inspector_page(data_folder, out_folder):
 
     env = jinja2.Environment(loader=jinja2.FileSystemLoader('./'))
     main_page = env.get_template('index.html')
-
     output = os.path.join(out_folder, main_page.name)
+
     print(f'Writing {output}')
     with open(output, "wt") as out:
         out.write(main_page.render(datafiles=datafiles))
 
-    print_stage('Copying data files')
+    print('Copying data files')
     for f in datafiles:
         src = os.path.join(data_folder, f)
         dst = os.path.join(out_folder, f)
