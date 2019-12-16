@@ -128,6 +128,12 @@ def compute_decision_complexity(effective_lines):
 
 
 def risk_assesment(meta):
+
+    def print_risks(points, risks):
+        if (risks):
+            for r in risks: print(f'*** {r}')
+            print(f'*** risk points: {points}')
+
     risks = []
     points = 0
 
@@ -160,6 +166,8 @@ def risk_assesment(meta):
     elif 13 <= nested:
         risks.append('[error] Way too many nested code blocks, all of the code is off the screen.')
         points += 8
+
+    print_risks(points, risks)
 
     return (points, risks)
 
