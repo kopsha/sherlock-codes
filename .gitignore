@@ -7,3 +7,4 @@
 .idea/
 
 visual-inspector/html/
+common/settings/__init__.py
