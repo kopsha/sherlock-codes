@@ -1,0 +1,2084 @@
+{
+    "children": [
+        {
+            "meta": {
+                "aggregate_complexity": 17,
+                "blank_lines": 24,
+                "decision_complexity": 16,
+                "extension": ".bat",
+                "is_code": true,
+                "loc": 100,
+                "mime": "text/x-msdos-batch; charset=us-ascii",
+                "name": "gradlew",
+                "nested_complexity": 0,
+                "risks": [],
+                "risks_points": 0,
+                "size": 2942,
+                "sloc": 76,
+                "type": "DOS batch file, ASCII text, with CRLF line terminators"
+            },
+            "name": "gradlew.bat",
+            "value": 17
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "meta": {
+                                                "aggregate_complexity": 2,
+                                                "blank_lines": 2,
+                                                "decision_complexity": 0,
+                                                "extension": ".kt",
+                                                "is_code": true,
+                                                "loc": 16,
+                                                "mime": "text/plain; charset=us-ascii",
+                                                "name": "Config",
+                                                "nested_complexity": 2,
+                                                "risks": [],
+                                                "risks_points": 0,
+                                                "size": 534,
+                                                "sloc": 14,
+                                                "type": "ASCII text"
+                                            },
+                                            "name": "Config.kt",
+                                            "value": 2
+                                        },
+                                        {
+                                            "meta": {
+                                                "aggregate_complexity": 4,
+                                                "blank_lines": 22,
+                                                "decision_complexity": 0,
+                                                "extension": ".kt",
+                                                "is_code": true,
+                                                "loc": 104,
+                                                "mime": "text/plain; charset=us-ascii",
+                                                "name": "Depends",
+                                                "nested_complexity": 4,
+                                                "risks": [],
+                                                "risks_points": 0,
+                                                "size": 3339,
+                                                "sloc": 82,
+                                                "type": "ASCII text"
+                                            },
+                                            "name": "Depends.kt",
+                                            "value": 4
+                                        },
+                                        {
+                                            "meta": {
+                                                "aggregate_complexity": 3,
+                                                "blank_lines": 64,
+                                                "decision_complexity": 0,
+                                                "extension": ".kt",
+                                                "is_code": true,
+                                                "loc": 346,
+                                                "mime": "text/plain; charset=us-ascii",
+                                                "name": "Libs",
+                                                "nested_complexity": 3,
+                                                "risks": [],
+                                                "risks_points": 0,
+                                                "size": 11160,
+                                                "sloc": 282,
+                                                "type": "ASCII text"
+                                            },
+                                            "name": "Libs.kt",
+                                            "value": 3
+                                        },
+                                        {
+                                            "meta": {
+                                                "aggregate_complexity": 4,
+                                                "blank_lines": 43,
+                                                "decision_complexity": 1,
+                                                "extension": ".kt",
+                                                "is_code": true,
+                                                "loc": 111,
+                                                "mime": "text/plain; charset=us-ascii",
+                                                "name": "Versions",
+                                                "nested_complexity": 3,
+                                                "risks": [],
+                                                "risks_points": 0,
+                                                "size": 3096,
+                                                "sloc": 68,
+                                                "type": "ASCII text"
+                                            },
+                                            "name": "Versions.kt",
+                                            "value": 4
+                                        }
+                                    ],
+                                    "name": "kotlin"
+                                }
+                            ],
+                            "name": "main"
+                        }
+                    ],
+                    "name": "src"
+                }
+            ],
+            "name": "buildSrc"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "meta": {
+                                                "aggregate_complexity": 11,
+                                                "blank_lines": 27,
+                                                "decision_complexity": 3,
+                                                "exports": [
+                                                    "function jByteArrayToStdVector",
+                                                    "function jstringToStdString",
+                                                    "function getParameterId",
+                                                    "function corePacketToByteArray"
+                                                ],
+                                                "extension": ".cpp",
+                                                "is_code": true,
+                                                "loc": 85,
+                                                "mime": "text/x-c; charset=us-ascii",
+                                                "name": "jni-utils",
+                                                "nested_complexity": 4,
+                                                "risks": [],
+                                                "risks_points": 0,
+                                                "size": 2951,
+                                                "sloc": 58,
+                                                "type": "C source, ASCII text"
+                                            },
+                                            "name": "jni-utils.cpp",
+                                            "value": 11
+                                        },
+                                        {
+                                            "meta": {
+                                                "aggregate_complexity": 1,
+                                                "blank_lines": 12,
+                                                "decision_complexity": 0,
+                                                "extension": ".h",
+                                                "is_code": true,
+                                                "loc": 17,
+                                                "mime": "text/x-c; charset=us-ascii",
+                                                "name": "jni-utils",
+                                                "nested_complexity": 0,
+                                                "risks": [],
+                                                "risks_points": 0,
+                                                "size": 464,
+                                                "sloc": 5,
+                                                "type": "C source, ASCII text"
+                                            },
+                                            "name": "jni-utils.h",
+                                            "value": 1
+                                        },
+                                        {
+                                            "meta": {
+                                                "aggregate_complexity": 30,
+                                                "blank_lines": 54,
+                                                "decision_complexity": 7,
+                                                "exports": [],
+                                                "extension": ".cpp",
+                                                "is_code": true,
+                                                "loc": 224,
+                                                "mime": "text/x-c; charset=us-ascii",
+                                                "name": "native-lib",
+                                                "nested_complexity": 15,
+                                                "risks": [
+                                                    "[error] Way too many nested code blocks, all of the code is off the screen."
+                                                ],
+                                                "risks_points": 8,
+                                                "size": 6354,
+                                                "sloc": 170,
+                                                "type": "C source, ASCII text"
+                                            },
+                                            "name": "native-lib.cpp",
+                                            "value": 30
+                                        }
+                                    ],
+                                    "name": "cpp"
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "children": [
+                                                        {
+                                                            "children": [
+                                                                {
+                                                                    "meta": {
+                                                                        "aggregate_complexity": 1,
+                                                                        "blank_lines": 7,
+                                                                        "decision_complexity": 0,
+                                                                        "extension": ".kt",
+                                                                        "is_code": true,
+                                                                        "loc": 32,
+                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                        "name": "ITurboConnect",
+                                                                        "nested_complexity": 1,
+                                                                        "risks": [],
+                                                                        "risks_points": 0,
+                                                                        "size": 1119,
+                                                                        "sloc": 25,
+                                                                        "type": "ASCII text"
+                                                                    },
+                                                                    "name": "ITurboConnect.kt",
+                                                                    "value": 1
+                                                                },
+                                                                {
+                                                                    "meta": {
+                                                                        "aggregate_complexity": 19,
+                                                                        "blank_lines": 60,
+                                                                        "decision_complexity": 10,
+                                                                        "extension": ".kt",
+                                                                        "is_code": true,
+                                                                        "loc": 384,
+                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                        "name": "TurboConnect",
+                                                                        "nested_complexity": 7,
+                                                                        "risks": [
+                                                                            "[info] Arguably many lines of code, this may be ok for now."
+                                                                        ],
+                                                                        "risks_points": 2,
+                                                                        "size": 14046,
+                                                                        "sloc": 324,
+                                                                        "type": "ASCII text"
+                                                                    },
+                                                                    "name": "TurboConnect.kt",
+                                                                    "value": 19
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 3,
+                                                                                "blank_lines": 6,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 29,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "BikeParameterDelegate",
+                                                                                "nested_complexity": 3,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 955,
+                                                                                "sloc": 23,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "BikeParameterDelegate.kt",
+                                                                            "value": 3
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 14,
+                                                                                "blank_lines": 13,
+                                                                                "decision_complexity": 7,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 92,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "BluetoothChannel",
+                                                                                "nested_complexity": 7,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 3199,
+                                                                                "sloc": 79,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "BluetoothChannel.kt",
+                                                                            "value": 14
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 7,
+                                                                                "blank_lines": 8,
+                                                                                "decision_complexity": 4,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 50,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "BluetoothConnectionDelegate",
+                                                                                "nested_complexity": 3,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 1410,
+                                                                                "sloc": 42,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "BluetoothConnectionDelegate.kt",
+                                                                            "value": 7
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 10,
+                                                                                "blank_lines": 9,
+                                                                                "decision_complexity": 5,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 56,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "BluetoothDevice",
+                                                                                "nested_complexity": 5,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 1768,
+                                                                                "sloc": 47,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "BluetoothDevice.kt",
+                                                                            "value": 10
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 3,
+                                                                                "blank_lines": 7,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 42,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "BluetoothDeviceDelegate",
+                                                                                "nested_complexity": 3,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 1082,
+                                                                                "sloc": 35,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "BluetoothDeviceDelegate.kt",
+                                                                            "value": 3
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 21,
+                                                                                "blank_lines": 29,
+                                                                                "decision_complexity": 14,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 199,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "BluetoothGattCallback",
+                                                                                "nested_complexity": 7,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 7594,
+                                                                                "sloc": 170,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "BluetoothGattCallback.kt",
+                                                                            "value": 21
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 43,
+                                                                                "blank_lines": 79,
+                                                                                "decision_complexity": 26,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 525,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "BluetoothHandler",
+                                                                                "nested_complexity": 10,
+                                                                                "risks": [
+                                                                                    "[info] Arguably many lines of code, this may be ok for now.",
+                                                                                    "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
+                                                                                ],
+                                                                                "risks_points": 7,
+                                                                                "size": 18416,
+                                                                                "sloc": 446,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "BluetoothHandler.kt",
+                                                                            "value": 43
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 7,
+                                                                                "blank_lines": 10,
+                                                                                "decision_complexity": 4,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 61,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "BluetoothScannerDelegate",
+                                                                                "nested_complexity": 3,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 1529,
+                                                                                "sloc": 51,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "BluetoothScannerDelegate.kt",
+                                                                            "value": 7
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 3,
+                                                                                "blank_lines": 6,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 39,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "KnownBikesDelegate",
+                                                                                "nested_complexity": 3,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 1067,
+                                                                                "sloc": 33,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "KnownBikesDelegate.kt",
+                                                                            "value": 3
+                                                                        }
+                                                                    ],
+                                                                    "name": "bluetooth"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 1,
+                                                                                "blank_lines": 5,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 27,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "CoroutineContextProvider",
+                                                                                "nested_complexity": 1,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 940,
+                                                                                "sloc": 22,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "CoroutineContextProvider.kt",
+                                                                            "value": 1
+                                                                        }
+                                                                    ],
+                                                                    "name": "coroutines"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 3,
+                                                                                "blank_lines": 19,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 72,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "CoreJni",
+                                                                                "nested_complexity": 3,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 2160,
+                                                                                "sloc": 53,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "CoreJni.kt",
+                                                                            "value": 3
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 1,
+                                                                                "blank_lines": 5,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 16,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "IProtocol",
+                                                                                "nested_complexity": 1,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 496,
+                                                                                "sloc": 11,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "IProtocol.kt",
+                                                                            "value": 1
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 1,
+                                                                                "blank_lines": 2,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 12,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "ITurboCore",
+                                                                                "nested_complexity": 1,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 453,
+                                                                                "sloc": 10,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "ITurboCore.kt",
+                                                                            "value": 1
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 4,
+                                                                                "blank_lines": 7,
+                                                                                "decision_complexity": 1,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 32,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "IdentificationSequence",
+                                                                                "nested_complexity": 3,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 931,
+                                                                                "sloc": 25,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "IdentificationSequence.kt",
+                                                                            "value": 4
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 3,
+                                                                                "blank_lines": 8,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 42,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "Protocol",
+                                                                                "nested_complexity": 3,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 1387,
+                                                                                "sloc": 34,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "Protocol.kt",
+                                                                            "value": 3
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 2,
+                                                                                "blank_lines": 6,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 26,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "TurboCore",
+                                                                                "nested_complexity": 2,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 819,
+                                                                                "sloc": 20,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "TurboCore.kt",
+                                                                            "value": 2
+                                                                        }
+                                                                    ],
+                                                                    "name": "jni"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 4,
+                                                                                "blank_lines": 19,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 126,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "CoreModule",
+                                                                                "nested_complexity": 4,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 3595,
+                                                                                "sloc": 107,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "CoreModule.kt",
+                                                                            "value": 4
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 9,
+                                                                                "blank_lines": 19,
+                                                                                "decision_complexity": 4,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 169,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "NetworkModule",
+                                                                                "nested_complexity": 5,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 5542,
+                                                                                "sloc": 150,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "NetworkModule.kt",
+                                                                            "value": 9
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 1,
+                                                                                "blank_lines": 3,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 10,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "TurboSDKKoinComponent",
+                                                                                "nested_complexity": 1,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 298,
+                                                                                "sloc": 7,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "TurboSDKKoinComponent.kt",
+                                                                            "value": 1
+                                                                        }
+                                                                    ],
+                                                                    "name": "koin"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 5,
+                                                                                "blank_lines": 19,
+                                                                                "decision_complexity": 2,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 96,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "FileLoggingTree",
+                                                                                "nested_complexity": 3,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 3760,
+                                                                                "sloc": 77,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "FileLoggingTree.kt",
+                                                                            "value": 5
+                                                                        }
+                                                                    ],
+                                                                    "name": "log"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 8,
+                                                                                "blank_lines": 9,
+                                                                                "decision_complexity": 6,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 58,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "Bike",
+                                                                                "nested_complexity": 2,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 1447,
+                                                                                "sloc": 49,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "Bike.kt",
+                                                                            "value": 8
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 3,
+                                                                                "blank_lines": 2,
+                                                                                "decision_complexity": 1,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 109,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "BikeParameter",
+                                                                                "nested_complexity": 2,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 3488,
+                                                                                "sloc": 107,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "BikeParameter.kt",
+                                                                            "value": 3
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 1,
+                                                                                "blank_lines": 1,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 3,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "LoginCredentials",
+                                                                                "nested_complexity": 0,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 116,
+                                                                                "sloc": 2,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "LoginCredentials.kt",
+                                                                            "value": 1
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 1,
+                                                                                "blank_lines": 2,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 9,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "NetworkParams",
+                                                                                "nested_complexity": 1,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 255,
+                                                                                "sloc": 7,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "NetworkParams.kt",
+                                                                            "value": 1
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 1,
+                                                                                "blank_lines": 2,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 18,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "ParameterInfo",
+                                                                                "nested_complexity": 1,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 478,
+                                                                                "sloc": 16,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "ParameterInfo.kt",
+                                                                            "value": 1
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 2,
+                                                                                "blank_lines": 3,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 21,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "ParameterValue",
+                                                                                "nested_complexity": 2,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 512,
+                                                                                "sloc": 18,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "ParameterValue.kt",
+                                                                            "value": 2
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 7,
+                                                                                "blank_lines": 13,
+                                                                                "decision_complexity": 4,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 76,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "Result",
+                                                                                "nested_complexity": 3,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 1751,
+                                                                                "sloc": 63,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "Result.kt",
+                                                                            "value": 7
+                                                                        },
+                                                                        {
+                                                                            "children": [
+                                                                                {
+                                                                                    "meta": {
+                                                                                        "aggregate_complexity": 1,
+                                                                                        "blank_lines": 7,
+                                                                                        "decision_complexity": 0,
+                                                                                        "extension": ".kt",
+                                                                                        "is_code": true,
+                                                                                        "loc": 27,
+                                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                                        "name": "OauthTokenResponse",
+                                                                                        "nested_complexity": 1,
+                                                                                        "risks": [],
+                                                                                        "risks_points": 0,
+                                                                                        "size": 682,
+                                                                                        "sloc": 20,
+                                                                                        "type": "ASCII text"
+                                                                                    },
+                                                                                    "name": "OauthTokenResponse.kt",
+                                                                                    "value": 1
+                                                                                }
+                                                                            ],
+                                                                            "name": "remote"
+                                                                        }
+                                                                    ],
+                                                                    "name": "model"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 2,
+                                                                                "blank_lines": 8,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 51,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "TurboConnectInitProvider",
+                                                                                "nested_complexity": 2,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 1254,
+                                                                                "sloc": 43,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "TurboConnectInitProvider.kt",
+                                                                            "value": 2
+                                                                        }
+                                                                    ],
+                                                                    "name": "provider"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 4,
+                                                                                "blank_lines": 11,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 74,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "KnownBikesRepository",
+                                                                                "nested_complexity": 4,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 2058,
+                                                                                "sloc": 63,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "KnownBikesRepository.kt",
+                                                                            "value": 4
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 8,
+                                                                                "blank_lines": 14,
+                                                                                "decision_complexity": 2,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 86,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "TokenRepository",
+                                                                                "nested_complexity": 6,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 2722,
+                                                                                "sloc": 72,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "TokenRepository.kt",
+                                                                            "value": 8
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 1,
+                                                                                "blank_lines": 4,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 9,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "UserRepository",
+                                                                                "nested_complexity": 1,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 282,
+                                                                                "sloc": 5,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "UserRepository.kt",
+                                                                            "value": 1
+                                                                        },
+                                                                        {
+                                                                            "children": [
+                                                                                {
+                                                                                    "meta": {
+                                                                                        "aggregate_complexity": 5,
+                                                                                        "blank_lines": 7,
+                                                                                        "decision_complexity": 0,
+                                                                                        "extension": ".kt",
+                                                                                        "is_code": true,
+                                                                                        "loc": 42,
+                                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                                        "name": "LocalFileDataSource",
+                                                                                        "nested_complexity": 5,
+                                                                                        "risks": [],
+                                                                                        "risks_points": 0,
+                                                                                        "size": 1260,
+                                                                                        "sloc": 35,
+                                                                                        "type": "ASCII text"
+                                                                                    },
+                                                                                    "name": "LocalFileDataSource.kt",
+                                                                                    "value": 5
+                                                                                },
+                                                                                {
+                                                                                    "meta": {
+                                                                                        "aggregate_complexity": 4,
+                                                                                        "blank_lines": 16,
+                                                                                        "decision_complexity": 0,
+                                                                                        "extension": ".kt",
+                                                                                        "is_code": true,
+                                                                                        "loc": 85,
+                                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                                        "name": "TokenLocalDataSource",
+                                                                                        "nested_complexity": 4,
+                                                                                        "risks": [],
+                                                                                        "risks_points": 0,
+                                                                                        "size": 2508,
+                                                                                        "sloc": 69,
+                                                                                        "type": "ASCII text"
+                                                                                    },
+                                                                                    "name": "TokenLocalDataSource.kt",
+                                                                                    "value": 4
+                                                                                },
+                                                                                {
+                                                                                    "meta": {
+                                                                                        "aggregate_complexity": 3,
+                                                                                        "blank_lines": 3,
+                                                                                        "decision_complexity": 0,
+                                                                                        "extension": ".kt",
+                                                                                        "is_code": true,
+                                                                                        "loc": 23,
+                                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                                        "name": "TokenRemoteDataSource",
+                                                                                        "nested_complexity": 3,
+                                                                                        "risks": [],
+                                                                                        "risks_points": 0,
+                                                                                        "size": 881,
+                                                                                        "sloc": 20,
+                                                                                        "type": "ASCII text"
+                                                                                    },
+                                                                                    "name": "TokenRemoteDataSource.kt",
+                                                                                    "value": 3
+                                                                                }
+                                                                            ],
+                                                                            "name": "datasource"
+                                                                        }
+                                                                    ],
+                                                                    "name": "repository"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 5,
+                                                                                "blank_lines": 12,
+                                                                                "decision_complexity": 1,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 82,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "NotificationHelper",
+                                                                                "nested_complexity": 4,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 2761,
+                                                                                "sloc": 70,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "NotificationHelper.kt",
+                                                                            "value": 5
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 13,
+                                                                                "blank_lines": 46,
+                                                                                "decision_complexity": 8,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 248,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "TurboConnectService",
+                                                                                "nested_complexity": 5,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 8047,
+                                                                                "sloc": 202,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "TurboConnectService.kt",
+                                                                            "value": 13
+                                                                        },
+                                                                        {
+                                                                            "children": [
+                                                                                {
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "meta": {
+                                                                                                "aggregate_complexity": 6,
+                                                                                                "blank_lines": 5,
+                                                                                                "decision_complexity": 1,
+                                                                                                "extension": ".kt",
+                                                                                                "is_code": true,
+                                                                                                "loc": 42,
+                                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                                "name": "ExpireTokenAuthenticator",
+                                                                                                "nested_complexity": 5,
+                                                                                                "risks": [],
+                                                                                                "risks_points": 0,
+                                                                                                "size": 1315,
+                                                                                                "sloc": 37,
+                                                                                                "type": "ASCII text"
+                                                                                            },
+                                                                                            "name": "ExpireTokenAuthenticator.kt",
+                                                                                            "value": 6
+                                                                                        },
+                                                                                        {
+                                                                                            "meta": {
+                                                                                                "aggregate_complexity": 2,
+                                                                                                "blank_lines": 4,
+                                                                                                "decision_complexity": 0,
+                                                                                                "extension": ".kt",
+                                                                                                "is_code": true,
+                                                                                                "loc": 24,
+                                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                                "name": "OauthService",
+                                                                                                "nested_complexity": 2,
+                                                                                                "risks": [],
+                                                                                                "risks_points": 0,
+                                                                                                "size": 697,
+                                                                                                "sloc": 20,
+                                                                                                "type": "ASCII text"
+                                                                                            },
+                                                                                            "name": "OauthService.kt",
+                                                                                            "value": 2
+                                                                                        }
+                                                                                    ],
+                                                                                    "name": "oauth"
+                                                                                }
+                                                                            ],
+                                                                            "name": "remote"
+                                                                        }
+                                                                    ],
+                                                                    "name": "service"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 2,
+                                                                                "blank_lines": 4,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 24,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "BikeParameterSerializer",
+                                                                                "nested_complexity": 2,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 847,
+                                                                                "sloc": 20,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "BikeParameterSerializer.kt",
+                                                                            "value": 2
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 11,
+                                                                                "blank_lines": 9,
+                                                                                "decision_complexity": 7,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 55,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "EndpointSettings",
+                                                                                "nested_complexity": 4,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 1802,
+                                                                                "sloc": 46,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "EndpointSettings.kt",
+                                                                            "value": 11
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 14,
+                                                                                "blank_lines": 11,
+                                                                                "decision_complexity": 11,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 99,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "Extensions",
+                                                                                "nested_complexity": 3,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 3515,
+                                                                                "sloc": 88,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "Extensions.kt",
+                                                                            "value": 14
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 8,
+                                                                                "blank_lines": 7,
+                                                                                "decision_complexity": 4,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 61,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "FileHelper",
+                                                                                "nested_complexity": 4,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 2268,
+                                                                                "sloc": 54,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "FileHelper.kt",
+                                                                            "value": 8
+                                                                        }
+                                                                    ],
+                                                                    "name": "util"
+                                                                }
+                                                            ],
+                                                            "name": "turboconnect"
+                                                        }
+                                                    ],
+                                                    "name": "specialized"
+                                                }
+                                            ],
+                                            "name": "com"
+                                        }
+                                    ],
+                                    "name": "java"
+                                }
+                            ],
+                            "name": "main"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "children": [
+                                                        {
+                                                            "children": [
+                                                                {
+                                                                    "meta": {
+                                                                        "aggregate_complexity": 3,
+                                                                        "blank_lines": 4,
+                                                                        "decision_complexity": 0,
+                                                                        "extension": ".kt",
+                                                                        "is_code": true,
+                                                                        "loc": 17,
+                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                        "name": "MockResponseFileReader",
+                                                                        "nested_complexity": 3,
+                                                                        "risks": [],
+                                                                        "risks_points": 0,
+                                                                        "size": 361,
+                                                                        "sloc": 13,
+                                                                        "type": "ASCII text"
+                                                                    },
+                                                                    "name": "MockResponseFileReader.kt",
+                                                                    "value": 3
+                                                                },
+                                                                {
+                                                                    "meta": {
+                                                                        "aggregate_complexity": 11,
+                                                                        "blank_lines": 153,
+                                                                        "decision_complexity": 5,
+                                                                        "extension": ".kt",
+                                                                        "is_code": true,
+                                                                        "loc": 457,
+                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                        "name": "TurboConnectTest",
+                                                                        "nested_complexity": 4,
+                                                                        "risks": [
+                                                                            "[info] Arguably many lines of code, this may be ok for now."
+                                                                        ],
+                                                                        "risks_points": 2,
+                                                                        "size": 14975,
+                                                                        "sloc": 304,
+                                                                        "type": "ASCII text"
+                                                                    },
+                                                                    "name": "TurboConnectTest.kt",
+                                                                    "value": 11
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 8,
+                                                                                "blank_lines": 34,
+                                                                                "decision_complexity": 3,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 237,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "BluetoothHandlerTest",
+                                                                                "nested_complexity": 5,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 9352,
+                                                                                "sloc": 203,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "BluetoothHandlerTest.kt",
+                                                                            "value": 8
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 15,
+                                                                                "blank_lines": 19,
+                                                                                "decision_complexity": 8,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 149,
+                                                                                "mime": "text/x-c++; charset=us-ascii",
+                                                                                "name": "ShadowBluetoothLEAdapter",
+                                                                                "nested_complexity": 7,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 4438,
+                                                                                "sloc": 130,
+                                                                                "type": "C++ source, ASCII text"
+                                                                            },
+                                                                            "name": "ShadowBluetoothLEAdapter.kt",
+                                                                            "value": 15
+                                                                        }
+                                                                    ],
+                                                                    "name": "bluetooth"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 1,
+                                                                                "blank_lines": 2,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 10,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "TestContextProvider",
+                                                                                "nested_complexity": 1,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 394,
+                                                                                "sloc": 8,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "TestContextProvider.kt",
+                                                                            "value": 1
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 3,
+                                                                                "blank_lines": 6,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 33,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "TestCoroutineRule",
+                                                                                "nested_complexity": 3,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 1179,
+                                                                                "sloc": 27,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "TestCoroutineRule.kt",
+                                                                            "value": 3
+                                                                        }
+                                                                    ],
+                                                                    "name": "coroutines"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 5,
+                                                                                "blank_lines": 22,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 146,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "TestModules",
+                                                                                "nested_complexity": 5,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 3897,
+                                                                                "sloc": 124,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "TestModules.kt",
+                                                                            "value": 5
+                                                                        }
+                                                                    ],
+                                                                    "name": "koin"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 5,
+                                                                                "blank_lines": 34,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 232,
+                                                                                "mime": "text/x-c++; charset=us-ascii",
+                                                                                "name": "KnownBikesRepositoryTest",
+                                                                                "nested_complexity": 5,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 8252,
+                                                                                "sloc": 198,
+                                                                                "type": "C++ source, ASCII text"
+                                                                            },
+                                                                            "name": "KnownBikesRepositoryTest.kt",
+                                                                            "value": 5
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 6,
+                                                                                "blank_lines": 48,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 186,
+                                                                                "mime": "text/x-c++; charset=us-ascii",
+                                                                                "name": "TokenRepositoryTest",
+                                                                                "nested_complexity": 6,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 6554,
+                                                                                "sloc": 138,
+                                                                                "type": "C++ source, ASCII text"
+                                                                            },
+                                                                            "name": "TokenRepositoryTest.kt",
+                                                                            "value": 6
+                                                                        },
+                                                                        {
+                                                                            "children": [
+                                                                                {
+                                                                                    "meta": {
+                                                                                        "aggregate_complexity": 4,
+                                                                                        "blank_lines": 15,
+                                                                                        "decision_complexity": 0,
+                                                                                        "extension": ".kt",
+                                                                                        "is_code": true,
+                                                                                        "loc": 83,
+                                                                                        "mime": "text/x-c++; charset=us-ascii",
+                                                                                        "name": "LocalFileDataSourceTest",
+                                                                                        "nested_complexity": 4,
+                                                                                        "risks": [],
+                                                                                        "risks_points": 0,
+                                                                                        "size": 2879,
+                                                                                        "sloc": 68,
+                                                                                        "type": "C++ source, ASCII text"
+                                                                                    },
+                                                                                    "name": "LocalFileDataSourceTest.kt",
+                                                                                    "value": 4
+                                                                                },
+                                                                                {
+                                                                                    "meta": {
+                                                                                        "aggregate_complexity": 6,
+                                                                                        "blank_lines": 12,
+                                                                                        "decision_complexity": 1,
+                                                                                        "extension": ".kt",
+                                                                                        "is_code": true,
+                                                                                        "loc": 80,
+                                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                                        "name": "TokenRemoteDataSourceTest",
+                                                                                        "nested_complexity": 5,
+                                                                                        "risks": [],
+                                                                                        "risks_points": 0,
+                                                                                        "size": 2709,
+                                                                                        "sloc": 68,
+                                                                                        "type": "ASCII text"
+                                                                                    },
+                                                                                    "name": "TokenRemoteDataSourceTest.kt",
+                                                                                    "value": 6
+                                                                                }
+                                                                            ],
+                                                                            "name": "datasource"
+                                                                        }
+                                                                    ],
+                                                                    "name": "repository"
+                                                                }
+                                                            ],
+                                                            "name": "turboconnect"
+                                                        }
+                                                    ],
+                                                    "name": "specialized"
+                                                }
+                                            ],
+                                            "name": "com"
+                                        }
+                                    ],
+                                    "name": "java"
+                                }
+                            ],
+                            "name": "test"
+                        }
+                    ],
+                    "name": "src"
+                }
+            ],
+            "name": "lib"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "children": [
+                                                        {
+                                                            "children": [
+                                                                {
+                                                                    "meta": {
+                                                                        "aggregate_complexity": 1,
+                                                                        "blank_lines": 2,
+                                                                        "decision_complexity": 0,
+                                                                        "extension": ".kt",
+                                                                        "is_code": true,
+                                                                        "loc": 10,
+                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                        "name": "OnBikeClickListener",
+                                                                        "nested_complexity": 1,
+                                                                        "risks": [],
+                                                                        "risks_points": 0,
+                                                                        "size": 273,
+                                                                        "sloc": 8,
+                                                                        "type": "ASCII text"
+                                                                    },
+                                                                    "name": "OnBikeClickListener.kt",
+                                                                    "value": 1
+                                                                },
+                                                                {
+                                                                    "meta": {
+                                                                        "aggregate_complexity": 2,
+                                                                        "blank_lines": 2,
+                                                                        "decision_complexity": 0,
+                                                                        "extension": ".kt",
+                                                                        "is_code": true,
+                                                                        "loc": 11,
+                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                        "name": "SampleApplication",
+                                                                        "nested_complexity": 2,
+                                                                        "risks": [],
+                                                                        "risks_points": 0,
+                                                                        "size": 234,
+                                                                        "sloc": 9,
+                                                                        "type": "ASCII text"
+                                                                    },
+                                                                    "name": "SampleApplication.kt",
+                                                                    "value": 2
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 2,
+                                                                                "blank_lines": 1,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 8,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "Section",
+                                                                                "nested_complexity": 2,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 203,
+                                                                                "sloc": 7,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "Section.kt",
+                                                                            "value": 2
+                                                                        }
+                                                                    ],
+                                                                    "name": "model"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 4,
+                                                                                "blank_lines": 4,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 17,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "EmailValidator",
+                                                                                "nested_complexity": 4,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 516,
+                                                                                "sloc": 13,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "EmailValidator.kt",
+                                                                            "value": 4
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 4,
+                                                                                "blank_lines": 4,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 20,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "PasswordValidator",
+                                                                                "nested_complexity": 4,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 566,
+                                                                                "sloc": 16,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "PasswordValidator.kt",
+                                                                            "value": 4
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 1,
+                                                                                "blank_lines": 1,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 5,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "Validator",
+                                                                                "nested_complexity": 1,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 111,
+                                                                                "sloc": 4,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "Validator.kt",
+                                                                            "value": 1
+                                                                        }
+                                                                    ],
+                                                                    "name": "validators"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 4,
+                                                                                "blank_lines": 5,
+                                                                                "decision_complexity": 1,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 35,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "LoginActivity",
+                                                                                "nested_complexity": 3,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 1089,
+                                                                                "sloc": 30,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "LoginActivity.kt",
+                                                                            "value": 4
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 43,
+                                                                                "blank_lines": 72,
+                                                                                "decision_complexity": 28,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 547,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "MainActivity",
+                                                                                "nested_complexity": 8,
+                                                                                "risks": [
+                                                                                    "[info] Arguably many lines of code, this may be ok for now.",
+                                                                                    "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
+                                                                                ],
+                                                                                "risks_points": 7,
+                                                                                "size": 18988,
+                                                                                "sloc": 475,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "MainActivity.kt",
+                                                                            "value": 43
+                                                                        },
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 9,
+                                                                                "blank_lines": 16,
+                                                                                "decision_complexity": 3,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 107,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "ParametersActivity",
+                                                                                "nested_complexity": 6,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 3979,
+                                                                                "sloc": 91,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "ParametersActivity.kt",
+                                                                            "value": 9
+                                                                        },
+                                                                        {
+                                                                            "children": [
+                                                                                {
+                                                                                    "meta": {
+                                                                                        "aggregate_complexity": 8,
+                                                                                        "blank_lines": 22,
+                                                                                        "decision_complexity": 4,
+                                                                                        "extension": ".kt",
+                                                                                        "is_code": true,
+                                                                                        "loc": 132,
+                                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                                        "name": "BikeAdapter",
+                                                                                        "nested_complexity": 4,
+                                                                                        "risks": [],
+                                                                                        "risks_points": 0,
+                                                                                        "size": 3865,
+                                                                                        "sloc": 110,
+                                                                                        "type": "ASCII text"
+                                                                                    },
+                                                                                    "name": "BikeAdapter.kt",
+                                                                                    "value": 8
+                                                                                },
+                                                                                {
+                                                                                    "meta": {
+                                                                                        "aggregate_complexity": 8,
+                                                                                        "blank_lines": 9,
+                                                                                        "decision_complexity": 4,
+                                                                                        "extension": ".kt",
+                                                                                        "is_code": true,
+                                                                                        "loc": 71,
+                                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                                        "name": "BikeViewHolder",
+                                                                                        "nested_complexity": 4,
+                                                                                        "risks": [],
+                                                                                        "risks_points": 0,
+                                                                                        "size": 3305,
+                                                                                        "sloc": 62,
+                                                                                        "type": "ASCII text"
+                                                                                    },
+                                                                                    "name": "BikeViewHolder.kt",
+                                                                                    "value": 8
+                                                                                },
+                                                                                {
+                                                                                    "meta": {
+                                                                                        "aggregate_complexity": 2,
+                                                                                        "blank_lines": 4,
+                                                                                        "decision_complexity": 0,
+                                                                                        "extension": ".kt",
+                                                                                        "is_code": true,
+                                                                                        "loc": 23,
+                                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                                        "name": "KnownBikeViewHolder",
+                                                                                        "nested_complexity": 2,
+                                                                                        "risks": [],
+                                                                                        "risks_points": 0,
+                                                                                        "size": 786,
+                                                                                        "sloc": 19,
+                                                                                        "type": "ASCII text"
+                                                                                    },
+                                                                                    "name": "KnownBikeViewHolder.kt",
+                                                                                    "value": 2
+                                                                                },
+                                                                                {
+                                                                                    "meta": {
+                                                                                        "aggregate_complexity": 10,
+                                                                                        "blank_lines": 27,
+                                                                                        "decision_complexity": 4,
+                                                                                        "extension": ".kt",
+                                                                                        "is_code": true,
+                                                                                        "loc": 162,
+                                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                                        "name": "SectionAdapter",
+                                                                                        "nested_complexity": 6,
+                                                                                        "risks": [],
+                                                                                        "risks_points": 0,
+                                                                                        "size": 5328,
+                                                                                        "sloc": 135,
+                                                                                        "type": "ASCII text"
+                                                                                    },
+                                                                                    "name": "SectionAdapter.kt",
+                                                                                    "value": 10
+                                                                                },
+                                                                                {
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "meta": {
+                                                                                                "aggregate_complexity": 17,
+                                                                                                "blank_lines": 25,
+                                                                                                "decision_complexity": 12,
+                                                                                                "extension": ".kt",
+                                                                                                "is_code": true,
+                                                                                                "loc": 205,
+                                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                                "name": "AvailableParametersAdapter",
+                                                                                                "nested_complexity": 5,
+                                                                                                "risks": [],
+                                                                                                "risks_points": 0,
+                                                                                                "size": 6779,
+                                                                                                "sloc": 180,
+                                                                                                "type": "ASCII text"
+                                                                                            },
+                                                                                            "name": "AvailableParametersAdapter.kt",
+                                                                                            "value": 17
+                                                                                        },
+                                                                                        {
+                                                                                            "meta": {
+                                                                                                "aggregate_complexity": 15,
+                                                                                                "blank_lines": 11,
+                                                                                                "decision_complexity": 10,
+                                                                                                "extension": ".kt",
+                                                                                                "is_code": true,
+                                                                                                "loc": 132,
+                                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                                "name": "SitckySectionItemDecoration",
+                                                                                                "nested_complexity": 5,
+                                                                                                "risks": [],
+                                                                                                "risks_points": 0,
+                                                                                                "size": 4520,
+                                                                                                "sloc": 121,
+                                                                                                "type": "ASCII text"
+                                                                                            },
+                                                                                            "name": "SitckySectionItemDecoration.kt",
+                                                                                            "value": 15
+                                                                                        },
+                                                                                        {
+                                                                                            "meta": {
+                                                                                                "aggregate_complexity": 5,
+                                                                                                "blank_lines": 5,
+                                                                                                "decision_complexity": 4,
+                                                                                                "extension": ".kt",
+                                                                                                "is_code": true,
+                                                                                                "loc": 34,
+                                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                                "name": "StickyHeaderInterface",
+                                                                                                "nested_complexity": 1,
+                                                                                                "risks": [],
+                                                                                                "risks_points": 0,
+                                                                                                "size": 1506,
+                                                                                                "sloc": 29,
+                                                                                                "type": "ASCII text"
+                                                                                            },
+                                                                                            "name": "StickyHeaderInterface.kt",
+                                                                                            "value": 5
+                                                                                        }
+                                                                                    ],
+                                                                                    "name": "stickysection"
+                                                                                }
+                                                                            ],
+                                                                            "name": "adapter"
+                                                                        },
+                                                                        {
+                                                                            "children": [
+                                                                                {
+                                                                                    "meta": {
+                                                                                        "aggregate_complexity": 11,
+                                                                                        "blank_lines": 14,
+                                                                                        "decision_complexity": 5,
+                                                                                        "extension": ".kt",
+                                                                                        "is_code": true,
+                                                                                        "loc": 139,
+                                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                                        "name": "LoginFragment",
+                                                                                        "nested_complexity": 6,
+                                                                                        "risks": [],
+                                                                                        "risks_points": 0,
+                                                                                        "size": 5039,
+                                                                                        "sloc": 125,
+                                                                                        "type": "ASCII text"
+                                                                                    },
+                                                                                    "name": "LoginFragment.kt",
+                                                                                    "value": 11
+                                                                                }
+                                                                            ],
+                                                                            "name": "fragment"
+                                                                        }
+                                                                    ],
+                                                                    "name": "view"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 3,
+                                                                                "blank_lines": 4,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 25,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "LoginViewModel",
+                                                                                "nested_complexity": 3,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 956,
+                                                                                "sloc": 21,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "LoginViewModel.kt",
+                                                                            "value": 3
+                                                                        }
+                                                                    ],
+                                                                    "name": "viewmodel"
+                                                                }
+                                                            ],
+                                                            "name": "exampleapp"
+                                                        }
+                                                    ],
+                                                    "name": "specialized"
+                                                }
+                                            ],
+                                            "name": "com"
+                                        }
+                                    ],
+                                    "name": "java"
+                                }
+                            ],
+                            "name": "main"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "children": [
+                                                        {
+                                                            "children": [
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "meta": {
+                                                                                "aggregate_complexity": 1,
+                                                                                "blank_lines": 2,
+                                                                                "decision_complexity": 0,
+                                                                                "extension": ".kt",
+                                                                                "is_code": true,
+                                                                                "loc": 14,
+                                                                                "mime": "text/plain; charset=us-ascii",
+                                                                                "name": "CucumberTestCase",
+                                                                                "nested_complexity": 1,
+                                                                                "risks": [],
+                                                                                "risks_points": 0,
+                                                                                "size": 399,
+                                                                                "sloc": 12,
+                                                                                "type": "ASCII text"
+                                                                            },
+                                                                            "name": "CucumberTestCase.kt",
+                                                                            "value": 1
+                                                                        },
+                                                                        {
+                                                                            "children": [
+                                                                                {
+                                                                                    "meta": {
+                                                                                        "aggregate_complexity": 6,
+                                                                                        "blank_lines": 5,
+                                                                                        "decision_complexity": 1,
+                                                                                        "extension": ".kt",
+                                                                                        "is_code": true,
+                                                                                        "loc": 45,
+                                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                                        "name": "DisableAnimationsRule",
+                                                                                        "nested_complexity": 5,
+                                                                                        "risks": [],
+                                                                                        "risks_points": 0,
+                                                                                        "size": 1829,
+                                                                                        "sloc": 40,
+                                                                                        "type": "ASCII text"
+                                                                                    },
+                                                                                    "name": "DisableAnimationsRule.kt",
+                                                                                    "value": 6
+                                                                                }
+                                                                            ],
+                                                                            "name": "rules"
+                                                                        }
+                                                                    ],
+                                                                    "name": "test"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "children": [
+                                                                                {
+                                                                                    "meta": {
+                                                                                        "aggregate_complexity": 3,
+                                                                                        "blank_lines": 11,
+                                                                                        "decision_complexity": 0,
+                                                                                        "extension": ".kt",
+                                                                                        "is_code": true,
+                                                                                        "loc": 65,
+                                                                                        "mime": "text/x-c++; charset=us-ascii",
+                                                                                        "name": "LoginScreenRobot",
+                                                                                        "nested_complexity": 3,
+                                                                                        "risks": [],
+                                                                                        "risks_points": 0,
+                                                                                        "size": 2242,
+                                                                                        "sloc": 54,
+                                                                                        "type": "C++ source, ASCII text"
+                                                                                    },
+                                                                                    "name": "LoginScreenRobot.kt",
+                                                                                    "value": 3
+                                                                                },
+                                                                                {
+                                                                                    "meta": {
+                                                                                        "aggregate_complexity": 4,
+                                                                                        "blank_lines": 8,
+                                                                                        "decision_complexity": 0,
+                                                                                        "extension": ".kt",
+                                                                                        "is_code": true,
+                                                                                        "loc": 52,
+                                                                                        "mime": "text/x-c++; charset=us-ascii",
+                                                                                        "name": "TurboConnectSDKRobot",
+                                                                                        "nested_complexity": 4,
+                                                                                        "risks": [],
+                                                                                        "risks_points": 0,
+                                                                                        "size": 1497,
+                                                                                        "sloc": 44,
+                                                                                        "type": "C++ source, ASCII text"
+                                                                                    },
+                                                                                    "name": "TurboConnectSDKRobot.kt",
+                                                                                    "value": 4
+                                                                                }
+                                                                            ],
+                                                                            "name": "espresso"
+                                                                        },
+                                                                        {
+                                                                            "children": [
+                                                                                {
+                                                                                    "meta": {
+                                                                                        "aggregate_complexity": 3,
+                                                                                        "blank_lines": 11,
+                                                                                        "decision_complexity": 0,
+                                                                                        "extension": ".kt",
+                                                                                        "is_code": true,
+                                                                                        "loc": 46,
+                                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                                        "name": "LoginSteps",
+                                                                                        "nested_complexity": 3,
+                                                                                        "risks": [],
+                                                                                        "risks_points": 0,
+                                                                                        "size": 1207,
+                                                                                        "sloc": 35,
+                                                                                        "type": "ASCII text"
+                                                                                    },
+                                                                                    "name": "LoginSteps.kt",
+                                                                                    "value": 3
+                                                                                },
+                                                                                {
+                                                                                    "meta": {
+                                                                                        "aggregate_complexity": 3,
+                                                                                        "blank_lines": 6,
+                                                                                        "decision_complexity": 0,
+                                                                                        "extension": ".kt",
+                                                                                        "is_code": true,
+                                                                                        "loc": 26,
+                                                                                        "mime": "text/plain; charset=us-ascii",
+                                                                                        "name": "ScanSteps",
+                                                                                        "nested_complexity": 3,
+                                                                                        "risks": [],
+                                                                                        "risks_points": 0,
+                                                                                        "size": 645,
+                                                                                        "sloc": 20,
+                                                                                        "type": "ASCII text"
+                                                                                    },
+                                                                                    "name": "ScanSteps.kt",
+                                                                                    "value": 3
+                                                                                }
+                                                                            ],
+                                                                            "name": "steps"
+                                                                        }
+                                                                    ],
+                                                                    "name": "cucumber"
+                                                                }
+                                                            ],
+                                                            "name": "exampleapp"
+                                                        }
+                                                    ],
+                                                    "name": "specialized"
+                                                }
+                                            ],
+                                            "name": "com"
+                                        }
+                                    ],
+                                    "name": "java"
+                                }
+                            ],
+                            "name": "androidTest"
+                        }
+                    ],
+                    "name": "src"
+                }
+            ],
+            "name": "exampleapp"
+        }
+    ],
+    "name": "turbo-connect-android-lib"
+}
