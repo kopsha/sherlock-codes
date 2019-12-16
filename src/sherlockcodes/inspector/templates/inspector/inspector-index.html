@@ -50,7 +50,7 @@
 
 
 {% block scripts %}
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
 
@@ -91,9 +91,7 @@
             .size([diameter - margin, diameter - margin])
             .padding(2);
 
-        d3.json(url, function(error, root) {
-          if (error) throw error;
-
+        d3.json(url).then( function (root) {
           root = d3.hierarchy(root)
               .sum(function(d) { return d.value; })
               .sort(function(a, b) { return b.value - a.value; });

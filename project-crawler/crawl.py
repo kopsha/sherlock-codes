@@ -25,10 +25,10 @@ def quick_look(filepath):
     filename,ext = os.path.splitext(filepath)
     meta['name'] = os.path.basename(filename)
     meta['extension'] = ext
+    meta['is_code'] = False
 
     if os.path.isdir(filepath):
         meta['is_directory'] = True     # possibly a submodule
-        meta['is_code'] = False
         return meta
 
     mage = magic.Magic(mime=True, mime_encoding=True) 
@@ -42,7 +42,6 @@ def quick_look(filepath):
         '.kt',
         '.sh'
     ]
-    meta['is_code'] = False
 
     if meta['mime'].startswith('text'):
         meta['is_code'] = any([
@@ -53,11 +52,9 @@ def quick_look(filepath):
 
     return meta
 
-# global for better speed
-cpp_parser = clang.cindex.Index.create()
-def parse_cpp(filepath):
+def parse_cpp_exported_symbols(filepath):
 
-    cpp_pool = set()
+    cpp_parser = clang.cindex.Index.create()
 
     translate_decl = {
         clang.cindex.CursorKind.CLASS_DECL : "class",
@@ -69,7 +66,7 @@ def parse_cpp(filepath):
         clang.cindex.CursorKind.CLASS_TEMPLATE_PARTIAL_SPECIALIZATION : "class template specialization",
     }
 
-    def explore_tree(node, current_file):
+    def traverse_syntax_tree(node, current_file):
         try:
             kind = node.kind
         except ValueError as e:
@@ -80,29 +77,29 @@ def parse_cpp(filepath):
             name_only,ext = os.path.splitext(node.location.file.name)
             current_name_only,ext = os.path.splitext(current_file)
             if name_only == current_name_only:
-                cpp_pool.add(f'{translate_decl[kind]} {node.spelling}')
+                exported_symbols.add(f'{translate_decl[kind]} {node.spelling}')
 
         for c in node.get_children():
-            explore_tree(c, filepath)
+            traverse_syntax_tree(c, filepath)
 
-
-    cpp_pool = set()
+    exported_symbols = set()
     translation_unit = cpp_parser.parse(filepath, options=clang.cindex.TranslationUnit.PARSE_INCOMPLETE|clang.cindex.TranslationUnit.PARSE_SKIP_FUNCTION_BODIES)
-    explore_tree(translation_unit.cursor, filepath)
+    traverse_syntax_tree(translation_unit.cursor, filepath)
 
-    return list(cpp_pool)
+    return list(exported_symbols)
 
 
 def nested_code_complexity(effective_lines, tab_size=4):
-    # find deepest indentation
     indent_capture = re.compile(r'^(\s*)')
     tabs = re.compile(r'(\t)')
+
     max_indentation = 0
     for line in effective_lines:
         indentation = indent_capture.match(line)
         assert(indentation)
         spaced_indentation = tabs.sub(' '*tab_size, indentation.group(1))
         max_indentation = max(len(spaced_indentation), max_indentation)
+
     max_indentation = max_indentation // tab_size
     return max_indentation
 
@@ -135,10 +132,10 @@ def risk_assesment(meta):
     points = 0
 
     sloc = meta.get('sloc', 0)
-    if 300 <= sloc and sloc < 500:
+    if 300 <= sloc < 500:
         risks.append('[info] Arguably many lines of code, this may be ok for now.')
         points += 2
-    elif 500 <= sloc and sloc < 1000:
+    elif 500 <= sloc < 1000:
         risks.append('[warning] Quite many lines of code, plan on refactoring.')
         points += 5
     elif 1000 <= sloc:
@@ -146,10 +143,10 @@ def risk_assesment(meta):
         points += 8
 
     decisions = meta.get('decision_complexity', 0)
-    if 40 <= decisions and decisions < 60:
+    if 40 <= decisions < 60:
         risks.append('[info] Arguably many decisions, it is ok if it makes other files less complicated.')
         points += 5
-    elif 60 <= decisions and decisions < 100:
+    elif 60 <= decisions < 100:
         risks.append('[warning] Quite many decisions, consider adding more unit tests and review the entire file.')
         points += 8
     elif 100 <= decisions:
@@ -157,7 +154,7 @@ def risk_assesment(meta):
         points += 13
 
     nested = meta.get('nested_complexity', 0)
-    if 8 <= nested and nested < 13:
+    if 8 <= nested < 13:
         risks.append('[warning] Quite many nested code blocks, most of the code is in the right half of the screen.')
         points += 5
     elif 13 <= nested:
@@ -168,7 +165,9 @@ def risk_assesment(meta):
 
 
 def inspect(filepath, meta):
+
     print(f'Scanning {meta.get("name")}{meta.get("extension")}')
+
     filepath = os.path.realpath(filepath)
     with open(filepath, 'rt') as source_file:
         source_code = source_file.read()
@@ -199,7 +198,7 @@ def inspect(filepath, meta):
     meta['risks_points'],meta['risks'] = risk_assesment(meta)
 
     if meta.get('extension') in ['.cpp', '.cxx']:
-        meta['exports'] = parse_cpp(filepath)
+        meta['exports'] = parse_cpp_exported_symbols(filepath)
 
     meta['aggregate_complexity'] = sum([
         meta.get('nested_complexity') or 1,
@@ -226,36 +225,27 @@ def parse_git_repository(src_root, output=None):
     project_name = os.path.basename(src_root)
     print_stage(f'Analyzing {project_name}')
 
-    if not output:
-        output = f'{project_name}.json'
-
     git = Git(src_root)
-
     root = anytree.Node(project_name)
-    resolver = anytree.Resolver()
-    parent = root
 
     for filepath in sorted(git.ls_files().split('\n'), key=lambda s : s.count(os.sep)):
         folder = os.path.dirname(filepath)
         file = os.path.basename(filepath)
-        
         file_meta = quick_look(os.path.join(src_root,filepath))
 
         if not file_meta.get('is_code'):
-            # we are interested only in source files
             continue
 
-        if not folder:
-            parent = root
+        if folder:
+            parent = make_path(root, folder)
         else:
-            try:
-                parent = resolver.get(root, folder)
-            except anytree.ChildResolverError:
-                parent = make_path(root, folder)
+            parent = root
 
         value = inspect(os.path.join(src_root,filepath), file_meta)
         node = anytree.Node(file, parent=parent, value=value, meta=file_meta)
 
+    if not output:
+        output = f'{project_name}.json'
     exporter = anytree.exporter.JsonExporter(indent=4, sort_keys=True)
     with open(os.path.abspath(output, "wt")) as out:
         exporter.write(root, out)
