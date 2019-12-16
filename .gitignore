@@ -20,4 +20,5 @@ var/
 
 # project specific ignore list
 common/settings/__init__.py
+project-crawler/*.json
 visual-inspector/html/

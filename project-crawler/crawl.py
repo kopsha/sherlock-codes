@@ -11,13 +11,7 @@ import clang.cindex
 from datetime import datetime
 from git.cmd import Git
 
-def print_stage(text):
-    row_size=80
-    filler=' '*(row_size-4-len(text))
-    print(f"{'*'*row_size}");
-    print(f"* {text}{filler} *")
-    print(f"{'*'*row_size}");
-
+from utils import print_stage
 
 def quick_look(filepath):
     meta = {}

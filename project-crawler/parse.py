@@ -1,3 +1,7 @@
-import settings
+from utils import print_stage
 
-print(settings.PROJECT_ROOT)
+def main():
+    print_stage("it works")
+
+if __name__ == '__main__':
+    main()

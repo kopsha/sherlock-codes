@@ -4,19 +4,12 @@ import shutil
 import timeit
 
 from datetime import datetime
+from utils import print_stage
 
 import jinja2
 
 
-def print_stage(text):
-    row_size=80
-    filler=' '*(row_size-4-len(text))
-    print(f"{'*'*row_size}");
-    print(f"* {text}{filler} *")
-    print(f"{'*'*row_size}");
-
-
-def bloody_temlates(data_folder, out_folder):
+def render_inspector_page(data_folder, out_folder):
     print_stage('Rendering')
 
     datafiles = [f for f in os.listdir(data_folder) if f.endswith('.json')]
@@ -48,7 +41,7 @@ def main():
     if not os.path.exists(args.output):
         os.makedirs(args.output)
 
-    bloody_temlates(args.data, args.output)
+    render_inspector_page(args.data, args.output)
 
 
 if __name__ == '__main__':
