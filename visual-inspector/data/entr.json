@@ -1,0 +1,280 @@
+{
+    "children": [
+        {
+            "meta": {
+                "aggregate_complexity": 1,
+                "blank_lines": 13,
+                "decision_complexity": 0,
+                "extension": ".bsd",
+                "is_code": true,
+                "loc": 53,
+                "mime": "text/x-makefile; charset=us-ascii",
+                "name": "Makefile",
+                "nested_complexity": 1,
+                "risks": [],
+                "risks_points": 0,
+                "size": 1287,
+                "sloc": 40,
+                "type": "makefile script, ASCII text"
+            },
+            "name": "Makefile.bsd",
+            "value": 1
+        },
+        {
+            "meta": {
+                "aggregate_complexity": 1,
+                "blank_lines": 9,
+                "decision_complexity": 0,
+                "extension": "",
+                "is_code": true,
+                "loc": 29,
+                "mime": "text/x-shellscript; charset=us-ascii",
+                "name": "configure",
+                "nested_complexity": 1,
+                "risks": [],
+                "risks_points": 0,
+                "size": 507,
+                "sloc": 20,
+                "type": "POSIX shell script, ASCII text executable"
+            },
+            "name": "configure",
+            "value": 1
+        },
+        {
+            "meta": {
+                "aggregate_complexity": 2,
+                "blank_lines": 5,
+                "decision_complexity": 1,
+                "extension": ".h",
+                "imports": {
+                    "extern": [
+                        "limits.h"
+                    ],
+                    "local": []
+                },
+                "is_code": true,
+                "loc": 29,
+                "mime": "text/x-c; charset=us-ascii",
+                "name": "data",
+                "nested_complexity": 1,
+                "risks": [],
+                "risks_points": 0,
+                "size": 971,
+                "sloc": 24,
+                "type": "C source, ASCII text"
+            },
+            "name": "data.h",
+            "value": 2
+        },
+        {
+            "meta": {
+                "aggregate_complexity": 106,
+                "blank_lines": 86,
+                "decision_complexity": 91,
+                "extension": ".c",
+                "is_code": true,
+                "loc": 515,
+                "mime": "text/x-c; charset=us-ascii",
+                "name": "entr",
+                "nested_complexity": 5,
+                "risks": [
+                    "[info] Arguably many lines of code, this may be ok for now.",
+                    "[warning] Quite many decisions, consider adding more unit tests and review the entire file."
+                ],
+                "risks_points": 10,
+                "size": 12813,
+                "sloc": 429,
+                "type": "C source, ASCII text"
+            },
+            "name": "entr.c",
+            "value": 106
+        },
+        {
+            "meta": {
+                "aggregate_complexity": 16,
+                "blank_lines": 140,
+                "decision_complexity": 8,
+                "extension": ".c",
+                "is_code": true,
+                "loc": 834,
+                "mime": "text/x-c; charset=us-ascii",
+                "name": "entr_spec",
+                "nested_complexity": 3,
+                "risks": [
+                    "[warning] Quite many lines of code, plan on refactoring."
+                ],
+                "risks_points": 5,
+                "size": 20868,
+                "sloc": 694,
+                "type": "C source, ASCII text"
+            },
+            "name": "entr_spec.c",
+            "value": 16
+        },
+        {
+            "meta": {
+                "aggregate_complexity": 48,
+                "blank_lines": 55,
+                "decision_complexity": 41,
+                "extension": ".sh",
+                "is_code": true,
+                "loc": 289,
+                "mime": "text/x-shellscript; charset=us-ascii",
+                "name": "system_test",
+                "nested_complexity": 2,
+                "risks": [
+                    "[info] Arguably many decisions, it is ok if it makes other files less complicated."
+                ],
+                "risks_points": 5,
+                "size": 8300,
+                "sloc": 234,
+                "type": "POSIX shell script, ASCII text executable"
+            },
+            "name": "system_test.sh",
+            "value": 48
+        },
+        {
+            "children": [
+                {
+                    "meta": {
+                        "aggregate_complexity": 1,
+                        "blank_lines": 16,
+                        "decision_complexity": 0,
+                        "extension": ".h",
+                        "imports": {
+                            "extern": [
+                                "sys/types.h",
+                                "stdio.h"
+                            ],
+                            "local": []
+                        },
+                        "is_code": true,
+                        "loc": 19,
+                        "mime": "text/x-c; charset=us-ascii",
+                        "name": "compat",
+                        "nested_complexity": 0,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 346,
+                        "sloc": 3,
+                        "type": "C source, ASCII text"
+                    },
+                    "name": "compat.h",
+                    "value": 1
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 23,
+                        "blank_lines": 40,
+                        "decision_complexity": 19,
+                        "extension": ".c",
+                        "is_code": true,
+                        "loc": 186,
+                        "mime": "text/x-c; charset=us-ascii",
+                        "name": "fmemopen",
+                        "nested_complexity": 4,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 3695,
+                        "sloc": 146,
+                        "type": "C source, ASCII text"
+                    },
+                    "name": "fmemopen.c",
+                    "value": 23
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 28,
+                        "blank_lines": 38,
+                        "decision_complexity": 23,
+                        "extension": ".c",
+                        "is_code": true,
+                        "loc": 159,
+                        "mime": "text/x-c; charset=us-ascii",
+                        "name": "kqueue_inotify",
+                        "nested_complexity": 5,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 4023,
+                        "sloc": 121,
+                        "type": "C source, ASCII text"
+                    },
+                    "name": "kqueue_inotify.c",
+                    "value": 28
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 12,
+                        "blank_lines": 8,
+                        "decision_complexity": 8,
+                        "extension": ".c",
+                        "is_code": true,
+                        "loc": 51,
+                        "mime": "text/x-c; charset=us-ascii",
+                        "name": "strlcpy",
+                        "nested_complexity": 4,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 1561,
+                        "sloc": 43,
+                        "type": "C source, ASCII text"
+                    },
+                    "name": "strlcpy.c",
+                    "value": 12
+                },
+                {
+                    "children": [
+                        {
+                            "meta": {
+                                "aggregate_complexity": 5,
+                                "blank_lines": 29,
+                                "decision_complexity": 4,
+                                "extension": ".h",
+                                "imports": {
+                                    "extern": [
+                                        "sys/types.h",
+                                        "sys/time.h"
+                                    ],
+                                    "local": []
+                                },
+                                "is_code": true,
+                                "loc": 77,
+                                "mime": "text/x-c; charset=us-ascii",
+                                "name": "event",
+                                "nested_complexity": 1,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 2949,
+                                "sloc": 48,
+                                "type": "C source, ASCII text"
+                            },
+                            "name": "event.h",
+                            "value": 5
+                        }
+                    ],
+                    "counter": {
+                        "risks_count": 0,
+                        "sloc_count": 48,
+                        "source_files": 1,
+                        "value_count": 5
+                    },
+                    "name": "sys"
+                }
+            ],
+            "counter": {
+                "risks_count": 0,
+                "sloc_count": 361,
+                "source_files": 5,
+                "value_count": 69
+            },
+            "name": "missing"
+        }
+    ],
+    "counter": {
+        "risks_count": 4,
+        "sloc_count": 1802,
+        "source_files": 11,
+        "value_count": 243
+    },
+    "name": "entr"
+}

@@ -86,19 +86,28 @@
                     "value": 12
                 }
             ],
+            "counter": {
+                "risks_count": 2,
+                "sloc_count": 353,
+                "source_files": 2,
+                "value_count": 87
+            },
             "name": "scripts"
         },
         {
             "children": [
                 {
                     "meta": {
-                        "aggregate_complexity": 19,
+                        "aggregate_complexity": 18,
                         "blank_lines": 24,
                         "decision_complexity": 15,
-                        "exports": [
-                            "class IdentificationSequence"
-                        ],
                         "extension": ".cpp",
+                        "imports": {
+                            "extern": [],
+                            "local": [
+                                "identification_sequence.h"
+                            ]
+                        },
                         "is_code": true,
                         "loc": 132,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -111,7 +120,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "identification_sequence.cpp",
-                    "value": 19
+                    "value": 18
                 },
                 {
                     "meta": {
@@ -119,6 +128,18 @@
                         "blank_lines": 16,
                         "decision_complexity": 0,
                         "extension": ".h",
+                        "imports": {
+                            "extern": [
+                                "string",
+                                "vector"
+                            ],
+                            "local": [
+                                "identify.h",
+                                "protocol/bike_parameters.h",
+                                "protocol/protocol_identification.h",
+                                "protocol_factory.h"
+                            ]
+                        },
                         "is_code": true,
                         "loc": 38,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -135,20 +156,21 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 24,
+                        "aggregate_complexity": 16,
                         "blank_lines": 43,
                         "decision_complexity": 12,
-                        "exports": [
-                            "function toLowerCase",
-                            "function getBikeName",
-                            "function isBike",
-                            "function isBleWriteService",
-                            "function isBleReadService",
-                            "function makeBikeTypeFrom",
-                            "function isTurboLevoBike",
-                            "function isBleNotifyService"
-                        ],
                         "extension": ".cpp",
+                        "imports": {
+                            "extern": [
+                                "algorithm",
+                                "array",
+                                "iomanip",
+                                "sstream"
+                            ],
+                            "local": [
+                                "identify.h"
+                            ]
+                        },
                         "is_code": true,
                         "loc": 171,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -161,7 +183,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "identify.cpp",
-                    "value": 24
+                    "value": 16
                 },
                 {
                     "meta": {
@@ -169,6 +191,16 @@
                         "blank_lines": 13,
                         "decision_complexity": 0,
                         "extension": ".h",
+                        "imports": {
+                            "extern": [
+                                "map",
+                                "string",
+                                "vector"
+                            ],
+                            "local": [
+                                "parameter.h"
+                            ]
+                        },
                         "is_code": true,
                         "loc": 32,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -186,22 +218,25 @@
                 {
                     "meta": {
                         "aggregate_complexity": 8,
-                        "blank_lines": 12,
-                        "decision_complexity": 3,
-                        "exports": [
-                            "struct Parameter",
-                            "struct ParameterInfo"
-                        ],
+                        "blank_lines": 14,
+                        "decision_complexity": 5,
                         "extension": ".cpp",
+                        "imports": {
+                            "extern": [],
+                            "local": [
+                                "parameter.h",
+                                "parameter_info.h"
+                            ]
+                        },
                         "is_code": true,
-                        "loc": 59,
+                        "loc": 71,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "parameter",
                         "nested_complexity": 3,
                         "risks": [],
                         "risks_points": 0,
-                        "size": 1352,
-                        "sloc": 47,
+                        "size": 1470,
+                        "sloc": 57,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "parameter.cpp",
@@ -213,6 +248,14 @@
                         "blank_lines": 11,
                         "decision_complexity": 0,
                         "extension": ".h",
+                        "imports": {
+                            "extern": [
+                                "string"
+                            ],
+                            "local": [
+                                "protocol/bike_parameters.h"
+                            ]
+                        },
                         "is_code": true,
                         "loc": 34,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -229,13 +272,18 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 15,
+                        "aggregate_complexity": 14,
                         "blank_lines": 18,
                         "decision_complexity": 11,
-                        "exports": [
-                            "struct ParameterInfo"
-                        ],
                         "extension": ".cpp",
+                        "imports": {
+                            "extern": [
+                                "iomanip"
+                            ],
+                            "local": [
+                                "parameter_info.h"
+                            ]
+                        },
                         "is_code": true,
                         "loc": 143,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -248,7 +296,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "parameter_info.cpp",
-                    "value": 15
+                    "value": 14
                 },
                 {
                     "meta": {
@@ -256,6 +304,18 @@
                         "blank_lines": 16,
                         "decision_complexity": 0,
                         "extension": ".h",
+                        "imports": {
+                            "extern": [
+                                "functional",
+                                "sstream",
+                                "string",
+                                "vector"
+                            ],
+                            "local": [
+                                "parameter.h",
+                                "protocol/bike_parameters.h"
+                            ]
+                        },
                         "is_code": true,
                         "loc": 46,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -272,13 +332,28 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 22,
+                        "aggregate_complexity": 21,
                         "blank_lines": 22,
                         "decision_complexity": 16,
-                        "exports": [
-                            "function makeProtocol"
-                        ],
                         "extension": ".cpp",
+                        "imports": {
+                            "extern": [],
+                            "local": [
+                                "protocol_factory.h",
+                                "protocol/protocol_legacy20.h",
+                                "protocol/protocol_legacy22.h",
+                                "protocol/protocol_rx0c.h",
+                                "protocol/protocol_rx0d.h",
+                                "protocol/protocol_rx0e.h",
+                                "protocol/protocol_rx0f.h",
+                                "protocol/protocol_rx10.h",
+                                "protocol/protocol_rx11.h",
+                                "protocol/protocol_rx12.h",
+                                "protocol/protocol_rx13.h",
+                                "protocol/protocol_rx14.h",
+                                "protocol/protocol_rx15.h"
+                            ]
+                        },
                         "is_code": true,
                         "loc": 84,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -291,7 +366,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "protocol_factory.cpp",
-                    "value": 22
+                    "value": 21
                 },
                 {
                     "meta": {
@@ -299,6 +374,16 @@
                         "blank_lines": 10,
                         "decision_complexity": 0,
                         "extension": ".h",
+                        "imports": {
+                            "extern": [
+                                "string",
+                                "vector"
+                            ],
+                            "local": [
+                                "identify.h",
+                                "protocol/iprotocol.h"
+                            ]
+                        },
                         "is_code": true,
                         "loc": 14,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -319,6 +404,16 @@
                         "blank_lines": 7,
                         "decision_complexity": 0,
                         "extension": ".h",
+                        "imports": {
+                            "extern": [],
+                            "local": [
+                                "identification_sequence.h",
+                                "identify.h",
+                                "parameter.h",
+                                "parameter_info.h",
+                                "protocol_factory.h"
+                            ]
+                        },
                         "is_code": true,
                         "loc": 7,
                         "mime": "text/x-c; charset=us-ascii",
@@ -341,6 +436,11 @@
                                 "blank_lines": 2,
                                 "decision_complexity": 1,
                                 "extension": ".kt",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [],
+                                    "package": "com.specialized.turboconnect"
+                                },
                                 "is_code": true,
                                 "loc": 109,
                                 "mime": "text/plain; charset=us-ascii",
@@ -361,6 +461,11 @@
                                 "blank_lines": 0,
                                 "decision_complexity": 0,
                                 "extension": ".swift",
+                                "imports": {
+                                    "local": [
+                                        "Foundation"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 102,
                                 "mime": "text/plain; charset=us-ascii",
@@ -381,6 +486,10 @@
                                 "blank_lines": 4,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [],
+                                    "local": []
+                                },
                                 "is_code": true,
                                 "loc": 108,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -420,13 +529,16 @@
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 11,
+                                "aggregate_complexity": 10,
                                 "blank_lines": 23,
                                 "decision_complexity": 6,
-                                "exports": [
-                                    "class IProtocol"
-                                ],
                                 "extension": ".cpp",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "iprotocol.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 94,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -439,7 +551,7 @@
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "iprotocol.cpp",
-                            "value": 11
+                            "value": 10
                         },
                         {
                             "meta": {
@@ -447,6 +559,16 @@
                                 "blank_lines": 14,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [
+                                        "map",
+                                        "vector"
+                                    ],
+                                    "local": [
+                                        "parameter.h",
+                                        "parameter_info.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 30,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -463,13 +585,16 @@
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 3,
+                                "aggregate_complexity": 2,
                                 "blank_lines": 9,
                                 "decision_complexity": 0,
-                                "exports": [
-                                    "class ProtocolIdentification"
-                                ],
                                 "extension": ".cpp",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "protocol_identification.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 34,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -482,7 +607,7 @@
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "protocol_identification.cpp",
-                            "value": 3
+                            "value": 2
                         },
                         {
                             "meta": {
@@ -490,6 +615,12 @@
                                 "blank_lines": 4,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "iprotocol.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 12,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -506,13 +637,16 @@
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 3,
+                                "aggregate_complexity": 2,
                                 "blank_lines": 9,
                                 "decision_complexity": 0,
-                                "exports": [
-                                    "class ProtocolLegacy20"
-                                ],
                                 "extension": ".cpp",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "protocol_legacy20.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 118,
                                 "mime": "text/x-c++; charset=utf-8",
@@ -525,7 +659,7 @@
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_legacy20.cpp",
-                            "value": 3
+                            "value": 2
                         },
                         {
                             "meta": {
@@ -533,6 +667,12 @@
                                 "blank_lines": 4,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "iprotocol.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 12,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -549,13 +689,16 @@
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 3,
+                                "aggregate_complexity": 2,
                                 "blank_lines": 9,
                                 "decision_complexity": 0,
-                                "exports": [
-                                    "class ProtocolLegacy22"
-                                ],
                                 "extension": ".cpp",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "protocol_legacy22.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 118,
                                 "mime": "text/x-c++; charset=utf-8",
@@ -568,7 +711,7 @@
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_legacy22.cpp",
-                            "value": 3
+                            "value": 2
                         },
                         {
                             "meta": {
@@ -576,6 +719,12 @@
                                 "blank_lines": 4,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "iprotocol.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 12,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -592,13 +741,16 @@
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 3,
+                                "aggregate_complexity": 2,
                                 "blank_lines": 9,
                                 "decision_complexity": 0,
-                                "exports": [
-                                    "class ProtocolRx0C"
-                                ],
                                 "extension": ".cpp",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "protocol_rx0c.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 172,
                                 "mime": "text/x-c++; charset=utf-8",
@@ -611,7 +763,7 @@
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx0c.cpp",
-                            "value": 3
+                            "value": 2
                         },
                         {
                             "meta": {
@@ -619,6 +771,12 @@
                                 "blank_lines": 4,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "iprotocol.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 12,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -635,13 +793,16 @@
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 3,
+                                "aggregate_complexity": 2,
                                 "blank_lines": 9,
                                 "decision_complexity": 0,
-                                "exports": [
-                                    "class ProtocolRx0D"
-                                ],
                                 "extension": ".cpp",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "protocol_rx0d.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 172,
                                 "mime": "text/x-c++; charset=utf-8",
@@ -654,7 +815,7 @@
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx0d.cpp",
-                            "value": 3
+                            "value": 2
                         },
                         {
                             "meta": {
@@ -662,6 +823,12 @@
                                 "blank_lines": 4,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "iprotocol.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 12,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -678,13 +845,16 @@
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 3,
+                                "aggregate_complexity": 2,
                                 "blank_lines": 9,
                                 "decision_complexity": 0,
-                                "exports": [
-                                    "class ProtocolRx0E"
-                                ],
                                 "extension": ".cpp",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "protocol_rx0e.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 184,
                                 "mime": "text/x-c++; charset=utf-8",
@@ -697,7 +867,7 @@
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx0e.cpp",
-                            "value": 3
+                            "value": 2
                         },
                         {
                             "meta": {
@@ -705,6 +875,12 @@
                                 "blank_lines": 4,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "iprotocol.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 12,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -721,13 +897,16 @@
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 3,
+                                "aggregate_complexity": 2,
                                 "blank_lines": 9,
                                 "decision_complexity": 0,
-                                "exports": [
-                                    "class ProtocolRx0F"
-                                ],
                                 "extension": ".cpp",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "protocol_rx0f.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 184,
                                 "mime": "text/x-c++; charset=utf-8",
@@ -740,7 +919,7 @@
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx0f.cpp",
-                            "value": 3
+                            "value": 2
                         },
                         {
                             "meta": {
@@ -748,6 +927,12 @@
                                 "blank_lines": 4,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "iprotocol.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 12,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -764,13 +949,16 @@
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 3,
+                                "aggregate_complexity": 2,
                                 "blank_lines": 9,
                                 "decision_complexity": 0,
-                                "exports": [
-                                    "class ProtocolRx10"
-                                ],
                                 "extension": ".cpp",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "protocol_rx10.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 184,
                                 "mime": "text/x-c++; charset=utf-8",
@@ -783,7 +971,7 @@
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx10.cpp",
-                            "value": 3
+                            "value": 2
                         },
                         {
                             "meta": {
@@ -791,6 +979,12 @@
                                 "blank_lines": 4,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "iprotocol.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 12,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -807,13 +1001,16 @@
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 3,
+                                "aggregate_complexity": 2,
                                 "blank_lines": 9,
                                 "decision_complexity": 0,
-                                "exports": [
-                                    "class ProtocolRx11"
-                                ],
                                 "extension": ".cpp",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "protocol_rx11.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 186,
                                 "mime": "text/x-c++; charset=utf-8",
@@ -826,7 +1023,7 @@
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx11.cpp",
-                            "value": 3
+                            "value": 2
                         },
                         {
                             "meta": {
@@ -834,6 +1031,12 @@
                                 "blank_lines": 4,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "iprotocol.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 12,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -850,13 +1053,16 @@
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 3,
+                                "aggregate_complexity": 2,
                                 "blank_lines": 9,
                                 "decision_complexity": 0,
-                                "exports": [
-                                    "class ProtocolRx12"
-                                ],
                                 "extension": ".cpp",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "protocol_rx12.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 186,
                                 "mime": "text/x-c++; charset=utf-8",
@@ -869,7 +1075,7 @@
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx12.cpp",
-                            "value": 3
+                            "value": 2
                         },
                         {
                             "meta": {
@@ -877,6 +1083,12 @@
                                 "blank_lines": 4,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "iprotocol.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 12,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -893,13 +1105,16 @@
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 3,
+                                "aggregate_complexity": 2,
                                 "blank_lines": 9,
                                 "decision_complexity": 0,
-                                "exports": [
-                                    "class ProtocolRx13"
-                                ],
                                 "extension": ".cpp",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "protocol_rx13.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 186,
                                 "mime": "text/x-c++; charset=utf-8",
@@ -912,7 +1127,7 @@
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx13.cpp",
-                            "value": 3
+                            "value": 2
                         },
                         {
                             "meta": {
@@ -920,6 +1135,12 @@
                                 "blank_lines": 4,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "iprotocol.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 12,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -936,13 +1157,16 @@
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 3,
+                                "aggregate_complexity": 2,
                                 "blank_lines": 9,
                                 "decision_complexity": 0,
-                                "exports": [
-                                    "class ProtocolRx14"
-                                ],
                                 "extension": ".cpp",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "protocol_rx14.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 188,
                                 "mime": "text/x-c++; charset=utf-8",
@@ -955,7 +1179,7 @@
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx14.cpp",
-                            "value": 3
+                            "value": 2
                         },
                         {
                             "meta": {
@@ -963,6 +1187,12 @@
                                 "blank_lines": 4,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "iprotocol.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 12,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -979,13 +1209,16 @@
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 3,
+                                "aggregate_complexity": 2,
                                 "blank_lines": 9,
                                 "decision_complexity": 0,
-                                "exports": [
-                                    "class ProtocolRx15"
-                                ],
                                 "extension": ".cpp",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "protocol_rx15.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 198,
                                 "mime": "text/x-c++; charset=utf-8",
@@ -998,7 +1231,7 @@
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx15.cpp",
-                            "value": 3
+                            "value": 2
                         },
                         {
                             "meta": {
@@ -1006,6 +1239,12 @@
                                 "blank_lines": 4,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [],
+                                    "local": [
+                                        "iprotocol.h"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 12,
                                 "mime": "text/x-c++; charset=us-ascii",
@@ -1021,45 +1260,42 @@
                             "value": 1
                         }
                     ],
+                    "counter": {
+                        "risks_count": 2,
+                        "sloc_count": 2880,
+                        "source_files": 32,
+                        "value_count": 129
+                    },
                     "name": "protocol"
                 }
             ],
+            "counter": {
+                "risks_count": 2,
+                "sloc_count": 3458,
+                "source_files": 43,
+                "value_count": 212
+            },
             "name": "src"
         },
         {
             "children": [
                 {
                     "meta": {
-                        "aggregate_complexity": 2,
-                        "blank_lines": 6,
-                        "decision_complexity": 0,
-                        "exports": [
-                            "function TEST"
-                        ],
-                        "extension": ".cpp",
-                        "is_code": true,
-                        "loc": 13,
-                        "mime": "text/x-c; charset=us-ascii",
-                        "name": "available_parameters_test",
-                        "nested_complexity": 1,
-                        "risks": [],
-                        "risks_points": 0,
-                        "size": 286,
-                        "sloc": 7,
-                        "type": "C source, ASCII text"
-                    },
-                    "name": "available_parameters_test.cpp",
-                    "value": 2
-                },
-                {
-                    "meta": {
-                        "aggregate_complexity": 2,
+                        "aggregate_complexity": 1,
                         "blank_lines": 36,
                         "decision_complexity": 0,
-                        "exports": [
-                            "function TEST"
-                        ],
                         "extension": ".cpp",
+                        "imports": {
+                            "extern": [
+                                "string",
+                                "vector",
+                                "map"
+                            ],
+                            "local": [
+                                "turbo-connect-core.h",
+                                "gtest/gtest.h"
+                            ]
+                        },
                         "is_code": true,
                         "loc": 104,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -1072,17 +1308,23 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "bike_identification_test.cpp",
-                    "value": 2
+                    "value": 1
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 2,
+                        "aggregate_complexity": 1,
                         "blank_lines": 18,
                         "decision_complexity": 0,
-                        "exports": [
-                            "function TEST"
-                        ],
                         "extension": ".cpp",
+                        "imports": {
+                            "extern": [
+                                "string"
+                            ],
+                            "local": [
+                                "turbo-connect-core.h",
+                                "gtest/gtest.h"
+                            ]
+                        },
                         "is_code": true,
                         "loc": 74,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -1095,17 +1337,21 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "ble_service_identification_test.cpp",
-                    "value": 2
+                    "value": 1
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 2,
+                        "aggregate_complexity": 1,
                         "blank_lines": 69,
                         "decision_complexity": 0,
-                        "exports": [
-                            "function TEST"
-                        ],
                         "extension": ".cpp",
+                        "imports": {
+                            "extern": [],
+                            "local": [
+                                "turbo-connect-core.h",
+                                "gtest/gtest.h"
+                            ]
+                        },
                         "is_code": true,
                         "loc": 235,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -1118,42 +1364,80 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "identification_sequence_test.cpp",
-                    "value": 2
+                    "value": 1
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 6,
-                        "blank_lines": 34,
-                        "decision_complexity": 1,
-                        "exports": [
-                            "class ProtocolDecodingTest",
-                            "function TEST_F"
-                        ],
+                        "aggregate_complexity": 1,
+                        "blank_lines": 10,
+                        "decision_complexity": 0,
                         "extension": ".cpp",
+                        "imports": {
+                            "extern": [],
+                            "local": [
+                                "turbo-connect-core.h",
+                                "gtest/gtest.h",
+                                "test_utils.h"
+                            ]
+                        },
                         "is_code": true,
-                        "loc": 206,
+                        "loc": 24,
+                        "mime": "text/x-c; charset=us-ascii",
+                        "name": "parameter_test",
+                        "nested_complexity": 1,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 544,
+                        "sloc": 14,
+                        "type": "C source, ASCII text"
+                    },
+                    "name": "parameter_test.cpp",
+                    "value": 1
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 4,
+                        "blank_lines": 33,
+                        "decision_complexity": 1,
+                        "extension": ".cpp",
+                        "imports": {
+                            "extern": [
+                                "vector",
+                                "string"
+                            ],
+                            "local": [
+                                "turbo-connect-core.h",
+                                "gtest/gtest.h",
+                                "test_utils.h"
+                            ]
+                        },
+                        "is_code": true,
+                        "loc": 201,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "property_decoding_test",
                         "nested_complexity": 3,
                         "risks": [],
                         "risks_points": 0,
-                        "size": 7632,
-                        "sloc": 172,
+                        "size": 7381,
+                        "sloc": 168,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "property_decoding_test.cpp",
-                    "value": 6
+                    "value": 4
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 6,
+                        "aggregate_complexity": 4,
                         "blank_lines": 18,
                         "decision_complexity": 1,
-                        "exports": [
-                            "class ProtocolEncodingTest",
-                            "function TEST_F"
-                        ],
                         "extension": ".cpp",
+                        "imports": {
+                            "extern": [],
+                            "local": [
+                                "turbo-connect-core.h",
+                                "gtest/gtest.h"
+                            ]
+                        },
                         "is_code": true,
                         "loc": 55,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -1166,20 +1450,24 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "property_encoding_test.cpp",
-                    "value": 6
+                    "value": 4
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 6,
+                        "aggregate_complexity": 2,
                         "blank_lines": 20,
                         "decision_complexity": 0,
-                        "exports": [
-                            "function TEST_P",
-                            "function TEST",
-                            "class ProtocolFactoryTest",
-                            "function INSTANTIATE_TEST_SUITE_P"
-                        ],
                         "extension": ".cpp",
+                        "imports": {
+                            "extern": [
+                                "string",
+                                "iostream"
+                            ],
+                            "local": [
+                                "turbo-connect-core.h",
+                                "gtest/gtest.h"
+                            ]
+                        },
                         "is_code": true,
                         "loc": 100,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -1192,11 +1480,74 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "protocol_factory_test.cpp",
-                    "value": 6
+                    "value": 2
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 1,
+                        "blank_lines": 8,
+                        "decision_complexity": 0,
+                        "extension": ".cpp",
+                        "imports": {
+                            "extern": [],
+                            "local": [
+                                "turbo-connect-core.h",
+                                "gtest/gtest.h"
+                            ]
+                        },
+                        "is_code": true,
+                        "loc": 15,
+                        "mime": "text/x-c; charset=us-ascii",
+                        "name": "protocol_test",
+                        "nested_complexity": 1,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 390,
+                        "sloc": 7,
+                        "type": "C source, ASCII text"
+                    },
+                    "name": "protocol_test.cpp",
+                    "value": 1
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 1,
+                        "blank_lines": 4,
+                        "decision_complexity": 0,
+                        "extension": ".h",
+                        "imports": {
+                            "extern": [],
+                            "local": []
+                        },
+                        "is_code": true,
+                        "loc": 8,
+                        "mime": "text/x-c; charset=us-ascii",
+                        "name": "test_utils",
+                        "nested_complexity": 1,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 289,
+                        "sloc": 4,
+                        "type": "C source, ASCII text"
+                    },
+                    "name": "test_utils.h",
+                    "value": 1
                 }
             ],
+            "counter": {
+                "risks_count": 0,
+                "sloc_count": 600,
+                "source_files": 9,
+                "value_count": 16
+            },
             "name": "test"
         }
     ],
+    "counter": {
+        "risks_count": 4,
+        "sloc_count": 4477,
+        "source_files": 56,
+        "value_count": 321
+    },
     "name": "turbo-connect-core"
 }

@@ -10,6 +10,13 @@
                                 "blank_lines": 22,
                                 "decision_complexity": 0,
                                 "extension": ".swift",
+                                "imports": {
+                                    "local": [
+                                        "XCTest",
+                                        "XCTest_Gherkin",
+                                        "TurboConnectLibrary"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 95,
                                 "mime": "text/plain; charset=utf-8",
@@ -30,6 +37,12 @@
                                 "blank_lines": 12,
                                 "decision_complexity": 0,
                                 "extension": ".swift",
+                                "imports": {
+                                    "local": [
+                                        "XCTest",
+                                        "TurboConnect"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 20,
                                 "mime": "text/plain; charset=utf-8",
@@ -52,6 +65,12 @@
                                         "blank_lines": 10,
                                         "decision_complexity": 1,
                                         "extension": ".swift",
+                                        "imports": {
+                                            "local": [
+                                                "XCTest",
+                                                "XCTest_Gherkin"
+                                            ]
+                                        },
                                         "is_code": true,
                                         "loc": 22,
                                         "mime": "text/plain; charset=utf-8",
@@ -67,6 +86,12 @@
                                     "value": 3
                                 }
                             ],
+                            "counter": {
+                                "risks_count": 0,
+                                "sloc_count": 12,
+                                "source_files": 1,
+                                "value_count": 3
+                            },
                             "name": "Features"
                         },
                         {
@@ -77,6 +102,12 @@
                                         "blank_lines": 12,
                                         "decision_complexity": 0,
                                         "extension": ".swift",
+                                        "imports": {
+                                            "local": [
+                                                "UIKit",
+                                                "TurboConnectLibrary"
+                                            ]
+                                        },
                                         "is_code": true,
                                         "loc": 21,
                                         "mime": "text/plain; charset=utf-8",
@@ -97,6 +128,12 @@
                                         "blank_lines": 12,
                                         "decision_complexity": 0,
                                         "extension": ".swift",
+                                        "imports": {
+                                            "local": [
+                                                "UIKit",
+                                                "TurboConnectLibrary"
+                                            ]
+                                        },
                                         "is_code": true,
                                         "loc": 25,
                                         "mime": "text/plain; charset=utf-8",
@@ -117,6 +154,12 @@
                                         "blank_lines": 11,
                                         "decision_complexity": 0,
                                         "extension": ".swift",
+                                        "imports": {
+                                            "local": [
+                                                "UIKit",
+                                                "TurboConnectLibrary"
+                                            ]
+                                        },
                                         "is_code": true,
                                         "loc": 23,
                                         "mime": "text/plain; charset=utf-8",
@@ -137,6 +180,12 @@
                                         "blank_lines": 15,
                                         "decision_complexity": 0,
                                         "extension": ".swift",
+                                        "imports": {
+                                            "local": [
+                                                "UIKit",
+                                                "TurboConnectLibrary"
+                                            ]
+                                        },
                                         "is_code": true,
                                         "loc": 41,
                                         "mime": "text/plain; charset=utf-8",
@@ -152,6 +201,12 @@
                                     "value": 2
                                 }
                             ],
+                            "counter": {
+                                "risks_count": 0,
+                                "sloc_count": 60,
+                                "source_files": 4,
+                                "value_count": 8
+                            },
                             "name": "Mocks"
                         },
                         {
@@ -162,6 +217,14 @@
                                         "blank_lines": 26,
                                         "decision_complexity": 5,
                                         "extension": ".swift",
+                                        "imports": {
+                                            "local": [
+                                                "Foundation",
+                                                "XCTest_Gherkin",
+                                                "TurboConnectLibrary",
+                                                "Alamofire"
+                                            ]
+                                        },
                                         "is_code": true,
                                         "loc": 96,
                                         "mime": "text/plain; charset=utf-8",
@@ -182,6 +245,12 @@
                                         "blank_lines": 58,
                                         "decision_complexity": 19,
                                         "extension": ".swift",
+                                        "imports": {
+                                            "local": [
+                                                "XCTest_Gherkin",
+                                                "TurboConnectLibrary"
+                                            ]
+                                        },
                                         "is_code": true,
                                         "loc": 244,
                                         "mime": "text/plain; charset=utf-8",
@@ -197,9 +266,21 @@
                                     "value": 24
                                 }
                             ],
+                            "counter": {
+                                "risks_count": 0,
+                                "sloc_count": 256,
+                                "source_files": 2,
+                                "value_count": 33
+                            },
                             "name": "StepDefinitions"
                         }
                     ],
+                    "counter": {
+                        "risks_count": 0,
+                        "sloc_count": 409,
+                        "source_files": 9,
+                        "value_count": 48
+                    },
                     "name": "Tests"
                 },
                 {
@@ -238,6 +319,12 @@
                                                         "blank_lines": 9,
                                                         "decision_complexity": 0,
                                                         "extension": ".swift",
+                                                        "imports": {
+                                                            "local": [
+                                                                "Foundation",
+                                                                "XCTest"
+                                                            ]
+                                                        },
                                                         "is_code": true,
                                                         "loc": 19,
                                                         "mime": "text/plain; charset=us-ascii",
@@ -258,6 +345,11 @@
                                                         "blank_lines": 29,
                                                         "decision_complexity": 6,
                                                         "extension": ".swift",
+                                                        "imports": {
+                                                            "local": [
+                                                                "Foundation"
+                                                            ]
+                                                        },
                                                         "is_code": true,
                                                         "loc": 69,
                                                         "mime": "text/plain; charset=utf-8",
@@ -278,6 +370,12 @@
                                                         "blank_lines": 42,
                                                         "decision_complexity": 5,
                                                         "extension": ".swift",
+                                                        "imports": {
+                                                            "local": [
+                                                                "Foundation",
+                                                                "XCTest"
+                                                            ]
+                                                        },
                                                         "is_code": true,
                                                         "loc": 147,
                                                         "mime": "text/plain; charset=utf-8",
@@ -298,6 +396,9 @@
                                                         "blank_lines": 24,
                                                         "decision_complexity": 3,
                                                         "extension": ".swift",
+                                                        "imports": {
+                                                            "local": []
+                                                        },
                                                         "is_code": true,
                                                         "loc": 60,
                                                         "mime": "text/plain; charset=us-ascii",
@@ -318,6 +419,11 @@
                                                         "blank_lines": 21,
                                                         "decision_complexity": 6,
                                                         "extension": ".swift",
+                                                        "imports": {
+                                                            "local": [
+                                                                "Foundation"
+                                                            ]
+                                                        },
                                                         "is_code": true,
                                                         "loc": 73,
                                                         "mime": "text/plain; charset=utf-8",
@@ -338,6 +444,11 @@
                                                         "blank_lines": 15,
                                                         "decision_complexity": 2,
                                                         "extension": ".swift",
+                                                        "imports": {
+                                                            "local": [
+                                                                "XCTest"
+                                                            ]
+                                                        },
                                                         "is_code": true,
                                                         "loc": 43,
                                                         "mime": "text/plain; charset=us-ascii",
@@ -358,6 +469,11 @@
                                                         "blank_lines": 34,
                                                         "decision_complexity": 10,
                                                         "extension": ".swift",
+                                                        "imports": {
+                                                            "local": [
+                                                                "Foundation"
+                                                            ]
+                                                        },
                                                         "is_code": true,
                                                         "loc": 157,
                                                         "mime": "text/plain; charset=utf-8",
@@ -378,6 +494,11 @@
                                                         "blank_lines": 56,
                                                         "decision_complexity": 14,
                                                         "extension": ".swift",
+                                                        "imports": {
+                                                            "local": [
+                                                                "XCTest"
+                                                            ]
+                                                        },
                                                         "is_code": true,
                                                         "loc": 205,
                                                         "mime": "text/plain; charset=utf-8",
@@ -398,6 +519,11 @@
                                                         "blank_lines": 20,
                                                         "decision_complexity": 6,
                                                         "extension": ".swift",
+                                                        "imports": {
+                                                            "local": [
+                                                                "Foundation"
+                                                            ]
+                                                        },
                                                         "is_code": true,
                                                         "loc": 89,
                                                         "mime": "text/plain; charset=utf-8",
@@ -418,6 +544,12 @@
                                                         "blank_lines": 14,
                                                         "decision_complexity": 0,
                                                         "extension": ".h",
+                                                        "imports": {
+                                                            "extern": [
+                                                                "XCTest/XCTest.h"
+                                                            ],
+                                                            "local": []
+                                                        },
                                                         "is_code": true,
                                                         "loc": 20,
                                                         "mime": "text/x-objective-c; charset=us-ascii",
@@ -458,6 +590,13 @@
                                                         "blank_lines": 95,
                                                         "decision_complexity": 27,
                                                         "extension": ".swift",
+                                                        "imports": {
+                                                            "local": [
+                                                                "Foundation",
+                                                                "XCTest",
+                                                                "WebKit"
+                                                            ]
+                                                        },
                                                         "is_code": true,
                                                         "loc": 345,
                                                         "mime": "text/plain; charset=utf-8",
@@ -475,12 +614,30 @@
                                                     "value": 49
                                                 }
                                             ],
+                                            "counter": {
+                                                "risks_count": 1,
+                                                "sloc_count": 913,
+                                                "source_files": 12,
+                                                "value_count": 142
+                                            },
                                             "name": "Core"
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 1,
+                                        "sloc_count": 913,
+                                        "source_files": 12,
+                                        "value_count": 142
+                                    },
                                     "name": "Pod"
                                 }
                             ],
+                            "counter": {
+                                "risks_count": 2,
+                                "sloc_count": 1139,
+                                "source_files": 13,
+                                "value_count": 180
+                            },
                             "name": "XCTest-Gherkin"
                         },
                         {
@@ -533,6 +690,12 @@
                                                 "blank_lines": 14,
                                                 "decision_complexity": 0,
                                                 "extension": ".h",
+                                                "imports": {
+                                                    "extern": [
+                                                        "UIKit/UIKit.h"
+                                                    ],
+                                                    "local": []
+                                                },
                                                 "is_code": true,
                                                 "loc": 16,
                                                 "mime": "text/x-objective-c; charset=us-ascii",
@@ -548,6 +711,12 @@
                                             "value": 1
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 132,
+                                        "source_files": 3,
+                                        "value_count": 25
+                                    },
                                     "name": "Pods-TurboConnect_Example"
                                 },
                                 {
@@ -598,6 +767,12 @@
                                                 "blank_lines": 14,
                                                 "decision_complexity": 0,
                                                 "extension": ".h",
+                                                "imports": {
+                                                    "extern": [
+                                                        "UIKit/UIKit.h"
+                                                    ],
+                                                    "local": []
+                                                },
                                                 "is_code": true,
                                                 "loc": 16,
                                                 "mime": "text/x-objective-c; charset=us-ascii",
@@ -613,6 +788,12 @@
                                             "value": 1
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 128,
+                                        "source_files": 3,
+                                        "value_count": 25
+                                    },
                                     "name": "Pods-TurboConnect_Tests"
                                 },
                                 {
@@ -663,6 +844,15 @@
                                                 "blank_lines": 16,
                                                 "decision_complexity": 0,
                                                 "extension": ".h",
+                                                "imports": {
+                                                    "extern": [
+                                                        "UIKit/UIKit.h"
+                                                    ],
+                                                    "local": [
+                                                        "TurboConnectLibrary-Swift.h",
+                                                        "TurboConnectLibrary.h"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 18,
                                                 "mime": "text/x-objective-c; charset=us-ascii",
@@ -678,6 +868,12 @@
                                             "value": 1
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 6,
+                                        "source_files": 3,
+                                        "value_count": 3
+                                    },
                                     "name": "TurboConnect"
                                 },
                                 {
@@ -728,6 +924,16 @@
                                                 "blank_lines": 17,
                                                 "decision_complexity": 0,
                                                 "extension": ".h",
+                                                "imports": {
+                                                    "extern": [
+                                                        "UIKit/UIKit.h"
+                                                    ],
+                                                    "local": [
+                                                        "UnusedStepsTracker.h",
+                                                        "XCGNativeInitializer.h",
+                                                        "XCTest_Gherkin.h"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 19,
                                                 "mime": "text/x-objective-c; charset=us-ascii",
@@ -743,6 +949,12 @@
                                             "value": 1
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 6,
+                                        "source_files": 3,
+                                        "value_count": 3
+                                    },
                                     "name": "XCTest-Gherkin"
                                 },
                                 {
@@ -793,6 +1005,14 @@
                                                 "blank_lines": 15,
                                                 "decision_complexity": 0,
                                                 "extension": ".h",
+                                                "imports": {
+                                                    "extern": [
+                                                        "UIKit/UIKit.h"
+                                                    ],
+                                                    "local": [
+                                                        "Zip.h"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 17,
                                                 "mime": "text/x-objective-c; charset=us-ascii",
@@ -808,9 +1028,21 @@
                                             "value": 1
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 6,
+                                        "source_files": 3,
+                                        "value_count": 3
+                                    },
                                     "name": "Zip"
                                 }
                             ],
+                            "counter": {
+                                "risks_count": 0,
+                                "sloc_count": 278,
+                                "source_files": 15,
+                                "value_count": 59
+                            },
                             "name": "Target Support Files"
                         },
                         {
@@ -823,6 +1055,11 @@
                                                 "blank_lines": 36,
                                                 "decision_complexity": 14,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "Foundation"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 97,
                                                 "mime": "text/plain; charset=utf-8",
@@ -843,6 +1080,12 @@
                                                 "blank_lines": 110,
                                                 "decision_complexity": 52,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "Foundation",
+                                                        "minizip"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 413,
                                                 "mime": "text/plain; charset=utf-8",
@@ -867,6 +1110,11 @@
                                                 "blank_lines": 28,
                                                 "decision_complexity": 6,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "Foundation"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 108,
                                                 "mime": "text/plain; charset=utf-8",
@@ -889,6 +1137,10 @@
                                                         "blank_lines": 30,
                                                         "decision_complexity": 9,
                                                         "extension": ".h",
+                                                        "imports": {
+                                                            "extern": [],
+                                                            "local": []
+                                                        },
                                                         "is_code": true,
                                                         "loc": 131,
                                                         "mime": "text/x-c; charset=us-ascii",
@@ -932,6 +1184,15 @@
                                                         "blank_lines": 102,
                                                         "decision_complexity": 4,
                                                         "extension": ".h",
+                                                        "imports": {
+                                                            "extern": [
+                                                                "stdio.h",
+                                                                "stdlib.h"
+                                                            ],
+                                                            "local": [
+                                                                "zlib.h"
+                                                            ]
+                                                        },
                                                         "is_code": true,
                                                         "loc": 175,
                                                         "mime": "text/x-c; charset=us-ascii",
@@ -976,6 +1237,14 @@
                                                         "blank_lines": 101,
                                                         "decision_complexity": 44,
                                                         "extension": ".h",
+                                                        "imports": {
+                                                            "extern": [],
+                                                            "local": [
+                                                                "zlib.h",
+                                                                "ioapi.h",
+                                                                "bzlib.h"
+                                                            ]
+                                                        },
                                                         "is_code": true,
                                                         "loc": 319,
                                                         "mime": "text/x-c; charset=us-ascii",
@@ -1021,6 +1290,10 @@
                                                         "blank_lines": 76,
                                                         "decision_complexity": 18,
                                                         "extension": ".h",
+                                                        "imports": {
+                                                            "extern": [],
+                                                            "local": []
+                                                        },
                                                         "is_code": true,
                                                         "loc": 198,
                                                         "mime": "text/x-c; charset=us-ascii",
@@ -1036,15 +1309,39 @@
                                                     "value": 19
                                                 }
                                             ],
+                                            "counter": {
+                                                "risks_count": 8,
+                                                "sloc_count": 4000,
+                                                "source_files": 7,
+                                                "value_count": 851
+                                            },
                                             "name": "minizip"
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 11,
+                                        "sloc_count": 4444,
+                                        "source_files": 10,
+                                        "value_count": 953
+                                    },
                                     "name": "Zip"
                                 }
                             ],
+                            "counter": {
+                                "risks_count": 11,
+                                "sloc_count": 4444,
+                                "source_files": 10,
+                                "value_count": 953
+                            },
                             "name": "Zip"
                         }
                     ],
+                    "counter": {
+                        "risks_count": 13,
+                        "sloc_count": 5861,
+                        "source_files": 38,
+                        "value_count": 1192
+                    },
                     "name": "Pods"
                 },
                 {
@@ -1059,6 +1356,11 @@
                                                 "blank_lines": 15,
                                                 "decision_complexity": 1,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 31,
                                                 "mime": "text/plain; charset=us-ascii",
@@ -1079,6 +1381,12 @@
                                                 "blank_lines": 43,
                                                 "decision_complexity": 13,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 183,
                                                 "mime": "text/plain; charset=utf-8",
@@ -1095,23 +1403,31 @@
                                         },
                                         {
                                             "meta": {
-                                                "aggregate_complexity": 8,
-                                                "blank_lines": 30,
+                                                "aggregate_complexity": 19,
+                                                "blank_lines": 31,
                                                 "decision_complexity": 4,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
                                                 "is_code": true,
-                                                "loc": 88,
+                                                "loc": 113,
                                                 "mime": "text/x-c; charset=utf-8",
                                                 "name": "DiagnosePropertiesViewController",
-                                                "nested_complexity": 4,
-                                                "risks": [],
-                                                "risks_points": 0,
-                                                "size": 2766,
-                                                "sloc": 58,
+                                                "nested_complexity": 10,
+                                                "risks": [
+                                                    "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
+                                                ],
+                                                "risks_points": 5,
+                                                "size": 4010,
+                                                "sloc": 82,
                                                 "type": "C source, UTF-8 Unicode text"
                                             },
                                             "name": "DiagnosePropertiesViewController.swift",
-                                            "value": 8
+                                            "value": 19
                                         },
                                         {
                                             "meta": {
@@ -1119,6 +1435,12 @@
                                                 "blank_lines": 43,
                                                 "decision_complexity": 10,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 206,
                                                 "mime": "text/plain; charset=us-ascii",
@@ -1139,6 +1461,13 @@
                                                 "blank_lines": 66,
                                                 "decision_complexity": 22,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit",
+                                                        "TurboConnectLibrary",
+                                                        "Zip"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 279,
                                                 "mime": "text/plain; charset=utf-8",
@@ -1159,6 +1488,11 @@
                                                 "blank_lines": 15,
                                                 "decision_complexity": 1,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 45,
                                                 "mime": "text/plain; charset=utf-8",
@@ -1174,6 +1508,12 @@
                                             "value": 6
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 1,
+                                        "sloc_count": 644,
+                                        "source_files": 6,
+                                        "value_count": 86
+                                    },
                                     "name": "Controller"
                                 },
                                 {
@@ -1184,6 +1524,12 @@
                                                 "blank_lines": 10,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 22,
                                                 "mime": "text/x-c++; charset=utf-8",
@@ -1199,6 +1545,12 @@
                                             "value": 3
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 12,
+                                        "source_files": 1,
+                                        "value_count": 3
+                                    },
                                     "name": "Login"
                                 },
                                 {
@@ -1209,6 +1561,11 @@
                                                 "blank_lines": 13,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "Foundation"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 28,
                                                 "mime": "text/x-c; charset=utf-8",
@@ -1224,15 +1581,39 @@
                                             "value": 2
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 15,
+                                        "source_files": 1,
+                                        "value_count": 2
+                                    },
                                     "name": "Model"
                                 }
                             ],
+                            "counter": {
+                                "risks_count": 1,
+                                "sloc_count": 671,
+                                "source_files": 8,
+                                "value_count": 91
+                            },
                             "name": "ViewControllersAndStoryboards"
                         }
                     ],
+                    "counter": {
+                        "risks_count": 1,
+                        "sloc_count": 671,
+                        "source_files": 8,
+                        "value_count": 91
+                    },
                     "name": "TurboConnect"
                 }
             ],
+            "counter": {
+                "risks_count": 14,
+                "sloc_count": 6941,
+                "source_files": 55,
+                "value_count": 1331
+            },
             "name": "Example"
         },
         {
@@ -1245,6 +1626,9 @@
                                 "blank_lines": 6,
                                 "decision_complexity": 0,
                                 "extension": ".swift",
+                                "imports": {
+                                    "local": []
+                                },
                                 "is_code": true,
                                 "loc": 6,
                                 "mime": "text/plain; charset=us-ascii",
@@ -1260,9 +1644,21 @@
                             "value": 1
                         }
                     ],
+                    "counter": {
+                        "risks_count": 0,
+                        "sloc_count": 0,
+                        "source_files": 1,
+                        "value_count": 1
+                    },
                     "name": "Classes"
                 }
             ],
+            "counter": {
+                "risks_count": 0,
+                "sloc_count": 0,
+                "source_files": 1,
+                "value_count": 1
+            },
             "name": "TurboConnect"
         },
         {
@@ -1275,6 +1671,15 @@
                                 "blank_lines": 264,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [
+                                        "Foundation/Foundation.h",
+                                        "stdint.h",
+                                        "stddef.h",
+                                        "stdbool.h"
+                                    ],
+                                    "local": []
+                                },
                                 "is_code": true,
                                 "loc": 400,
                                 "mime": "text/x-c; charset=utf-8",
@@ -1295,6 +1700,12 @@
                                 "blank_lines": 16,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "imports": {
+                                    "extern": [
+                                        "UIKit/UIKit.h"
+                                    ],
+                                    "local": []
+                                },
                                 "is_code": true,
                                 "loc": 18,
                                 "mime": "text/x-objective-c; charset=utf-8",
@@ -1310,9 +1721,21 @@
                             "value": 1
                         }
                     ],
+                    "counter": {
+                        "risks_count": 0,
+                        "sloc_count": 138,
+                        "source_files": 2,
+                        "value_count": 2
+                    },
                     "name": "Headers"
                 }
             ],
+            "counter": {
+                "risks_count": 0,
+                "sloc_count": 138,
+                "source_files": 2,
+                "value_count": 2
+            },
             "name": "TurboConnectLibrary.framework"
         },
         {
@@ -1327,6 +1750,12 @@
                                         "blank_lines": 10,
                                         "decision_complexity": 0,
                                         "extension": ".h",
+                                        "imports": {
+                                            "extern": [],
+                                            "local": [
+                                                "CoreManager.h"
+                                            ]
+                                        },
                                         "is_code": true,
                                         "loc": 10,
                                         "mime": "text/x-objective-c; charset=utf-8",
@@ -1347,6 +1776,12 @@
                                         "blank_lines": 56,
                                         "decision_complexity": 34,
                                         "extension": ".swift",
+                                        "imports": {
+                                            "local": [
+                                                "UIKit",
+                                                "TurboConnectPrivate"
+                                            ]
+                                        },
                                         "is_code": true,
                                         "loc": 291,
                                         "mime": "text/plain; charset=utf-8",
@@ -1354,7 +1789,7 @@
                                         "nested_complexity": 4,
                                         "risks": [],
                                         "risks_points": 0,
-                                        "size": 9707,
+                                        "size": 9722,
                                         "sloc": 235,
                                         "type": "UTF-8 Unicode text, with very long lines"
                                     },
@@ -1367,6 +1802,12 @@
                                         "blank_lines": 16,
                                         "decision_complexity": 0,
                                         "extension": ".h",
+                                        "imports": {
+                                            "extern": [
+                                                "UIKit/UIKit.h"
+                                            ],
+                                            "local": []
+                                        },
                                         "is_code": true,
                                         "loc": 18,
                                         "mime": "text/x-objective-c; charset=utf-8",
@@ -1389,6 +1830,11 @@
                                                 "blank_lines": 21,
                                                 "decision_complexity": 4,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "CoreBluetooth"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 82,
                                                 "mime": "text/plain; charset=us-ascii",
@@ -1404,6 +1850,12 @@
                                             "value": 7
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 61,
+                                        "source_files": 1,
+                                        "value_count": 7
+                                    },
                                     "name": "Bike"
                                 },
                                 {
@@ -1414,6 +1866,11 @@
                                                 "blank_lines": 19,
                                                 "decision_complexity": 6,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "TurboConnectPrivate"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 59,
                                                 "mime": "text/plain; charset=utf-8",
@@ -1434,6 +1891,13 @@
                                                 "blank_lines": 32,
                                                 "decision_complexity": 17,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit",
+                                                        "CoreBluetooth",
+                                                        "TurboConnectPrivate"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 132,
                                                 "mime": "text/plain; charset=utf-8",
@@ -1450,23 +1914,30 @@
                                         },
                                         {
                                             "meta": {
-                                                "aggregate_complexity": 30,
-                                                "blank_lines": 65,
-                                                "decision_complexity": 26,
+                                                "aggregate_complexity": 28,
+                                                "blank_lines": 64,
+                                                "decision_complexity": 24,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit",
+                                                        "CoreBluetooth",
+                                                        "TurboConnectPrivate"
+                                                    ]
+                                                },
                                                 "is_code": true,
-                                                "loc": 315,
+                                                "loc": 313,
                                                 "mime": "text/plain; charset=us-ascii",
                                                 "name": "BluetoothManager",
                                                 "nested_complexity": 4,
                                                 "risks": [],
                                                 "risks_points": 0,
-                                                "size": 11815,
-                                                "sloc": 250,
+                                                "size": 11741,
+                                                "sloc": 249,
                                                 "type": "ASCII text"
                                             },
                                             "name": "BluetoothManager.swift",
-                                            "value": 30
+                                            "value": 28
                                         },
                                         {
                                             "meta": {
@@ -1474,6 +1945,12 @@
                                                 "blank_lines": 25,
                                                 "decision_complexity": 11,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit",
+                                                        "CoreBluetooth"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 107,
                                                 "mime": "text/x-c; charset=us-ascii",
@@ -1494,6 +1971,13 @@
                                                 "blank_lines": 31,
                                                 "decision_complexity": 18,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit",
+                                                        "CoreBluetooth",
+                                                        "TurboConnectPrivate"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 130,
                                                 "mime": "text/x-c++; charset=utf-8",
@@ -1511,6 +1995,12 @@
                                             "value": 31
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 1,
+                                        "sloc_count": 570,
+                                        "source_files": 5,
+                                        "value_count": 104
+                                    },
                                     "name": "BluetoothStack"
                                 },
                                 {
@@ -1521,6 +2011,13 @@
                                                 "blank_lines": 27,
                                                 "decision_complexity": 0,
                                                 "extension": ".h",
+                                                "imports": {
+                                                    "extern": [
+                                                        "Foundation/Foundation.h",
+                                                        "CoreBluetooth/CoreBluetooth.h"
+                                                    ],
+                                                    "local": []
+                                                },
                                                 "is_code": true,
                                                 "loc": 52,
                                                 "mime": "text/x-objective-c; charset=us-ascii",
@@ -1541,6 +2038,18 @@
                                                 "blank_lines": 55,
                                                 "decision_complexity": 13,
                                                 "extension": ".mm",
+                                                "imports": {
+                                                    "extern": [
+                                                        "TurboConnectLibrary/TurboConnectLibrary-Swift.h"
+                                                    ],
+                                                    "local": [
+                                                        "CoreManager.h",
+                                                        "turbo-connect-core.h",
+                                                        "NSData+Core.h",
+                                                        "identification_sequence.h",
+                                                        "NSString+Core.h"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 186,
                                                 "mime": "text/x-objective-c; charset=us-ascii",
@@ -1561,6 +2070,14 @@
                                                 "blank_lines": 13,
                                                 "decision_complexity": 0,
                                                 "extension": ".h",
+                                                "imports": {
+                                                    "extern": [
+                                                        "Foundation/Foundation.h"
+                                                    ],
+                                                    "local": [
+                                                        "turbo-connect-core.h"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 18,
                                                 "mime": "text/x-objective-c; charset=utf-8",
@@ -1596,6 +2113,12 @@
                                             "value": 1
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 166,
+                                        "source_files": 4,
+                                        "value_count": 19
+                                    },
                                     "name": "Core"
                                 },
                                 {
@@ -1606,6 +2129,11 @@
                                                 "blank_lines": 11,
                                                 "decision_complexity": 1,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "Foundation"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 27,
                                                 "mime": "text/plain; charset=utf-8",
@@ -1626,6 +2154,13 @@
                                                 "blank_lines": 13,
                                                 "decision_complexity": 0,
                                                 "extension": ".h",
+                                                "imports": {
+                                                    "extern": [
+                                                        "Foundation/Foundation.h",
+                                                        "vector"
+                                                    ],
+                                                    "local": []
+                                                },
                                                 "is_code": true,
                                                 "loc": 17,
                                                 "mime": "text/x-objective-c; charset=utf-8",
@@ -1661,6 +2196,12 @@
                                             "value": 3
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 33,
+                                        "source_files": 3,
+                                        "value_count": 8
+                                    },
                                     "name": "Helpers"
                                 },
                                 {
@@ -1671,6 +2212,11 @@
                                                 "blank_lines": 29,
                                                 "decision_complexity": 17,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 126,
                                                 "mime": "text/x-c++; charset=utf-8",
@@ -1686,6 +2232,12 @@
                                             "value": 23
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 97,
+                                        "source_files": 1,
+                                        "value_count": 23
+                                    },
                                     "name": "Known Bikes"
                                 },
                                 {
@@ -1696,6 +2248,11 @@
                                                 "blank_lines": 34,
                                                 "decision_complexity": 9,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 143,
                                                 "mime": "text/x-c++; charset=utf-8",
@@ -1711,6 +2268,12 @@
                                             "value": 13
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 109,
+                                        "source_files": 1,
+                                        "value_count": 13
+                                    },
                                     "name": "Logger"
                                 },
                                 {
@@ -1721,6 +2284,11 @@
                                                 "blank_lines": 21,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 57,
                                                 "mime": "text/x-c++; charset=utf-8",
@@ -1741,6 +2309,11 @@
                                                 "blank_lines": 10,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 17,
                                                 "mime": "text/plain; charset=utf-8",
@@ -1761,6 +2334,12 @@
                                                 "blank_lines": 19,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit",
+                                                        "Alamofire"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 72,
                                                 "mime": "text/x-c++; charset=utf-8",
@@ -1783,6 +2362,12 @@
                                                 "blank_lines": 10,
                                                 "decision_complexity": 1,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit",
+                                                        "Alamofire"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 36,
                                                 "mime": "text/x-c++; charset=utf-8",
@@ -1805,6 +2390,11 @@
                                                 "blank_lines": 14,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 33,
                                                 "mime": "text/plain; charset=utf-8",
@@ -1820,6 +2410,12 @@
                                             "value": 2
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 2,
+                                        "sloc_count": 141,
+                                        "source_files": 5,
+                                        "value_count": 35
+                                    },
                                     "name": "Networking"
                                 },
                                 {
@@ -1827,9 +2423,39 @@
                                         {
                                             "meta": {
                                                 "aggregate_complexity": 6,
+                                                "blank_lines": 24,
+                                                "decision_complexity": 3,
+                                                "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "Foundation"
+                                                    ]
+                                                },
+                                                "is_code": true,
+                                                "loc": 96,
+                                                "mime": "text/x-c++; charset=utf-8",
+                                                "name": "ObservableParameter",
+                                                "nested_complexity": 3,
+                                                "risks": [],
+                                                "risks_points": 0,
+                                                "size": 3207,
+                                                "sloc": 72,
+                                                "type": "C++ source, UTF-8 Unicode text"
+                                            },
+                                            "name": "ObservableParameter.swift",
+                                            "value": 6
+                                        },
+                                        {
+                                            "meta": {
+                                                "aggregate_complexity": 6,
                                                 "blank_lines": 12,
                                                 "decision_complexity": 2,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "TurboConnectPrivate"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 39,
                                                 "mime": "text/plain; charset=us-ascii",
@@ -1847,24 +2473,155 @@
                                         {
                                             "meta": {
                                                 "aggregate_complexity": 3,
-                                                "blank_lines": 13,
+                                                "blank_lines": 12,
                                                 "decision_complexity": 1,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": []
+                                                },
                                                 "is_code": true,
-                                                "loc": 51,
+                                                "loc": 50,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "ParameterInfo",
                                                 "nested_complexity": 2,
                                                 "risks": [],
                                                 "risks_points": 0,
-                                                "size": 1766,
+                                                "size": 1685,
                                                 "sloc": 38,
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "ParameterInfo.swift",
                                             "value": 3
+                                        },
+                                        {
+                                            "children": [
+                                                {
+                                                    "meta": {
+                                                        "aggregate_complexity": 3,
+                                                        "blank_lines": 36,
+                                                        "decision_complexity": 0,
+                                                        "extension": ".swift",
+                                                        "imports": {
+                                                            "local": [
+                                                                "Foundation"
+                                                            ]
+                                                        },
+                                                        "is_code": true,
+                                                        "loc": 129,
+                                                        "mime": "text/plain; charset=utf-8",
+                                                        "name": "Operations",
+                                                        "nested_complexity": 3,
+                                                        "risks": [],
+                                                        "risks_points": 0,
+                                                        "size": 3525,
+                                                        "sloc": 93,
+                                                        "type": "UTF-8 Unicode text"
+                                                    },
+                                                    "name": "Operations.swift",
+                                                    "value": 3
+                                                }
+                                            ],
+                                            "counter": {
+                                                "risks_count": 0,
+                                                "sloc_count": 93,
+                                                "source_files": 1,
+                                                "value_count": 3
+                                            },
+                                            "name": "Implementations"
+                                        },
+                                        {
+                                            "children": [
+                                                {
+                                                    "meta": {
+                                                        "aggregate_complexity": 5,
+                                                        "blank_lines": 14,
+                                                        "decision_complexity": 2,
+                                                        "extension": ".swift",
+                                                        "imports": {
+                                                            "local": [
+                                                                "Foundation"
+                                                            ]
+                                                        },
+                                                        "is_code": true,
+                                                        "loc": 40,
+                                                        "mime": "text/plain; charset=utf-8",
+                                                        "name": "NotifyParameter",
+                                                        "nested_complexity": 3,
+                                                        "risks": [],
+                                                        "risks_points": 0,
+                                                        "size": 1148,
+                                                        "sloc": 26,
+                                                        "type": "UTF-8 Unicode text"
+                                                    },
+                                                    "name": "NotifyParameter.swift",
+                                                    "value": 5
+                                                },
+                                                {
+                                                    "meta": {
+                                                        "aggregate_complexity": 6,
+                                                        "blank_lines": 14,
+                                                        "decision_complexity": 3,
+                                                        "extension": ".swift",
+                                                        "imports": {
+                                                            "local": [
+                                                                "Foundation"
+                                                            ]
+                                                        },
+                                                        "is_code": true,
+                                                        "loc": 44,
+                                                        "mime": "text/plain; charset=utf-8",
+                                                        "name": "ReadParameter",
+                                                        "nested_complexity": 3,
+                                                        "risks": [],
+                                                        "risks_points": 0,
+                                                        "size": 1220,
+                                                        "sloc": 30,
+                                                        "type": "UTF-8 Unicode text"
+                                                    },
+                                                    "name": "ReadParameter.swift",
+                                                    "value": 6
+                                                },
+                                                {
+                                                    "meta": {
+                                                        "aggregate_complexity": 1,
+                                                        "blank_lines": 12,
+                                                        "decision_complexity": 0,
+                                                        "extension": ".swift",
+                                                        "imports": {
+                                                            "local": [
+                                                                "Foundation"
+                                                            ]
+                                                        },
+                                                        "is_code": true,
+                                                        "loc": 22,
+                                                        "mime": "text/plain; charset=utf-8",
+                                                        "name": "WriteParameter",
+                                                        "nested_complexity": 1,
+                                                        "risks": [],
+                                                        "risks_points": 0,
+                                                        "size": 533,
+                                                        "sloc": 10,
+                                                        "type": "UTF-8 Unicode text"
+                                                    },
+                                                    "name": "WriteParameter.swift",
+                                                    "value": 1
+                                                }
+                                            ],
+                                            "counter": {
+                                                "risks_count": 0,
+                                                "sloc_count": 66,
+                                                "source_files": 3,
+                                                "value_count": 12
+                                            },
+                                            "name": "Operation Declarations"
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 296,
+                                        "source_files": 7,
+                                        "value_count": 30
+                                    },
                                     "name": "Parameter"
                                 },
                                 {
@@ -1879,6 +2636,15 @@
                                                                 "blank_lines": 215,
                                                                 "decision_complexity": 0,
                                                                 "extension": ".h",
+                                                                "imports": {
+                                                                    "extern": [
+                                                                        "Foundation/Foundation.h",
+                                                                        "stdint.h",
+                                                                        "stddef.h",
+                                                                        "stdbool.h"
+                                                                    ],
+                                                                    "local": []
+                                                                },
                                                                 "is_code": true,
                                                                 "loc": 266,
                                                                 "mime": "text/x-c; charset=us-ascii",
@@ -1894,15 +2660,39 @@
                                                             "value": 1
                                                         }
                                                     ],
+                                                    "counter": {
+                                                        "risks_count": 0,
+                                                        "sloc_count": 51,
+                                                        "source_files": 1,
+                                                        "value_count": 1
+                                                    },
                                                     "name": "Headers"
                                                 }
                                             ],
+                                            "counter": {
+                                                "risks_count": 0,
+                                                "sloc_count": 51,
+                                                "source_files": 1,
+                                                "value_count": 1
+                                            },
                                             "name": "Alamofire.framework"
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 51,
+                                        "source_files": 1,
+                                        "value_count": 1
+                                    },
                                     "name": "Frameworks"
                                 }
                             ],
+                            "counter": {
+                                "risks_count": 3,
+                                "sloc_count": 1761,
+                                "source_files": 31,
+                                "value_count": 280
+                            },
                             "name": "TurboConnectFramework"
                         },
                         {
@@ -1915,6 +2705,12 @@
                                                 "blank_lines": 66,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "XCTest",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 125,
                                                 "mime": "text/plain; charset=utf-8",
@@ -1930,16 +2726,54 @@
                                             "value": 2
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 59,
+                                        "source_files": 1,
+                                        "value_count": 2
+                                    },
                                     "name": "Bike Tests"
                                 },
                                 {
                                     "children": [
                                         {
                                             "meta": {
+                                                "aggregate_complexity": 2,
+                                                "blank_lines": 31,
+                                                "decision_complexity": 0,
+                                                "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "XCTest",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
+                                                "is_code": true,
+                                                "loc": 56,
+                                                "mime": "text/plain; charset=utf-8",
+                                                "name": "AvailableParametersTests",
+                                                "nested_complexity": 2,
+                                                "risks": [],
+                                                "risks_points": 0,
+                                                "size": 2271,
+                                                "sloc": 25,
+                                                "type": "UTF-8 Unicode text, with very long lines"
+                                            },
+                                            "name": "AvailableParametersTests.swift",
+                                            "value": 2
+                                        },
+                                        {
+                                            "meta": {
                                                 "aggregate_complexity": 6,
                                                 "blank_lines": 55,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "XCTest",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 137,
                                                 "mime": "text/plain; charset=utf-8",
@@ -1960,6 +2794,12 @@
                                                 "blank_lines": 93,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "XCTest",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 223,
                                                 "mime": "text/plain; charset=utf-8",
@@ -1980,8 +2820,15 @@
                                                 "blank_lines": 268,
                                                 "decision_complexity": 1,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "XCTest",
+                                                        "CoreBluetooth",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
                                                 "is_code": true,
-                                                "loc": 591,
+                                                "loc": 593,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "BluetoothManagerTests",
                                                 "nested_complexity": 3,
@@ -1989,8 +2836,8 @@
                                                     "[info] Arguably many lines of code, this may be ok for now."
                                                 ],
                                                 "risks_points": 2,
-                                                "size": 20956,
-                                                "sloc": 323,
+                                                "size": 21065,
+                                                "sloc": 325,
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "BluetoothManagerTests.swift",
@@ -1999,18 +2846,25 @@
                                         {
                                             "meta": {
                                                 "aggregate_complexity": 9,
-                                                "blank_lines": 69,
+                                                "blank_lines": 70,
                                                 "decision_complexity": 6,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "TurboConnectLibrary",
+                                                        "CoreBluetooth",
+                                                        "TurboConnectPrivate"
+                                                    ]
+                                                },
                                                 "is_code": true,
-                                                "loc": 307,
+                                                "loc": 312,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "CoreBluetoothTestHelpers",
                                                 "nested_complexity": 3,
                                                 "risks": [],
                                                 "risks_points": 0,
-                                                "size": 8822,
-                                                "sloc": 238,
+                                                "size": 8979,
+                                                "sloc": 242,
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "CoreBluetoothTestHelpers.swift",
@@ -2022,6 +2876,12 @@
                                                 "blank_lines": 70,
                                                 "decision_complexity": 2,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "XCTest",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 160,
                                                 "mime": "text/plain; charset=utf-8",
@@ -2042,6 +2902,12 @@
                                                 "blank_lines": 71,
                                                 "decision_complexity": 5,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "XCTest",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 180,
                                                 "mime": "text/plain; charset=utf-8",
@@ -2057,6 +2923,12 @@
                                             "value": 8
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 1,
+                                        "sloc_count": 1003,
+                                        "source_files": 7,
+                                        "value_count": 39
+                                    },
                                     "name": "BluetoothStack Tests"
                                 },
                                 {
@@ -2067,6 +2939,12 @@
                                                 "blank_lines": 102,
                                                 "decision_complexity": 3,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "XCTest",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 240,
                                                 "mime": "text/plain; charset=utf-8",
@@ -2082,6 +2960,12 @@
                                             "value": 6
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 138,
+                                        "source_files": 1,
+                                        "value_count": 6
+                                    },
                                     "name": "KnownBikes Tests"
                                 },
                                 {
@@ -2092,6 +2976,12 @@
                                                 "blank_lines": 65,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "XCTest",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 154,
                                                 "mime": "text/plain; charset=utf-8",
@@ -2107,6 +2997,12 @@
                                             "value": 2
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 89,
+                                        "source_files": 1,
+                                        "value_count": 2
+                                    },
                                     "name": "Logger tests"
                                 },
                                 {
@@ -2117,6 +3013,12 @@
                                                 "blank_lines": 11,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "UIKit",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 23,
                                                 "mime": "text/plain; charset=utf-8",
@@ -2137,6 +3039,13 @@
                                                 "blank_lines": 34,
                                                 "decision_complexity": 4,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "XCTest",
+                                                        "TurboConnectLibrary",
+                                                        "Alamofire"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 116,
                                                 "mime": "text/plain; charset=utf-8",
@@ -2152,7 +3061,154 @@
                                             "value": 7
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 94,
+                                        "source_files": 2,
+                                        "value_count": 9
+                                    },
                                     "name": "Networking Tests"
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "meta": {
+                                                "aggregate_complexity": 11,
+                                                "blank_lines": 41,
+                                                "decision_complexity": 7,
+                                                "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "XCTest",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
+                                                "is_code": true,
+                                                "loc": 140,
+                                                "mime": "text/x-c++; charset=utf-8",
+                                                "name": "ParameterHelpers",
+                                                "nested_complexity": 4,
+                                                "risks": [],
+                                                "risks_points": 0,
+                                                "size": 5860,
+                                                "sloc": 99,
+                                                "type": "C++ source, UTF-8 Unicode text"
+                                            },
+                                            "name": "ParameterHelpers.swift",
+                                            "value": 11
+                                        },
+                                        {
+                                            "meta": {
+                                                "aggregate_complexity": 2,
+                                                "blank_lines": 14,
+                                                "decision_complexity": 0,
+                                                "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "XCTest",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
+                                                "is_code": true,
+                                                "loc": 36,
+                                                "mime": "text/plain; charset=utf-8",
+                                                "name": "ReadNotifyTests",
+                                                "nested_complexity": 2,
+                                                "risks": [],
+                                                "risks_points": 0,
+                                                "size": 971,
+                                                "sloc": 22,
+                                                "type": "UTF-8 Unicode text"
+                                            },
+                                            "name": "ReadNotifyTests.swift",
+                                            "value": 2
+                                        },
+                                        {
+                                            "meta": {
+                                                "aggregate_complexity": 2,
+                                                "blank_lines": 30,
+                                                "decision_complexity": 0,
+                                                "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "XCTest",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
+                                                "is_code": true,
+                                                "loc": 64,
+                                                "mime": "text/plain; charset=utf-8",
+                                                "name": "ReadNotifyWriteTests",
+                                                "nested_complexity": 2,
+                                                "risks": [],
+                                                "risks_points": 0,
+                                                "size": 1657,
+                                                "sloc": 34,
+                                                "type": "UTF-8 Unicode text"
+                                            },
+                                            "name": "ReadNotifyWriteTests.swift",
+                                            "value": 2
+                                        },
+                                        {
+                                            "meta": {
+                                                "aggregate_complexity": 3,
+                                                "blank_lines": 19,
+                                                "decision_complexity": 0,
+                                                "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "XCTest",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
+                                                "is_code": true,
+                                                "loc": 41,
+                                                "mime": "text/plain; charset=utf-8",
+                                                "name": "ReadParametersTests",
+                                                "nested_complexity": 3,
+                                                "risks": [],
+                                                "risks_points": 0,
+                                                "size": 1168,
+                                                "sloc": 22,
+                                                "type": "UTF-8 Unicode text"
+                                            },
+                                            "name": "ReadParametersTests.swift",
+                                            "value": 3
+                                        },
+                                        {
+                                            "meta": {
+                                                "aggregate_complexity": 3,
+                                                "blank_lines": 18,
+                                                "decision_complexity": 0,
+                                                "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "XCTest",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
+                                                "is_code": true,
+                                                "loc": 40,
+                                                "mime": "text/plain; charset=utf-8",
+                                                "name": "ReadWriteTests",
+                                                "nested_complexity": 3,
+                                                "risks": [],
+                                                "risks_points": 0,
+                                                "size": 1176,
+                                                "sloc": 22,
+                                                "type": "UTF-8 Unicode text"
+                                            },
+                                            "name": "ReadWriteTests.swift",
+                                            "value": 3
+                                        }
+                                    ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 199,
+                                        "source_files": 5,
+                                        "value_count": 21
+                                    },
+                                    "name": "ParameterTests"
                                 },
                                 {
                                     "children": [
@@ -2162,6 +3218,12 @@
                                                 "blank_lines": 190,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
+                                                "imports": {
+                                                    "local": [
+                                                        "XCTest",
+                                                        "TurboConnectLibrary"
+                                                    ]
+                                                },
                                                 "is_code": true,
                                                 "loc": 471,
                                                 "mime": "text/plain; charset=utf-8",
@@ -2177,17 +3239,47 @@
                                             "value": 2
                                         }
                                     ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 281,
+                                        "source_files": 1,
+                                        "value_count": 2
+                                    },
                                     "name": "TurboConnect Tests"
                                 }
                             ],
+                            "counter": {
+                                "risks_count": 1,
+                                "sloc_count": 1863,
+                                "source_files": 18,
+                                "value_count": 81
+                            },
                             "name": "TurboConnectFrameworkTests"
                         }
                     ],
+                    "counter": {
+                        "risks_count": 4,
+                        "sloc_count": 3624,
+                        "source_files": 49,
+                        "value_count": 361
+                    },
                     "name": "TurboConnectFramework"
                 }
             ],
+            "counter": {
+                "risks_count": 4,
+                "sloc_count": 3624,
+                "source_files": 49,
+                "value_count": 361
+            },
             "name": "TurboConnectFramework"
         }
     ],
+    "counter": {
+        "risks_count": 18,
+        "sloc_count": 10703,
+        "source_files": 107,
+        "value_count": 1695
+    },
     "name": "turbo-connect-ios-lib"
 }
