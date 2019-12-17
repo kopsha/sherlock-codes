@@ -6,7 +6,6 @@ import os
 import anytree
 import anytree.exporter
 import magic
-import clang.cindex
 
 from datetime import datetime
 from git.cmd import Git
@@ -188,7 +187,29 @@ def inspect(filepath, meta):
 
 def parse_git_repository(src_root, output=None):
 
-    def make_path(root, path):
+    def aggregate_data(node):
+        if not node.children:
+            return {
+                'source_files': 1,
+                'sloc_count': node.meta.get('sloc'),
+                'risks_count' : len(node.meta.get('risks')),
+                'value_count' : node.value
+            }
+        else:
+            counter = {
+                'source_files': 0,
+                'sloc_count': 0,
+                'risks_count' : 0,
+                'value_count' : 0,
+            }
+            for c in node.children:
+                partial_counter = aggregate_data(c)
+                for k in counter:
+                    counter[k] += partial_counter[k]
+            node.counter = counter
+            return node.counter
+
+    def make_tree_path(root, path):
         current = root
         for child in path.split(os.sep):
             partial = next((cc for cc in current.children if cc.name == child), None)
@@ -202,9 +223,10 @@ def parse_git_repository(src_root, output=None):
     print_stage(f'Analyzing {project_name}')
 
     git = Git(src_root)
+    git_filelist = sorted(git.ls_files().split('\n'), key=lambda s : s.count(os.sep))
     root = anytree.Node(project_name)
 
-    for filepath in sorted(git.ls_files().split('\n'), key=lambda s : s.count(os.sep)):
+    for filepath in git_filelist:
         folder = os.path.dirname(filepath)
         file = os.path.basename(filepath)
         file_meta = quick_look(os.path.join(src_root,filepath))
@@ -213,12 +235,16 @@ def parse_git_repository(src_root, output=None):
             continue
 
         if folder:
-            parent = make_path(root, folder)
+            parent = make_tree_path(root, folder)
         else:
             parent = root
 
         value = inspect(os.path.join(src_root,filepath), file_meta)
         node = anytree.Node(file, parent=parent, value=value, meta=file_meta)
+
+    # Count items up
+    aggregate_data(root)
+    print(f'Completed scan of {root.counter["source_files"]} files.')
 
     if not output:
         output = f'{project_name}.json'

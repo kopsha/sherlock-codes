@@ -27,8 +27,11 @@ def parse_java_imports(source_code):
 
     package_ref = re.compile(r'\s*package\s+([\w\.]+)\s*')
     package = package_ref.findall(source_wihtout_comments)
-    assert(len(package) == 1)
-    package = '.'.join(package[0].split('.')[:3])
+    if len(package) < 1:
+        package = ''
+    else:
+        assert( len(package) == 1 )
+        package = '.'.join(package[0].split('.')[:3])
 
     import_refs = re.compile(r'\s*import\s+([\w\.]+)\s*')
     imports = import_refs.findall(source_wihtout_comments)
