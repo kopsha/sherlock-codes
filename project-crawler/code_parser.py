@@ -1,18 +1,20 @@
 from datetime import datetime
-from utils import print_stage
 import os
 import re
 import timeit
+
+from utils import print_stage
 
 
 def remove_cpp_comments(text):
     return re.sub('//.*?\n|/\*.*?\*/', '', text, flags=re.S)
 
+
 def parse_cpp_imports(source_code):
     source_wihtout_comments = remove_cpp_comments(source_code)
 
-    local_ref = re.compile(r'\s*#include\s*\"([/\w\.\-\+]+)\"\s*')
-    extern_ref = re.compile(r'\s*#include\s*<([/\w\.\-\+]+)>\s*')
+    local_ref = re.compile(r'\s*#(?:include|import)\s*\"([/\w\.\-\+]+)\"\s*')
+    extern_ref = re.compile(r'\s*#(?:include|import)\s*<([/\w\.\-\+]+)>\s*')
 
     local_includes = local_ref.findall(source_wihtout_comments)
     extern_includes = extern_ref.findall(source_wihtout_comments)
@@ -35,6 +37,7 @@ def parse_java_imports(source_code):
     extern_imports = [i for i in imports if not i.startswith(package)]
 
     return { 'local': local_imports, 'extern': extern_imports, 'package': package }
+
 
 def parse_swift_imports(source_code):
     source_wihtout_comments = remove_cpp_comments(source_code)

@@ -12,6 +12,7 @@ from datetime import datetime
 from git.cmd import Git
 
 from utils import print_stage
+from code_parser import parse_cpp_imports, parse_java_imports, parse_swift_imports
 
 def quick_look(filepath):
     meta = {}
@@ -164,7 +165,15 @@ def inspect(filepath, meta):
 
     meta['risks_points'],meta['risks'] = risk_assesment(meta)
 
-    # TODO: parse imports
+    if meta.get('extension') in ['.h', '.cpp', '.mm', '.hpp', '.cc']:
+        meta['imports'] = parse_cpp_imports(source_code)
+    elif meta.get('extension') in ['.java', '.kt']:
+        meta['imports'] = parse_java_imports(source_code)
+    elif meta.get('extension') in ['.swift']:
+        meta['imports'] = parse_swift_imports(source_code)
+    else:
+        pass
+
     # TODO: parse nested blocks
 
     meta['aggregate_complexity'] = sum([
