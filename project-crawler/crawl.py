@@ -46,42 +46,6 @@ def quick_look(filepath):
 
     return meta
 
-def parse_cpp_exported_symbols(filepath):
-
-    cpp_parser = clang.cindex.Index.create()
-
-    translate_decl = {
-        clang.cindex.CursorKind.CLASS_DECL : "class",
-        clang.cindex.CursorKind.STRUCT_DECL : "struct",
-        clang.cindex.CursorKind.UNION_DECL : "union",
-        clang.cindex.CursorKind.FUNCTION_DECL : "function",
-        clang.cindex.CursorKind.FUNCTION_TEMPLATE : "function template",
-        clang.cindex.CursorKind.CLASS_TEMPLATE : "class template",
-        clang.cindex.CursorKind.CLASS_TEMPLATE_PARTIAL_SPECIALIZATION : "class template specialization",
-    }
-
-    def traverse_syntax_tree(node, current_file):
-        try:
-            kind = node.kind
-        except ValueError as e:
-            print('Silenced Error:', e)
-            kind = clang.cindex.CursorKind.UNEXPOSED_DECL
-
-        if kind in translate_decl:
-            name_only,ext = os.path.splitext(node.location.file.name)
-            current_name_only,ext = os.path.splitext(current_file)
-            if name_only == current_name_only:
-                exported_symbols.add(f'{translate_decl[kind]} {node.spelling}')
-
-        for c in node.get_children():
-            traverse_syntax_tree(c, filepath)
-
-    exported_symbols = set()
-    translation_unit = cpp_parser.parse(filepath, options=clang.cindex.TranslationUnit.PARSE_INCOMPLETE|clang.cindex.TranslationUnit.PARSE_SKIP_FUNCTION_BODIES)
-    traverse_syntax_tree(translation_unit.cursor, filepath)
-
-    return list(exported_symbols)
-
 
 def nested_code_complexity(effective_lines, tab_size=4):
     indent_capture = re.compile(r'^(\s*)')
@@ -177,6 +141,7 @@ def inspect(filepath, meta):
     source_lines = source_code.splitlines()
     meta['loc'] = len(source_lines)
 
+    # TODO: sloc computation based on extension
     blank_lines = 0
     effective_lines = []
     is_line_comment = re.compile(r'\s*(//|#).*')
@@ -199,8 +164,8 @@ def inspect(filepath, meta):
 
     meta['risks_points'],meta['risks'] = risk_assesment(meta)
 
-    if meta.get('extension') in ['.cpp', '.cxx']:
-        meta['exports'] = parse_cpp_exported_symbols(filepath)
+    # TODO: parse imports
+    # TODO: parse nested blocks
 
     meta['aggregate_complexity'] = sum([
         meta.get('nested_complexity') or 1,
