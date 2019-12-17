@@ -6,6 +6,9 @@ The source code inspector is back in town
 
 * [x] parse directory tree, gather size, loc, etc
 * [x] generate cluster chart from json
+* [ ] parse sources for imports
+* [ ] parse sourced for nested blocks
+* [ ] detect indentation width
 * [ ] generate wordcloud
 * [ ] show inspector metadata when selecting a file
 * [ ] add an admin (or restricted) view for adding a new git repo url
