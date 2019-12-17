@@ -57,9 +57,12 @@
     }
 
     #info_view {
-        background: lightblue;
         width: 256px;
         height: 768px;
+
+        font-size: 12pt;
+        text-align: right;
+        padding-left: 12pt;
     }
 </style>
 {% endblock %}
@@ -76,7 +79,7 @@
     </div>
     <div id="main" class="full-height">
         <div id="graphic_view"></div>
-        <div id="info_view">data will be shown here</div>
+        <div id="info_view" class="pretty-text">click around to see data</div>
     </div>
 {% endblock %}
 
@@ -86,15 +89,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
 
-    let select = $("#project_selector");
-    let content = $("#graphic_view");
+    let project_selector = $("#project_selector");
+    let graphic_view = $("#graphic_view");
+    let info_view = $("#info_view");
     const BASE_URL = "{{ base_url }}";
 
-    select.change(function () {
+    project_selector.change(function () {
         render_svg(`${BASE_URL}/${$(this).val()}`)
     });
 
-    select.change();
+    project_selector.change();
 
     function parseSVG(s) {
         let div= document.createElementNS('http://www.w3.org/1999/xhtml', 'div');
@@ -107,8 +111,8 @@
 
     function render_svg(url) {
         let svg_tag = parseSVG('<svg width="768" height="768">');
-        content.empty();
-        content.append(svg_tag);
+        graphic_view.empty();
+        graphic_view.append(svg_tag);
         let svg = d3.select("svg"),
             margin = 20,
             diameter = +svg.attr("width"),
@@ -131,6 +135,7 @@
           let focus = root,
               nodes = pack(root).descendants(),
               view;
+          update_info_view(root);
 
           let circle = g.selectAll("circle")
             .data(nodes)
@@ -155,8 +160,21 @@
 
           zoomTo([root.x, root.y, root.r * 2 + margin]);
 
+          function update_info_view(d) {
+              info_text = "<p>"
+              info_text += d.data.name + "<hr>";
+              info_text += "source files: <b>" + d.data.counter.source_files + "</b><br>";
+              info_text += "lines of code: <b>" + d.data.counter.sloc_count + "</b><br>";
+              info_text += "risk messages: <b>" + d.data.counter.risks_count + "</b><br>";
+              info_text += "Complexity: <b>" + d.data.counter.value_count + "</b><br>";
+              info_text += "</p>"
+              info_view.html( info_text );
+          }
+
           function zoom(d) {
             let focus0 = focus; focus = d;
+
+            update_info_view(d);
 
             let transition = d3.transition()
                 .duration(d3.event.altKey ? 7500 : 750)
