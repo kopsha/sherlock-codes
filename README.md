@@ -6,8 +6,8 @@ The source code inspector is back in town
 
 * [x] parse directory tree, gather size, loc, etc
 * [x] generate cluster chart from json
-* [ ] parse sources for imports
-* [ ] parse sourced for nested blocks
+* [x] parse sources for imports
+* [x] parse sourced for nested blocks
 * [ ] detect indentation width
 * [ ] generate wordcloud
 * [ ] show inspector metadata when selecting a file
