@@ -3,18 +3,18 @@
         {
             "meta": {
                 "aggregate_complexity": 5,
-                "blank_lines": 13,
+                "blank_lines": 10,
                 "decision_complexity": 3,
                 "extension": "",
                 "is_code": true,
-                "loc": 76,
+                "loc": 77,
                 "mime": "text/x-shellscript; charset=us-ascii",
                 "name": "run",
                 "nested_complexity": 2,
                 "risks": [],
                 "risks_points": 0,
                 "size": 1893,
-                "sloc": 63,
+                "sloc": 67,
                 "type": "Bourne-Again shell script, ASCII text executable"
             },
             "name": "run",
@@ -27,14 +27,14 @@
                 "decision_complexity": 0,
                 "extension": "",
                 "is_code": true,
-                "loc": 5,
+                "loc": 6,
                 "mime": "text/x-shellscript; charset=us-ascii",
                 "name": "start-tdd",
                 "nested_complexity": 0,
                 "risks": [],
                 "risks_points": 0,
                 "size": 125,
-                "sloc": 3,
+                "sloc": 4,
                 "type": "Bourne-Again shell script, ASCII text executable"
             },
             "name": "start-tdd",
@@ -44,53 +44,53 @@
             "children": [
                 {
                     "meta": {
-                        "aggregate_complexity": 75,
-                        "blank_lines": 86,
-                        "decision_complexity": 53,
+                        "aggregate_complexity": 53,
+                        "blank_lines": 58,
+                        "decision_complexity": 52,
                         "extension": ".py",
                         "is_code": true,
-                        "loc": 379,
+                        "loc": 380,
                         "mime": "text/x-python; charset=us-ascii",
                         "name": "run-clang-format",
-                        "nested_complexity": 12,
+                        "nested_complexity": 1,
                         "risks": [
-                            "[info] Arguably many decisions, it is ok if it makes other files less complicated.",
-                            "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
+                            "[info] Arguably many lines of code, this may be ok for now.",
+                            "[info] Arguably many decisions, it is ok if it makes other files less complicated."
                         ],
-                        "risks_points": 10,
+                        "risks_points": 7,
                         "size": 11581,
-                        "sloc": 293,
+                        "sloc": 322,
                         "type": "Python script, ASCII text executable"
                     },
                     "name": "run-clang-format.py",
-                    "value": 75
+                    "value": 53
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 12,
+                        "aggregate_complexity": 10,
                         "blank_lines": 12,
                         "decision_complexity": 9,
                         "extension": ".sh",
                         "is_code": true,
-                        "loc": 72,
+                        "loc": 73,
                         "mime": "text/plain; charset=us-ascii",
                         "name": "unit_tests_and_coverage",
-                        "nested_complexity": 3,
+                        "nested_complexity": 1,
                         "risks": [],
                         "risks_points": 0,
                         "size": 2143,
-                        "sloc": 60,
+                        "sloc": 61,
                         "type": "ASCII text"
                     },
                     "name": "unit_tests_and_coverage.sh",
-                    "value": 12
+                    "value": 10
                 }
             ],
             "counter": {
                 "risks_count": 2,
-                "sloc_count": 353,
+                "sloc_count": 383,
                 "source_files": 2,
-                "value_count": 87
+                "value_count": 63
             },
             "name": "scripts"
         },
@@ -98,7 +98,7 @@
             "children": [
                 {
                     "meta": {
-                        "aggregate_complexity": 18,
+                        "aggregate_complexity": 20,
                         "blank_lines": 24,
                         "decision_complexity": 15,
                         "extension": ".cpp",
@@ -109,23 +109,23 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 132,
+                        "loc": 133,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "identification_sequence",
-                        "nested_complexity": 3,
+                        "nested_complexity": 4,
                         "risks": [],
                         "risks_points": 0,
                         "size": 3551,
-                        "sloc": 108,
+                        "sloc": 109,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "identification_sequence.cpp",
-                    "value": 18
+                    "value": 20
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
-                        "blank_lines": 16,
+                        "aggregate_complexity": 7,
+                        "blank_lines": 10,
                         "decision_complexity": 0,
                         "extension": ".h",
                         "imports": {
@@ -141,24 +141,24 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 38,
+                        "loc": 39,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "identification_sequence",
-                        "nested_complexity": 1,
+                        "nested_complexity": 3,
                         "risks": [],
                         "risks_points": 0,
                         "size": 824,
-                        "sloc": 22,
+                        "sloc": 29,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "identification_sequence.h",
-                    "value": 1
+                    "value": 7
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 16,
-                        "blank_lines": 43,
-                        "decision_complexity": 12,
+                        "aggregate_complexity": 15,
+                        "blank_lines": 66,
+                        "decision_complexity": 9,
                         "extension": ".cpp",
                         "imports": {
                             "extern": [
@@ -172,23 +172,23 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 171,
+                        "loc": 172,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "identify",
-                        "nested_complexity": 4,
+                        "nested_complexity": 5,
                         "risks": [],
                         "risks_points": 0,
                         "size": 4784,
-                        "sloc": 128,
+                        "sloc": 106,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "identify.cpp",
-                    "value": 16
+                    "value": 15
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
-                        "blank_lines": 13,
+                        "aggregate_complexity": 3,
+                        "blank_lines": 9,
                         "decision_complexity": 0,
                         "extension": ".h",
                         "imports": {
@@ -202,23 +202,23 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 32,
+                        "loc": 33,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "identify",
-                        "nested_complexity": 1,
+                        "nested_complexity": 2,
                         "risks": [],
                         "risks_points": 0,
                         "size": 663,
-                        "sloc": 19,
+                        "sloc": 24,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "identify.h",
-                    "value": 1
+                    "value": 3
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 8,
-                        "blank_lines": 14,
+                        "aggregate_complexity": 10,
+                        "blank_lines": 13,
                         "decision_complexity": 5,
                         "extension": ".cpp",
                         "imports": {
@@ -229,23 +229,23 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 71,
+                        "loc": 72,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "parameter",
                         "nested_complexity": 3,
                         "risks": [],
                         "risks_points": 0,
                         "size": 1470,
-                        "sloc": 57,
+                        "sloc": 59,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "parameter.cpp",
-                    "value": 8
+                    "value": 10
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
-                        "blank_lines": 11,
+                        "aggregate_complexity": 4,
+                        "blank_lines": 9,
                         "decision_complexity": 0,
                         "extension": ".h",
                         "imports": {
@@ -257,24 +257,24 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 34,
+                        "loc": 35,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "parameter",
-                        "nested_complexity": 1,
+                        "nested_complexity": 3,
                         "risks": [],
                         "risks_points": 0,
                         "size": 644,
-                        "sloc": 23,
+                        "sloc": 26,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "parameter.h",
-                    "value": 1
+                    "value": 4
                 },
                 {
                     "meta": {
                         "aggregate_complexity": 14,
-                        "blank_lines": 18,
-                        "decision_complexity": 11,
+                        "blank_lines": 30,
+                        "decision_complexity": 9,
                         "extension": ".cpp",
                         "imports": {
                             "extern": [
@@ -285,14 +285,14 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 143,
+                        "loc": 144,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "parameter_info",
-                        "nested_complexity": 3,
+                        "nested_complexity": 4,
                         "risks": [],
                         "risks_points": 0,
                         "size": 4431,
-                        "sloc": 125,
+                        "sloc": 114,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "parameter_info.cpp",
@@ -300,8 +300,8 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
-                        "blank_lines": 16,
+                        "aggregate_complexity": 4,
+                        "blank_lines": 13,
                         "decision_complexity": 0,
                         "extension": ".h",
                         "imports": {
@@ -317,23 +317,23 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 46,
+                        "loc": 47,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "parameter_info",
-                        "nested_complexity": 1,
+                        "nested_complexity": 2,
                         "risks": [],
                         "risks_points": 0,
                         "size": 1910,
-                        "sloc": 30,
+                        "sloc": 34,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "parameter_info.h",
-                    "value": 1
+                    "value": 4
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 21,
-                        "blank_lines": 22,
+                        "aggregate_complexity": 34,
+                        "blank_lines": 10,
                         "decision_complexity": 16,
                         "extension": ".cpp",
                         "imports": {
@@ -355,23 +355,23 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 84,
+                        "loc": 85,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "protocol_factory",
                         "nested_complexity": 5,
                         "risks": [],
                         "risks_points": 0,
                         "size": 3066,
-                        "sloc": 62,
+                        "sloc": 75,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "protocol_factory.cpp",
-                    "value": 21
+                    "value": 34
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
-                        "blank_lines": 10,
+                        "aggregate_complexity": 3,
+                        "blank_lines": 6,
                         "decision_complexity": 0,
                         "extension": ".h",
                         "imports": {
@@ -385,23 +385,23 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 14,
+                        "loc": 15,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "protocol_factory",
-                        "nested_complexity": 0,
+                        "nested_complexity": 1,
                         "risks": [],
                         "risks_points": 0,
                         "size": 295,
-                        "sloc": 4,
+                        "sloc": 9,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "protocol_factory.h",
-                    "value": 1
+                    "value": 3
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
-                        "blank_lines": 7,
+                        "aggregate_complexity": 6,
+                        "blank_lines": 2,
                         "decision_complexity": 0,
                         "extension": ".h",
                         "imports": {
@@ -415,26 +415,26 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 7,
+                        "loc": 8,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "turbo-connect-core",
                         "nested_complexity": 0,
                         "risks": [],
                         "risks_points": 0,
                         "size": 154,
-                        "sloc": 0,
+                        "sloc": 6,
                         "type": "C source, ASCII text"
                     },
                     "name": "turbo-connect-core.h",
-                    "value": 1
+                    "value": 6
                 },
                 {
                     "children": [
                         {
                             "meta": {
                                 "aggregate_complexity": 3,
-                                "blank_lines": 2,
-                                "decision_complexity": 1,
+                                "blank_lines": 7,
+                                "decision_complexity": 0,
                                 "extension": ".kt",
                                 "imports": {
                                     "extern": [],
@@ -442,14 +442,14 @@
                                     "package": "com.specialized.turboconnect"
                                 },
                                 "is_code": true,
-                                "loc": 109,
+                                "loc": 110,
                                 "mime": "text/plain; charset=us-ascii",
                                 "name": "BikeParameter",
-                                "nested_complexity": 2,
+                                "nested_complexity": 3,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 3488,
-                                "sloc": 107,
+                                "sloc": 103,
                                 "type": "ASCII text"
                             },
                             "name": "BikeParameter.kt",
@@ -457,8 +457,8 @@
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 1,
-                                "blank_lines": 0,
+                                "aggregate_complexity": 2,
+                                "blank_lines": 5,
                                 "decision_complexity": 0,
                                 "extension": ".swift",
                                 "imports": {
@@ -467,23 +467,75 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 102,
+                                "loc": 103,
                                 "mime": "text/plain; charset=us-ascii",
                                 "name": "BikeParameter",
                                 "nested_complexity": 1,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 3460,
-                                "sloc": 102,
+                                "sloc": 98,
                                 "type": "ASCII text"
                             },
                             "name": "BikeParameter.swift",
-                            "value": 1
+                            "value": 2
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 5,
+                                "blank_lines": 6,
+                                "decision_complexity": 0,
+                                "extension": ".kt",
+                                "imports": {
+                                    "extern": [
+                                        "kotlinx.serialization.KSerializer"
+                                    ],
+                                    "local": [
+                                        "com.specialized.turboconnect.model.BikeParameter."
+                                    ],
+                                    "package": "com.specialized.turboconnect"
+                                },
+                                "is_code": true,
+                                "loc": 125,
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "name": "Parameters",
+                                "nested_complexity": 4,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 17645,
+                                "sloc": 119,
+                                "type": "C++ source, ASCII text"
+                            },
+                            "name": "Parameters.kt",
+                            "value": 5
                         },
                         {
                             "meta": {
                                 "aggregate_complexity": 1,
-                                "blank_lines": 4,
+                                "blank_lines": 6,
+                                "decision_complexity": 0,
+                                "extension": ".swift",
+                                "imports": {
+                                    "local": []
+                                },
+                                "is_code": true,
+                                "loc": 110,
+                                "mime": "text/plain; charset=us-ascii",
+                                "name": "Parameters",
+                                "nested_complexity": 1,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 8442,
+                                "sloc": 104,
+                                "type": "ASCII text"
+                            },
+                            "name": "Parameters.swift",
+                            "value": 1
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 2,
+                                "blank_lines": 8,
                                 "decision_complexity": 0,
                                 "extension": ".h",
                                 "imports": {
@@ -491,45 +543,42 @@
                                     "local": []
                                 },
                                 "is_code": true,
-                                "loc": 108,
+                                "loc": 109,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "bike_parameters",
-                                "nested_complexity": 1,
+                                "nested_complexity": 2,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 2889,
-                                "sloc": 104,
+                                "sloc": 101,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "bike_parameters.h",
-                            "value": 1
+                            "value": 2
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 74,
-                                "blank_lines": 108,
-                                "decision_complexity": 60,
+                                "aggregate_complexity": 17,
+                                "blank_lines": 424,
+                                "decision_complexity": 14,
                                 "extension": ".py",
                                 "is_code": true,
-                                "loc": 491,
+                                "loc": 604,
                                 "mime": "text/x-python; charset=us-ascii",
                                 "name": "generate_protocol_sources",
-                                "nested_complexity": 4,
-                                "risks": [
-                                    "[info] Arguably many lines of code, this may be ok for now.",
-                                    "[warning] Quite many decisions, consider adding more unit tests and review the entire file."
-                                ],
-                                "risks_points": 10,
-                                "size": 16574,
-                                "sloc": 383,
+                                "nested_complexity": 3,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 19832,
+                                "sloc": 180,
                                 "type": "Python script, ASCII text executable"
                             },
                             "name": "generate_protocol_sources.py",
-                            "value": 74
+                            "value": 17
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 10,
+                                "aggregate_complexity": 11,
                                 "blank_lines": 23,
                                 "decision_complexity": 6,
                                 "extension": ".cpp",
@@ -540,23 +589,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 94,
+                                "loc": 95,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "iprotocol",
                                 "nested_complexity": 4,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 2727,
-                                "sloc": 71,
+                                "sloc": 72,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "iprotocol.cpp",
-                            "value": 10
+                            "value": 11
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 1,
-                                "blank_lines": 14,
+                                "aggregate_complexity": 4,
+                                "blank_lines": 10,
                                 "decision_complexity": 0,
                                 "extension": ".h",
                                 "imports": {
@@ -570,23 +619,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 30,
+                                "loc": 31,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "iprotocol",
-                                "nested_complexity": 1,
+                                "nested_complexity": 2,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 578,
-                                "sloc": 16,
+                                "sloc": 21,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "iprotocol.h",
-                            "value": 1
+                            "value": 4
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 2,
-                                "blank_lines": 9,
+                                "aggregate_complexity": 6,
+                                "blank_lines": 12,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
                                 "imports": {
@@ -599,20 +648,20 @@
                                 "loc": 34,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "protocol_identification",
-                                "nested_complexity": 2,
+                                "nested_complexity": 5,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 2138,
-                                "sloc": 25,
+                                "sloc": 22,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "protocol_identification.cpp",
-                            "value": 2
+                            "value": 6
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 1,
-                                "blank_lines": 4,
+                                "aggregate_complexity": 3,
+                                "blank_lines": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
                                 "imports": {
@@ -622,23 +671,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 12,
+                                "loc": 13,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "protocol_identification",
-                                "nested_complexity": 1,
+                                "nested_complexity": 2,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 239,
-                                "sloc": 8,
+                                "sloc": 10,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "protocol_identification.h",
-                            "value": 1
+                            "value": 3
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 2,
-                                "blank_lines": 9,
+                                "aggregate_complexity": 6,
+                                "blank_lines": 13,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
                                 "imports": {
@@ -648,23 +697,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 118,
+                                "loc": 119,
                                 "mime": "text/x-c++; charset=utf-8",
                                 "name": "protocol_legacy20",
-                                "nested_complexity": 2,
+                                "nested_complexity": 5,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 14069,
-                                "sloc": 109,
+                                "sloc": 106,
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_legacy20.cpp",
-                            "value": 2
+                            "value": 6
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 1,
-                                "blank_lines": 4,
+                                "aggregate_complexity": 3,
+                                "blank_lines": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
                                 "imports": {
@@ -674,23 +723,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 12,
+                                "loc": 13,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "protocol_legacy20",
-                                "nested_complexity": 1,
+                                "nested_complexity": 2,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 221,
-                                "sloc": 8,
+                                "sloc": 10,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "protocol_legacy20.h",
-                            "value": 1
+                            "value": 3
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 2,
-                                "blank_lines": 9,
+                                "aggregate_complexity": 6,
+                                "blank_lines": 13,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
                                 "imports": {
@@ -700,23 +749,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 118,
+                                "loc": 119,
                                 "mime": "text/x-c++; charset=utf-8",
                                 "name": "protocol_legacy22",
-                                "nested_complexity": 2,
+                                "nested_complexity": 5,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 14069,
-                                "sloc": 109,
+                                "sloc": 106,
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_legacy22.cpp",
-                            "value": 2
+                            "value": 6
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 1,
-                                "blank_lines": 4,
+                                "aggregate_complexity": 3,
+                                "blank_lines": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
                                 "imports": {
@@ -726,23 +775,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 12,
+                                "loc": 13,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "protocol_legacy22",
-                                "nested_complexity": 1,
+                                "nested_complexity": 2,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 221,
-                                "sloc": 8,
+                                "sloc": 10,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "protocol_legacy22.h",
-                            "value": 1
+                            "value": 3
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 2,
-                                "blank_lines": 9,
+                                "aggregate_complexity": 6,
+                                "blank_lines": 13,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
                                 "imports": {
@@ -752,23 +801,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 172,
+                                "loc": 173,
                                 "mime": "text/x-c++; charset=utf-8",
                                 "name": "protocol_rx0c",
-                                "nested_complexity": 2,
+                                "nested_complexity": 5,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 21703,
-                                "sloc": 163,
+                                "sloc": 160,
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx0c.cpp",
-                            "value": 2
+                            "value": 6
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 1,
-                                "blank_lines": 4,
+                                "aggregate_complexity": 3,
+                                "blank_lines": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
                                 "imports": {
@@ -778,23 +827,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 12,
+                                "loc": 13,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "protocol_rx0c",
-                                "nested_complexity": 1,
+                                "nested_complexity": 2,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 209,
-                                "sloc": 8,
+                                "sloc": 10,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "protocol_rx0c.h",
-                            "value": 1
+                            "value": 3
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 2,
-                                "blank_lines": 9,
+                                "aggregate_complexity": 6,
+                                "blank_lines": 13,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
                                 "imports": {
@@ -804,23 +853,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 172,
+                                "loc": 173,
                                 "mime": "text/x-c++; charset=utf-8",
                                 "name": "protocol_rx0d",
-                                "nested_complexity": 2,
+                                "nested_complexity": 5,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 21703,
-                                "sloc": 163,
+                                "sloc": 160,
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx0d.cpp",
-                            "value": 2
+                            "value": 6
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 1,
-                                "blank_lines": 4,
+                                "aggregate_complexity": 3,
+                                "blank_lines": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
                                 "imports": {
@@ -830,23 +879,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 12,
+                                "loc": 13,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "protocol_rx0d",
-                                "nested_complexity": 1,
+                                "nested_complexity": 2,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 209,
-                                "sloc": 8,
+                                "sloc": 10,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "protocol_rx0d.h",
-                            "value": 1
+                            "value": 3
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 2,
-                                "blank_lines": 9,
+                                "aggregate_complexity": 6,
+                                "blank_lines": 13,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
                                 "imports": {
@@ -856,23 +905,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 184,
+                                "loc": 185,
                                 "mime": "text/x-c++; charset=utf-8",
                                 "name": "protocol_rx0e",
-                                "nested_complexity": 2,
+                                "nested_complexity": 5,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 23423,
-                                "sloc": 175,
+                                "sloc": 172,
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx0e.cpp",
-                            "value": 2
+                            "value": 6
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 1,
-                                "blank_lines": 4,
+                                "aggregate_complexity": 3,
+                                "blank_lines": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
                                 "imports": {
@@ -882,23 +931,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 12,
+                                "loc": 13,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "protocol_rx0e",
-                                "nested_complexity": 1,
+                                "nested_complexity": 2,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 209,
-                                "sloc": 8,
+                                "sloc": 10,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "protocol_rx0e.h",
-                            "value": 1
+                            "value": 3
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 2,
-                                "blank_lines": 9,
+                                "aggregate_complexity": 6,
+                                "blank_lines": 13,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
                                 "imports": {
@@ -908,23 +957,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 184,
+                                "loc": 185,
                                 "mime": "text/x-c++; charset=utf-8",
                                 "name": "protocol_rx0f",
-                                "nested_complexity": 2,
+                                "nested_complexity": 5,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 23423,
-                                "sloc": 175,
+                                "sloc": 172,
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx0f.cpp",
-                            "value": 2
+                            "value": 6
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 1,
-                                "blank_lines": 4,
+                                "aggregate_complexity": 3,
+                                "blank_lines": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
                                 "imports": {
@@ -934,23 +983,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 12,
+                                "loc": 13,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "protocol_rx0f",
-                                "nested_complexity": 1,
+                                "nested_complexity": 2,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 209,
-                                "sloc": 8,
+                                "sloc": 10,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "protocol_rx0f.h",
-                            "value": 1
+                            "value": 3
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 2,
-                                "blank_lines": 9,
+                                "aggregate_complexity": 6,
+                                "blank_lines": 13,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
                                 "imports": {
@@ -960,23 +1009,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 184,
+                                "loc": 185,
                                 "mime": "text/x-c++; charset=utf-8",
                                 "name": "protocol_rx10",
-                                "nested_complexity": 2,
+                                "nested_complexity": 5,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 23423,
-                                "sloc": 175,
+                                "sloc": 172,
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx10.cpp",
-                            "value": 2
+                            "value": 6
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 1,
-                                "blank_lines": 4,
+                                "aggregate_complexity": 3,
+                                "blank_lines": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
                                 "imports": {
@@ -986,23 +1035,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 12,
+                                "loc": 13,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "protocol_rx10",
-                                "nested_complexity": 1,
+                                "nested_complexity": 2,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 209,
-                                "sloc": 8,
+                                "sloc": 10,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "protocol_rx10.h",
-                            "value": 1
+                            "value": 3
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 2,
-                                "blank_lines": 9,
+                                "aggregate_complexity": 6,
+                                "blank_lines": 13,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
                                 "imports": {
@@ -1012,23 +1061,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 186,
+                                "loc": 187,
                                 "mime": "text/x-c++; charset=utf-8",
                                 "name": "protocol_rx11",
-                                "nested_complexity": 2,
+                                "nested_complexity": 5,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 23708,
-                                "sloc": 177,
+                                "sloc": 174,
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx11.cpp",
-                            "value": 2
+                            "value": 6
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 1,
-                                "blank_lines": 4,
+                                "aggregate_complexity": 3,
+                                "blank_lines": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
                                 "imports": {
@@ -1038,23 +1087,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 12,
+                                "loc": 13,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "protocol_rx11",
-                                "nested_complexity": 1,
+                                "nested_complexity": 2,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 209,
-                                "sloc": 8,
+                                "sloc": 10,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "protocol_rx11.h",
-                            "value": 1
+                            "value": 3
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 2,
-                                "blank_lines": 9,
+                                "aggregate_complexity": 6,
+                                "blank_lines": 13,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
                                 "imports": {
@@ -1064,23 +1113,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 186,
+                                "loc": 187,
                                 "mime": "text/x-c++; charset=utf-8",
                                 "name": "protocol_rx12",
-                                "nested_complexity": 2,
+                                "nested_complexity": 5,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 23708,
-                                "sloc": 177,
+                                "sloc": 174,
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx12.cpp",
-                            "value": 2
+                            "value": 6
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 1,
-                                "blank_lines": 4,
+                                "aggregate_complexity": 3,
+                                "blank_lines": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
                                 "imports": {
@@ -1090,23 +1139,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 12,
+                                "loc": 13,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "protocol_rx12",
-                                "nested_complexity": 1,
+                                "nested_complexity": 2,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 209,
-                                "sloc": 8,
+                                "sloc": 10,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "protocol_rx12.h",
-                            "value": 1
+                            "value": 3
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 2,
-                                "blank_lines": 9,
+                                "aggregate_complexity": 6,
+                                "blank_lines": 13,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
                                 "imports": {
@@ -1116,23 +1165,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 186,
+                                "loc": 187,
                                 "mime": "text/x-c++; charset=utf-8",
                                 "name": "protocol_rx13",
-                                "nested_complexity": 2,
+                                "nested_complexity": 5,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 23708,
-                                "sloc": 177,
+                                "sloc": 174,
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx13.cpp",
-                            "value": 2
+                            "value": 6
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 1,
-                                "blank_lines": 4,
+                                "aggregate_complexity": 3,
+                                "blank_lines": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
                                 "imports": {
@@ -1142,23 +1191,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 12,
+                                "loc": 13,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "protocol_rx13",
-                                "nested_complexity": 1,
+                                "nested_complexity": 2,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 209,
-                                "sloc": 8,
+                                "sloc": 10,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "protocol_rx13.h",
-                            "value": 1
+                            "value": 3
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 2,
-                                "blank_lines": 9,
+                                "aggregate_complexity": 6,
+                                "blank_lines": 13,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
                                 "imports": {
@@ -1168,23 +1217,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 188,
+                                "loc": 189,
                                 "mime": "text/x-c++; charset=utf-8",
                                 "name": "protocol_rx14",
-                                "nested_complexity": 2,
+                                "nested_complexity": 5,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 23992,
-                                "sloc": 179,
+                                "sloc": 176,
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx14.cpp",
-                            "value": 2
+                            "value": 6
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 1,
-                                "blank_lines": 4,
+                                "aggregate_complexity": 3,
+                                "blank_lines": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
                                 "imports": {
@@ -1194,23 +1243,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 12,
+                                "loc": 13,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "protocol_rx14",
-                                "nested_complexity": 1,
+                                "nested_complexity": 2,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 209,
-                                "sloc": 8,
+                                "sloc": 10,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "protocol_rx14.h",
-                            "value": 1
+                            "value": 3
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 2,
-                                "blank_lines": 9,
+                                "aggregate_complexity": 6,
+                                "blank_lines": 13,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
                                 "imports": {
@@ -1220,23 +1269,23 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 198,
+                                "loc": 199,
                                 "mime": "text/x-c++; charset=utf-8",
                                 "name": "protocol_rx15",
-                                "nested_complexity": 2,
+                                "nested_complexity": 5,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 25451,
-                                "sloc": 189,
+                                "sloc": 186,
                                 "type": "C++ source, UTF-8 Unicode text"
                             },
                             "name": "protocol_rx15.cpp",
-                            "value": 2
+                            "value": 6
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 1,
-                                "blank_lines": 4,
+                                "aggregate_complexity": 3,
+                                "blank_lines": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
                                 "imports": {
@@ -1246,34 +1295,34 @@
                                     ]
                                 },
                                 "is_code": true,
-                                "loc": 12,
+                                "loc": 13,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "protocol_rx15",
-                                "nested_complexity": 1,
+                                "nested_complexity": 2,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 209,
-                                "sloc": 8,
+                                "sloc": 10,
                                 "type": "C++ source, ASCII text"
                             },
                             "name": "protocol_rx15.h",
-                            "value": 1
+                            "value": 3
                         }
                     ],
                     "counter": {
-                        "risks_count": 2,
-                        "sloc_count": 2880,
-                        "source_files": 32,
-                        "value_count": 129
+                        "risks_count": 0,
+                        "sloc_count": 2882,
+                        "source_files": 34,
+                        "value_count": 162
                     },
                     "name": "protocol"
                 }
             ],
             "counter": {
-                "risks_count": 2,
-                "sloc_count": 3458,
-                "source_files": 43,
-                "value_count": 212
+                "risks_count": 0,
+                "sloc_count": 3473,
+                "source_files": 45,
+                "value_count": 282
             },
             "name": "src"
         },
@@ -1281,8 +1330,8 @@
             "children": [
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
-                        "blank_lines": 36,
+                        "aggregate_complexity": 5,
+                        "blank_lines": 32,
                         "decision_complexity": 0,
                         "extension": ".cpp",
                         "imports": {
@@ -1297,23 +1346,23 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 104,
+                        "loc": 105,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "bike_identification_test",
-                        "nested_complexity": 1,
+                        "nested_complexity": 3,
                         "risks": [],
                         "risks_points": 0,
                         "size": 2435,
-                        "sloc": 68,
+                        "sloc": 73,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "bike_identification_test.cpp",
-                    "value": 1
+                    "value": 5
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
-                        "blank_lines": 18,
+                        "aggregate_complexity": 3,
+                        "blank_lines": 16,
                         "decision_complexity": 0,
                         "extension": ".cpp",
                         "imports": {
@@ -1326,23 +1375,23 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 74,
+                        "loc": 75,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "ble_service_identification_test",
                         "nested_complexity": 1,
                         "risks": [],
                         "risks_points": 0,
                         "size": 2838,
-                        "sloc": 56,
+                        "sloc": 59,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "ble_service_identification_test.cpp",
-                    "value": 1
+                    "value": 3
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
-                        "blank_lines": 69,
+                        "aggregate_complexity": 4,
+                        "blank_lines": 68,
                         "decision_complexity": 0,
                         "extension": ".cpp",
                         "imports": {
@@ -1353,23 +1402,23 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 235,
+                        "loc": 236,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "identification_sequence_test",
-                        "nested_complexity": 1,
+                        "nested_complexity": 2,
                         "risks": [],
                         "risks_points": 0,
                         "size": 7207,
-                        "sloc": 166,
+                        "sloc": 168,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "identification_sequence_test.cpp",
-                    "value": 1
+                    "value": 4
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
-                        "blank_lines": 10,
+                        "aggregate_complexity": 5,
+                        "blank_lines": 8,
                         "decision_complexity": 0,
                         "extension": ".cpp",
                         "imports": {
@@ -1381,23 +1430,23 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 24,
+                        "loc": 25,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "parameter_test",
-                        "nested_complexity": 1,
+                        "nested_complexity": 2,
                         "risks": [],
                         "risks_points": 0,
                         "size": 544,
-                        "sloc": 14,
+                        "sloc": 17,
                         "type": "C source, ASCII text"
                     },
                     "name": "parameter_test.cpp",
-                    "value": 1
+                    "value": 5
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 4,
-                        "blank_lines": 33,
+                        "aggregate_complexity": 7,
+                        "blank_lines": 29,
                         "decision_complexity": 1,
                         "extension": ".cpp",
                         "imports": {
@@ -1412,23 +1461,23 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 201,
+                        "loc": 202,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "property_decoding_test",
                         "nested_complexity": 3,
                         "risks": [],
                         "risks_points": 0,
                         "size": 7381,
-                        "sloc": 168,
+                        "sloc": 173,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "property_decoding_test.cpp",
-                    "value": 4
+                    "value": 7
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 4,
-                        "blank_lines": 18,
+                        "aggregate_complexity": 6,
+                        "blank_lines": 17,
                         "decision_complexity": 1,
                         "extension": ".cpp",
                         "imports": {
@@ -1439,23 +1488,23 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 55,
+                        "loc": 56,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "property_encoding_test",
                         "nested_complexity": 3,
                         "risks": [],
                         "risks_points": 0,
                         "size": 1186,
-                        "sloc": 37,
+                        "sloc": 39,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "property_encoding_test.cpp",
-                    "value": 4
+                    "value": 6
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 2,
-                        "blank_lines": 20,
+                        "aggregate_complexity": 3,
+                        "blank_lines": 17,
                         "decision_complexity": 0,
                         "extension": ".cpp",
                         "imports": {
@@ -1469,23 +1518,23 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 100,
+                        "loc": 101,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "protocol_factory_test",
-                        "nested_complexity": 2,
+                        "nested_complexity": 1,
                         "risks": [],
                         "risks_points": 0,
                         "size": 4272,
-                        "sloc": 80,
+                        "sloc": 84,
                         "type": "C++ source, ASCII text"
                     },
                     "name": "protocol_factory_test.cpp",
-                    "value": 2
+                    "value": 3
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
-                        "blank_lines": 8,
+                        "aggregate_complexity": 3,
+                        "blank_lines": 7,
                         "decision_complexity": 0,
                         "extension": ".cpp",
                         "imports": {
@@ -1496,23 +1545,23 @@
                             ]
                         },
                         "is_code": true,
-                        "loc": 15,
+                        "loc": 16,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "protocol_test",
                         "nested_complexity": 1,
                         "risks": [],
                         "risks_points": 0,
                         "size": 390,
-                        "sloc": 7,
+                        "sloc": 9,
                         "type": "C source, ASCII text"
                     },
                     "name": "protocol_test.cpp",
-                    "value": 1
+                    "value": 3
                 },
                 {
                     "meta": {
                         "aggregate_complexity": 1,
-                        "blank_lines": 4,
+                        "blank_lines": 3,
                         "decision_complexity": 0,
                         "extension": ".h",
                         "imports": {
@@ -1520,14 +1569,14 @@
                             "local": []
                         },
                         "is_code": true,
-                        "loc": 8,
+                        "loc": 9,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "test_utils",
-                        "nested_complexity": 1,
+                        "nested_complexity": 0,
                         "risks": [],
                         "risks_points": 0,
                         "size": 289,
-                        "sloc": 4,
+                        "sloc": 6,
                         "type": "C source, ASCII text"
                     },
                     "name": "test_utils.h",
@@ -1536,18 +1585,18 @@
             ],
             "counter": {
                 "risks_count": 0,
-                "sloc_count": 600,
+                "sloc_count": 628,
                 "source_files": 9,
-                "value_count": 16
+                "value_count": 37
             },
             "name": "test"
         }
     ],
     "counter": {
-        "risks_count": 4,
-        "sloc_count": 4477,
-        "source_files": 56,
-        "value_count": 321
+        "risks_count": 2,
+        "sloc_count": 4555,
+        "source_files": 58,
+        "value_count": 388
     },
     "name": "turbo-connect-core"
 }
