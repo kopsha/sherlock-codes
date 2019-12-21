@@ -11,7 +11,7 @@ from datetime import datetime
 from git.cmd import Git
 
 from utils import print_stage
-from code_parser import parse_cpp_imports, parse_java_imports, parse_swift_imports
+import code_parser
 
 def quick_look(filepath):
     meta = {}
@@ -47,22 +47,7 @@ def quick_look(filepath):
     return meta
 
 
-def nested_code_complexity(effective_lines, tab_size=4):
-    indent_capture = re.compile(r'^(\s*)')
-    tabs = re.compile(r'(\t)')
-
-    max_indentation = 0
-    for line in effective_lines:
-        indentation = indent_capture.match(line)
-        assert(indentation)
-        spaced_indentation = tabs.sub(' '*tab_size, indentation.group(1))
-        max_indentation = max(len(spaced_indentation), max_indentation)
-
-    max_indentation = max_indentation // tab_size
-    return max_indentation
-
-
-def compute_decision_complexity(effective_lines):
+def compute_decision_complexity(source_code):
     markers = [
         'elif',
         'for',
@@ -75,12 +60,11 @@ def compute_decision_complexity(effective_lines):
         'when',
         'while',
     ]
+
     decisions = re.compile(r'(?:^|\W)('+'|'.join(markers)+')(?:$|\W)')
 
-    count = 0
-    for line in effective_lines:
-        found = decisions.findall(line)
-        count += len(found)
+    found = decisions.findall(source_code)
+    count = len(found)
 
     return count
 
@@ -138,48 +122,41 @@ def inspect(filepath, meta):
     with open(filepath, 'rt') as source_file:
         source_code = source_file.read()
 
-    source_lines = source_code.splitlines()
-    meta['loc'] = len(source_lines)
+    # TODO: remove comments based on extension
+    clean_source_code = code_parser.remove_cpp_comments_and_literals(source_code)
 
-    # TODO: sloc computation based on extension
     blank_lines = 0
-    effective_lines = []
-    is_line_comment = re.compile(r'\s*(//|#).*')
-
-    for line in source_lines:
+    effective_lines = 0
+    all_lines = 0
+    for line in clean_source_code.split('\n'):
+        all_lines += 1
         if line.strip():
-            if is_line_comment.match(line):
-                blank_lines += 1
-            else:
-                effective_lines.append(line)
+            effective_lines += 1
         else:
             blank_lines += 1
 
-    meta['sloc'] = len(effective_lines)
+    meta['loc'] = all_lines
+    meta['sloc'] = effective_lines
     meta['blank_lines'] = blank_lines
-    assert(meta['loc'] == (meta['sloc'] + meta['blank_lines']))
 
-    meta['nested_complexity'] = nested_code_complexity(effective_lines)
-    meta['decision_complexity'] = compute_decision_complexity(effective_lines)
+    meta['nested_complexity'] = code_parser.parse_nested_blocks(clean_source_code)
+    meta['decision_complexity'] = compute_decision_complexity(clean_source_code)
 
     meta['risks_points'],meta['risks'] = risk_assesment(meta)
 
     if meta.get('extension') in ['.h', '.cpp', '.mm', '.hpp', '.cc']:
-        meta['imports'] = parse_cpp_imports(source_code)
+        meta['imports'] = code_parser.parse_cpp_imports(source_code)
     elif meta.get('extension') in ['.java', '.kt']:
-        meta['imports'] = parse_java_imports(source_code)
+        meta['imports'] = code_parser.parse_java_imports(source_code)
     elif meta.get('extension') in ['.swift']:
-        meta['imports'] = parse_swift_imports(source_code)
+        meta['imports'] = code_parser.parse_swift_imports(source_code)
     else:
         pass
 
-    # TODO: parse nested blocks
-
     meta['aggregate_complexity'] = sum([
         meta.get('nested_complexity') or 1,
-        len(meta.get('exports', [])),
         meta.get('decision_complexity'),
-        meta.get('risks_points'),
+        len(meta.get('imports', {}).get('local', [])),
     ])
 
     return meta['aggregate_complexity']

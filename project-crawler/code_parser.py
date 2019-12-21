@@ -113,6 +113,24 @@ def parse_swift_imports(source_code):
 
     return { 'local': imports }
 
+def parse_nested_blocks(source_code):
+    open_tag = '{'
+    close_tag = '}'
+    deepest = 0
+    deep = 0
+
+    for c in source_code:
+        if c == open_tag:
+            deep += 1
+            deepest = max(deep, deepest)
+        elif c == close_tag:
+            deep -= 1
+
+    if deep != 0:
+        # TODO: collect risks on each phase
+        print('*** [info] Nested blocks are not matched. If you used macro magic you are on your own.')
+
+    return deepest
 
 def main():
 
@@ -143,6 +161,8 @@ def main():
             print(parse_cpp_imports(clean_source))
         else:
             print(f'Unknown extension {ext}')
+
+        print(f'Nested blocks: {parse_nested_blocks(clean_source)}')
 
 
 if __name__ == '__main__':
