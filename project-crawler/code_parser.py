@@ -1,9 +1,11 @@
 from datetime import datetime
+from utils import print_stage
+
+import ast
 import os
 import re
 import timeit
 
-from utils import print_stage
 
 def remove_cpp_comments_and_literals(source_code):
     source_doubles = list(zip(source_code[:-1], source_code[1:]))
@@ -113,6 +115,20 @@ def parse_swift_imports(source_code):
 
     return { 'local': imports }
 
+
+def parse_python_imports(source_code):
+    module = ast.parse(source_code)
+    imports = []
+    for node in module.body:
+        if isinstance(node, ast.Import):
+            for alias in node.names:
+                imports.append(alias.name)
+        elif isinstance(node, ast.ImportFrom):
+            imports.append(node.module)
+
+    return { 'local': imports }
+
+
 def parse_nested_blocks(source_code):
     open_tag = '{'
     close_tag = '}'
@@ -132,8 +148,8 @@ def parse_nested_blocks(source_code):
 
     return deepest
 
-def main():
 
+def test_source_parsing():
     source_files = [fn for fn in os.listdir('./data') if not fn.endswith('.strip')]
 
     for file in source_files:
@@ -159,10 +175,17 @@ def main():
             print(parse_java_imports(clean_source))
         elif ext in ['.h', '.cpp', '.mm', '.hpp', '.cc']:
             print(parse_cpp_imports(clean_source))
+        elif ext in ['.py']:
+            print(parse_python_imports(source))     # applied on original source code
         else:
             print(f'Unknown extension {ext}')
 
         print(f'Nested blocks: {parse_nested_blocks(clean_source)}')
+
+
+def main():
+    test_source_parsing()
+
 
 
 if __name__ == '__main__':
