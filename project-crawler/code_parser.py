@@ -45,11 +45,13 @@ def remove_cpp_comments_and_literals(source_code):
                 string_literal = False
                 continue
 
+        # skip any comments
         if any([line_comment, block_comment, string_literal]):
             if c1 == '\n':   # keep newlines
                 clean_source.append(c1)
             continue
 
+        # special case, do not touch import directives
         if c1 == '#':
             # read whole line from source_code[i]
             line_ends = source_code.find('\n', i)
@@ -61,7 +63,8 @@ def remove_cpp_comments_and_literals(source_code):
                     # skip to the end of line
                     skip = len(whole_line)-1
                     continue
-    
+
+        # start conditions
         if c1 == '/' and c2 == '/':
             line_comment = True
             skip = 1
@@ -74,10 +77,86 @@ def remove_cpp_comments_and_literals(source_code):
             string_literal = True
             continue
 
+        # valid code
         clean_source.append(c1)
 
     clean_source.append(source_code[-1])
 
+    return ''.join(clean_source)
+
+
+def remove_python_comments_and_literals(source_code):
+    assert(len(source_code) > 3 )
+    source_triples = list(zip(source_code[:-2], source_code[1:-1], source_code[2:]))
+
+    clean_source = []
+    line_comment = False
+    string_literal = False
+    literal_started = None
+    skip = 0
+
+    for i, (c1, c2, c3) in enumerate(source_triples):
+        if skip > 0:
+            skip -= 1
+            continue
+
+        # end conditions
+        if line_comment:
+            if c1 == '\n':
+                line_comment = False
+                clean_source.append(c1)
+                continue
+        elif string_literal:
+            if c1 == '\\':
+                skip = 1    # escaped char follows
+                continue
+            assert(len(literal_started) == 1 or len(literal_started) == 3)
+            if len(literal_started) == 1:
+                if c1 == literal_started[0]:
+                    string_literal = False
+                    literal_started = None
+                    continue
+            else:
+                if c1 == literal_started[0] and c2 == literal_started[1] and c3 == literal_started[2]:
+                    string_literal = False
+                    literal_started = None
+                    skip = 2
+                    continue
+
+        # skip any comments
+        if any([line_comment, string_literal]):
+            if c1 == '\n':   # keep newlines
+                clean_source.append(c1)
+            continue
+
+        # start conditions
+        if c1 == "'" and c2 == "'" and c3 == "'":   # triple quotes
+            string_literal = True
+            literal_started = "'''"
+            skip = 2
+            continue
+        elif c1 == '"' and c2 == '"' and c3 == '"': # triple double-quotes
+            string_literal = True
+            literal_started = '"""'
+            skip = 2
+            continue
+        elif c1 == "'" and c2 != "'":   # single quote
+            string_literal = True
+            literal_started = "'"
+            continue
+        elif c1 == '"' and c2 != '"':   # double quote
+            string_literal = True
+            literal_started = '"'
+            continue
+        elif c1 == "#":
+            line_comment = True
+            continue
+
+        # valid code
+        clean_source.append(c1)
+
+    clean_source.append(source_code[-2])
+    clean_source.append(source_code[-1])
     return ''.join(clean_source)
 
 
@@ -176,6 +255,10 @@ def test_source_parsing():
         elif ext in ['.h', '.cpp', '.mm', '.hpp', '.cc']:
             print(parse_cpp_imports(clean_source))
         elif ext in ['.py']:
+            # TODO: there must be a better way
+            clean_source = remove_python_comments_and_literals(source)
+            with open(f'{source_file}.strip', 'wt') as out:
+                out.write(clean_source)
             print(parse_python_imports(source))     # applied on original source code
         else:
             print(f'Unknown extension {ext}')
@@ -185,7 +268,6 @@ def test_source_parsing():
 
 def main():
     test_source_parsing()
-
 
 
 if __name__ == '__main__':
