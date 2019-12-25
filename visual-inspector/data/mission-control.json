@@ -12422,10 +12422,22 @@
                                                     "children": [
                                                         {
                                                             "meta": {
-                                                                "aggregate_complexity": 9,
+                                                                "aggregate_complexity": 11,
                                                                 "blank_lines": 59,
                                                                 "decision_complexity": 7,
                                                                 "extension": ".c",
+                                                                "imports": {
+                                                                    "extern": [
+                                                                        "stdio.h",
+                                                                        "stdlib.h",
+                                                                        "stdint.h",
+                                                                        "time.h"
+                                                                    ],
+                                                                    "local": [
+                                                                        "zlib.h",
+                                                                        "crypt.h"
+                                                                    ]
+                                                                },
                                                                 "is_code": true,
                                                                 "loc": 145,
                                                                 "mime": "text/x-c; charset=us-ascii",
@@ -12438,7 +12450,7 @@
                                                                 "type": "C source, ASCII text"
                                                             },
                                                             "name": "crypt.c",
-                                                            "value": 9
+                                                            "value": 11
                                                         },
                                                         {
                                                             "meta": {
@@ -12466,10 +12478,21 @@
                                                         },
                                                         {
                                                             "meta": {
-                                                                "aggregate_complexity": 40,
+                                                                "aggregate_complexity": 41,
                                                                 "blank_lines": 51,
                                                                 "decision_complexity": 38,
                                                                 "extension": ".c",
+                                                                "imports": {
+                                                                    "extern": [
+                                                                        "stdlib.h",
+                                                                        "string.h",
+                                                                        "sys/types.h",
+                                                                        "unistd.h"
+                                                                    ],
+                                                                    "local": [
+                                                                        "ioapi.h"
+                                                                    ]
+                                                                },
                                                                 "is_code": true,
                                                                 "loc": 354,
                                                                 "mime": "text/x-c; charset=us-ascii",
@@ -12484,7 +12507,7 @@
                                                                 "type": "C source, ASCII text"
                                                             },
                                                             "name": "ioapi.c",
-                                                            "value": 40
+                                                            "value": 41
                                                         },
                                                         {
                                                             "meta": {
@@ -12518,10 +12541,23 @@
                                                         },
                                                         {
                                                             "meta": {
-                                                                "aggregate_complexity": 46,
+                                                                "aggregate_complexity": 49,
                                                                 "blank_lines": 86,
                                                                 "decision_complexity": 42,
                                                                 "extension": ".c",
+                                                                "imports": {
+                                                                    "extern": [
+                                                                        "stdio.h",
+                                                                        "stdlib.h",
+                                                                        "string.h",
+                                                                        "stdarg.h"
+                                                                    ],
+                                                                    "local": [
+                                                                        "zlib.h",
+                                                                        "ioapi.h",
+                                                                        "ioapi_buf.h"
+                                                                    ]
+                                                                },
                                                                 "is_code": true,
                                                                 "loc": 462,
                                                                 "mime": "text/x-c; charset=us-ascii",
@@ -12537,7 +12573,7 @@
                                                                 "type": "C source, ASCII text"
                                                             },
                                                             "name": "ioapi_buf.c",
-                                                            "value": 46
+                                                            "value": 49
                                                         },
                                                         {
                                                             "meta": {
@@ -12572,10 +12608,22 @@
                                                         },
                                                         {
                                                             "meta": {
-                                                                "aggregate_complexity": 13,
+                                                                "aggregate_complexity": 16,
                                                                 "blank_lines": 50,
                                                                 "decision_complexity": 10,
                                                                 "extension": ".c",
+                                                                "imports": {
+                                                                    "extern": [
+                                                                        "stdio.h",
+                                                                        "stdlib.h",
+                                                                        "string.h"
+                                                                    ],
+                                                                    "local": [
+                                                                        "zlib.h",
+                                                                        "ioapi.h",
+                                                                        "ioapi_mem.h"
+                                                                    ]
+                                                                },
                                                                 "is_code": true,
                                                                 "loc": 168,
                                                                 "mime": "text/x-c; charset=us-ascii",
@@ -12588,7 +12636,7 @@
                                                                 "type": "C source, ASCII text"
                                                             },
                                                             "name": "ioapi_mem.c",
-                                                            "value": 13
+                                                            "value": 16
                                                         },
                                                         {
                                                             "meta": {
@@ -12623,10 +12671,26 @@
                                                         },
                                                         {
                                                             "meta": {
-                                                                "aggregate_complexity": 27,
+                                                                "aggregate_complexity": 30,
                                                                 "blank_lines": 57,
                                                                 "decision_complexity": 24,
                                                                 "extension": ".c",
+                                                                "imports": {
+                                                                    "extern": [
+                                                                        "stdio.h",
+                                                                        "stdint.h",
+                                                                        "stdlib.h",
+                                                                        "string.h",
+                                                                        "time.h",
+                                                                        "errno.h",
+                                                                        "fcntl.h"
+                                                                    ],
+                                                                    "local": [
+                                                                        "zlib.h",
+                                                                        "ioapi.h",
+                                                                        "minishared.h"
+                                                                    ]
+                                                                },
                                                                 "is_code": true,
                                                                 "loc": 293,
                                                                 "mime": "text/x-c; charset=us-ascii",
@@ -12639,7 +12703,7 @@
                                                                 "type": "C source, ASCII text"
                                                             },
                                                             "name": "minishared.c",
-                                                            "value": 27
+                                                            "value": 30
                                                         },
                                                         {
                                                             "meta": {
@@ -12667,10 +12731,24 @@
                                                         },
                                                         {
                                                             "meta": {
-                                                                "aggregate_complexity": 306,
+                                                                "aggregate_complexity": 308,
                                                                 "blank_lines": 413,
                                                                 "decision_complexity": 301,
                                                                 "extension": ".c",
+                                                                "imports": {
+                                                                    "extern": [
+                                                                        "stdio.h",
+                                                                        "stdlib.h",
+                                                                        "stdint.h",
+                                                                        "string.h",
+                                                                        "errno.h",
+                                                                        "assert.h"
+                                                                    ],
+                                                                    "local": [
+                                                                        "zlib.h",
+                                                                        "unzip.h"
+                                                                    ]
+                                                                },
                                                                 "is_code": true,
                                                                 "loc": 2000,
                                                                 "mime": "text/x-c; charset=us-ascii",
@@ -12686,7 +12764,7 @@
                                                                 "type": "C source, ASCII text"
                                                             },
                                                             "name": "unzip.c",
-                                                            "value": 306
+                                                            "value": 308
                                                         },
                                                         {
                                                             "meta": {
@@ -12719,10 +12797,24 @@
                                                         },
                                                         {
                                                             "meta": {
-                                                                "aggregate_complexity": 291,
+                                                                "aggregate_complexity": 293,
                                                                 "blank_lines": 395,
                                                                 "decision_complexity": 286,
                                                                 "extension": ".c",
+                                                                "imports": {
+                                                                    "extern": [
+                                                                        "stdio.h",
+                                                                        "stdlib.h",
+                                                                        "stdint.h",
+                                                                        "string.h",
+                                                                        "errno.h",
+                                                                        "assert.h"
+                                                                    ],
+                                                                    "local": [
+                                                                        "zlib.h",
+                                                                        "zip.h"
+                                                                    ]
+                                                                },
                                                                 "is_code": true,
                                                                 "loc": 2008,
                                                                 "mime": "text/x-c; charset=us-ascii",
@@ -12738,7 +12830,7 @@
                                                                 "type": "C source, ASCII text"
                                                             },
                                                             "name": "zip.c",
-                                                            "value": 291
+                                                            "value": 293
                                                         },
                                                         {
                                                             "meta": {
@@ -12796,10 +12888,20 @@
                                                                 },
                                                                 {
                                                                     "meta": {
-                                                                        "aggregate_complexity": 51,
+                                                                        "aggregate_complexity": 52,
                                                                         "blank_lines": 117,
                                                                         "decision_complexity": 48,
                                                                         "extension": ".c",
+                                                                        "imports": {
+                                                                            "extern": [
+                                                                                "intrin.h",
+                                                                                "cpuid.h",
+                                                                                "x86intrin.h"
+                                                                            ],
+                                                                            "local": [
+                                                                                "aes_ni.h"
+                                                                            ]
+                                                                        },
                                                                         "is_code": true,
                                                                         "loc": 688,
                                                                         "mime": "text/x-c; charset=us-ascii",
@@ -12815,7 +12917,7 @@
                                                                         "type": "C source, ASCII text"
                                                                     },
                                                                     "name": "aes_ni.c",
-                                                                    "value": 51
+                                                                    "value": 52
                                                                 },
                                                                 {
                                                                     "meta": {
@@ -12845,10 +12947,17 @@
                                                                 },
                                                                 {
                                                                     "meta": {
-                                                                        "aggregate_complexity": 36,
+                                                                        "aggregate_complexity": 38,
                                                                         "blank_lines": 96,
                                                                         "decision_complexity": 30,
                                                                         "extension": ".c",
+                                                                        "imports": {
+                                                                            "extern": [],
+                                                                            "local": [
+                                                                                "aesopt.h",
+                                                                                "aestab.h"
+                                                                            ]
+                                                                        },
                                                                         "is_code": true,
                                                                         "loc": 302,
                                                                         "mime": "text/x-c; charset=us-ascii",
@@ -12861,14 +12970,21 @@
                                                                         "type": "C source, ASCII text"
                                                                     },
                                                                     "name": "aescrypt.c",
-                                                                    "value": 36
+                                                                    "value": 38
                                                                 },
                                                                 {
                                                                     "meta": {
-                                                                        "aggregate_complexity": 42,
+                                                                        "aggregate_complexity": 44,
                                                                         "blank_lines": 121,
                                                                         "decision_complexity": 39,
                                                                         "extension": ".c",
+                                                                        "imports": {
+                                                                            "extern": [],
+                                                                            "local": [
+                                                                                "aesopt.h",
+                                                                                "aestab.h"
+                                                                            ]
+                                                                        },
                                                                         "is_code": true,
                                                                         "loc": 555,
                                                                         "mime": "text/x-c; charset=us-ascii",
@@ -12883,7 +12999,7 @@
                                                                         "type": "C source, ASCII text"
                                                                     },
                                                                     "name": "aeskey.c",
-                                                                    "value": 42
+                                                                    "value": 44
                                                                 },
                                                                 {
                                                                     "meta": {
@@ -12918,10 +13034,18 @@
                                                                 },
                                                                 {
                                                                     "meta": {
-                                                                        "aggregate_complexity": 37,
+                                                                        "aggregate_complexity": 40,
                                                                         "blank_lines": 109,
                                                                         "decision_complexity": 33,
                                                                         "extension": ".c",
+                                                                        "imports": {
+                                                                            "extern": [],
+                                                                            "local": [
+                                                                                "aes.h",
+                                                                                "aesopt.h",
+                                                                                "aestab.h"
+                                                                            ]
+                                                                        },
                                                                         "is_code": true,
                                                                         "loc": 419,
                                                                         "mime": "text/x-c; charset=utf-8",
@@ -12936,7 +13060,7 @@
                                                                         "type": "C source, UTF-8 Unicode text"
                                                                     },
                                                                     "name": "aestab.c",
-                                                                    "value": 37
+                                                                    "value": 40
                                                                 },
                                                                 {
                                                                     "meta": {
@@ -13015,10 +13139,18 @@
                                                                 },
                                                                 {
                                                                     "meta": {
-                                                                        "aggregate_complexity": 11,
+                                                                        "aggregate_complexity": 12,
                                                                         "blank_lines": 77,
                                                                         "decision_complexity": 7,
                                                                         "extension": ".c",
+                                                                        "imports": {
+                                                                            "extern": [
+                                                                                "string.h"
+                                                                            ],
+                                                                            "local": [
+                                                                                "fileenc.h"
+                                                                            ]
+                                                                        },
                                                                         "is_code": true,
                                                                         "loc": 146,
                                                                         "mime": "text/x-c; charset=us-ascii",
@@ -13031,7 +13163,7 @@
                                                                         "type": "C source, ASCII text"
                                                                     },
                                                                     "name": "fileenc.c",
-                                                                    "value": 11
+                                                                    "value": 12
                                                                 },
                                                                 {
                                                                     "meta": {
@@ -13063,10 +13195,16 @@
                                                                 },
                                                                 {
                                                                     "meta": {
-                                                                        "aggregate_complexity": 17,
+                                                                        "aggregate_complexity": 18,
                                                                         "blank_lines": 60,
                                                                         "decision_complexity": 13,
                                                                         "extension": ".c",
+                                                                        "imports": {
+                                                                            "extern": [],
+                                                                            "local": [
+                                                                                "hmac.h"
+                                                                            ]
+                                                                        },
                                                                         "is_code": true,
                                                                         "loc": 210,
                                                                         "mime": "text/x-c; charset=us-ascii",
@@ -13079,7 +13217,7 @@
                                                                         "type": "C source, ASCII text"
                                                                     },
                                                                     "name": "hmac.c",
-                                                                    "value": 17
+                                                                    "value": 18
                                                                 },
                                                                 {
                                                                     "meta": {
@@ -13112,10 +13250,18 @@
                                                                 },
                                                                 {
                                                                     "meta": {
-                                                                        "aggregate_complexity": 13,
+                                                                        "aggregate_complexity": 14,
                                                                         "blank_lines": 92,
                                                                         "decision_complexity": 9,
                                                                         "extension": ".c",
+                                                                        "imports": {
+                                                                            "extern": [
+                                                                                "string.h"
+                                                                            ],
+                                                                            "local": [
+                                                                                "prng.h"
+                                                                            ]
+                                                                        },
                                                                         "is_code": true,
                                                                         "loc": 156,
                                                                         "mime": "text/x-c; charset=us-ascii",
@@ -13128,7 +13274,7 @@
                                                                         "type": "C source, ASCII text"
                                                                     },
                                                                     "name": "prng.c",
-                                                                    "value": 13
+                                                                    "value": 14
                                                                 },
                                                                 {
                                                                     "meta": {
@@ -13158,10 +13304,19 @@
                                                                 },
                                                                 {
                                                                     "meta": {
-                                                                        "aggregate_complexity": 13,
+                                                                        "aggregate_complexity": 14,
                                                                         "blank_lines": 60,
                                                                         "decision_complexity": 9,
                                                                         "extension": ".c",
+                                                                        "imports": {
+                                                                            "extern": [
+                                                                                "string.h",
+                                                                                "stdio.h"
+                                                                            ],
+                                                                            "local": [
+                                                                                "hmac.h"
+                                                                            ]
+                                                                        },
                                                                         "is_code": true,
                                                                         "loc": 182,
                                                                         "mime": "text/x-c; charset=us-ascii",
@@ -13174,7 +13329,7 @@
                                                                         "type": "C source, ASCII text"
                                                                     },
                                                                     "name": "pwd2key.c",
-                                                                    "value": 13
+                                                                    "value": 14
                                                                 },
                                                                 {
                                                                     "meta": {
@@ -13202,10 +13357,19 @@
                                                                 },
                                                                 {
                                                                     "meta": {
-                                                                        "aggregate_complexity": 28,
+                                                                        "aggregate_complexity": 30,
                                                                         "blank_lines": 94,
                                                                         "decision_complexity": 22,
                                                                         "extension": ".c",
+                                                                        "imports": {
+                                                                            "extern": [
+                                                                                "string.h"
+                                                                            ],
+                                                                            "local": [
+                                                                                "sha1.h",
+                                                                                "brg_endian.h"
+                                                                            ]
+                                                                        },
                                                                         "is_code": true,
                                                                         "loc": 284,
                                                                         "mime": "text/x-c; charset=us-ascii",
@@ -13218,7 +13382,7 @@
                                                                         "type": "C source, ASCII text"
                                                                     },
                                                                     "name": "sha1.c",
-                                                                    "value": 28
+                                                                    "value": 30
                                                                 },
                                                                 {
                                                                     "meta": {
@@ -13253,7 +13417,7 @@
                                                                 "risks_count": 6,
                                                                 "sloc_count": 3177,
                                                                 "source_files": 20,
-                                                                "value_count": 500
+                                                                "value_count": 514
                                                             },
                                                             "name": "aes"
                                                         }
@@ -13262,7 +13426,7 @@
                                                         "risks_count": 13,
                                                         "sloc_count": 7922,
                                                         "source_files": 34,
-                                                        "value_count": 1261
+                                                        "value_count": 1291
                                                     },
                                                     "name": "minizip"
                                                 }
@@ -13271,7 +13435,7 @@
                                                 "risks_count": 16,
                                                 "sloc_count": 8909,
                                                 "source_files": 38,
-                                                "value_count": 1392
+                                                "value_count": 1422
                                             },
                                             "name": "ssziparchive"
                                         }
@@ -13280,7 +13444,7 @@
                                         "risks_count": 16,
                                         "sloc_count": 11631,
                                         "source_files": 92,
-                                        "value_count": 1716
+                                        "value_count": 1746
                                     },
                                     "name": "deviceapi"
                                 },
@@ -16096,7 +16260,7 @@
                                 "risks_count": 72,
                                 "sloc_count": 51885,
                                 "source_files": 371,
-                                "value_count": 5596
+                                "value_count": 5626
                             },
                             "name": "apis"
                         },
@@ -23086,7 +23250,7 @@
                         "risks_count": 111,
                         "sloc_count": 89697,
                         "source_files": 619,
-                        "value_count": 9107
+                        "value_count": 9137
                     },
                     "name": "src"
                 },
@@ -25123,7 +25287,7 @@
                 "risks_count": 132,
                 "sloc_count": 116489,
                 "source_files": 823,
-                "value_count": 9946
+                "value_count": 9976
             },
             "name": "mission-control"
         },
@@ -25813,7 +25977,7 @@
         "risks_count": 134,
         "sloc_count": 120889,
         "source_files": 890,
-        "value_count": 10466
+        "value_count": 10496
     },
     "name": "mission-control"
 }

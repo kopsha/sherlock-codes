@@ -1,0 +1,1579 @@
+{
+    "children": [
+        {
+            "meta": {
+                "aggregate_complexity": 1,
+                "blank_lines": 4,
+                "decision_complexity": 0,
+                "extension": ".cpp",
+                "imports": {
+                    "extern": [
+                        "QtPlugin"
+                    ],
+                    "local": []
+                },
+                "is_code": true,
+                "loc": 20,
+                "mime": "text/x-c; charset=us-ascii",
+                "name": "plugin_import",
+                "nested_complexity": 0,
+                "risks": [],
+                "risks_points": 0,
+                "size": 735,
+                "sloc": 16,
+                "type": "C source, ASCII text"
+            },
+            "name": "plugin_import.cpp",
+            "value": 1
+        },
+        {
+            "meta": {
+                "aggregate_complexity": 1,
+                "blank_lines": 3,
+                "decision_complexity": 0,
+                "extension": ".cpp",
+                "imports": {
+                    "extern": [
+                        "QtPlugin"
+                    ],
+                    "local": []
+                },
+                "is_code": true,
+                "loc": 17,
+                "mime": "text/x-c; charset=us-ascii",
+                "name": "qml_plugin_import",
+                "nested_complexity": 0,
+                "risks": [],
+                "risks_points": 0,
+                "size": 652,
+                "sloc": 14,
+                "type": "C source, ASCII text"
+            },
+            "name": "qml_plugin_import.cpp",
+            "value": 1
+        },
+        {
+            "children": [
+                {
+                    "meta": {
+                        "aggregate_complexity": 1,
+                        "blank_lines": 1,
+                        "decision_complexity": 0,
+                        "extension": "",
+                        "is_code": true,
+                        "loc": 5,
+                        "mime": "text/x-shellscript; charset=us-ascii",
+                        "name": "postinst",
+                        "nested_complexity": 0,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 69,
+                        "sloc": 4,
+                        "type": "POSIX shell script, ASCII text executable"
+                    },
+                    "name": "postinst",
+                    "value": 1
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 2,
+                        "blank_lines": 1,
+                        "decision_complexity": 1,
+                        "extension": "",
+                        "is_code": true,
+                        "loc": 11,
+                        "mime": "text/x-shellscript; charset=us-ascii",
+                        "name": "prerm",
+                        "nested_complexity": 0,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 231,
+                        "sloc": 10,
+                        "type": "POSIX shell script, ASCII text executable"
+                    },
+                    "name": "prerm",
+                    "value": 2
+                }
+            ],
+            "counter": {
+                "risks_count": 0,
+                "sloc_count": 14,
+                "source_files": 2,
+                "value_count": 3
+            },
+            "name": "debian"
+        },
+        {
+            "children": [
+                {
+                    "meta": {
+                        "aggregate_complexity": 47,
+                        "blank_lines": 87,
+                        "decision_complexity": 39,
+                        "extension": ".cpp",
+                        "imports": {
+                            "extern": [
+                                "QFont",
+                                "QMetaProperty",
+                                "QQmlContext",
+                                "QSettings",
+                                "QKeyEvent",
+                                "QFileInfo",
+                                "QQmlComponent",
+                                "QWindow",
+                                "sys/reboot.h",
+                                "QGeoPositionInfoSource",
+                                "QNmeaPositionInfoSource",
+                                "bloks/BatteryState.h",
+                                "bloks/LightState.h",
+                                "bloks/MotorState.h",
+                                "bloks/DisplayState.h",
+                                "bloks/RemoteState.h",
+                                "bloks/SensorState.h",
+                                "bloks/GearShiftState.h",
+                                "bloks/BluetoothServer.h"
+                            ],
+                            "local": [
+                                "Controller.h",
+                                "QueryableWrapper.h",
+                                "Log.h"
+                            ]
+                        },
+                        "is_code": true,
+                        "loc": 442,
+                        "mime": "text/x-c; charset=us-ascii",
+                        "name": "Controller",
+                        "nested_complexity": 5,
+                        "risks": [
+                            "[info] Arguably many lines of code, this may be ok for now."
+                        ],
+                        "risks_points": 2,
+                        "size": 13823,
+                        "sloc": 355,
+                        "type": "C source, ASCII text"
+                    },
+                    "name": "Controller.cpp",
+                    "value": 47
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 3,
+                        "blank_lines": 141,
+                        "decision_complexity": 0,
+                        "extension": ".h",
+                        "imports": {
+                            "extern": [
+                                "QGuiApplication",
+                                "QQmlApplicationEngine",
+                                "QSettings",
+                                "QGeoPositionInfoSource",
+                                "QGeoPositionInfo",
+                                "QString",
+                                "QTimer",
+                                "bloks/BluetoothServer.h",
+                                "bloks/Frontend.h",
+                                "bloks/RemoteState.h",
+                                "bloks/VehicleState.h"
+                            ],
+                            "local": [
+                                "TripManager.h"
+                            ]
+                        },
+                        "is_code": true,
+                        "loc": 285,
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "name": "Controller",
+                        "nested_complexity": 2,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 6972,
+                        "sloc": 144,
+                        "type": "C++ source, ASCII text"
+                    },
+                    "name": "Controller.h",
+                    "value": 3
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 17,
+                        "blank_lines": 68,
+                        "decision_complexity": 10,
+                        "extension": ".cpp",
+                        "imports": {
+                            "extern": [
+                                "QCoreApplication",
+                                "QFile",
+                                "QQmlApplicationEngine"
+                            ],
+                            "local": [
+                                "GuiSettings.h",
+                                "Log.h"
+                            ]
+                        },
+                        "is_code": true,
+                        "loc": 246,
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "name": "GuiSettings",
+                        "nested_complexity": 5,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 5477,
+                        "sloc": 178,
+                        "type": "C++ source, ASCII text"
+                    },
+                    "name": "GuiSettings.cpp",
+                    "value": 17
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 4,
+                        "blank_lines": 51,
+                        "decision_complexity": 0,
+                        "extension": ".h",
+                        "imports": {
+                            "extern": [
+                                "QObject",
+                                "QSettings",
+                                "QString",
+                                "QTranslator",
+                                "QVector"
+                            ],
+                            "local": []
+                        },
+                        "is_code": true,
+                        "loc": 213,
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "name": "GuiSettings",
+                        "nested_complexity": 4,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 6036,
+                        "sloc": 162,
+                        "type": "C++ source, ASCII text"
+                    },
+                    "name": "GuiSettings.h",
+                    "value": 4
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 19,
+                        "blank_lines": 15,
+                        "decision_complexity": 13,
+                        "extension": ".cpp",
+                        "imports": {
+                            "extern": [
+                                "bloks/frontend-sdk/Preferences.h"
+                            ],
+                            "local": [
+                                "GuiSettingsBloks.h",
+                                "Log.h"
+                            ]
+                        },
+                        "is_code": true,
+                        "loc": 83,
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "name": "GuiSettingsBloks",
+                        "nested_complexity": 4,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 2292,
+                        "sloc": 68,
+                        "type": "C++ source, ASCII text"
+                    },
+                    "name": "GuiSettingsBloks.cpp",
+                    "value": 19
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 4,
+                        "blank_lines": 10,
+                        "decision_complexity": 0,
+                        "extension": ".h",
+                        "imports": {
+                            "extern": [],
+                            "local": [
+                                "GuiSettings.h"
+                            ]
+                        },
+                        "is_code": true,
+                        "loc": 31,
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "name": "GuiSettingsBloks",
+                        "nested_complexity": 3,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 621,
+                        "sloc": 21,
+                        "type": "C++ source, ASCII text"
+                    },
+                    "name": "GuiSettingsBloks.h",
+                    "value": 4
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 4,
+                        "blank_lines": 7,
+                        "decision_complexity": 0,
+                        "extension": ".cpp",
+                        "imports": {
+                            "extern": [],
+                            "local": [
+                                "GuiSettingsQt.h"
+                            ]
+                        },
+                        "is_code": true,
+                        "loc": 32,
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "name": "GuiSettingsQt",
+                        "nested_complexity": 3,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 1356,
+                        "sloc": 25,
+                        "type": "C++ source, ASCII text"
+                    },
+                    "name": "GuiSettingsQt.cpp",
+                    "value": 4
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 5,
+                        "blank_lines": 9,
+                        "decision_complexity": 0,
+                        "extension": ".h",
+                        "imports": {
+                            "extern": [],
+                            "local": [
+                                "GuiSettings.h",
+                                "QSettings"
+                            ]
+                        },
+                        "is_code": true,
+                        "loc": 27,
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "name": "GuiSettingsQt",
+                        "nested_complexity": 3,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 417,
+                        "sloc": 18,
+                        "type": "C++ source, ASCII text"
+                    },
+                    "name": "GuiSettingsQt.h",
+                    "value": 5
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 1,
+                        "blank_lines": 4,
+                        "decision_complexity": 0,
+                        "extension": ".h",
+                        "imports": {
+                            "extern": [
+                                "QLoggingCategory"
+                            ],
+                            "local": []
+                        },
+                        "is_code": true,
+                        "loc": 7,
+                        "mime": "text/x-c; charset=us-ascii",
+                        "name": "Log",
+                        "nested_complexity": 0,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 111,
+                        "sloc": 3,
+                        "type": "C source, ASCII text"
+                    },
+                    "name": "Log.h",
+                    "value": 1
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 9,
+                        "blank_lines": 36,
+                        "decision_complexity": 4,
+                        "extension": ".cpp",
+                        "imports": {
+                            "extern": [
+                                "QFont",
+                                "QMetaProperty",
+                                "QQmlContext",
+                                "QQmlComponent",
+                                "QQuickWindow",
+                                "bloks/BatteryState.h",
+                                "bloks/MotorState.h",
+                                "bloks/LightState.h",
+                                "bloks/RemoteState.h",
+                                "bloks/GearShiftState.h"
+                            ],
+                            "local": [
+                                "MockController.h",
+                                "Controller.h"
+                            ]
+                        },
+                        "is_code": true,
+                        "loc": 198,
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "name": "MockController",
+                        "nested_complexity": 3,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 5889,
+                        "sloc": 162,
+                        "type": "C++ source, ASCII text"
+                    },
+                    "name": "MockController.cpp",
+                    "value": 9
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 1,
+                        "blank_lines": 101,
+                        "decision_complexity": 0,
+                        "extension": ".h",
+                        "imports": {
+                            "extern": [
+                                "QGuiApplication",
+                                "QQmlApplicationEngine",
+                                "QTimer",
+                                "bloks/VehicleState.h"
+                            ],
+                            "local": []
+                        },
+                        "is_code": true,
+                        "loc": 142,
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "name": "MockController",
+                        "nested_complexity": 1,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 3033,
+                        "sloc": 41,
+                        "type": "C++ source, ASCII text"
+                    },
+                    "name": "MockController.h",
+                    "value": 1
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 15,
+                        "blank_lines": 29,
+                        "decision_complexity": 12,
+                        "extension": ".cpp",
+                        "imports": {
+                            "extern": [],
+                            "local": [
+                                "QueryableWrapper.h"
+                            ]
+                        },
+                        "is_code": true,
+                        "loc": 126,
+                        "mime": "text/x-c; charset=us-ascii",
+                        "name": "QueryableWrapper",
+                        "nested_complexity": 2,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 2836,
+                        "sloc": 97,
+                        "type": "C source, ASCII text"
+                    },
+                    "name": "QueryableWrapper.cpp",
+                    "value": 15
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 2,
+                        "blank_lines": 37,
+                        "decision_complexity": 0,
+                        "extension": ".h",
+                        "imports": {
+                            "extern": [
+                                "QObject",
+                                "QPointer",
+                                "bloks/QueryableDate.h",
+                                "bloks/QueryableFloat.h",
+                                "bloks/QueryableInt.h",
+                                "bloks/QueryableString.h"
+                            ],
+                            "local": []
+                        },
+                        "is_code": true,
+                        "loc": 119,
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "name": "QueryableWrapper",
+                        "nested_complexity": 2,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 2967,
+                        "sloc": 82,
+                        "type": "C++ source, ASCII text"
+                    },
+                    "name": "QueryableWrapper.h",
+                    "value": 2
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 9,
+                        "blank_lines": 18,
+                        "decision_complexity": 6,
+                        "extension": ".h",
+                        "imports": {
+                            "extern": [
+                                "QtGui/QGuiApplication",
+                                "QtGui/QScreen",
+                                "QAndroidJniObject",
+                                "QtQml/QQmlApplicationEngine",
+                                "QtQml/QQmlContext"
+                            ],
+                            "local": [
+                                "Log.h"
+                            ]
+                        },
+                        "is_code": true,
+                        "loc": 62,
+                        "mime": "text/x-c; charset=us-ascii",
+                        "name": "ScreenDpi",
+                        "nested_complexity": 2,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 1586,
+                        "sloc": 44,
+                        "type": "C source, ASCII text"
+                    },
+                    "name": "ScreenDpi.h",
+                    "value": 9
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 16,
+                        "blank_lines": 55,
+                        "decision_complexity": 8,
+                        "extension": ".cpp",
+                        "imports": {
+                            "extern": [
+                                "QtMath",
+                                "QSettings",
+                                "QTimer",
+                                "bloks/MotorState.h",
+                                "bloks/BatteryState.h"
+                            ],
+                            "local": [
+                                "TripManager.h",
+                                "Log.h"
+                            ]
+                        },
+                        "is_code": true,
+                        "loc": 201,
+                        "mime": "text/x-c++; charset=utf-8",
+                        "name": "TripManager",
+                        "nested_complexity": 6,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 6116,
+                        "sloc": 146,
+                        "type": "C++ source, UTF-8 Unicode text"
+                    },
+                    "name": "TripManager.cpp",
+                    "value": 16
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 3,
+                        "blank_lines": 41,
+                        "decision_complexity": 0,
+                        "extension": ".h",
+                        "imports": {
+                            "extern": [
+                                "QObject",
+                                "bloks/VehicleState.h",
+                                "bloks/PropertyFloat.h"
+                            ],
+                            "local": []
+                        },
+                        "is_code": true,
+                        "loc": 89,
+                        "mime": "text/x-c++; charset=us-ascii",
+                        "name": "TripManager",
+                        "nested_complexity": 3,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 1965,
+                        "sloc": 48,
+                        "type": "C++ source, ASCII text"
+                    },
+                    "name": "TripManager.h",
+                    "value": 3
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 9,
+                        "blank_lines": 28,
+                        "decision_complexity": 1,
+                        "extension": ".cpp",
+                        "imports": {
+                            "extern": [
+                                "bloks/common/Log.h",
+                                "bloks/common/UnixSignals.h",
+                                "bloks/gui-version.h",
+                                "QFontDatabase",
+                                "QGuiApplication",
+                                "QQmlApplicationEngine",
+                                "QSettings",
+                                "QtQml",
+                                "memory"
+                            ],
+                            "local": [
+                                "GuiSettingsBloks.h",
+                                "GuiSettingsQt.h",
+                                "Controller.h",
+                                "MockController.h",
+                                "Log.h"
+                            ]
+                        },
+                        "is_code": true,
+                        "loc": 84,
+                        "mime": "text/x-c; charset=us-ascii",
+                        "name": "main",
+                        "nested_complexity": 3,
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 2193,
+                        "sloc": 56,
+                        "type": "C source, ASCII text"
+                    },
+                    "name": "main.cpp",
+                    "value": 9
+                }
+            ],
+            "counter": {
+                "risks_count": 1,
+                "sloc_count": 1650,
+                "source_files": 17,
+                "value_count": 168
+            },
+            "name": "src"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "meta": {
+                                "aggregate_complexity": 3,
+                                "blank_lines": 10,
+                                "decision_complexity": 0,
+                                "extension": ".in",
+                                "is_code": true,
+                                "loc": 33,
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "name": "BloksVersion.cpp",
+                                "nested_complexity": 3,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 504,
+                                "sloc": 23,
+                                "type": "C++ source, ASCII text"
+                            },
+                            "name": "BloksVersion.cpp.in",
+                            "value": 3
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 2,
+                                "blank_lines": 7,
+                                "decision_complexity": 0,
+                                "extension": ".in",
+                                "is_code": true,
+                                "loc": 20,
+                                "mime": "text/x-c++; charset=us-ascii",
+                                "name": "BloksVersion.h",
+                                "nested_complexity": 2,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 558,
+                                "sloc": 13,
+                                "type": "C++ source, ASCII text"
+                            },
+                            "name": "BloksVersion.h.in",
+                            "value": 2
+                        }
+                    ],
+                    "counter": {
+                        "risks_count": 0,
+                        "sloc_count": 36,
+                        "source_files": 2,
+                        "value_count": 5
+                    },
+                    "name": "modules"
+                }
+            ],
+            "counter": {
+                "risks_count": 0,
+                "sloc_count": 36,
+                "source_files": 2,
+                "value_count": 5
+            },
+            "name": "cmake"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "meta": {
+                                "aggregate_complexity": 5,
+                                "blank_lines": 384,
+                                "decision_complexity": 1,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 479,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "Blend",
+                                "nested_complexity": 4,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 18944,
+                                "sloc": 95,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "Blend.qml",
+                            "value": 5
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 2,
+                                "blank_lines": 177,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 208,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "BrightnessContrast",
+                                "nested_complexity": 2,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 7021,
+                                "sloc": 31,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "BrightnessContrast.qml",
+                            "value": 2
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 2,
+                                "blank_lines": 128,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 156,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "ColorOverlay",
+                                "nested_complexity": 2,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 5206,
+                                "sloc": 28,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "ColorOverlay.qml",
+                            "value": 2
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 2,
+                                "blank_lines": 263,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 295,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "Colorize",
+                                "nested_complexity": 2,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 9661,
+                                "sloc": 32,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "Colorize.qml",
+                            "value": 2
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 3,
+                                "blank_lines": 310,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 362,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "ConicalGradient",
+                                "nested_complexity": 3,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 11079,
+                                "sloc": 52,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "ConicalGradient.qml",
+                            "value": 3
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 2,
+                                "blank_lines": 128,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 156,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "Desaturate",
+                                "nested_complexity": 2,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 5245,
+                                "sloc": 28,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "Desaturate.qml",
+                            "value": 2
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 7,
+                                "blank_lines": 230,
+                                "decision_complexity": 3,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 290,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "DirectionalBlur",
+                                "nested_complexity": 4,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 10468,
+                                "sloc": 60,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "DirectionalBlur.qml",
+                            "value": 7
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 2,
+                                "blank_lines": 182,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 218,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "Displace",
+                                "nested_complexity": 2,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 8202,
+                                "sloc": 36,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "Displace.qml",
+                            "value": 2
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 2,
+                                "blank_lines": 343,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 362,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "DropShadow",
+                                "nested_complexity": 2,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 12120,
+                                "sloc": 19,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "DropShadow.qml",
+                            "value": 2
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 13,
+                                "blank_lines": 251,
+                                "decision_complexity": 9,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 497,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "FastBlur",
+                                "nested_complexity": 4,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 15592,
+                                "sloc": 246,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "FastBlur.qml",
+                            "value": 13
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 2,
+                                "blank_lines": 166,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 194,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "GammaAdjust",
+                                "nested_complexity": 2,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 6414,
+                                "sloc": 28,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "GammaAdjust.qml",
+                            "value": 2
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 3,
+                                "blank_lines": 279,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 372,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "GaussianBlur",
+                                "nested_complexity": 3,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 13204,
+                                "sloc": 93,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "GaussianBlur.qml",
+                            "value": 3
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 2,
+                                "blank_lines": 269,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 290,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "Glow",
+                                "nested_complexity": 2,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 9516,
+                                "sloc": 21,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "Glow.qml",
+                            "value": 2
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 2,
+                                "blank_lines": 271,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 301,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "HueSaturation",
+                                "nested_complexity": 2,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 9965,
+                                "sloc": 30,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "HueSaturation.qml",
+                            "value": 2
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 3,
+                                "blank_lines": 341,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 386,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "InnerShadow",
+                                "nested_complexity": 3,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 12449,
+                                "sloc": 45,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "InnerShadow.qml",
+                            "value": 3
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 2,
+                                "blank_lines": 433,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 473,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "LevelAdjust",
+                                "nested_complexity": 2,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 17072,
+                                "sloc": 40,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "LevelAdjust.qml",
+                            "value": 2
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 3,
+                                "blank_lines": 311,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 366,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "LinearGradient",
+                                "nested_complexity": 3,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 11783,
+                                "sloc": 55,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "LinearGradient.qml",
+                            "value": 3
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 3,
+                                "blank_lines": 185,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 218,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "MaskedBlur",
+                                "nested_complexity": 3,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 7565,
+                                "sloc": 33,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "MaskedBlur.qml",
+                            "value": 3
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 2,
+                                "blank_lines": 123,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 155,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "OpacityMask",
+                                "nested_complexity": 2,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 5120,
+                                "sloc": 32,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "OpacityMask.qml",
+                            "value": 2
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 7,
+                                "blank_lines": 246,
+                                "decision_complexity": 3,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 313,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "RadialBlur",
+                                "nested_complexity": 4,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 11760,
+                                "sloc": 67,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "RadialBlur.qml",
+                            "value": 7
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 3,
+                                "blank_lines": 402,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 459,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "RadialGradient",
+                                "nested_complexity": 3,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 14955,
+                                "sloc": 57,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "RadialGradient.qml",
+                            "value": 3
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 3,
+                                "blank_lines": 252,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 289,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "RectangularGlow",
+                                "nested_complexity": 3,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 9798,
+                                "sloc": 37,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "RectangularGlow.qml",
+                            "value": 3
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 7,
+                                "blank_lines": 248,
+                                "decision_complexity": 3,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 351,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "RecursiveBlur",
+                                "nested_complexity": 4,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 12032,
+                                "sloc": 103,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "RecursiveBlur.qml",
+                            "value": 7
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 2,
+                                "blank_lines": 191,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 227,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "ThresholdMask",
+                                "nested_complexity": 2,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 7777,
+                                "sloc": 36,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "ThresholdMask.qml",
+                            "value": 2
+                        },
+                        {
+                            "meta": {
+                                "aggregate_complexity": 7,
+                                "blank_lines": 240,
+                                "decision_complexity": 3,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 303,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "ZoomBlur",
+                                "nested_complexity": 4,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 11185,
+                                "sloc": 63,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "ZoomBlur.qml",
+                            "value": 7
+                        },
+                        {
+                            "children": [
+                                {
+                                    "meta": {
+                                        "aggregate_complexity": 13,
+                                        "blank_lines": 145,
+                                        "decision_complexity": 9,
+                                        "extension": ".qml",
+                                        "is_code": true,
+                                        "loc": 395,
+                                        "mime": "text/x-c; charset=us-ascii",
+                                        "name": "FastGlow",
+                                        "nested_complexity": 4,
+                                        "risks": [],
+                                        "risks_points": 0,
+                                        "size": 12180,
+                                        "sloc": 250,
+                                        "type": "C source, ASCII text"
+                                    },
+                                    "name": "FastGlow.qml",
+                                    "value": 13
+                                },
+                                {
+                                    "meta": {
+                                        "aggregate_complexity": 13,
+                                        "blank_lines": 162,
+                                        "decision_complexity": 9,
+                                        "extension": ".qml",
+                                        "is_code": true,
+                                        "loc": 415,
+                                        "mime": "text/x-c; charset=us-ascii",
+                                        "name": "FastInnerShadow",
+                                        "nested_complexity": 4,
+                                        "risks": [],
+                                        "risks_points": 0,
+                                        "size": 13092,
+                                        "sloc": 253,
+                                        "type": "C source, ASCII text"
+                                    },
+                                    "name": "FastInnerShadow.qml",
+                                    "value": 13
+                                },
+                                {
+                                    "meta": {
+                                        "aggregate_complexity": 2,
+                                        "blank_lines": 149,
+                                        "decision_complexity": 0,
+                                        "extension": ".qml",
+                                        "is_code": true,
+                                        "loc": 334,
+                                        "mime": "text/x-c; charset=us-ascii",
+                                        "name": "FastMaskedBlur",
+                                        "nested_complexity": 2,
+                                        "risks": [],
+                                        "risks_points": 0,
+                                        "size": 10942,
+                                        "sloc": 185,
+                                        "type": "C source, ASCII text"
+                                    },
+                                    "name": "FastMaskedBlur.qml",
+                                    "value": 2
+                                },
+                                {
+                                    "meta": {
+                                        "aggregate_complexity": 2,
+                                        "blank_lines": 85,
+                                        "decision_complexity": 0,
+                                        "extension": ".qml",
+                                        "is_code": true,
+                                        "loc": 157,
+                                        "mime": "text/x-c; charset=us-ascii",
+                                        "name": "GaussianInnerShadow",
+                                        "nested_complexity": 2,
+                                        "risks": [],
+                                        "risks_points": 0,
+                                        "size": 5610,
+                                        "sloc": 72,
+                                        "type": "C source, ASCII text"
+                                    },
+                                    "name": "GaussianInnerShadow.qml",
+                                    "value": 2
+                                }
+                            ],
+                            "counter": {
+                                "risks_count": 0,
+                                "sloc_count": 760,
+                                "source_files": 4,
+                                "value_count": 30
+                            },
+                            "name": "private"
+                        }
+                    ],
+                    "counter": {
+                        "risks_count": 0,
+                        "sloc_count": 2127,
+                        "source_files": 29,
+                        "value_count": 121
+                    },
+                    "name": "QtGraphicalEffects"
+                },
+                {
+                    "children": [
+                        {
+                            "meta": {
+                                "aggregate_complexity": 2,
+                                "blank_lines": 411,
+                                "decision_complexity": 0,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 467,
+                                "mime": "text/x-tex; charset=us-ascii",
+                                "name": "Video",
+                                "nested_complexity": 2,
+                                "risks": [],
+                                "risks_points": 0,
+                                "size": 14319,
+                                "sloc": 56,
+                                "type": "LaTeX document, ASCII text"
+                            },
+                            "name": "Video.qml",
+                            "value": 2
+                        }
+                    ],
+                    "counter": {
+                        "risks_count": 0,
+                        "sloc_count": 56,
+                        "source_files": 1,
+                        "value_count": 2
+                    },
+                    "name": "QtMultimedia"
+                },
+                {
+                    "children": [
+                        {
+                            "meta": {
+                                "aggregate_complexity": 199,
+                                "blank_lines": 870,
+                                "decision_complexity": 193,
+                                "extension": ".qml",
+                                "is_code": true,
+                                "loc": 1545,
+                                "mime": "text/x-tex; charset=utf-8",
+                                "name": "TestCase",
+                                "nested_complexity": 6,
+                                "risks": [
+                                    "[warning] Quite many lines of code, plan on refactoring.",
+                                    "[error] Way too many decisions, full code coverage is required."
+                                ],
+                                "risks_points": 18,
+                                "size": 56697,
+                                "sloc": 675,
+                                "type": "LaTeX document, UTF-8 Unicode text"
+                            },
+                            "name": "TestCase.qml",
+                            "value": 199
+                        }
+                    ],
+                    "counter": {
+                        "risks_count": 2,
+                        "sloc_count": 675,
+                        "source_files": 1,
+                        "value_count": 199
+                    },
+                    "name": "QtTest"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "meta": {
+                                        "aggregate_complexity": 63,
+                                        "blank_lines": 687,
+                                        "decision_complexity": 58,
+                                        "extension": ".qml",
+                                        "is_code": true,
+                                        "loc": 994,
+                                        "mime": "text/x-tex; charset=us-ascii",
+                                        "name": "StackView",
+                                        "nested_complexity": 5,
+                                        "risks": [
+                                            "[info] Arguably many lines of code, this may be ok for now.",
+                                            "[info] Arguably many decisions, it is ok if it makes other files less complicated."
+                                        ],
+                                        "risks_points": 7,
+                                        "size": 42256,
+                                        "sloc": 307,
+                                        "type": "LaTeX document, ASCII text"
+                                    },
+                                    "name": "StackView.qml",
+                                    "value": 63
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "meta": {
+                                                "aggregate_complexity": 13,
+                                                "blank_lines": 201,
+                                                "decision_complexity": 9,
+                                                "extension": ".qml",
+                                                "is_code": true,
+                                                "loc": 453,
+                                                "mime": "text/x-c; charset=us-ascii",
+                                                "name": "FastGlow",
+                                                "nested_complexity": 4,
+                                                "risks": [],
+                                                "risks_points": 0,
+                                                "size": 14639,
+                                                "sloc": 252,
+                                                "type": "C source, ASCII text"
+                                            },
+                                            "name": "FastGlow.qml",
+                                            "value": 13
+                                        }
+                                    ],
+                                    "counter": {
+                                        "risks_count": 0,
+                                        "sloc_count": 252,
+                                        "source_files": 1,
+                                        "value_count": 13
+                                    },
+                                    "name": "Private"
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "meta": {
+                                                        "aggregate_complexity": 31,
+                                                        "blank_lines": 298,
+                                                        "decision_complexity": 20,
+                                                        "extension": ".qml",
+                                                        "is_code": true,
+                                                        "loc": 688,
+                                                        "mime": "text/x-tex; charset=us-ascii",
+                                                        "name": "CalendarStyle",
+                                                        "nested_complexity": 11,
+                                                        "risks": [
+                                                            "[info] Arguably many lines of code, this may be ok for now.",
+                                                            "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
+                                                        ],
+                                                        "risks_points": 7,
+                                                        "size": 28572,
+                                                        "sloc": 390,
+                                                        "type": "LaTeX document, ASCII text"
+                                                    },
+                                                    "name": "CalendarStyle.qml",
+                                                    "value": 31
+                                                },
+                                                {
+                                                    "meta": {
+                                                        "aggregate_complexity": 4,
+                                                        "blank_lines": 365,
+                                                        "decision_complexity": 0,
+                                                        "extension": ".qml",
+                                                        "is_code": true,
+                                                        "loc": 495,
+                                                        "mime": "text/x-tex; charset=us-ascii",
+                                                        "name": "CircularGaugeStyle",
+                                                        "nested_complexity": 4,
+                                                        "risks": [],
+                                                        "risks_points": 0,
+                                                        "size": 17905,
+                                                        "sloc": 130,
+                                                        "type": "LaTeX document, ASCII text"
+                                                    },
+                                                    "name": "CircularGaugeStyle.qml",
+                                                    "value": 4
+                                                }
+                                            ],
+                                            "counter": {
+                                                "risks_count": 2,
+                                                "sloc_count": 520,
+                                                "source_files": 2,
+                                                "value_count": 35
+                                            },
+                                            "name": "Base"
+                                        }
+                                    ],
+                                    "counter": {
+                                        "risks_count": 2,
+                                        "sloc_count": 520,
+                                        "source_files": 2,
+                                        "value_count": 35
+                                    },
+                                    "name": "Styles"
+                                }
+                            ],
+                            "counter": {
+                                "risks_count": 4,
+                                "sloc_count": 1079,
+                                "source_files": 4,
+                                "value_count": 111
+                            },
+                            "name": "Controls"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "meta": {
+                                        "aggregate_complexity": 16,
+                                        "blank_lines": 149,
+                                        "decision_complexity": 8,
+                                        "extension": ".qml",
+                                        "is_code": true,
+                                        "loc": 403,
+                                        "mime": "text/x-c; charset=us-ascii",
+                                        "name": "DefaultColorDialog",
+                                        "nested_complexity": 8,
+                                        "risks": [
+                                            "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
+                                        ],
+                                        "risks_points": 5,
+                                        "size": 16203,
+                                        "sloc": 254,
+                                        "type": "C source, ASCII text"
+                                    },
+                                    "name": "DefaultColorDialog.qml",
+                                    "value": 16
+                                }
+                            ],
+                            "counter": {
+                                "risks_count": 1,
+                                "sloc_count": 254,
+                                "source_files": 1,
+                                "value_count": 16
+                            },
+                            "name": "Dialogs"
+                        }
+                    ],
+                    "counter": {
+                        "risks_count": 5,
+                        "sloc_count": 1333,
+                        "source_files": 5,
+                        "value_count": 127
+                    },
+                    "name": "QtQuick"
+                }
+            ],
+            "counter": {
+                "risks_count": 7,
+                "sloc_count": 4191,
+                "source_files": 36,
+                "value_count": 449
+            },
+            "name": "qt_qml"
+        }
+    ],
+    "counter": {
+        "risks_count": 8,
+        "sloc_count": 5921,
+        "source_files": 59,
+        "value_count": 627
+    },
+    "name": "gui"
+}

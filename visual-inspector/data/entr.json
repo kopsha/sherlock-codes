@@ -3,18 +3,18 @@
         {
             "meta": {
                 "aggregate_complexity": 1,
-                "blank_lines": 13,
+                "blank_lines": 39,
                 "decision_complexity": 0,
                 "extension": ".bsd",
                 "is_code": true,
-                "loc": 53,
+                "loc": 54,
                 "mime": "text/x-makefile; charset=us-ascii",
                 "name": "Makefile",
                 "nested_complexity": 1,
                 "risks": [],
                 "risks_points": 0,
                 "size": 1287,
-                "sloc": 40,
+                "sloc": 15,
                 "type": "makefile script, ASCII text"
             },
             "name": "Makefile.bsd",
@@ -27,14 +27,14 @@
                 "decision_complexity": 0,
                 "extension": "",
                 "is_code": true,
-                "loc": 29,
+                "loc": 30,
                 "mime": "text/x-shellscript; charset=us-ascii",
                 "name": "configure",
                 "nested_complexity": 1,
                 "risks": [],
                 "risks_points": 0,
                 "size": 507,
-                "sloc": 20,
+                "sloc": 21,
                 "type": "POSIX shell script, ASCII text executable"
             },
             "name": "configure",
@@ -42,9 +42,9 @@
         },
         {
             "meta": {
-                "aggregate_complexity": 2,
-                "blank_lines": 5,
-                "decision_complexity": 1,
+                "aggregate_complexity": 1,
+                "blank_lines": 22,
+                "decision_complexity": 0,
                 "extension": ".h",
                 "imports": {
                     "extern": [
@@ -53,93 +53,123 @@
                     "local": []
                 },
                 "is_code": true,
-                "loc": 29,
+                "loc": 30,
                 "mime": "text/x-c; charset=us-ascii",
                 "name": "data",
                 "nested_complexity": 1,
                 "risks": [],
                 "risks_points": 0,
                 "size": 971,
-                "sloc": 24,
+                "sloc": 8,
                 "type": "C source, ASCII text"
             },
             "name": "data.h",
-            "value": 2
+            "value": 1
         },
         {
             "meta": {
-                "aggregate_complexity": 106,
-                "blank_lines": 86,
-                "decision_complexity": 91,
+                "aggregate_complexity": 76,
+                "blank_lines": 139,
+                "decision_complexity": 70,
                 "extension": ".c",
+                "imports": {
+                    "extern": [
+                        "sys/param.h",
+                        "sys/resource.h",
+                        "sys/wait.h",
+                        "sys/stat.h",
+                        "sys/event.h",
+                        "dirent.h",
+                        "err.h",
+                        "errno.h",
+                        "fcntl.h",
+                        "libgen.h",
+                        "limits.h",
+                        "paths.h",
+                        "signal.h",
+                        "stdio.h",
+                        "stdlib.h",
+                        "string.h",
+                        "time.h",
+                        "unistd.h"
+                    ],
+                    "local": [
+                        "missing/compat.h",
+                        "data.h"
+                    ]
+                },
                 "is_code": true,
-                "loc": 515,
+                "loc": 516,
                 "mime": "text/x-c; charset=us-ascii",
                 "name": "entr",
-                "nested_complexity": 5,
+                "nested_complexity": 4,
                 "risks": [
                     "[info] Arguably many lines of code, this may be ok for now.",
                     "[warning] Quite many decisions, consider adding more unit tests and review the entire file."
                 ],
                 "risks_points": 10,
                 "size": 12813,
-                "sloc": 429,
+                "sloc": 377,
                 "type": "C source, ASCII text"
             },
             "name": "entr.c",
-            "value": 106
+            "value": 76
         },
         {
             "meta": {
-                "aggregate_complexity": 16,
-                "blank_lines": 140,
-                "decision_complexity": 8,
+                "aggregate_complexity": 10,
+                "blank_lines": 238,
+                "decision_complexity": 7,
                 "extension": ".c",
+                "imports": {
+                    "extern": [],
+                    "local": [
+                        "entr.c"
+                    ]
+                },
                 "is_code": true,
-                "loc": 834,
+                "loc": 835,
                 "mime": "text/x-c; charset=us-ascii",
                 "name": "entr_spec",
-                "nested_complexity": 3,
+                "nested_complexity": 2,
                 "risks": [
                     "[warning] Quite many lines of code, plan on refactoring."
                 ],
                 "risks_points": 5,
                 "size": 20868,
-                "sloc": 694,
+                "sloc": 597,
                 "type": "C source, ASCII text"
             },
             "name": "entr_spec.c",
-            "value": 16
+            "value": 10
         },
         {
             "meta": {
-                "aggregate_complexity": 48,
-                "blank_lines": 55,
-                "decision_complexity": 41,
+                "aggregate_complexity": 4,
+                "blank_lines": 263,
+                "decision_complexity": 2,
                 "extension": ".sh",
                 "is_code": true,
-                "loc": 289,
+                "loc": 290,
                 "mime": "text/x-shellscript; charset=us-ascii",
                 "name": "system_test",
                 "nested_complexity": 2,
-                "risks": [
-                    "[info] Arguably many decisions, it is ok if it makes other files less complicated."
-                ],
-                "risks_points": 5,
+                "risks": [],
+                "risks_points": 0,
                 "size": 8300,
-                "sloc": 234,
+                "sloc": 27,
                 "type": "POSIX shell script, ASCII text executable"
             },
             "name": "system_test.sh",
-            "value": 48
+            "value": 4
         },
         {
             "children": [
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
-                        "blank_lines": 16,
-                        "decision_complexity": 0,
+                        "aggregate_complexity": 5,
+                        "blank_lines": 6,
+                        "decision_complexity": 4,
                         "extension": ".h",
                         "imports": {
                             "extern": [
@@ -149,86 +179,122 @@
                             "local": []
                         },
                         "is_code": true,
-                        "loc": 19,
+                        "loc": 20,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "compat",
                         "nested_complexity": 0,
                         "risks": [],
                         "risks_points": 0,
                         "size": 346,
-                        "sloc": 3,
+                        "sloc": 14,
                         "type": "C source, ASCII text"
                     },
                     "name": "compat.h",
-                    "value": 1
+                    "value": 5
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 23,
-                        "blank_lines": 40,
-                        "decision_complexity": 19,
+                        "aggregate_complexity": 20,
+                        "blank_lines": 54,
+                        "decision_complexity": 17,
                         "extension": ".c",
+                        "imports": {
+                            "extern": [
+                                "errno.h",
+                                "fcntl.h",
+                                "stdio.h",
+                                "stdlib.h",
+                                "string.h"
+                            ],
+                            "local": []
+                        },
                         "is_code": true,
-                        "loc": 186,
+                        "loc": 187,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "fmemopen",
-                        "nested_complexity": 4,
+                        "nested_complexity": 3,
                         "risks": [],
                         "risks_points": 0,
                         "size": 3695,
-                        "sloc": 146,
+                        "sloc": 133,
                         "type": "C source, ASCII text"
                     },
                     "name": "fmemopen.c",
-                    "value": 23
+                    "value": 20
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 28,
-                        "blank_lines": 38,
-                        "decision_complexity": 23,
+                        "aggregate_complexity": 26,
+                        "blank_lines": 51,
+                        "decision_complexity": 20,
                         "extension": ".c",
+                        "imports": {
+                            "extern": [
+                                "sys/inotify.h",
+                                "sys/event.h",
+                                "sys/stat.h",
+                                "sys/types.h",
+                                "errno.h",
+                                "limits.h",
+                                "poll.h",
+                                "stdio.h",
+                                "string.h",
+                                "time.h",
+                                "unistd.h"
+                            ],
+                            "local": [
+                                "compat.h",
+                                "../data.h"
+                            ]
+                        },
                         "is_code": true,
-                        "loc": 159,
+                        "loc": 160,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "kqueue_inotify",
-                        "nested_complexity": 5,
-                        "risks": [],
-                        "risks_points": 0,
-                        "size": 4023,
-                        "sloc": 121,
-                        "type": "C source, ASCII text"
-                    },
-                    "name": "kqueue_inotify.c",
-                    "value": 28
-                },
-                {
-                    "meta": {
-                        "aggregate_complexity": 12,
-                        "blank_lines": 8,
-                        "decision_complexity": 8,
-                        "extension": ".c",
-                        "is_code": true,
-                        "loc": 51,
-                        "mime": "text/x-c; charset=us-ascii",
-                        "name": "strlcpy",
                         "nested_complexity": 4,
                         "risks": [],
                         "risks_points": 0,
+                        "size": 4023,
+                        "sloc": 109,
+                        "type": "C source, ASCII text"
+                    },
+                    "name": "kqueue_inotify.c",
+                    "value": 26
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 9,
+                        "blank_lines": 30,
+                        "decision_complexity": 6,
+                        "extension": ".c",
+                        "imports": {
+                            "extern": [
+                                "sys/types.h",
+                                "string.h"
+                            ],
+                            "local": []
+                        },
+                        "is_code": true,
+                        "loc": 52,
+                        "mime": "text/x-c; charset=us-ascii",
+                        "name": "strlcpy",
+                        "nested_complexity": 3,
+                        "risks": [],
+                        "risks_points": 0,
                         "size": 1561,
-                        "sloc": 43,
+                        "sloc": 22,
                         "type": "C source, ASCII text"
                     },
                     "name": "strlcpy.c",
-                    "value": 12
+                    "value": 9
                 },
                 {
                     "children": [
                         {
                             "meta": {
-                                "aggregate_complexity": 5,
-                                "blank_lines": 29,
-                                "decision_complexity": 4,
+                                "aggregate_complexity": 2,
+                                "blank_lines": 42,
+                                "decision_complexity": 1,
                                 "extension": ".h",
                                 "imports": {
                                     "extern": [
@@ -238,43 +304,43 @@
                                     "local": []
                                 },
                                 "is_code": true,
-                                "loc": 77,
+                                "loc": 78,
                                 "mime": "text/x-c; charset=us-ascii",
                                 "name": "event",
                                 "nested_complexity": 1,
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 2949,
-                                "sloc": 48,
+                                "sloc": 36,
                                 "type": "C source, ASCII text"
                             },
                             "name": "event.h",
-                            "value": 5
+                            "value": 2
                         }
                     ],
                     "counter": {
                         "risks_count": 0,
-                        "sloc_count": 48,
+                        "sloc_count": 36,
                         "source_files": 1,
-                        "value_count": 5
+                        "value_count": 2
                     },
                     "name": "sys"
                 }
             ],
             "counter": {
                 "risks_count": 0,
-                "sloc_count": 361,
+                "sloc_count": 314,
                 "source_files": 5,
-                "value_count": 69
+                "value_count": 62
             },
             "name": "missing"
         }
     ],
     "counter": {
-        "risks_count": 4,
-        "sloc_count": 1802,
+        "risks_count": 3,
+        "sloc_count": 1359,
         "source_files": 11,
-        "value_count": 243
+        "value_count": 155
     },
     "name": "entr"
 }

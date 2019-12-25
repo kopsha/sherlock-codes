@@ -8,75 +8,75 @@
                             "children": [
                                 {
                                     "meta": {
-                                        "aggregate_complexity": 1,
-                                        "blank_lines": 11,
-                                        "decision_complexity": 0,
+                                        "aggregate_complexity": 3,
+                                        "blank_lines": 5,
+                                        "decision_complexity": 2,
                                         "extension": ".py",
                                         "is_code": true,
-                                        "loc": 14,
+                                        "loc": 15,
                                         "mime": "text/x-python; charset=us-ascii",
                                         "name": "items",
-                                        "nested_complexity": 1,
+                                        "nested_complexity": 0,
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 287,
-                                        "sloc": 3,
+                                        "sloc": 10,
                                         "type": "Python script, ASCII text executable"
                                     },
                                     "name": "items.py",
+                                    "value": 3
+                                },
+                                {
+                                    "meta": {
+                                        "aggregate_complexity": 10,
+                                        "blank_lines": 25,
+                                        "decision_complexity": 9,
+                                        "extension": ".py",
+                                        "is_code": true,
+                                        "loc": 104,
+                                        "mime": "text/x-python; charset=utf-8",
+                                        "name": "middlewares",
+                                        "nested_complexity": 0,
+                                        "risks": [],
+                                        "risks_points": 0,
+                                        "size": 3597,
+                                        "sloc": 79,
+                                        "type": "Python script, UTF-8 Unicode text executable"
+                                    },
+                                    "name": "middlewares.py",
+                                    "value": 10
+                                },
+                                {
+                                    "meta": {
+                                        "aggregate_complexity": 1,
+                                        "blank_lines": 4,
+                                        "decision_complexity": 0,
+                                        "extension": ".py",
+                                        "is_code": true,
+                                        "loc": 12,
+                                        "mime": "text/x-python; charset=us-ascii",
+                                        "name": "pipelines",
+                                        "nested_complexity": 0,
+                                        "risks": [],
+                                        "risks_points": 0,
+                                        "size": 288,
+                                        "sloc": 8,
+                                        "type": "Python script, ASCII text executable"
+                                    },
+                                    "name": "pipelines.py",
                                     "value": 1
                                 },
                                 {
                                     "meta": {
-                                        "aggregate_complexity": 5,
-                                        "blank_lines": 70,
-                                        "decision_complexity": 2,
-                                        "extension": ".py",
-                                        "is_code": true,
-                                        "loc": 103,
-                                        "mime": "text/x-python; charset=utf-8",
-                                        "name": "middlewares",
-                                        "nested_complexity": 3,
-                                        "risks": [],
-                                        "risks_points": 0,
-                                        "size": 3597,
-                                        "sloc": 33,
-                                        "type": "Python script, UTF-8 Unicode text executable"
-                                    },
-                                    "name": "middlewares.py",
-                                    "value": 5
-                                },
-                                {
-                                    "meta": {
-                                        "aggregate_complexity": 2,
+                                        "aggregate_complexity": 6,
                                         "blank_lines": 8,
-                                        "decision_complexity": 0,
-                                        "extension": ".py",
-                                        "is_code": true,
-                                        "loc": 11,
-                                        "mime": "text/x-python; charset=us-ascii",
-                                        "name": "pipelines",
-                                        "nested_complexity": 2,
-                                        "risks": [],
-                                        "risks_points": 0,
-                                        "size": 288,
-                                        "sloc": 3,
-                                        "type": "Python script, ASCII text executable"
-                                    },
-                                    "name": "pipelines.py",
-                                    "value": 2
-                                },
-                                {
-                                    "meta": {
-                                        "aggregate_complexity": 8,
-                                        "blank_lines": 7,
                                         "decision_complexity": 5,
                                         "extension": ".py",
                                         "is_code": true,
-                                        "loc": 33,
+                                        "loc": 34,
                                         "mime": "text/x-python; charset=us-ascii",
                                         "name": "selectors",
-                                        "nested_complexity": 3,
+                                        "nested_complexity": 1,
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 947,
@@ -84,72 +84,72 @@
                                         "type": "Python script, ASCII text executable"
                                     },
                                     "name": "selectors.py",
-                                    "value": 8
+                                    "value": 6
                                 },
                                 {
                                     "children": [
                                         {
                                             "meta": {
-                                                "aggregate_complexity": 6,
+                                                "aggregate_complexity": 3,
                                                 "blank_lines": 6,
                                                 "decision_complexity": 2,
                                                 "extension": ".py",
                                                 "is_code": true,
-                                                "loc": 25,
+                                                "loc": 26,
                                                 "mime": "text/x-python; charset=us-ascii",
                                                 "name": "olx",
-                                                "nested_complexity": 4,
+                                                "nested_complexity": 1,
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 883,
-                                                "sloc": 19,
+                                                "sloc": 20,
                                                 "type": "Python script, ASCII text executable"
                                             },
                                             "name": "olx.py",
-                                            "value": 6
+                                            "value": 3
                                         }
                                     ],
                                     "counter": {
                                         "risks_count": 0,
-                                        "sloc_count": 19,
+                                        "sloc_count": 20,
                                         "source_files": 1,
-                                        "value_count": 6
+                                        "value_count": 3
                                     },
                                     "name": "spiders"
                                 }
                             ],
                             "counter": {
                                 "risks_count": 0,
-                                "sloc_count": 84,
+                                "sloc_count": 143,
                                 "source_files": 5,
-                                "value_count": 22
+                                "value_count": 23
                             },
                             "name": "buyers"
                         }
                     ],
                     "counter": {
                         "risks_count": 0,
-                        "sloc_count": 84,
+                        "sloc_count": 143,
                         "source_files": 5,
-                        "value_count": 22
+                        "value_count": 23
                     },
                     "name": "buyers"
                 }
             ],
             "counter": {
                 "risks_count": 0,
-                "sloc_count": 84,
+                "sloc_count": 143,
                 "source_files": 5,
-                "value_count": 22
+                "value_count": 23
             },
             "name": "src"
         }
     ],
     "counter": {
         "risks_count": 0,
-        "sloc_count": 84,
+        "sloc_count": 143,
         "source_files": 5,
-        "value_count": 22
+        "value_count": 23
     },
     "name": "optimal-transaction-hunter"
 }

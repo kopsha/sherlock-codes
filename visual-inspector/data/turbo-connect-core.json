@@ -44,10 +44,28 @@
             "children": [
                 {
                     "meta": {
-                        "aggregate_complexity": 53,
+                        "aggregate_complexity": 67,
                         "blank_lines": 58,
                         "decision_complexity": 52,
                         "extension": ".py",
+                        "imports": {
+                            "local": [
+                                "__future__",
+                                "argparse",
+                                "codecs",
+                                "difflib",
+                                "fnmatch",
+                                "io",
+                                "errno",
+                                "multiprocessing",
+                                "os",
+                                "signal",
+                                "subprocess",
+                                "sys",
+                                "traceback",
+                                "functools"
+                            ]
+                        },
                         "is_code": true,
                         "loc": 380,
                         "mime": "text/x-python; charset=us-ascii",
@@ -63,7 +81,7 @@
                         "type": "Python script, ASCII text executable"
                     },
                     "name": "run-clang-format.py",
-                    "value": 53
+                    "value": 67
                 },
                 {
                     "meta": {
@@ -90,7 +108,7 @@
                 "risks_count": 2,
                 "sloc_count": 383,
                 "source_files": 2,
-                "value_count": 63
+                "value_count": 77
             },
             "name": "scripts"
         },
@@ -558,10 +576,19 @@
                         },
                         {
                             "meta": {
-                                "aggregate_complexity": 17,
+                                "aggregate_complexity": 22,
                                 "blank_lines": 424,
                                 "decision_complexity": 14,
                                 "extension": ".py",
+                                "imports": {
+                                    "local": [
+                                        "re",
+                                        "operator",
+                                        "collections",
+                                        "pandas",
+                                        "jinja2"
+                                    ]
+                                },
                                 "is_code": true,
                                 "loc": 604,
                                 "mime": "text/x-python; charset=us-ascii",
@@ -574,7 +601,7 @@
                                 "type": "Python script, ASCII text executable"
                             },
                             "name": "generate_protocol_sources.py",
-                            "value": 17
+                            "value": 22
                         },
                         {
                             "meta": {
@@ -1313,7 +1340,7 @@
                         "risks_count": 0,
                         "sloc_count": 2882,
                         "source_files": 34,
-                        "value_count": 162
+                        "value_count": 167
                     },
                     "name": "protocol"
                 }
@@ -1322,7 +1349,7 @@
                 "risks_count": 0,
                 "sloc_count": 3473,
                 "source_files": 45,
-                "value_count": 282
+                "value_count": 287
             },
             "name": "src"
         },
@@ -1596,7 +1623,7 @@
         "risks_count": 2,
         "sloc_count": 4555,
         "source_files": 58,
-        "value_count": 388
+        "value_count": 407
     },
     "name": "turbo-connect-core"
 }
