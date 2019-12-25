@@ -1,11 +1,12 @@
 import argparse
 import json
+import os
 import re
 import timeit
-import os
 
 import anytree
 import anytree.exporter
+import humanize
 import magic
 
 from datetime import datetime
@@ -173,7 +174,8 @@ def parse_git_repository(src_root, output=None):
                 'source_files': 1,
                 'sloc_count': node.meta.get('sloc'),
                 'risks_count' : len(node.meta.get('risks')),
-                'value_count' : node.value
+                'value_count' : node.value,
+                'bytes_count' : node.meta.get('size'),
             }
         else:
             counter = {
@@ -181,6 +183,7 @@ def parse_git_repository(src_root, output=None):
                 'sloc_count': 0,
                 'risks_count' : 0,
                 'value_count' : 0,
+                'bytes_count' : 0,
             }
             for c in node.children:
                 partial_counter = aggregate_data(c)
@@ -224,7 +227,8 @@ def parse_git_repository(src_root, output=None):
 
     # Count items up
     aggregate_data(root)
-    print(f'Completed scan of {root.counter["source_files"]} files.')
+    data_bytes = root.counter['bytes_count']
+    print(f'Completed scan of {root.counter["source_files"]} files or {humanize.naturalsize(data_bytes)} of code.')
 
     if not output:
         output = f'{project_name}.json'
@@ -248,9 +252,48 @@ def parse_git_repository(src_root, output=None):
                     depends[ndx] = 1
         dependency_data[module.name] = depends.copy()
 
-    for k in dependency_data:
-        print(f'"{k}" : {dependency_data[k]},')
+    # TODO: add dependency data to project json
+    # for k in dependency_data:
+    #     print(f'"{k}" : {dependency_data[k]},')
 
+    print_stage('Changed together log')
+    change_log = []
+    whatchanged = git.whatchanged().split('\n')
+    whatchanged.reverse()
+
+    pick_path = re.compile(r':\d{6} \d{6} \w+ \w+ \w+\s+(\S+)')
+    last_commit = []
+    commit_count = 0
+    for line in whatchanged:
+        if line.startswith(':'):
+            lookup = pick_path.search(line)
+            if lookup:
+                rel_path = str(lookup.group(1))
+                rel_name = os.path.basename(rel_path)
+                last_commit.append(rel_name)
+            else:
+                print( '***', line )
+        elif line.startswith('commit'):
+            for this in last_commit:
+                if this in module_names:
+                    # build all pairs
+                    pairs = [(this,other) for other in last_commit if other != this and other in module_names]
+                    change_log.extend(pairs)
+            last_commit = []
+            commit_count += 1
+
+    from collections import Counter
+    limit = max(int(commit_count / 100.0), 13)
+    together = Counter(change_log).most_common()
+
+    # TODO: add change coupling data to project json
+    for pair, count in together:
+        change_coupling = count*100/commit_count
+        if change_coupling >= 10:
+            print(f'{pair} are changing together {change_coupling:.1f} % of the time.')
+
+    highest_change = max([c for p,c in together])*100/commit_count
+    print(f'Analyzed {commit_count} commits and found highest change rate {highest_change:.1f} %.')
 
 def main():
     parser = argparse.ArgumentParser()
