@@ -1,4 +1,5 @@
 import argparse
+import json
 import re
 import timeit
 import os
@@ -144,12 +145,14 @@ def inspect(filepath, meta):
 
     meta['risks_points'],meta['risks'] = risk_assesment(meta)
 
-    if meta.get('extension') in ['.h', '.cpp', '.mm', '.hpp', '.cc']:
+    if meta.get('extension') in ['.h', '.cpp', '.mm', '.hpp', '.c', '.cc']:
         meta['imports'] = code_parser.parse_cpp_imports(source_code)
     elif meta.get('extension') in ['.java', '.kt']:
         meta['imports'] = code_parser.parse_java_imports(source_code)
     elif meta.get('extension') in ['.swift']:
         meta['imports'] = code_parser.parse_swift_imports(source_code)
+    elif meta.get('extension') in ['.py']:
+        meta['imports'] = code_parser.parse_python_imports(source_code)
     else:
         pass
 
@@ -228,6 +231,25 @@ def parse_git_repository(src_root, output=None):
     exporter = anytree.exporter.JsonExporter(indent=4, sort_keys=True)
     with open(output, "wt") as out:
         exporter.write(root, out)
+
+    # dependency data
+    module_names = sorted([node.name for node in anytree.PreOrderIter(root, filter_=lambda n: not n.children)])
+    modules = [node for node in anytree.PreOrderIter(root, filter_=lambda n: not n.children)]
+    dependency_data = {}
+
+    for i, module in enumerate(sorted(modules, key=lambda m: m.name)):
+        depends = [0] * len(modules)
+        imports = module.meta.get('imports')
+        if imports:
+            for import_name in imports['local']:
+                name = os.path.basename(import_name)
+                if name in module_names:
+                    ndx = module_names.index(name)
+                    depends[ndx] = 1
+        dependency_data[module.name] = depends.copy()
+
+    for k in dependency_data:
+        print(f'"{k}" : {dependency_data[k]},')
 
 
 def main():

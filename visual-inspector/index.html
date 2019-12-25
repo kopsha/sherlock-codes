@@ -87,8 +87,8 @@
 
 
 {% block scripts %}
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="d3.v5.min.js"></script>
+    <script src="jquery.min.js"></script>
     <script>
 
     let project_selector = $("#project_selector");
@@ -102,7 +102,37 @@
 
     project_selector.change();
 
-    function parseSVG(s) {
+    function update_info_view(d) {
+        info_text = "<p>"
+        info_text += d.data.name + "<hr>";
+
+        if (d.children) {
+            info_text += "source files: <b>" + d.data.counter.source_files + "</b><br>";
+            info_text += "lines of code: <b>" + d.data.counter.sloc_count + "</b><br>";
+            info_text += "risk messages: <b>" + d.data.counter.risks_count + "</b><br>";
+            info_text += "aggregated complexity: <b>" + d.data.counter.value_count + "</b><br>";
+        } else {
+            info_text += "file type: <b>" + d.data.meta.type + "</b><br>";
+            info_text += "lines of code: <b>" + d.data.meta.sloc + "</b><br>";
+            info_text += "decision complexity: <b>" + d.data.meta.decision_complexity + "</b><br>";
+            info_text += "nested complexity: <b>" + d.data.meta.nested_complexity + "</b><br>";
+            if (d.data.meta.imports) {
+                info_text += "imports:<br>"
+                d.data.meta.imports.local.forEach( function (el) {
+                    info_text += el + "<br>";
+                });
+            }
+            info_text += "risks:<br>";
+            d.data.meta.risks.forEach( function (el) {
+                info_text += el + "<br>";
+            });
+        }
+        info_text += "</p>"
+        info_view.html( info_text );
+    }
+
+
+    function create_svg_element(s) {
         let div= document.createElementNS('http://www.w3.org/1999/xhtml', 'div');
         div.innerHTML= '<svg xmlns="http://www.w3.org/2000/svg">'+s+'</svg>';
         let frag= document.createDocumentFragment();
@@ -112,7 +142,7 @@
     }
 
     function render_svg(url) {
-        let svg_tag = parseSVG('<svg width="768" height="768">');
+        let svg_tag = create_svg_element('<svg width="768" height="768">');
         graphic_view.empty();
         graphic_view.append(svg_tag);
         let svg = d3.select("svg"),
@@ -124,8 +154,8 @@
             );
 
         let color = d3.scaleLinear()
-            .domain([-1, 5])
-            .range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
+            .domain([-1, 13])
+            .range(["hsl(150,80%,80%)", "hsl(300,52%,38%)"])
             .interpolate(d3.interpolateHcl);
 
         let pack = d3.pack()
@@ -181,35 +211,6 @@
                 .on("click", function() { zoom(root); });
 
             zoomTo([root.x, root.y, root.r * 2 + margin]);
-
-            function update_info_view(d) {
-                info_text = "<p>"
-                info_text += d.data.name + "<hr>";
-
-                if (d.children) {
-                    info_text += "source files: <b>" + d.data.counter.source_files + "</b><br>";
-                    info_text += "lines of code: <b>" + d.data.counter.sloc_count + "</b><br>";
-                    info_text += "risk messages: <b>" + d.data.counter.risks_count + "</b><br>";
-                    info_text += "Complexity: <b>" + d.data.counter.value_count + "</b><br>";
-                } else {
-                    console.log(d.data.meta)
-                    info_text += "lines of code: <b>" + d.data.meta.sloc + "</b><br>";
-                    info_text += "decision complexity: <b>" + d.data.meta.decision_complexity + "</b><br>";
-                    info_text += "nested complexity: <b>" + d.data.meta.nested_complexity + "</b><br>";
-                    if (d.data.meta.imports) {
-                        info_text += "imports:<br>"
-                        d.data.meta.imports.local.forEach( function (el) {
-                            info_text += el + "<br>";
-                        });
-                    }
-                    info_text += "risks:<br>";
-                    d.data.meta.risks.forEach( function (el) {
-                        info_text += el + "<br>";
-                    });
-                }
-                info_text += "</p>"
-                info_view.html( info_text );
-            }
 
             function zoom(d) {
                 let focus0 = focus; focus = d;
