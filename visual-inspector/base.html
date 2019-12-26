@@ -40,7 +40,6 @@
             {% block info_view %} {% endblock %}
         </div>
     </div>
-    
     <script type="text/javascript">
         let project_selector = $("#project_selector");
         let graphic_view = $("#graphic_view");
@@ -52,11 +51,6 @@
             project_selector.val(lastProject);
             console.log('last project_selector: ', lastProject)
         }
-
-        project_selector.change(function () {
-            render_svg(`/${$(this).val()}`);
-            localStorage.setItem("lastSelectedProject", $(this).val())
-        });
     </script>
     {% block scripts %} {% endblock %}
 </body>

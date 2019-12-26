@@ -5,7 +5,12 @@
 {% endblock %}
 
 {% block scripts %}
-    <script>
-        window.onload = project_selector.change(); 
-    </script>
+<script type="text/javascript">
+    project_selector.change(function () {
+        localStorage.setItem("lastSelectedProject", $(this).val());
+        render_architecture_view();
+    });
+
+    window.onload = render_architecture_view(); 
+</script>
 {% endblock %}
