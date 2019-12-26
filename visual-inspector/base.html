@@ -8,6 +8,7 @@
 
     <script src="d3.v5.min.js"></script>
     <script src="jquery.min.js"></script>
+    <script src="inspector-views.js"></script>
 </head>
 <body>
 
@@ -44,12 +45,16 @@
         let project_selector = $("#project_selector");
         let graphic_view = $("#graphic_view");
         let info_view = $("#info_view");
+        let ndx = parseInt(location.search.split('ndx=')[1])
 
         project_selector.change(function () {
+            if (!Number.isNaN(ndx)) {
+                $(this).prop('selectedIndex', ndx);
+                console.log('Setting:', ndx, $(this).val());
+                ndx = NaN;
+            } 
             render_svg(`/${$(this).val()}`)
         });
-
-        project_selector.change();        
     </script>
     {% block scripts %} {% endblock %}
 </body>

@@ -37,6 +37,7 @@ def render_inspector_pages(data_folder, out_folder):
     for f in src_files:
         src = os.path.join('./', f)
         dst = os.path.join(out_folder, f)
+        print(f'{src} -> {dst}')
         shutil.copyfile(src, dst)
 
 
