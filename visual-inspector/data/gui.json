@@ -2,21 +2,20 @@
     "children": [
         {
             "meta": {
-                "aggregate_complexity": 1,
+                "aggregate_complexity": 2,
                 "blank_lines": 4,
                 "decision_complexity": 0,
                 "extension": ".cpp",
-                "imports": {
-                    "extern": [
-                        "QtPlugin"
-                    ],
-                    "local": []
-                },
+                "imports": [],
                 "is_code": true,
+                "libraries": [
+                    "QtPlugin"
+                ],
                 "loc": 20,
                 "mime": "text/x-c; charset=us-ascii",
                 "name": "plugin_import",
                 "nested_complexity": 0,
+                "path": "gui/plugin_import.cpp",
                 "risks": [],
                 "risks_points": 0,
                 "size": 735,
@@ -24,25 +23,24 @@
                 "type": "C source, ASCII text"
             },
             "name": "plugin_import.cpp",
-            "value": 1
+            "value": 2
         },
         {
             "meta": {
-                "aggregate_complexity": 1,
+                "aggregate_complexity": 2,
                 "blank_lines": 3,
                 "decision_complexity": 0,
                 "extension": ".cpp",
-                "imports": {
-                    "extern": [
-                        "QtPlugin"
-                    ],
-                    "local": []
-                },
+                "imports": [],
                 "is_code": true,
+                "libraries": [
+                    "QtPlugin"
+                ],
                 "loc": 17,
                 "mime": "text/x-c; charset=us-ascii",
                 "name": "qml_plugin_import",
                 "nested_complexity": 0,
+                "path": "gui/qml_plugin_import.cpp",
                 "risks": [],
                 "risks_points": 0,
                 "size": 652,
@@ -50,7 +48,7 @@
                 "type": "C source, ASCII text"
             },
             "name": "qml_plugin_import.cpp",
-            "value": 1
+            "value": 2
         },
         {
             "children": [
@@ -60,11 +58,14 @@
                         "blank_lines": 1,
                         "decision_complexity": 0,
                         "extension": "",
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 5,
                         "mime": "text/x-shellscript; charset=us-ascii",
                         "name": "postinst",
                         "nested_complexity": 0,
+                        "path": "gui/debian/postinst",
                         "risks": [],
                         "risks_points": 0,
                         "size": 69,
@@ -80,11 +81,14 @@
                         "blank_lines": 1,
                         "decision_complexity": 1,
                         "extension": "",
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 11,
                         "mime": "text/x-shellscript; charset=us-ascii",
                         "name": "prerm",
                         "nested_complexity": 0,
+                        "path": "gui/debian/prerm",
                         "risks": [],
                         "risks_points": 0,
                         "size": 231,
@@ -96,6 +100,7 @@
                 }
             ],
             "counter": {
+                "bytes_count": 300,
                 "risks_count": 0,
                 "sloc_count": 14,
                 "source_files": 2,
@@ -107,43 +112,42 @@
             "children": [
                 {
                     "meta": {
-                        "aggregate_complexity": 47,
+                        "aggregate_complexity": 66,
                         "blank_lines": 87,
                         "decision_complexity": 39,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "QFont",
-                                "QMetaProperty",
-                                "QQmlContext",
-                                "QSettings",
-                                "QKeyEvent",
-                                "QFileInfo",
-                                "QQmlComponent",
-                                "QWindow",
-                                "sys/reboot.h",
-                                "QGeoPositionInfoSource",
-                                "QNmeaPositionInfoSource",
-                                "bloks/BatteryState.h",
-                                "bloks/LightState.h",
-                                "bloks/MotorState.h",
-                                "bloks/DisplayState.h",
-                                "bloks/RemoteState.h",
-                                "bloks/SensorState.h",
-                                "bloks/GearShiftState.h",
-                                "bloks/BluetoothServer.h"
-                            ],
-                            "local": [
-                                "Controller.h",
-                                "QueryableWrapper.h",
-                                "Log.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui/src/Controller.h",
+                            "gui/src/QueryableWrapper.h",
+                            "gui/src/Log.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QFont",
+                            "QMetaProperty",
+                            "QQmlContext",
+                            "QSettings",
+                            "QKeyEvent",
+                            "QFileInfo",
+                            "QQmlComponent",
+                            "QWindow",
+                            "sys/reboot.h",
+                            "QGeoPositionInfoSource",
+                            "QNmeaPositionInfoSource",
+                            "bloks/BatteryState.h",
+                            "bloks/LightState.h",
+                            "bloks/MotorState.h",
+                            "bloks/DisplayState.h",
+                            "bloks/RemoteState.h",
+                            "bloks/SensorState.h",
+                            "bloks/GearShiftState.h",
+                            "bloks/BluetoothServer.h"
+                        ],
                         "loc": 442,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "Controller",
                         "nested_complexity": 5,
+                        "path": "gui/src/Controller.cpp",
                         "risks": [
                             "[info] Arguably many lines of code, this may be ok for now."
                         ],
@@ -153,37 +157,36 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "Controller.cpp",
-                    "value": 47
+                    "value": 66
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 3,
+                        "aggregate_complexity": 14,
                         "blank_lines": 141,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QGuiApplication",
-                                "QQmlApplicationEngine",
-                                "QSettings",
-                                "QGeoPositionInfoSource",
-                                "QGeoPositionInfo",
-                                "QString",
-                                "QTimer",
-                                "bloks/BluetoothServer.h",
-                                "bloks/Frontend.h",
-                                "bloks/RemoteState.h",
-                                "bloks/VehicleState.h"
-                            ],
-                            "local": [
-                                "TripManager.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui/src/TripManager.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QGuiApplication",
+                            "QQmlApplicationEngine",
+                            "QSettings",
+                            "QGeoPositionInfoSource",
+                            "QGeoPositionInfo",
+                            "QString",
+                            "QTimer",
+                            "bloks/BluetoothServer.h",
+                            "bloks/Frontend.h",
+                            "bloks/RemoteState.h",
+                            "bloks/VehicleState.h"
+                        ],
                         "loc": 285,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "Controller",
                         "nested_complexity": 2,
+                        "path": "gui/src/Controller.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 6972,
@@ -191,30 +194,29 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "Controller.h",
-                    "value": 3
+                    "value": 14
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 17,
+                        "aggregate_complexity": 20,
                         "blank_lines": 68,
                         "decision_complexity": 10,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "QCoreApplication",
-                                "QFile",
-                                "QQmlApplicationEngine"
-                            ],
-                            "local": [
-                                "GuiSettings.h",
-                                "Log.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui/src/GuiSettings.h",
+                            "gui/src/Log.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QCoreApplication",
+                            "QFile",
+                            "QQmlApplicationEngine"
+                        ],
                         "loc": 246,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "GuiSettings",
                         "nested_complexity": 5,
+                        "path": "gui/src/GuiSettings.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 5477,
@@ -222,29 +224,28 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "GuiSettings.cpp",
-                    "value": 17
+                    "value": 20
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 4,
+                        "aggregate_complexity": 9,
                         "blank_lines": 51,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QObject",
-                                "QSettings",
-                                "QString",
-                                "QTranslator",
-                                "QVector"
-                            ],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [
+                            "QObject",
+                            "QSettings",
+                            "QString",
+                            "QTranslator",
+                            "QVector"
+                        ],
                         "loc": 213,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "GuiSettings",
                         "nested_complexity": 4,
+                        "path": "gui/src/GuiSettings.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 6036,
@@ -252,28 +253,27 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "GuiSettings.h",
-                    "value": 4
+                    "value": 9
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 19,
+                        "aggregate_complexity": 20,
                         "blank_lines": 15,
                         "decision_complexity": 13,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "bloks/frontend-sdk/Preferences.h"
-                            ],
-                            "local": [
-                                "GuiSettingsBloks.h",
-                                "Log.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui/src/GuiSettingsBloks.h",
+                            "gui/src/Log.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "bloks/frontend-sdk/Preferences.h"
+                        ],
                         "loc": 83,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "GuiSettingsBloks",
                         "nested_complexity": 4,
+                        "path": "gui/src/GuiSettingsBloks.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 2292,
@@ -281,7 +281,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "GuiSettingsBloks.cpp",
-                    "value": 19
+                    "value": 20
                 },
                 {
                     "meta": {
@@ -289,17 +289,16 @@
                         "blank_lines": 10,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "GuiSettings.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui/src/GuiSettings.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 31,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "GuiSettingsBloks",
                         "nested_complexity": 3,
+                        "path": "gui/src/GuiSettingsBloks.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 621,
@@ -315,17 +314,16 @@
                         "blank_lines": 7,
                         "decision_complexity": 0,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "GuiSettingsQt.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui/src/GuiSettingsQt.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 32,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "GuiSettingsQt",
                         "nested_complexity": 3,
+                        "path": "gui/src/GuiSettingsQt.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1356,
@@ -341,18 +339,18 @@
                         "blank_lines": 9,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "GuiSettings.h",
-                                "QSettings"
-                            ]
-                        },
+                        "imports": [
+                            "gui/src/GuiSettings.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QSettings"
+                        ],
                         "loc": 27,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "GuiSettingsQt",
                         "nested_complexity": 3,
+                        "path": "gui/src/GuiSettingsQt.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 417,
@@ -364,21 +362,20 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
+                        "aggregate_complexity": 2,
                         "blank_lines": 4,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QLoggingCategory"
-                            ],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [
+                            "QLoggingCategory"
+                        ],
                         "loc": 7,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "Log",
                         "nested_complexity": 0,
+                        "path": "gui/src/Log.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 111,
@@ -386,37 +383,36 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "Log.h",
-                    "value": 1
+                    "value": 2
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 9,
+                        "aggregate_complexity": 19,
                         "blank_lines": 36,
                         "decision_complexity": 4,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "QFont",
-                                "QMetaProperty",
-                                "QQmlContext",
-                                "QQmlComponent",
-                                "QQuickWindow",
-                                "bloks/BatteryState.h",
-                                "bloks/MotorState.h",
-                                "bloks/LightState.h",
-                                "bloks/RemoteState.h",
-                                "bloks/GearShiftState.h"
-                            ],
-                            "local": [
-                                "MockController.h",
-                                "Controller.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui/src/MockController.h",
+                            "gui/src/Controller.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QFont",
+                            "QMetaProperty",
+                            "QQmlContext",
+                            "QQmlComponent",
+                            "QQuickWindow",
+                            "bloks/BatteryState.h",
+                            "bloks/MotorState.h",
+                            "bloks/LightState.h",
+                            "bloks/RemoteState.h",
+                            "bloks/GearShiftState.h"
+                        ],
                         "loc": 198,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "MockController",
                         "nested_complexity": 3,
+                        "path": "gui/src/MockController.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 5889,
@@ -424,28 +420,27 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "MockController.cpp",
-                    "value": 9
+                    "value": 19
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
+                        "aggregate_complexity": 5,
                         "blank_lines": 101,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QGuiApplication",
-                                "QQmlApplicationEngine",
-                                "QTimer",
-                                "bloks/VehicleState.h"
-                            ],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [
+                            "QGuiApplication",
+                            "QQmlApplicationEngine",
+                            "QTimer",
+                            "bloks/VehicleState.h"
+                        ],
                         "loc": 142,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "MockController",
                         "nested_complexity": 1,
+                        "path": "gui/src/MockController.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3033,
@@ -453,7 +448,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "MockController.h",
-                    "value": 1
+                    "value": 5
                 },
                 {
                     "meta": {
@@ -461,17 +456,16 @@
                         "blank_lines": 29,
                         "decision_complexity": 12,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "QueryableWrapper.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui/src/QueryableWrapper.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 126,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "QueryableWrapper",
                         "nested_complexity": 2,
+                        "path": "gui/src/QueryableWrapper.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 2836,
@@ -483,26 +477,25 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 2,
+                        "aggregate_complexity": 8,
                         "blank_lines": 37,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QObject",
-                                "QPointer",
-                                "bloks/QueryableDate.h",
-                                "bloks/QueryableFloat.h",
-                                "bloks/QueryableInt.h",
-                                "bloks/QueryableString.h"
-                            ],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [
+                            "QObject",
+                            "QPointer",
+                            "bloks/QueryableDate.h",
+                            "bloks/QueryableFloat.h",
+                            "bloks/QueryableInt.h",
+                            "bloks/QueryableString.h"
+                        ],
                         "loc": 119,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "QueryableWrapper",
                         "nested_complexity": 2,
+                        "path": "gui/src/QueryableWrapper.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 2967,
@@ -510,31 +503,30 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "QueryableWrapper.h",
-                    "value": 2
+                    "value": 8
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 9,
+                        "aggregate_complexity": 14,
                         "blank_lines": 18,
                         "decision_complexity": 6,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QtGui/QGuiApplication",
-                                "QtGui/QScreen",
-                                "QAndroidJniObject",
-                                "QtQml/QQmlApplicationEngine",
-                                "QtQml/QQmlContext"
-                            ],
-                            "local": [
-                                "Log.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui/src/Log.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QtGui/QGuiApplication",
+                            "QtGui/QScreen",
+                            "QAndroidJniObject",
+                            "QtQml/QQmlApplicationEngine",
+                            "QtQml/QQmlContext"
+                        ],
                         "loc": 62,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "ScreenDpi",
                         "nested_complexity": 2,
+                        "path": "gui/src/ScreenDpi.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1586,
@@ -542,32 +534,31 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "ScreenDpi.h",
-                    "value": 9
+                    "value": 14
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 16,
+                        "aggregate_complexity": 21,
                         "blank_lines": 55,
                         "decision_complexity": 8,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "QtMath",
-                                "QSettings",
-                                "QTimer",
-                                "bloks/MotorState.h",
-                                "bloks/BatteryState.h"
-                            ],
-                            "local": [
-                                "TripManager.h",
-                                "Log.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui/src/TripManager.h",
+                            "gui/src/Log.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QtMath",
+                            "QSettings",
+                            "QTimer",
+                            "bloks/MotorState.h",
+                            "bloks/BatteryState.h"
+                        ],
                         "loc": 201,
                         "mime": "text/x-c++; charset=utf-8",
                         "name": "TripManager",
                         "nested_complexity": 6,
+                        "path": "gui/src/TripManager.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 6116,
@@ -575,27 +566,26 @@
                         "type": "C++ source, UTF-8 Unicode text"
                     },
                     "name": "TripManager.cpp",
-                    "value": 16
+                    "value": 21
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 3,
+                        "aggregate_complexity": 6,
                         "blank_lines": 41,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QObject",
-                                "bloks/VehicleState.h",
-                                "bloks/PropertyFloat.h"
-                            ],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [
+                            "QObject",
+                            "bloks/VehicleState.h",
+                            "bloks/PropertyFloat.h"
+                        ],
                         "loc": 89,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "TripManager",
                         "nested_complexity": 3,
+                        "path": "gui/src/TripManager.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1965,
@@ -603,39 +593,38 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "TripManager.h",
-                    "value": 3
+                    "value": 6
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 9,
+                        "aggregate_complexity": 18,
                         "blank_lines": 28,
                         "decision_complexity": 1,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "bloks/common/Log.h",
-                                "bloks/common/UnixSignals.h",
-                                "bloks/gui-version.h",
-                                "QFontDatabase",
-                                "QGuiApplication",
-                                "QQmlApplicationEngine",
-                                "QSettings",
-                                "QtQml",
-                                "memory"
-                            ],
-                            "local": [
-                                "GuiSettingsBloks.h",
-                                "GuiSettingsQt.h",
-                                "Controller.h",
-                                "MockController.h",
-                                "Log.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui/src/Log.h",
+                            "gui/src/GuiSettingsBloks.h",
+                            "gui/src/GuiSettingsQt.h",
+                            "gui/src/Controller.h",
+                            "gui/src/MockController.h",
+                            "gui/src/Log.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "bloks/common/UnixSignals.h",
+                            "bloks/gui-version.h",
+                            "QFontDatabase",
+                            "QGuiApplication",
+                            "QQmlApplicationEngine",
+                            "QSettings",
+                            "QtQml",
+                            "memory"
+                        ],
                         "loc": 84,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "main",
                         "nested_complexity": 3,
+                        "path": "gui/src/main.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 2193,
@@ -643,14 +632,15 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "main.cpp",
-                    "value": 9
+                    "value": 18
                 }
             ],
             "counter": {
+                "bytes_count": 63690,
                 "risks_count": 1,
                 "sloc_count": 1650,
                 "source_files": 17,
-                "value_count": 168
+                "value_count": 250
             },
             "name": "src"
         },
@@ -664,11 +654,14 @@
                                 "blank_lines": 10,
                                 "decision_complexity": 0,
                                 "extension": ".in",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 33,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "BloksVersion.cpp",
                                 "nested_complexity": 3,
+                                "path": "gui/cmake/modules/BloksVersion.cpp.in",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 504,
@@ -684,11 +677,14 @@
                                 "blank_lines": 7,
                                 "decision_complexity": 0,
                                 "extension": ".in",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 20,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "BloksVersion.h",
                                 "nested_complexity": 2,
+                                "path": "gui/cmake/modules/BloksVersion.h.in",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 558,
@@ -700,6 +696,7 @@
                         }
                     ],
                     "counter": {
+                        "bytes_count": 1062,
                         "risks_count": 0,
                         "sloc_count": 36,
                         "source_files": 2,
@@ -709,6 +706,7 @@
                 }
             ],
             "counter": {
+                "bytes_count": 1062,
                 "risks_count": 0,
                 "sloc_count": 36,
                 "source_files": 2,
@@ -726,11 +724,14 @@
                                 "blank_lines": 384,
                                 "decision_complexity": 1,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 479,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "Blend",
                                 "nested_complexity": 4,
+                                "path": "gui/qt_qml/QtGraphicalEffects/Blend.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 18944,
@@ -746,11 +747,14 @@
                                 "blank_lines": 177,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 208,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "BrightnessContrast",
                                 "nested_complexity": 2,
+                                "path": "gui/qt_qml/QtGraphicalEffects/BrightnessContrast.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 7021,
@@ -766,11 +770,14 @@
                                 "blank_lines": 128,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 156,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "ColorOverlay",
                                 "nested_complexity": 2,
+                                "path": "gui/qt_qml/QtGraphicalEffects/ColorOverlay.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 5206,
@@ -786,11 +793,14 @@
                                 "blank_lines": 263,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 295,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "Colorize",
                                 "nested_complexity": 2,
+                                "path": "gui/qt_qml/QtGraphicalEffects/Colorize.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 9661,
@@ -806,11 +816,14 @@
                                 "blank_lines": 310,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 362,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "ConicalGradient",
                                 "nested_complexity": 3,
+                                "path": "gui/qt_qml/QtGraphicalEffects/ConicalGradient.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 11079,
@@ -826,11 +839,14 @@
                                 "blank_lines": 128,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 156,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "Desaturate",
                                 "nested_complexity": 2,
+                                "path": "gui/qt_qml/QtGraphicalEffects/Desaturate.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 5245,
@@ -846,11 +862,14 @@
                                 "blank_lines": 230,
                                 "decision_complexity": 3,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 290,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "DirectionalBlur",
                                 "nested_complexity": 4,
+                                "path": "gui/qt_qml/QtGraphicalEffects/DirectionalBlur.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 10468,
@@ -866,11 +885,14 @@
                                 "blank_lines": 182,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 218,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "Displace",
                                 "nested_complexity": 2,
+                                "path": "gui/qt_qml/QtGraphicalEffects/Displace.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 8202,
@@ -886,11 +908,14 @@
                                 "blank_lines": 343,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 362,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "DropShadow",
                                 "nested_complexity": 2,
+                                "path": "gui/qt_qml/QtGraphicalEffects/DropShadow.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 12120,
@@ -906,11 +931,14 @@
                                 "blank_lines": 251,
                                 "decision_complexity": 9,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 497,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "FastBlur",
                                 "nested_complexity": 4,
+                                "path": "gui/qt_qml/QtGraphicalEffects/FastBlur.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 15592,
@@ -926,11 +954,14 @@
                                 "blank_lines": 166,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 194,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "GammaAdjust",
                                 "nested_complexity": 2,
+                                "path": "gui/qt_qml/QtGraphicalEffects/GammaAdjust.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 6414,
@@ -946,11 +977,14 @@
                                 "blank_lines": 279,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 372,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "GaussianBlur",
                                 "nested_complexity": 3,
+                                "path": "gui/qt_qml/QtGraphicalEffects/GaussianBlur.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 13204,
@@ -966,11 +1000,14 @@
                                 "blank_lines": 269,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 290,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "Glow",
                                 "nested_complexity": 2,
+                                "path": "gui/qt_qml/QtGraphicalEffects/Glow.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 9516,
@@ -986,11 +1023,14 @@
                                 "blank_lines": 271,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 301,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "HueSaturation",
                                 "nested_complexity": 2,
+                                "path": "gui/qt_qml/QtGraphicalEffects/HueSaturation.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 9965,
@@ -1006,11 +1046,14 @@
                                 "blank_lines": 341,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 386,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "InnerShadow",
                                 "nested_complexity": 3,
+                                "path": "gui/qt_qml/QtGraphicalEffects/InnerShadow.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 12449,
@@ -1026,11 +1069,14 @@
                                 "blank_lines": 433,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 473,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "LevelAdjust",
                                 "nested_complexity": 2,
+                                "path": "gui/qt_qml/QtGraphicalEffects/LevelAdjust.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 17072,
@@ -1046,11 +1092,14 @@
                                 "blank_lines": 311,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 366,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "LinearGradient",
                                 "nested_complexity": 3,
+                                "path": "gui/qt_qml/QtGraphicalEffects/LinearGradient.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 11783,
@@ -1066,11 +1115,14 @@
                                 "blank_lines": 185,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 218,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "MaskedBlur",
                                 "nested_complexity": 3,
+                                "path": "gui/qt_qml/QtGraphicalEffects/MaskedBlur.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 7565,
@@ -1086,11 +1138,14 @@
                                 "blank_lines": 123,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 155,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "OpacityMask",
                                 "nested_complexity": 2,
+                                "path": "gui/qt_qml/QtGraphicalEffects/OpacityMask.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 5120,
@@ -1106,11 +1161,14 @@
                                 "blank_lines": 246,
                                 "decision_complexity": 3,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 313,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "RadialBlur",
                                 "nested_complexity": 4,
+                                "path": "gui/qt_qml/QtGraphicalEffects/RadialBlur.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 11760,
@@ -1126,11 +1184,14 @@
                                 "blank_lines": 402,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 459,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "RadialGradient",
                                 "nested_complexity": 3,
+                                "path": "gui/qt_qml/QtGraphicalEffects/RadialGradient.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 14955,
@@ -1146,11 +1207,14 @@
                                 "blank_lines": 252,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 289,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "RectangularGlow",
                                 "nested_complexity": 3,
+                                "path": "gui/qt_qml/QtGraphicalEffects/RectangularGlow.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 9798,
@@ -1166,11 +1230,14 @@
                                 "blank_lines": 248,
                                 "decision_complexity": 3,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 351,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "RecursiveBlur",
                                 "nested_complexity": 4,
+                                "path": "gui/qt_qml/QtGraphicalEffects/RecursiveBlur.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 12032,
@@ -1186,11 +1253,14 @@
                                 "blank_lines": 191,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 227,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "ThresholdMask",
                                 "nested_complexity": 2,
+                                "path": "gui/qt_qml/QtGraphicalEffects/ThresholdMask.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 7777,
@@ -1206,11 +1276,14 @@
                                 "blank_lines": 240,
                                 "decision_complexity": 3,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 303,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "ZoomBlur",
                                 "nested_complexity": 4,
+                                "path": "gui/qt_qml/QtGraphicalEffects/ZoomBlur.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 11185,
@@ -1228,11 +1301,14 @@
                                         "blank_lines": 145,
                                         "decision_complexity": 9,
                                         "extension": ".qml",
+                                        "imports": [],
                                         "is_code": true,
+                                        "libraries": [],
                                         "loc": 395,
                                         "mime": "text/x-c; charset=us-ascii",
                                         "name": "FastGlow",
                                         "nested_complexity": 4,
+                                        "path": "gui/qt_qml/QtGraphicalEffects/private/FastGlow.qml",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 12180,
@@ -1248,11 +1324,14 @@
                                         "blank_lines": 162,
                                         "decision_complexity": 9,
                                         "extension": ".qml",
+                                        "imports": [],
                                         "is_code": true,
+                                        "libraries": [],
                                         "loc": 415,
                                         "mime": "text/x-c; charset=us-ascii",
                                         "name": "FastInnerShadow",
                                         "nested_complexity": 4,
+                                        "path": "gui/qt_qml/QtGraphicalEffects/private/FastInnerShadow.qml",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 13092,
@@ -1268,11 +1347,14 @@
                                         "blank_lines": 149,
                                         "decision_complexity": 0,
                                         "extension": ".qml",
+                                        "imports": [],
                                         "is_code": true,
+                                        "libraries": [],
                                         "loc": 334,
                                         "mime": "text/x-c; charset=us-ascii",
                                         "name": "FastMaskedBlur",
                                         "nested_complexity": 2,
+                                        "path": "gui/qt_qml/QtGraphicalEffects/private/FastMaskedBlur.qml",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 10942,
@@ -1288,11 +1370,14 @@
                                         "blank_lines": 85,
                                         "decision_complexity": 0,
                                         "extension": ".qml",
+                                        "imports": [],
                                         "is_code": true,
+                                        "libraries": [],
                                         "loc": 157,
                                         "mime": "text/x-c; charset=us-ascii",
                                         "name": "GaussianInnerShadow",
                                         "nested_complexity": 2,
+                                        "path": "gui/qt_qml/QtGraphicalEffects/private/GaussianInnerShadow.qml",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 5610,
@@ -1304,6 +1389,7 @@
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 41824,
                                 "risks_count": 0,
                                 "sloc_count": 760,
                                 "source_files": 4,
@@ -1313,6 +1399,7 @@
                         }
                     ],
                     "counter": {
+                        "bytes_count": 305957,
                         "risks_count": 0,
                         "sloc_count": 2127,
                         "source_files": 29,
@@ -1328,11 +1415,14 @@
                                 "blank_lines": 411,
                                 "decision_complexity": 0,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 467,
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "Video",
                                 "nested_complexity": 2,
+                                "path": "gui/qt_qml/QtMultimedia/Video.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 14319,
@@ -1344,6 +1434,7 @@
                         }
                     ],
                     "counter": {
+                        "bytes_count": 14319,
                         "risks_count": 0,
                         "sloc_count": 56,
                         "source_files": 1,
@@ -1359,11 +1450,14 @@
                                 "blank_lines": 870,
                                 "decision_complexity": 193,
                                 "extension": ".qml",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 1545,
                                 "mime": "text/x-tex; charset=utf-8",
                                 "name": "TestCase",
                                 "nested_complexity": 6,
+                                "path": "gui/qt_qml/QtTest/TestCase.qml",
                                 "risks": [
                                     "[warning] Quite many lines of code, plan on refactoring.",
                                     "[error] Way too many decisions, full code coverage is required."
@@ -1378,6 +1472,7 @@
                         }
                     ],
                     "counter": {
+                        "bytes_count": 56697,
                         "risks_count": 2,
                         "sloc_count": 675,
                         "source_files": 1,
@@ -1395,11 +1490,14 @@
                                         "blank_lines": 687,
                                         "decision_complexity": 58,
                                         "extension": ".qml",
+                                        "imports": [],
                                         "is_code": true,
+                                        "libraries": [],
                                         "loc": 994,
                                         "mime": "text/x-tex; charset=us-ascii",
                                         "name": "StackView",
                                         "nested_complexity": 5,
+                                        "path": "gui/qt_qml/QtQuick/Controls/StackView.qml",
                                         "risks": [
                                             "[info] Arguably many lines of code, this may be ok for now.",
                                             "[info] Arguably many decisions, it is ok if it makes other files less complicated."
@@ -1420,11 +1518,14 @@
                                                 "blank_lines": 201,
                                                 "decision_complexity": 9,
                                                 "extension": ".qml",
+                                                "imports": [],
                                                 "is_code": true,
+                                                "libraries": [],
                                                 "loc": 453,
                                                 "mime": "text/x-c; charset=us-ascii",
                                                 "name": "FastGlow",
                                                 "nested_complexity": 4,
+                                                "path": "gui/qt_qml/QtQuick/Controls/Private/FastGlow.qml",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 14639,
@@ -1436,6 +1537,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 14639,
                                         "risks_count": 0,
                                         "sloc_count": 252,
                                         "source_files": 1,
@@ -1453,11 +1555,14 @@
                                                         "blank_lines": 298,
                                                         "decision_complexity": 20,
                                                         "extension": ".qml",
+                                                        "imports": [],
                                                         "is_code": true,
+                                                        "libraries": [],
                                                         "loc": 688,
                                                         "mime": "text/x-tex; charset=us-ascii",
                                                         "name": "CalendarStyle",
                                                         "nested_complexity": 11,
+                                                        "path": "gui/qt_qml/QtQuick/Controls/Styles/Base/CalendarStyle.qml",
                                                         "risks": [
                                                             "[info] Arguably many lines of code, this may be ok for now.",
                                                             "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
@@ -1476,11 +1581,14 @@
                                                         "blank_lines": 365,
                                                         "decision_complexity": 0,
                                                         "extension": ".qml",
+                                                        "imports": [],
                                                         "is_code": true,
+                                                        "libraries": [],
                                                         "loc": 495,
                                                         "mime": "text/x-tex; charset=us-ascii",
                                                         "name": "CircularGaugeStyle",
                                                         "nested_complexity": 4,
+                                                        "path": "gui/qt_qml/QtQuick/Controls/Styles/Base/CircularGaugeStyle.qml",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 17905,
@@ -1492,6 +1600,7 @@
                                                 }
                                             ],
                                             "counter": {
+                                                "bytes_count": 46477,
                                                 "risks_count": 2,
                                                 "sloc_count": 520,
                                                 "source_files": 2,
@@ -1501,6 +1610,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 46477,
                                         "risks_count": 2,
                                         "sloc_count": 520,
                                         "source_files": 2,
@@ -1510,6 +1620,7 @@
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 103372,
                                 "risks_count": 4,
                                 "sloc_count": 1079,
                                 "source_files": 4,
@@ -1525,11 +1636,14 @@
                                         "blank_lines": 149,
                                         "decision_complexity": 8,
                                         "extension": ".qml",
+                                        "imports": [],
                                         "is_code": true,
+                                        "libraries": [],
                                         "loc": 403,
                                         "mime": "text/x-c; charset=us-ascii",
                                         "name": "DefaultColorDialog",
                                         "nested_complexity": 8,
+                                        "path": "gui/qt_qml/QtQuick/Dialogs/DefaultColorDialog.qml",
                                         "risks": [
                                             "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
                                         ],
@@ -1543,6 +1657,7 @@
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 16203,
                                 "risks_count": 1,
                                 "sloc_count": 254,
                                 "source_files": 1,
@@ -1552,6 +1667,7 @@
                         }
                     ],
                     "counter": {
+                        "bytes_count": 119575,
                         "risks_count": 5,
                         "sloc_count": 1333,
                         "source_files": 5,
@@ -1561,6 +1677,7 @@
                 }
             ],
             "counter": {
+                "bytes_count": 496548,
                 "risks_count": 7,
                 "sloc_count": 4191,
                 "source_files": 36,
@@ -1570,10 +1687,11 @@
         }
     ],
     "counter": {
+        "bytes_count": 562987,
         "risks_count": 8,
         "sloc_count": 5921,
         "source_files": 59,
-        "value_count": 627
+        "value_count": 711
     },
     "name": "gui"
 }

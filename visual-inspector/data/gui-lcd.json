@@ -8,11 +8,14 @@
                         "blank_lines": 1,
                         "decision_complexity": 0,
                         "extension": "",
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 5,
                         "mime": "text/x-shellscript; charset=us-ascii",
                         "name": "postinst",
                         "nested_complexity": 0,
+                        "path": "gui-lcd/debian/postinst",
                         "risks": [],
                         "risks_points": 0,
                         "size": 73,
@@ -28,11 +31,14 @@
                         "blank_lines": 1,
                         "decision_complexity": 1,
                         "extension": "",
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 11,
                         "mime": "text/x-shellscript; charset=us-ascii",
                         "name": "prerm",
                         "nested_complexity": 0,
+                        "path": "gui-lcd/debian/prerm",
                         "risks": [],
                         "risks_points": 0,
                         "size": 235,
@@ -44,6 +50,7 @@
                 }
             ],
             "counter": {
+                "bytes_count": 308,
                 "risks_count": 0,
                 "sloc_count": 14,
                 "source_files": 2,
@@ -55,32 +62,31 @@
             "children": [
                 {
                     "meta": {
-                        "aggregate_complexity": 52,
+                        "aggregate_complexity": 60,
                         "blank_lines": 122,
                         "decision_complexity": 45,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "bloks/BatteryState.h",
-                                "bloks/LightState.h",
-                                "bloks/MotorState.h",
-                                "bloks/RemoteState.h",
-                                "bloks/VehicleState.h",
-                                "QDir",
-                                "cmath",
-                                "QProcess"
-                            ],
-                            "local": [
-                                "ApiConnection.h",
-                                "Log.h",
-                                "TimeDefinitions.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/ApiConnection.h",
+                            "gui-lcd/src/Log.h",
+                            "gui-lcd/src/TimeDefinitions.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "bloks/BatteryState.h",
+                            "bloks/LightState.h",
+                            "bloks/MotorState.h",
+                            "bloks/RemoteState.h",
+                            "bloks/VehicleState.h",
+                            "QDir",
+                            "cmath",
+                            "QProcess"
+                        ],
                         "loc": 759,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "ApiConnection",
                         "nested_complexity": 4,
+                        "path": "gui-lcd/src/ApiConnection.cpp",
                         "risks": [
                             "[warning] Quite many lines of code, plan on refactoring.",
                             "[info] Arguably many decisions, it is ok if it makes other files less complicated."
@@ -91,46 +97,45 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "ApiConnection.cpp",
-                    "value": 52
+                    "value": 60
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 14,
+                        "aggregate_complexity": 23,
                         "blank_lines": 30,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "bloks/BluetoothServer.h",
-                                "bloks/Frontend.h",
-                                "bloks/VehicleState.h",
-                                "bloks/common/Optional.h",
-                                "QObject",
-                                "QSettings",
-                                "QString",
-                                "QTime",
-                                "QTimer"
-                            ],
-                            "local": [
-                                "ButtonMultiEmit.h",
-                                "InspectionDueWarning.h",
-                                "LcdBattery.h",
-                                "LcdBluetooth.h",
-                                "LcdIcon.h",
-                                "LcdLight.h",
-                                "LcdSpeed.h",
-                                "LcdSupportLevel.h",
-                                "LcdSystemTime.h",
-                                "OemSettings.h",
-                                "TimeIncrementer.h",
-                                "TravelDisplay.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/ButtonMultiEmit.h",
+                            "gui-lcd/src/InspectionDueWarning.h",
+                            "gui-lcd/src/LcdBattery.h",
+                            "gui-lcd/src/LcdBluetooth.h",
+                            "gui-lcd/src/LcdIcon.h",
+                            "gui-lcd/src/LcdLight.h",
+                            "gui-lcd/src/LcdSpeed.h",
+                            "gui-lcd/src/LcdSupportLevel.h",
+                            "gui-lcd/src/LcdSystemTime.h",
+                            "gui-lcd/src/OemSettings.h",
+                            "gui-lcd/src/TimeIncrementer.h",
+                            "gui-lcd/src/TravelDisplay.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "bloks/BluetoothServer.h",
+                            "bloks/Frontend.h",
+                            "bloks/VehicleState.h",
+                            "bloks/common/Optional.h",
+                            "QObject",
+                            "QSettings",
+                            "QString",
+                            "QTime",
+                            "QTimer"
+                        ],
                         "loc": 142,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "ApiConnection",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/ApiConnection.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3367,
@@ -138,7 +143,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "ApiConnection.h",
-                    "value": 14
+                    "value": 23
                 },
                 {
                     "meta": {
@@ -146,18 +151,17 @@
                         "blank_lines": 16,
                         "decision_complexity": 16,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "BatteryAnimator.h",
-                                "Log.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/BatteryAnimator.h",
+                            "gui-lcd/src/Log.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 139,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "BatteryAnimator",
                         "nested_complexity": 4,
+                        "path": "gui-lcd/src/BatteryAnimator.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3265,
@@ -169,26 +173,25 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 4,
+                        "aggregate_complexity": 7,
                         "blank_lines": 68,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QTimer",
-                                "chrono",
-                                "vector"
-                            ],
-                            "local": [
-                                "DisplayAccess.h",
-                                "BatterySegment.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/DisplayAccess.h",
+                            "gui-lcd/src/BatterySegment.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QTimer",
+                            "chrono",
+                            "vector"
+                        ],
                         "loc": 109,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "BatteryAnimator",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/BatteryAnimator.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3209,
@@ -196,7 +199,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "BatteryAnimator.h",
-                    "value": 4
+                    "value": 7
                 },
                 {
                     "meta": {
@@ -204,17 +207,16 @@
                         "blank_lines": 8,
                         "decision_complexity": 0,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "BatteryBlinker.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/BatteryBlinker.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 47,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "BatteryBlinker",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/BatteryBlinker.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1235,
@@ -226,25 +228,24 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 2,
+                        "aggregate_complexity": 5,
                         "blank_lines": 10,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QTimer",
-                                "vector",
-                                "chrono"
-                            ],
-                            "local": [
-                                "DisplayAccess.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/DisplayAccess.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QTimer",
+                            "vector",
+                            "chrono"
+                        ],
                         "loc": 34,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "BatteryBlinker",
                         "nested_complexity": 1,
+                        "path": "gui-lcd/src/BatteryBlinker.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 611,
@@ -252,7 +253,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "BatteryBlinker.h",
-                    "value": 2
+                    "value": 5
                 },
                 {
                     "meta": {
@@ -260,17 +261,16 @@
                         "blank_lines": 5,
                         "decision_complexity": 0,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "BatterySegment.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/BatterySegment.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 22,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "BatterySegment",
                         "nested_complexity": 1,
+                        "path": "gui-lcd/src/BatterySegment.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 433,
@@ -286,17 +286,16 @@
                         "blank_lines": 5,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "DisplayAccess.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/DisplayAccess.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 17,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "BatterySegment",
                         "nested_complexity": 1,
+                        "path": "gui-lcd/src/BatterySegment.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 290,
@@ -312,18 +311,17 @@
                         "blank_lines": 4,
                         "decision_complexity": 0,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "BlinkingItem.h",
-                                "DisplayAccess.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/BlinkingItem.h",
+                            "gui-lcd/src/DisplayAccess.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 25,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "BlinkingItem",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/BlinkingItem.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 535,
@@ -335,23 +333,22 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
+                        "aggregate_complexity": 4,
                         "blank_lines": 6,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QObject",
-                                "QTimer",
-                                "chrono"
-                            ],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [
+                            "QObject",
+                            "QTimer",
+                            "chrono"
+                        ],
                         "loc": 23,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "BlinkingItem",
                         "nested_complexity": 1,
+                        "path": "gui-lcd/src/BlinkingItem.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 415,
@@ -359,7 +356,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "BlinkingItem.h",
-                    "value": 1
+                    "value": 4
                 },
                 {
                     "meta": {
@@ -367,17 +364,16 @@
                         "blank_lines": 4,
                         "decision_complexity": 3,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "ButtonMultiEmit.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/ButtonMultiEmit.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 34,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "ButtonMultiEmit",
                         "nested_complexity": 3,
+                        "path": "gui-lcd/src/ButtonMultiEmit.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 765,
@@ -389,22 +385,21 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 2,
+                        "aggregate_complexity": 4,
                         "blank_lines": 7,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QTime",
-                                "QTimer"
-                            ],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [
+                            "QTime",
+                            "QTimer"
+                        ],
                         "loc": 28,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "ButtonMultiEmit",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/ButtonMultiEmit.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 433,
@@ -412,7 +407,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "ButtonMultiEmit.h",
-                    "value": 2
+                    "value": 4
                 },
                 {
                     "meta": {
@@ -420,15 +415,14 @@
                         "blank_lines": 5,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 9,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "Constants",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/Constants.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 115,
@@ -440,25 +434,24 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 16,
+                        "aggregate_complexity": 17,
                         "blank_lines": 17,
                         "decision_complexity": 8,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "memory"
-                            ],
-                            "local": [
-                                "DisplayAccess.h",
-                                "DisplayDigit.h",
-                                "DisplayObject.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/DisplayAccess.h",
+                            "gui-lcd/src/DisplayDigit.h",
+                            "gui-lcd/src/DisplayObject.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "memory"
+                        ],
                         "loc": 128,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "DisplayAccess",
                         "nested_complexity": 5,
+                        "path": "gui-lcd/src/DisplayAccess.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 2917,
@@ -466,26 +459,25 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "DisplayAccess.cpp",
-                    "value": 16
+                    "value": 17
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 2,
+                        "aggregate_complexity": 4,
                         "blank_lines": 29,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "stdint.h",
-                                "vector"
-                            ],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [
+                            "stdint.h",
+                            "vector"
+                        ],
                         "loc": 216,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "DisplayAccess",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/DisplayAccess.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3431,
@@ -493,27 +485,26 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "DisplayAccess.h",
-                    "value": 2
+                    "value": 4
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 4,
+                        "aggregate_complexity": 5,
                         "blank_lines": 8,
                         "decision_complexity": 0,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "map"
-                            ],
-                            "local": [
-                                "DisplayDigit.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/DisplayDigit.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "map"
+                        ],
                         "loc": 113,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "DisplayDigit",
                         "nested_complexity": 3,
+                        "path": "gui-lcd/src/DisplayDigit.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 7347,
@@ -521,28 +512,27 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "DisplayDigit.cpp",
-                    "value": 4
+                    "value": 5
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 6,
+                        "aggregate_complexity": 8,
                         "blank_lines": 10,
                         "decision_complexity": 2,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "map",
-                                "vector"
-                            ],
-                            "local": [
-                                "DisplayAccess.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/DisplayAccess.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "map",
+                            "vector"
+                        ],
                         "loc": 37,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "DisplayDigit",
                         "nested_complexity": 3,
+                        "path": "gui-lcd/src/DisplayDigit.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 966,
@@ -550,42 +540,41 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "DisplayDigit.h",
-                    "value": 6
+                    "value": 8
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 27,
+                        "aggregate_complexity": 41,
                         "blank_lines": 40,
                         "decision_complexity": 20,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "errno.h",
-                                "fcntl.h",
-                                "iostream",
-                                "linux/i2c-dev.h",
-                                "stdio.h",
-                                "stdlib.h",
-                                "string.h",
-                                "sys/ioctl.h",
-                                "sys/stat.h",
-                                "sys/types.h",
-                                "unistd.h",
-                                "fstream",
-                                "QFile",
-                                "QString"
-                            ],
-                            "local": [
-                                "DisplayObject.h",
-                                "Log.h",
-                                "commands.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/DisplayObject.h",
+                            "gui-lcd/src/Log.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "commands.h",
+                            "errno.h",
+                            "fcntl.h",
+                            "iostream",
+                            "linux/i2c-dev.h",
+                            "stdio.h",
+                            "stdlib.h",
+                            "string.h",
+                            "sys/ioctl.h",
+                            "sys/stat.h",
+                            "sys/types.h",
+                            "unistd.h",
+                            "fstream",
+                            "QFile",
+                            "QString"
+                        ],
                         "loc": 253,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "DisplayObject",
                         "nested_complexity": 4,
+                        "path": "gui-lcd/src/DisplayObject.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 6726,
@@ -593,26 +582,25 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "DisplayObject.cpp",
-                    "value": 27
+                    "value": 41
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
+                        "aggregate_complexity": 3,
                         "blank_lines": 9,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "array",
-                                "stdint.h"
-                            ],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [
+                            "array",
+                            "stdint.h"
+                        ],
                         "loc": 33,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "DisplayObject",
                         "nested_complexity": 1,
+                        "path": "gui-lcd/src/DisplayObject.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 587,
@@ -620,7 +608,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "DisplayObject.h",
-                    "value": 1
+                    "value": 3
                 },
                 {
                     "meta": {
@@ -628,19 +616,18 @@
                         "blank_lines": 7,
                         "decision_complexity": 7,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "DisplayAccess.h",
-                                "DisplayDigit.h",
-                                "DisplayTestObject.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/DisplayAccess.h",
+                            "gui-lcd/src/DisplayDigit.h",
+                            "gui-lcd/src/DisplayTestObject.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 83,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "DisplayTestAccess",
                         "nested_complexity": 4,
+                        "path": "gui-lcd/src/DisplayTestAccess.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3013,
@@ -656,17 +643,16 @@
                         "blank_lines": 7,
                         "decision_complexity": 1,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "DisplayTestObject.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/DisplayTestObject.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 36,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "DisplayTestObject",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/DisplayTestObject.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 804,
@@ -678,23 +664,22 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 2,
+                        "aggregate_complexity": 3,
                         "blank_lines": 10,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QObject"
-                            ],
-                            "local": [
-                                "DisplayAccess.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/DisplayAccess.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QObject"
+                        ],
                         "loc": 33,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "DisplayTestObject",
                         "nested_complexity": 1,
+                        "path": "gui-lcd/src/DisplayTestObject.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 773,
@@ -702,7 +687,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "DisplayTestObject.h",
-                    "value": 2
+                    "value": 3
                 },
                 {
                     "meta": {
@@ -710,19 +695,18 @@
                         "blank_lines": 8,
                         "decision_complexity": 6,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "InspectionDueWarning.h",
-                                "Constants.h",
-                                "NumberSplitter.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/InspectionDueWarning.h",
+                            "gui-lcd/src/Constants.h",
+                            "gui-lcd/src/NumberSplitter.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 84,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "InspectionDueWarning",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/InspectionDueWarning.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3070,
@@ -734,23 +718,22 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 3,
+                        "aggregate_complexity": 4,
                         "blank_lines": 9,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QDate"
-                            ],
-                            "local": [
-                                "LcdIcon.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/LcdIcon.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QDate"
+                        ],
                         "loc": 30,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "InspectionDueWarning",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/InspectionDueWarning.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 563,
@@ -758,27 +741,26 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "InspectionDueWarning.h",
-                    "value": 3
+                    "value": 4
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 17,
+                        "aggregate_complexity": 18,
                         "blank_lines": 49,
                         "decision_complexity": 12,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "math.h"
-                            ],
-                            "local": [
-                                "LcdBattery.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/LcdBattery.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "math.h"
+                        ],
                         "loc": 241,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdBattery",
                         "nested_complexity": 4,
+                        "path": "gui-lcd/src/LcdBattery.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 7427,
@@ -786,32 +768,31 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "LcdBattery.cpp",
-                    "value": 17
+                    "value": 18
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 6,
+                        "aggregate_complexity": 9,
                         "blank_lines": 17,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QTimer",
-                                "memory",
-                                "vector"
-                            ],
-                            "local": [
-                                "BatteryAnimator.h",
-                                "BatteryBlinker.h",
-                                "BatterySegment.h",
-                                "LcdIcon.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/BatteryAnimator.h",
+                            "gui-lcd/src/BatteryBlinker.h",
+                            "gui-lcd/src/BatterySegment.h",
+                            "gui-lcd/src/LcdIcon.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QTimer",
+                            "memory",
+                            "vector"
+                        ],
                         "loc": 73,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdBattery",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/LcdBattery.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1560,
@@ -819,7 +800,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "LcdBattery.h",
-                    "value": 6
+                    "value": 9
                 },
                 {
                     "meta": {
@@ -827,17 +808,16 @@
                         "blank_lines": 7,
                         "decision_complexity": 1,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "LcdBluetooth.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/LcdBluetooth.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 27,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdBluetooth",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/LcdBluetooth.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 483,
@@ -853,17 +833,16 @@
                         "blank_lines": 6,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "DisplayAccess.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/DisplayAccess.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 20,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdBluetooth",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/LcdBluetooth.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 290,
@@ -875,25 +854,24 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 12,
+                        "aggregate_complexity": 13,
                         "blank_lines": 21,
                         "decision_complexity": 7,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "cmath"
-                            ],
-                            "local": [
-                                "LcdDistance.h",
-                                "Constants.h",
-                                "NumberSplitter.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/LcdDistance.h",
+                            "gui-lcd/src/Constants.h",
+                            "gui-lcd/src/NumberSplitter.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "cmath"
+                        ],
                         "loc": 103,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdDistance",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/LcdDistance.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3087,
@@ -901,28 +879,27 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "LcdDistance.cpp",
-                    "value": 12
+                    "value": 13
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 4,
+                        "aggregate_complexity": 5,
                         "blank_lines": 13,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QTimer"
-                            ],
-                            "local": [
-                                "BlinkingItem.h",
-                                "LcdIcon.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/BlinkingItem.h",
+                            "gui-lcd/src/LcdIcon.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QTimer"
+                        ],
                         "loc": 35,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdDistance",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/LcdDistance.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 710,
@@ -930,7 +907,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "LcdDistance.h",
-                    "value": 4
+                    "value": 5
                 },
                 {
                     "meta": {
@@ -938,17 +915,16 @@
                         "blank_lines": 5,
                         "decision_complexity": 0,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "LcdIcon.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/LcdIcon.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 23,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdIcon",
                         "nested_complexity": 1,
+                        "path": "gui-lcd/src/LcdIcon.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 484,
@@ -964,17 +940,16 @@
                         "blank_lines": 5,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "DisplayAccess.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/DisplayAccess.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 17,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdIcon",
                         "nested_complexity": 1,
+                        "path": "gui-lcd/src/LcdIcon.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 233,
@@ -990,17 +965,16 @@
                         "blank_lines": 13,
                         "decision_complexity": 5,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "LcdLight.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/LcdLight.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 62,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdLight",
                         "nested_complexity": 3,
+                        "path": "gui-lcd/src/LcdLight.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1191,
@@ -1016,17 +990,16 @@
                         "blank_lines": 7,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "DisplayAccess.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/DisplayAccess.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 26,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdLight",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/LcdLight.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 486,
@@ -1038,25 +1011,24 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 10,
+                        "aggregate_complexity": 11,
                         "blank_lines": 18,
                         "decision_complexity": 5,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "cmath"
-                            ],
-                            "local": [
-                                "LcdSpeed.h",
-                                "Constants.h",
-                                "NumberSplitter.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/LcdSpeed.h",
+                            "gui-lcd/src/Constants.h",
+                            "gui-lcd/src/NumberSplitter.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "cmath"
+                        ],
                         "loc": 70,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdSpeed",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/LcdSpeed.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1635,
@@ -1064,29 +1036,28 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "LcdSpeed.cpp",
-                    "value": 10
+                    "value": 11
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 4,
+                        "aggregate_complexity": 6,
                         "blank_lines": 12,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QTimer",
-                                "QObject"
-                            ],
-                            "local": [
-                                "BlinkingItem.h",
-                                "LcdIcon.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/BlinkingItem.h",
+                            "gui-lcd/src/LcdIcon.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QTimer",
+                            "QObject"
+                        ],
                         "loc": 33,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdSpeed",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/LcdSpeed.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 586,
@@ -1094,7 +1065,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "LcdSpeed.h",
-                    "value": 4
+                    "value": 6
                 },
                 {
                     "meta": {
@@ -1102,18 +1073,17 @@
                         "blank_lines": 19,
                         "decision_complexity": 12,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "LcdSupportLevel.h",
-                                "SupportLevelSegment.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/LcdSupportLevel.h",
+                            "gui-lcd/src/SupportLevelSegment.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 98,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdSupportLevel",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/LcdSupportLevel.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 2167,
@@ -1125,24 +1095,23 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 3,
+                        "aggregate_complexity": 5,
                         "blank_lines": 11,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "vector",
-                                "memory"
-                            ],
-                            "local": [
-                                "SupportLevelSegment.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/SupportLevelSegment.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "vector",
+                            "memory"
+                        ],
                         "loc": 34,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdSupportLevel",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/LcdSupportLevel.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 555,
@@ -1150,37 +1119,36 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "LcdSupportLevel.h",
-                    "value": 3
+                    "value": 5
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 12,
+                        "aggregate_complexity": 22,
                         "blank_lines": 13,
                         "decision_complexity": 7,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "QDateTime",
-                                "QTime",
-                                "cstring",
-                                "linux/rtc.h",
-                                "fcntl.h",
-                                "unistd.h",
-                                "stdio.h",
-                                "sys/ioctl.h",
-                                "time.h",
-                                "chrono"
-                            ],
-                            "local": [
-                                "LcdSystemTime.h",
-                                "Log.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/LcdSystemTime.h",
+                            "gui-lcd/src/Log.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QDateTime",
+                            "QTime",
+                            "cstring",
+                            "linux/rtc.h",
+                            "fcntl.h",
+                            "unistd.h",
+                            "stdio.h",
+                            "sys/ioctl.h",
+                            "time.h",
+                            "chrono"
+                        ],
                         "loc": 104,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdSystemTime",
                         "nested_complexity": 3,
+                        "path": "gui-lcd/src/LcdSystemTime.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 2701,
@@ -1188,7 +1156,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "LcdSystemTime.cpp",
-                    "value": 12
+                    "value": 22
                 },
                 {
                     "meta": {
@@ -1196,17 +1164,16 @@
                         "blank_lines": 6,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "LcdTime.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/LcdTime.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 19,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdSystemTime",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/LcdSystemTime.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 311,
@@ -1222,18 +1189,17 @@
                         "blank_lines": 19,
                         "decision_complexity": 4,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "LcdTime.h",
-                                "NumberSplitter.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/LcdTime.h",
+                            "gui-lcd/src/NumberSplitter.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 96,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdTime",
                         "nested_complexity": 3,
+                        "path": "gui-lcd/src/LcdTime.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 2146,
@@ -1245,24 +1211,23 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 4,
+                        "aggregate_complexity": 5,
                         "blank_lines": 13,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QTimer"
-                            ],
-                            "local": [
-                                "BlinkingItem.h",
-                                "LcdIcon.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/BlinkingItem.h",
+                            "gui-lcd/src/LcdIcon.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QTimer"
+                        ],
                         "loc": 46,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdTime",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/LcdTime.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 930,
@@ -1270,7 +1235,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "LcdTime.h",
-                    "value": 4
+                    "value": 5
                 },
                 {
                     "meta": {
@@ -1278,17 +1243,16 @@
                         "blank_lines": 5,
                         "decision_complexity": 0,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "LcdTripDuration.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/LcdTripDuration.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 22,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdTripDuration",
                         "nested_complexity": 1,
+                        "path": "gui-lcd/src/LcdTripDuration.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 457,
@@ -1304,18 +1268,17 @@
                         "blank_lines": 4,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "LcdTime.h",
-                                "LcdIcon.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/LcdTime.h",
+                            "gui-lcd/src/LcdIcon.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 18,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdTripDuration",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/LcdTripDuration.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 403,
@@ -1327,21 +1290,20 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
+                        "aggregate_complexity": 2,
                         "blank_lines": 4,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QLoggingCategory"
-                            ],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [
+                            "QLoggingCategory"
+                        ],
                         "loc": 7,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "Log",
                         "nested_complexity": 0,
+                        "path": "gui-lcd/src/Log.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 111,
@@ -1349,7 +1311,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "Log.h",
-                    "value": 1
+                    "value": 2
                 },
                 {
                     "meta": {
@@ -1357,17 +1319,16 @@
                         "blank_lines": 6,
                         "decision_complexity": 5,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "NumberSplitter.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/NumberSplitter.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 40,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "NumberSplitter",
                         "nested_complexity": 6,
+                        "path": "gui-lcd/src/NumberSplitter.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1402,
@@ -1383,17 +1344,16 @@
                         "blank_lines": 6,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "DisplayAccess.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/DisplayAccess.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 28,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "NumberSplitter",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/NumberSplitter.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 495,
@@ -1405,26 +1365,25 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 9,
+                        "aggregate_complexity": 13,
                         "blank_lines": 13,
                         "decision_complexity": 5,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "QDebug",
-                                "QFile",
-                                "QJsonDocument",
-                                "QJsonObject"
-                            ],
-                            "local": [
-                                "OemSettings.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/OemSettings.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QDebug",
+                            "QFile",
+                            "QJsonDocument",
+                            "QJsonObject"
+                        ],
                         "loc": 56,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "OemSettings",
                         "nested_complexity": 3,
+                        "path": "gui-lcd/src/OemSettings.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1578,
@@ -1432,27 +1391,26 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "OemSettings.cpp",
-                    "value": 9
+                    "value": 13
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
+                        "aggregate_complexity": 4,
                         "blank_lines": 4,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QString",
-                                "QVariantMap",
-                                "bloks/common/OemData.h"
-                            ],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [
+                            "QString",
+                            "QVariantMap",
+                            "bloks/common/OemData.h"
+                        ],
                         "loc": 15,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "OemSettings",
                         "nested_complexity": 1,
+                        "path": "gui-lcd/src/OemSettings.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 275,
@@ -1460,7 +1418,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "OemSettings.h",
-                    "value": 1
+                    "value": 4
                 },
                 {
                     "meta": {
@@ -1468,17 +1426,16 @@
                         "blank_lines": 6,
                         "decision_complexity": 0,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "SupportLevelSegment.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/SupportLevelSegment.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 29,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "SupportLevelSegment",
                         "nested_complexity": 1,
+                        "path": "gui-lcd/src/SupportLevelSegment.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 643,
@@ -1494,17 +1451,16 @@
                         "blank_lines": 5,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "DisplayAccess.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/DisplayAccess.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 19,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "SupportLevelSegment",
                         "nested_complexity": 1,
+                        "path": "gui-lcd/src/SupportLevelSegment.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 327,
@@ -1520,15 +1476,14 @@
                         "blank_lines": 15,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 23,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "TimeDefinitions",
                         "nested_complexity": 0,
+                        "path": "gui-lcd/src/TimeDefinitions.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 747,
@@ -1544,18 +1499,17 @@
                         "blank_lines": 8,
                         "decision_complexity": 0,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [],
-                            "local": [
-                                "TimeIncrementer.h",
-                                "TimeDefinitions.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/TimeIncrementer.h",
+                            "gui-lcd/src/TimeDefinitions.h"
+                        ],
                         "is_code": true,
+                        "libraries": [],
                         "loc": 36,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "TimeIncrementer",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/TimeIncrementer.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 972,
@@ -1567,22 +1521,21 @@
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 1,
+                        "aggregate_complexity": 3,
                         "blank_lines": 9,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QTimer",
-                                "functional"
-                            ],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
+                        "libraries": [
+                            "QTimer",
+                            "functional"
+                        ],
                         "loc": 25,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "TimeIncrementer",
                         "nested_complexity": 1,
+                        "path": "gui-lcd/src/TimeIncrementer.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 397,
@@ -1590,31 +1543,30 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "TimeIncrementer.h",
-                    "value": 1
+                    "value": 3
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 18,
+                        "aggregate_complexity": 21,
                         "blank_lines": 34,
                         "decision_complexity": 11,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "QSettings",
-                                "bloks/MotorState.h",
-                                "bloks/BatteryState.h"
-                            ],
-                            "local": [
-                                "TravelDisplay.h",
-                                "TimeDefinitions.h",
-                                "DisplayAccess.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/TravelDisplay.h",
+                            "gui-lcd/src/TimeDefinitions.h",
+                            "gui-lcd/src/DisplayAccess.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QSettings",
+                            "bloks/MotorState.h",
+                            "bloks/BatteryState.h"
+                        ],
                         "loc": 220,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "TravelDisplay",
                         "nested_complexity": 4,
+                        "path": "gui-lcd/src/TravelDisplay.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 6228,
@@ -1622,30 +1574,29 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "TravelDisplay.cpp",
-                    "value": 18
+                    "value": 21
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 4,
+                        "aggregate_complexity": 7,
                         "blank_lines": 19,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "QElapsedTimer",
-                                "QObject",
-                                "bloks/VehicleState.h"
-                            ],
-                            "local": [
-                                "LcdDistance.h",
-                                "LcdTripDuration.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/LcdDistance.h",
+                            "gui-lcd/src/LcdTripDuration.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "QElapsedTimer",
+                            "QObject",
+                            "bloks/VehicleState.h"
+                        ],
                         "loc": 71,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "TravelDisplay",
                         "nested_complexity": 2,
+                        "path": "gui-lcd/src/TravelDisplay.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1404,
@@ -1653,33 +1604,32 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "TravelDisplay.h",
-                    "value": 4
+                    "value": 7
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 3,
+                        "aggregate_complexity": 9,
                         "blank_lines": 9,
                         "decision_complexity": 0,
                         "extension": ".cpp",
-                        "imports": {
-                            "extern": [
-                                "bloks/common/UnixSignals.h",
-                                "bloks/common/Log.h",
-                                "bloks/gui-lcd-version.h",
-                                "QCommandLineParser",
-                                "QCoreApplication",
-                                "unistd.h"
-                            ],
-                            "local": [
-                                "ApiConnection.h",
-                                "Log.h"
-                            ]
-                        },
+                        "imports": [
+                            "gui-lcd/src/ApiConnection.h",
+                            "gui-lcd/src/Log.h",
+                            "gui-lcd/src/Log.h"
+                        ],
                         "is_code": true,
+                        "libraries": [
+                            "bloks/common/UnixSignals.h",
+                            "bloks/gui-lcd-version.h",
+                            "QCommandLineParser",
+                            "QCoreApplication",
+                            "unistd.h"
+                        ],
                         "loc": 46,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "main",
                         "nested_complexity": 1,
+                        "path": "gui-lcd/src/main.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1332,
@@ -1687,14 +1637,15 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "main.cpp",
-                    "value": 3
+                    "value": 9
                 }
             ],
             "counter": {
+                "bytes_count": 114774,
                 "risks_count": 2,
                 "sloc_count": 3371,
                 "source_files": 57,
-                "value_count": 397
+                "value_count": 493
             },
             "name": "src"
         },
@@ -1708,11 +1659,14 @@
                                 "blank_lines": 10,
                                 "decision_complexity": 0,
                                 "extension": ".in",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 33,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "BloksVersion.cpp",
                                 "nested_complexity": 3,
+                                "path": "gui-lcd/cmake/modules/BloksVersion.cpp.in",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 504,
@@ -1728,11 +1682,14 @@
                                 "blank_lines": 7,
                                 "decision_complexity": 0,
                                 "extension": ".in",
+                                "imports": [],
                                 "is_code": true,
+                                "libraries": [],
                                 "loc": 20,
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "BloksVersion.h",
                                 "nested_complexity": 2,
+                                "path": "gui-lcd/cmake/modules/BloksVersion.h.in",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 558,
@@ -1744,6 +1701,7 @@
                         }
                     ],
                     "counter": {
+                        "bytes_count": 1062,
                         "risks_count": 0,
                         "sloc_count": 36,
                         "source_files": 2,
@@ -1753,6 +1711,7 @@
                 }
             ],
             "counter": {
+                "bytes_count": 1062,
                 "risks_count": 0,
                 "sloc_count": 36,
                 "source_files": 2,
@@ -1762,10 +1721,11 @@
         }
     ],
     "counter": {
+        "bytes_count": 116144,
         "risks_count": 2,
         "sloc_count": 3421,
         "source_files": 61,
-        "value_count": 405
+        "value_count": 501
     },
     "name": "gui-lcd"
 }

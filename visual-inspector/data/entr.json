@@ -6,6 +6,7 @@
                 "blank_lines": 39,
                 "decision_complexity": 0,
                 "extension": ".bsd",
+                "imports": [],
                 "is_code": true,
                 "loc": 54,
                 "mime": "text/x-makefile; charset=us-ascii",
@@ -26,6 +27,7 @@
                 "blank_lines": 9,
                 "decision_complexity": 0,
                 "extension": "",
+                "imports": [],
                 "is_code": true,
                 "loc": 30,
                 "mime": "text/x-shellscript; charset=us-ascii",
@@ -42,16 +44,11 @@
         },
         {
             "meta": {
-                "aggregate_complexity": 1,
+                "aggregate_complexity": 2,
                 "blank_lines": 22,
                 "decision_complexity": 0,
                 "extension": ".h",
-                "imports": {
-                    "extern": [
-                        "limits.h"
-                    ],
-                    "local": []
-                },
+                "imports": [],
                 "is_code": true,
                 "loc": 30,
                 "mime": "text/x-c; charset=us-ascii",
@@ -64,40 +61,19 @@
                 "type": "C source, ASCII text"
             },
             "name": "data.h",
-            "value": 1
+            "value": 2
         },
         {
             "meta": {
-                "aggregate_complexity": 76,
+                "aggregate_complexity": 94,
                 "blank_lines": 139,
                 "decision_complexity": 70,
                 "extension": ".c",
-                "imports": {
-                    "extern": [
-                        "sys/param.h",
-                        "sys/resource.h",
-                        "sys/wait.h",
-                        "sys/stat.h",
-                        "sys/event.h",
-                        "dirent.h",
-                        "err.h",
-                        "errno.h",
-                        "fcntl.h",
-                        "libgen.h",
-                        "limits.h",
-                        "paths.h",
-                        "signal.h",
-                        "stdio.h",
-                        "stdlib.h",
-                        "string.h",
-                        "time.h",
-                        "unistd.h"
-                    ],
-                    "local": [
-                        "entr/missing/compat.h",
-                        "entr/data.h"
-                    ]
-                },
+                "imports": [
+                    "entr/missing/sys/event.h",
+                    "entr/missing/compat.h",
+                    "entr/data.h"
+                ],
                 "is_code": true,
                 "loc": 516,
                 "mime": "text/x-c; charset=us-ascii",
@@ -113,7 +89,7 @@
                 "type": "C source, ASCII text"
             },
             "name": "entr.c",
-            "value": 76
+            "value": 94
         },
         {
             "meta": {
@@ -121,12 +97,9 @@
                 "blank_lines": 238,
                 "decision_complexity": 7,
                 "extension": ".c",
-                "imports": {
-                    "extern": [],
-                    "local": [
-                        "entr/entr.c"
-                    ]
-                },
+                "imports": [
+                    "entr/entr.c"
+                ],
                 "is_code": true,
                 "loc": 835,
                 "mime": "text/x-c; charset=us-ascii",
@@ -149,6 +122,7 @@
                 "blank_lines": 263,
                 "decision_complexity": 2,
                 "extension": ".sh",
+                "imports": [],
                 "is_code": true,
                 "loc": 290,
                 "mime": "text/x-shellscript; charset=us-ascii",
@@ -167,17 +141,11 @@
             "children": [
                 {
                     "meta": {
-                        "aggregate_complexity": 5,
+                        "aggregate_complexity": 7,
                         "blank_lines": 6,
                         "decision_complexity": 4,
                         "extension": ".h",
-                        "imports": {
-                            "extern": [
-                                "sys/types.h",
-                                "stdio.h"
-                            ],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
                         "loc": 20,
                         "mime": "text/x-c; charset=us-ascii",
@@ -190,24 +158,15 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "compat.h",
-                    "value": 5
+                    "value": 7
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 20,
+                        "aggregate_complexity": 25,
                         "blank_lines": 54,
                         "decision_complexity": 17,
                         "extension": ".c",
-                        "imports": {
-                            "extern": [
-                                "errno.h",
-                                "fcntl.h",
-                                "stdio.h",
-                                "stdlib.h",
-                                "string.h"
-                            ],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
                         "loc": 187,
                         "mime": "text/x-c; charset=us-ascii",
@@ -220,33 +179,19 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "fmemopen.c",
-                    "value": 20
+                    "value": 25
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 26,
+                        "aggregate_complexity": 37,
                         "blank_lines": 51,
                         "decision_complexity": 20,
                         "extension": ".c",
-                        "imports": {
-                            "extern": [
-                                "sys/inotify.h",
-                                "sys/event.h",
-                                "sys/stat.h",
-                                "sys/types.h",
-                                "errno.h",
-                                "limits.h",
-                                "poll.h",
-                                "stdio.h",
-                                "string.h",
-                                "time.h",
-                                "unistd.h"
-                            ],
-                            "local": [
-                                "entr/missing/compat.h",
-                                "entr/data.h"
-                            ]
-                        },
+                        "imports": [
+                            "entr/missing/sys/event.h",
+                            "entr/missing/compat.h",
+                            "entr/data.h"
+                        ],
                         "is_code": true,
                         "loc": 160,
                         "mime": "text/x-c; charset=us-ascii",
@@ -259,21 +204,15 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "kqueue_inotify.c",
-                    "value": 26
+                    "value": 37
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 9,
+                        "aggregate_complexity": 11,
                         "blank_lines": 30,
                         "decision_complexity": 6,
                         "extension": ".c",
-                        "imports": {
-                            "extern": [
-                                "sys/types.h",
-                                "string.h"
-                            ],
-                            "local": []
-                        },
+                        "imports": [],
                         "is_code": true,
                         "loc": 52,
                         "mime": "text/x-c; charset=us-ascii",
@@ -286,23 +225,17 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "strlcpy.c",
-                    "value": 9
+                    "value": 11
                 },
                 {
                     "children": [
                         {
                             "meta": {
-                                "aggregate_complexity": 2,
+                                "aggregate_complexity": 4,
                                 "blank_lines": 42,
                                 "decision_complexity": 1,
                                 "extension": ".h",
-                                "imports": {
-                                    "extern": [
-                                        "sys/types.h",
-                                        "sys/time.h"
-                                    ],
-                                    "local": []
-                                },
+                                "imports": [],
                                 "is_code": true,
                                 "loc": 78,
                                 "mime": "text/x-c; charset=us-ascii",
@@ -315,7 +248,7 @@
                                 "type": "C source, ASCII text"
                             },
                             "name": "event.h",
-                            "value": 2
+                            "value": 4
                         }
                     ],
                     "counter": {
@@ -323,7 +256,7 @@
                         "risks_count": 0,
                         "sloc_count": 36,
                         "source_files": 1,
-                        "value_count": 2
+                        "value_count": 4
                     },
                     "name": "sys"
                 }
@@ -333,7 +266,7 @@
                 "risks_count": 0,
                 "sloc_count": 314,
                 "source_files": 5,
-                "value_count": 62
+                "value_count": 84
             },
             "name": "missing"
         }
@@ -343,7 +276,7 @@
         "risks_count": 3,
         "sloc_count": 1359,
         "source_files": 11,
-        "value_count": 155
+        "value_count": 196
     },
     "name": "entr"
 }
