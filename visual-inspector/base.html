@@ -3,10 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="inspector.css">
     {% block style %} {% endblock %}
+
+    <script src="d3.v5.min.js"></script>
+    <script src="jquery.min.js"></script>
 </head>
 <body>
-    {% block content %} {% endblock %}
+
+    <div id="top_view" class="full-width pretty-text">
+        <p class="palign">Watson just peeked into your code, which one is it:
+            <select id="project_selector">
+                {% for file_name in datafiles %}
+                    <option value="{{ file_name }}"> {{ file_name }} </option>
+                {% endfor %}
+            </select>
+        </p>
+        <div id="top_menu">
+            <div class="top_menu_item">
+                <a href="/">architecture</a>
+            </div>
+            <div class="top_menu_item">
+                <a href="/dependencies.html">dependencies</a>
+            </div>
+            <div class="top_menu_item">
+                <a href="/coupling.html">coupling</a>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="full-height">
+        <div id="graphic_view">
+            {% block graphic_view %} {% endblock %}
+        </div>
+        <div id="info_view" class="pretty-text">
+            {% block info_view %} {% endblock %}
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        let project_selector = $("#project_selector");
+        let graphic_view = $("#graphic_view");
+        let info_view = $("#info_view");
+
+        project_selector.change(function () {
+            render_svg(`/${$(this).val()}`)
+        });
+
+        project_selector.change();        
+    </script>
     {% block scripts %} {% endblock %}
 </body>
 </html>

@@ -10,14 +10,14 @@ import jinja2
 
 
 def render_inspector_pages(data_folder, out_folder):
-    print_stage('Rendering')
+    print_stage('Rendering templates')
 
     datafiles = [f for f in os.listdir(data_folder) if f.endswith('.json')]
-
     env = jinja2.Environment(loader=jinja2.FileSystemLoader('./'))
     pages = [
         env.get_template('index.html'),
-        env.get_template('radial-dendo.html'),
+        env.get_template('dependencies.html'),
+        env.get_template('coupling.html'),
     ]
 
     for page in pages:
@@ -29,6 +29,13 @@ def render_inspector_pages(data_folder, out_folder):
     print('Copying data files')
     for f in datafiles:
         src = os.path.join(data_folder, f)
+        dst = os.path.join(out_folder, f)
+        shutil.copyfile(src, dst)
+
+    print('Copying source files')
+    src_files = [f for f in os.listdir('./') if f.endswith('.js') or f.endswith('.css')]
+    for f in src_files:
+        src = os.path.join('./', f)
         dst = os.path.join(out_folder, f)
         shutil.copyfile(src, dst)
 

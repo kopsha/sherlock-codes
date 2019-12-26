@@ -1,102 +1,11 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    Sherlock Reports Page
-{% endblock %}
-
-{% block style %}
-<style>
-    body {
-        width: 96%;
-        height: 100%;
-        padding: 2px;
-        background: rgb(163, 245, 207);
-    }
-
-    .pretty-text {
-        font: 9pt "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-
-    .node {
-        cursor: pointer;
-    }
-
-    .node:hover {
-        stroke: #000;
-        stroke-width: 1.5px;
-    }
-
-    .node--leaf {
-        fill: white;
-    }
-
-    .label {
-        font: 8px "Helvetica Neue", Helvetica, Arial, sans-serif;
-        //text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
-        pointer-events: none;
-    }
-    .node--root,
-    .node--leaf {
-    }
-
-    #project_selector, .palign {
-        display: inline;
-        line-height: 23px;
-    }
-
-    #main {
-        display: flex;
-    }
-
-    #graphic_view {
-        width: 768px;
-        height: 768px;
-    }
-
-    #info_view {
-        min-width: 256px;
-        flex-grow: 1;
-        height: 768px;
-
-        font-size: 12pt;
-        text-align: right;
-        padding-left: 12pt;
-    }
-</style>
-{% endblock %}
-
-{% block content %}
-    <div id="top_view" class="full-width pretty-text">
-        <p class="palign">Watson just peeked into your code, which one is it:
-            <select id="project_selector">
-                {% for file_name in datafiles %}
-                    <option value="{{ file_name }}"> {{ file_name }} </option>
-                {% endfor %}
-            </select>
-        </p>
-    </div>
-    <div id="main" class="full-height">
-        <div id="graphic_view"></div>
-        <div id="info_view" class="pretty-text">click around to see data</div>
-    </div>
+    Sherlock Reports - Dependencies
 {% endblock %}
 
 {% block scripts %}
-    <script src="d3.v5.min.js"></script>
-    <script src="jquery.min.js"></script>
     <script>
-
-    let project_selector = $("#project_selector");
-    let graphic_view = $("#graphic_view");
-    let info_view = $("#info_view");
-    const BASE_URL = "{{ base_url }}";
-
-    project_selector.change(function () {
-        render_svg(`${BASE_URL}/${$(this).val()}`)
-    });
-
-    project_selector.change();
-
     function update_info_view(d) {
         info_text = "<p>"
         info_text += d.data.name + "<hr>";
