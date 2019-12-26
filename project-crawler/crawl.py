@@ -160,7 +160,7 @@ def inspect(filepath, meta):
     meta['aggregate_complexity'] = sum([
         meta.get('nested_complexity') or 1,
         meta.get('decision_complexity'),
-        len(meta.get('imports', {}).get('local', [])),
+        len(meta.get('imports', [])),
     ])
 
     return meta['aggregate_complexity']
@@ -191,6 +191,10 @@ def parse_git_repository(src_root, output=None):
                     counter[k] += partial_counter[k]
             node.counter = counter
             return node.counter
+
+    def path_to_string(node):
+        crumbs = [n.name for n in node.path]
+        return '/'.join(crumbs)
 
     def make_tree_path(root, path):
         current = root
@@ -224,6 +228,35 @@ def parse_git_repository(src_root, output=None):
 
         value = inspect(os.path.join(src_root,filepath), file_meta)
         node = anytree.Node(file, parent=parent, value=value, meta=file_meta)
+        node.meta['path'] = path_to_string(node)
+
+    # find import refs in current project
+    module_map = {}
+    true_module_map = {}
+    for m in root.leaves:
+        if m.name in module_map:
+            print(f'[info] File already exists {module_map[m.name]} and current path: {path_to_string(m)}.') 
+            continue
+        module_map[m.name] = path_to_string(m)
+        name_wo_extension = m.meta['name']
+        true_module_map[name_wo_extension] = path_to_string(m)
+
+    for m in root.leaves:
+        imports = m.meta.get('imports', [])
+        local_imports = []
+        libraries = []
+        for i in imports:
+            iname = os.path.basename(i)
+            true_name = os.path.splitext(iname)[0]
+            if iname in module_map:
+                local_imports.append(module_map[iname])
+            elif true_name in true_module_map:
+                local_imports.append(true_module_map[true_name])
+            else:
+                print(i)
+                libraries.append(i)
+        m.meta['imports'] = local_imports
+        m.meta['libraries'] = libraries
 
     # Count items up
     aggregate_data(root)
@@ -236,27 +269,8 @@ def parse_git_repository(src_root, output=None):
     with open(output, "wt") as out:
         exporter.write(root, out)
 
-    # dependency data
-    module_names = sorted([node.name for node in anytree.PreOrderIter(root, filter_=lambda n: not n.children)])
-    modules = [node for node in anytree.PreOrderIter(root, filter_=lambda n: not n.children)]
-    dependency_data = {}
-
-    for i, module in enumerate(sorted(modules, key=lambda m: m.name)):
-        depends = [0] * len(modules)
-        imports = module.meta.get('imports')
-        if imports:
-            for import_name in imports['local']:
-                name = os.path.basename(import_name)
-                if name in module_names:
-                    ndx = module_names.index(name)
-                    depends[ndx] = 1
-        dependency_data[module.name] = depends.copy()
-
-    # TODO: add dependency data to project json
-    # for k in dependency_data:
-    #     print(f'"{k}" : {dependency_data[k]},')
-
     print_stage('Changed together log')
+    module_names = sorted([node.name for node in root.leaves])
     change_log = []
     whatchanged = git.whatchanged().split('\n')
     whatchanged.reverse()

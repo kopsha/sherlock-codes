@@ -15,7 +15,13 @@ function update_info_view(d)
         info_text += "nested complexity: <b>" + d.data.meta.nested_complexity + "</b><br>";
         if (d.data.meta.imports) {
             info_text += "imports:<br>"
-            d.data.meta.imports.local.forEach( function (el) {
+            d.data.meta.imports.forEach( function (el) {
+                info_text += el + "<br>";
+            });
+        }
+        if (d.data.meta.libraries) {
+            info_text += "uses:<br>"
+            d.data.meta.libraries.forEach( function (el) {
                 info_text += el + "<br>";
             });
         }
@@ -216,17 +222,12 @@ function display_couplings(data)
     function bilink(root)
     {
         const map = new Map(root.leaves().map(d => [full_id(d), d]));
-        console.log(map)
         for (const d of root.leaves())
         {
             d.incoming = [];
             if (d.data.meta.imports)
             {
-                for (const x of d.data.meta.imports.local)
-                {
-                    console.log(x, '--->', map.get(x) )
-                }
-                d.outgoing = d.data.meta.imports.local.map(i => [d, map.get(i)]);
+                d.outgoing = d.data.meta.imports.map(i => [d, map.get(i)]);
             }
             else
             {
@@ -283,7 +284,7 @@ function display_couplings(data)
     const root = tree(bilink(d3.hierarchy(data)));
     const node = svg.append("g")
         .attr("font-family", "sans-serif")
-        .attr("font-size", 10)
+        .attr("font-size", 8)
         .selectAll("g")
         .data(root.leaves())
         .join("g")

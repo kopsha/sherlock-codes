@@ -161,38 +161,26 @@ def remove_python_comments_and_literals(source_code):
 
 
 def parse_cpp_imports(source_code):
-    local_ref = re.compile(r'\s*?#(?:include|import)\s*\"([/\w\.\-\+]+)\"\s*?')
-    extern_ref = re.compile(r'\s*?#(?:include|import)\s*<([/\w\.\-\+]+)>\s*?')
+    import_ref = re.compile(r'\s*?#(?:include|import)\s*[\"<]([/\w\.\-\+]+)[\">]\s*?')
 
-    local_includes = local_ref.findall(source_code)
-    extern_includes = extern_ref.findall(source_code)
-
-    return { 'local': local_includes, 'extern': extern_includes }
+    imports = import_ref.findall(source_code)
+    return imports
 
 
 def parse_java_imports(source_code):
-    package_ref = re.compile(r'\s*package\s+([\w\.]+)\s*')
-    package = package_ref.findall(source_code)
-    if len(package) < 1:
-        package = ''
-    else:
-        assert( len(package) == 1 )
-        package = '.'.join(package[0].split('.')[:3])
-
     import_refs = re.compile(r'\s*?import\s+([\w\.]+)\s*?')
     imports = import_refs.findall(source_code)
 
-    local_imports = [i for i in imports if i.startswith(package)]
-    extern_imports = [i for i in imports if not i.startswith(package)]
+    imports_with_path = [p.replace('.', '/') for p in imports]
 
-    return { 'local': local_imports, 'extern': extern_imports, 'package': package }
+    return imports_with_path
 
 
 def parse_swift_imports(source_code):
     import_refs = re.compile(r'\s*?import\s+(?:(?:typealias|struct|class|enum|protocol|let|var|func)\s+)?([/\w\.\-\+]+)\s*?')
     imports = import_refs.findall(source_code)
 
-    return { 'local': imports }
+    return imports
 
 
 def parse_python_imports(source_code):
@@ -205,7 +193,7 @@ def parse_python_imports(source_code):
         elif isinstance(node, ast.ImportFrom):
             imports.append(node.module)
 
-    return { 'local': imports }
+    return imports
 
 
 def parse_nested_blocks(source_code):
