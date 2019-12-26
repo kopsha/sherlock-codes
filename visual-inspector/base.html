@@ -45,15 +45,17 @@
         let project_selector = $("#project_selector");
         let graphic_view = $("#graphic_view");
         let info_view = $("#info_view");
-        let ndx = parseInt(location.search.split('ndx=')[1])
+
+        lastProject = localStorage.getItem("lastSelectedProject")
+        if (lastProject)
+        {
+            project_selector.val(lastProject);
+            console.log('last project_selector: ', lastProject)
+        }
 
         project_selector.change(function () {
-            if (!Number.isNaN(ndx)) {
-                $(this).prop('selectedIndex', ndx);
-                console.log('Setting:', ndx, $(this).val());
-                ndx = NaN;
-            } 
-            render_svg(`/${$(this).val()}`)
+            render_svg(`/${$(this).val()}`);
+            localStorage.setItem("lastSelectedProject", $(this).val())
         });
     </script>
     {% block scripts %} {% endblock %}
