@@ -94,8 +94,8 @@
                         "unistd.h"
                     ],
                     "local": [
-                        "missing/compat.h",
-                        "data.h"
+                        "entr/missing/compat.h",
+                        "entr/data.h"
                     ]
                 },
                 "is_code": true,
@@ -124,7 +124,7 @@
                 "imports": {
                     "extern": [],
                     "local": [
-                        "entr.c"
+                        "entr/entr.c"
                     ]
                 },
                 "is_code": true,
@@ -243,8 +243,8 @@
                                 "unistd.h"
                             ],
                             "local": [
-                                "compat.h",
-                                "../data.h"
+                                "entr/missing/compat.h",
+                                "entr/data.h"
                             ]
                         },
                         "is_code": true,
@@ -319,6 +319,7 @@
                         }
                     ],
                     "counter": {
+                        "bytes_count": 2949,
                         "risks_count": 0,
                         "sloc_count": 36,
                         "source_files": 1,
@@ -328,6 +329,7 @@
                 }
             ],
             "counter": {
+                "bytes_count": 12574,
                 "risks_count": 0,
                 "sloc_count": 314,
                 "source_files": 5,
@@ -337,6 +339,7 @@
         }
     ],
     "counter": {
+        "bytes_count": 57320,
         "risks_count": 3,
         "sloc_count": 1359,
         "source_files": 11,

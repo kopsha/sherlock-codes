@@ -136,6 +136,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 18122,
                                         "risks_count": 0,
                                         "sloc_count": 254,
                                         "source_files": 4,
@@ -145,6 +146,7 @@
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 18122,
                                 "risks_count": 0,
                                 "sloc_count": 254,
                                 "source_files": 4,
@@ -154,6 +156,7 @@
                         }
                     ],
                     "counter": {
+                        "bytes_count": 18122,
                         "risks_count": 0,
                         "sloc_count": 254,
                         "source_files": 4,
@@ -163,6 +166,7 @@
                 }
             ],
             "counter": {
+                "bytes_count": 18122,
                 "risks_count": 0,
                 "sloc_count": 254,
                 "source_files": 4,
@@ -270,6 +274,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 9769,
                                         "risks_count": 0,
                                         "sloc_count": 248,
                                         "source_files": 3,
@@ -710,6 +715,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 44900,
                                                                         "risks_count": 3,
                                                                         "sloc_count": 997,
                                                                         "source_files": 9,
@@ -756,6 +762,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 940,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 22,
                                                                         "source_files": 1,
@@ -947,6 +954,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 6246,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 151,
                                                                         "source_files": 6,
@@ -1086,6 +1094,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 9366,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 257,
                                                                         "source_files": 3,
@@ -1145,6 +1154,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 3760,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 77,
                                                                         "source_files": 1,
@@ -1481,6 +1491,7 @@
                                                                                 }
                                                                             ],
                                                                             "counter": {
+                                                                                "bytes_count": 682,
                                                                                 "risks_count": 0,
                                                                                 "sloc_count": 20,
                                                                                 "source_files": 1,
@@ -1490,6 +1501,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 32339,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 520,
                                                                         "source_files": 11,
@@ -1534,6 +1546,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 1254,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 43,
                                                                         "source_files": 1,
@@ -1741,6 +1754,7 @@
                                                                                 }
                                                                             ],
                                                                             "counter": {
+                                                                                "bytes_count": 4649,
                                                                                 "risks_count": 0,
                                                                                 "sloc_count": 124,
                                                                                 "source_files": 3,
@@ -1750,6 +1764,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 9711,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 263,
                                                                         "source_files": 6,
@@ -1912,6 +1927,7 @@
                                                                                         }
                                                                                     ],
                                                                                     "counter": {
+                                                                                        "bytes_count": 2012,
                                                                                         "risks_count": 0,
                                                                                         "sloc_count": 57,
                                                                                         "source_files": 2,
@@ -1921,6 +1937,7 @@
                                                                                 }
                                                                             ],
                                                                             "counter": {
+                                                                                "bytes_count": 2012,
                                                                                 "risks_count": 0,
                                                                                 "sloc_count": 57,
                                                                                 "source_files": 2,
@@ -1930,6 +1947,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 13032,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 324,
                                                                         "source_files": 4,
@@ -2080,6 +2098,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 8432,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 195,
                                                                         "source_files": 4,
@@ -2089,6 +2108,7 @@
                                                                 }
                                                             ],
                                                             "counter": {
+                                                                "bytes_count": 146141,
                                                                 "risks_count": 4,
                                                                 "sloc_count": 3207,
                                                                 "source_files": 48,
@@ -2098,6 +2118,7 @@
                                                         }
                                                     ],
                                                     "counter": {
+                                                        "bytes_count": 146141,
                                                         "risks_count": 4,
                                                         "sloc_count": 3207,
                                                         "source_files": 48,
@@ -2107,6 +2128,7 @@
                                                 }
                                             ],
                                             "counter": {
+                                                "bytes_count": 146141,
                                                 "risks_count": 4,
                                                 "sloc_count": 3207,
                                                 "source_files": 48,
@@ -2116,6 +2138,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 146141,
                                         "risks_count": 4,
                                         "sloc_count": 3207,
                                         "source_files": 48,
@@ -2125,6 +2148,7 @@
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 155910,
                                 "risks_count": 4,
                                 "sloc_count": 3455,
                                 "source_files": 51,
@@ -2342,6 +2366,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 13790,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 321,
                                                                         "source_files": 2,
@@ -2417,6 +2442,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 1573,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 35,
                                                                         "source_files": 2,
@@ -2484,6 +2510,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 3826,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 123,
                                                                         "source_files": 1,
@@ -2696,6 +2723,7 @@
                                                                                 }
                                                                             ],
                                                                             "counter": {
+                                                                                "bytes_count": 5588,
                                                                                 "risks_count": 0,
                                                                                 "sloc_count": 135,
                                                                                 "source_files": 2,
@@ -2705,6 +2733,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 20394,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 469,
                                                                         "source_files": 4,
@@ -2714,6 +2743,7 @@
                                                                 }
                                                             ],
                                                             "counter": {
+                                                                "bytes_count": 55021,
                                                                 "risks_count": 1,
                                                                 "sloc_count": 1264,
                                                                 "source_files": 11,
@@ -2723,6 +2753,7 @@
                                                         }
                                                     ],
                                                     "counter": {
+                                                        "bytes_count": 55021,
                                                         "risks_count": 1,
                                                         "sloc_count": 1264,
                                                         "source_files": 11,
@@ -2732,6 +2763,7 @@
                                                 }
                                             ],
                                             "counter": {
+                                                "bytes_count": 55021,
                                                 "risks_count": 1,
                                                 "sloc_count": 1264,
                                                 "source_files": 11,
@@ -2741,6 +2773,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 55021,
                                         "risks_count": 1,
                                         "sloc_count": 1264,
                                         "source_files": 11,
@@ -2750,6 +2783,7 @@
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 55021,
                                 "risks_count": 1,
                                 "sloc_count": 1264,
                                 "source_files": 11,
@@ -2759,6 +2793,7 @@
                         }
                     ],
                     "counter": {
+                        "bytes_count": 210931,
                         "risks_count": 5,
                         "sloc_count": 4719,
                         "source_files": 62,
@@ -2768,6 +2803,7 @@
                 }
             ],
             "counter": {
+                "bytes_count": 210931,
                 "risks_count": 5,
                 "sloc_count": 4719,
                 "source_files": 62,
@@ -2873,6 +2909,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 203,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 7,
                                                                         "source_files": 1,
@@ -2963,6 +3000,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 1193,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 31,
                                                                         "source_files": 3,
@@ -3373,6 +3411,7 @@
                                                                                         }
                                                                                     ],
                                                                                     "counter": {
+                                                                                        "bytes_count": 14610,
                                                                                         "risks_count": 0,
                                                                                         "sloc_count": 345,
                                                                                         "source_files": 3,
@@ -3382,6 +3421,7 @@
                                                                                 }
                                                                             ],
                                                                             "counter": {
+                                                                                "bytes_count": 27894,
                                                                                 "risks_count": 0,
                                                                                 "sloc_count": 671,
                                                                                 "source_files": 7,
@@ -3445,6 +3485,7 @@
                                                                                 }
                                                                             ],
                                                                             "counter": {
+                                                                                "bytes_count": 5039,
                                                                                 "risks_count": 0,
                                                                                 "sloc_count": 125,
                                                                                 "source_files": 1,
@@ -3454,6 +3495,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 59727,
                                                                         "risks_count": 1,
                                                                         "sloc_count": 1452,
                                                                         "source_files": 11,
@@ -3499,6 +3541,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 956,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 21,
                                                                         "source_files": 1,
@@ -3508,6 +3551,7 @@
                                                                 }
                                                             ],
                                                             "counter": {
+                                                                "bytes_count": 62586,
                                                                 "risks_count": 1,
                                                                 "sloc_count": 1528,
                                                                 "source_files": 18,
@@ -3517,6 +3561,7 @@
                                                         }
                                                     ],
                                                     "counter": {
+                                                        "bytes_count": 62586,
                                                         "risks_count": 1,
                                                         "sloc_count": 1528,
                                                         "source_files": 18,
@@ -3526,6 +3571,7 @@
                                                 }
                                             ],
                                             "counter": {
+                                                "bytes_count": 62586,
                                                 "risks_count": 1,
                                                 "sloc_count": 1528,
                                                 "source_files": 18,
@@ -3535,6 +3581,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 62586,
                                         "risks_count": 1,
                                         "sloc_count": 1528,
                                         "source_files": 18,
@@ -3544,6 +3591,7 @@
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 62586,
                                 "risks_count": 1,
                                 "sloc_count": 1528,
                                 "source_files": 18,
@@ -3626,6 +3674,7 @@
                                                                                 }
                                                                             ],
                                                                             "counter": {
+                                                                                "bytes_count": 1829,
                                                                                 "risks_count": 0,
                                                                                 "sloc_count": 40,
                                                                                 "source_files": 1,
@@ -3635,6 +3684,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 2228,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 47,
                                                                         "source_files": 2,
@@ -3730,6 +3780,7 @@
                                                                                 }
                                                                             ],
                                                                             "counter": {
+                                                                                "bytes_count": 3739,
                                                                                 "risks_count": 0,
                                                                                 "sloc_count": 98,
                                                                                 "source_files": 2,
@@ -3801,6 +3852,7 @@
                                                                                 }
                                                                             ],
                                                                             "counter": {
+                                                                                "bytes_count": 1852,
                                                                                 "risks_count": 0,
                                                                                 "sloc_count": 55,
                                                                                 "source_files": 2,
@@ -3810,6 +3862,7 @@
                                                                         }
                                                                     ],
                                                                     "counter": {
+                                                                        "bytes_count": 5591,
                                                                         "risks_count": 0,
                                                                         "sloc_count": 153,
                                                                         "source_files": 4,
@@ -3819,6 +3872,7 @@
                                                                 }
                                                             ],
                                                             "counter": {
+                                                                "bytes_count": 7819,
                                                                 "risks_count": 0,
                                                                 "sloc_count": 200,
                                                                 "source_files": 6,
@@ -3828,6 +3882,7 @@
                                                         }
                                                     ],
                                                     "counter": {
+                                                        "bytes_count": 7819,
                                                         "risks_count": 0,
                                                         "sloc_count": 200,
                                                         "source_files": 6,
@@ -3837,6 +3892,7 @@
                                                 }
                                             ],
                                             "counter": {
+                                                "bytes_count": 7819,
                                                 "risks_count": 0,
                                                 "sloc_count": 200,
                                                 "source_files": 6,
@@ -3846,6 +3902,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 7819,
                                         "risks_count": 0,
                                         "sloc_count": 200,
                                         "source_files": 6,
@@ -3855,6 +3912,7 @@
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 7819,
                                 "risks_count": 0,
                                 "sloc_count": 200,
                                 "source_files": 6,
@@ -3864,6 +3922,7 @@
                         }
                     ],
                     "counter": {
+                        "bytes_count": 70405,
                         "risks_count": 1,
                         "sloc_count": 1728,
                         "source_files": 24,
@@ -3873,6 +3932,7 @@
                 }
             ],
             "counter": {
+                "bytes_count": 70405,
                 "risks_count": 1,
                 "sloc_count": 1728,
                 "source_files": 24,
@@ -3882,6 +3942,7 @@
         }
     ],
     "counter": {
+        "bytes_count": 302400,
         "risks_count": 6,
         "sloc_count": 6750,
         "source_files": 91,

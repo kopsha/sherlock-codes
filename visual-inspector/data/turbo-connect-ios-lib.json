@@ -87,6 +87,7 @@
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 580,
                                 "risks_count": 0,
                                 "sloc_count": 12,
                                 "source_files": 1,
@@ -202,6 +203,7 @@
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 2678,
                                 "risks_count": 0,
                                 "sloc_count": 60,
                                 "source_files": 4,
@@ -267,6 +269,7 @@
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 11915,
                                 "risks_count": 0,
                                 "sloc_count": 256,
                                 "source_files": 2,
@@ -276,6 +279,7 @@
                         }
                     ],
                     "counter": {
+                        "bytes_count": 18782,
                         "risks_count": 0,
                         "sloc_count": 409,
                         "source_files": 9,
@@ -611,6 +615,7 @@
                                                 }
                                             ],
                                             "counter": {
+                                                "bytes_count": 45839,
                                                 "risks_count": 0,
                                                 "sloc_count": 751,
                                                 "source_files": 12,
@@ -620,6 +625,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 45839,
                                         "risks_count": 0,
                                         "sloc_count": 751,
                                         "source_files": 12,
@@ -629,6 +635,7 @@
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 61035,
                                 "risks_count": 0,
                                 "sloc_count": 1002,
                                 "source_files": 13,
@@ -708,6 +715,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 8651,
                                         "risks_count": 0,
                                         "sloc_count": 168,
                                         "source_files": 3,
@@ -785,6 +793,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 8385,
                                         "risks_count": 0,
                                         "sloc_count": 164,
                                         "source_files": 3,
@@ -865,6 +874,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 709,
                                         "risks_count": 0,
                                         "sloc_count": 31,
                                         "source_files": 3,
@@ -946,6 +956,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 738,
                                         "risks_count": 0,
                                         "sloc_count": 32,
                                         "source_files": 3,
@@ -1025,6 +1036,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 619,
                                         "risks_count": 0,
                                         "sloc_count": 30,
                                         "source_files": 3,
@@ -1034,6 +1046,7 @@
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 19102,
                                 "risks_count": 0,
                                 "sloc_count": 425,
                                 "source_files": 15,
@@ -1151,10 +1164,19 @@
                                                 },
                                                 {
                                                     "meta": {
-                                                        "aggregate_complexity": 39,
+                                                        "aggregate_complexity": 40,
                                                         "blank_lines": 53,
                                                         "decision_complexity": 37,
                                                         "extension": ".c",
+                                                        "imports": {
+                                                            "extern": [
+                                                                "stdlib.h",
+                                                                "string.h"
+                                                            ],
+                                                            "local": [
+                                                                "ioapi.h"
+                                                            ]
+                                                        },
                                                         "is_code": true,
                                                         "loc": 370,
                                                         "mime": "text/x-c; charset=us-ascii",
@@ -1169,7 +1191,7 @@
                                                         "type": "C source, ASCII text"
                                                     },
                                                     "name": "ioapi.c",
-                                                    "value": 39
+                                                    "value": 40
                                                 },
                                                 {
                                                     "meta": {
@@ -1202,10 +1224,21 @@
                                                 },
                                                 {
                                                     "meta": {
-                                                        "aggregate_complexity": 301,
+                                                        "aggregate_complexity": 303,
                                                         "blank_lines": 398,
                                                         "decision_complexity": 296,
                                                         "extension": ".c",
+                                                        "imports": {
+                                                            "extern": [
+                                                                "stdio.h",
+                                                                "stdlib.h",
+                                                                "string.h"
+                                                            ],
+                                                            "local": [
+                                                                "zlib.h",
+                                                                "unzip.h"
+                                                            ]
+                                                        },
                                                         "is_code": true,
                                                         "loc": 1948,
                                                         "mime": "text/x-c; charset=us-ascii",
@@ -1221,7 +1254,7 @@
                                                         "type": "C source, ASCII text"
                                                     },
                                                     "name": "unzip.c",
-                                                    "value": 301
+                                                    "value": 303
                                                 },
                                                 {
                                                     "meta": {
@@ -1253,10 +1286,22 @@
                                                 },
                                                 {
                                                     "meta": {
-                                                        "aggregate_complexity": 298,
+                                                        "aggregate_complexity": 300,
                                                         "blank_lines": 389,
                                                         "decision_complexity": 293,
                                                         "extension": ".c",
+                                                        "imports": {
+                                                            "extern": [
+                                                                "stdio.h",
+                                                                "stdlib.h",
+                                                                "string.h",
+                                                                "time.h"
+                                                            ],
+                                                            "local": [
+                                                                "zlib.h",
+                                                                "zip.h"
+                                                            ]
+                                                        },
                                                         "is_code": true,
                                                         "loc": 2021,
                                                         "mime": "text/x-c; charset=us-ascii",
@@ -1272,7 +1317,7 @@
                                                         "type": "C source, ASCII text"
                                                     },
                                                     "name": "zip.c",
-                                                    "value": 298
+                                                    "value": 300
                                                 },
                                                 {
                                                     "meta": {
@@ -1300,37 +1345,41 @@
                                                 }
                                             ],
                                             "counter": {
+                                                "bytes_count": 193042,
                                                 "risks_count": 5,
                                                 "sloc_count": 3954,
                                                 "source_files": 7,
-                                                "value_count": 664
+                                                "value_count": 669
                                             },
                                             "name": "minizip"
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 215231,
                                         "risks_count": 6,
                                         "sloc_count": 4293,
                                         "source_files": 10,
-                                        "value_count": 739
+                                        "value_count": 744
                                     },
                                     "name": "Zip"
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 215231,
                                 "risks_count": 6,
                                 "sloc_count": 4293,
                                 "source_files": 10,
-                                "value_count": 739
+                                "value_count": 744
                             },
                             "name": "Zip"
                         }
                     ],
                     "counter": {
+                        "bytes_count": 295368,
                         "risks_count": 6,
                         "sloc_count": 5720,
                         "source_files": 38,
-                        "value_count": 964
+                        "value_count": 969
                     },
                     "name": "Pods"
                 },
@@ -1497,6 +1546,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 29441,
                                         "risks_count": 0,
                                         "sloc_count": 627,
                                         "source_files": 6,
@@ -1534,6 +1584,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 612,
                                         "risks_count": 0,
                                         "sloc_count": 12,
                                         "source_files": 1,
@@ -1570,6 +1621,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 689,
                                         "risks_count": 0,
                                         "sloc_count": 15,
                                         "source_files": 1,
@@ -1579,6 +1631,7 @@
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 30742,
                                 "risks_count": 0,
                                 "sloc_count": 654,
                                 "source_files": 8,
@@ -1588,6 +1641,7 @@
                         }
                     ],
                     "counter": {
+                        "bytes_count": 30742,
                         "risks_count": 0,
                         "sloc_count": 654,
                         "source_files": 8,
@@ -1597,10 +1651,11 @@
                 }
             ],
             "counter": {
+                "bytes_count": 344892,
                 "risks_count": 6,
                 "sloc_count": 6783,
                 "source_files": 55,
-                "value_count": 1126
+                "value_count": 1131
             },
             "name": "Example"
         },
@@ -1633,6 +1688,7 @@
                         }
                     ],
                     "counter": {
+                        "bytes_count": 96,
                         "risks_count": 0,
                         "sloc_count": 0,
                         "source_files": 1,
@@ -1642,6 +1698,7 @@
                 }
             ],
             "counter": {
+                "bytes_count": 96,
                 "risks_count": 0,
                 "sloc_count": 0,
                 "source_files": 1,
@@ -1714,6 +1771,7 @@
                         }
                     ],
                     "counter": {
+                        "bytes_count": 17398,
                         "risks_count": 2,
                         "sloc_count": 316,
                         "source_files": 2,
@@ -1723,6 +1781,7 @@
                 }
             ],
             "counter": {
+                "bytes_count": 17398,
                 "risks_count": 2,
                 "sloc_count": 316,
                 "source_files": 2,
@@ -1844,6 +1903,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 2090,
                                         "risks_count": 0,
                                         "sloc_count": 49,
                                         "source_files": 1,
@@ -1987,6 +2047,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 26081,
                                         "risks_count": 0,
                                         "sloc_count": 568,
                                         "source_files": 5,
@@ -2105,6 +2166,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 7312,
                                         "risks_count": 0,
                                         "sloc_count": 177,
                                         "source_files": 4,
@@ -2188,6 +2250,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 1470,
                                         "risks_count": 0,
                                         "sloc_count": 36,
                                         "source_files": 3,
@@ -2224,6 +2287,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 4084,
                                         "risks_count": 0,
                                         "sloc_count": 97,
                                         "source_files": 1,
@@ -2260,6 +2324,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 3985,
                                         "risks_count": 0,
                                         "sloc_count": 111,
                                         "source_files": 1,
@@ -2398,6 +2463,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 6481,
                                         "risks_count": 0,
                                         "sloc_count": 141,
                                         "source_files": 5,
@@ -2532,6 +2598,7 @@
                                                 }
                                             ],
                                             "counter": {
+                                                "bytes_count": 4240,
                                                 "risks_count": 0,
                                                 "sloc_count": 112,
                                                 "source_files": 1,
@@ -2618,6 +2685,7 @@
                                                 }
                                             ],
                                             "counter": {
+                                                "bytes_count": 2901,
                                                 "risks_count": 0,
                                                 "sloc_count": 66,
                                                 "source_files": 3,
@@ -2627,6 +2695,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 21278,
                                         "risks_count": 0,
                                         "sloc_count": 415,
                                         "source_files": 8,
@@ -2673,6 +2742,7 @@
                                                         }
                                                     ],
                                                     "counter": {
+                                                        "bytes_count": 11015,
                                                         "risks_count": 1,
                                                         "sloc_count": 228,
                                                         "source_files": 1,
@@ -2682,6 +2752,7 @@
                                                 }
                                             ],
                                             "counter": {
+                                                "bytes_count": 11015,
                                                 "risks_count": 1,
                                                 "sloc_count": 228,
                                                 "source_files": 1,
@@ -2691,6 +2762,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 11015,
                                         "risks_count": 1,
                                         "sloc_count": 228,
                                         "source_files": 1,
@@ -2700,6 +2772,7 @@
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 94342,
                                 "risks_count": 1,
                                 "sloc_count": 1984,
                                 "source_files": 32,
@@ -2739,6 +2812,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 3414,
                                         "risks_count": 0,
                                         "sloc_count": 59,
                                         "source_files": 1,
@@ -2936,6 +3010,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 61678,
                                         "risks_count": 1,
                                         "sloc_count": 1064,
                                         "source_files": 7,
@@ -2973,6 +3048,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 7107,
                                         "risks_count": 0,
                                         "sloc_count": 138,
                                         "source_files": 1,
@@ -3010,6 +3086,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 4353,
                                         "risks_count": 0,
                                         "sloc_count": 89,
                                         "source_files": 1,
@@ -3074,6 +3151,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 4432,
                                         "risks_count": 0,
                                         "sloc_count": 94,
                                         "source_files": 2,
@@ -3241,6 +3319,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 14300,
                                         "risks_count": 0,
                                         "sloc_count": 257,
                                         "source_files": 6,
@@ -3278,6 +3357,7 @@
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 13742,
                                         "risks_count": 0,
                                         "sloc_count": 281,
                                         "source_files": 1,
@@ -3287,6 +3367,7 @@
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 109026,
                                 "risks_count": 1,
                                 "sloc_count": 1982,
                                 "source_files": 19,
@@ -3296,6 +3377,7 @@
                         }
                     ],
                     "counter": {
+                        "bytes_count": 203368,
                         "risks_count": 2,
                         "sloc_count": 3966,
                         "source_files": 51,
@@ -3305,6 +3387,7 @@
                 }
             ],
             "counter": {
+                "bytes_count": 203368,
                 "risks_count": 2,
                 "sloc_count": 3966,
                 "source_files": 51,
@@ -3314,10 +3397,11 @@
         }
     ],
     "counter": {
+        "bytes_count": 565754,
         "risks_count": 10,
         "sloc_count": 11065,
         "source_files": 109,
-        "value_count": 1606
+        "value_count": 1611
     },
     "name": "turbo-connect-ios-lib"
 }

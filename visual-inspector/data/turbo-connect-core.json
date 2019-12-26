@@ -105,6 +105,7 @@
                 }
             ],
             "counter": {
+                "bytes_count": 13724,
                 "risks_count": 2,
                 "sloc_count": 383,
                 "source_files": 2,
@@ -1337,6 +1338,7 @@
                         }
                     ],
                     "counter": {
+                        "bytes_count": 326350,
                         "risks_count": 0,
                         "sloc_count": 2882,
                         "source_files": 34,
@@ -1346,6 +1348,7 @@
                 }
             ],
             "counter": {
+                "bytes_count": 348142,
                 "risks_count": 0,
                 "sloc_count": 3473,
                 "source_files": 45,
@@ -1611,6 +1614,7 @@
                 }
             ],
             "counter": {
+                "bytes_count": 26542,
                 "risks_count": 0,
                 "sloc_count": 628,
                 "source_files": 9,
@@ -1620,6 +1624,7 @@
         }
     ],
     "counter": {
+        "bytes_count": 390426,
         "risks_count": 2,
         "sloc_count": 4555,
         "source_files": 58,
