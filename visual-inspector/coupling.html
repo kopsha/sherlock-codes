@@ -6,6 +6,10 @@
 
 {% block scripts %}
 <script type="text/javascript">
-    //window.onload = render_coupling_view(); 
+    project_selector.change(function () {
+        localStorage.setItem("lastSelectedProject", $(this).val());
+        render_coupling_view();
+    });
+    window.onload = render_coupling_view(); 
 </script>
 {% endblock %}
