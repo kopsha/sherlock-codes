@@ -1,4 +1,50 @@
 {
+    "change_history": {
+        "changes_matrix": [
+            [
+                0,
+                2,
+                2,
+                0,
+                2
+            ],
+            [
+                2,
+                0,
+                2,
+                0,
+                2
+            ],
+            [
+                2,
+                2,
+                0,
+                0,
+                2
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                4
+            ],
+            [
+                2,
+                2,
+                2,
+                4,
+                0
+            ]
+        ],
+        "filelist": [
+            "items.py",
+            "middlewares.py",
+            "pipelines.py",
+            "selectors.py",
+            "olx.py"
+        ]
+    },
     "children": [
         {
             "children": [
@@ -8,15 +54,20 @@
                             "children": [
                                 {
                                     "meta": {
-                                        "aggregate_complexity": 3,
+                                        "aggregate_complexity": 4,
                                         "blank_lines": 5,
                                         "decision_complexity": 2,
                                         "extension": ".py",
+                                        "imports": [],
                                         "is_code": true,
+                                        "libraries": [
+                                            "scrapy"
+                                        ],
                                         "loc": 15,
                                         "mime": "text/x-python; charset=us-ascii",
                                         "name": "items",
                                         "nested_complexity": 0,
+                                        "path": "optimal-transaction-hunter/src/buyers/buyers/items.py",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 287,
@@ -24,19 +75,24 @@
                                         "type": "Python script, ASCII text executable"
                                     },
                                     "name": "items.py",
-                                    "value": 3
+                                    "value": 4
                                 },
                                 {
                                     "meta": {
-                                        "aggregate_complexity": 10,
+                                        "aggregate_complexity": 11,
                                         "blank_lines": 25,
                                         "decision_complexity": 9,
                                         "extension": ".py",
+                                        "imports": [],
                                         "is_code": true,
+                                        "libraries": [
+                                            "scrapy"
+                                        ],
                                         "loc": 104,
                                         "mime": "text/x-python; charset=utf-8",
                                         "name": "middlewares",
                                         "nested_complexity": 0,
+                                        "path": "optimal-transaction-hunter/src/buyers/buyers/middlewares.py",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 3597,
@@ -44,7 +100,7 @@
                                         "type": "Python script, UTF-8 Unicode text executable"
                                     },
                                     "name": "middlewares.py",
-                                    "value": 10
+                                    "value": 11
                                 },
                                 {
                                     "meta": {
@@ -52,11 +108,14 @@
                                         "blank_lines": 4,
                                         "decision_complexity": 0,
                                         "extension": ".py",
+                                        "imports": [],
                                         "is_code": true,
+                                        "libraries": [],
                                         "loc": 12,
                                         "mime": "text/x-python; charset=us-ascii",
                                         "name": "pipelines",
                                         "nested_complexity": 0,
+                                        "path": "optimal-transaction-hunter/src/buyers/buyers/pipelines.py",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 288,
@@ -68,15 +127,21 @@
                                 },
                                 {
                                     "meta": {
-                                        "aggregate_complexity": 6,
+                                        "aggregate_complexity": 8,
                                         "blank_lines": 8,
                                         "decision_complexity": 5,
                                         "extension": ".py",
+                                        "imports": [],
                                         "is_code": true,
+                                        "libraries": [
+                                            "bs4",
+                                            "re"
+                                        ],
                                         "loc": 34,
                                         "mime": "text/x-python; charset=us-ascii",
                                         "name": "selectors",
                                         "nested_complexity": 1,
+                                        "path": "optimal-transaction-hunter/src/buyers/buyers/selectors.py",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 947,
@@ -84,21 +149,28 @@
                                         "type": "Python script, ASCII text executable"
                                     },
                                     "name": "selectors.py",
-                                    "value": 6
+                                    "value": 8
                                 },
                                 {
                                     "children": [
                                         {
                                             "meta": {
-                                                "aggregate_complexity": 3,
+                                                "aggregate_complexity": 6,
                                                 "blank_lines": 6,
                                                 "decision_complexity": 2,
                                                 "extension": ".py",
+                                                "imports": [],
                                                 "is_code": true,
+                                                "libraries": [
+                                                    "scrapy",
+                                                    "buyers.selectors",
+                                                    "localdb.db_setup"
+                                                ],
                                                 "loc": 26,
                                                 "mime": "text/x-python; charset=us-ascii",
                                                 "name": "olx",
                                                 "nested_complexity": 1,
+                                                "path": "optimal-transaction-hunter/src/buyers/buyers/spiders/olx.py",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 883,
@@ -106,50 +178,55 @@
                                                 "type": "Python script, ASCII text executable"
                                             },
                                             "name": "olx.py",
-                                            "value": 3
+                                            "value": 6
                                         }
                                     ],
                                     "counter": {
+                                        "bytes_count": 883,
                                         "risks_count": 0,
                                         "sloc_count": 20,
                                         "source_files": 1,
-                                        "value_count": 3
+                                        "value_count": 6
                                     },
                                     "name": "spiders"
                                 }
                             ],
                             "counter": {
+                                "bytes_count": 6002,
                                 "risks_count": 0,
                                 "sloc_count": 143,
                                 "source_files": 5,
-                                "value_count": 23
+                                "value_count": 30
                             },
                             "name": "buyers"
                         }
                     ],
                     "counter": {
+                        "bytes_count": 6002,
                         "risks_count": 0,
                         "sloc_count": 143,
                         "source_files": 5,
-                        "value_count": 23
+                        "value_count": 30
                     },
                     "name": "buyers"
                 }
             ],
             "counter": {
+                "bytes_count": 6002,
                 "risks_count": 0,
                 "sloc_count": 143,
                 "source_files": 5,
-                "value_count": 23
+                "value_count": 30
             },
             "name": "src"
         }
     ],
     "counter": {
+        "bytes_count": 6002,
         "risks_count": 0,
         "sloc_count": 143,
         "source_files": 5,
-        "value_count": 23
+        "value_count": 30
     },
     "name": "optimal-transaction-hunter"
 }
