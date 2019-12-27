@@ -325,7 +325,7 @@ function render_architecture_view()
     });
 }
 
-function render_dependencies_view()
+function render_heatmap_view()
 {
     let url = project_selector.val();
     let svg_tag = create_svg_element('<svg width="768" height="768">');

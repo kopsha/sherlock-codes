@@ -22,9 +22,9 @@
 <script type="text/javascript">
     project_selector.change(function () {
         localStorage.setItem("lastSelectedProject", $(this).val());
-        render_dependencies_view();
+        render_heatmap_view();
     });
 
-    window.onload = render_dependencies_view(); 
+    window.onload = render_heatmap_view(); 
 </script>
 {% endblock %}

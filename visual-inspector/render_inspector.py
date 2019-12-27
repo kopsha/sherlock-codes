@@ -16,7 +16,7 @@ def render_inspector_pages(data_folder, out_folder):
     env = jinja2.Environment(loader=jinja2.FileSystemLoader('./'))
     pages = [
         env.get_template('index.html'),
-        env.get_template('dependencies.html'),
+        env.get_template('heatmap.html'),
         env.get_template('coupling.html'),
     ]
 
