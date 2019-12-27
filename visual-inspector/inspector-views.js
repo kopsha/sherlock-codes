@@ -153,64 +153,50 @@ function display_circlepack(data)
     }
 }
 
-function display_radialdendro(data)
+function display_change_heatmap(data)
 {
+    // set the dimensions and margins of the graph
     let svg = d3.select("svg").style("box-sizing", "border-box"),
-        margin = 20,
-        diameter = svg.attr("width"),
-        g = svg.append("g").attr(
-            "transform",
-            "translate(" + diameter / 2 + "," + diameter / 2 + ")"
-        );
+        margin = {top: 30, right: 30, bottom: 30, left: 30},
+        width = svg.attr("width") - margin.left - margin.right,
+        height = svg.attr("height") - margin.top - margin.bottom;
+    svg.append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    let cluster = d3.cluster()
-        .size([2 * Math.PI, diameter/4])
-    const root = cluster(d3.hierarchy(data));
-    update_info_view(root);
+    const heat_data = data.change_history.changes_matrix.flat();
+    const labels    = data.change_history.filelist;
+    const max_value = d3.max(heat_data)
+    const size      = data.change_history.changes_matrix.length
 
-    let color = d3.scaleLinear()
-        .domain([-1, 13])
-        .range(["hsl(150,80%,80%)", "hsl(300,52%,38%)"])
-        .interpolate(d3.interpolateHcl);
+    var background = svg.append("rect")
+        .style("stroke", "black")
+        .style("stroke-width", "2px")
+        .attr("width", width)
+        .attr("height", height);
 
-    const link = g.append("g")
-        .attr("fill", "none")
-        .attr("stroke", "#555")
-        .attr("stroke-opacity", 0.4)
-        .attr("stroke-width", 1.5)
-    .selectAll("path")
-    .data(root.links())
-    .enter().append("path")
-        .attr("d", d3.linkRadial()
-            .angle(d => d.x)
-            .radius(d => d.y));
+    var x = d3.scaleBand()
+        .range([0, width])
+        .domain(d3.range(size))
+        .padding(0.01);
 
-    const node = g.append("g")
-        .attr("stroke-linejoin", "round")
-        .attr("stroke-width", 3)
-    .selectAll("g")
-    .data(root.descendants().reverse())
-    .enter().append("g")
-        .attr("transform", d => `
-            rotate(${d.x * 180 / Math.PI - 90})
-            translate(${d.y},0)
-        `);
+    var y = d3.scaleBand()
+        .range([0, height])
+        .domain(d3.range(size))
+        .padding(0.01);
 
-    node.append("circle")
-        .attr("fill", d => d.children ? "#555" : "#999")
-        .attr("r", d => d.data.value ? d.data.value/10 : 0 + 2);
+    var colorMap = d3.scaleLinear()
+        .range(["white", "#69b3a2"])
+        .domain([0,max_value]);
 
-    node.append("text")
-        .attr("class", "label")
-        .attr("dy", "0.31em")
-        .attr("x", d => d.x < Math.PI === !d.children ? 6 : -6)
-        .attr("text-anchor", d => d.x < Math.PI === !d.children ? "start" : 
-        "end")
-        .attr("transform", d => d.x >= Math.PI ? "rotate(180)" : null)
-        .text(d => d.data.name)
-        .filter(d => d.children)
-        .clone(true).lower()
-        .attr("stroke", "white");
+    svg.selectAll()
+        .data(heat_data)
+        .enter()
+        .append("rect")
+            .attr("x", function(d, i) { return x(i % size); })
+            .attr("y", function(d, i) { return y(Math.trunc(i/size)); })
+            .attr("width", x.bandwidth() )
+            .attr("height", y.bandwidth() )
+            .style("fill", function(d) { return colorMap(d)} )
 }
 
 function display_couplings(data)
@@ -332,8 +318,8 @@ function render_heatmap_view()
     graphic_view.empty();
     graphic_view.append(svg_tag);
     d3.json(url).then( function (data) {
-        console.log("The promised display_radialdendro");
-        display_radialdendro(data);
+        console.log("The promised display_change_heatmap");
+        display_change_heatmap(data);
     });
 }
 

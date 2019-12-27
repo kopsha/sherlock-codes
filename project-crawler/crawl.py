@@ -8,6 +8,7 @@ import anytree
 import anytree.exporter
 import humanize
 import magic
+import numpy
 
 from datetime import datetime
 from git.cmd import Git
@@ -253,7 +254,6 @@ def parse_git_repository(src_root, output=None):
             elif true_name in true_module_map:
                 local_imports.append(true_module_map[true_name])
             else:
-                print(i)
                 libraries.append(i)
         m.meta['imports'] = local_imports
         m.meta['libraries'] = libraries
@@ -263,51 +263,51 @@ def parse_git_repository(src_root, output=None):
     data_bytes = root.counter['bytes_count']
     print(f'Completed scan of {root.counter["source_files"]} files or {humanize.naturalsize(data_bytes)} of code.')
 
+    print_stage('Changed together log')
+    module_names = [node.name for node in sorted(root.leaves, key=lambda node: node.meta.get('path'))]
+    changes_matrix = numpy.zeros((len(module_names),len(module_names)), dtype=int)
+
+    change_history = git.whatchanged().split('\n')
+    change_history.reverse()
+
+    pick_filepath = re.compile(r':\d{6} \d{6} \w+ \w+ \w+\s+(\S+)')
+    commit_files = []
+    commit_count = 0
+    for change in change_history:
+        if change.startswith(':'):
+            found = pick_filepath.search(change)
+            if found:
+                rel_path = str(found.group(1))
+                commit_files.append(rel_path)
+            else:
+                print( '***', change )
+                raise ValueError("Cannot parse commit change.")
+        elif change.startswith('commit'):
+            for this in commit_files:
+                if this in module_names:
+                    # build all pairs
+                    pairs = [(this,other) for other in commit_files if other != this and other in module_names]
+                    for left,right in pairs:
+                        li = module_names.index(left)
+                        ri = module_names.index(right)
+                        changes_matrix[li][ri] += 1
+                        changes_matrix[ri][li] += 1
+            commit_files = []
+            commit_count += 1
+
+    change_history = {
+        'filelist' : module_names,
+        'changes_matrix' : changes_matrix.tolist(),
+    }
+    root.change_history = change_history
+    print(f'Analyzed {commit_count} commits.')
+
     if not output:
         output = f'{project_name}.json'
     exporter = anytree.exporter.JsonExporter(indent=4, sort_keys=True)
     with open(output, "wt") as out:
         exporter.write(root, out)
 
-    print_stage('Changed together log')
-    module_names = sorted([node.name for node in root.leaves])
-    change_log = []
-    whatchanged = git.whatchanged().split('\n')
-    whatchanged.reverse()
-
-    pick_path = re.compile(r':\d{6} \d{6} \w+ \w+ \w+\s+(\S+)')
-    last_commit = []
-    commit_count = 0
-    for line in whatchanged:
-        if line.startswith(':'):
-            lookup = pick_path.search(line)
-            if lookup:
-                rel_path = str(lookup.group(1))
-                rel_name = os.path.basename(rel_path)
-                last_commit.append(rel_name)
-            else:
-                print( '***', line )
-        elif line.startswith('commit'):
-            for this in last_commit:
-                if this in module_names:
-                    # build all pairs
-                    pairs = [(this,other) for other in last_commit if other != this and other in module_names]
-                    change_log.extend(pairs)
-            last_commit = []
-            commit_count += 1
-
-    from collections import Counter
-    limit = max(int(commit_count / 100.0), 13)
-    together = Counter(change_log).most_common()
-
-    # TODO: add change coupling data to project json
-    for pair, count in together:
-        change_coupling = count*100/commit_count
-        if change_coupling >= 10:
-            print(f'{pair} are changing together {change_coupling:.1f} % of the time.')
-
-    highest_change = max([c for p,c in together])*100/commit_count
-    print(f'Analyzed {commit_count} commits and found highest change rate {highest_change:.1f} %.')
 
 def main():
     parser = argparse.ArgumentParser()

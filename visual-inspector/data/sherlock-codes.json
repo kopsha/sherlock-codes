@@ -1,0 +1,212 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "meta": {
+                        "aggregate_complexity": 1,
+                        "blank_lines": 1,
+                        "decision_complexity": 0,
+                        "extension": ".sh",
+                        "imports": [],
+                        "is_code": true,
+                        "libraries": [],
+                        "loc": 5,
+                        "mime": "text/x-shellscript; charset=us-ascii",
+                        "name": "create_common_template",
+                        "nested_complexity": 0,
+                        "path": "sherlock-codes/etc/create_common_template.sh",
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 58,
+                        "sloc": 4,
+                        "type": "Bourne-Again shell script, ASCII text executable"
+                    },
+                    "name": "create_common_template.sh",
+                    "value": 1
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 1,
+                        "blank_lines": 6,
+                        "decision_complexity": 0,
+                        "extension": ".sh",
+                        "imports": [],
+                        "is_code": true,
+                        "libraries": [],
+                        "loc": 14,
+                        "mime": "text/x-shellscript; charset=us-ascii",
+                        "name": "run-me-first",
+                        "nested_complexity": 0,
+                        "path": "sherlock-codes/etc/run-me-first.sh",
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 264,
+                        "sloc": 8,
+                        "type": "Bourne-Again shell script, ASCII text executable"
+                    },
+                    "name": "run-me-first.sh",
+                    "value": 1
+                }
+            ],
+            "counter": {
+                "bytes_count": 322,
+                "risks_count": 0,
+                "sloc_count": 12,
+                "source_files": 2,
+                "value_count": 2
+            },
+            "name": "etc"
+        },
+        {
+            "children": [
+                {
+                    "meta": {
+                        "aggregate_complexity": 32,
+                        "blank_lines": 164,
+                        "decision_complexity": 25,
+                        "extension": ".py",
+                        "imports": [],
+                        "is_code": true,
+                        "libraries": [
+                            "datetime",
+                            "utils",
+                            "ast",
+                            "os",
+                            "re",
+                            "timeit"
+                        ],
+                        "loc": 265,
+                        "mime": "text/x-python; charset=us-ascii",
+                        "name": "code_parser",
+                        "nested_complexity": 0,
+                        "path": "sherlock-codes/project-crawler/code_parser.py",
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 7801,
+                        "sloc": 101,
+                        "type": "Python script, ASCII text executable"
+                    },
+                    "name": "code_parser.py",
+                    "value": 32
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 76,
+                        "blank_lines": 63,
+                        "decision_complexity": 62,
+                        "extension": ".py",
+                        "imports": [
+                            "sherlock-codes/project-crawler/code_parser.py"
+                        ],
+                        "is_code": true,
+                        "libraries": [
+                            "argparse",
+                            "json",
+                            "os",
+                            "re",
+                            "timeit",
+                            "anytree",
+                            "anytree.exporter",
+                            "humanize",
+                            "magic",
+                            "datetime",
+                            "git.cmd",
+                            "utils"
+                        ],
+                        "loc": 329,
+                        "mime": "text/x-python; charset=us-ascii",
+                        "name": "crawl",
+                        "nested_complexity": 1,
+                        "path": "sherlock-codes/project-crawler/crawl.py",
+                        "risks": [
+                            "[warning] Quite many decisions, consider adding more unit tests and review the entire file."
+                        ],
+                        "risks_points": 8,
+                        "size": 10544,
+                        "sloc": 266,
+                        "type": "Python script, ASCII text executable"
+                    },
+                    "name": "crawl.py",
+                    "value": 76
+                }
+            ],
+            "counter": {
+                "bytes_count": 18345,
+                "risks_count": 1,
+                "sloc_count": 367,
+                "source_files": 2,
+                "value_count": 108
+            },
+            "name": "project-crawler"
+        },
+        {
+            "children": [
+                {
+                    "meta": {
+                        "aggregate_complexity": 15,
+                        "blank_lines": 36,
+                        "decision_complexity": 11,
+                        "extension": ".js",
+                        "imports": [],
+                        "is_code": true,
+                        "libraries": [],
+                        "loc": 351,
+                        "mime": "text/x-c; charset=us-ascii",
+                        "name": "inspector-views",
+                        "nested_complexity": 4,
+                        "path": "sherlock-codes/visual-inspector/inspector-views.js",
+                        "risks": [
+                            "[info] Arguably many lines of code, this may be ok for now."
+                        ],
+                        "risks_points": 2,
+                        "size": 11527,
+                        "sloc": 315,
+                        "type": "C source, ASCII text"
+                    },
+                    "name": "inspector-views.js",
+                    "value": 15
+                },
+                {
+                    "meta": {
+                        "aggregate_complexity": 1,
+                        "blank_lines": 4,
+                        "decision_complexity": 0,
+                        "extension": "",
+                        "imports": [],
+                        "is_code": true,
+                        "libraries": [],
+                        "loc": 10,
+                        "mime": "text/x-shellscript; charset=us-ascii",
+                        "name": "run",
+                        "nested_complexity": 0,
+                        "path": "sherlock-codes/visual-inspector/run",
+                        "risks": [],
+                        "risks_points": 0,
+                        "size": 87,
+                        "sloc": 6,
+                        "type": "Bourne-Again shell script, ASCII text executable"
+                    },
+                    "name": "run",
+                    "value": 1
+                }
+            ],
+            "counter": {
+                "bytes_count": 11614,
+                "risks_count": 1,
+                "sloc_count": 321,
+                "source_files": 2,
+                "value_count": 16
+            },
+            "name": "visual-inspector"
+        }
+    ],
+    "counter": {
+        "bytes_count": 30281,
+        "risks_count": 2,
+        "sloc_count": 700,
+        "source_files": 6,
+        "value_count": 126
+    },
+    "name": "sherlock-codes"
+}
