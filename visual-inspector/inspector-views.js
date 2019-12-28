@@ -172,6 +172,7 @@ function display_change_heatmap(data)
 
     let max_temp = d3.max(root.leaves(), function (d) { return +d.data.temperature; })
     let min_temp = d3.min(root.leaves(), function (d) { return +d.data.temperature; })
+    let treshold = parseInt((max_temp + min_temp) / 4)
     let color = d3.scaleLinear()
         .domain([min_temp, max_temp])
         .range(["#0079BD", "#E5C200"])
@@ -191,6 +192,9 @@ function display_change_heatmap(data)
         .data(d3.range(0, 1+max_temp-min_temp))
         .enter()
             .append('rect')
+            .style('stroke', function(d) {
+                return d == treshold ? "red" : "none";
+            })
             .style('fill', d => color(min_temp+d))
             .attr('x', 10)
             .attr('y', d => 5 + d*(lh+1))
@@ -239,6 +243,9 @@ function display_change_heatmap(data)
             return d.y0 + (d.y1-d.y0)/2
         })
         .text(function(d) {
+            if (!d.data.temperature || (d.data.temperature < treshold)) {
+                return null;
+            }
             return d.data.name
         })
         .attr("transform", function (d) {
