@@ -259,15 +259,20 @@ def parse_git_repository(src_root, output=None):
                 local_nodes =  anytree.search.findall_by_attr(m.parent, import_item)
                 if local_nodes:
                     # add all nodes
-                    local_imports.update([x.easy_path for x in local_nodes])
+                    chk = [x.easy_path for x in local_nodes if x.is_leaf]
+                    if not chk:
+                        chk = [x.easy_path for x in local_nodes[-1].leaves]
+                    assert chk
+                    local_imports.update(chk)
                 else:
                     # look in the entire project
                     local_nodes = anytree.search.findall_by_attr(root, import_item)
                     if local_nodes:
-                        if len(local_nodes) == 1:
-                            local_imports.add(local_nodes[0].easy_path)
-                        else:
-                            local_imports.add(local_nodes[-1].easy_path)   # :()
+                        chk = [x.easy_path for x in local_nodes if x.is_leaf]
+                        if not chk:
+                            chk = [x.easy_path for x in local_nodes[-1].leaves]
+                        assert chk
+                        local_imports.update(chk)
                     else:
                         libraries.add(import_item)
             else:
