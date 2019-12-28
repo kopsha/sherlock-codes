@@ -1,164 +1,4 @@
 {
-    "change_history": {
-        "changes_matrix": [
-            [
-                0,
-                4,
-                2,
-                18,
-                14,
-                0,
-                2,
-                0,
-                0,
-                0,
-                0
-            ],
-            [
-                4,
-                0,
-                0,
-                2,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            [
-                2,
-                0,
-                0,
-                8,
-                6,
-                4,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            [
-                18,
-                2,
-                8,
-                0,
-                102,
-                22,
-                4,
-                0,
-                2,
-                2,
-                0
-            ],
-            [
-                14,
-                0,
-                6,
-                102,
-                0,
-                14,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            [
-                0,
-                0,
-                4,
-                22,
-                14,
-                0,
-                0,
-                0,
-                2,
-                0,
-                0
-            ],
-            [
-                2,
-                0,
-                0,
-                4,
-                0,
-                0,
-                0,
-                0,
-                0,
-                2,
-                0
-            ],
-            [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            [
-                0,
-                0,
-                0,
-                2,
-                0,
-                2,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            [
-                0,
-                0,
-                0,
-                2,
-                0,
-                0,
-                2,
-                0,
-                0,
-                0,
-                0
-            ],
-            [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ]
-        ],
-        "filelist": [
-            "Makefile.bsd",
-            "configure",
-            "data.h",
-            "entr.c",
-            "entr_spec.c",
-            "system_test.sh",
-            "compat.h",
-            "fmemopen.c",
-            "kqueue_inotify.c",
-            "strlcpy.c",
-            "event.h"
-        ]
-    },
     "children": [
         {
             "meta": {
@@ -181,6 +21,7 @@
                 "type": "makefile script, ASCII text"
             },
             "name": "Makefile.bsd",
+            "temperature": 27,
             "value": 1
         },
         {
@@ -204,6 +45,7 @@
                 "type": "POSIX shell script, ASCII text executable"
             },
             "name": "configure",
+            "temperature": 11,
             "value": 1
         },
         {
@@ -229,6 +71,7 @@
                 "type": "C source, ASCII text"
             },
             "name": "data.h",
+            "temperature": 4,
             "value": 2
         },
         {
@@ -277,6 +120,7 @@
                 "type": "C source, ASCII text"
             },
             "name": "entr.c",
+            "temperature": 121,
             "value": 94
         },
         {
@@ -304,6 +148,7 @@
                 "type": "C source, ASCII text"
             },
             "name": "entr_spec.c",
+            "temperature": 67,
             "value": 10
         },
         {
@@ -327,6 +172,7 @@
                 "type": "POSIX shell script, ASCII text executable"
             },
             "name": "system_test.sh",
+            "temperature": 18,
             "value": 4
         },
         {
@@ -355,6 +201,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "compat.h",
+                    "temperature": 6,
                     "value": 7
                 },
                 {
@@ -384,6 +231,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "fmemopen.c",
+                    "temperature": 2,
                     "value": 25
                 },
                 {
@@ -422,6 +270,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "kqueue_inotify.c",
+                    "temperature": 3,
                     "value": 37
                 },
                 {
@@ -448,6 +297,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "strlcpy.c",
+                    "temperature": 2,
                     "value": 11
                 },
                 {
@@ -476,6 +326,7 @@
                                 "type": "C source, ASCII text"
                             },
                             "name": "event.h",
+                            "temperature": 1,
                             "value": 4
                         }
                     ],

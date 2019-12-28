@@ -23,6 +23,7 @@
                         "type": "Bourne-Again shell script, ASCII text executable"
                     },
                     "name": "create_common_template.sh",
+                    "temperature": 1,
                     "value": 1
                 },
                 {
@@ -46,6 +47,7 @@
                         "type": "Bourne-Again shell script, ASCII text executable"
                     },
                     "name": "run-me-first.sh",
+                    "temperature": 3,
                     "value": 1
                 }
             ],
@@ -88,13 +90,14 @@
                         "type": "Python script, ASCII text executable"
                     },
                     "name": "code_parser.py",
+                    "temperature": 8,
                     "value": 32
                 },
                 {
                     "meta": {
-                        "aggregate_complexity": 76,
-                        "blank_lines": 63,
-                        "decision_complexity": 62,
+                        "aggregate_complexity": 72,
+                        "blank_lines": 62,
+                        "decision_complexity": 57,
                         "extension": ".py",
                         "imports": [
                             "sherlock-codes/project-crawler/code_parser.py"
@@ -110,33 +113,35 @@
                             "anytree.exporter",
                             "humanize",
                             "magic",
+                            "numpy",
                             "datetime",
                             "git.cmd",
                             "utils"
                         ],
-                        "loc": 329,
+                        "loc": 319,
                         "mime": "text/x-python; charset=us-ascii",
                         "name": "crawl",
                         "nested_complexity": 1,
                         "path": "sherlock-codes/project-crawler/crawl.py",
                         "risks": [
-                            "[warning] Quite many decisions, consider adding more unit tests and review the entire file."
+                            "[info] Arguably many decisions, it is ok if it makes other files less complicated."
                         ],
-                        "risks_points": 8,
-                        "size": 10544,
-                        "sloc": 266,
+                        "risks_points": 5,
+                        "size": 9966,
+                        "sloc": 257,
                         "type": "Python script, ASCII text executable"
                     },
                     "name": "crawl.py",
-                    "value": 76
+                    "temperature": 28,
+                    "value": 72
                 }
             ],
             "counter": {
-                "bytes_count": 18345,
+                "bytes_count": 17767,
                 "risks_count": 1,
-                "sloc_count": 367,
+                "sloc_count": 358,
                 "source_files": 2,
-                "value_count": 108
+                "value_count": 104
             },
             "name": "project-crawler"
         },
@@ -151,7 +156,7 @@
                         "imports": [],
                         "is_code": true,
                         "libraries": [],
-                        "loc": 351,
+                        "loc": 360,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "inspector-views",
                         "nested_complexity": 4,
@@ -160,11 +165,12 @@
                             "[info] Arguably many lines of code, this may be ok for now."
                         ],
                         "risks_points": 2,
-                        "size": 11527,
-                        "sloc": 315,
+                        "size": 11503,
+                        "sloc": 324,
                         "type": "C source, ASCII text"
                     },
                     "name": "inspector-views.js",
+                    "temperature": 8,
                     "value": 15
                 },
                 {
@@ -188,13 +194,14 @@
                         "type": "Bourne-Again shell script, ASCII text executable"
                     },
                     "name": "run",
+                    "temperature": 1,
                     "value": 1
                 }
             ],
             "counter": {
-                "bytes_count": 11614,
+                "bytes_count": 11590,
                 "risks_count": 1,
-                "sloc_count": 321,
+                "sloc_count": 330,
                 "source_files": 2,
                 "value_count": 16
             },
@@ -202,11 +209,11 @@
         }
     ],
     "counter": {
-        "bytes_count": 30281,
+        "bytes_count": 29679,
         "risks_count": 2,
         "sloc_count": 700,
         "source_files": 6,
-        "value_count": 126
+        "value_count": 122
     },
     "name": "sherlock-codes"
 }

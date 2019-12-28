@@ -1,50 +1,4 @@
 {
-    "change_history": {
-        "changes_matrix": [
-            [
-                0,
-                2,
-                2,
-                0,
-                2
-            ],
-            [
-                2,
-                0,
-                2,
-                0,
-                2
-            ],
-            [
-                2,
-                2,
-                0,
-                0,
-                2
-            ],
-            [
-                0,
-                0,
-                0,
-                0,
-                4
-            ],
-            [
-                2,
-                2,
-                2,
-                4,
-                0
-            ]
-        ],
-        "filelist": [
-            "items.py",
-            "middlewares.py",
-            "pipelines.py",
-            "selectors.py",
-            "olx.py"
-        ]
-    },
     "children": [
         {
             "children": [
@@ -75,6 +29,7 @@
                                         "type": "Python script, ASCII text executable"
                                     },
                                     "name": "items.py",
+                                    "temperature": 1,
                                     "value": 4
                                 },
                                 {
@@ -100,6 +55,7 @@
                                         "type": "Python script, UTF-8 Unicode text executable"
                                     },
                                     "name": "middlewares.py",
+                                    "temperature": 1,
                                     "value": 11
                                 },
                                 {
@@ -123,6 +79,7 @@
                                         "type": "Python script, ASCII text executable"
                                     },
                                     "name": "pipelines.py",
+                                    "temperature": 1,
                                     "value": 1
                                 },
                                 {
@@ -149,6 +106,7 @@
                                         "type": "Python script, ASCII text executable"
                                     },
                                     "name": "selectors.py",
+                                    "temperature": 2,
                                     "value": 8
                                 },
                                 {
@@ -178,6 +136,7 @@
                                                 "type": "Python script, ASCII text executable"
                                             },
                                             "name": "olx.py",
+                                            "temperature": 4,
                                             "value": 6
                                         }
                                     ],
