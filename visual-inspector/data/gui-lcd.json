@@ -3,6 +3,7 @@
         {
             "children": [
                 {
+                    "easy_path": "gui-lcd/debian/postinst",
                     "meta": {
                         "aggregate_complexity": 1,
                         "blank_lines": 1,
@@ -15,7 +16,6 @@
                         "mime": "text/x-shellscript; charset=us-ascii",
                         "name": "postinst",
                         "nested_complexity": 0,
-                        "path": "gui-lcd/debian/postinst",
                         "risks": [],
                         "risks_points": 0,
                         "size": 73,
@@ -27,6 +27,7 @@
                     "value": 1
                 },
                 {
+                    "easy_path": "gui-lcd/debian/prerm",
                     "meta": {
                         "aggregate_complexity": 2,
                         "blank_lines": 1,
@@ -39,7 +40,6 @@
                         "mime": "text/x-shellscript; charset=us-ascii",
                         "name": "prerm",
                         "nested_complexity": 0,
-                        "path": "gui-lcd/debian/prerm",
                         "risks": [],
                         "risks_points": 0,
                         "size": 235,
@@ -58,37 +58,38 @@
                 "source_files": 2,
                 "value_count": 3
             },
+            "easy_path": "gui-lcd/debian",
             "name": "debian"
         },
         {
             "children": [
                 {
+                    "easy_path": "gui-lcd/src/ApiConnection.cpp",
                     "meta": {
                         "aggregate_complexity": 60,
                         "blank_lines": 122,
                         "decision_complexity": 45,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/ApiConnection.h",
                             "gui-lcd/src/Log.h",
-                            "gui-lcd/src/TimeDefinitions.h"
+                            "gui-lcd/src/TimeDefinitions.h",
+                            "gui-lcd/src/ApiConnection.h"
                         ],
                         "is_code": true,
                         "libraries": [
-                            "bloks/BatteryState.h",
-                            "bloks/LightState.h",
-                            "bloks/MotorState.h",
                             "bloks/RemoteState.h",
+                            "QProcess",
                             "bloks/VehicleState.h",
                             "QDir",
+                            "bloks/BatteryState.h",
+                            "bloks/MotorState.h",
                             "cmath",
-                            "QProcess"
+                            "bloks/LightState.h"
                         ],
                         "loc": 759,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "ApiConnection",
                         "nested_complexity": 4,
-                        "path": "gui-lcd/src/ApiConnection.cpp",
                         "risks": [
                             "[warning] Quite many lines of code, plan on refactoring.",
                             "[info] Arguably many decisions, it is ok if it makes other files less complicated."
@@ -103,42 +104,42 @@
                     "value": 60
                 },
                 {
+                    "easy_path": "gui-lcd/src/ApiConnection.h",
                     "meta": {
                         "aggregate_complexity": 23,
                         "blank_lines": 30,
                         "decision_complexity": 0,
                         "extension": ".h",
                         "imports": [
-                            "gui-lcd/src/ButtonMultiEmit.h",
-                            "gui-lcd/src/InspectionDueWarning.h",
-                            "gui-lcd/src/LcdBattery.h",
-                            "gui-lcd/src/LcdBluetooth.h",
-                            "gui-lcd/src/LcdIcon.h",
                             "gui-lcd/src/LcdLight.h",
-                            "gui-lcd/src/LcdSpeed.h",
+                            "gui-lcd/src/LcdBattery.h",
                             "gui-lcd/src/LcdSupportLevel.h",
+                            "gui-lcd/src/TravelDisplay.h",
                             "gui-lcd/src/LcdSystemTime.h",
                             "gui-lcd/src/OemSettings.h",
-                            "gui-lcd/src/TimeIncrementer.h",
-                            "gui-lcd/src/TravelDisplay.h"
+                            "gui-lcd/src/InspectionDueWarning.h",
+                            "gui-lcd/src/ButtonMultiEmit.h",
+                            "gui-lcd/src/LcdBluetooth.h",
+                            "gui-lcd/src/LcdSpeed.h",
+                            "gui-lcd/src/LcdIcon.h",
+                            "gui-lcd/src/TimeIncrementer.h"
                         ],
                         "is_code": true,
                         "libraries": [
-                            "bloks/BluetoothServer.h",
-                            "bloks/Frontend.h",
                             "bloks/VehicleState.h",
-                            "bloks/common/Optional.h",
-                            "QObject",
-                            "QSettings",
                             "QString",
                             "QTime",
-                            "QTimer"
+                            "bloks/BluetoothServer.h",
+                            "QTimer",
+                            "QObject",
+                            "QSettings",
+                            "bloks/Frontend.h",
+                            "bloks/common/Optional.h"
                         ],
                         "loc": 142,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "ApiConnection",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/ApiConnection.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3367,
@@ -150,14 +151,15 @@
                     "value": 23
                 },
                 {
+                    "easy_path": "gui-lcd/src/BatteryAnimator.cpp",
                     "meta": {
                         "aggregate_complexity": 22,
                         "blank_lines": 16,
                         "decision_complexity": 16,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/BatteryAnimator.h",
-                            "gui-lcd/src/Log.h"
+                            "gui-lcd/src/Log.h",
+                            "gui-lcd/src/BatteryAnimator.h"
                         ],
                         "is_code": true,
                         "libraries": [],
@@ -165,7 +167,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "BatteryAnimator",
                         "nested_complexity": 4,
-                        "path": "gui-lcd/src/BatteryAnimator.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3265,
@@ -177,6 +178,7 @@
                     "value": 22
                 },
                 {
+                    "easy_path": "gui-lcd/src/BatteryAnimator.h",
                     "meta": {
                         "aggregate_complexity": 7,
                         "blank_lines": 68,
@@ -188,15 +190,14 @@
                         ],
                         "is_code": true,
                         "libraries": [
+                            "vector",
                             "QTimer",
-                            "chrono",
-                            "vector"
+                            "chrono"
                         ],
                         "loc": 109,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "BatteryAnimator",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/BatteryAnimator.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3209,
@@ -207,6 +208,7 @@
                     "value": 7
                 },
                 {
+                    "easy_path": "gui-lcd/src/BatteryBlinker.cpp",
                     "meta": {
                         "aggregate_complexity": 3,
                         "blank_lines": 8,
@@ -221,7 +223,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "BatteryBlinker",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/BatteryBlinker.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1235,
@@ -233,6 +234,7 @@
                     "value": 3
                 },
                 {
+                    "easy_path": "gui-lcd/src/BatteryBlinker.h",
                     "meta": {
                         "aggregate_complexity": 5,
                         "blank_lines": 10,
@@ -243,15 +245,14 @@
                         ],
                         "is_code": true,
                         "libraries": [
-                            "QTimer",
                             "vector",
+                            "QTimer",
                             "chrono"
                         ],
                         "loc": 34,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "BatteryBlinker",
                         "nested_complexity": 1,
-                        "path": "gui-lcd/src/BatteryBlinker.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 611,
@@ -262,6 +263,7 @@
                     "value": 5
                 },
                 {
+                    "easy_path": "gui-lcd/src/BatterySegment.cpp",
                     "meta": {
                         "aggregate_complexity": 2,
                         "blank_lines": 5,
@@ -276,7 +278,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "BatterySegment",
                         "nested_complexity": 1,
-                        "path": "gui-lcd/src/BatterySegment.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 433,
@@ -288,6 +289,7 @@
                     "value": 2
                 },
                 {
+                    "easy_path": "gui-lcd/src/BatterySegment.h",
                     "meta": {
                         "aggregate_complexity": 2,
                         "blank_lines": 5,
@@ -302,7 +304,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "BatterySegment",
                         "nested_complexity": 1,
-                        "path": "gui-lcd/src/BatterySegment.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 290,
@@ -314,6 +315,7 @@
                     "value": 2
                 },
                 {
+                    "easy_path": "gui-lcd/src/BlinkingItem.cpp",
                     "meta": {
                         "aggregate_complexity": 4,
                         "blank_lines": 4,
@@ -329,7 +331,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "BlinkingItem",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/BlinkingItem.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 535,
@@ -341,6 +342,7 @@
                     "value": 4
                 },
                 {
+                    "easy_path": "gui-lcd/src/BlinkingItem.h",
                     "meta": {
                         "aggregate_complexity": 4,
                         "blank_lines": 6,
@@ -357,7 +359,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "BlinkingItem",
                         "nested_complexity": 1,
-                        "path": "gui-lcd/src/BlinkingItem.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 415,
@@ -368,6 +369,7 @@
                     "value": 4
                 },
                 {
+                    "easy_path": "gui-lcd/src/ButtonMultiEmit.cpp",
                     "meta": {
                         "aggregate_complexity": 7,
                         "blank_lines": 4,
@@ -382,7 +384,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "ButtonMultiEmit",
                         "nested_complexity": 3,
-                        "path": "gui-lcd/src/ButtonMultiEmit.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 765,
@@ -394,6 +395,7 @@
                     "value": 7
                 },
                 {
+                    "easy_path": "gui-lcd/src/ButtonMultiEmit.h",
                     "meta": {
                         "aggregate_complexity": 4,
                         "blank_lines": 7,
@@ -402,14 +404,13 @@
                         "imports": [],
                         "is_code": true,
                         "libraries": [
-                            "QTime",
-                            "QTimer"
+                            "QTimer",
+                            "QTime"
                         ],
                         "loc": 28,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "ButtonMultiEmit",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/ButtonMultiEmit.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 433,
@@ -421,6 +422,7 @@
                     "value": 4
                 },
                 {
+                    "easy_path": "gui-lcd/src/Constants.h",
                     "meta": {
                         "aggregate_complexity": 2,
                         "blank_lines": 5,
@@ -433,7 +435,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "Constants",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/Constants.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 115,
@@ -445,14 +446,15 @@
                     "value": 2
                 },
                 {
+                    "easy_path": "gui-lcd/src/DisplayAccess.cpp",
                     "meta": {
                         "aggregate_complexity": 17,
                         "blank_lines": 17,
                         "decision_complexity": 8,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/DisplayAccess.h",
                             "gui-lcd/src/DisplayDigit.h",
+                            "gui-lcd/src/DisplayAccess.h",
                             "gui-lcd/src/DisplayObject.h"
                         ],
                         "is_code": true,
@@ -463,7 +465,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "DisplayAccess",
                         "nested_complexity": 5,
-                        "path": "gui-lcd/src/DisplayAccess.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 2917,
@@ -475,6 +476,7 @@
                     "value": 17
                 },
                 {
+                    "easy_path": "gui-lcd/src/DisplayAccess.h",
                     "meta": {
                         "aggregate_complexity": 4,
                         "blank_lines": 29,
@@ -483,14 +485,13 @@
                         "imports": [],
                         "is_code": true,
                         "libraries": [
-                            "stdint.h",
-                            "vector"
+                            "vector",
+                            "stdint.h"
                         ],
                         "loc": 216,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "DisplayAccess",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/DisplayAccess.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3431,
@@ -502,6 +503,7 @@
                     "value": 4
                 },
                 {
+                    "easy_path": "gui-lcd/src/DisplayDigit.cpp",
                     "meta": {
                         "aggregate_complexity": 5,
                         "blank_lines": 8,
@@ -518,7 +520,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "DisplayDigit",
                         "nested_complexity": 3,
-                        "path": "gui-lcd/src/DisplayDigit.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 7347,
@@ -530,6 +531,7 @@
                     "value": 5
                 },
                 {
+                    "easy_path": "gui-lcd/src/DisplayDigit.h",
                     "meta": {
                         "aggregate_complexity": 8,
                         "blank_lines": 10,
@@ -540,14 +542,13 @@
                         ],
                         "is_code": true,
                         "libraries": [
-                            "map",
-                            "vector"
+                            "vector",
+                            "map"
                         ],
                         "loc": 37,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "DisplayDigit",
                         "nested_complexity": 3,
-                        "path": "gui-lcd/src/DisplayDigit.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 966,
@@ -559,6 +560,7 @@
                     "value": 8
                 },
                 {
+                    "easy_path": "gui-lcd/src/DisplayObject.cpp",
                     "meta": {
                         "aggregate_complexity": 41,
                         "blank_lines": 40,
@@ -570,27 +572,26 @@
                         ],
                         "is_code": true,
                         "libraries": [
+                            "string.h",
+                            "fstream",
+                            "QString",
+                            "stdio.h",
+                            "linux/i2c-dev.h",
                             "commands.h",
                             "errno.h",
-                            "fcntl.h",
-                            "iostream",
-                            "linux/i2c-dev.h",
-                            "stdio.h",
-                            "stdlib.h",
-                            "string.h",
                             "sys/ioctl.h",
-                            "sys/stat.h",
-                            "sys/types.h",
                             "unistd.h",
-                            "fstream",
+                            "fcntl.h",
+                            "sys/types.h",
                             "QFile",
-                            "QString"
+                            "sys/stat.h",
+                            "stdlib.h",
+                            "iostream"
                         ],
                         "loc": 253,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "DisplayObject",
                         "nested_complexity": 4,
-                        "path": "gui-lcd/src/DisplayObject.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 6726,
@@ -602,6 +603,7 @@
                     "value": 41
                 },
                 {
+                    "easy_path": "gui-lcd/src/DisplayObject.h",
                     "meta": {
                         "aggregate_complexity": 3,
                         "blank_lines": 9,
@@ -617,7 +619,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "DisplayObject",
                         "nested_complexity": 1,
-                        "path": "gui-lcd/src/DisplayObject.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 587,
@@ -629,14 +630,15 @@
                     "value": 3
                 },
                 {
+                    "easy_path": "gui-lcd/src/DisplayTestAccess.cpp",
                     "meta": {
                         "aggregate_complexity": 14,
                         "blank_lines": 7,
                         "decision_complexity": 7,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/DisplayAccess.h",
                             "gui-lcd/src/DisplayDigit.h",
+                            "gui-lcd/src/DisplayAccess.h",
                             "gui-lcd/src/DisplayTestObject.h"
                         ],
                         "is_code": true,
@@ -645,7 +647,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "DisplayTestAccess",
                         "nested_complexity": 4,
-                        "path": "gui-lcd/src/DisplayTestAccess.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3013,
@@ -657,6 +658,7 @@
                     "value": 14
                 },
                 {
+                    "easy_path": "gui-lcd/src/DisplayTestObject.cpp",
                     "meta": {
                         "aggregate_complexity": 4,
                         "blank_lines": 7,
@@ -671,7 +673,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "DisplayTestObject",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/DisplayTestObject.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 804,
@@ -683,6 +684,7 @@
                     "value": 4
                 },
                 {
+                    "easy_path": "gui-lcd/src/DisplayTestObject.h",
                     "meta": {
                         "aggregate_complexity": 3,
                         "blank_lines": 10,
@@ -699,7 +701,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "DisplayTestObject",
                         "nested_complexity": 1,
-                        "path": "gui-lcd/src/DisplayTestObject.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 773,
@@ -711,6 +712,7 @@
                     "value": 3
                 },
                 {
+                    "easy_path": "gui-lcd/src/InspectionDueWarning.cpp",
                     "meta": {
                         "aggregate_complexity": 11,
                         "blank_lines": 8,
@@ -718,8 +720,8 @@
                         "extension": ".cpp",
                         "imports": [
                             "gui-lcd/src/InspectionDueWarning.h",
-                            "gui-lcd/src/Constants.h",
-                            "gui-lcd/src/NumberSplitter.h"
+                            "gui-lcd/src/NumberSplitter.h",
+                            "gui-lcd/src/Constants.h"
                         ],
                         "is_code": true,
                         "libraries": [],
@@ -727,7 +729,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "InspectionDueWarning",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/InspectionDueWarning.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3070,
@@ -739,6 +740,7 @@
                     "value": 11
                 },
                 {
+                    "easy_path": "gui-lcd/src/InspectionDueWarning.h",
                     "meta": {
                         "aggregate_complexity": 4,
                         "blank_lines": 9,
@@ -755,7 +757,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "InspectionDueWarning",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/InspectionDueWarning.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 563,
@@ -767,6 +768,7 @@
                     "value": 4
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdBattery.cpp",
                     "meta": {
                         "aggregate_complexity": 18,
                         "blank_lines": 49,
@@ -783,7 +785,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdBattery",
                         "nested_complexity": 4,
-                        "path": "gui-lcd/src/LcdBattery.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 7427,
@@ -795,28 +796,28 @@
                     "value": 18
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdBattery.h",
                     "meta": {
                         "aggregate_complexity": 9,
                         "blank_lines": 17,
                         "decision_complexity": 0,
                         "extension": ".h",
                         "imports": [
-                            "gui-lcd/src/BatteryAnimator.h",
                             "gui-lcd/src/BatteryBlinker.h",
                             "gui-lcd/src/BatterySegment.h",
+                            "gui-lcd/src/BatteryAnimator.h",
                             "gui-lcd/src/LcdIcon.h"
                         ],
                         "is_code": true,
                         "libraries": [
-                            "QTimer",
+                            "vector",
                             "memory",
-                            "vector"
+                            "QTimer"
                         ],
                         "loc": 73,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdBattery",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/LcdBattery.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1560,
@@ -828,6 +829,7 @@
                     "value": 9
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdBluetooth.cpp",
                     "meta": {
                         "aggregate_complexity": 4,
                         "blank_lines": 7,
@@ -842,7 +844,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdBluetooth",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/LcdBluetooth.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 483,
@@ -854,6 +855,7 @@
                     "value": 4
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdBluetooth.h",
                     "meta": {
                         "aggregate_complexity": 3,
                         "blank_lines": 6,
@@ -868,7 +870,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdBluetooth",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/LcdBluetooth.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 290,
@@ -880,6 +881,7 @@
                     "value": 3
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdDistance.cpp",
                     "meta": {
                         "aggregate_complexity": 13,
                         "blank_lines": 21,
@@ -898,7 +900,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdDistance",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/LcdDistance.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3087,
@@ -910,6 +911,7 @@
                     "value": 13
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdDistance.h",
                     "meta": {
                         "aggregate_complexity": 5,
                         "blank_lines": 13,
@@ -927,7 +929,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdDistance",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/LcdDistance.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 710,
@@ -939,6 +940,7 @@
                     "value": 5
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdIcon.cpp",
                     "meta": {
                         "aggregate_complexity": 2,
                         "blank_lines": 5,
@@ -953,7 +955,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdIcon",
                         "nested_complexity": 1,
-                        "path": "gui-lcd/src/LcdIcon.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 484,
@@ -965,6 +966,7 @@
                     "value": 2
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdIcon.h",
                     "meta": {
                         "aggregate_complexity": 2,
                         "blank_lines": 5,
@@ -979,7 +981,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdIcon",
                         "nested_complexity": 1,
-                        "path": "gui-lcd/src/LcdIcon.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 233,
@@ -990,6 +991,7 @@
                     "value": 2
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdLight.cpp",
                     "meta": {
                         "aggregate_complexity": 9,
                         "blank_lines": 13,
@@ -1004,7 +1006,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdLight",
                         "nested_complexity": 3,
-                        "path": "gui-lcd/src/LcdLight.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1191,
@@ -1016,6 +1017,7 @@
                     "value": 9
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdLight.h",
                     "meta": {
                         "aggregate_complexity": 3,
                         "blank_lines": 7,
@@ -1030,7 +1032,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdLight",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/LcdLight.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 486,
@@ -1042,14 +1043,15 @@
                     "value": 3
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdSpeed.cpp",
                     "meta": {
                         "aggregate_complexity": 11,
                         "blank_lines": 18,
                         "decision_complexity": 5,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/LcdSpeed.h",
                             "gui-lcd/src/Constants.h",
+                            "gui-lcd/src/LcdSpeed.h",
                             "gui-lcd/src/NumberSplitter.h"
                         ],
                         "is_code": true,
@@ -1060,7 +1062,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdSpeed",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/LcdSpeed.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1635,
@@ -1072,6 +1073,7 @@
                     "value": 11
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdSpeed.h",
                     "meta": {
                         "aggregate_complexity": 6,
                         "blank_lines": 12,
@@ -1083,14 +1085,13 @@
                         ],
                         "is_code": true,
                         "libraries": [
-                            "QTimer",
-                            "QObject"
+                            "QObject",
+                            "QTimer"
                         ],
                         "loc": 33,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdSpeed",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/LcdSpeed.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 586,
@@ -1102,14 +1103,15 @@
                     "value": 6
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdSupportLevel.cpp",
                     "meta": {
                         "aggregate_complexity": 16,
                         "blank_lines": 19,
                         "decision_complexity": 12,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/LcdSupportLevel.h",
-                            "gui-lcd/src/SupportLevelSegment.h"
+                            "gui-lcd/src/SupportLevelSegment.h",
+                            "gui-lcd/src/LcdSupportLevel.h"
                         ],
                         "is_code": true,
                         "libraries": [],
@@ -1117,7 +1119,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdSupportLevel",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/LcdSupportLevel.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 2167,
@@ -1129,6 +1130,7 @@
                     "value": 16
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdSupportLevel.h",
                     "meta": {
                         "aggregate_complexity": 5,
                         "blank_lines": 11,
@@ -1146,7 +1148,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdSupportLevel",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/LcdSupportLevel.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 555,
@@ -1158,33 +1159,33 @@
                     "value": 5
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdSystemTime.cpp",
                     "meta": {
                         "aggregate_complexity": 22,
                         "blank_lines": 13,
                         "decision_complexity": 7,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/LcdSystemTime.h",
-                            "gui-lcd/src/Log.h"
+                            "gui-lcd/src/Log.h",
+                            "gui-lcd/src/LcdSystemTime.h"
                         ],
                         "is_code": true,
                         "libraries": [
-                            "QDateTime",
                             "QTime",
+                            "stdio.h",
                             "cstring",
                             "linux/rtc.h",
-                            "fcntl.h",
-                            "unistd.h",
-                            "stdio.h",
                             "sys/ioctl.h",
-                            "time.h",
-                            "chrono"
+                            "QDateTime",
+                            "fcntl.h",
+                            "chrono",
+                            "unistd.h",
+                            "time.h"
                         ],
                         "loc": 104,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdSystemTime",
                         "nested_complexity": 3,
-                        "path": "gui-lcd/src/LcdSystemTime.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 2701,
@@ -1196,6 +1197,7 @@
                     "value": 22
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdSystemTime.h",
                     "meta": {
                         "aggregate_complexity": 3,
                         "blank_lines": 6,
@@ -1210,7 +1212,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdSystemTime",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/LcdSystemTime.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 311,
@@ -1221,6 +1222,7 @@
                     "value": 3
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdTime.cpp",
                     "meta": {
                         "aggregate_complexity": 9,
                         "blank_lines": 19,
@@ -1236,7 +1238,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdTime",
                         "nested_complexity": 3,
-                        "path": "gui-lcd/src/LcdTime.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 2146,
@@ -1248,6 +1249,7 @@
                     "value": 9
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdTime.h",
                     "meta": {
                         "aggregate_complexity": 5,
                         "blank_lines": 13,
@@ -1265,7 +1267,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdTime",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/LcdTime.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 930,
@@ -1277,6 +1278,7 @@
                     "value": 5
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdTripDuration.cpp",
                     "meta": {
                         "aggregate_complexity": 2,
                         "blank_lines": 5,
@@ -1291,7 +1293,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "LcdTripDuration",
                         "nested_complexity": 1,
-                        "path": "gui-lcd/src/LcdTripDuration.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 457,
@@ -1302,6 +1303,7 @@
                     "value": 2
                 },
                 {
+                    "easy_path": "gui-lcd/src/LcdTripDuration.h",
                     "meta": {
                         "aggregate_complexity": 4,
                         "blank_lines": 4,
@@ -1317,7 +1319,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "LcdTripDuration",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/LcdTripDuration.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 403,
@@ -1328,6 +1329,7 @@
                     "value": 4
                 },
                 {
+                    "easy_path": "gui-lcd/src/Log.h",
                     "meta": {
                         "aggregate_complexity": 2,
                         "blank_lines": 4,
@@ -1342,7 +1344,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "Log",
                         "nested_complexity": 0,
-                        "path": "gui-lcd/src/Log.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 111,
@@ -1354,6 +1355,7 @@
                     "value": 2
                 },
                 {
+                    "easy_path": "gui-lcd/src/NumberSplitter.cpp",
                     "meta": {
                         "aggregate_complexity": 12,
                         "blank_lines": 6,
@@ -1368,7 +1370,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "NumberSplitter",
                         "nested_complexity": 6,
-                        "path": "gui-lcd/src/NumberSplitter.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1402,
@@ -1379,6 +1380,7 @@
                     "value": 12
                 },
                 {
+                    "easy_path": "gui-lcd/src/NumberSplitter.h",
                     "meta": {
                         "aggregate_complexity": 3,
                         "blank_lines": 6,
@@ -1393,7 +1395,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "NumberSplitter",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/NumberSplitter.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 495,
@@ -1404,6 +1405,7 @@
                     "value": 3
                 },
                 {
+                    "easy_path": "gui-lcd/src/OemSettings.cpp",
                     "meta": {
                         "aggregate_complexity": 13,
                         "blank_lines": 13,
@@ -1415,15 +1417,14 @@
                         "is_code": true,
                         "libraries": [
                             "QDebug",
+                            "QJsonObject",
                             "QFile",
-                            "QJsonDocument",
-                            "QJsonObject"
+                            "QJsonDocument"
                         ],
                         "loc": 56,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "OemSettings",
                         "nested_complexity": 3,
-                        "path": "gui-lcd/src/OemSettings.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1578,
@@ -1435,6 +1436,7 @@
                     "value": 13
                 },
                 {
+                    "easy_path": "gui-lcd/src/OemSettings.h",
                     "meta": {
                         "aggregate_complexity": 4,
                         "blank_lines": 4,
@@ -1451,7 +1453,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "OemSettings",
                         "nested_complexity": 1,
-                        "path": "gui-lcd/src/OemSettings.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 275,
@@ -1463,6 +1464,7 @@
                     "value": 4
                 },
                 {
+                    "easy_path": "gui-lcd/src/SupportLevelSegment.cpp",
                     "meta": {
                         "aggregate_complexity": 2,
                         "blank_lines": 6,
@@ -1477,7 +1479,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "SupportLevelSegment",
                         "nested_complexity": 1,
-                        "path": "gui-lcd/src/SupportLevelSegment.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 643,
@@ -1489,6 +1490,7 @@
                     "value": 2
                 },
                 {
+                    "easy_path": "gui-lcd/src/SupportLevelSegment.h",
                     "meta": {
                         "aggregate_complexity": 2,
                         "blank_lines": 5,
@@ -1503,7 +1505,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "SupportLevelSegment",
                         "nested_complexity": 1,
-                        "path": "gui-lcd/src/SupportLevelSegment.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 327,
@@ -1514,6 +1515,7 @@
                     "value": 2
                 },
                 {
+                    "easy_path": "gui-lcd/src/TimeDefinitions.h",
                     "meta": {
                         "aggregate_complexity": 1,
                         "blank_lines": 15,
@@ -1526,7 +1528,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "TimeDefinitions",
                         "nested_complexity": 0,
-                        "path": "gui-lcd/src/TimeDefinitions.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 747,
@@ -1538,14 +1539,15 @@
                     "value": 1
                 },
                 {
+                    "easy_path": "gui-lcd/src/TimeIncrementer.cpp",
                     "meta": {
                         "aggregate_complexity": 4,
                         "blank_lines": 8,
                         "decision_complexity": 0,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/TimeIncrementer.h",
-                            "gui-lcd/src/TimeDefinitions.h"
+                            "gui-lcd/src/TimeDefinitions.h",
+                            "gui-lcd/src/TimeIncrementer.h"
                         ],
                         "is_code": true,
                         "libraries": [],
@@ -1553,7 +1555,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "TimeIncrementer",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/TimeIncrementer.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 972,
@@ -1565,6 +1566,7 @@
                     "value": 4
                 },
                 {
+                    "easy_path": "gui-lcd/src/TimeIncrementer.h",
                     "meta": {
                         "aggregate_complexity": 3,
                         "blank_lines": 9,
@@ -1580,7 +1582,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "TimeIncrementer",
                         "nested_complexity": 1,
-                        "path": "gui-lcd/src/TimeIncrementer.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 397,
@@ -1592,27 +1593,27 @@
                     "value": 3
                 },
                 {
+                    "easy_path": "gui-lcd/src/TravelDisplay.cpp",
                     "meta": {
                         "aggregate_complexity": 21,
                         "blank_lines": 34,
                         "decision_complexity": 11,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/TravelDisplay.h",
+                            "gui-lcd/src/DisplayAccess.h",
                             "gui-lcd/src/TimeDefinitions.h",
-                            "gui-lcd/src/DisplayAccess.h"
+                            "gui-lcd/src/TravelDisplay.h"
                         ],
                         "is_code": true,
                         "libraries": [
-                            "QSettings",
+                            "bloks/BatteryState.h",
                             "bloks/MotorState.h",
-                            "bloks/BatteryState.h"
+                            "QSettings"
                         ],
                         "loc": 220,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "TravelDisplay",
                         "nested_complexity": 4,
-                        "path": "gui-lcd/src/TravelDisplay.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 6228,
@@ -1624,14 +1625,15 @@
                     "value": 21
                 },
                 {
+                    "easy_path": "gui-lcd/src/TravelDisplay.h",
                     "meta": {
                         "aggregate_complexity": 7,
                         "blank_lines": 19,
                         "decision_complexity": 0,
                         "extension": ".h",
                         "imports": [
-                            "gui-lcd/src/LcdDistance.h",
-                            "gui-lcd/src/LcdTripDuration.h"
+                            "gui-lcd/src/LcdTripDuration.h",
+                            "gui-lcd/src/LcdDistance.h"
                         ],
                         "is_code": true,
                         "libraries": [
@@ -1643,7 +1645,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "TravelDisplay",
                         "nested_complexity": 2,
-                        "path": "gui-lcd/src/TravelDisplay.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1404,
@@ -1655,21 +1656,22 @@
                     "value": 7
                 },
                 {
+                    "easy_path": "gui-lcd/src/main.cpp",
                     "meta": {
                         "aggregate_complexity": 9,
                         "blank_lines": 9,
                         "decision_complexity": 0,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/ApiConnection.h",
                             "gui-lcd/src/Log.h",
-                            "gui-lcd/src/Log.h"
+                            "gui-lcd/src/ApiConnection.h"
                         ],
                         "is_code": true,
                         "libraries": [
-                            "bloks/common/UnixSignals.h",
                             "bloks/gui-lcd-version.h",
+                            "bloks/common/UnixSignals.h",
                             "QCommandLineParser",
+                            "bloks/common/Log.h",
                             "QCoreApplication",
                             "unistd.h"
                         ],
@@ -1677,7 +1679,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "main",
                         "nested_complexity": 1,
-                        "path": "gui-lcd/src/main.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1332,
@@ -1696,6 +1697,7 @@
                 "source_files": 57,
                 "value_count": 493
             },
+            "easy_path": "gui-lcd/src",
             "name": "src"
         },
         {
@@ -1703,6 +1705,7 @@
                 {
                     "children": [
                         {
+                            "easy_path": "gui-lcd/cmake/modules/BloksVersion.cpp.in",
                             "meta": {
                                 "aggregate_complexity": 3,
                                 "blank_lines": 10,
@@ -1715,7 +1718,6 @@
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "BloksVersion.cpp",
                                 "nested_complexity": 3,
-                                "path": "gui-lcd/cmake/modules/BloksVersion.cpp.in",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 504,
@@ -1727,6 +1729,7 @@
                             "value": 3
                         },
                         {
+                            "easy_path": "gui-lcd/cmake/modules/BloksVersion.h.in",
                             "meta": {
                                 "aggregate_complexity": 2,
                                 "blank_lines": 7,
@@ -1739,7 +1742,6 @@
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "BloksVersion.h",
                                 "nested_complexity": 2,
-                                "path": "gui-lcd/cmake/modules/BloksVersion.h.in",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 558,
@@ -1758,6 +1760,7 @@
                         "source_files": 2,
                         "value_count": 5
                     },
+                    "easy_path": "gui-lcd/cmake/modules",
                     "name": "modules"
                 }
             ],
@@ -1768,6 +1771,7 @@
                 "source_files": 2,
                 "value_count": 5
             },
+            "easy_path": "gui-lcd/cmake",
             "name": "cmake"
         }
     ],
@@ -1778,5 +1782,6 @@
         "source_files": 61,
         "value_count": 501
     },
+    "easy_path": "gui-lcd",
     "name": "gui-lcd"
 }

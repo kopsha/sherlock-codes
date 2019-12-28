@@ -5,24 +5,23 @@
                 {
                     "children": [
                         {
+                            "easy_path": "turbo-connect-ios-lib/Example/Tests/IOS-Integration-Tests.swift",
                             "meta": {
                                 "aggregate_complexity": 5,
                                 "blank_lines": 23,
                                 "decision_complexity": 0,
                                 "extension": ".swift",
-                                "imports": [
-                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                ],
+                                "imports": [],
                                 "is_code": true,
                                 "libraries": [
                                     "XCTest",
+                                    "TurboConnectLibrary",
                                     "XCTest_Gherkin"
                                 ],
                                 "loc": 96,
                                 "mime": "text/plain; charset=utf-8",
                                 "name": "IOS-Integration-Tests",
                                 "nested_complexity": 2,
-                                "path": "turbo-connect-ios-lib/Example/Tests/IOS-Integration-Tests.swift",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 3156,
@@ -34,13 +33,14 @@
                             "value": 5
                         },
                         {
+                            "easy_path": "turbo-connect-ios-lib/Example/Tests/TurboConnectTests.swift",
                             "meta": {
                                 "aggregate_complexity": 4,
                                 "blank_lines": 13,
                                 "decision_complexity": 0,
                                 "extension": ".swift",
                                 "imports": [
-                                    "turbo-connect-ios-lib/TurboConnect/Classes/TurboConnect.swift"
+                                    "turbo-connect-ios-lib/TurboConnect"
                                 ],
                                 "is_code": true,
                                 "libraries": [
@@ -50,7 +50,6 @@
                                 "mime": "text/plain; charset=utf-8",
                                 "name": "TurboConnectTests",
                                 "nested_complexity": 2,
-                                "path": "turbo-connect-ios-lib/Example/Tests/TurboConnectTests.swift",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 453,
@@ -64,6 +63,7 @@
                         {
                             "children": [
                                 {
+                                    "easy_path": "turbo-connect-ios-lib/Example/Tests/Features/TurboConnectTests.swift",
                                     "meta": {
                                         "aggregate_complexity": 5,
                                         "blank_lines": 11,
@@ -79,7 +79,6 @@
                                         "mime": "text/plain; charset=utf-8",
                                         "name": "TurboConnectTests",
                                         "nested_complexity": 2,
-                                        "path": "turbo-connect-ios-lib/Example/Tests/Features/TurboConnectTests.swift",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 580,
@@ -98,28 +97,28 @@
                                 "source_files": 1,
                                 "value_count": 5
                             },
+                            "easy_path": "turbo-connect-ios-lib/Example/Tests/Features",
                             "name": "Features"
                         },
                         {
                             "children": [
                                 {
+                                    "easy_path": "turbo-connect-ios-lib/Example/Tests/Mocks/BluetoothConnectionDelegateMock.swift",
                                     "meta": {
                                         "aggregate_complexity": 4,
                                         "blank_lines": 13,
                                         "decision_complexity": 0,
                                         "extension": ".swift",
-                                        "imports": [
-                                            "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                        ],
+                                        "imports": [],
                                         "is_code": true,
                                         "libraries": [
+                                            "TurboConnectLibrary",
                                             "UIKit"
                                         ],
                                         "loc": 22,
                                         "mime": "text/plain; charset=utf-8",
                                         "name": "BluetoothConnectionDelegateMock",
                                         "nested_complexity": 2,
-                                        "path": "turbo-connect-ios-lib/Example/Tests/Mocks/BluetoothConnectionDelegateMock.swift",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 519,
@@ -131,23 +130,22 @@
                                     "value": 4
                                 },
                                 {
+                                    "easy_path": "turbo-connect-ios-lib/Example/Tests/Mocks/BluetoothDelegateParameterDelegate.swift",
                                     "meta": {
                                         "aggregate_complexity": 4,
                                         "blank_lines": 13,
                                         "decision_complexity": 0,
                                         "extension": ".swift",
-                                        "imports": [
-                                            "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                        ],
+                                        "imports": [],
                                         "is_code": true,
                                         "libraries": [
+                                            "TurboConnectLibrary",
                                             "UIKit"
                                         ],
                                         "loc": 26,
                                         "mime": "text/plain; charset=utf-8",
                                         "name": "BluetoothDelegateParameterDelegate",
                                         "nested_complexity": 2,
-                                        "path": "turbo-connect-ios-lib/Example/Tests/Mocks/BluetoothDelegateParameterDelegate.swift",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 703,
@@ -159,23 +157,22 @@
                                     "value": 4
                                 },
                                 {
+                                    "easy_path": "turbo-connect-ios-lib/Example/Tests/Mocks/BluetoothDeviceDelegateMock.swift",
                                     "meta": {
                                         "aggregate_complexity": 4,
                                         "blank_lines": 12,
                                         "decision_complexity": 0,
                                         "extension": ".swift",
-                                        "imports": [
-                                            "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                        ],
+                                        "imports": [],
                                         "is_code": true,
                                         "libraries": [
+                                            "TurboConnectLibrary",
                                             "UIKit"
                                         ],
                                         "loc": 24,
                                         "mime": "text/plain; charset=utf-8",
                                         "name": "BluetoothDeviceDelegateMock",
                                         "nested_complexity": 2,
-                                        "path": "turbo-connect-ios-lib/Example/Tests/Mocks/BluetoothDeviceDelegateMock.swift",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 483,
@@ -187,23 +184,22 @@
                                     "value": 4
                                 },
                                 {
+                                    "easy_path": "turbo-connect-ios-lib/Example/Tests/Mocks/BluetoothScannerDelegateMock.swift",
                                     "meta": {
                                         "aggregate_complexity": 4,
                                         "blank_lines": 16,
                                         "decision_complexity": 0,
                                         "extension": ".swift",
-                                        "imports": [
-                                            "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                        ],
+                                        "imports": [],
                                         "is_code": true,
                                         "libraries": [
+                                            "TurboConnectLibrary",
                                             "UIKit"
                                         ],
                                         "loc": 42,
                                         "mime": "text/plain; charset=utf-8",
                                         "name": "BluetoothScannerDelegateMock",
                                         "nested_complexity": 2,
-                                        "path": "turbo-connect-ios-lib/Example/Tests/Mocks/BluetoothScannerDelegateMock.swift",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 973,
@@ -222,30 +218,30 @@
                                 "source_files": 4,
                                 "value_count": 16
                             },
+                            "easy_path": "turbo-connect-ios-lib/Example/Tests/Mocks",
                             "name": "Mocks"
                         },
                         {
                             "children": [
                                 {
+                                    "easy_path": "turbo-connect-ios-lib/Example/Tests/StepDefinitions/LoginSteps.swift",
                                     "meta": {
                                         "aggregate_complexity": 13,
                                         "blank_lines": 27,
                                         "decision_complexity": 5,
                                         "extension": ".swift",
-                                        "imports": [
-                                            "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                        ],
+                                        "imports": [],
                                         "is_code": true,
                                         "libraries": [
+                                            "Alamofire",
                                             "Foundation",
-                                            "XCTest_Gherkin",
-                                            "Alamofire"
+                                            "TurboConnectLibrary",
+                                            "XCTest_Gherkin"
                                         ],
                                         "loc": 97,
                                         "mime": "text/plain; charset=utf-8",
                                         "name": "LoginSteps",
                                         "nested_complexity": 4,
-                                        "path": "turbo-connect-ios-lib/Example/Tests/StepDefinitions/LoginSteps.swift",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 3350,
@@ -256,23 +252,22 @@
                                     "value": 13
                                 },
                                 {
+                                    "easy_path": "turbo-connect-ios-lib/Example/Tests/StepDefinitions/TurboConnectSteps.swift",
                                     "meta": {
                                         "aggregate_complexity": 26,
                                         "blank_lines": 59,
                                         "decision_complexity": 19,
                                         "extension": ".swift",
-                                        "imports": [
-                                            "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                        ],
+                                        "imports": [],
                                         "is_code": true,
                                         "libraries": [
+                                            "TurboConnectLibrary",
                                             "XCTest_Gherkin"
                                         ],
                                         "loc": 245,
                                         "mime": "text/plain; charset=utf-8",
                                         "name": "TurboConnectSteps",
                                         "nested_complexity": 5,
-                                        "path": "turbo-connect-ios-lib/Example/Tests/StepDefinitions/TurboConnectSteps.swift",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 8565,
@@ -291,6 +286,7 @@
                                 "source_files": 2,
                                 "value_count": 39
                             },
+                            "easy_path": "turbo-connect-ios-lib/Example/Tests/StepDefinitions",
                             "name": "StepDefinitions"
                         }
                     ],
@@ -301,6 +297,7 @@
                         "source_files": 9,
                         "value_count": 69
                     },
+                    "easy_path": "turbo-connect-ios-lib/Example/Tests",
                     "name": "Tests"
                 },
                 {
@@ -308,6 +305,7 @@
                         {
                             "children": [
                                 {
+                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/README.md",
                                     "meta": {
                                         "aggregate_complexity": 25,
                                         "blank_lines": 105,
@@ -320,7 +318,6 @@
                                         "mime": "text/x-c; charset=utf-8",
                                         "name": "README",
                                         "nested_complexity": 3,
-                                        "path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/README.md",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 15196,
@@ -336,6 +333,7 @@
                                         {
                                             "children": [
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/Background.swift",
                                                     "meta": {
                                                         "aggregate_complexity": 4,
                                                         "blank_lines": 10,
@@ -344,14 +342,13 @@
                                                         "imports": [],
                                                         "is_code": true,
                                                         "libraries": [
-                                                            "Foundation",
-                                                            "XCTest"
+                                                            "XCTest",
+                                                            "Foundation"
                                                         ],
                                                         "loc": 20,
                                                         "mime": "text/plain; charset=us-ascii",
                                                         "name": "Background",
                                                         "nested_complexity": 2,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/Background.swift",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 325,
@@ -363,6 +360,7 @@
                                                     "value": 4
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/ClassHelperMethods.swift",
                                                     "meta": {
                                                         "aggregate_complexity": 9,
                                                         "blank_lines": 39,
@@ -377,7 +375,6 @@
                                                         "mime": "text/plain; charset=utf-8",
                                                         "name": "ClassHelperMethods",
                                                         "nested_complexity": 3,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/ClassHelperMethods.swift",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 2258,
@@ -389,6 +386,7 @@
                                                     "value": 9
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/Example.swift",
                                                     "meta": {
                                                         "aggregate_complexity": 10,
                                                         "blank_lines": 67,
@@ -397,14 +395,13 @@
                                                         "imports": [],
                                                         "is_code": true,
                                                         "libraries": [
-                                                            "Foundation",
-                                                            "XCTest"
+                                                            "XCTest",
+                                                            "Foundation"
                                                         ],
                                                         "loc": 148,
                                                         "mime": "text/plain; charset=utf-8",
                                                         "name": "Example",
                                                         "nested_complexity": 5,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/Example.swift",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 5001,
@@ -416,6 +413,7 @@
                                                     "value": 10
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/LevenshteinDistance.swift",
                                                     "meta": {
                                                         "aggregate_complexity": 7,
                                                         "blank_lines": 25,
@@ -428,7 +426,6 @@
                                                         "mime": "text/plain; charset=us-ascii",
                                                         "name": "LevenshteinDistance",
                                                         "nested_complexity": 4,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/LevenshteinDistance.swift",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 2162,
@@ -440,6 +437,7 @@
                                                     "value": 7
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/MatchedStringRepresentable.swift",
                                                     "meta": {
                                                         "aggregate_complexity": 10,
                                                         "blank_lines": 22,
@@ -454,7 +452,6 @@
                                                         "mime": "text/plain; charset=utf-8",
                                                         "name": "MatchedStringRepresentable",
                                                         "nested_complexity": 3,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/MatchedStringRepresentable.swift",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 2110,
@@ -466,6 +463,7 @@
                                                     "value": 10
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/PageObject.swift",
                                                     "meta": {
                                                         "aggregate_complexity": 7,
                                                         "blank_lines": 16,
@@ -480,7 +478,6 @@
                                                         "mime": "text/plain; charset=us-ascii",
                                                         "name": "PageObject",
                                                         "nested_complexity": 4,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/PageObject.swift",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 1648,
@@ -492,6 +489,7 @@
                                                     "value": 7
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/Step.swift",
                                                     "meta": {
                                                         "aggregate_complexity": 14,
                                                         "blank_lines": 45,
@@ -506,7 +504,6 @@
                                                         "mime": "text/plain; charset=utf-8",
                                                         "name": "Step",
                                                         "nested_complexity": 5,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/Step.swift",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 5180,
@@ -518,6 +515,7 @@
                                                     "value": 14
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/StepDefiner.swift",
                                                     "meta": {
                                                         "aggregate_complexity": 7,
                                                         "blank_lines": 131,
@@ -532,7 +530,6 @@
                                                         "mime": "text/plain; charset=utf-8",
                                                         "name": "StepDefiner",
                                                         "nested_complexity": 4,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/StepDefiner.swift",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 8341,
@@ -544,6 +541,7 @@
                                                     "value": 7
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/StringGherkinExtension.swift",
                                                     "meta": {
                                                         "aggregate_complexity": 11,
                                                         "blank_lines": 34,
@@ -558,7 +556,6 @@
                                                         "mime": "text/plain; charset=utf-8",
                                                         "name": "StringGherkinExtension",
                                                         "nested_complexity": 4,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/StringGherkinExtension.swift",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 3191,
@@ -570,6 +567,7 @@
                                                     "value": 11
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/UnusedStepsTracker.h",
                                                     "meta": {
                                                         "aggregate_complexity": 2,
                                                         "blank_lines": 14,
@@ -584,7 +582,6 @@
                                                         "mime": "text/x-objective-c; charset=us-ascii",
                                                         "name": "UnusedStepsTracker",
                                                         "nested_complexity": 0,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/UnusedStepsTracker.h",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 562,
@@ -596,6 +593,7 @@
                                                     "value": 2
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/UnusedStepsTracker.m",
                                                     "meta": {
                                                         "aggregate_complexity": 5,
                                                         "blank_lines": 20,
@@ -608,7 +606,6 @@
                                                         "mime": "text/x-objective-c; charset=us-ascii",
                                                         "name": "UnusedStepsTracker",
                                                         "nested_complexity": 3,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/UnusedStepsTracker.m",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 1706,
@@ -620,6 +617,7 @@
                                                     "value": 5
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/XCTestCase+Gherkin.swift",
                                                     "meta": {
                                                         "aggregate_complexity": 30,
                                                         "blank_lines": 130,
@@ -628,15 +626,14 @@
                                                         "imports": [],
                                                         "is_code": true,
                                                         "libraries": [
-                                                            "Foundation",
                                                             "XCTest",
-                                                            "WebKit"
+                                                            "WebKit",
+                                                            "Foundation"
                                                         ],
                                                         "loc": 346,
                                                         "mime": "text/plain; charset=utf-8",
                                                         "name": "XCTestCase+Gherkin",
                                                         "nested_complexity": 5,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core/XCTestCase+Gherkin.swift",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 13355,
@@ -655,6 +652,7 @@
                                                 "source_files": 12,
                                                 "value_count": 116
                                             },
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod/Core",
                                             "name": "Core"
                                         }
                                     ],
@@ -665,6 +663,7 @@
                                         "source_files": 12,
                                         "value_count": 116
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin/Pod",
                                     "name": "Pod"
                                 }
                             ],
@@ -675,6 +674,7 @@
                                 "source_files": 13,
                                 "value_count": 141
                             },
+                            "easy_path": "turbo-connect-ios-lib/Example/Pods/XCTest-Gherkin",
                             "name": "XCTest-Gherkin"
                         },
                         {
@@ -682,6 +682,7 @@
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Pods-TurboConnect_Example/Pods-TurboConnect_Example-dummy.m",
                                             "meta": {
                                                 "aggregate_complexity": 1,
                                                 "blank_lines": 1,
@@ -694,7 +695,6 @@
                                                 "mime": "text/x-objective-c; charset=us-ascii",
                                                 "name": "Pods-TurboConnect_Example-dummy",
                                                 "nested_complexity": 0,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Pods-TurboConnect_Example/Pods-TurboConnect_Example-dummy.m",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 154,
@@ -705,6 +705,7 @@
                                             "value": 1
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Pods-TurboConnect_Example/Pods-TurboConnect_Example-frameworks.sh",
                                             "meta": {
                                                 "aggregate_complexity": 29,
                                                 "blank_lines": 26,
@@ -717,7 +718,6 @@
                                                 "mime": "text/x-shellscript; charset=us-ascii",
                                                 "name": "Pods-TurboConnect_Example-frameworks",
                                                 "nested_complexity": 2,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Pods-TurboConnect_Example/Pods-TurboConnect_Example-frameworks.sh",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 8155,
@@ -728,6 +728,7 @@
                                             "value": 29
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Pods-TurboConnect_Example/Pods-TurboConnect_Example-umbrella.h",
                                             "meta": {
                                                 "aggregate_complexity": 3,
                                                 "blank_lines": 4,
@@ -742,7 +743,6 @@
                                                 "mime": "text/x-objective-c; charset=us-ascii",
                                                 "name": "Pods-TurboConnect_Example-umbrella",
                                                 "nested_complexity": 0,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Pods-TurboConnect_Example/Pods-TurboConnect_Example-umbrella.h",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 342,
@@ -760,11 +760,13 @@
                                         "source_files": 3,
                                         "value_count": 33
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Pods-TurboConnect_Example",
                                     "name": "Pods-TurboConnect_Example"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Pods-TurboConnect_Tests/Pods-TurboConnect_Tests-dummy.m",
                                             "meta": {
                                                 "aggregate_complexity": 1,
                                                 "blank_lines": 1,
@@ -777,7 +779,6 @@
                                                 "mime": "text/x-objective-c; charset=us-ascii",
                                                 "name": "Pods-TurboConnect_Tests-dummy",
                                                 "nested_complexity": 0,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Pods-TurboConnect_Tests/Pods-TurboConnect_Tests-dummy.m",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 150,
@@ -788,6 +789,7 @@
                                             "value": 1
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Pods-TurboConnect_Tests/Pods-TurboConnect_Tests-frameworks.sh",
                                             "meta": {
                                                 "aggregate_complexity": 29,
                                                 "blank_lines": 26,
@@ -800,7 +802,6 @@
                                                 "mime": "text/x-shellscript; charset=us-ascii",
                                                 "name": "Pods-TurboConnect_Tests-frameworks",
                                                 "nested_complexity": 2,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Pods-TurboConnect_Tests/Pods-TurboConnect_Tests-frameworks.sh",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 7897,
@@ -811,6 +812,7 @@
                                             "value": 29
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Pods-TurboConnect_Tests/Pods-TurboConnect_Tests-umbrella.h",
                                             "meta": {
                                                 "aggregate_complexity": 3,
                                                 "blank_lines": 4,
@@ -825,7 +827,6 @@
                                                 "mime": "text/x-objective-c; charset=us-ascii",
                                                 "name": "Pods-TurboConnect_Tests-umbrella",
                                                 "nested_complexity": 0,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Pods-TurboConnect_Tests/Pods-TurboConnect_Tests-umbrella.h",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 338,
@@ -843,11 +844,13 @@
                                         "source_files": 3,
                                         "value_count": 33
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Pods-TurboConnect_Tests",
                                     "name": "Pods-TurboConnect_Tests"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/TurboConnect/TurboConnect-dummy.m",
                                             "meta": {
                                                 "aggregate_complexity": 1,
                                                 "blank_lines": 1,
@@ -860,7 +863,6 @@
                                                 "mime": "text/x-objective-c; charset=us-ascii",
                                                 "name": "TurboConnect-dummy",
                                                 "nested_complexity": 0,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/TurboConnect/TurboConnect-dummy.m",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 128,
@@ -871,6 +873,7 @@
                                             "value": 1
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/TurboConnect/TurboConnect-prefix.pch",
                                             "meta": {
                                                 "aggregate_complexity": 2,
                                                 "blank_lines": 2,
@@ -883,7 +886,6 @@
                                                 "mime": "text/x-objective-c; charset=us-ascii",
                                                 "name": "TurboConnect-prefix",
                                                 "nested_complexity": 0,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/TurboConnect/TurboConnect-prefix.pch",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 195,
@@ -894,14 +896,15 @@
                                             "value": 2
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/TurboConnect/TurboConnect-umbrella.h",
                                             "meta": {
                                                 "aggregate_complexity": 5,
                                                 "blank_lines": 4,
                                                 "decision_complexity": 1,
                                                 "extension": ".h",
                                                 "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary-Swift.h",
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
+                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/TurboConnectLibrary.h",
+                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary-Swift.h"
                                                 ],
                                                 "is_code": true,
                                                 "libraries": [
@@ -911,7 +914,6 @@
                                                 "mime": "text/x-objective-c; charset=us-ascii",
                                                 "name": "TurboConnect-umbrella",
                                                 "nested_complexity": 0,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/TurboConnect/TurboConnect-umbrella.h",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 386,
@@ -929,11 +931,13 @@
                                         "source_files": 3,
                                         "value_count": 8
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/TurboConnect",
                                     "name": "TurboConnect"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/XCTest-Gherkin/XCTest-Gherkin-dummy.m",
                                             "meta": {
                                                 "aggregate_complexity": 1,
                                                 "blank_lines": 1,
@@ -946,7 +950,6 @@
                                                 "mime": "text/x-objective-c; charset=us-ascii",
                                                 "name": "XCTest-Gherkin-dummy",
                                                 "nested_complexity": 0,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/XCTest-Gherkin/XCTest-Gherkin-dummy.m",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 132,
@@ -957,6 +960,7 @@
                                             "value": 1
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/XCTest-Gherkin/XCTest-Gherkin-prefix.pch",
                                             "meta": {
                                                 "aggregate_complexity": 2,
                                                 "blank_lines": 2,
@@ -969,7 +973,6 @@
                                                 "mime": "text/x-objective-c; charset=us-ascii",
                                                 "name": "XCTest-Gherkin-prefix",
                                                 "nested_complexity": 0,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/XCTest-Gherkin/XCTest-Gherkin-prefix.pch",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 195,
@@ -980,6 +983,7 @@
                                             "value": 2
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/XCTest-Gherkin/XCTest-Gherkin-umbrella.h",
                                             "meta": {
                                                 "aggregate_complexity": 6,
                                                 "blank_lines": 4,
@@ -998,7 +1002,6 @@
                                                 "mime": "text/x-objective-c; charset=us-ascii",
                                                 "name": "XCTest-Gherkin-umbrella",
                                                 "nested_complexity": 0,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/XCTest-Gherkin/XCTest-Gherkin-umbrella.h",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 411,
@@ -1016,11 +1019,13 @@
                                         "source_files": 3,
                                         "value_count": 9
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/XCTest-Gherkin",
                                     "name": "XCTest-Gherkin"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Zip/Zip-dummy.m",
                                             "meta": {
                                                 "aggregate_complexity": 1,
                                                 "blank_lines": 1,
@@ -1033,7 +1038,6 @@
                                                 "mime": "text/x-objective-c; charset=us-ascii",
                                                 "name": "Zip-dummy",
                                                 "nested_complexity": 0,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Zip/Zip-dummy.m",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 110,
@@ -1044,6 +1048,7 @@
                                             "value": 1
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Zip/Zip-prefix.pch",
                                             "meta": {
                                                 "aggregate_complexity": 2,
                                                 "blank_lines": 2,
@@ -1056,7 +1061,6 @@
                                                 "mime": "text/x-objective-c; charset=us-ascii",
                                                 "name": "Zip-prefix",
                                                 "nested_complexity": 0,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Zip/Zip-prefix.pch",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 195,
@@ -1067,23 +1071,22 @@
                                             "value": 2
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Zip/Zip-umbrella.h",
                                             "meta": {
                                                 "aggregate_complexity": 4,
                                                 "blank_lines": 4,
                                                 "decision_complexity": 1,
                                                 "extension": ".h",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/Zip.swift"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "UIKit/UIKit.h"
+                                                    "UIKit/UIKit.h",
+                                                    "Zip.h"
                                                 ],
                                                 "loc": 18,
                                                 "mime": "text/x-objective-c; charset=us-ascii",
                                                 "name": "Zip-umbrella",
                                                 "nested_complexity": 0,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Zip/Zip-umbrella.h",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 314,
@@ -1101,6 +1104,7 @@
                                         "source_files": 3,
                                         "value_count": 7
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files/Zip",
                                     "name": "Zip"
                                 }
                             ],
@@ -1111,6 +1115,7 @@
                                 "source_files": 15,
                                 "value_count": 90
                             },
+                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Target Support Files",
                             "name": "Target Support Files"
                         },
                         {
@@ -1118,6 +1123,7 @@
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/QuickZip.swift",
                                             "meta": {
                                                 "aggregate_complexity": 10,
                                                 "blank_lines": 68,
@@ -1132,7 +1138,6 @@
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "QuickZip",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/QuickZip.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 3483,
@@ -1144,22 +1149,23 @@
                                             "value": 10
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/Zip.swift",
                                             "meta": {
                                                 "aggregate_complexity": 52,
                                                 "blank_lines": 156,
                                                 "decision_complexity": 44,
                                                 "extension": ".swift",
-                                                "imports": [],
+                                                "imports": [
+                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip"
+                                                ],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "Foundation",
-                                                    "minizip"
+                                                    "Foundation"
                                                 ],
                                                 "loc": 414,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "Zip",
                                                 "nested_complexity": 6,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/Zip.swift",
                                                 "risks": [
                                                     "[info] Arguably many decisions, it is ok if it makes other files less complicated."
                                                 ],
@@ -1173,6 +1179,7 @@
                                             "value": 52
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/ZipUtilities.swift",
                                             "meta": {
                                                 "aggregate_complexity": 13,
                                                 "blank_lines": 58,
@@ -1187,7 +1194,6 @@
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "ZipUtilities",
                                                 "nested_complexity": 6,
-                                                "path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/ZipUtilities.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 3249,
@@ -1201,6 +1207,7 @@
                                         {
                                             "children": [
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/crypt.h",
                                                     "meta": {
                                                         "aggregate_complexity": 7,
                                                         "blank_lines": 60,
@@ -1213,7 +1220,6 @@
                                                         "mime": "text/x-c; charset=us-ascii",
                                                         "name": "crypt",
                                                         "nested_complexity": 2,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/crypt.h",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 4830,
@@ -1225,6 +1231,7 @@
                                                     "value": 7
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/ioapi.c",
                                                     "meta": {
                                                         "aggregate_complexity": 42,
                                                         "blank_lines": 53,
@@ -1235,14 +1242,13 @@
                                                         ],
                                                         "is_code": true,
                                                         "libraries": [
-                                                            "stdlib.h",
-                                                            "string.h"
+                                                            "string.h",
+                                                            "stdlib.h"
                                                         ],
                                                         "loc": 370,
                                                         "mime": "text/x-c; charset=us-ascii",
                                                         "name": "ioapi",
                                                         "nested_complexity": 2,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/ioapi.c",
                                                         "risks": [
                                                             "[info] Arguably many lines of code, this may be ok for now."
                                                         ],
@@ -1256,6 +1262,7 @@
                                                     "value": 42
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/ioapi.h",
                                                     "meta": {
                                                         "aggregate_complexity": 11,
                                                         "blank_lines": 40,
@@ -1272,7 +1279,6 @@
                                                         "mime": "text/x-c; charset=us-ascii",
                                                         "name": "ioapi",
                                                         "nested_complexity": 2,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/ioapi.h",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 6926,
@@ -1284,6 +1290,7 @@
                                                     "value": 11
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/unzip.c",
                                                     "meta": {
                                                         "aggregate_complexity": 306,
                                                         "blank_lines": 398,
@@ -1295,15 +1302,14 @@
                                                         "is_code": true,
                                                         "libraries": [
                                                             "stdio.h",
-                                                            "stdlib.h",
                                                             "string.h",
+                                                            "stdlib.h",
                                                             "zlib.h"
                                                         ],
                                                         "loc": 1948,
                                                         "mime": "text/x-c; charset=us-ascii",
                                                         "name": "unzip",
                                                         "nested_complexity": 5,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/unzip.c",
                                                         "risks": [
                                                             "[error] Way too many lines of code, refactoring is required.",
                                                             "[error] Way too many decisions, full code coverage is required."
@@ -1318,6 +1324,7 @@
                                                     "value": 306
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/unzip.h",
                                                     "meta": {
                                                         "aggregate_complexity": 6,
                                                         "blank_lines": 173,
@@ -1328,14 +1335,13 @@
                                                         ],
                                                         "is_code": true,
                                                         "libraries": [
-                                                            "zlib.h",
-                                                            "bzlib.h"
+                                                            "bzlib.h",
+                                                            "zlib.h"
                                                         ],
                                                         "loc": 320,
                                                         "mime": "text/x-c; charset=us-ascii",
                                                         "name": "unzip",
                                                         "nested_complexity": 2,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/unzip.h",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 14445,
@@ -1347,6 +1353,7 @@
                                                     "value": 6
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/zip.c",
                                                     "meta": {
                                                         "aggregate_complexity": 304,
                                                         "blank_lines": 389,
@@ -1357,17 +1364,16 @@
                                                         ],
                                                         "is_code": true,
                                                         "libraries": [
-                                                            "stdio.h",
-                                                            "stdlib.h",
                                                             "string.h",
+                                                            "zlib.h",
+                                                            "stdlib.h",
                                                             "time.h",
-                                                            "zlib.h"
+                                                            "stdio.h"
                                                         ],
                                                         "loc": 2021,
                                                         "mime": "text/x-c; charset=us-ascii",
                                                         "name": "zip",
                                                         "nested_complexity": 5,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/zip.c",
                                                         "risks": [
                                                             "[error] Way too many lines of code, refactoring is required.",
                                                             "[error] Way too many decisions, full code coverage is required."
@@ -1382,6 +1388,7 @@
                                                     "value": 304
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/zip.h",
                                                     "meta": {
                                                         "aggregate_complexity": 4,
                                                         "blank_lines": 99,
@@ -1394,7 +1401,6 @@
                                                         "mime": "text/x-c; charset=us-ascii",
                                                         "name": "zip",
                                                         "nested_complexity": 2,
-                                                        "path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/zip.h",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 9155,
@@ -1413,6 +1419,7 @@
                                                 "source_files": 7,
                                                 "value_count": 680
                                             },
+                                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip",
                                             "name": "minizip"
                                         }
                                     ],
@@ -1423,6 +1430,7 @@
                                         "source_files": 10,
                                         "value_count": 755
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/Example/Pods/Zip/Zip",
                                     "name": "Zip"
                                 }
                             ],
@@ -1433,6 +1441,7 @@
                                 "source_files": 10,
                                 "value_count": 755
                             },
+                            "easy_path": "turbo-connect-ios-lib/Example/Pods/Zip",
                             "name": "Zip"
                         }
                     ],
@@ -1443,6 +1452,7 @@
                         "source_files": 38,
                         "value_count": 986
                     },
+                    "easy_path": "turbo-connect-ios-lib/Example/Pods",
                     "name": "Pods"
                 },
                 {
@@ -1452,6 +1462,7 @@
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Controller/AppDelegate.swift",
                                             "meta": {
                                                 "aggregate_complexity": 5,
                                                 "blank_lines": 16,
@@ -1466,7 +1477,6 @@
                                                 "mime": "text/plain; charset=us-ascii",
                                                 "name": "AppDelegate",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Controller/AppDelegate.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 1075,
@@ -1478,23 +1488,22 @@
                                             "value": 5
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Controller/BikeDetailsViewController.swift",
                                             "meta": {
                                                 "aggregate_complexity": 19,
                                                 "blank_lines": 44,
                                                 "decision_complexity": 13,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
+                                                    "TurboConnectLibrary",
                                                     "UIKit"
                                                 ],
                                                 "loc": 184,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "BikeDetailsViewController",
                                                 "nested_complexity": 4,
-                                                "path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Controller/BikeDetailsViewController.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 6338,
@@ -1506,23 +1515,22 @@
                                             "value": 19
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Controller/DiagnosePropertiesViewController.swift",
                                             "meta": {
                                                 "aggregate_complexity": 11,
                                                 "blank_lines": 31,
                                                 "decision_complexity": 5,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
+                                                    "TurboConnectLibrary",
                                                     "UIKit"
                                                 ],
                                                 "loc": 96,
                                                 "mime": "text/x-c; charset=utf-8",
                                                 "name": "DiagnosePropertiesViewController",
                                                 "nested_complexity": 4,
-                                                "path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Controller/DiagnosePropertiesViewController.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 3166,
@@ -1534,23 +1542,22 @@
                                             "value": 11
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Controller/DiscoverBikesViewController.swift",
                                             "meta": {
                                                 "aggregate_complexity": 16,
                                                 "blank_lines": 44,
                                                 "decision_complexity": 10,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
+                                                    "TurboConnectLibrary",
                                                     "UIKit"
                                                 ],
                                                 "loc": 207,
                                                 "mime": "text/plain; charset=us-ascii",
                                                 "name": "DiscoverBikesViewController",
                                                 "nested_complexity": 4,
-                                                "path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Controller/DiscoverBikesViewController.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 6403,
@@ -1562,24 +1569,24 @@
                                             "value": 16
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Controller/KnownBikesViewController.swift",
                                             "meta": {
                                                 "aggregate_complexity": 27,
                                                 "blank_lines": 67,
                                                 "decision_complexity": 20,
                                                 "extension": ".swift",
                                                 "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h",
-                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/Zip.swift"
+                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip"
                                                 ],
                                                 "is_code": true,
                                                 "libraries": [
+                                                    "TurboConnectLibrary",
                                                     "UIKit"
                                                 ],
                                                 "loc": 280,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "KnownBikesViewController",
                                                 "nested_complexity": 4,
-                                                "path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Controller/KnownBikesViewController.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 10726,
@@ -1591,6 +1598,7 @@
                                             "value": 27
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Controller/SignInViewController.swift",
                                             "meta": {
                                                 "aggregate_complexity": 7,
                                                 "blank_lines": 16,
@@ -1605,7 +1613,6 @@
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "SignInViewController",
                                                 "nested_complexity": 5,
-                                                "path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Controller/SignInViewController.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 1733,
@@ -1624,28 +1631,28 @@
                                         "source_files": 6,
                                         "value_count": 85
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Controller",
                                     "name": "Controller"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Login/TurboConnectLogin.swift",
                                             "meta": {
                                                 "aggregate_complexity": 5,
                                                 "blank_lines": 11,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
+                                                    "TurboConnectLibrary",
                                                     "UIKit"
                                                 ],
                                                 "loc": 23,
                                                 "mime": "text/x-c++; charset=utf-8",
                                                 "name": "TurboConnectLogin",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Login/TurboConnectLogin.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 612,
@@ -1664,11 +1671,13 @@
                                         "source_files": 1,
                                         "value_count": 5
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Login",
                                     "name": "Login"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Model/UserPersistentData.swift",
                                             "meta": {
                                                 "aggregate_complexity": 3,
                                                 "blank_lines": 14,
@@ -1683,7 +1692,6 @@
                                                 "mime": "text/x-c; charset=utf-8",
                                                 "name": "UserPersistentData",
                                                 "nested_complexity": 2,
-                                                "path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Model/UserPersistentData.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 689,
@@ -1702,6 +1710,7 @@
                                         "source_files": 1,
                                         "value_count": 3
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards/Model",
                                     "name": "Model"
                                 }
                             ],
@@ -1712,6 +1721,7 @@
                                 "source_files": 8,
                                 "value_count": 93
                             },
+                            "easy_path": "turbo-connect-ios-lib/Example/TurboConnect/ViewControllersAndStoryboards",
                             "name": "ViewControllersAndStoryboards"
                         }
                     ],
@@ -1722,6 +1732,7 @@
                         "source_files": 8,
                         "value_count": 93
                     },
+                    "easy_path": "turbo-connect-ios-lib/Example/TurboConnect",
                     "name": "TurboConnect"
                 }
             ],
@@ -1732,6 +1743,7 @@
                 "source_files": 55,
                 "value_count": 1148
             },
+            "easy_path": "turbo-connect-ios-lib/Example",
             "name": "Example"
         },
         {
@@ -1739,6 +1751,7 @@
                 {
                     "children": [
                         {
+                            "easy_path": "turbo-connect-ios-lib/TurboConnect/Classes/TurboConnect.swift",
                             "meta": {
                                 "aggregate_complexity": 1,
                                 "blank_lines": 7,
@@ -1751,7 +1764,6 @@
                                 "mime": "text/plain; charset=us-ascii",
                                 "name": "TurboConnect",
                                 "nested_complexity": 0,
-                                "path": "turbo-connect-ios-lib/TurboConnect/Classes/TurboConnect.swift",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 96,
@@ -1770,6 +1782,7 @@
                         "source_files": 1,
                         "value_count": 1
                     },
+                    "easy_path": "turbo-connect-ios-lib/TurboConnect/Classes",
                     "name": "Classes"
                 }
             ],
@@ -1780,6 +1793,7 @@
                 "source_files": 1,
                 "value_count": 1
             },
+            "easy_path": "turbo-connect-ios-lib/TurboConnect",
             "name": "TurboConnect"
         },
         {
@@ -1787,6 +1801,7 @@
                 {
                     "children": [
                         {
+                            "easy_path": "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary-Swift.h",
                             "meta": {
                                 "aggregate_complexity": 51,
                                 "blank_lines": 88,
@@ -1796,15 +1811,14 @@
                                 "is_code": true,
                                 "libraries": [
                                     "Foundation/Foundation.h",
-                                    "stdint.h",
                                     "stddef.h",
+                                    "stdint.h",
                                     "stdbool.h"
                                 ],
                                 "loc": 401,
                                 "mime": "text/x-c; charset=utf-8",
                                 "name": "TurboConnectLibrary-Swift",
                                 "nested_complexity": 1,
-                                "path": "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary-Swift.h",
                                 "risks": [
                                     "[info] Arguably many lines of code, this may be ok for now.",
                                     "[info] Arguably many decisions, it is ok if it makes other files less complicated."
@@ -1819,6 +1833,7 @@
                             "value": 51
                         },
                         {
+                            "easy_path": "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h",
                             "meta": {
                                 "aggregate_complexity": 3,
                                 "blank_lines": 16,
@@ -1834,7 +1849,6 @@
                                 "mime": "text/x-objective-c; charset=utf-8",
                                 "name": "TurboConnectLibrary",
                                 "nested_complexity": 0,
-                                "path": "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 585,
@@ -1853,6 +1867,7 @@
                         "source_files": 2,
                         "value_count": 54
                     },
+                    "easy_path": "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers",
                     "name": "Headers"
                 }
             ],
@@ -1863,6 +1878,7 @@
                 "source_files": 2,
                 "value_count": 54
             },
+            "easy_path": "turbo-connect-ios-lib/TurboConnectLibrary.framework",
             "name": "TurboConnectLibrary.framework"
         },
         {
@@ -1872,6 +1888,7 @@
                         {
                             "children": [
                                 {
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Private-TurboConnect.h",
                                     "meta": {
                                         "aggregate_complexity": 2,
                                         "blank_lines": 10,
@@ -1886,7 +1903,6 @@
                                         "mime": "text/x-objective-c; charset=utf-8",
                                         "name": "Private-TurboConnect",
                                         "nested_complexity": 0,
-                                        "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Private-TurboConnect.h",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 239,
@@ -1898,6 +1914,7 @@
                                     "value": 2
                                 },
                                 {
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/TurboConnect.swift",
                                     "meta": {
                                         "aggregate_complexity": 14,
                                         "blank_lines": 134,
@@ -1906,14 +1923,13 @@
                                         "imports": [],
                                         "is_code": true,
                                         "libraries": [
-                                            "UIKit",
-                                            "TurboConnectPrivate"
+                                            "TurboConnectPrivate",
+                                            "UIKit"
                                         ],
                                         "loc": 292,
                                         "mime": "text/plain; charset=utf-8",
                                         "name": "TurboConnect",
                                         "nested_complexity": 4,
-                                        "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/TurboConnect.swift",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 9722,
@@ -1925,6 +1941,7 @@
                                     "value": 14
                                 },
                                 {
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/TurboConnectLibrary.h",
                                     "meta": {
                                         "aggregate_complexity": 3,
                                         "blank_lines": 16,
@@ -1940,7 +1957,6 @@
                                         "mime": "text/x-objective-c; charset=utf-8",
                                         "name": "TurboConnectLibrary",
                                         "nested_complexity": 0,
-                                        "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/TurboConnectLibrary.h",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 585,
@@ -1954,6 +1970,7 @@
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Bike/Bike.swift",
                                             "meta": {
                                                 "aggregate_complexity": 7,
                                                 "blank_lines": 34,
@@ -1968,7 +1985,6 @@
                                                 "mime": "text/plain; charset=us-ascii",
                                                 "name": "Bike",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Bike/Bike.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 2090,
@@ -1987,11 +2003,13 @@
                                         "source_files": 1,
                                         "value_count": 7
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Bike",
                                     "name": "Bike"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/BluetoothStack/BikeCommunication.swift",
                                             "meta": {
                                                 "aggregate_complexity": 9,
                                                 "blank_lines": 21,
@@ -2006,7 +2024,6 @@
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "BikeCommunication",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/BluetoothStack/BikeCommunication.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 2146,
@@ -2018,6 +2035,7 @@
                                             "value": 9
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/BluetoothStack/BikeIdentification.swift",
                                             "meta": {
                                                 "aggregate_complexity": 20,
                                                 "blank_lines": 33,
@@ -2026,15 +2044,14 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "UIKit",
                                                     "CoreBluetooth",
-                                                    "TurboConnectPrivate"
+                                                    "TurboConnectPrivate",
+                                                    "UIKit"
                                                 ],
                                                 "loc": 133,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "BikeIdentification",
                                                 "nested_complexity": 4,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/BluetoothStack/BikeIdentification.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 4687,
@@ -2046,6 +2063,7 @@
                                             "value": 20
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/BluetoothStack/BluetoothManager.swift",
                                             "meta": {
                                                 "aggregate_complexity": 28,
                                                 "blank_lines": 63,
@@ -2054,15 +2072,14 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "UIKit",
                                                     "CoreBluetooth",
-                                                    "TurboConnectPrivate"
+                                                    "TurboConnectPrivate",
+                                                    "UIKit"
                                                 ],
                                                 "loc": 305,
                                                 "mime": "text/plain; charset=us-ascii",
                                                 "name": "BluetoothManager",
                                                 "nested_complexity": 4,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/BluetoothStack/BluetoothManager.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 11342,
@@ -2074,6 +2091,7 @@
                                             "value": 28
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/BluetoothStack/DiscoveredBikesDatasource.swift",
                                             "meta": {
                                                 "aggregate_complexity": 18,
                                                 "blank_lines": 26,
@@ -2082,14 +2100,13 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "UIKit",
-                                                    "CoreBluetooth"
+                                                    "CoreBluetooth",
+                                                    "UIKit"
                                                 ],
                                                 "loc": 108,
                                                 "mime": "text/x-c; charset=us-ascii",
                                                 "name": "DiscoveredBikesDatasource",
                                                 "nested_complexity": 5,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/BluetoothStack/DiscoveredBikesDatasource.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 3258,
@@ -2101,6 +2118,7 @@
                                             "value": 18
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/BluetoothStack/ServicesDiscovery.swift",
                                             "meta": {
                                                 "aggregate_complexity": 23,
                                                 "blank_lines": 32,
@@ -2109,15 +2127,14 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "UIKit",
                                                     "CoreBluetooth",
-                                                    "TurboConnectPrivate"
+                                                    "TurboConnectPrivate",
+                                                    "UIKit"
                                                 ],
                                                 "loc": 131,
                                                 "mime": "text/x-c++; charset=utf-8",
                                                 "name": "ServicesDiscovery",
                                                 "nested_complexity": 4,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/BluetoothStack/ServicesDiscovery.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 4648,
@@ -2136,11 +2153,13 @@
                                         "source_files": 5,
                                         "value_count": 98
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/BluetoothStack",
                                     "name": "BluetoothStack"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/CoreManager.h",
                                             "meta": {
                                                 "aggregate_complexity": 3,
                                                 "blank_lines": 26,
@@ -2156,7 +2175,6 @@
                                                 "mime": "text/x-objective-c; charset=us-ascii",
                                                 "name": "CoreManager",
                                                 "nested_complexity": 1,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/CoreManager.h",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 1166,
@@ -2168,27 +2186,27 @@
                                             "value": 3
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/CoreManager.mm",
                                             "meta": {
                                                 "aggregate_complexity": 22,
                                                 "blank_lines": 50,
                                                 "decision_complexity": 13,
                                                 "extension": ".mm",
                                                 "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/CoreManager.h",
+                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/NSString+Core.h",
                                                     "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers/NSData+Core.h",
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary-Swift.h",
-                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/NSString+Core.h"
+                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/CoreManager.h"
                                                 ],
                                                 "is_code": true,
                                                 "libraries": [
                                                     "turbo-connect-core.h",
+                                                    "TurboConnectLibrary/TurboConnectLibrary-Swift.h",
                                                     "identification_sequence.h"
                                                 ],
                                                 "loc": 187,
                                                 "mime": "text/x-objective-c; charset=us-ascii",
                                                 "name": "CoreManager",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/CoreManager.mm",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 5438,
@@ -2200,6 +2218,7 @@
                                             "value": 22
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/NSString+Core.h",
                                             "meta": {
                                                 "aggregate_complexity": 3,
                                                 "blank_lines": 12,
@@ -2208,14 +2227,13 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "Foundation/Foundation.h",
-                                                    "turbo-connect-core.h"
+                                                    "turbo-connect-core.h",
+                                                    "Foundation/Foundation.h"
                                                 ],
                                                 "loc": 19,
                                                 "mime": "text/x-objective-c; charset=utf-8",
                                                 "name": "NSString+Core",
                                                 "nested_complexity": 0,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/NSString+Core.h",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 348,
@@ -2227,6 +2245,7 @@
                                             "value": 3
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/NSString+Core.m",
                                             "meta": {
                                                 "aggregate_complexity": 1,
                                                 "blank_lines": 10,
@@ -2239,7 +2258,6 @@
                                                 "mime": "text/x-objective-c; charset=utf-8",
                                                 "name": "NSString+Core",
                                                 "nested_complexity": 1,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/NSString+Core.m",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 360,
@@ -2258,11 +2276,13 @@
                                         "source_files": 4,
                                         "value_count": 29
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core",
                                     "name": "Core"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers/Helpers.swift",
                                             "meta": {
                                                 "aggregate_complexity": 5,
                                                 "blank_lines": 12,
@@ -2277,7 +2297,6 @@
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "Helpers",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers/Helpers.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 533,
@@ -2289,6 +2308,7 @@
                                             "value": 5
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers/NSData+Core.h",
                                             "meta": {
                                                 "aggregate_complexity": 3,
                                                 "blank_lines": 12,
@@ -2304,7 +2324,6 @@
                                                 "mime": "text/x-objective-c; charset=utf-8",
                                                 "name": "NSData+Core",
                                                 "nested_complexity": 0,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers/NSData+Core.h",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 334,
@@ -2315,6 +2334,7 @@
                                             "value": 3
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers/NSData+Core.m",
                                             "meta": {
                                                 "aggregate_complexity": 3,
                                                 "blank_lines": 15,
@@ -2327,7 +2347,6 @@
                                                 "mime": "text/x-objective-c; charset=utf-8",
                                                 "name": "NSData+Core",
                                                 "nested_complexity": 2,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers/NSData+Core.m",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 603,
@@ -2345,11 +2364,13 @@
                                         "source_files": 3,
                                         "value_count": 11
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers",
                                     "name": "Helpers"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Known Bikes/KnownBikes.swift",
                                             "meta": {
                                                 "aggregate_complexity": 24,
                                                 "blank_lines": 30,
@@ -2364,7 +2385,6 @@
                                                 "mime": "text/x-c++; charset=utf-8",
                                                 "name": "KnownBikes",
                                                 "nested_complexity": 6,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Known Bikes/KnownBikes.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 4084,
@@ -2382,11 +2402,13 @@
                                         "source_files": 1,
                                         "value_count": 24
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Known Bikes",
                                     "name": "Known Bikes"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Logger/Logger.swift",
                                             "meta": {
                                                 "aggregate_complexity": 15,
                                                 "blank_lines": 33,
@@ -2401,7 +2423,6 @@
                                                 "mime": "text/x-c++; charset=utf-8",
                                                 "name": "Logger",
                                                 "nested_complexity": 4,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Logger/Logger.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 3985,
@@ -2420,11 +2441,13 @@
                                         "source_files": 1,
                                         "value_count": 15
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Logger",
                                     "name": "Logger"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Networking/EndpointProvider.swift",
                                             "meta": {
                                                 "aggregate_complexity": 3,
                                                 "blank_lines": 22,
@@ -2439,7 +2462,6 @@
                                                 "mime": "text/x-c++; charset=utf-8",
                                                 "name": "EndpointProvider",
                                                 "nested_complexity": 2,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Networking/EndpointProvider.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 1505,
@@ -2451,6 +2473,7 @@
                                             "value": 3
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Networking/NetworkingError.swift",
                                             "meta": {
                                                 "aggregate_complexity": 3,
                                                 "blank_lines": 11,
@@ -2465,7 +2488,6 @@
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "NetworkingError",
                                                 "nested_complexity": 2,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Networking/NetworkingError.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 333,
@@ -2477,6 +2499,7 @@
                                             "value": 3
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Networking/NetworkingManager.swift",
                                             "meta": {
                                                 "aggregate_complexity": 5,
                                                 "blank_lines": 20,
@@ -2485,14 +2508,13 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "UIKit",
-                                                    "Alamofire"
+                                                    "Alamofire",
+                                                    "UIKit"
                                                 ],
                                                 "loc": 73,
                                                 "mime": "text/x-c++; charset=utf-8",
                                                 "name": "NetworkingManager",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Networking/NetworkingManager.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 2377,
@@ -2504,6 +2526,7 @@
                                             "value": 5
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Networking/NetworkingWorker.swift",
                                             "meta": {
                                                 "aggregate_complexity": 7,
                                                 "blank_lines": 11,
@@ -2512,14 +2535,13 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "UIKit",
-                                                    "Alamofire"
+                                                    "Alamofire",
+                                                    "UIKit"
                                                 ],
                                                 "loc": 37,
                                                 "mime": "text/x-c++; charset=utf-8",
                                                 "name": "NetworkingWorker",
                                                 "nested_complexity": 4,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Networking/NetworkingWorker.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 1551,
@@ -2531,6 +2553,7 @@
                                             "value": 7
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Networking/TokenStorage.swift",
                                             "meta": {
                                                 "aggregate_complexity": 3,
                                                 "blank_lines": 15,
@@ -2545,7 +2568,6 @@
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "TokenStorage",
                                                 "nested_complexity": 2,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Networking/TokenStorage.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 715,
@@ -2564,11 +2586,13 @@
                                         "source_files": 5,
                                         "value_count": 21
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Networking",
                                     "name": "Networking"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/ObservableParameter.swift",
                                             "meta": {
                                                 "aggregate_complexity": 9,
                                                 "blank_lines": 29,
@@ -2583,7 +2607,6 @@
                                                 "mime": "text/x-c++; charset=utf-8",
                                                 "name": "ObservableParameter",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/ObservableParameter.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 2849,
@@ -2595,6 +2618,7 @@
                                             "value": 9
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/Parameter.swift",
                                             "meta": {
                                                 "aggregate_complexity": 7,
                                                 "blank_lines": 13,
@@ -2609,7 +2633,6 @@
                                                 "mime": "text/plain; charset=us-ascii",
                                                 "name": "Parameter",
                                                 "nested_complexity": 4,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/Parameter.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 1162,
@@ -2621,6 +2644,7 @@
                                             "value": 7
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/ParameterInfo.swift",
                                             "meta": {
                                                 "aggregate_complexity": 3,
                                                 "blank_lines": 13,
@@ -2633,7 +2657,6 @@
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "ParameterInfo",
                                                 "nested_complexity": 2,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/ParameterInfo.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 1685,
@@ -2645,6 +2668,7 @@
                                             "value": 3
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/Parameters.swift",
                                             "meta": {
                                                 "aggregate_complexity": 1,
                                                 "blank_lines": 5,
@@ -2657,7 +2681,6 @@
                                                 "mime": "text/plain; charset=us-ascii",
                                                 "name": "Parameters",
                                                 "nested_complexity": 1,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/Parameters.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 8441,
@@ -2671,6 +2694,7 @@
                                         {
                                             "children": [
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/Implementations/Operations.swift",
                                                     "meta": {
                                                         "aggregate_complexity": 4,
                                                         "blank_lines": 45,
@@ -2685,7 +2709,6 @@
                                                         "mime": "text/plain; charset=utf-8",
                                                         "name": "Operations",
                                                         "nested_complexity": 3,
-                                                        "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/Implementations/Operations.swift",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 4240,
@@ -2704,11 +2727,13 @@
                                                 "source_files": 1,
                                                 "value_count": 4
                                             },
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/Implementations",
                                             "name": "Implementations"
                                         },
                                         {
                                             "children": [
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/Operation Declarations/NotifyParameter.swift",
                                                     "meta": {
                                                         "aggregate_complexity": 6,
                                                         "blank_lines": 15,
@@ -2723,7 +2748,6 @@
                                                         "mime": "text/plain; charset=utf-8",
                                                         "name": "NotifyParameter",
                                                         "nested_complexity": 3,
-                                                        "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/Operation Declarations/NotifyParameter.swift",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 1148,
@@ -2734,6 +2758,7 @@
                                                     "value": 6
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/Operation Declarations/ReadParameter.swift",
                                                     "meta": {
                                                         "aggregate_complexity": 7,
                                                         "blank_lines": 15,
@@ -2748,7 +2773,6 @@
                                                         "mime": "text/plain; charset=utf-8",
                                                         "name": "ReadParameter",
                                                         "nested_complexity": 3,
-                                                        "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/Operation Declarations/ReadParameter.swift",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 1220,
@@ -2759,6 +2783,7 @@
                                                     "value": 7
                                                 },
                                                 {
+                                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/Operation Declarations/WriteParameter.swift",
                                                     "meta": {
                                                         "aggregate_complexity": 3,
                                                         "blank_lines": 13,
@@ -2773,7 +2798,6 @@
                                                         "mime": "text/plain; charset=utf-8",
                                                         "name": "WriteParameter",
                                                         "nested_complexity": 2,
-                                                        "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/Operation Declarations/WriteParameter.swift",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 533,
@@ -2791,6 +2815,7 @@
                                                 "source_files": 3,
                                                 "value_count": 16
                                             },
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter/Operation Declarations",
                                             "name": "Operation Declarations"
                                         }
                                     ],
@@ -2801,6 +2826,7 @@
                                         "source_files": 8,
                                         "value_count": 40
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Parameter",
                                     "name": "Parameter"
                                 },
                                 {
@@ -2810,6 +2836,7 @@
                                                 {
                                                     "children": [
                                                         {
+                                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Frameworks/Alamofire.framework/Headers/Alamofire-Swift.h",
                                                             "meta": {
                                                                 "aggregate_complexity": 51,
                                                                 "blank_lines": 39,
@@ -2819,15 +2846,14 @@
                                                                 "is_code": true,
                                                                 "libraries": [
                                                                     "Foundation/Foundation.h",
-                                                                    "stdint.h",
                                                                     "stddef.h",
+                                                                    "stdint.h",
                                                                     "stdbool.h"
                                                                 ],
                                                                 "loc": 267,
                                                                 "mime": "text/x-c; charset=us-ascii",
                                                                 "name": "Alamofire-Swift",
                                                                 "nested_complexity": 0,
-                                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Frameworks/Alamofire.framework/Headers/Alamofire-Swift.h",
                                                                 "risks": [
                                                                     "[info] Arguably many decisions, it is ok if it makes other files less complicated."
                                                                 ],
@@ -2848,6 +2874,7 @@
                                                         "source_files": 1,
                                                         "value_count": 51
                                                     },
+                                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Frameworks/Alamofire.framework/Headers",
                                                     "name": "Headers"
                                                 }
                                             ],
@@ -2858,6 +2885,7 @@
                                                 "source_files": 1,
                                                 "value_count": 51
                                             },
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Frameworks/Alamofire.framework",
                                             "name": "Alamofire.framework"
                                         }
                                     ],
@@ -2868,6 +2896,7 @@
                                         "source_files": 1,
                                         "value_count": 51
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Frameworks",
                                     "name": "Frameworks"
                                 }
                             ],
@@ -2878,6 +2907,7 @@
                                 "source_files": 32,
                                 "value_count": 315
                             },
+                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework",
                             "name": "TurboConnectFramework"
                         },
                         {
@@ -2885,23 +2915,22 @@
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/Bike Tests/BikeTests.swift",
                                             "meta": {
                                                 "aggregate_complexity": 4,
                                                 "blank_lines": 67,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "XCTest"
+                                                    "XCTest",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 126,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "BikeTests",
                                                 "nested_complexity": 2,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/Bike Tests/BikeTests.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 3414,
@@ -2919,28 +2948,28 @@
                                         "source_files": 1,
                                         "value_count": 4
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/Bike Tests",
                                     "name": "Bike Tests"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/BluetoothStack Tests/AvailableParametersTests.swift",
                                             "meta": {
                                                 "aggregate_complexity": 4,
                                                 "blank_lines": 32,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "XCTest"
+                                                    "XCTest",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 57,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "AvailableParametersTests",
                                                 "nested_complexity": 2,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/BluetoothStack Tests/AvailableParametersTests.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 2271,
@@ -2951,23 +2980,22 @@
                                             "value": 4
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/BluetoothStack Tests/BikeCommunicationTests.swift",
                                             "meta": {
                                                 "aggregate_complexity": 12,
                                                 "blank_lines": 77,
                                                 "decision_complexity": 7,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "XCTest"
+                                                    "XCTest",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 233,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "BikeCommunicationTests",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/BluetoothStack Tests/BikeCommunicationTests.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 8978,
@@ -2978,23 +3006,22 @@
                                             "value": 12
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/BluetoothStack Tests/BikeIdentificationTests.swift",
                                             "meta": {
                                                 "aggregate_complexity": 5,
                                                 "blank_lines": 94,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "XCTest"
+                                                    "XCTest",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 224,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "BikeIdentificationTests",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/BluetoothStack Tests/BikeIdentificationTests.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 8731,
@@ -3005,24 +3032,23 @@
                                             "value": 5
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/BluetoothStack Tests/BluetoothManagerTests.swift",
                                             "meta": {
                                                 "aggregate_complexity": 7,
                                                 "blank_lines": 257,
                                                 "decision_complexity": 1,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
                                                     "XCTest",
-                                                    "CoreBluetooth"
+                                                    "CoreBluetooth",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 569,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "BluetoothManagerTests",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/BluetoothStack Tests/BluetoothManagerTests.swift",
                                                 "risks": [
                                                     "[info] Arguably many lines of code, this may be ok for now."
                                                 ],
@@ -3035,24 +3061,23 @@
                                             "value": 7
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/BluetoothStack Tests/CoreBluetoothTestHelpers.swift",
                                             "meta": {
                                                 "aggregate_complexity": 12,
                                                 "blank_lines": 71,
                                                 "decision_complexity": 6,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
                                                     "CoreBluetooth",
+                                                    "TurboConnectLibrary",
                                                     "TurboConnectPrivate"
                                                 ],
                                                 "loc": 313,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "CoreBluetoothTestHelpers",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/BluetoothStack Tests/CoreBluetoothTestHelpers.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 8979,
@@ -3063,23 +3088,22 @@
                                             "value": 12
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/BluetoothStack Tests/DiscoveredBikesDatasourceTests.swift",
                                             "meta": {
                                                 "aggregate_complexity": 6,
                                                 "blank_lines": 71,
                                                 "decision_complexity": 1,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "XCTest"
+                                                    "XCTest",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 161,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "DiscoveredBikesDatasourceTests",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/BluetoothStack Tests/DiscoveredBikesDatasourceTests.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 5907,
@@ -3090,23 +3114,22 @@
                                             "value": 6
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/BluetoothStack Tests/ServicesDiscoveryTests.swift",
                                             "meta": {
                                                 "aggregate_complexity": 10,
                                                 "blank_lines": 72,
                                                 "decision_complexity": 5,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "XCTest"
+                                                    "XCTest",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 181,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "ServicesDiscoveryTests",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/BluetoothStack Tests/ServicesDiscoveryTests.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 6604,
@@ -3124,28 +3147,28 @@
                                         "source_files": 7,
                                         "value_count": 56
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/BluetoothStack Tests",
                                     "name": "BluetoothStack Tests"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/KnownBikes Tests/KnownBikesTests.swift",
                                             "meta": {
                                                 "aggregate_complexity": 8,
                                                 "blank_lines": 103,
                                                 "decision_complexity": 3,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "XCTest"
+                                                    "XCTest",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 241,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "KnownBikesTests",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/KnownBikes Tests/KnownBikesTests.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 7107,
@@ -3163,28 +3186,28 @@
                                         "source_files": 1,
                                         "value_count": 8
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/KnownBikes Tests",
                                     "name": "KnownBikes Tests"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/Logger tests/LoggerTests.swift",
                                             "meta": {
                                                 "aggregate_complexity": 4,
                                                 "blank_lines": 66,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "XCTest"
+                                                    "XCTest",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 155,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "LoggerTests",
                                                 "nested_complexity": 2,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/Logger tests/LoggerTests.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 4353,
@@ -3202,28 +3225,28 @@
                                         "source_files": 1,
                                         "value_count": 4
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/Logger tests",
                                     "name": "Logger tests"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/Networking Tests/NetworkingManagerMock.swift",
                                             "meta": {
                                                 "aggregate_complexity": 4,
                                                 "blank_lines": 12,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
+                                                    "TurboConnectLibrary",
                                                     "UIKit"
                                                 ],
                                                 "loc": 24,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "NetworkingManagerMock",
                                                 "nested_complexity": 2,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/Networking Tests/NetworkingManagerMock.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 665,
@@ -3234,24 +3257,23 @@
                                             "value": 4
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/Networking Tests/NetworkingManagerTests.swift",
                                             "meta": {
                                                 "aggregate_complexity": 10,
                                                 "blank_lines": 35,
                                                 "decision_complexity": 4,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
                                                     "XCTest",
-                                                    "Alamofire"
+                                                    "Alamofire",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 117,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "NetworkingManagerTests",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/Networking Tests/NetworkingManagerTests.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 3767,
@@ -3269,28 +3291,28 @@
                                         "source_files": 2,
                                         "value_count": 14
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/Networking Tests",
                                     "name": "Networking Tests"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/ParameterTests/ParameterHelpers.swift",
                                             "meta": {
                                                 "aggregate_complexity": 14,
                                                 "blank_lines": 46,
                                                 "decision_complexity": 8,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "XCTest"
+                                                    "XCTest",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 171,
                                                 "mime": "text/x-c++; charset=utf-8",
                                                 "name": "ParameterHelpers",
                                                 "nested_complexity": 4,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/ParameterTests/ParameterHelpers.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 7955,
@@ -3302,23 +3324,22 @@
                                             "value": 14
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/ParameterTests/ReadNotifyTests.swift",
                                             "meta": {
                                                 "aggregate_complexity": 4,
                                                 "blank_lines": 15,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "XCTest"
+                                                    "XCTest",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 37,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "ReadNotifyTests",
                                                 "nested_complexity": 2,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/ParameterTests/ReadNotifyTests.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 971,
@@ -3330,23 +3351,22 @@
                                             "value": 4
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/ParameterTests/ReadNotifyWriteTests.swift",
                                             "meta": {
                                                 "aggregate_complexity": 5,
                                                 "blank_lines": 31,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "XCTest"
+                                                    "XCTest",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 65,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "ReadNotifyWriteTests",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/ParameterTests/ReadNotifyWriteTests.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 1657,
@@ -3358,23 +3378,22 @@
                                             "value": 5
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/ParameterTests/ReadParametersTests.swift",
                                             "meta": {
                                                 "aggregate_complexity": 5,
                                                 "blank_lines": 19,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "XCTest"
+                                                    "XCTest",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 41,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "ReadParametersTests",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/ParameterTests/ReadParametersTests.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 1111,
@@ -3386,23 +3405,22 @@
                                             "value": 5
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/ParameterTests/ReadWriteTests.swift",
                                             "meta": {
                                                 "aggregate_complexity": 5,
                                                 "blank_lines": 18,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "XCTest"
+                                                    "XCTest",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 40,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "ReadWriteTests",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/ParameterTests/ReadWriteTests.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 1119,
@@ -3414,23 +3432,22 @@
                                             "value": 5
                                         },
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/ParameterTests/SerializerTests.swift",
                                             "meta": {
                                                 "aggregate_complexity": 4,
                                                 "blank_lines": 34,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "XCTest"
+                                                    "XCTest",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 66,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "SerializerTests",
                                                 "nested_complexity": 2,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/ParameterTests/SerializerTests.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 1487,
@@ -3449,28 +3466,28 @@
                                         "source_files": 6,
                                         "value_count": 37
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/ParameterTests",
                                     "name": "ParameterTests"
                                 },
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/TurboConnect Tests/TurboConnectTests.swift",
                                             "meta": {
                                                 "aggregate_complexity": 5,
                                                 "blank_lines": 191,
                                                 "decision_complexity": 0,
                                                 "extension": ".swift",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h"
-                                                ],
+                                                "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "XCTest"
+                                                    "XCTest",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 472,
                                                 "mime": "text/plain; charset=utf-8",
                                                 "name": "TurboConnectTests",
                                                 "nested_complexity": 3,
-                                                "path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/TurboConnect Tests/TurboConnectTests.swift",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 13742,
@@ -3488,6 +3505,7 @@
                                         "source_files": 1,
                                         "value_count": 5
                                     },
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests/TurboConnect Tests",
                                     "name": "TurboConnect Tests"
                                 }
                             ],
@@ -3498,6 +3516,7 @@
                                 "source_files": 19,
                                 "value_count": 128
                             },
+                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFrameworkTests",
                             "name": "TurboConnectFrameworkTests"
                         }
                     ],
@@ -3508,6 +3527,7 @@
                         "source_files": 51,
                         "value_count": 443
                     },
+                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework",
                     "name": "TurboConnectFramework"
                 }
             ],
@@ -3518,6 +3538,7 @@
                 "source_files": 51,
                 "value_count": 443
             },
+            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework",
             "name": "TurboConnectFramework"
         }
     ],
@@ -3528,5 +3549,6 @@
         "source_files": 109,
         "value_count": 1646
     },
+    "easy_path": "turbo-connect-ios-lib",
     "name": "turbo-connect-ios-lib"
 }

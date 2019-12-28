@@ -1,6 +1,7 @@
 {
     "children": [
         {
+            "easy_path": "entr/Makefile.bsd",
             "meta": {
                 "aggregate_complexity": 1,
                 "blank_lines": 39,
@@ -13,7 +14,6 @@
                 "mime": "text/x-makefile; charset=us-ascii",
                 "name": "Makefile",
                 "nested_complexity": 1,
-                "path": "entr/Makefile.bsd",
                 "risks": [],
                 "risks_points": 0,
                 "size": 1287,
@@ -25,6 +25,7 @@
             "value": 1
         },
         {
+            "easy_path": "entr/configure",
             "meta": {
                 "aggregate_complexity": 1,
                 "blank_lines": 9,
@@ -37,7 +38,6 @@
                 "mime": "text/x-shellscript; charset=us-ascii",
                 "name": "configure",
                 "nested_complexity": 1,
-                "path": "entr/configure",
                 "risks": [],
                 "risks_points": 0,
                 "size": 507,
@@ -49,6 +49,7 @@
             "value": 1
         },
         {
+            "easy_path": "entr/data.h",
             "meta": {
                 "aggregate_complexity": 2,
                 "blank_lines": 22,
@@ -63,7 +64,6 @@
                 "mime": "text/x-c; charset=us-ascii",
                 "name": "data",
                 "nested_complexity": 1,
-                "path": "entr/data.h",
                 "risks": [],
                 "risks_points": 0,
                 "size": 971,
@@ -75,41 +75,41 @@
             "value": 2
         },
         {
+            "easy_path": "entr/entr.c",
             "meta": {
                 "aggregate_complexity": 94,
                 "blank_lines": 139,
                 "decision_complexity": 70,
                 "extension": ".c",
                 "imports": [
-                    "entr/missing/sys/event.h",
-                    "entr/missing/compat.h",
                     "entr/data.h"
                 ],
                 "is_code": true,
                 "libraries": [
-                    "sys/param.h",
+                    "errno.h",
+                    "stdio.h",
                     "sys/resource.h",
+                    "sys/param.h",
+                    "libgen.h",
+                    "signal.h",
+                    "stdlib.h",
+                    "unistd.h",
+                    "paths.h",
+                    "time.h",
+                    "limits.h",
+                    "fcntl.h",
                     "sys/wait.h",
+                    "sys/event.h",
+                    "err.h",
                     "sys/stat.h",
                     "dirent.h",
-                    "err.h",
-                    "errno.h",
-                    "fcntl.h",
-                    "libgen.h",
-                    "limits.h",
-                    "paths.h",
-                    "signal.h",
-                    "stdio.h",
-                    "stdlib.h",
-                    "string.h",
-                    "time.h",
-                    "unistd.h"
+                    "missing/compat.h",
+                    "string.h"
                 ],
                 "loc": 516,
                 "mime": "text/x-c; charset=us-ascii",
                 "name": "entr",
                 "nested_complexity": 4,
-                "path": "entr/entr.c",
                 "risks": [
                     "[info] Arguably many lines of code, this may be ok for now.",
                     "[warning] Quite many decisions, consider adding more unit tests and review the entire file."
@@ -124,6 +124,7 @@
             "value": 94
         },
         {
+            "easy_path": "entr/entr_spec.c",
             "meta": {
                 "aggregate_complexity": 10,
                 "blank_lines": 238,
@@ -138,7 +139,6 @@
                 "mime": "text/x-c; charset=us-ascii",
                 "name": "entr_spec",
                 "nested_complexity": 2,
-                "path": "entr/entr_spec.c",
                 "risks": [
                     "[warning] Quite many lines of code, plan on refactoring."
                 ],
@@ -152,6 +152,7 @@
             "value": 10
         },
         {
+            "easy_path": "entr/system_test.sh",
             "meta": {
                 "aggregate_complexity": 4,
                 "blank_lines": 263,
@@ -164,7 +165,6 @@
                 "mime": "text/x-shellscript; charset=us-ascii",
                 "name": "system_test",
                 "nested_complexity": 2,
-                "path": "entr/system_test.sh",
                 "risks": [],
                 "risks_points": 0,
                 "size": 8300,
@@ -178,6 +178,7 @@
         {
             "children": [
                 {
+                    "easy_path": "entr/missing/compat.h",
                     "meta": {
                         "aggregate_complexity": 7,
                         "blank_lines": 6,
@@ -186,14 +187,13 @@
                         "imports": [],
                         "is_code": true,
                         "libraries": [
-                            "sys/types.h",
-                            "stdio.h"
+                            "stdio.h",
+                            "sys/types.h"
                         ],
                         "loc": 20,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "compat",
                         "nested_complexity": 0,
-                        "path": "entr/missing/compat.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 346,
@@ -205,6 +205,7 @@
                     "value": 7
                 },
                 {
+                    "easy_path": "entr/missing/fmemopen.c",
                     "meta": {
                         "aggregate_complexity": 25,
                         "blank_lines": 54,
@@ -213,17 +214,16 @@
                         "imports": [],
                         "is_code": true,
                         "libraries": [
-                            "errno.h",
-                            "fcntl.h",
-                            "stdio.h",
                             "stdlib.h",
+                            "errno.h",
+                            "stdio.h",
+                            "fcntl.h",
                             "string.h"
                         ],
                         "loc": 187,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "fmemopen",
                         "nested_complexity": 3,
-                        "path": "entr/missing/fmemopen.c",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3695,
@@ -235,34 +235,34 @@
                     "value": 25
                 },
                 {
+                    "easy_path": "entr/missing/kqueue_inotify.c",
                     "meta": {
                         "aggregate_complexity": 37,
                         "blank_lines": 51,
                         "decision_complexity": 20,
                         "extension": ".c",
                         "imports": [
-                            "entr/missing/sys/event.h",
-                            "entr/missing/compat.h",
-                            "entr/data.h"
+                            "entr/missing/compat.h"
                         ],
                         "is_code": true,
                         "libraries": [
-                            "sys/inotify.h",
-                            "sys/stat.h",
-                            "sys/types.h",
+                            "sys/event.h",
+                            "time.h",
                             "errno.h",
+                            "sys/stat.h",
                             "limits.h",
-                            "poll.h",
                             "stdio.h",
                             "string.h",
-                            "time.h",
-                            "unistd.h"
+                            "../data.h",
+                            "unistd.h",
+                            "poll.h",
+                            "sys/inotify.h",
+                            "sys/types.h"
                         ],
                         "loc": 160,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "kqueue_inotify",
                         "nested_complexity": 4,
-                        "path": "entr/missing/kqueue_inotify.c",
                         "risks": [],
                         "risks_points": 0,
                         "size": 4023,
@@ -274,6 +274,7 @@
                     "value": 37
                 },
                 {
+                    "easy_path": "entr/missing/strlcpy.c",
                     "meta": {
                         "aggregate_complexity": 11,
                         "blank_lines": 30,
@@ -282,14 +283,13 @@
                         "imports": [],
                         "is_code": true,
                         "libraries": [
-                            "sys/types.h",
-                            "string.h"
+                            "string.h",
+                            "sys/types.h"
                         ],
                         "loc": 52,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "strlcpy",
                         "nested_complexity": 3,
-                        "path": "entr/missing/strlcpy.c",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1561,
@@ -303,6 +303,7 @@
                 {
                     "children": [
                         {
+                            "easy_path": "entr/missing/sys/event.h",
                             "meta": {
                                 "aggregate_complexity": 4,
                                 "blank_lines": 42,
@@ -311,14 +312,13 @@
                                 "imports": [],
                                 "is_code": true,
                                 "libraries": [
-                                    "sys/types.h",
-                                    "sys/time.h"
+                                    "sys/time.h",
+                                    "sys/types.h"
                                 ],
                                 "loc": 78,
                                 "mime": "text/x-c; charset=us-ascii",
                                 "name": "event",
                                 "nested_complexity": 1,
-                                "path": "entr/missing/sys/event.h",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 2949,
@@ -337,6 +337,7 @@
                         "source_files": 1,
                         "value_count": 4
                     },
+                    "easy_path": "entr/missing/sys",
                     "name": "sys"
                 }
             ],
@@ -347,6 +348,7 @@
                 "source_files": 5,
                 "value_count": 84
             },
+            "easy_path": "entr/missing",
             "name": "missing"
         }
     ],
@@ -357,5 +359,6 @@
         "source_files": 11,
         "value_count": 196
     },
+    "easy_path": "entr",
     "name": "entr"
 }

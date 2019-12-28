@@ -1,6 +1,7 @@
 {
     "children": [
         {
+            "easy_path": "gui/plugin_import.cpp",
             "meta": {
                 "aggregate_complexity": 2,
                 "blank_lines": 4,
@@ -15,7 +16,6 @@
                 "mime": "text/x-c; charset=us-ascii",
                 "name": "plugin_import",
                 "nested_complexity": 0,
-                "path": "gui/plugin_import.cpp",
                 "risks": [],
                 "risks_points": 0,
                 "size": 735,
@@ -27,6 +27,7 @@
             "value": 2
         },
         {
+            "easy_path": "gui/qml_plugin_import.cpp",
             "meta": {
                 "aggregate_complexity": 2,
                 "blank_lines": 3,
@@ -41,7 +42,6 @@
                 "mime": "text/x-c; charset=us-ascii",
                 "name": "qml_plugin_import",
                 "nested_complexity": 0,
-                "path": "gui/qml_plugin_import.cpp",
                 "risks": [],
                 "risks_points": 0,
                 "size": 652,
@@ -55,6 +55,7 @@
         {
             "children": [
                 {
+                    "easy_path": "gui/debian/postinst",
                     "meta": {
                         "aggregate_complexity": 1,
                         "blank_lines": 1,
@@ -67,7 +68,6 @@
                         "mime": "text/x-shellscript; charset=us-ascii",
                         "name": "postinst",
                         "nested_complexity": 0,
-                        "path": "gui/debian/postinst",
                         "risks": [],
                         "risks_points": 0,
                         "size": 69,
@@ -79,6 +79,7 @@
                     "value": 1
                 },
                 {
+                    "easy_path": "gui/debian/prerm",
                     "meta": {
                         "aggregate_complexity": 2,
                         "blank_lines": 1,
@@ -91,7 +92,6 @@
                         "mime": "text/x-shellscript; charset=us-ascii",
                         "name": "prerm",
                         "nested_complexity": 0,
-                        "path": "gui/debian/prerm",
                         "risks": [],
                         "risks_points": 0,
                         "size": 231,
@@ -110,48 +110,49 @@
                 "source_files": 2,
                 "value_count": 3
             },
+            "easy_path": "gui/debian",
             "name": "debian"
         },
         {
             "children": [
                 {
+                    "easy_path": "gui/src/Controller.cpp",
                     "meta": {
                         "aggregate_complexity": 66,
                         "blank_lines": 87,
                         "decision_complexity": 39,
                         "extension": ".cpp",
                         "imports": [
+                            "gui/src/Log.h",
                             "gui/src/Controller.h",
-                            "gui/src/QueryableWrapper.h",
-                            "gui/src/Log.h"
+                            "gui/src/QueryableWrapper.h"
                         ],
                         "is_code": true,
                         "libraries": [
-                            "QFont",
                             "QMetaProperty",
                             "QQmlContext",
-                            "QSettings",
                             "QKeyEvent",
-                            "QFileInfo",
                             "QQmlComponent",
                             "QWindow",
-                            "sys/reboot.h",
-                            "QGeoPositionInfoSource",
-                            "QNmeaPositionInfoSource",
-                            "bloks/BatteryState.h",
-                            "bloks/LightState.h",
+                            "QFont",
                             "bloks/MotorState.h",
-                            "bloks/DisplayState.h",
-                            "bloks/RemoteState.h",
+                            "QNmeaPositionInfoSource",
+                            "bloks/LightState.h",
+                            "bloks/BatteryState.h",
+                            "sys/reboot.h",
                             "bloks/SensorState.h",
+                            "bloks/BluetoothServer.h",
                             "bloks/GearShiftState.h",
-                            "bloks/BluetoothServer.h"
+                            "QSettings",
+                            "QGeoPositionInfoSource",
+                            "bloks/RemoteState.h",
+                            "bloks/DisplayState.h",
+                            "QFileInfo"
                         ],
                         "loc": 442,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "Controller",
                         "nested_complexity": 5,
-                        "path": "gui/src/Controller.cpp",
                         "risks": [
                             "[info] Arguably many lines of code, this may be ok for now."
                         ],
@@ -165,6 +166,7 @@
                     "value": 66
                 },
                 {
+                    "easy_path": "gui/src/Controller.h",
                     "meta": {
                         "aggregate_complexity": 14,
                         "blank_lines": 141,
@@ -175,23 +177,22 @@
                         ],
                         "is_code": true,
                         "libraries": [
-                            "QGuiApplication",
+                            "QTimer",
+                            "bloks/Frontend.h",
+                            "bloks/BluetoothServer.h",
+                            "QGeoPositionInfo",
                             "QQmlApplicationEngine",
                             "QSettings",
                             "QGeoPositionInfoSource",
-                            "QGeoPositionInfo",
-                            "QString",
-                            "QTimer",
-                            "bloks/BluetoothServer.h",
-                            "bloks/Frontend.h",
                             "bloks/RemoteState.h",
-                            "bloks/VehicleState.h"
+                            "QGuiApplication",
+                            "bloks/VehicleState.h",
+                            "QString"
                         ],
                         "loc": 285,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "Controller",
                         "nested_complexity": 2,
-                        "path": "gui/src/Controller.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 6972,
@@ -203,26 +204,26 @@
                     "value": 14
                 },
                 {
+                    "easy_path": "gui/src/GuiSettings.cpp",
                     "meta": {
                         "aggregate_complexity": 20,
                         "blank_lines": 68,
                         "decision_complexity": 10,
                         "extension": ".cpp",
                         "imports": [
-                            "gui/src/GuiSettings.h",
-                            "gui/src/Log.h"
+                            "gui/src/Log.h",
+                            "gui/src/GuiSettings.h"
                         ],
                         "is_code": true,
                         "libraries": [
                             "QCoreApplication",
-                            "QFile",
-                            "QQmlApplicationEngine"
+                            "QQmlApplicationEngine",
+                            "QFile"
                         ],
                         "loc": 246,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "GuiSettings",
                         "nested_complexity": 5,
-                        "path": "gui/src/GuiSettings.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 5477,
@@ -234,6 +235,7 @@
                     "value": 20
                 },
                 {
+                    "easy_path": "gui/src/GuiSettings.h",
                     "meta": {
                         "aggregate_complexity": 9,
                         "blank_lines": 51,
@@ -242,17 +244,16 @@
                         "imports": [],
                         "is_code": true,
                         "libraries": [
+                            "QString",
                             "QObject",
                             "QSettings",
-                            "QString",
-                            "QTranslator",
-                            "QVector"
+                            "QVector",
+                            "QTranslator"
                         ],
                         "loc": 213,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "GuiSettings",
                         "nested_complexity": 4,
-                        "path": "gui/src/GuiSettings.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 6036,
@@ -264,14 +265,15 @@
                     "value": 9
                 },
                 {
+                    "easy_path": "gui/src/GuiSettingsBloks.cpp",
                     "meta": {
                         "aggregate_complexity": 20,
                         "blank_lines": 15,
                         "decision_complexity": 13,
                         "extension": ".cpp",
                         "imports": [
-                            "gui/src/GuiSettingsBloks.h",
-                            "gui/src/Log.h"
+                            "gui/src/Log.h",
+                            "gui/src/GuiSettingsBloks.h"
                         ],
                         "is_code": true,
                         "libraries": [
@@ -281,7 +283,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "GuiSettingsBloks",
                         "nested_complexity": 4,
-                        "path": "gui/src/GuiSettingsBloks.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 2292,
@@ -293,6 +294,7 @@
                     "value": 20
                 },
                 {
+                    "easy_path": "gui/src/GuiSettingsBloks.h",
                     "meta": {
                         "aggregate_complexity": 4,
                         "blank_lines": 10,
@@ -307,7 +309,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "GuiSettingsBloks",
                         "nested_complexity": 3,
-                        "path": "gui/src/GuiSettingsBloks.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 621,
@@ -319,6 +320,7 @@
                     "value": 4
                 },
                 {
+                    "easy_path": "gui/src/GuiSettingsQt.cpp",
                     "meta": {
                         "aggregate_complexity": 4,
                         "blank_lines": 7,
@@ -333,7 +335,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "GuiSettingsQt",
                         "nested_complexity": 3,
-                        "path": "gui/src/GuiSettingsQt.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1356,
@@ -345,6 +346,7 @@
                     "value": 4
                 },
                 {
+                    "easy_path": "gui/src/GuiSettingsQt.h",
                     "meta": {
                         "aggregate_complexity": 5,
                         "blank_lines": 9,
@@ -361,7 +363,6 @@
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "GuiSettingsQt",
                         "nested_complexity": 3,
-                        "path": "gui/src/GuiSettingsQt.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 417,
@@ -373,6 +374,7 @@
                     "value": 5
                 },
                 {
+                    "easy_path": "gui/src/Log.h",
                     "meta": {
                         "aggregate_complexity": 2,
                         "blank_lines": 4,
@@ -387,7 +389,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "Log",
                         "nested_complexity": 0,
-                        "path": "gui/src/Log.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 111,
@@ -399,6 +400,7 @@
                     "value": 2
                 },
                 {
+                    "easy_path": "gui/src/MockController.cpp",
                     "meta": {
                         "aggregate_complexity": 19,
                         "blank_lines": 36,
@@ -410,22 +412,21 @@
                         ],
                         "is_code": true,
                         "libraries": [
-                            "QFont",
                             "QMetaProperty",
-                            "QQmlContext",
-                            "QQmlComponent",
-                            "QQuickWindow",
-                            "bloks/BatteryState.h",
                             "bloks/MotorState.h",
+                            "QQmlContext",
+                            "bloks/BatteryState.h",
+                            "QQuickWindow",
+                            "bloks/GearShiftState.h",
+                            "QQmlComponent",
                             "bloks/LightState.h",
                             "bloks/RemoteState.h",
-                            "bloks/GearShiftState.h"
+                            "QFont"
                         ],
                         "loc": 198,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "MockController",
                         "nested_complexity": 3,
-                        "path": "gui/src/MockController.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 5889,
@@ -437,6 +438,7 @@
                     "value": 19
                 },
                 {
+                    "easy_path": "gui/src/MockController.h",
                     "meta": {
                         "aggregate_complexity": 5,
                         "blank_lines": 101,
@@ -445,16 +447,15 @@
                         "imports": [],
                         "is_code": true,
                         "libraries": [
-                            "QGuiApplication",
-                            "QQmlApplicationEngine",
                             "QTimer",
+                            "QQmlApplicationEngine",
+                            "QGuiApplication",
                             "bloks/VehicleState.h"
                         ],
                         "loc": 142,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "MockController",
                         "nested_complexity": 1,
-                        "path": "gui/src/MockController.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 3033,
@@ -466,6 +467,7 @@
                     "value": 5
                 },
                 {
+                    "easy_path": "gui/src/QueryableWrapper.cpp",
                     "meta": {
                         "aggregate_complexity": 15,
                         "blank_lines": 29,
@@ -480,7 +482,6 @@
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "QueryableWrapper",
                         "nested_complexity": 2,
-                        "path": "gui/src/QueryableWrapper.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 2836,
@@ -491,6 +492,7 @@
                     "value": 15
                 },
                 {
+                    "easy_path": "gui/src/QueryableWrapper.h",
                     "meta": {
                         "aggregate_complexity": 8,
                         "blank_lines": 37,
@@ -499,18 +501,17 @@
                         "imports": [],
                         "is_code": true,
                         "libraries": [
-                            "QObject",
-                            "QPointer",
                             "bloks/QueryableDate.h",
+                            "QObject",
                             "bloks/QueryableFloat.h",
-                            "bloks/QueryableInt.h",
-                            "bloks/QueryableString.h"
+                            "QPointer",
+                            "bloks/QueryableString.h",
+                            "bloks/QueryableInt.h"
                         ],
                         "loc": 119,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "QueryableWrapper",
                         "nested_complexity": 2,
-                        "path": "gui/src/QueryableWrapper.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 2967,
@@ -522,6 +523,7 @@
                     "value": 8
                 },
                 {
+                    "easy_path": "gui/src/ScreenDpi.h",
                     "meta": {
                         "aggregate_complexity": 14,
                         "blank_lines": 18,
@@ -533,16 +535,15 @@
                         "is_code": true,
                         "libraries": [
                             "QtGui/QGuiApplication",
-                            "QtGui/QScreen",
-                            "QAndroidJniObject",
                             "QtQml/QQmlApplicationEngine",
-                            "QtQml/QQmlContext"
+                            "QAndroidJniObject",
+                            "QtQml/QQmlContext",
+                            "QtGui/QScreen"
                         ],
                         "loc": 62,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "ScreenDpi",
                         "nested_complexity": 2,
-                        "path": "gui/src/ScreenDpi.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1586,
@@ -554,6 +555,7 @@
                     "value": 14
                 },
                 {
+                    "easy_path": "gui/src/TripManager.cpp",
                     "meta": {
                         "aggregate_complexity": 21,
                         "blank_lines": 55,
@@ -566,16 +568,15 @@
                         "is_code": true,
                         "libraries": [
                             "QtMath",
-                            "QSettings",
-                            "QTimer",
                             "bloks/MotorState.h",
-                            "bloks/BatteryState.h"
+                            "QTimer",
+                            "bloks/BatteryState.h",
+                            "QSettings"
                         ],
                         "loc": 201,
                         "mime": "text/x-c++; charset=utf-8",
                         "name": "TripManager",
                         "nested_complexity": 6,
-                        "path": "gui/src/TripManager.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 6116,
@@ -587,6 +588,7 @@
                     "value": 21
                 },
                 {
+                    "easy_path": "gui/src/TripManager.h",
                     "meta": {
                         "aggregate_complexity": 6,
                         "blank_lines": 41,
@@ -596,14 +598,13 @@
                         "is_code": true,
                         "libraries": [
                             "QObject",
-                            "bloks/VehicleState.h",
-                            "bloks/PropertyFloat.h"
+                            "bloks/PropertyFloat.h",
+                            "bloks/VehicleState.h"
                         ],
                         "loc": 89,
                         "mime": "text/x-c++; charset=us-ascii",
                         "name": "TripManager",
                         "nested_complexity": 3,
-                        "path": "gui/src/TripManager.h",
                         "risks": [],
                         "risks_points": 0,
                         "size": 1965,
@@ -615,35 +616,35 @@
                     "value": 6
                 },
                 {
+                    "easy_path": "gui/src/main.cpp",
                     "meta": {
                         "aggregate_complexity": 18,
                         "blank_lines": 28,
                         "decision_complexity": 1,
                         "extension": ".cpp",
                         "imports": [
-                            "gui/src/Log.h",
-                            "gui/src/GuiSettingsBloks.h",
-                            "gui/src/GuiSettingsQt.h",
                             "gui/src/Controller.h",
+                            "gui/src/Log.h",
+                            "gui/src/GuiSettingsQt.h",
                             "gui/src/MockController.h",
-                            "gui/src/Log.h"
+                            "gui/src/GuiSettingsBloks.h"
                         ],
                         "is_code": true,
                         "libraries": [
-                            "bloks/common/UnixSignals.h",
                             "bloks/gui-version.h",
+                            "bloks/common/Log.h",
                             "QFontDatabase",
-                            "QGuiApplication",
                             "QQmlApplicationEngine",
                             "QSettings",
                             "QtQml",
-                            "memory"
+                            "memory",
+                            "QGuiApplication",
+                            "bloks/common/UnixSignals.h"
                         ],
                         "loc": 84,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "main",
                         "nested_complexity": 3,
-                        "path": "gui/src/main.cpp",
                         "risks": [],
                         "risks_points": 0,
                         "size": 2193,
@@ -662,6 +663,7 @@
                 "source_files": 17,
                 "value_count": 250
             },
+            "easy_path": "gui/src",
             "name": "src"
         },
         {
@@ -669,6 +671,7 @@
                 {
                     "children": [
                         {
+                            "easy_path": "gui/cmake/modules/BloksVersion.cpp.in",
                             "meta": {
                                 "aggregate_complexity": 3,
                                 "blank_lines": 10,
@@ -681,7 +684,6 @@
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "BloksVersion.cpp",
                                 "nested_complexity": 3,
-                                "path": "gui/cmake/modules/BloksVersion.cpp.in",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 504,
@@ -693,6 +695,7 @@
                             "value": 3
                         },
                         {
+                            "easy_path": "gui/cmake/modules/BloksVersion.h.in",
                             "meta": {
                                 "aggregate_complexity": 2,
                                 "blank_lines": 7,
@@ -705,7 +708,6 @@
                                 "mime": "text/x-c++; charset=us-ascii",
                                 "name": "BloksVersion.h",
                                 "nested_complexity": 2,
-                                "path": "gui/cmake/modules/BloksVersion.h.in",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 558,
@@ -724,6 +726,7 @@
                         "source_files": 2,
                         "value_count": 5
                     },
+                    "easy_path": "gui/cmake/modules",
                     "name": "modules"
                 }
             ],
@@ -734,6 +737,7 @@
                 "source_files": 2,
                 "value_count": 5
             },
+            "easy_path": "gui/cmake",
             "name": "cmake"
         },
         {
@@ -741,6 +745,7 @@
                 {
                     "children": [
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/Blend.qml",
                             "meta": {
                                 "aggregate_complexity": 5,
                                 "blank_lines": 384,
@@ -753,7 +758,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "Blend",
                                 "nested_complexity": 4,
-                                "path": "gui/qt_qml/QtGraphicalEffects/Blend.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 18944,
@@ -765,6 +769,7 @@
                             "value": 5
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/BrightnessContrast.qml",
                             "meta": {
                                 "aggregate_complexity": 2,
                                 "blank_lines": 177,
@@ -777,7 +782,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "BrightnessContrast",
                                 "nested_complexity": 2,
-                                "path": "gui/qt_qml/QtGraphicalEffects/BrightnessContrast.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 7021,
@@ -789,6 +793,7 @@
                             "value": 2
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/ColorOverlay.qml",
                             "meta": {
                                 "aggregate_complexity": 2,
                                 "blank_lines": 128,
@@ -801,7 +806,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "ColorOverlay",
                                 "nested_complexity": 2,
-                                "path": "gui/qt_qml/QtGraphicalEffects/ColorOverlay.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 5206,
@@ -813,6 +817,7 @@
                             "value": 2
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/Colorize.qml",
                             "meta": {
                                 "aggregate_complexity": 2,
                                 "blank_lines": 263,
@@ -825,7 +830,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "Colorize",
                                 "nested_complexity": 2,
-                                "path": "gui/qt_qml/QtGraphicalEffects/Colorize.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 9661,
@@ -837,6 +841,7 @@
                             "value": 2
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/ConicalGradient.qml",
                             "meta": {
                                 "aggregate_complexity": 3,
                                 "blank_lines": 310,
@@ -849,7 +854,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "ConicalGradient",
                                 "nested_complexity": 3,
-                                "path": "gui/qt_qml/QtGraphicalEffects/ConicalGradient.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 11079,
@@ -861,6 +865,7 @@
                             "value": 3
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/Desaturate.qml",
                             "meta": {
                                 "aggregate_complexity": 2,
                                 "blank_lines": 128,
@@ -873,7 +878,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "Desaturate",
                                 "nested_complexity": 2,
-                                "path": "gui/qt_qml/QtGraphicalEffects/Desaturate.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 5245,
@@ -885,6 +889,7 @@
                             "value": 2
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/DirectionalBlur.qml",
                             "meta": {
                                 "aggregate_complexity": 7,
                                 "blank_lines": 230,
@@ -897,7 +902,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "DirectionalBlur",
                                 "nested_complexity": 4,
-                                "path": "gui/qt_qml/QtGraphicalEffects/DirectionalBlur.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 10468,
@@ -909,6 +913,7 @@
                             "value": 7
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/Displace.qml",
                             "meta": {
                                 "aggregate_complexity": 2,
                                 "blank_lines": 182,
@@ -921,7 +926,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "Displace",
                                 "nested_complexity": 2,
-                                "path": "gui/qt_qml/QtGraphicalEffects/Displace.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 8202,
@@ -933,6 +937,7 @@
                             "value": 2
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/DropShadow.qml",
                             "meta": {
                                 "aggregate_complexity": 2,
                                 "blank_lines": 343,
@@ -945,7 +950,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "DropShadow",
                                 "nested_complexity": 2,
-                                "path": "gui/qt_qml/QtGraphicalEffects/DropShadow.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 12120,
@@ -957,6 +961,7 @@
                             "value": 2
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/FastBlur.qml",
                             "meta": {
                                 "aggregate_complexity": 13,
                                 "blank_lines": 251,
@@ -969,7 +974,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "FastBlur",
                                 "nested_complexity": 4,
-                                "path": "gui/qt_qml/QtGraphicalEffects/FastBlur.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 15592,
@@ -981,6 +985,7 @@
                             "value": 13
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/GammaAdjust.qml",
                             "meta": {
                                 "aggregate_complexity": 2,
                                 "blank_lines": 166,
@@ -993,7 +998,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "GammaAdjust",
                                 "nested_complexity": 2,
-                                "path": "gui/qt_qml/QtGraphicalEffects/GammaAdjust.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 6414,
@@ -1005,6 +1009,7 @@
                             "value": 2
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/GaussianBlur.qml",
                             "meta": {
                                 "aggregate_complexity": 3,
                                 "blank_lines": 279,
@@ -1017,7 +1022,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "GaussianBlur",
                                 "nested_complexity": 3,
-                                "path": "gui/qt_qml/QtGraphicalEffects/GaussianBlur.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 13204,
@@ -1029,6 +1033,7 @@
                             "value": 3
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/Glow.qml",
                             "meta": {
                                 "aggregate_complexity": 2,
                                 "blank_lines": 269,
@@ -1041,7 +1046,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "Glow",
                                 "nested_complexity": 2,
-                                "path": "gui/qt_qml/QtGraphicalEffects/Glow.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 9516,
@@ -1053,6 +1057,7 @@
                             "value": 2
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/HueSaturation.qml",
                             "meta": {
                                 "aggregate_complexity": 2,
                                 "blank_lines": 271,
@@ -1065,7 +1070,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "HueSaturation",
                                 "nested_complexity": 2,
-                                "path": "gui/qt_qml/QtGraphicalEffects/HueSaturation.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 9965,
@@ -1077,6 +1081,7 @@
                             "value": 2
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/InnerShadow.qml",
                             "meta": {
                                 "aggregate_complexity": 3,
                                 "blank_lines": 341,
@@ -1089,7 +1094,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "InnerShadow",
                                 "nested_complexity": 3,
-                                "path": "gui/qt_qml/QtGraphicalEffects/InnerShadow.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 12449,
@@ -1101,6 +1105,7 @@
                             "value": 3
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/LevelAdjust.qml",
                             "meta": {
                                 "aggregate_complexity": 2,
                                 "blank_lines": 433,
@@ -1113,7 +1118,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "LevelAdjust",
                                 "nested_complexity": 2,
-                                "path": "gui/qt_qml/QtGraphicalEffects/LevelAdjust.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 17072,
@@ -1125,6 +1129,7 @@
                             "value": 2
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/LinearGradient.qml",
                             "meta": {
                                 "aggregate_complexity": 3,
                                 "blank_lines": 311,
@@ -1137,7 +1142,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "LinearGradient",
                                 "nested_complexity": 3,
-                                "path": "gui/qt_qml/QtGraphicalEffects/LinearGradient.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 11783,
@@ -1149,6 +1153,7 @@
                             "value": 3
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/MaskedBlur.qml",
                             "meta": {
                                 "aggregate_complexity": 3,
                                 "blank_lines": 185,
@@ -1161,7 +1166,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "MaskedBlur",
                                 "nested_complexity": 3,
-                                "path": "gui/qt_qml/QtGraphicalEffects/MaskedBlur.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 7565,
@@ -1173,6 +1177,7 @@
                             "value": 3
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/OpacityMask.qml",
                             "meta": {
                                 "aggregate_complexity": 2,
                                 "blank_lines": 123,
@@ -1185,7 +1190,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "OpacityMask",
                                 "nested_complexity": 2,
-                                "path": "gui/qt_qml/QtGraphicalEffects/OpacityMask.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 5120,
@@ -1197,6 +1201,7 @@
                             "value": 2
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/RadialBlur.qml",
                             "meta": {
                                 "aggregate_complexity": 7,
                                 "blank_lines": 246,
@@ -1209,7 +1214,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "RadialBlur",
                                 "nested_complexity": 4,
-                                "path": "gui/qt_qml/QtGraphicalEffects/RadialBlur.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 11760,
@@ -1221,6 +1225,7 @@
                             "value": 7
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/RadialGradient.qml",
                             "meta": {
                                 "aggregate_complexity": 3,
                                 "blank_lines": 402,
@@ -1233,7 +1238,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "RadialGradient",
                                 "nested_complexity": 3,
-                                "path": "gui/qt_qml/QtGraphicalEffects/RadialGradient.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 14955,
@@ -1245,6 +1249,7 @@
                             "value": 3
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/RectangularGlow.qml",
                             "meta": {
                                 "aggregate_complexity": 3,
                                 "blank_lines": 252,
@@ -1257,7 +1262,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "RectangularGlow",
                                 "nested_complexity": 3,
-                                "path": "gui/qt_qml/QtGraphicalEffects/RectangularGlow.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 9798,
@@ -1269,6 +1273,7 @@
                             "value": 3
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/RecursiveBlur.qml",
                             "meta": {
                                 "aggregate_complexity": 7,
                                 "blank_lines": 248,
@@ -1281,7 +1286,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "RecursiveBlur",
                                 "nested_complexity": 4,
-                                "path": "gui/qt_qml/QtGraphicalEffects/RecursiveBlur.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 12032,
@@ -1293,6 +1297,7 @@
                             "value": 7
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/ThresholdMask.qml",
                             "meta": {
                                 "aggregate_complexity": 2,
                                 "blank_lines": 191,
@@ -1305,7 +1310,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "ThresholdMask",
                                 "nested_complexity": 2,
-                                "path": "gui/qt_qml/QtGraphicalEffects/ThresholdMask.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 7777,
@@ -1317,6 +1321,7 @@
                             "value": 2
                         },
                         {
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/ZoomBlur.qml",
                             "meta": {
                                 "aggregate_complexity": 7,
                                 "blank_lines": 240,
@@ -1329,7 +1334,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "ZoomBlur",
                                 "nested_complexity": 4,
-                                "path": "gui/qt_qml/QtGraphicalEffects/ZoomBlur.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 11185,
@@ -1343,6 +1347,7 @@
                         {
                             "children": [
                                 {
+                                    "easy_path": "gui/qt_qml/QtGraphicalEffects/private/FastGlow.qml",
                                     "meta": {
                                         "aggregate_complexity": 13,
                                         "blank_lines": 145,
@@ -1355,7 +1360,6 @@
                                         "mime": "text/x-c; charset=us-ascii",
                                         "name": "FastGlow",
                                         "nested_complexity": 4,
-                                        "path": "gui/qt_qml/QtGraphicalEffects/private/FastGlow.qml",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 12180,
@@ -1367,6 +1371,7 @@
                                     "value": 13
                                 },
                                 {
+                                    "easy_path": "gui/qt_qml/QtGraphicalEffects/private/FastInnerShadow.qml",
                                     "meta": {
                                         "aggregate_complexity": 13,
                                         "blank_lines": 162,
@@ -1379,7 +1384,6 @@
                                         "mime": "text/x-c; charset=us-ascii",
                                         "name": "FastInnerShadow",
                                         "nested_complexity": 4,
-                                        "path": "gui/qt_qml/QtGraphicalEffects/private/FastInnerShadow.qml",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 13092,
@@ -1391,6 +1395,7 @@
                                     "value": 13
                                 },
                                 {
+                                    "easy_path": "gui/qt_qml/QtGraphicalEffects/private/FastMaskedBlur.qml",
                                     "meta": {
                                         "aggregate_complexity": 2,
                                         "blank_lines": 149,
@@ -1403,7 +1408,6 @@
                                         "mime": "text/x-c; charset=us-ascii",
                                         "name": "FastMaskedBlur",
                                         "nested_complexity": 2,
-                                        "path": "gui/qt_qml/QtGraphicalEffects/private/FastMaskedBlur.qml",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 10942,
@@ -1415,6 +1419,7 @@
                                     "value": 2
                                 },
                                 {
+                                    "easy_path": "gui/qt_qml/QtGraphicalEffects/private/GaussianInnerShadow.qml",
                                     "meta": {
                                         "aggregate_complexity": 2,
                                         "blank_lines": 85,
@@ -1427,7 +1432,6 @@
                                         "mime": "text/x-c; charset=us-ascii",
                                         "name": "GaussianInnerShadow",
                                         "nested_complexity": 2,
-                                        "path": "gui/qt_qml/QtGraphicalEffects/private/GaussianInnerShadow.qml",
                                         "risks": [],
                                         "risks_points": 0,
                                         "size": 5610,
@@ -1446,6 +1450,7 @@
                                 "source_files": 4,
                                 "value_count": 30
                             },
+                            "easy_path": "gui/qt_qml/QtGraphicalEffects/private",
                             "name": "private"
                         }
                     ],
@@ -1456,11 +1461,13 @@
                         "source_files": 29,
                         "value_count": 121
                     },
+                    "easy_path": "gui/qt_qml/QtGraphicalEffects",
                     "name": "QtGraphicalEffects"
                 },
                 {
                     "children": [
                         {
+                            "easy_path": "gui/qt_qml/QtMultimedia/Video.qml",
                             "meta": {
                                 "aggregate_complexity": 2,
                                 "blank_lines": 411,
@@ -1473,7 +1480,6 @@
                                 "mime": "text/x-tex; charset=us-ascii",
                                 "name": "Video",
                                 "nested_complexity": 2,
-                                "path": "gui/qt_qml/QtMultimedia/Video.qml",
                                 "risks": [],
                                 "risks_points": 0,
                                 "size": 14319,
@@ -1492,11 +1498,13 @@
                         "source_files": 1,
                         "value_count": 2
                     },
+                    "easy_path": "gui/qt_qml/QtMultimedia",
                     "name": "QtMultimedia"
                 },
                 {
                     "children": [
                         {
+                            "easy_path": "gui/qt_qml/QtTest/TestCase.qml",
                             "meta": {
                                 "aggregate_complexity": 199,
                                 "blank_lines": 870,
@@ -1509,7 +1517,6 @@
                                 "mime": "text/x-tex; charset=utf-8",
                                 "name": "TestCase",
                                 "nested_complexity": 6,
-                                "path": "gui/qt_qml/QtTest/TestCase.qml",
                                 "risks": [
                                     "[warning] Quite many lines of code, plan on refactoring.",
                                     "[error] Way too many decisions, full code coverage is required."
@@ -1531,6 +1538,7 @@
                         "source_files": 1,
                         "value_count": 199
                     },
+                    "easy_path": "gui/qt_qml/QtTest",
                     "name": "QtTest"
                 },
                 {
@@ -1538,6 +1546,7 @@
                         {
                             "children": [
                                 {
+                                    "easy_path": "gui/qt_qml/QtQuick/Controls/StackView.qml",
                                     "meta": {
                                         "aggregate_complexity": 63,
                                         "blank_lines": 687,
@@ -1550,7 +1559,6 @@
                                         "mime": "text/x-tex; charset=us-ascii",
                                         "name": "StackView",
                                         "nested_complexity": 5,
-                                        "path": "gui/qt_qml/QtQuick/Controls/StackView.qml",
                                         "risks": [
                                             "[info] Arguably many lines of code, this may be ok for now.",
                                             "[info] Arguably many decisions, it is ok if it makes other files less complicated."
@@ -1567,6 +1575,7 @@
                                 {
                                     "children": [
                                         {
+                                            "easy_path": "gui/qt_qml/QtQuick/Controls/Private/FastGlow.qml",
                                             "meta": {
                                                 "aggregate_complexity": 13,
                                                 "blank_lines": 201,
@@ -1579,7 +1588,6 @@
                                                 "mime": "text/x-c; charset=us-ascii",
                                                 "name": "FastGlow",
                                                 "nested_complexity": 4,
-                                                "path": "gui/qt_qml/QtQuick/Controls/Private/FastGlow.qml",
                                                 "risks": [],
                                                 "risks_points": 0,
                                                 "size": 14639,
@@ -1598,6 +1606,7 @@
                                         "source_files": 1,
                                         "value_count": 13
                                     },
+                                    "easy_path": "gui/qt_qml/QtQuick/Controls/Private",
                                     "name": "Private"
                                 },
                                 {
@@ -1605,6 +1614,7 @@
                                         {
                                             "children": [
                                                 {
+                                                    "easy_path": "gui/qt_qml/QtQuick/Controls/Styles/Base/CalendarStyle.qml",
                                                     "meta": {
                                                         "aggregate_complexity": 31,
                                                         "blank_lines": 298,
@@ -1617,7 +1627,6 @@
                                                         "mime": "text/x-tex; charset=us-ascii",
                                                         "name": "CalendarStyle",
                                                         "nested_complexity": 11,
-                                                        "path": "gui/qt_qml/QtQuick/Controls/Styles/Base/CalendarStyle.qml",
                                                         "risks": [
                                                             "[info] Arguably many lines of code, this may be ok for now.",
                                                             "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
@@ -1632,6 +1641,7 @@
                                                     "value": 31
                                                 },
                                                 {
+                                                    "easy_path": "gui/qt_qml/QtQuick/Controls/Styles/Base/CircularGaugeStyle.qml",
                                                     "meta": {
                                                         "aggregate_complexity": 4,
                                                         "blank_lines": 365,
@@ -1644,7 +1654,6 @@
                                                         "mime": "text/x-tex; charset=us-ascii",
                                                         "name": "CircularGaugeStyle",
                                                         "nested_complexity": 4,
-                                                        "path": "gui/qt_qml/QtQuick/Controls/Styles/Base/CircularGaugeStyle.qml",
                                                         "risks": [],
                                                         "risks_points": 0,
                                                         "size": 17905,
@@ -1663,6 +1672,7 @@
                                                 "source_files": 2,
                                                 "value_count": 35
                                             },
+                                            "easy_path": "gui/qt_qml/QtQuick/Controls/Styles/Base",
                                             "name": "Base"
                                         }
                                     ],
@@ -1673,6 +1683,7 @@
                                         "source_files": 2,
                                         "value_count": 35
                                     },
+                                    "easy_path": "gui/qt_qml/QtQuick/Controls/Styles",
                                     "name": "Styles"
                                 }
                             ],
@@ -1683,11 +1694,13 @@
                                 "source_files": 4,
                                 "value_count": 111
                             },
+                            "easy_path": "gui/qt_qml/QtQuick/Controls",
                             "name": "Controls"
                         },
                         {
                             "children": [
                                 {
+                                    "easy_path": "gui/qt_qml/QtQuick/Dialogs/DefaultColorDialog.qml",
                                     "meta": {
                                         "aggregate_complexity": 16,
                                         "blank_lines": 149,
@@ -1700,7 +1713,6 @@
                                         "mime": "text/x-c; charset=us-ascii",
                                         "name": "DefaultColorDialog",
                                         "nested_complexity": 8,
-                                        "path": "gui/qt_qml/QtQuick/Dialogs/DefaultColorDialog.qml",
                                         "risks": [
                                             "[warning] Quite many nested code blocks, most of the code is in the right half of the screen."
                                         ],
@@ -1721,6 +1733,7 @@
                                 "source_files": 1,
                                 "value_count": 16
                             },
+                            "easy_path": "gui/qt_qml/QtQuick/Dialogs",
                             "name": "Dialogs"
                         }
                     ],
@@ -1731,6 +1744,7 @@
                         "source_files": 5,
                         "value_count": 127
                     },
+                    "easy_path": "gui/qt_qml/QtQuick",
                     "name": "QtQuick"
                 }
             ],
@@ -1741,6 +1755,7 @@
                 "source_files": 36,
                 "value_count": 449
             },
+            "easy_path": "gui/qt_qml",
             "name": "qt_qml"
         }
     ],
@@ -1751,5 +1766,6 @@
         "source_files": 59,
         "value_count": 711
     },
+    "easy_path": "gui",
     "name": "gui"
 }
