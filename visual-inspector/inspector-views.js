@@ -163,41 +163,54 @@ function display_change_heatmap(data)
         }
     let svg = d3.select("svg"),
         g = svg.append("g")
-            .attr("transform",
-                "translate(" + margin.left + "," + margin.top + ")");
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     let width = svg.attr("width");
     let height = svg.attr("height");
 
+    let root = d3.hierarchy(data)
+        .sum(function(d) { return d.value+13; })
+
+    let max_temp = d3.max(root.leaves(), function (d) { return +d.data.temperature; })
+    let min_temp = d3.min(root.leaves(), function (d) { return +d.data.temperature; })
     let color = d3.scaleLinear()
-        .domain([-1, 13])
-        .range(["hsl(150,80%,80%)", "hsl(300,52%,38%)"])
+        .domain([min_temp, max_temp])
+        .range(["#0079BD", "#E5C200"])
         .interpolate(d3.interpolateHcl);
 
-    let root = d3.hierarchy(data)
-        .sum(function(d) { return d.value; })
+    l_height = 700
+    lh = l_height / (max_temp-min_temp)
+
+    d3.select("#info_view").selectAll("*").remove()
+    let legend_info = d3.select("#info_view").style("text-align", "left")
+        .append("svg")
+            .attr("width", 80)
+            .attr("height", 768);
+
+    legend_info
+        .selectAll()
+        .data(d3.range(0, 1+max_temp-min_temp))
+        .enter()
+            .append('rect')
+            .style('fill', d => color(min_temp+d))
+            .attr('x', 10)
+            .attr('y', d => 5 + d*(lh+1))
+            .attr('width', 60)
+            .attr('height', lh);
 
     d3.treemap()
         .size([width, height])
         .padding(1)
         (root);
 
-    // make sure that string defining transform attribute is correct. scale isn't a method, but part of string
-    let zoomed = function () {
-        svg.attr("transform", "translate("+ d3.event.translate + ")scale(" + d3.event.scale + ")");
-    };
-
-    let zoom = d3.zoom()
-        .on("zoom", zoomed);
-
     let squares = svg.selectAll("rect")
         .data(root.leaves())
         .enter()
         .append("rect")
-            .style("stroke", function(d) {
-                return "black";
-            })
+            // .style("stroke", function(d) {
+            //     return "black";
+            // })
             .style("fill", function(d) {
-                return color(d.depth);
+                return color((d.data.temperature) ? d.data.temperature : 1);
             })
             .attr('x', function(d) {
                 return d.x0;
@@ -210,8 +223,7 @@ function display_change_heatmap(data)
             })
             .attr('height', function(d) {
                 return d.y1 - d.y0;
-            })
-            .call(zoom);
+            });
 
     // and to add the text labels
     svg
@@ -221,14 +233,21 @@ function display_change_heatmap(data)
         .append("text")
         .attr("class", "small-label")
         .attr("x", function(d) {
-            return d.x0 + 5
+            return d.x0 + (d.x1-d.x0)/2
         })
         .attr("y", function(d) {
-            return d.y0 + 10
+            return d.y0 + (d.y1-d.y0)/2
         })
         .text(function(d) {
             return d.data.name
         })
+        .attr("transform", function (d) {
+            let w = d.x1 - d.x0;
+            let h = d.y1 - d.y0;
+            let x = d.x0 + w/2 
+            let y = d.y0 + h/2 
+            return (h > w) ? `rotate(-90, ${x}, ${y})` : `rotate(0, ${x}, ${y})`;
+        });
 }
 
 function display_couplings(data)

@@ -12,7 +12,7 @@ import jinja2
 def render_inspector_pages(data_folder, out_folder):
     print_stage('Rendering templates')
 
-    datafiles = [f for f in os.listdir(data_folder) if f.endswith('.json')]
+    datafiles = sorted([f for f in os.listdir(data_folder) if f.endswith('.json')])
     env = jinja2.Environment(loader=jinja2.FileSystemLoader('./'))
     pages = [
         env.get_template('index.html'),

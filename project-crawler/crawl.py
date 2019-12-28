@@ -265,41 +265,31 @@ def parse_git_repository(src_root, output=None):
 
     print_stage('Changed together log')
     module_paths = sorted([node.meta.get('path') for node in root.leaves], key=lambda x: x.count(os.sep))
-    changes_matrix = numpy.zeros((len(module_paths),len(module_paths)), dtype=int)
-
     change_history = git.whatchanged().split('\n')
     change_history.reverse()
 
     pick_filepath = re.compile(r':\d{6} \d{6} \w+ \w+ \w+\s+(\S+)')
-    commit_files = []
     commit_count = 0
+    resolver = anytree.Resolver()
     for change in change_history:
         if change.startswith(':'):
             found = pick_filepath.search(change)
             if found:
-                rel_path = os.sep.join([root.name, str(found.group(1))])
-                commit_files.append(rel_path)
+                rel_path = str(found.group(1))
+                treepath = os.sep.join([root.name,rel_path])
+                if treepath in module_paths:
+                    node = resolver.get(root, rel_path)
+
+                    if hasattr(node, 'temperature'):
+                        node.temperature += 1
+                    else:
+                        node.temperature = 1
             else:
                 print( '***', change )
                 raise ValueError("Cannot parse commit change.")
         elif change.startswith('commit'):
-            for this in commit_files:
-                if this in module_paths:
-                    # build all pairs
-                    pairs = [(this,other) for other in commit_files if other != this and other in module_paths]
-                    for left,right in pairs:
-                        li = module_paths.index(left)
-                        ri = module_paths.index(right)
-                        changes_matrix[li][ri] += 1
-                        changes_matrix[ri][li] += 1
-            commit_files = []
             commit_count += 1
 
-    change_history = {
-        'filelist' : [os.path.basename(fp) for fp in module_paths],
-        'changes_matrix' : changes_matrix.tolist(),
-    }
-    root.change_history = change_history
     print(f'Analyzed {commit_count} commits.')
 
     if not output:
