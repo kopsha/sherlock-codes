@@ -259,7 +259,7 @@ def parse_git_repository(src_root, output=None):
                 local_nodes = anytree.search.findall_by_attr(root, import_item)
                 if local_nodes:
                     assert(len(local_nodes) == 1)
-                    local_imports.add(import_item)
+                    local_imports.add(local_nodes[0].easy_path)
                 else:
                     libraries.add(import_item)
             else:
