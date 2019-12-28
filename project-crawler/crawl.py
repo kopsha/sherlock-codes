@@ -255,14 +255,23 @@ def parse_git_repository(src_root, output=None):
         libraries = set()
         for import_item in imports:
             if import_item.count(os.sep) < 1:
-                # try exact name
-                local_nodes = anytree.search.findall_by_attr(root, import_item)
+                # look in siblings
+                local_nodes =  anytree.search.findall_by_attr(m.parent, import_item)
                 if local_nodes:
-                    assert(len(local_nodes) == 1)
-                    local_imports.add(local_nodes[0].easy_path)
+                    # add all nodes
+                    local_imports.update([x.easy_path for x in local_nodes])
                 else:
-                    libraries.add(import_item)
+                    # look in the entire project
+                    local_nodes = anytree.search.findall_by_attr(root, import_item)
+                    if local_nodes:
+                        if len(local_nodes) == 1:
+                            local_imports.add(local_nodes[0].easy_path)
+                        else:
+                            local_imports.add(local_nodes[-1].easy_path)   # :()
+                    else:
+                        libraries.add(import_item)
             else:
+                # TODO: resolve relative paths (../)
                 package = import_item
                 was_found = False
                 while package.count('/') >= 3:
