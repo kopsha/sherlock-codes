@@ -150,7 +150,7 @@ def inspect(filepath, meta):
     if meta.get('extension') in ['.h', '.cpp', '.mm', '.hpp', '.c', '.cc']:
         meta['imports'] = code_parser.parse_cpp_imports(source_code)
     elif meta.get('extension') in ['.java', '.kt']:
-        meta['imports'] = code_parser.parse_java_imports(source_code)
+        meta['imports'],meta['package'] = code_parser.parse_java_imports(source_code)
     elif meta.get('extension') in ['.swift']:
         meta['imports'] = code_parser.parse_swift_imports(source_code)
     elif meta.get('extension') in ['.py']:
@@ -169,8 +169,13 @@ def inspect(filepath, meta):
 
 def parse_git_repository(src_root, output=None):
 
+    def path_to_string(node):
+        crumbs = [n.name for n in node.path]
+        return '/'.join(crumbs)
+
     def aggregate_data(node):
-        if not node.children:
+        node.easy_path = path_to_string(node)
+        if node.is_leaf:
             return {
                 'source_files': 1,
                 'sloc_count': node.meta.get('sloc'),
@@ -192,10 +197,6 @@ def parse_git_repository(src_root, output=None):
                     counter[k] += partial_counter[k]
             node.counter = counter
             return node.counter
-
-    def path_to_string(node):
-        crumbs = [n.name for n in node.path]
-        return '/'.join(crumbs)
 
     def make_tree_path(root, path):
         current = root
@@ -229,48 +230,66 @@ def parse_git_repository(src_root, output=None):
 
         value = inspect(os.path.join(src_root,filepath), file_meta)
         node = anytree.Node(file, parent=parent, value=value, meta=file_meta)
-        node.meta['path'] = path_to_string(node)
-
-    # find import refs in current project
-    module_map = {}
-    true_module_map = {}
-    for m in root.leaves:
-        if m.name in module_map:
-            print(f'[info] File already exists {module_map[m.name]} and current path: {path_to_string(m)}.') 
-            continue
-        module_map[m.name] = path_to_string(m)
-        name_wo_extension = m.meta['name']
-        true_module_map[name_wo_extension] = path_to_string(m)
-
-    for m in root.leaves:
-        imports = m.meta.get('imports', [])
-        local_imports = []
-        libraries = []
-        for i in imports:
-            iname = os.path.basename(i)
-            true_name = os.path.splitext(iname)[0]
-            if iname in module_map:
-                local_imports.append(module_map[iname])
-            elif true_name in true_module_map:
-                local_imports.append(true_module_map[true_name])
-            else:
-                libraries.append(i)
-        m.meta['imports'] = local_imports
-        m.meta['libraries'] = libraries
 
     # Count items up
     aggregate_data(root)
     data_bytes = root.counter['bytes_count']
     print(f'Completed scan of {root.counter["source_files"]} files or {humanize.naturalsize(data_bytes)} of code.')
 
-    print_stage('Changed together log')
-    module_paths = sorted([node.meta.get('path') for node in root.leaves], key=lambda x: x.count(os.sep))
+    print_stage('Processing imports')
+    resolver = anytree.Resolver()
+
+    package_map = {}
+    for node in root.leaves:
+        pkg = node.meta.get('package')
+        if pkg:
+            refs = package_map.get(pkg, [])
+            refs.append(node.easy_path)
+            package_map[pkg] = refs
+
+    local_packages = list(set(package_map))
+
+    for m in root.leaves:
+        imports = m.meta.get('imports', [])
+        local_imports = set()
+        libraries = set()
+        for import_item in imports:
+            if import_item.count(os.sep) < 1:
+                # try exact name
+                local_nodes = anytree.search.findall_by_attr(root, import_item)
+                if local_nodes:
+                    assert(len(local_nodes) == 1)
+                    local_imports.add(import_item)
+                else:
+                    libraries.add(import_item)
+            else:
+                package = import_item
+                was_found = False
+                while package.count('/') >= 3:
+                    package,symbol = os.path.split(package)
+                    if package in local_packages:
+                        found_local = [x for x in package_map[package] if symbol in x]
+                        if found_local:
+                            local_imports.add(found_local[0])
+                        else:
+                            local_imports.add( package_map[package][0] )  # :()
+                        was_found = True
+                        break
+                if not was_found:
+                    libraries.add(import_item)
+                    if import_item.startswith('com/specialized'):
+                        print('**** ', m.name, 'imports', import_item, 'but cannot be resolved inside project, is this a library?')
+
+        m.meta['imports'] = list(local_imports)
+        m.meta['libraries'] = list(libraries)
+
+    print_stage('Inspecting commit history')
+    module_paths = sorted([node.easy_path for node in root.leaves], key=lambda x: x.count(os.sep))
     change_history = git.whatchanged().split('\n')
     change_history.reverse()
 
     pick_filepath = re.compile(r':\d{6} \d{6} \w+ \w+ \w+\s+(\S+)')
     commit_count = 0
-    resolver = anytree.Resolver()
     for change in change_history:
         if change.startswith(':'):
             found = pick_filepath.search(change)

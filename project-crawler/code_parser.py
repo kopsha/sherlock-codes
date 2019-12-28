@@ -168,12 +168,19 @@ def parse_cpp_imports(source_code):
 
 
 def parse_java_imports(source_code):
+    package_ref = re.compile(r'\s*package\s+([\w\.]+)\s*')
+    package_decl = package_ref.findall(source_code)
+    package = ''
+    if (package_decl):
+        assert(len(package_decl) == 1)
+        package = '/'.join(package_decl[0].split('.'))
+
     import_refs = re.compile(r'\s*?import\s+([\w\.]+)\s*?')
     imports = import_refs.findall(source_code)
 
     imports_with_path = [p.replace('.', '/') for p in imports]
 
-    return imports_with_path
+    return imports_with_path, package
 
 
 def parse_swift_imports(source_code):
