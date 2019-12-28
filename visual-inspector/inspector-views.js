@@ -155,48 +155,80 @@ function display_circlepack(data)
 
 function display_change_heatmap(data)
 {
-    // set the dimensions and margins of the graph
-    let svg = d3.select("svg").style("box-sizing", "border-box"),
-        margin = {top: 30, right: 30, bottom: 30, left: 30},
-        width = svg.attr("width") - margin.left - margin.right,
-        height = svg.attr("height") - margin.top - margin.bottom;
-    svg.append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    var margin = {
+            top: 10,
+            right: 10,
+            bottom: 10,
+            left: 10
+        }
+    let svg = d3.select("svg"),
+        g = svg.append("g")
+            .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+    let width = svg.attr("width");
+    let height = svg.attr("height");
 
-    const heat_data = data.change_history.changes_matrix.flat();
-    const labels    = data.change_history.filelist;
-    const max_value = d3.max(heat_data)
-    const size      = data.change_history.changes_matrix.length
+    let color = d3.scaleLinear()
+        .domain([-1, 13])
+        .range(["hsl(150,80%,80%)", "hsl(300,52%,38%)"])
+        .interpolate(d3.interpolateHcl);
 
-    var background = svg.append("rect")
-        .style("stroke", "black")
-        .style("stroke-width", "2px")
-        .attr("width", width)
-        .attr("height", height);
+    let root = d3.hierarchy(data)
+        .sum(function(d) { return d.value; })
 
-    var x = d3.scaleBand()
-        .range([0, width])
-        .domain(d3.range(size))
-        .padding(0.01);
+    d3.treemap()
+        .size([width, height])
+        .padding(1)
+        (root);
 
-    var y = d3.scaleBand()
-        .range([0, height])
-        .domain(d3.range(size))
-        .padding(0.01);
+    // make sure that string defining transform attribute is correct. scale isn't a method, but part of string
+    let zoomed = function () {
+        svg.attr("transform", "translate("+ d3.event.translate + ")scale(" + d3.event.scale + ")");
+    };
 
-    var colorMap = d3.scaleLinear()
-        .range(["white", "#69b3a2"])
-        .domain([0,max_value]);
+    let zoom = d3.zoom()
+        .on("zoom", zoomed);
 
-    svg.selectAll()
-        .data(heat_data)
+    let squares = svg.selectAll("rect")
+        .data(root.leaves())
         .enter()
         .append("rect")
-            .attr("x", function(d, i) { return x(i % size); })
-            .attr("y", function(d, i) { return y(Math.trunc(i/size)); })
-            .attr("width", x.bandwidth() )
-            .attr("height", y.bandwidth() )
-            .style("fill", function(d) { return colorMap(d)} )
+            .style("stroke", function(d) {
+                return "black";
+            })
+            .style("fill", function(d) {
+                return color(d.depth);
+            })
+            .attr('x', function(d) {
+                return d.x0;
+            })
+            .attr('y', function(d) {
+                return d.y0;
+            })
+            .attr('width', function(d) {
+                return d.x1 - d.x0;
+            })
+            .attr('height', function(d) {
+                return d.y1 - d.y0;
+            })
+            .call(zoom);
+
+    // and to add the text labels
+    svg
+        .selectAll("text")
+        .data(root.leaves())
+        .enter()
+        .append("text")
+        .attr("class", "small-label")
+        .attr("x", function(d) {
+            return d.x0 + 5
+        })
+        .attr("y", function(d) {
+            return d.y0 + 10
+        })
+        .text(function(d) {
+            return d.data.name
+        })
 }
 
 function display_couplings(data)
