@@ -71,20 +71,20 @@
                         "decision_complexity": 45,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/Log.h",
+                            "gui-lcd/src/ApiConnection.h",
                             "gui-lcd/src/TimeDefinitions.h",
-                            "gui-lcd/src/ApiConnection.h"
+                            "gui-lcd/src/Log.h"
                         ],
                         "is_code": true,
                         "libraries": [
-                            "bloks/RemoteState.h",
                             "QProcess",
+                            "bloks/LightState.h",
                             "bloks/VehicleState.h",
+                            "bloks/MotorState.h",
                             "QDir",
                             "bloks/BatteryState.h",
-                            "bloks/MotorState.h",
-                            "cmath",
-                            "bloks/LightState.h"
+                            "bloks/RemoteState.h",
+                            "cmath"
                         ],
                         "loc": 759,
                         "mime": "text/x-c; charset=us-ascii",
@@ -100,7 +100,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "ApiConnection.cpp",
-                    "temperature": 63,
+                    "temperature": 115,
                     "value": 60
                 },
                 {
@@ -111,30 +111,30 @@
                         "decision_complexity": 0,
                         "extension": ".h",
                         "imports": [
-                            "gui-lcd/src/LcdLight.h",
-                            "gui-lcd/src/LcdBattery.h",
-                            "gui-lcd/src/LcdSupportLevel.h",
-                            "gui-lcd/src/TravelDisplay.h",
-                            "gui-lcd/src/LcdSystemTime.h",
                             "gui-lcd/src/OemSettings.h",
-                            "gui-lcd/src/InspectionDueWarning.h",
+                            "gui-lcd/src/LcdIcon.h",
+                            "gui-lcd/src/LcdSpeed.h",
+                            "gui-lcd/src/TimeIncrementer.h",
                             "gui-lcd/src/ButtonMultiEmit.h",
                             "gui-lcd/src/LcdBluetooth.h",
-                            "gui-lcd/src/LcdSpeed.h",
-                            "gui-lcd/src/LcdIcon.h",
-                            "gui-lcd/src/TimeIncrementer.h"
+                            "gui-lcd/src/TravelDisplay.h",
+                            "gui-lcd/src/InspectionDueWarning.h",
+                            "gui-lcd/src/LcdBattery.h",
+                            "gui-lcd/src/LcdSupportLevel.h",
+                            "gui-lcd/src/LcdLight.h",
+                            "gui-lcd/src/LcdSystemTime.h"
                         ],
                         "is_code": true,
                         "libraries": [
-                            "bloks/VehicleState.h",
-                            "QString",
-                            "QTime",
-                            "bloks/BluetoothServer.h",
-                            "QTimer",
-                            "QObject",
-                            "QSettings",
                             "bloks/Frontend.h",
-                            "bloks/common/Optional.h"
+                            "QObject",
+                            "bloks/VehicleState.h",
+                            "QTime",
+                            "QTimer",
+                            "QString",
+                            "bloks/common/Optional.h",
+                            "QSettings",
+                            "bloks/BluetoothServer.h"
                         ],
                         "loc": 142,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -147,7 +147,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "ApiConnection.h",
-                    "temperature": 29,
+                    "temperature": 58,
                     "value": 23
                 },
                 {
@@ -158,8 +158,8 @@
                         "decision_complexity": 16,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/Log.h",
-                            "gui-lcd/src/BatteryAnimator.h"
+                            "gui-lcd/src/BatteryAnimator.h",
+                            "gui-lcd/src/Log.h"
                         ],
                         "is_code": true,
                         "libraries": [],
@@ -174,7 +174,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "BatteryAnimator.cpp",
-                    "temperature": 2,
+                    "temperature": 6,
                     "value": 22
                 },
                 {
@@ -205,6 +205,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "BatteryAnimator.h",
+                    "temperature": 3,
                     "value": 7
                 },
                 {
@@ -230,7 +231,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "BatteryBlinker.cpp",
-                    "temperature": 1,
+                    "temperature": 4,
                     "value": 3
                 },
                 {
@@ -245,8 +246,8 @@
                         ],
                         "is_code": true,
                         "libraries": [
-                            "vector",
                             "QTimer",
+                            "vector",
                             "chrono"
                         ],
                         "loc": 34,
@@ -260,6 +261,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "BatteryBlinker.h",
+                    "temperature": 2,
                     "value": 5
                 },
                 {
@@ -285,7 +287,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "BatterySegment.cpp",
-                    "temperature": 3,
+                    "temperature": 6,
                     "value": 2
                 },
                 {
@@ -311,7 +313,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "BatterySegment.h",
-                    "temperature": 2,
+                    "temperature": 5,
                     "value": 2
                 },
                 {
@@ -322,8 +324,8 @@
                         "decision_complexity": 0,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/BlinkingItem.h",
-                            "gui-lcd/src/DisplayAccess.h"
+                            "gui-lcd/src/DisplayAccess.h",
+                            "gui-lcd/src/BlinkingItem.h"
                         ],
                         "is_code": true,
                         "libraries": [],
@@ -338,7 +340,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "BlinkingItem.cpp",
-                    "temperature": 1,
+                    "temperature": 4,
                     "value": 4
                 },
                 {
@@ -351,8 +353,8 @@
                         "imports": [],
                         "is_code": true,
                         "libraries": [
-                            "QObject",
                             "QTimer",
+                            "QObject",
                             "chrono"
                         ],
                         "loc": 23,
@@ -366,6 +368,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "BlinkingItem.h",
+                    "temperature": 4,
                     "value": 4
                 },
                 {
@@ -391,7 +394,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "ButtonMultiEmit.cpp",
-                    "temperature": 2,
+                    "temperature": 8,
                     "value": 7
                 },
                 {
@@ -418,7 +421,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "ButtonMultiEmit.h",
-                    "temperature": 1,
+                    "temperature": 6,
                     "value": 4
                 },
                 {
@@ -453,9 +456,9 @@
                         "decision_complexity": 8,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/DisplayDigit.h",
                             "gui-lcd/src/DisplayAccess.h",
-                            "gui-lcd/src/DisplayObject.h"
+                            "gui-lcd/src/DisplayObject.h",
+                            "gui-lcd/src/DisplayDigit.h"
                         ],
                         "is_code": true,
                         "libraries": [
@@ -472,7 +475,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "DisplayAccess.cpp",
-                    "temperature": 4,
+                    "temperature": 11,
                     "value": 17
                 },
                 {
@@ -499,7 +502,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "DisplayAccess.h",
-                    "temperature": 4,
+                    "temperature": 10,
                     "value": 4
                 },
                 {
@@ -527,7 +530,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "DisplayDigit.cpp",
-                    "temperature": 3,
+                    "temperature": 7,
                     "value": 5
                 },
                 {
@@ -556,7 +559,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "DisplayDigit.h",
-                    "temperature": 1,
+                    "temperature": 3,
                     "value": 8
                 },
                 {
@@ -572,21 +575,21 @@
                         ],
                         "is_code": true,
                         "libraries": [
+                            "unistd.h",
+                            "sys/types.h",
+                            "linux/i2c-dev.h",
                             "string.h",
+                            "commands.h",
+                            "QFile",
                             "fstream",
+                            "sys/ioctl.h",
+                            "errno.h",
+                            "sys/stat.h",
+                            "iostream",
+                            "fcntl.h",
                             "QString",
                             "stdio.h",
-                            "linux/i2c-dev.h",
-                            "commands.h",
-                            "errno.h",
-                            "sys/ioctl.h",
-                            "unistd.h",
-                            "fcntl.h",
-                            "sys/types.h",
-                            "QFile",
-                            "sys/stat.h",
-                            "stdlib.h",
-                            "iostream"
+                            "stdlib.h"
                         ],
                         "loc": 253,
                         "mime": "text/x-c; charset=us-ascii",
@@ -599,7 +602,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "DisplayObject.cpp",
-                    "temperature": 4,
+                    "temperature": 8,
                     "value": 41
                 },
                 {
@@ -626,7 +629,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "DisplayObject.h",
-                    "temperature": 2,
+                    "temperature": 4,
                     "value": 3
                 },
                 {
@@ -637,8 +640,8 @@
                         "decision_complexity": 7,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/DisplayDigit.h",
                             "gui-lcd/src/DisplayAccess.h",
+                            "gui-lcd/src/DisplayDigit.h",
                             "gui-lcd/src/DisplayTestObject.h"
                         ],
                         "is_code": true,
@@ -719,9 +722,9 @@
                         "decision_complexity": 6,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/InspectionDueWarning.h",
                             "gui-lcd/src/NumberSplitter.h",
-                            "gui-lcd/src/Constants.h"
+                            "gui-lcd/src/Constants.h",
+                            "gui-lcd/src/InspectionDueWarning.h"
                         ],
                         "is_code": true,
                         "libraries": [],
@@ -792,7 +795,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "LcdBattery.cpp",
-                    "temperature": 7,
+                    "temperature": 23,
                     "value": 18
                 },
                 {
@@ -803,16 +806,16 @@
                         "decision_complexity": 0,
                         "extension": ".h",
                         "imports": [
-                            "gui-lcd/src/BatteryBlinker.h",
+                            "gui-lcd/src/LcdIcon.h",
                             "gui-lcd/src/BatterySegment.h",
                             "gui-lcd/src/BatteryAnimator.h",
-                            "gui-lcd/src/LcdIcon.h"
+                            "gui-lcd/src/BatteryBlinker.h"
                         ],
                         "is_code": true,
                         "libraries": [
-                            "vector",
+                            "QTimer",
                             "memory",
-                            "QTimer"
+                            "vector"
                         ],
                         "loc": 73,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -825,7 +828,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "LcdBattery.h",
-                    "temperature": 5,
+                    "temperature": 16,
                     "value": 9
                 },
                 {
@@ -888,9 +891,9 @@
                         "decision_complexity": 7,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/LcdDistance.h",
+                            "gui-lcd/src/NumberSplitter.h",
                             "gui-lcd/src/Constants.h",
-                            "gui-lcd/src/NumberSplitter.h"
+                            "gui-lcd/src/LcdDistance.h"
                         ],
                         "is_code": true,
                         "libraries": [
@@ -907,7 +910,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "LcdDistance.cpp",
-                    "temperature": 8,
+                    "temperature": 11,
                     "value": 13
                 },
                 {
@@ -936,7 +939,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "LcdDistance.h",
-                    "temperature": 4,
+                    "temperature": 15,
                     "value": 5
                 },
                 {
@@ -962,7 +965,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "LcdIcon.cpp",
-                    "temperature": 1,
+                    "temperature": 5,
                     "value": 2
                 },
                 {
@@ -988,6 +991,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "LcdIcon.h",
+                    "temperature": 4,
                     "value": 2
                 },
                 {
@@ -1013,7 +1017,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "LcdLight.cpp",
-                    "temperature": 7,
+                    "temperature": 14,
                     "value": 9
                 },
                 {
@@ -1039,7 +1043,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "LcdLight.h",
-                    "temperature": 5,
+                    "temperature": 11,
                     "value": 3
                 },
                 {
@@ -1050,9 +1054,9 @@
                         "decision_complexity": 5,
                         "extension": ".cpp",
                         "imports": [
+                            "gui-lcd/src/NumberSplitter.h",
                             "gui-lcd/src/Constants.h",
-                            "gui-lcd/src/LcdSpeed.h",
-                            "gui-lcd/src/NumberSplitter.h"
+                            "gui-lcd/src/LcdSpeed.h"
                         ],
                         "is_code": true,
                         "libraries": [
@@ -1069,7 +1073,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "LcdSpeed.cpp",
-                    "temperature": 8,
+                    "temperature": 22,
                     "value": 11
                 },
                 {
@@ -1085,8 +1089,8 @@
                         ],
                         "is_code": true,
                         "libraries": [
-                            "QObject",
-                            "QTimer"
+                            "QTimer",
+                            "QObject"
                         ],
                         "loc": 33,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -1099,7 +1103,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "LcdSpeed.h",
-                    "temperature": 3,
+                    "temperature": 13,
                     "value": 6
                 },
                 {
@@ -1110,8 +1114,8 @@
                         "decision_complexity": 12,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/SupportLevelSegment.h",
-                            "gui-lcd/src/LcdSupportLevel.h"
+                            "gui-lcd/src/LcdSupportLevel.h",
+                            "gui-lcd/src/SupportLevelSegment.h"
                         ],
                         "is_code": true,
                         "libraries": [],
@@ -1126,7 +1130,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "LcdSupportLevel.cpp",
-                    "temperature": 3,
+                    "temperature": 9,
                     "value": 16
                 },
                 {
@@ -1141,8 +1145,8 @@
                         ],
                         "is_code": true,
                         "libraries": [
-                            "vector",
-                            "memory"
+                            "memory",
+                            "vector"
                         ],
                         "loc": 34,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -1155,7 +1159,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "LcdSupportLevel.h",
-                    "temperature": 2,
+                    "temperature": 8,
                     "value": 5
                 },
                 {
@@ -1166,21 +1170,21 @@
                         "decision_complexity": 7,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/Log.h",
-                            "gui-lcd/src/LcdSystemTime.h"
+                            "gui-lcd/src/LcdSystemTime.h",
+                            "gui-lcd/src/Log.h"
                         ],
                         "is_code": true,
                         "libraries": [
-                            "QTime",
-                            "stdio.h",
-                            "cstring",
-                            "linux/rtc.h",
-                            "sys/ioctl.h",
-                            "QDateTime",
-                            "fcntl.h",
-                            "chrono",
                             "unistd.h",
-                            "time.h"
+                            "chrono",
+                            "time.h",
+                            "QDateTime",
+                            "linux/rtc.h",
+                            "QTime",
+                            "cstring",
+                            "sys/ioctl.h",
+                            "fcntl.h",
+                            "stdio.h"
                         ],
                         "loc": 104,
                         "mime": "text/x-c; charset=us-ascii",
@@ -1193,7 +1197,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "LcdSystemTime.cpp",
-                    "temperature": 5,
+                    "temperature": 9,
                     "value": 22
                 },
                 {
@@ -1219,6 +1223,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "LcdSystemTime.h",
+                    "temperature": 4,
                     "value": 3
                 },
                 {
@@ -1229,8 +1234,8 @@
                         "decision_complexity": 4,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/LcdTime.h",
-                            "gui-lcd/src/NumberSplitter.h"
+                            "gui-lcd/src/NumberSplitter.h",
+                            "gui-lcd/src/LcdTime.h"
                         ],
                         "is_code": true,
                         "libraries": [],
@@ -1245,7 +1250,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "LcdTime.cpp",
-                    "temperature": 3,
+                    "temperature": 20,
                     "value": 9
                 },
                 {
@@ -1274,7 +1279,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "LcdTime.h",
-                    "temperature": 1,
+                    "temperature": 11,
                     "value": 5
                 },
                 {
@@ -1300,6 +1305,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "LcdTripDuration.cpp",
+                    "temperature": 2,
                     "value": 2
                 },
                 {
@@ -1310,8 +1316,8 @@
                         "decision_complexity": 0,
                         "extension": ".h",
                         "imports": [
-                            "gui-lcd/src/LcdTime.h",
-                            "gui-lcd/src/LcdIcon.h"
+                            "gui-lcd/src/LcdIcon.h",
+                            "gui-lcd/src/LcdTime.h"
                         ],
                         "is_code": true,
                         "libraries": [],
@@ -1326,6 +1332,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "LcdTripDuration.h",
+                    "temperature": 2,
                     "value": 4
                 },
                 {
@@ -1377,6 +1384,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "NumberSplitter.cpp",
+                    "temperature": 7,
                     "value": 12
                 },
                 {
@@ -1402,6 +1410,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "NumberSplitter.h",
+                    "temperature": 9,
                     "value": 3
                 },
                 {
@@ -1416,10 +1425,10 @@
                         ],
                         "is_code": true,
                         "libraries": [
-                            "QDebug",
+                            "QJsonDocument",
                             "QJsonObject",
                             "QFile",
-                            "QJsonDocument"
+                            "QDebug"
                         ],
                         "loc": 56,
                         "mime": "text/x-c; charset=us-ascii",
@@ -1486,7 +1495,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "SupportLevelSegment.cpp",
-                    "temperature": 1,
+                    "temperature": 4,
                     "value": 2
                 },
                 {
@@ -1512,6 +1521,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "SupportLevelSegment.h",
+                    "temperature": 3,
                     "value": 2
                 },
                 {
@@ -1601,14 +1611,14 @@
                         "extension": ".cpp",
                         "imports": [
                             "gui-lcd/src/DisplayAccess.h",
-                            "gui-lcd/src/TimeDefinitions.h",
-                            "gui-lcd/src/TravelDisplay.h"
+                            "gui-lcd/src/TravelDisplay.h",
+                            "gui-lcd/src/TimeDefinitions.h"
                         ],
                         "is_code": true,
                         "libraries": [
                             "bloks/BatteryState.h",
-                            "bloks/MotorState.h",
-                            "QSettings"
+                            "QSettings",
+                            "bloks/MotorState.h"
                         ],
                         "loc": 220,
                         "mime": "text/x-c; charset=us-ascii",
@@ -1637,9 +1647,9 @@
                         ],
                         "is_code": true,
                         "libraries": [
-                            "QElapsedTimer",
                             "QObject",
-                            "bloks/VehicleState.h"
+                            "bloks/VehicleState.h",
+                            "QElapsedTimer"
                         ],
                         "loc": 71,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -1663,17 +1673,17 @@
                         "decision_complexity": 0,
                         "extension": ".cpp",
                         "imports": [
-                            "gui-lcd/src/Log.h",
-                            "gui-lcd/src/ApiConnection.h"
+                            "gui-lcd/src/ApiConnection.h",
+                            "gui-lcd/src/Log.h"
                         ],
                         "is_code": true,
                         "libraries": [
-                            "bloks/gui-lcd-version.h",
-                            "bloks/common/UnixSignals.h",
-                            "QCommandLineParser",
+                            "unistd.h",
                             "bloks/common/Log.h",
                             "QCoreApplication",
-                            "unistd.h"
+                            "bloks/gui-lcd-version.h",
+                            "QCommandLineParser",
+                            "bloks/common/UnixSignals.h"
                         ],
                         "loc": 46,
                         "mime": "text/x-c; charset=us-ascii",
@@ -1686,7 +1696,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "main.cpp",
-                    "temperature": 8,
+                    "temperature": 28,
                     "value": 9
                 }
             ],

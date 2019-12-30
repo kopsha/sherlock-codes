@@ -92,8 +92,8 @@
                                         "imports": [],
                                         "is_code": true,
                                         "libraries": [
-                                            "re",
-                                            "bs4"
+                                            "bs4",
+                                            "re"
                                         ],
                                         "loc": 34,
                                         "mime": "text/x-python; charset=us-ascii",
@@ -121,8 +121,8 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "localdb.db_setup",
                                                     "buyers.selectors",
+                                                    "localdb.db_setup",
                                                     "scrapy"
                                                 ],
                                                 "loc": 26,

@@ -21,7 +21,7 @@
                 "type": "makefile script, ASCII text"
             },
             "name": "Makefile.bsd",
-            "temperature": 27,
+            "temperature": 44,
             "value": 1
         },
         {
@@ -86,25 +86,25 @@
                 ],
                 "is_code": true,
                 "libraries": [
-                    "errno.h",
-                    "stdio.h",
-                    "sys/resource.h",
-                    "sys/param.h",
-                    "libgen.h",
-                    "signal.h",
-                    "stdlib.h",
-                    "unistd.h",
-                    "paths.h",
-                    "time.h",
-                    "limits.h",
-                    "fcntl.h",
-                    "sys/wait.h",
                     "sys/event.h",
-                    "err.h",
+                    "paths.h",
                     "sys/stat.h",
-                    "dirent.h",
+                    "sys/wait.h",
+                    "err.h",
+                    "stdlib.h",
+                    "signal.h",
+                    "sys/param.h",
+                    "errno.h",
+                    "fcntl.h",
+                    "libgen.h",
+                    "time.h",
+                    "stdio.h",
+                    "string.h",
+                    "sys/resource.h",
                     "missing/compat.h",
-                    "string.h"
+                    "limits.h",
+                    "dirent.h",
+                    "unistd.h"
                 ],
                 "loc": 516,
                 "mime": "text/x-c; charset=us-ascii",
@@ -172,7 +172,7 @@
                 "type": "POSIX shell script, ASCII text executable"
             },
             "name": "system_test.sh",
-            "temperature": 18,
+            "temperature": 56,
             "value": 4
         },
         {
@@ -187,8 +187,8 @@
                         "imports": [],
                         "is_code": true,
                         "libraries": [
-                            "stdio.h",
-                            "sys/types.h"
+                            "sys/types.h",
+                            "stdio.h"
                         ],
                         "loc": 20,
                         "mime": "text/x-c; charset=us-ascii",
@@ -201,7 +201,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "compat.h",
-                    "temperature": 6,
+                    "temperature": 8,
                     "value": 7
                 },
                 {
@@ -215,10 +215,10 @@
                         "is_code": true,
                         "libraries": [
                             "stdlib.h",
-                            "errno.h",
                             "stdio.h",
-                            "fcntl.h",
-                            "string.h"
+                            "errno.h",
+                            "string.h",
+                            "fcntl.h"
                         ],
                         "loc": 187,
                         "mime": "text/x-c; charset=us-ascii",
@@ -231,7 +231,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "fmemopen.c",
-                    "temperature": 2,
+                    "temperature": 4,
                     "value": 25
                 },
                 {
@@ -247,17 +247,17 @@
                         "is_code": true,
                         "libraries": [
                             "sys/event.h",
-                            "time.h",
-                            "errno.h",
                             "sys/stat.h",
+                            "sys/inotify.h",
                             "limits.h",
-                            "stdio.h",
-                            "string.h",
+                            "time.h",
                             "../data.h",
                             "unistd.h",
-                            "poll.h",
-                            "sys/inotify.h",
-                            "sys/types.h"
+                            "sys/types.h",
+                            "stdio.h",
+                            "errno.h",
+                            "string.h",
+                            "poll.h"
                         ],
                         "loc": 160,
                         "mime": "text/x-c; charset=us-ascii",
@@ -270,7 +270,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "kqueue_inotify.c",
-                    "temperature": 3,
+                    "temperature": 40,
                     "value": 37
                 },
                 {
@@ -283,8 +283,8 @@
                         "imports": [],
                         "is_code": true,
                         "libraries": [
-                            "string.h",
-                            "sys/types.h"
+                            "sys/types.h",
+                            "string.h"
                         ],
                         "loc": 52,
                         "mime": "text/x-c; charset=us-ascii",
@@ -312,8 +312,8 @@
                                 "imports": [],
                                 "is_code": true,
                                 "libraries": [
-                                    "sys/time.h",
-                                    "sys/types.h"
+                                    "sys/types.h",
+                                    "sys/time.h"
                                 ],
                                 "loc": 78,
                                 "mime": "text/x-c; charset=us-ascii",
@@ -326,7 +326,7 @@
                                 "type": "C source, ASCII text"
                             },
                             "name": "event.h",
-                            "temperature": 1,
+                            "temperature": 6,
                             "value": 4
                         }
                     ],

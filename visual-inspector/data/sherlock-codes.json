@@ -73,12 +73,12 @@
                         "imports": [],
                         "is_code": true,
                         "libraries": [
-                            "timeit",
-                            "re",
+                            "datetime",
                             "os",
-                            "ast",
+                            "re",
                             "utils",
-                            "datetime"
+                            "ast",
+                            "timeit"
                         ],
                         "loc": 272,
                         "mime": "text/x-python; charset=us-ascii",
@@ -97,29 +97,29 @@
                 {
                     "easy_path": "sherlock-codes/project-crawler/crawl.py",
                     "meta": {
-                        "aggregate_complexity": 82,
-                        "blank_lines": 65,
-                        "decision_complexity": 67,
+                        "aggregate_complexity": 90,
+                        "blank_lines": 69,
+                        "decision_complexity": 75,
                         "extension": ".py",
                         "imports": [],
                         "is_code": true,
                         "libraries": [
+                            "magic",
                             "argparse",
                             "datetime",
-                            "timeit",
-                            "re",
-                            "code_parser",
-                            "magic",
                             "os",
-                            "git.cmd",
+                            "json",
+                            "re",
                             "anytree",
                             "anytree.exporter",
                             "utils",
                             "humanize",
-                            "json",
-                            "numpy"
+                            "timeit",
+                            "code_parser",
+                            "numpy",
+                            "git.cmd"
                         ],
-                        "loc": 349,
+                        "loc": 363,
                         "mime": "text/x-python; charset=us-ascii",
                         "name": "crawl",
                         "nested_complexity": 1,
@@ -127,13 +127,13 @@
                             "[warning] Quite many decisions, consider adding more unit tests and review the entire file."
                         ],
                         "risks_points": 8,
-                        "size": 11435,
-                        "sloc": 284,
+                        "size": 11881,
+                        "sloc": 294,
                         "type": "Python script, ASCII text executable"
                     },
                     "name": "crawl.py",
-                    "temperature": 31,
-                    "value": 82
+                    "temperature": 35,
+                    "value": 90
                 },
                 {
                     "easy_path": "sherlock-codes/project-crawler/scan_my_projects.sh",
@@ -161,11 +161,11 @@
                 }
             ],
             "counter": {
-                "bytes_count": 19965,
+                "bytes_count": 20411,
                 "risks_count": 1,
-                "sloc_count": 398,
+                "sloc_count": 408,
                 "source_files": 3,
-                "value_count": 115
+                "value_count": 123
             },
             "easy_path": "sherlock-codes/project-crawler",
             "name": "project-crawler"
@@ -175,14 +175,14 @@
                 {
                     "easy_path": "sherlock-codes/visual-inspector/inspector-views.js",
                     "meta": {
-                        "aggregate_complexity": 15,
+                        "aggregate_complexity": 16,
                         "blank_lines": 42,
-                        "decision_complexity": 11,
+                        "decision_complexity": 12,
                         "extension": ".js",
                         "imports": [],
                         "is_code": true,
                         "libraries": [],
-                        "loc": 388,
+                        "loc": 395,
                         "mime": "text/x-c; charset=us-ascii",
                         "name": "inspector-views",
                         "nested_complexity": 4,
@@ -190,13 +190,13 @@
                             "[info] Arguably many lines of code, this may be ok for now."
                         ],
                         "risks_points": 2,
-                        "size": 12513,
-                        "sloc": 346,
+                        "size": 12798,
+                        "sloc": 353,
                         "type": "C source, ASCII text"
                     },
                     "name": "inspector-views.js",
-                    "temperature": 9,
-                    "value": 15
+                    "temperature": 10,
+                    "value": 16
                 },
                 {
                     "easy_path": "sherlock-codes/visual-inspector/run",
@@ -224,22 +224,22 @@
                 }
             ],
             "counter": {
-                "bytes_count": 12600,
+                "bytes_count": 12885,
                 "risks_count": 1,
-                "sloc_count": 352,
+                "sloc_count": 359,
                 "source_files": 2,
-                "value_count": 16
+                "value_count": 17
             },
             "easy_path": "sherlock-codes/visual-inspector",
             "name": "visual-inspector"
         }
     ],
     "counter": {
-        "bytes_count": 32887,
+        "bytes_count": 33618,
         "risks_count": 2,
-        "sloc_count": 762,
+        "sloc_count": 779,
         "source_files": 7,
-        "value_count": 133
+        "value_count": 142
     },
     "easy_path": "sherlock-codes",
     "name": "sherlock-codes"

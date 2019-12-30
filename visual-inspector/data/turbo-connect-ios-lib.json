@@ -14,9 +14,9 @@
                                 "imports": [],
                                 "is_code": true,
                                 "libraries": [
-                                    "XCTest_Gherkin",
+                                    "TurboConnectLibrary",
                                     "XCTest",
-                                    "TurboConnectLibrary"
+                                    "XCTest_Gherkin"
                                 ],
                                 "loc": 96,
                                 "mime": "text/plain; charset=utf-8",
@@ -72,8 +72,8 @@
                                         "imports": [],
                                         "is_code": true,
                                         "libraries": [
-                                            "XCTest_Gherkin",
-                                            "XCTest"
+                                            "XCTest",
+                                            "XCTest_Gherkin"
                                         ],
                                         "loc": 23,
                                         "mime": "text/plain; charset=utf-8",
@@ -112,8 +112,8 @@
                                         "imports": [],
                                         "is_code": true,
                                         "libraries": [
-                                            "TurboConnectLibrary",
-                                            "UIKit"
+                                            "UIKit",
+                                            "TurboConnectLibrary"
                                         ],
                                         "loc": 22,
                                         "mime": "text/plain; charset=utf-8",
@@ -139,8 +139,8 @@
                                         "imports": [],
                                         "is_code": true,
                                         "libraries": [
-                                            "TurboConnectLibrary",
-                                            "UIKit"
+                                            "UIKit",
+                                            "TurboConnectLibrary"
                                         ],
                                         "loc": 26,
                                         "mime": "text/plain; charset=utf-8",
@@ -166,8 +166,8 @@
                                         "imports": [],
                                         "is_code": true,
                                         "libraries": [
-                                            "TurboConnectLibrary",
-                                            "UIKit"
+                                            "UIKit",
+                                            "TurboConnectLibrary"
                                         ],
                                         "loc": 24,
                                         "mime": "text/plain; charset=utf-8",
@@ -193,8 +193,8 @@
                                         "imports": [],
                                         "is_code": true,
                                         "libraries": [
-                                            "TurboConnectLibrary",
-                                            "UIKit"
+                                            "UIKit",
+                                            "TurboConnectLibrary"
                                         ],
                                         "loc": 42,
                                         "mime": "text/plain; charset=utf-8",
@@ -233,10 +233,10 @@
                                         "imports": [],
                                         "is_code": true,
                                         "libraries": [
+                                            "Alamofire",
                                             "Foundation",
-                                            "XCTest_Gherkin",
                                             "TurboConnectLibrary",
-                                            "Alamofire"
+                                            "XCTest_Gherkin"
                                         ],
                                         "loc": 97,
                                         "mime": "text/plain; charset=utf-8",
@@ -249,6 +249,7 @@
                                         "type": "UTF-8 Unicode text"
                                     },
                                     "name": "LoginSteps.swift",
+                                    "temperature": 2,
                                     "value": 13
                                 },
                                 {
@@ -261,8 +262,8 @@
                                         "imports": [],
                                         "is_code": true,
                                         "libraries": [
-                                            "XCTest_Gherkin",
-                                            "TurboConnectLibrary"
+                                            "TurboConnectLibrary",
+                                            "XCTest_Gherkin"
                                         ],
                                         "loc": 245,
                                         "mime": "text/plain; charset=utf-8",
@@ -275,7 +276,7 @@
                                         "type": "UTF-8 Unicode text"
                                     },
                                     "name": "TurboConnectSteps.swift",
-                                    "temperature": 1,
+                                    "temperature": 7,
                                     "value": 26
                                 }
                             ],
@@ -626,8 +627,8 @@
                                                         "imports": [],
                                                         "is_code": true,
                                                         "libraries": [
-                                                            "Foundation",
                                                             "WebKit",
+                                                            "Foundation",
                                                             "XCTest"
                                                         ],
                                                         "loc": 346,
@@ -702,6 +703,7 @@
                                                 "type": "Objective-C source, ASCII text"
                                             },
                                             "name": "Pods-TurboConnect_Example-dummy.m",
+                                            "temperature": 1,
                                             "value": 1
                                         },
                                         {
@@ -725,6 +727,7 @@
                                                 "type": "POSIX shell script, ASCII text executable, with very long lines"
                                             },
                                             "name": "Pods-TurboConnect_Example-frameworks.sh",
+                                            "temperature": 4,
                                             "value": 29
                                         },
                                         {
@@ -750,6 +753,7 @@
                                                 "type": "Objective-C source, ASCII text"
                                             },
                                             "name": "Pods-TurboConnect_Example-umbrella.h",
+                                            "temperature": 1,
                                             "value": 3
                                         }
                                     ],
@@ -786,6 +790,7 @@
                                                 "type": "Objective-C source, ASCII text"
                                             },
                                             "name": "Pods-TurboConnect_Tests-dummy.m",
+                                            "temperature": 1,
                                             "value": 1
                                         },
                                         {
@@ -809,6 +814,7 @@
                                                 "type": "POSIX shell script, ASCII text executable, with very long lines"
                                             },
                                             "name": "Pods-TurboConnect_Tests-frameworks.sh",
+                                            "temperature": 1,
                                             "value": 29
                                         },
                                         {
@@ -834,6 +840,7 @@
                                                 "type": "Objective-C source, ASCII text"
                                             },
                                             "name": "Pods-TurboConnect_Tests-umbrella.h",
+                                            "temperature": 1,
                                             "value": 3
                                         }
                                     ],
@@ -870,6 +877,7 @@
                                                 "type": "Objective-C source, ASCII text"
                                             },
                                             "name": "TurboConnect-dummy.m",
+                                            "temperature": 1,
                                             "value": 1
                                         },
                                         {
@@ -893,6 +901,7 @@
                                                 "type": "Objective-C source, ASCII text"
                                             },
                                             "name": "TurboConnect-prefix.pch",
+                                            "temperature": 1,
                                             "value": 2
                                         },
                                         {
@@ -904,8 +913,8 @@
                                                 "extension": ".h",
                                                 "imports": [
                                                     "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary.h",
-                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary-Swift.h",
-                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/TurboConnectLibrary.h"
+                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/TurboConnectLibrary.h",
+                                                    "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary-Swift.h"
                                                 ],
                                                 "is_code": true,
                                                 "libraries": [
@@ -922,6 +931,7 @@
                                                 "type": "Objective-C source, ASCII text"
                                             },
                                             "name": "TurboConnect-umbrella.h",
+                                            "temperature": 6,
                                             "value": 5
                                         }
                                     ],
@@ -958,6 +968,7 @@
                                                 "type": "Objective-C source, ASCII text"
                                             },
                                             "name": "XCTest-Gherkin-dummy.m",
+                                            "temperature": 1,
                                             "value": 1
                                         },
                                         {
@@ -981,6 +992,7 @@
                                                 "type": "Objective-C source, ASCII text"
                                             },
                                             "name": "XCTest-Gherkin-prefix.pch",
+                                            "temperature": 1,
                                             "value": 2
                                         },
                                         {
@@ -1010,6 +1022,7 @@
                                                 "type": "Objective-C source, ASCII text"
                                             },
                                             "name": "XCTest-Gherkin-umbrella.h",
+                                            "temperature": 2,
                                             "value": 6
                                         }
                                     ],
@@ -1046,6 +1059,7 @@
                                                 "type": "Objective-C source, ASCII text"
                                             },
                                             "name": "Zip-dummy.m",
+                                            "temperature": 1,
                                             "value": 1
                                         },
                                         {
@@ -1069,6 +1083,7 @@
                                                 "type": "Objective-C source, ASCII text"
                                             },
                                             "name": "Zip-prefix.pch",
+                                            "temperature": 1,
                                             "value": 2
                                         },
                                         {
@@ -1095,6 +1110,7 @@
                                                 "type": "Objective-C source, ASCII text"
                                             },
                                             "name": "Zip-umbrella.h",
+                                            "temperature": 1,
                                             "value": 4
                                         }
                                     ],
@@ -1157,13 +1173,13 @@
                                                 "decision_complexity": 44,
                                                 "extension": ".swift",
                                                 "imports": [
-                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/zip.c",
                                                     "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/unzip.h",
+                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/ioapi.c",
                                                     "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/crypt.h",
                                                     "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/zip.h",
+                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/unzip.c",
                                                     "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/ioapi.h",
-                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/ioapi.c",
-                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/unzip.c"
+                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/zip.c"
                                                 ],
                                                 "is_code": true,
                                                 "libraries": [
@@ -1249,8 +1265,8 @@
                                                         ],
                                                         "is_code": true,
                                                         "libraries": [
-                                                            "string.h",
-                                                            "stdlib.h"
+                                                            "stdlib.h",
+                                                            "string.h"
                                                         ],
                                                         "loc": 370,
                                                         "mime": "text/x-c; charset=us-ascii",
@@ -1279,8 +1295,8 @@
                                                         "is_code": true,
                                                         "libraries": [
                                                             "zlib.h",
-                                                            "stdio.h",
-                                                            "stdlib.h"
+                                                            "stdlib.h",
+                                                            "stdio.h"
                                                         ],
                                                         "loc": 176,
                                                         "mime": "text/x-c; charset=us-ascii",
@@ -1309,9 +1325,9 @@
                                                         "is_code": true,
                                                         "libraries": [
                                                             "zlib.h",
-                                                            "stdio.h",
                                                             "stdlib.h",
-                                                            "string.h"
+                                                            "string.h",
+                                                            "stdio.h"
                                                         ],
                                                         "loc": 1948,
                                                         "mime": "text/x-c; charset=us-ascii",
@@ -1372,9 +1388,9 @@
                                                         "is_code": true,
                                                         "libraries": [
                                                             "zlib.h",
-                                                            "time.h",
-                                                            "string.h",
                                                             "stdlib.h",
+                                                            "string.h",
+                                                            "time.h",
                                                             "stdio.h"
                                                         ],
                                                         "loc": 2021,
@@ -1504,8 +1520,8 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "TurboConnectLibrary",
-                                                    "UIKit"
+                                                    "UIKit",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 184,
                                                 "mime": "text/plain; charset=utf-8",
@@ -1518,7 +1534,7 @@
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "BikeDetailsViewController.swift",
-                                            "temperature": 8,
+                                            "temperature": 19,
                                             "value": 19
                                         },
                                         {
@@ -1531,8 +1547,8 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "TurboConnectLibrary",
-                                                    "UIKit"
+                                                    "UIKit",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 96,
                                                 "mime": "text/x-c; charset=utf-8",
@@ -1558,8 +1574,8 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "TurboConnectLibrary",
-                                                    "UIKit"
+                                                    "UIKit",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 207,
                                                 "mime": "text/plain; charset=us-ascii",
@@ -1572,7 +1588,7 @@
                                                 "type": "ASCII text"
                                             },
                                             "name": "DiscoverBikesViewController.swift",
-                                            "temperature": 4,
+                                            "temperature": 22,
                                             "value": 16
                                         },
                                         {
@@ -1583,21 +1599,21 @@
                                                 "decision_complexity": 20,
                                                 "extension": ".swift",
                                                 "imports": [
+                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/ioapi.c",
+                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/unzip.h",
+                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/QuickZip.swift",
+                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/crypt.h",
+                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/zip.h",
+                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/unzip.c",
+                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/ioapi.h",
                                                     "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/zip.c",
                                                     "turbo-connect-ios-lib/Example/Pods/Zip/Zip/ZipUtilities.swift",
-                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/QuickZip.swift",
-                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/unzip.h",
-                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/crypt.h",
-                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/Zip.swift",
-                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/zip.h",
-                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/ioapi.h",
-                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/ioapi.c",
-                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/minizip/unzip.c"
+                                                    "turbo-connect-ios-lib/Example/Pods/Zip/Zip/Zip.swift"
                                                 ],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "TurboConnectLibrary",
-                                                    "UIKit"
+                                                    "UIKit",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 280,
                                                 "mime": "text/plain; charset=utf-8",
@@ -1610,7 +1626,7 @@
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "KnownBikesViewController.swift",
-                                            "temperature": 6,
+                                            "temperature": 22,
                                             "value": 27
                                         },
                                         {
@@ -1662,8 +1678,8 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "TurboConnectLibrary",
-                                                    "UIKit"
+                                                    "UIKit",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 23,
                                                 "mime": "text/x-c++; charset=utf-8",
@@ -1826,10 +1842,10 @@
                                 "imports": [],
                                 "is_code": true,
                                 "libraries": [
-                                    "stdbool.h",
                                     "stdint.h",
-                                    "Foundation/Foundation.h",
-                                    "stddef.h"
+                                    "stdbool.h",
+                                    "stddef.h",
+                                    "Foundation/Foundation.h"
                                 ],
                                 "loc": 401,
                                 "mime": "text/x-c; charset=utf-8",
@@ -1845,7 +1861,7 @@
                                 "type": "C source, UTF-8 Unicode text, with very long lines"
                             },
                             "name": "TurboConnectLibrary-Swift.h",
-                            "temperature": 17,
+                            "temperature": 21,
                             "value": 51
                         },
                         {
@@ -1872,7 +1888,7 @@
                                 "type": "Objective-C source, UTF-8 Unicode text"
                             },
                             "name": "TurboConnectLibrary.h",
-                            "temperature": 4,
+                            "temperature": 7,
                             "value": 3
                         }
                     ],
@@ -1939,8 +1955,8 @@
                                         "imports": [],
                                         "is_code": true,
                                         "libraries": [
-                                            "TurboConnectPrivate",
-                                            "UIKit"
+                                            "UIKit",
+                                            "TurboConnectPrivate"
                                         ],
                                         "loc": 292,
                                         "mime": "text/plain; charset=utf-8",
@@ -1980,7 +1996,7 @@
                                         "type": "Objective-C source, UTF-8 Unicode text"
                                     },
                                     "name": "TurboConnectLibrary.h",
-                                    "temperature": 3,
+                                    "temperature": 7,
                                     "value": 3
                                 },
                                 {
@@ -2047,7 +2063,7 @@
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "BikeCommunication.swift",
-                                            "temperature": 5,
+                                            "temperature": 10,
                                             "value": 9
                                         },
                                         {
@@ -2060,9 +2076,9 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
+                                                    "UIKit",
                                                     "CoreBluetooth",
-                                                    "TurboConnectPrivate",
-                                                    "UIKit"
+                                                    "TurboConnectPrivate"
                                                 ],
                                                 "loc": 133,
                                                 "mime": "text/plain; charset=utf-8",
@@ -2075,7 +2091,7 @@
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "BikeIdentification.swift",
-                                            "temperature": 11,
+                                            "temperature": 21,
                                             "value": 20
                                         },
                                         {
@@ -2088,9 +2104,9 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
+                                                    "UIKit",
                                                     "CoreBluetooth",
-                                                    "TurboConnectPrivate",
-                                                    "UIKit"
+                                                    "TurboConnectPrivate"
                                                 ],
                                                 "loc": 305,
                                                 "mime": "text/plain; charset=us-ascii",
@@ -2116,8 +2132,8 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "CoreBluetooth",
-                                                    "UIKit"
+                                                    "UIKit",
+                                                    "CoreBluetooth"
                                                 ],
                                                 "loc": 108,
                                                 "mime": "text/x-c; charset=us-ascii",
@@ -2130,7 +2146,7 @@
                                                 "type": "C source, ASCII text"
                                             },
                                             "name": "DiscoveredBikesDatasource.swift",
-                                            "temperature": 10,
+                                            "temperature": 15,
                                             "value": 18
                                         },
                                         {
@@ -2143,9 +2159,9 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
+                                                    "UIKit",
                                                     "CoreBluetooth",
-                                                    "TurboConnectPrivate",
-                                                    "UIKit"
+                                                    "TurboConnectPrivate"
                                                 ],
                                                 "loc": 131,
                                                 "mime": "text/x-c++; charset=utf-8",
@@ -2184,8 +2200,8 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "Foundation/Foundation.h",
-                                                    "CoreBluetooth/CoreBluetooth.h"
+                                                    "CoreBluetooth/CoreBluetooth.h",
+                                                    "Foundation/Foundation.h"
                                                 ],
                                                 "loc": 53,
                                                 "mime": "text/x-objective-c; charset=us-ascii",
@@ -2209,14 +2225,14 @@
                                                 "decision_complexity": 13,
                                                 "extension": ".mm",
                                                 "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/NSString+Core.h",
                                                     "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/CoreManager.h",
-                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers/NSData+Core.h"
+                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers/NSData+Core.h",
+                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/NSString+Core.h"
                                                 ],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "identification_sequence.h",
                                                     "TurboConnectLibrary/TurboConnectLibrary-Swift.h",
+                                                    "identification_sequence.h",
                                                     "turbo-connect-core.h"
                                                 ],
                                                 "loc": 187,
@@ -2243,8 +2259,8 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "Foundation/Foundation.h",
-                                                    "turbo-connect-core.h"
+                                                    "turbo-connect-core.h",
+                                                    "Foundation/Foundation.h"
                                                 ],
                                                 "loc": 19,
                                                 "mime": "text/x-objective-c; charset=utf-8",
@@ -2347,6 +2363,7 @@
                                                 "type": "Objective-C source, UTF-8 Unicode text"
                                             },
                                             "name": "NSData+Core.h",
+                                            "temperature": 3,
                                             "value": 3
                                         },
                                         {
@@ -2370,6 +2387,7 @@
                                                 "type": "Objective-C source, UTF-8 Unicode text"
                                             },
                                             "name": "NSData+Core.m",
+                                            "temperature": 3,
                                             "value": 3
                                         }
                                     ],
@@ -2408,6 +2426,7 @@
                                                 "type": "C++ source, UTF-8 Unicode text"
                                             },
                                             "name": "KnownBikes.swift",
+                                            "temperature": 15,
                                             "value": 24
                                         }
                                     ],
@@ -2656,7 +2675,7 @@
                                                 "type": "ASCII text"
                                             },
                                             "name": "Parameter.swift",
-                                            "temperature": 8,
+                                            "temperature": 10,
                                             "value": 7
                                         },
                                         {
@@ -2771,6 +2790,7 @@
                                                         "type": "UTF-8 Unicode text"
                                                     },
                                                     "name": "NotifyParameter.swift",
+                                                    "temperature": 1,
                                                     "value": 6
                                                 },
                                                 {
@@ -2796,6 +2816,7 @@
                                                         "type": "UTF-8 Unicode text"
                                                     },
                                                     "name": "ReadParameter.swift",
+                                                    "temperature": 1,
                                                     "value": 7
                                                 },
                                                 {
@@ -2821,6 +2842,7 @@
                                                         "type": "UTF-8 Unicode text"
                                                     },
                                                     "name": "WriteParameter.swift",
+                                                    "temperature": 1,
                                                     "value": 3
                                                 }
                                             ],
@@ -2861,10 +2883,10 @@
                                                                 "imports": [],
                                                                 "is_code": true,
                                                                 "libraries": [
-                                                                    "stdbool.h",
                                                                     "stdint.h",
-                                                                    "Foundation/Foundation.h",
-                                                                    "stddef.h"
+                                                                    "stdbool.h",
+                                                                    "stddef.h",
+                                                                    "Foundation/Foundation.h"
                                                                 ],
                                                                 "loc": 267,
                                                                 "mime": "text/x-c; charset=us-ascii",
@@ -2954,6 +2976,7 @@
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "BikeTests.swift",
+                                            "temperature": 6,
                                             "value": 4
                                         }
                                     ],
@@ -2993,6 +3016,7 @@
                                                 "type": "UTF-8 Unicode text, with very long lines"
                                             },
                                             "name": "AvailableParametersTests.swift",
+                                            "temperature": 1,
                                             "value": 4
                                         },
                                         {
@@ -3019,6 +3043,7 @@
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "BikeCommunicationTests.swift",
+                                            "temperature": 3,
                                             "value": 12
                                         },
                                         {
@@ -3045,6 +3070,7 @@
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "BikeIdentificationTests.swift",
+                                            "temperature": 17,
                                             "value": 5
                                         },
                                         {
@@ -3074,6 +3100,7 @@
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "BluetoothManagerTests.swift",
+                                            "temperature": 30,
                                             "value": 7
                                         },
                                         {
@@ -3086,9 +3113,9 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
+                                                    "TurboConnectPrivate",
                                                     "CoreBluetooth",
-                                                    "TurboConnectLibrary",
-                                                    "TurboConnectPrivate"
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 313,
                                                 "mime": "text/plain; charset=utf-8",
@@ -3101,6 +3128,7 @@
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "CoreBluetoothTestHelpers.swift",
+                                            "temperature": 26,
                                             "value": 12
                                         },
                                         {
@@ -3127,6 +3155,7 @@
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "DiscoveredBikesDatasourceTests.swift",
+                                            "temperature": 8,
                                             "value": 6
                                         },
                                         {
@@ -3153,6 +3182,7 @@
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "ServicesDiscoveryTests.swift",
+                                            "temperature": 1,
                                             "value": 10
                                         }
                                     ],
@@ -3192,6 +3222,7 @@
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "KnownBikesTests.swift",
+                                            "temperature": 10,
                                             "value": 8
                                         }
                                     ],
@@ -3231,6 +3262,7 @@
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "LoggerTests.swift",
+                                            "temperature": 4,
                                             "value": 4
                                         }
                                     ],
@@ -3256,8 +3288,8 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
-                                                    "TurboConnectLibrary",
-                                                    "UIKit"
+                                                    "UIKit",
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 24,
                                                 "mime": "text/plain; charset=utf-8",
@@ -3270,6 +3302,7 @@
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "NetworkingManagerMock.swift",
+                                            "temperature": 1,
                                             "value": 4
                                         },
                                         {
@@ -3282,9 +3315,9 @@
                                                 "imports": [],
                                                 "is_code": true,
                                                 "libraries": [
+                                                    "Alamofire",
                                                     "XCTest",
-                                                    "TurboConnectLibrary",
-                                                    "Alamofire"
+                                                    "TurboConnectLibrary"
                                                 ],
                                                 "loc": 117,
                                                 "mime": "text/plain; charset=utf-8",
@@ -3297,6 +3330,7 @@
                                                 "type": "UTF-8 Unicode text, with very long lines"
                                             },
                                             "name": "NetworkingManagerTests.swift",
+                                            "temperature": 2,
                                             "value": 10
                                         }
                                     ],
@@ -3511,6 +3545,7 @@
                                                 "type": "UTF-8 Unicode text"
                                             },
                                             "name": "TurboConnectTests.swift",
+                                            "temperature": 16,
                                             "value": 5
                                         }
                                     ],

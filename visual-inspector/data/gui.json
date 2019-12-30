@@ -123,31 +123,31 @@
                         "decision_complexity": 39,
                         "extension": ".cpp",
                         "imports": [
+                            "gui/src/QueryableWrapper.h",
                             "gui/src/Log.h",
-                            "gui/src/Controller.h",
-                            "gui/src/QueryableWrapper.h"
+                            "gui/src/Controller.h"
                         ],
                         "is_code": true,
                         "libraries": [
-                            "QMetaProperty",
-                            "QQmlContext",
-                            "QKeyEvent",
-                            "QQmlComponent",
-                            "QWindow",
-                            "QFont",
-                            "bloks/MotorState.h",
-                            "QNmeaPositionInfoSource",
-                            "bloks/LightState.h",
-                            "bloks/BatteryState.h",
-                            "sys/reboot.h",
-                            "bloks/SensorState.h",
-                            "bloks/BluetoothServer.h",
-                            "bloks/GearShiftState.h",
                             "QSettings",
                             "QGeoPositionInfoSource",
+                            "bloks/SensorState.h",
+                            "QFont",
+                            "QNmeaPositionInfoSource",
+                            "QFileInfo",
+                            "bloks/LightState.h",
                             "bloks/RemoteState.h",
+                            "sys/reboot.h",
+                            "bloks/BatteryState.h",
+                            "QWindow",
+                            "QQmlContext",
+                            "bloks/GearShiftState.h",
+                            "QQmlComponent",
+                            "QMetaProperty",
                             "bloks/DisplayState.h",
-                            "QFileInfo"
+                            "QKeyEvent",
+                            "bloks/MotorState.h",
+                            "bloks/BluetoothServer.h"
                         ],
                         "loc": 442,
                         "mime": "text/x-c; charset=us-ascii",
@@ -177,17 +177,17 @@
                         ],
                         "is_code": true,
                         "libraries": [
+                            "QGeoPositionInfoSource",
+                            "QGeoPositionInfo",
+                            "bloks/VehicleState.h",
+                            "QSettings",
+                            "QString",
+                            "QGuiApplication",
                             "QTimer",
+                            "bloks/RemoteState.h",
                             "bloks/Frontend.h",
                             "bloks/BluetoothServer.h",
-                            "QGeoPositionInfo",
-                            "QQmlApplicationEngine",
-                            "QSettings",
-                            "QGeoPositionInfoSource",
-                            "bloks/RemoteState.h",
-                            "QGuiApplication",
-                            "bloks/VehicleState.h",
-                            "QString"
+                            "QQmlApplicationEngine"
                         ],
                         "loc": 285,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -216,9 +216,9 @@
                         ],
                         "is_code": true,
                         "libraries": [
-                            "QCoreApplication",
                             "QQmlApplicationEngine",
-                            "QFile"
+                            "QFile",
+                            "QCoreApplication"
                         ],
                         "loc": 246,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -244,10 +244,10 @@
                         "imports": [],
                         "is_code": true,
                         "libraries": [
-                            "QString",
-                            "QObject",
                             "QSettings",
                             "QVector",
+                            "QString",
+                            "QObject",
                             "QTranslator"
                         ],
                         "loc": 213,
@@ -272,8 +272,8 @@
                         "decision_complexity": 13,
                         "extension": ".cpp",
                         "imports": [
-                            "gui/src/Log.h",
-                            "gui/src/GuiSettingsBloks.h"
+                            "gui/src/GuiSettingsBloks.h",
+                            "gui/src/Log.h"
                         ],
                         "is_code": true,
                         "libraries": [
@@ -412,16 +412,16 @@
                         ],
                         "is_code": true,
                         "libraries": [
-                            "QMetaProperty",
-                            "bloks/MotorState.h",
                             "QQmlContext",
-                            "bloks/BatteryState.h",
-                            "QQuickWindow",
+                            "QFont",
                             "bloks/GearShiftState.h",
-                            "QQmlComponent",
+                            "QQuickWindow",
                             "bloks/LightState.h",
+                            "QQmlComponent",
                             "bloks/RemoteState.h",
-                            "QFont"
+                            "bloks/BatteryState.h",
+                            "QMetaProperty",
+                            "bloks/MotorState.h"
                         ],
                         "loc": 198,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -434,7 +434,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "MockController.cpp",
-                    "temperature": 54,
+                    "temperature": 56,
                     "value": 19
                 },
                 {
@@ -448,9 +448,9 @@
                         "is_code": true,
                         "libraries": [
                             "QTimer",
-                            "QQmlApplicationEngine",
+                            "bloks/VehicleState.h",
                             "QGuiApplication",
-                            "bloks/VehicleState.h"
+                            "QQmlApplicationEngine"
                         ],
                         "loc": 142,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -463,7 +463,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "MockController.h",
-                    "temperature": 24,
+                    "temperature": 26,
                     "value": 5
                 },
                 {
@@ -489,6 +489,7 @@
                         "type": "C source, ASCII text"
                     },
                     "name": "QueryableWrapper.cpp",
+                    "temperature": 3,
                     "value": 15
                 },
                 {
@@ -501,12 +502,12 @@
                         "imports": [],
                         "is_code": true,
                         "libraries": [
-                            "bloks/QueryableDate.h",
+                            "bloks/QueryableInt.h",
                             "QObject",
-                            "bloks/QueryableFloat.h",
                             "QPointer",
-                            "bloks/QueryableString.h",
-                            "bloks/QueryableInt.h"
+                            "bloks/QueryableFloat.h",
+                            "bloks/QueryableDate.h",
+                            "bloks/QueryableString.h"
                         ],
                         "loc": 119,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -519,7 +520,7 @@
                         "type": "C++ source, ASCII text"
                     },
                     "name": "QueryableWrapper.h",
-                    "temperature": 5,
+                    "temperature": 9,
                     "value": 8
                 },
                 {
@@ -536,9 +537,9 @@
                         "libraries": [
                             "QtGui/QGuiApplication",
                             "QtQml/QQmlApplicationEngine",
-                            "QAndroidJniObject",
+                            "QtGui/QScreen",
                             "QtQml/QQmlContext",
-                            "QtGui/QScreen"
+                            "QAndroidJniObject"
                         ],
                         "loc": 62,
                         "mime": "text/x-c; charset=us-ascii",
@@ -567,11 +568,11 @@
                         ],
                         "is_code": true,
                         "libraries": [
+                            "QSettings",
                             "QtMath",
-                            "bloks/MotorState.h",
                             "QTimer",
                             "bloks/BatteryState.h",
-                            "QSettings"
+                            "bloks/MotorState.h"
                         ],
                         "loc": 201,
                         "mime": "text/x-c++; charset=utf-8",
@@ -597,9 +598,9 @@
                         "imports": [],
                         "is_code": true,
                         "libraries": [
-                            "QObject",
                             "bloks/PropertyFloat.h",
-                            "bloks/VehicleState.h"
+                            "bloks/VehicleState.h",
+                            "QObject"
                         ],
                         "loc": 89,
                         "mime": "text/x-c++; charset=us-ascii",
@@ -623,23 +624,23 @@
                         "decision_complexity": 1,
                         "extension": ".cpp",
                         "imports": [
-                            "gui/src/Controller.h",
-                            "gui/src/Log.h",
-                            "gui/src/GuiSettingsQt.h",
                             "gui/src/MockController.h",
-                            "gui/src/GuiSettingsBloks.h"
+                            "gui/src/GuiSettingsQt.h",
+                            "gui/src/GuiSettingsBloks.h",
+                            "gui/src/Log.h",
+                            "gui/src/Controller.h"
                         ],
                         "is_code": true,
                         "libraries": [
                             "bloks/gui-version.h",
                             "bloks/common/Log.h",
-                            "QFontDatabase",
-                            "QQmlApplicationEngine",
                             "QSettings",
-                            "QtQml",
                             "memory",
                             "QGuiApplication",
-                            "bloks/common/UnixSignals.h"
+                            "QFontDatabase",
+                            "bloks/common/UnixSignals.h",
+                            "QtQml",
+                            "QQmlApplicationEngine"
                         ],
                         "loc": 84,
                         "mime": "text/x-c; charset=us-ascii",
