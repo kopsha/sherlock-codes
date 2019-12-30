@@ -304,7 +304,7 @@ def parse_git_repository(src_root, output=None):
 
     module_paths = {remove_root_name(node.easy_path):node for node in root.leaves}
     change_history = git.whatchanged('--oneline').split('\n')
-    change_entry = re.compile(r':\d{6} \d{6} \w+ \w+ \w+\s+(\S+)(?:\s+(\S+))?')
+    change_entry = re.compile(r':\d{6} \d{6} \w+ \w+ \w+\t([^\t]+)(?:\t([^\t]+))?')
     commit_count = 0
 
     for change in change_history:
