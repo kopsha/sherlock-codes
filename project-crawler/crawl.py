@@ -236,7 +236,7 @@ def parse_git_repository(src_root, output=None):
     data_bytes = root.counter['bytes_count']
     print(f'Completed scan of {root.counter["source_files"]} files or {humanize.naturalsize(data_bytes)} of code.')
 
-    print_stage('Processing imports')
+    print('Processing imports...')
     resolver = anytree.Resolver()
 
     package_map = {}
@@ -297,33 +297,44 @@ def parse_git_repository(src_root, output=None):
         m.meta['imports'] = list(local_imports)
         m.meta['libraries'] = list(libraries)
 
-    print_stage('Inspecting commit history')
-    module_paths = sorted([node.easy_path for node in root.leaves], key=lambda x: x.count(os.sep))
-    change_history = git.whatchanged().split('\n')
-    change_history.reverse()
+    print('Inspecting git history...')
 
-    pick_filepath = re.compile(r':\d{6} \d{6} \w+ \w+ \w+\s+(\S+)')
+    def remove_root_name(path):
+        return os.sep.join(path.split(os.sep)[1:])
+
+    module_paths = {remove_root_name(node.easy_path):node for node in root.leaves}
+    change_history = git.whatchanged('--oneline').split('\n')
+    change_entry = re.compile(r':\d{6} \d{6} \w+ \w+ \w+\s+(\S+)(?:\s+(\S+))?')
     commit_count = 0
+
     for change in change_history:
         if change.startswith(':'):
-            found = pick_filepath.search(change)
-            if found:
-                rel_path = str(found.group(1))
-                treepath = os.sep.join([root.name,rel_path])
-                if treepath in module_paths:
-                    node = resolver.get(root, rel_path)
+            file_change = change_entry.search(change)
+            if file_change:
+                filepath = file_change.group(1)
+                new_filepath = file_change.group(2)
 
+                if new_filepath and new_filepath in module_paths:
+                    module_paths[filepath] = module_paths[new_filepath]
+
+                if filepath in module_paths:
+                    node = module_paths[filepath]
                     if hasattr(node, 'temperature'):
                         node.temperature += 1
                     else:
                         node.temperature = 1
+
             else:
                 print( '***', change )
                 raise ValueError("Cannot parse commit change.")
-        elif change.startswith('commit'):
+        else:
             commit_count += 1
 
     print(f'Analyzed {commit_count} commits.')
+    for k in sorted(module_paths):
+        node = module_paths[k]
+        if not hasattr(node, 'temperature'):
+            raise ValueError(f'Module {node.name} does not appear in change log.')
 
     if not output:
         output = f'{project_name}.json'
