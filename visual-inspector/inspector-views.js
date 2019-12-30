@@ -170,36 +170,36 @@ function display_change_heatmap(data)
     let root = d3.hierarchy(data)
         .sum(function(d) { return d.value+13; })
 
-    let max_temp = d3.max(root.leaves(), function (d) { return +d.data.temperature; })
-    let min_temp = d3.min(root.leaves(), function (d) { return +d.data.temperature; })
-    let treshold = parseInt((max_temp + min_temp) / 4)
-    let color = d3.scaleLinear()
-        .domain([min_temp, max_temp])
-        .range(["#0079BD", "#E5C200"])
-        .interpolate(d3.interpolateHcl);
-
-    l_height = 700
-    lh = l_height / (max_temp-min_temp)
+    let thermal_set = new Set(Array.from(root.leaves(), d => d.data.temperature ));
+    let thermal_scale = Array.from(thermal_set).sort((a,b) => b-a)
+    let legend_box_height = height / thermal_scale.length
+    let color = d3.scaleSequential(d3.interpolateTurbo)
+        .domain([-3, thermal_scale[0] * 1.25]);    // Leave off the edges of the scale
 
     d3.select("#info_view").selectAll("*").remove()
     let legend_info = d3.select("#info_view").style("text-align", "left")
         .append("svg")
             .attr("width", 80)
-            .attr("height", 768);
+            .attr("height", height);
 
     legend_info
         .selectAll()
-        .data(d3.range(0, 1+max_temp-min_temp))
+        .data(thermal_scale)
         .enter()
             .append('rect')
-            .style('stroke', function(d) {
-                return d == treshold ? "red" : "none";
-            })
-            .style('fill', d => color(min_temp+d))
+            .style('fill', d => color(d))
             .attr('x', 10)
-            .attr('y', d => 5 + d*(lh+1))
+            .attr('y', (d,i) => i*legend_box_height)
             .attr('width', 60)
-            .attr('height', lh);
+            .attr('height', legend_box_height-2);
+    legend_info.selectAll('text')
+        .data(thermal_scale)
+        .enter()
+            .append('text')
+            .attr("class", "small-label")
+            .attr('x', 40)
+            .attr('y', (d,i) => (legend_box_height/2) + i*legend_box_height)
+            .text(function (d) {return `${d} °`})
 
     d3.treemap()
         .size([width, height])
@@ -210,9 +210,6 @@ function display_change_heatmap(data)
         .data(root.leaves())
         .enter()
         .append("rect")
-            // .style("stroke", function(d) {
-            //     return "black";
-            // })
             .style("fill", function(d) {
                 return color((d.data.temperature) ? d.data.temperature : 1);
             })
@@ -229,25 +226,15 @@ function display_change_heatmap(data)
                 return d.y1 - d.y0;
             });
 
-    // and to add the text labels
     svg
         .selectAll("text")
         .data(root.leaves())
         .enter()
         .append("text")
         .attr("class", "small-label")
-        .attr("x", function(d) {
-            return d.x0 + (d.x1-d.x0)/2
-        })
-        .attr("y", function(d) {
-            return d.y0 + (d.y1-d.y0)/2
-        })
-        .text(function(d) {
-            if (!d.data.temperature || (d.data.temperature < treshold)) {
-                return null;
-            }
-            return d.data.name
-        })
+        .attr("x", function(d) { return d.x0 + (d.x1-d.x0)/2 })
+        .attr("y", function(d) { return d.y0 + (d.y1-d.y0)/2 })
+        .text(function(d) { return d.data.name })
         .attr("transform", function (d) {
             let w = d.x1 - d.x0;
             let h = d.y1 - d.y0;
