@@ -15,6 +15,9 @@
 </style>
 {% endblock %}
 
+{% block head_scripts %}
+    <script src="heatmap-view.js"></script>
+{% endblock %}
 
 {% block scripts %}
 <script type="text/javascript">
@@ -23,6 +26,6 @@
         render_heatmap_view();
     });
 
-    window.onload = render_heatmap_view(); 
+    window.onload = render_heatmap_view();
 </script>
 {% endblock %}

@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <title>{% block title %} {% endblock %}</title>
     <link rel="stylesheet" href="inspector.css">
+
     {% block style %} {% endblock %}
 
     <script src="d3.v5.min.js"></script>
     <script src="jquery.min.js"></script>
-    <script src="inspector-views.js"></script>
+    <script src="inspector-utils.js"></script>
+
+    {% block head_scripts %} {% endblock %}
 </head>
 <body>
 

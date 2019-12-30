@@ -4,12 +4,17 @@
     Sherlock Reports - Coupling
 {% endblock %}
 
+{% block head_scripts %}
+    <script src="coupling-view.js"></script>
+{% endblock %}
+
+
 {% block scripts %}
 <script type="text/javascript">
     project_selector.change(function () {
         localStorage.setItem("lastSelectedProject", $(this).val());
         render_coupling_view();
     });
-    window.onload = render_coupling_view(); 
+    window.onload = render_coupling_view();
 </script>
 {% endblock %}

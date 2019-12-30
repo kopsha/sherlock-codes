@@ -4,6 +4,10 @@
     Sherlock Reports - Architecture
 {% endblock %}
 
+{% block head_scripts %}
+    <script src="architecture-view.js"></script>
+{% endblock %}
+
 {% block scripts %}
 <script type="text/javascript">
     project_selector.change(function () {
@@ -11,6 +15,6 @@
         render_architecture_view();
     });
 
-    window.onload = render_architecture_view(); 
+    window.onload = render_architecture_view();
 </script>
 {% endblock %}
