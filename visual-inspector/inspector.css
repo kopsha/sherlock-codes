@@ -31,6 +31,7 @@ body {
 .label {
     pointer-events: none;
 }
+
 .node--root,
 .node--leaf {
 }
