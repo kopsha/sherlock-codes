@@ -43,18 +43,18 @@
             {% block info_view %} {% endblock %}
         </div>
     </div>
+
     <script type="text/javascript">
+        // TODO: find a better way for exposing these variables
         let project_selector = $("#project_selector");
         let graphic_view = $("#graphic_view");
         let info_view = $("#info_view");
 
         lastProject = localStorage.getItem("lastSelectedProject")
-        if (lastProject)
-        {
-            project_selector.val(lastProject);
-            console.log('last project_selector: ', lastProject)
-        }
+        if (lastProject) { project_selector.val(lastProject); }
     </script>
+
     {% block scripts %} {% endblock %}
+
 </body>
 </html>

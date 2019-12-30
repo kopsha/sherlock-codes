@@ -35,9 +35,9 @@ function update_info_view(d)
 }
 
 function create_svg_element(width, height) {
-    if (!graphic_view || !project_selector || !info_text)
+    if (!graphic_view || !project_selector || !info_view)
     {
-        throw "Cannot find graphic_view, project_selector and info_text; did you load the right templates?";
+        throw "Cannot find graphic_view, project_selector and info_view; did you load the right templates?";
     }
 
     let svg_element = d3.create("svg")
