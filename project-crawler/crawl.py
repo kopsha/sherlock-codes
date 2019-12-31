@@ -66,11 +66,9 @@ def compute_decision_complexity(source_code):
     ]
 
     decisions = re.compile(r'(?:^|\W)('+'|'.join(markers)+')(?:$|\W)')
-
     found = decisions.findall(source_code)
-    count = len(found)
 
-    return count
+    return len(found)
 
 
 def risk_assesment(meta):
