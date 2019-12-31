@@ -37,7 +37,8 @@ def quick_look(filepath):
     extra_source_extension = [
         '.swift',
         '.kt',
-        '.sh'
+        '.sh',
+        '.js',
     ]
 
     if meta['mime'].startswith('text'):
