@@ -224,10 +224,11 @@ def parse_nested_blocks(source_code):
 
 
 def test_source_parsing():
-    source_files = [fn for fn in os.listdir('./data') if not fn.endswith('.strip')]
+    src_folder = './testdata'
+    source_files = [fn for fn in os.listdir(src_folder) if not fn.endswith('.strip')]
 
     for file in source_files:
-        source_file = f'./data/{file}'
+        source_file = os.sep.join(src_folder, source_file)
         print(f'Processing {source_file}')
         with open(source_file, 'rt') as src:
             source = src.read()

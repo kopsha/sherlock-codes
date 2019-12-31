@@ -6,15 +6,22 @@ import os
 import re
 import timeit
 
-class CodeScanner(object):
-    """Generic CodeScanner
-    It takes in a filepath
+class SherlockScanner:
+    """Generic Code Analysis
+    It takes in a filepath, raises exception if it's not a valid file
     Runs all checks known to man
     And returns the right metadata
     """
 
-    def __init__(self):
-        self.do_not_keep = None
+    def __init__(self, path, meta):
+        self.meta = meta
+        self.messages = None
+        self.clean_source_code = None
+
+        self.filepath = os.path.realpath(path)
+        with open(self.filepath, 'rt') as source_file:
+            source_code = source_file.read()
+
 
     def remove_comments_and_literals(self):
         pass
@@ -36,6 +43,7 @@ class CodeScanner(object):
 
 
 def run_self_check():
+    scanner = SherlockScanner('something', meta={})
     pass
 
 
