@@ -1,5 +1,13 @@
 import pprint
 
+
+def static_var(variable, value):
+    def decorate(function):
+        setattr(function, variable, value)
+        return function
+    return decorate
+
+
 def print_stage(text, row_size=80):
     """Pretty banner stage printing helper"""
     filler=' '*(row_size-4-len(text))
