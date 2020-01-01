@@ -13,7 +13,7 @@ class SourceInspector:
     Runs all checks known to man
     And returns the right metadata"""
 
-    supported_extensions = [ext for ext in sherlock_parser.make_extensions_map()]
+    supported_extensions = [ext for ext in sherlock_parser.make_extension_map()]
 
     def __init__(self, path):
         self.path = os.path.realpath(path)
