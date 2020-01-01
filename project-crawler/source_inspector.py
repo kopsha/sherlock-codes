@@ -7,7 +7,7 @@ import timeit
 
 import sherlock_parser
 
-class FileInspector:
+class SourceInspector:
     """Generic Code Analysis
     It takes in a filepath
     Runs all checks known to man
@@ -28,7 +28,7 @@ class FileInspector:
         self.name,self.extension = os.path.splitext(self.filename)
         self.size = os.path.getsize(self.path)
 
-        self.is_code = self.extension in FileInspector.supported_extensions
+        self.is_code = self.extension in SourceInspector.supported_extensions
 
         self.messages = []
 
@@ -57,11 +57,11 @@ def run_self_check():
     source_files = [fn for fn in os.listdir(src_folder)]
 
     print_stage('supported_extensions')
-    pp(FileInspector.supported_extensions)
+    pp(SourceInspector.supported_extensions)
 
     print_stage('testdata files')
     for file in source_files:
-        parser = FileInspector(os.sep.join([src_folder, file]))
+        parser = SourceInspector(os.sep.join([src_folder, file]))
         parser.inspect()
         pp(parser.metadata(), pretext=file)
 
