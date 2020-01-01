@@ -101,13 +101,10 @@ class CppStyleParser(CodeParserInterface):
 
         if 300 <= effective_lines < 500:
             messages.append('[info] Arguably many lines of code, this may be ok for now.')
-            points += 2
         elif 500 <= effective_lines < 1000:
             messages.append('[warning] Quite many lines of code, plan on refactoring.')
-            points += 5
         elif 1000 <= effective_lines:
             messages.append('[error] Way too many lines of code, refactoring is required.')
-            points += 8
 
         return {
             'loc': all_lines,
@@ -133,10 +130,8 @@ class CppStyleParser(CodeParserInterface):
 
         if 8 <= deepest < 13:
             messages.append('[warning] Quite many nested code blocks, most of the code is in the right half of the screen.')
-            points += 5
         elif 13 <= deepest:
             messages.append('[error] Way too many nested code blocks, all of the code is off the screen.')
-            points += 8
 
         return deepest
 
@@ -160,13 +155,10 @@ class CppStyleParser(CodeParserInterface):
 
         if 40 <= decision_count < 60:
             messages.append('[info] Arguably many decisions, it is ok if it makes other files less complicated.')
-            points += 5
         elif 60 <= decision_count < 100:
             messages.append('[warning] Quite many decisions, consider adding more unit tests and review the entire file.')
-            points += 8
         elif 100 <= decision_count:
             messages.append('[error] Way too many decisions, full code coverage is required.')
-            points += 13
 
         return decision_count
 

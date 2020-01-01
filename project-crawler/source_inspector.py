@@ -18,6 +18,7 @@ class SourceInspector:
     def __init__(self, path):
         self.path = os.path.realpath(path)
         self.is_code = False
+        self.messages = []
 
         self.is_directory = os.path.isdir(self.path)
         if self.is_directory:
@@ -29,8 +30,6 @@ class SourceInspector:
         self.size = os.path.getsize(self.path)
 
         self.is_code = self.extension in SourceInspector.supported_extensions
-
-        self.messages = []
 
     def inspect(self):
         if not self.is_code:
