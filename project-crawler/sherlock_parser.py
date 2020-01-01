@@ -1,46 +1,10 @@
-import abc
 import inspect
 import sys
 
 from utils import print_stage, static_var, pp
 
-class CodeParserInterface(metaclass=abc.ABCMeta):
-    """Interface definition for code parsing"""
-
-    @property
-    def supported_extensions(self):
-        return self._supported_extensions
-
-    @abc.abstractmethod
-    def remove_comments_and_literals(self): pass
-
-    @abc.abstractmethod
-    def count_effective_lines_of_code(self): pass
-
-    # @abstractmethod
-    # def compute_nested_complexity(self): pass
-
-    # @abstractmethod
-    # def compute_decision_complexity(self): pass
-
-    # @abstractmethod
-    # def parse_imports(self): pass
-
-
-class CStyleParser(CodeParserInterface):
-    def __init__(self):
-        self._supported_extensions = [
-            '.cpp', '.c', '.h',
-            '.hpp', '.cxx', '.cc',
-            '.mm', '.m',
-        ]
-    
-    def remove_comments_and_literals(self):
-        print('cstyle remove_comments_and_literals')
-
-    def count_effective_lines_of_code(self):
-        print('cstyle count_effective_lines_of_code')        
-
+from code_parser_interface import CodeParserInterface
+from cpp_style_parser import CppStyleParser
 
 def make_extensions_map():
     extensions = {}
