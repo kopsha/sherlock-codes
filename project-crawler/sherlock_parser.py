@@ -4,7 +4,7 @@ import sys
 
 from utils import print_stage, static_var, pp
 
-class AbstractCodeParser(metaclass=abc.ABCMeta):
+class CodeParserInterface(metaclass=abc.ABCMeta):
     """Interface definition for code parsing"""
 
     @property
@@ -27,7 +27,7 @@ class AbstractCodeParser(metaclass=abc.ABCMeta):
     # def parse_imports(self): pass
 
 
-class CStyleParser(AbstractCodeParser):
+class CStyleParser(CodeParserInterface):
     def __init__(self):
         self._supported_extensions = [
             '.cpp', '.c', '.h',
@@ -48,8 +48,8 @@ def make_extensions_map():
     all_parsers = [
         (name,cls) for name,cls in inspect.getmembers(current_module)
         if inspect.isclass(cls)
-            and issubclass(cls, AbstractCodeParser)
-            and name != 'AbstractCodeParser'
+            and issubclass(cls, CodeParserInterface)
+            and name != 'CodeParserInterface'
     ]
 
     for name, cls in all_parsers:
