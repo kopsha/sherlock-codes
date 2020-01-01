@@ -26,26 +26,26 @@ def make_extensions_map():
     return extensions
 
 @static_var('all_extensions', {})
-def parserFactory(ext):
+def parser_factory(ext):
     """Create an apropriate parser instance based on extension"""
-    if not parserFactory.all_extensions:
-        parserFactory.all_extensions = make_extensions_map()
+    if not parser_factory.all_extensions:
+        parser_factory.all_extensions = make_extensions_map()
 
-    if ext in parserFactory.all_extensions:
-        return parserFactory.all_extensions[ext]
+    if ext in parser_factory.all_extensions:
+        return parser_factory.all_extensions[ext]
     else:
         raise ValueError(f'Extension {ext} is not supported')
 
 def self_check():
     print_stage('Self check')
     
-    cStyleParser = parserFactory('.cpp')
-    another = parserFactory('.mm')
+    cStyleParser = parser_factory('.cpp')
+    another = parser_factory('.mm')
 
     cStyleParser.remove_comments_and_literals()
     another.remove_comments_and_literals()
 
-    pp(parserFactory.all_extensions, pretext='Support extension map')
+    pp(parser_factory.all_extensions, pretext='Supported extension map')
 
 
 if __name__ == '__main__':

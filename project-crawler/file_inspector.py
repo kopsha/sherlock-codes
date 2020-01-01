@@ -5,6 +5,7 @@ import os
 import re
 import timeit
 
+import sherlock_parser
 
 class FileInspector:
     """Generic Code Analysis
@@ -12,25 +13,7 @@ class FileInspector:
     Runs all checks known to man
     And returns the right metadata"""
 
-    supported_extensions = [
-        '.cpp', '.c', '.h', '.hpp', '.cxx', '.cc',
-        '.mm', '.m',
-        '.cs',
-        '.swift',
-        '.jav', '.java', '.jsp', '.jspx',
-        '.kt',
-        '.py',
-        '.go',
-        '.pl',
-        '.rb',
-        '.js', '.jse', '.asp', '.aspx',
-        '.coffee',
-        '.php',
-        '.jsl',
-        '.fs',
-        '.as', '.mxml'
-        '.sh', '.bat',
-    ]
+    supported_extensions = [ext for ext in sherlock_parser.make_extensions_map()]
 
     def __init__(self, path):
         self.path = os.path.realpath(path)
@@ -48,19 +31,21 @@ class FileInspector:
         self.is_code = self.extension in FileInspector.supported_extensions
 
         self.messages = []
-        self._source_code = None
 
     def inspect(self):
-        self._source_code = None
-
         if not self.is_code:
             self.messages.append(f'{self.extension} inspection is not supported.')
             return
 
         with open(self.path, 'rt') as source_file:
-            self._source_code = source_file.read()
+            source_code = source_file.read()
 
-        # TODO: create parser based on extension
+        parser = sherlock_parser.parser_factory(self.extension)
+        meta = parser.inspect(source_code, self.messages)
+
+        for k,v in meta.items():
+            assert not hasattr(self, k)
+            setattr(self, k, v)
 
     def metadata(self):
         meta = {k:v for k,v in vars(self).items() if not k.startswith('_')}
@@ -71,6 +56,10 @@ def run_self_check():
     src_folder = './testdata'
     source_files = [fn for fn in os.listdir(src_folder)]
 
+    print_stage('supported_extensions')
+    pp(FileInspector.supported_extensions)
+
+    print_stage('testdata files')
     for file in source_files:
         parser = FileInspector(os.sep.join([src_folder, file]))
         parser.inspect()
