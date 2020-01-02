@@ -18,7 +18,6 @@
                 "messages": [],
                 "name": "data",
                 "nested_complexity": 1,
-                "path": "/Users/fleorin/src/entr/data.h",
                 "size": 971,
                 "sloc": 8
             },
@@ -35,30 +34,30 @@
                 "extension": ".c",
                 "filename": "entr.c",
                 "imports": [
+                    "entr/data.h",
                     "entr/missing/compat.h",
-                    "entr/missing/sys/event.h",
-                    "entr/data.h"
+                    "entr/missing/sys/event.h"
                 ],
                 "is_code": true,
                 "is_directory": false,
                 "libraries": [
-                    "sys/stat.h",
-                    "libgen.h",
                     "dirent.h",
-                    "fcntl.h",
-                    "time.h",
-                    "unistd.h",
-                    "sys/wait.h",
-                    "sys/resource.h",
-                    "signal.h",
-                    "string.h",
+                    "err.h",
                     "errno.h",
+                    "fcntl.h",
+                    "libgen.h",
+                    "limits.h",
                     "paths.h",
+                    "signal.h",
                     "stdio.h",
                     "stdlib.h",
+                    "string.h",
                     "sys/param.h",
-                    "limits.h",
-                    "err.h"
+                    "sys/resource.h",
+                    "sys/stat.h",
+                    "sys/wait.h",
+                    "time.h",
+                    "unistd.h"
                 ],
                 "loc": 516,
                 "messages": [
@@ -67,7 +66,6 @@
                 ],
                 "name": "entr",
                 "nested_complexity": 4,
-                "path": "/Users/fleorin/src/entr/entr.c",
                 "size": 12813,
                 "sloc": 377
             },
@@ -95,7 +93,6 @@
                 ],
                 "name": "entr_spec",
                 "nested_complexity": 2,
-                "path": "/Users/fleorin/src/entr/entr_spec.c",
                 "size": 20868,
                 "sloc": 597
             },
@@ -117,14 +114,13 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "sys/types.h",
-                            "stdio.h"
+                            "stdio.h",
+                            "sys/types.h"
                         ],
                         "loc": 20,
                         "messages": [],
                         "name": "compat",
                         "nested_complexity": 0,
-                        "path": "/Users/fleorin/src/entr/missing/compat.h",
                         "size": 346,
                         "sloc": 14
                     },
@@ -144,17 +140,16 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "fcntl.h",
-                            "string.h",
-                            "stdio.h",
                             "errno.h",
-                            "stdlib.h"
+                            "fcntl.h",
+                            "stdio.h",
+                            "stdlib.h",
+                            "string.h"
                         ],
                         "loc": 187,
                         "messages": [],
                         "name": "fmemopen",
                         "nested_complexity": 3,
-                        "path": "/Users/fleorin/src/entr/missing/fmemopen.c",
                         "size": 3695,
                         "sloc": 133
                     },
@@ -171,29 +166,28 @@
                         "extension": ".c",
                         "filename": "kqueue_inotify.c",
                         "imports": [
+                            "entr/data.h",
                             "entr/missing/compat.h",
-                            "entr/missing/sys/event.h",
-                            "entr/data.h"
+                            "entr/missing/sys/event.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "sys/stat.h",
-                            "time.h",
-                            "sys/inotify.h",
-                            "sys/types.h",
-                            "unistd.h",
-                            "string.h",
                             "errno.h",
-                            "stdio.h",
+                            "limits.h",
                             "poll.h",
-                            "limits.h"
+                            "stdio.h",
+                            "string.h",
+                            "sys/inotify.h",
+                            "sys/stat.h",
+                            "sys/types.h",
+                            "time.h",
+                            "unistd.h"
                         ],
                         "loc": 160,
                         "messages": [],
                         "name": "kqueue_inotify",
                         "nested_complexity": 4,
-                        "path": "/Users/fleorin/src/entr/missing/kqueue_inotify.c",
                         "size": 4023,
                         "sloc": 109
                     },
@@ -220,7 +214,6 @@
                         "messages": [],
                         "name": "strlcpy",
                         "nested_complexity": 3,
-                        "path": "/Users/fleorin/src/entr/missing/strlcpy.c",
                         "size": 1561,
                         "sloc": 22
                     },
@@ -249,7 +242,6 @@
                                 "messages": [],
                                 "name": "event",
                                 "nested_complexity": 1,
-                                "path": "/Users/fleorin/src/entr/missing/sys/event.h",
                                 "size": 2949,
                                 "sloc": 36
                             },

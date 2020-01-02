@@ -272,8 +272,8 @@
                                                 "is_code": true,
                                                 "is_directory": false,
                                                 "libraries": [
-                                                    "XCGNativeInitializer.h",
                                                     "UIKit/UIKit.h",
+                                                    "XCGNativeInitializer.h",
                                                     "XCTest_Gherkin.h"
                                                 ],
                                                 "loc": 20,
@@ -439,8 +439,8 @@
                                                         "is_code": true,
                                                         "is_directory": false,
                                                         "libraries": [
-                                                            "string.h",
-                                                            "stdlib.h"
+                                                            "stdlib.h",
+                                                            "string.h"
                                                         ],
                                                         "loc": 370,
                                                         "messages": [
@@ -469,8 +469,8 @@
                                                         "is_directory": false,
                                                         "libraries": [
                                                             "stdio.h",
-                                                            "zlib.h",
-                                                            "stdlib.h"
+                                                            "stdlib.h",
+                                                            "zlib.h"
                                                         ],
                                                         "loc": 176,
                                                         "messages": [],
@@ -498,9 +498,9 @@
                                                         "is_directory": false,
                                                         "libraries": [
                                                             "stdio.h",
+                                                            "stdlib.h",
                                                             "string.h",
-                                                            "zlib.h",
-                                                            "stdlib.h"
+                                                            "zlib.h"
                                                         ],
                                                         "loc": 1948,
                                                         "messages": [
@@ -530,8 +530,8 @@
                                                         "is_code": true,
                                                         "is_directory": false,
                                                         "libraries": [
-                                                            "zlib.h",
-                                                            "bzlib.h"
+                                                            "bzlib.h",
+                                                            "zlib.h"
                                                         ],
                                                         "loc": 320,
                                                         "messages": [],
@@ -558,10 +558,10 @@
                                                         "is_code": true,
                                                         "is_directory": false,
                                                         "libraries": [
-                                                            "time.h",
                                                             "stdio.h",
                                                             "stdlib.h",
                                                             "string.h",
+                                                            "time.h",
                                                             "zlib.h"
                                                         ],
                                                         "loc": 2021,
@@ -753,10 +753,10 @@
                                 "is_code": true,
                                 "is_directory": false,
                                 "libraries": [
-                                    "stdint.h",
                                     "Foundation/Foundation.h",
                                     "stdbool.h",
-                                    "stddef.h"
+                                    "stddef.h",
+                                    "stdint.h"
                                 ],
                                 "loc": 401,
                                 "messages": [
@@ -912,16 +912,16 @@
                                                 "extension": ".mm",
                                                 "filename": "CoreManager.mm",
                                                 "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers/NSData+Core.h",
                                                     "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/CoreManager.h",
-                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/NSString+Core.h"
+                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/NSString+Core.h",
+                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers/NSData+Core.h"
                                                 ],
                                                 "is_code": true,
                                                 "is_directory": false,
                                                 "libraries": [
+                                                    "TurboConnectLibrary/TurboConnectLibrary-Swift.h",
                                                     "identification_sequence.h",
-                                                    "turbo-connect-core.h",
-                                                    "TurboConnectLibrary/TurboConnectLibrary-Swift.h"
+                                                    "turbo-connect-core.h"
                                                 ],
                                                 "loc": 187,
                                                 "messages": [],
@@ -1009,8 +1009,8 @@
                                                 "is_code": true,
                                                 "is_directory": false,
                                                 "libraries": [
-                                                    "vector",
-                                                    "Foundation/Foundation.h"
+                                                    "Foundation/Foundation.h",
+                                                    "vector"
                                                 ],
                                                 "loc": 18,
                                                 "messages": [],
@@ -1076,10 +1076,10 @@
                                                                 "is_code": true,
                                                                 "is_directory": false,
                                                                 "libraries": [
-                                                                    "stdint.h",
                                                                     "Foundation/Foundation.h",
                                                                     "stdbool.h",
-                                                                    "stddef.h"
+                                                                    "stddef.h",
+                                                                    "stdint.h"
                                                                 ],
                                                                 "loc": 267,
                                                                 "messages": [

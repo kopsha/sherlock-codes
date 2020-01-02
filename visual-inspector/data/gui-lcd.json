@@ -11,21 +11,21 @@
                         "extension": ".cpp",
                         "filename": "ApiConnection.cpp",
                         "imports": [
-                            "gui-lcd/src/TimeDefinitions.h",
                             "gui-lcd/src/ApiConnection.h",
-                            "gui-lcd/src/Log.h"
+                            "gui-lcd/src/Log.h",
+                            "gui-lcd/src/TimeDefinitions.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
+                            "QDir",
                             "QProcess",
                             "bloks/BatteryState.h",
-                            "bloks/MotorState.h",
                             "bloks/LightState.h",
-                            "QDir",
+                            "bloks/MotorState.h",
                             "bloks/RemoteState.h",
-                            "cmath",
-                            "bloks/VehicleState.h"
+                            "bloks/VehicleState.h",
+                            "cmath"
                         ],
                         "loc": 759,
                         "messages": [
@@ -34,7 +34,6 @@
                         ],
                         "name": "ApiConnection",
                         "nested_complexity": 4,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/ApiConnection.cpp",
                         "size": 26151,
                         "sloc": 637
                     },
@@ -51,37 +50,36 @@
                         "extension": ".h",
                         "filename": "ApiConnection.h",
                         "imports": [
-                            "gui-lcd/src/OemSettings.h",
-                            "gui-lcd/src/LcdBattery.h",
-                            "gui-lcd/src/InspectionDueWarning.h",
                             "gui-lcd/src/ButtonMultiEmit.h",
-                            "gui-lcd/src/LcdLight.h",
-                            "gui-lcd/src/LcdIcon.h",
-                            "gui-lcd/src/LcdSupportLevel.h",
-                            "gui-lcd/src/TimeIncrementer.h",
-                            "gui-lcd/src/LcdSpeed.h",
-                            "gui-lcd/src/LcdSystemTime.h",
+                            "gui-lcd/src/InspectionDueWarning.h",
+                            "gui-lcd/src/LcdBattery.h",
                             "gui-lcd/src/LcdBluetooth.h",
+                            "gui-lcd/src/LcdIcon.h",
+                            "gui-lcd/src/LcdLight.h",
+                            "gui-lcd/src/LcdSpeed.h",
+                            "gui-lcd/src/LcdSupportLevel.h",
+                            "gui-lcd/src/LcdSystemTime.h",
+                            "gui-lcd/src/OemSettings.h",
+                            "gui-lcd/src/TimeIncrementer.h",
                             "gui-lcd/src/TravelDisplay.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "bloks/BluetoothServer.h",
-                            "QString",
-                            "bloks/common/Optional.h",
                             "QObject",
-                            "bloks/Frontend.h",
-                            "QTimer",
                             "QSettings",
+                            "QString",
                             "QTime",
-                            "bloks/VehicleState.h"
+                            "QTimer",
+                            "bloks/BluetoothServer.h",
+                            "bloks/Frontend.h",
+                            "bloks/VehicleState.h",
+                            "bloks/common/Optional.h"
                         ],
                         "loc": 142,
                         "messages": [],
                         "name": "ApiConnection",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/ApiConnection.h",
                         "size": 3367,
                         "sloc": 112
                     },
@@ -98,8 +96,8 @@
                         "extension": ".cpp",
                         "filename": "BatteryAnimator.cpp",
                         "imports": [
-                            "gui-lcd/src/Log.h",
-                            "gui-lcd/src/BatteryAnimator.h"
+                            "gui-lcd/src/BatteryAnimator.h",
+                            "gui-lcd/src/Log.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
@@ -108,7 +106,6 @@
                         "messages": [],
                         "name": "BatteryAnimator",
                         "nested_complexity": 4,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/BatteryAnimator.cpp",
                         "size": 3265,
                         "sloc": 123
                     },
@@ -131,15 +128,14 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "vector",
                             "QTimer",
-                            "chrono"
+                            "chrono",
+                            "vector"
                         ],
                         "loc": 109,
                         "messages": [],
                         "name": "BatteryAnimator",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/BatteryAnimator.h",
                         "size": 3209,
                         "sloc": 41
                     },
@@ -165,7 +161,6 @@
                         "messages": [],
                         "name": "BatteryBlinker",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/BatteryBlinker.cpp",
                         "size": 1235,
                         "sloc": 39
                     },
@@ -188,14 +183,13 @@
                         "is_directory": false,
                         "libraries": [
                             "QTimer",
-                            "vector",
-                            "chrono"
+                            "chrono",
+                            "vector"
                         ],
                         "loc": 34,
                         "messages": [],
                         "name": "BatteryBlinker",
                         "nested_complexity": 1,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/BatteryBlinker.h",
                         "size": 611,
                         "sloc": 24
                     },
@@ -221,7 +215,6 @@
                         "messages": [],
                         "name": "BatterySegment",
                         "nested_complexity": 1,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/BatterySegment.cpp",
                         "size": 433,
                         "sloc": 17
                     },
@@ -247,7 +240,6 @@
                         "messages": [],
                         "name": "BatterySegment",
                         "nested_complexity": 1,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/BatterySegment.h",
                         "size": 290,
                         "sloc": 12
                     },
@@ -264,8 +256,8 @@
                         "extension": ".cpp",
                         "filename": "BlinkingItem.cpp",
                         "imports": [
-                            "gui-lcd/src/DisplayAccess.h",
-                            "gui-lcd/src/BlinkingItem.h"
+                            "gui-lcd/src/BlinkingItem.h",
+                            "gui-lcd/src/DisplayAccess.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
@@ -274,7 +266,6 @@
                         "messages": [],
                         "name": "BlinkingItem",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/BlinkingItem.cpp",
                         "size": 535,
                         "sloc": 21
                     },
@@ -302,7 +293,6 @@
                         "messages": [],
                         "name": "BlinkingItem",
                         "nested_complexity": 1,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/BlinkingItem.h",
                         "size": 415,
                         "sloc": 17
                     },
@@ -328,7 +318,6 @@
                         "messages": [],
                         "name": "ButtonMultiEmit",
                         "nested_complexity": 3,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/ButtonMultiEmit.cpp",
                         "size": 765,
                         "sloc": 30
                     },
@@ -355,7 +344,6 @@
                         "messages": [],
                         "name": "ButtonMultiEmit",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/ButtonMultiEmit.h",
                         "size": 433,
                         "sloc": 21
                     },
@@ -379,7 +367,6 @@
                         "messages": [],
                         "name": "Constants",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/Constants.h",
                         "size": 115,
                         "sloc": 4
                     },
@@ -396,9 +383,9 @@
                         "extension": ".cpp",
                         "filename": "DisplayAccess.cpp",
                         "imports": [
+                            "gui-lcd/src/DisplayAccess.h",
                             "gui-lcd/src/DisplayDigit.h",
-                            "gui-lcd/src/DisplayObject.h",
-                            "gui-lcd/src/DisplayAccess.h"
+                            "gui-lcd/src/DisplayObject.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
@@ -409,7 +396,6 @@
                         "messages": [],
                         "name": "DisplayAccess",
                         "nested_complexity": 5,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/DisplayAccess.cpp",
                         "size": 2917,
                         "sloc": 111
                     },
@@ -429,14 +415,13 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "vector",
-                            "stdint.h"
+                            "stdint.h",
+                            "vector"
                         ],
                         "loc": 216,
                         "messages": [],
                         "name": "DisplayAccess",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/DisplayAccess.h",
                         "size": 3431,
                         "sloc": 187
                     },
@@ -464,7 +449,6 @@
                         "messages": [],
                         "name": "DisplayDigit",
                         "nested_complexity": 3,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/DisplayDigit.cpp",
                         "size": 7347,
                         "sloc": 105
                     },
@@ -493,7 +477,6 @@
                         "messages": [],
                         "name": "DisplayDigit",
                         "nested_complexity": 3,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/DisplayDigit.h",
                         "size": 966,
                         "sloc": 27
                     },
@@ -517,26 +500,25 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "fcntl.h",
-                            "iostream",
-                            "sys/stat.h",
-                            "errno.h",
-                            "fstream",
-                            "QString",
-                            "sys/ioctl.h",
-                            "stdlib.h",
-                            "unistd.h",
-                            "stdio.h",
                             "QFile",
-                            "string.h",
+                            "QString",
+                            "errno.h",
+                            "fcntl.h",
+                            "fstream",
+                            "iostream",
                             "linux/i2c-dev.h",
-                            "sys/types.h"
+                            "stdio.h",
+                            "stdlib.h",
+                            "string.h",
+                            "sys/ioctl.h",
+                            "sys/stat.h",
+                            "sys/types.h",
+                            "unistd.h"
                         ],
                         "loc": 253,
                         "messages": [],
                         "name": "DisplayObject",
                         "nested_complexity": 4,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/DisplayObject.cpp",
                         "size": 6726,
                         "sloc": 213
                     },
@@ -563,7 +545,6 @@
                         "messages": [],
                         "name": "DisplayObject",
                         "nested_complexity": 1,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/DisplayObject.h",
                         "size": 587,
                         "sloc": 24
                     },
@@ -580,8 +561,8 @@
                         "extension": ".cpp",
                         "filename": "DisplayTestAccess.cpp",
                         "imports": [
-                            "gui-lcd/src/DisplayDigit.h",
                             "gui-lcd/src/DisplayAccess.h",
+                            "gui-lcd/src/DisplayDigit.h",
                             "gui-lcd/src/DisplayTestObject.h"
                         ],
                         "is_code": true,
@@ -591,7 +572,6 @@
                         "messages": [],
                         "name": "DisplayTestAccess",
                         "nested_complexity": 4,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/DisplayTestAccess.cpp",
                         "size": 3013,
                         "sloc": 76
                     },
@@ -617,7 +597,6 @@
                         "messages": [],
                         "name": "DisplayTestObject",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/DisplayTestObject.cpp",
                         "size": 804,
                         "sloc": 29
                     },
@@ -645,7 +624,6 @@
                         "messages": [],
                         "name": "DisplayTestObject",
                         "nested_complexity": 1,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/DisplayTestObject.h",
                         "size": 773,
                         "sloc": 23
                     },
@@ -662,9 +640,9 @@
                         "extension": ".cpp",
                         "filename": "InspectionDueWarning.cpp",
                         "imports": [
-                            "gui-lcd/src/NumberSplitter.h",
+                            "gui-lcd/src/Constants.h",
                             "gui-lcd/src/InspectionDueWarning.h",
-                            "gui-lcd/src/Constants.h"
+                            "gui-lcd/src/NumberSplitter.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
@@ -673,7 +651,6 @@
                         "messages": [],
                         "name": "InspectionDueWarning",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/InspectionDueWarning.cpp",
                         "size": 3070,
                         "sloc": 76
                     },
@@ -701,7 +678,6 @@
                         "messages": [],
                         "name": "InspectionDueWarning",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/InspectionDueWarning.h",
                         "size": 563,
                         "sloc": 21
                     },
@@ -729,7 +705,6 @@
                         "messages": [],
                         "name": "LcdBattery",
                         "nested_complexity": 4,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdBattery.cpp",
                         "size": 7427,
                         "sloc": 192
                     },
@@ -746,23 +721,22 @@
                         "extension": ".h",
                         "filename": "LcdBattery.h",
                         "imports": [
-                            "gui-lcd/src/LcdIcon.h",
-                            "gui-lcd/src/BatterySegment.h",
                             "gui-lcd/src/BatteryAnimator.h",
-                            "gui-lcd/src/BatteryBlinker.h"
+                            "gui-lcd/src/BatteryBlinker.h",
+                            "gui-lcd/src/BatterySegment.h",
+                            "gui-lcd/src/LcdIcon.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "memory",
                             "QTimer",
+                            "memory",
                             "vector"
                         ],
                         "loc": 73,
                         "messages": [],
                         "name": "LcdBattery",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdBattery.h",
                         "size": 1560,
                         "sloc": 56
                     },
@@ -788,7 +762,6 @@
                         "messages": [],
                         "name": "LcdBluetooth",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdBluetooth.cpp",
                         "size": 483,
                         "sloc": 20
                     },
@@ -814,7 +787,6 @@
                         "messages": [],
                         "name": "LcdBluetooth",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdBluetooth.h",
                         "size": 290,
                         "sloc": 14
                     },
@@ -831,9 +803,9 @@
                         "extension": ".cpp",
                         "filename": "LcdDistance.cpp",
                         "imports": [
-                            "gui-lcd/src/NumberSplitter.h",
+                            "gui-lcd/src/Constants.h",
                             "gui-lcd/src/LcdDistance.h",
-                            "gui-lcd/src/Constants.h"
+                            "gui-lcd/src/NumberSplitter.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
@@ -844,7 +816,6 @@
                         "messages": [],
                         "name": "LcdDistance",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdDistance.cpp",
                         "size": 3087,
                         "sloc": 82
                     },
@@ -873,7 +844,6 @@
                         "messages": [],
                         "name": "LcdDistance",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdDistance.h",
                         "size": 710,
                         "sloc": 22
                     },
@@ -899,7 +869,6 @@
                         "messages": [],
                         "name": "LcdIcon",
                         "nested_complexity": 1,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdIcon.cpp",
                         "size": 484,
                         "sloc": 18
                     },
@@ -925,7 +894,6 @@
                         "messages": [],
                         "name": "LcdIcon",
                         "nested_complexity": 1,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdIcon.h",
                         "size": 233,
                         "sloc": 12
                     },
@@ -951,7 +919,6 @@
                         "messages": [],
                         "name": "LcdLight",
                         "nested_complexity": 3,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdLight.cpp",
                         "size": 1191,
                         "sloc": 49
                     },
@@ -977,7 +944,6 @@
                         "messages": [],
                         "name": "LcdLight",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdLight.h",
                         "size": 486,
                         "sloc": 19
                     },
@@ -994,9 +960,9 @@
                         "extension": ".cpp",
                         "filename": "LcdSpeed.cpp",
                         "imports": [
-                            "gui-lcd/src/NumberSplitter.h",
+                            "gui-lcd/src/Constants.h",
                             "gui-lcd/src/LcdSpeed.h",
-                            "gui-lcd/src/Constants.h"
+                            "gui-lcd/src/NumberSplitter.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
@@ -1007,7 +973,6 @@
                         "messages": [],
                         "name": "LcdSpeed",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdSpeed.cpp",
                         "size": 1635,
                         "sloc": 52
                     },
@@ -1030,14 +995,13 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "QTimer",
-                            "QObject"
+                            "QObject",
+                            "QTimer"
                         ],
                         "loc": 33,
                         "messages": [],
                         "name": "LcdSpeed",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdSpeed.h",
                         "size": 586,
                         "sloc": 21
                     },
@@ -1064,7 +1028,6 @@
                         "messages": [],
                         "name": "LcdSupportLevel",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdSupportLevel.cpp",
                         "size": 2167,
                         "sloc": 79
                     },
@@ -1093,7 +1056,6 @@
                         "messages": [],
                         "name": "LcdSupportLevel",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdSupportLevel.h",
                         "size": 555,
                         "sloc": 23
                     },
@@ -1116,22 +1078,21 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "fcntl.h",
-                            "time.h",
-                            "sys/ioctl.h",
-                            "unistd.h",
-                            "stdio.h",
-                            "cstring",
                             "QDateTime",
                             "QTime",
+                            "chrono",
+                            "cstring",
+                            "fcntl.h",
                             "linux/rtc.h",
-                            "chrono"
+                            "stdio.h",
+                            "sys/ioctl.h",
+                            "time.h",
+                            "unistd.h"
                         ],
                         "loc": 104,
                         "messages": [],
                         "name": "LcdSystemTime",
                         "nested_complexity": 3,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdSystemTime.cpp",
                         "size": 2701,
                         "sloc": 91
                     },
@@ -1157,7 +1118,6 @@
                         "messages": [],
                         "name": "LcdSystemTime",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdSystemTime.h",
                         "size": 311,
                         "sloc": 13
                     },
@@ -1174,8 +1134,8 @@
                         "extension": ".cpp",
                         "filename": "LcdTime.cpp",
                         "imports": [
-                            "gui-lcd/src/NumberSplitter.h",
-                            "gui-lcd/src/LcdTime.h"
+                            "gui-lcd/src/LcdTime.h",
+                            "gui-lcd/src/NumberSplitter.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
@@ -1184,7 +1144,6 @@
                         "messages": [],
                         "name": "LcdTime",
                         "nested_complexity": 3,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdTime.cpp",
                         "size": 2146,
                         "sloc": 77
                     },
@@ -1213,7 +1172,6 @@
                         "messages": [],
                         "name": "LcdTime",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdTime.h",
                         "size": 930,
                         "sloc": 33
                     },
@@ -1239,7 +1197,6 @@
                         "messages": [],
                         "name": "LcdTripDuration",
                         "nested_complexity": 1,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdTripDuration.cpp",
                         "size": 457,
                         "sloc": 17
                     },
@@ -1256,8 +1213,8 @@
                         "extension": ".h",
                         "filename": "LcdTripDuration.h",
                         "imports": [
-                            "gui-lcd/src/LcdTime.h",
-                            "gui-lcd/src/LcdIcon.h"
+                            "gui-lcd/src/LcdIcon.h",
+                            "gui-lcd/src/LcdTime.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
@@ -1266,7 +1223,6 @@
                         "messages": [],
                         "name": "LcdTripDuration",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/LcdTripDuration.h",
                         "size": 403,
                         "sloc": 14
                     },
@@ -1292,7 +1248,6 @@
                         "messages": [],
                         "name": "Log",
                         "nested_complexity": 0,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/Log.h",
                         "size": 111,
                         "sloc": 3
                     },
@@ -1318,7 +1273,6 @@
                         "messages": [],
                         "name": "NumberSplitter",
                         "nested_complexity": 6,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/NumberSplitter.cpp",
                         "size": 1402,
                         "sloc": 34
                     },
@@ -1344,7 +1298,6 @@
                         "messages": [],
                         "name": "NumberSplitter",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/NumberSplitter.h",
                         "size": 495,
                         "sloc": 22
                     },
@@ -1366,16 +1319,15 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "QJsonObject",
+                            "QDebug",
                             "QFile",
                             "QJsonDocument",
-                            "QDebug"
+                            "QJsonObject"
                         ],
                         "loc": 56,
                         "messages": [],
                         "name": "OemSettings",
                         "nested_complexity": 3,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/OemSettings.cpp",
                         "size": 1578,
                         "sloc": 43
                     },
@@ -1395,15 +1347,14 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "bloks/common/OemData.h",
+                            "QString",
                             "QVariantMap",
-                            "QString"
+                            "bloks/common/OemData.h"
                         ],
                         "loc": 15,
                         "messages": [],
                         "name": "OemSettings",
                         "nested_complexity": 1,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/OemSettings.h",
                         "size": 275,
                         "sloc": 11
                     },
@@ -1429,7 +1380,6 @@
                         "messages": [],
                         "name": "SupportLevelSegment",
                         "nested_complexity": 1,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/SupportLevelSegment.cpp",
                         "size": 643,
                         "sloc": 23
                     },
@@ -1455,7 +1405,6 @@
                         "messages": [],
                         "name": "SupportLevelSegment",
                         "nested_complexity": 1,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/SupportLevelSegment.h",
                         "size": 327,
                         "sloc": 14
                     },
@@ -1479,7 +1428,6 @@
                         "messages": [],
                         "name": "TimeDefinitions",
                         "nested_complexity": 0,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/TimeDefinitions.h",
                         "size": 747,
                         "sloc": 8
                     },
@@ -1506,7 +1454,6 @@
                         "messages": [],
                         "name": "TimeIncrementer",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/TimeIncrementer.cpp",
                         "size": 972,
                         "sloc": 28
                     },
@@ -1533,7 +1480,6 @@
                         "messages": [],
                         "name": "TimeIncrementer",
                         "nested_complexity": 1,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/TimeIncrementer.h",
                         "size": 397,
                         "sloc": 16
                     },
@@ -1550,22 +1496,21 @@
                         "extension": ".cpp",
                         "filename": "TravelDisplay.cpp",
                         "imports": [
-                            "gui-lcd/src/TimeDefinitions.h",
                             "gui-lcd/src/DisplayAccess.h",
+                            "gui-lcd/src/TimeDefinitions.h",
                             "gui-lcd/src/TravelDisplay.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "bloks/MotorState.h",
+                            "QSettings",
                             "bloks/BatteryState.h",
-                            "QSettings"
+                            "bloks/MotorState.h"
                         ],
                         "loc": 220,
                         "messages": [],
                         "name": "TravelDisplay",
                         "nested_complexity": 4,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/TravelDisplay.cpp",
                         "size": 6228,
                         "sloc": 186
                     },
@@ -1582,21 +1527,20 @@
                         "extension": ".h",
                         "filename": "TravelDisplay.h",
                         "imports": [
-                            "gui-lcd/src/LcdTripDuration.h",
-                            "gui-lcd/src/LcdDistance.h"
+                            "gui-lcd/src/LcdDistance.h",
+                            "gui-lcd/src/LcdTripDuration.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "QObject",
                             "QElapsedTimer",
+                            "QObject",
                             "bloks/VehicleState.h"
                         ],
                         "loc": 71,
                         "messages": [],
                         "name": "TravelDisplay",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/TravelDisplay.h",
                         "size": 1404,
                         "sloc": 52
                     },
@@ -1620,7 +1564,6 @@
                         "messages": [],
                         "name": "commands",
                         "nested_complexity": 0,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/commands.h",
                         "size": 765,
                         "sloc": 27
                     },
@@ -1643,18 +1586,17 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "bloks/common/Log.h",
-                            "bloks/gui-lcd-version.h",
+                            "QCommandLineParser",
                             "QCoreApplication",
-                            "unistd.h",
+                            "bloks/common/Log.h",
                             "bloks/common/UnixSignals.h",
-                            "QCommandLineParser"
+                            "bloks/gui-lcd-version.h",
+                            "unistd.h"
                         ],
                         "loc": 46,
                         "messages": [],
                         "name": "main",
                         "nested_complexity": 1,
-                        "path": "/Users/fleorin/wrk/alber/gui-lcd/src/main.cpp",
                         "size": 1332,
                         "sloc": 37
                     },

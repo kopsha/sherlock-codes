@@ -18,18 +18,18 @@
                                 "is_code": true,
                                 "is_directory": false,
                                 "libraries": [
-                                    "bikeregistration.h",
                                     "QGuiApplication",
-                                    "QQmlApplicationEngine",
-                                    "specializedscreenmapping.h",
-                                    "appfilesystemapi.h",
-                                    "screenframework/screenframework.h",
                                     "QObject",
-                                    "logsmanager.h",
+                                    "QQmlApplicationEngine",
                                     "QtQml",
                                     "QtWebView",
+                                    "apis/apis.h",
+                                    "appfilesystemapi.h",
+                                    "bikeregistration.h",
+                                    "logsmanager.h",
+                                    "screenframework/screenframework.h",
                                     "screenframework/screenmanager.h",
-                                    "apis/apis.h"
+                                    "specializedscreenmapping.h"
                                 ],
                                 "loc": 50,
                                 "messages": [
@@ -37,7 +37,6 @@
                                 ],
                                 "name": "main",
                                 "nested_complexity": 2,
-                                "path": "/Users/fleorin/src/sherlock-codes/project-crawler/testdata/main.cpp",
                                 "size": 1341,
                                 "sloc": 36
                             },
@@ -61,7 +60,6 @@
                                 "messages": [],
                                 "name": "qml_helpers",
                                 "nested_complexity": 2,
-                                "path": "/Users/fleorin/src/sherlock-codes/project-crawler/testdata/qml_helpers.h",
                                 "size": 785,
                                 "sloc": 25
                             },
@@ -83,17 +81,16 @@
                                 "is_code": true,
                                 "is_directory": false,
                                 "libraries": [
-                                    "QScreen",
-                                    "QGuiApplication",
                                     "QDir",
+                                    "QFileInfo",
                                     "QFontDatabase",
-                                    "QFileInfo"
+                                    "QGuiApplication",
+                                    "QScreen"
                                 ],
                                 "loc": 131,
                                 "messages": [],
                                 "name": "styles",
                                 "nested_complexity": 2,
-                                "path": "/Users/fleorin/src/sherlock-codes/project-crawler/testdata/styles.cpp",
                                 "size": 3213,
                                 "sloc": 114
                             },
@@ -115,15 +112,14 @@
                                 "is_code": true,
                                 "is_directory": false,
                                 "libraries": [
-                                    "QQuickItem",
+                                    "QColor",
                                     "QFont",
-                                    "QColor"
+                                    "QQuickItem"
                                 ],
                                 "loc": 129,
                                 "messages": [],
                                 "name": "styles",
                                 "nested_complexity": 1,
-                                "path": "/Users/fleorin/src/sherlock-codes/project-crawler/testdata/styles.h",
                                 "size": 3337,
                                 "sloc": 105
                             },

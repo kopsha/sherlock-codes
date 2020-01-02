@@ -44,8 +44,8 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "vector",
-                            "string"
+                            "string",
+                            "vector"
                         ],
                         "loc": 39,
                         "messages": [],
@@ -72,10 +72,10 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "sstream",
+                            "algorithm",
                             "array",
                             "iomanip",
-                            "algorithm"
+                            "sstream"
                         ],
                         "loc": 172,
                         "messages": [],
@@ -102,9 +102,9 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
+                            "map",
                             "string",
-                            "vector",
-                            "map"
+                            "vector"
                         ],
                         "loc": 33,
                         "messages": [],
@@ -212,10 +212,10 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "vector",
-                            "sstream",
                             "functional",
-                            "string"
+                            "sstream",
+                            "string",
+                            "vector"
                         ],
                         "loc": 47,
                         "messages": [],
@@ -237,18 +237,18 @@
                         "extension": ".cpp",
                         "filename": "protocol_factory.cpp",
                         "imports": [
-                            "turbo-connect-core/src/protocol/protocol_rx15.h",
-                            "turbo-connect-core/src/protocol/protocol_rx12.h",
                             "turbo-connect-core/src/protocol/protocol_legacy20.h",
                             "turbo-connect-core/src/protocol/protocol_legacy22.h",
+                            "turbo-connect-core/src/protocol/protocol_rx0c.h",
+                            "turbo-connect-core/src/protocol/protocol_rx0d.h",
                             "turbo-connect-core/src/protocol/protocol_rx0e.h",
-                            "turbo-connect-core/src/protocol/protocol_rx13.h",
-                            "turbo-connect-core/src/protocol/protocol_rx14.h",
                             "turbo-connect-core/src/protocol/protocol_rx0f.h",
                             "turbo-connect-core/src/protocol/protocol_rx10.h",
-                            "turbo-connect-core/src/protocol/protocol_rx0c.h",
                             "turbo-connect-core/src/protocol/protocol_rx11.h",
-                            "turbo-connect-core/src/protocol/protocol_rx0d.h",
+                            "turbo-connect-core/src/protocol/protocol_rx12.h",
+                            "turbo-connect-core/src/protocol/protocol_rx13.h",
+                            "turbo-connect-core/src/protocol/protocol_rx14.h",
+                            "turbo-connect-core/src/protocol/protocol_rx15.h",
                             "turbo-connect-core/src/protocol_factory.h"
                         ],
                         "is_code": true,
@@ -280,8 +280,8 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "vector",
-                            "string"
+                            "string",
+                            "vector"
                         ],
                         "loc": 15,
                         "messages": [],
@@ -303,10 +303,10 @@
                         "extension": ".h",
                         "filename": "turbo-connect-core.h",
                         "imports": [
-                            "turbo-connect-core/src/identify.h",
-                            "turbo-connect-core/src/parameter_info.h",
                             "turbo-connect-core/src/identification_sequence.h",
+                            "turbo-connect-core/src/identify.h",
                             "turbo-connect-core/src/parameter.h",
+                            "turbo-connect-core/src/parameter_info.h",
                             "turbo-connect-core/src/protocol_factory.h"
                         ],
                         "is_code": true,
@@ -325,6 +325,54 @@
                 },
                 {
                     "children": [
+                        {
+                            "easy_path": "turbo-connect-core/src/protocol/BikeParameter.kt",
+                            "meta": {
+                                "blank_lines": 7,
+                                "cognitive_complexity": 3,
+                                "decision_complexity": 0,
+                                "extension": ".kt",
+                                "filename": "BikeParameter.kt",
+                                "imports": [],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [],
+                                "loc": 110,
+                                "messages": [],
+                                "name": "BikeParameter",
+                                "nested_complexity": 3,
+                                "package": "com/specialized/turboconnect/model",
+                                "size": 3488,
+                                "sloc": 103
+                            },
+                            "name": "BikeParameter.kt",
+                            "temperature": 5,
+                            "value": 3
+                        },
+                        {
+                            "easy_path": "turbo-connect-core/src/protocol/Parameters.kt",
+                            "meta": {
+                                "blank_lines": 6,
+                                "cognitive_complexity": 4,
+                                "decision_complexity": 0,
+                                "extension": ".kt",
+                                "filename": "Parameters.kt",
+                                "imports": [],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [],
+                                "loc": 125,
+                                "messages": [],
+                                "name": "Parameters",
+                                "nested_complexity": 4,
+                                "package": "com/specialized/turboconnect/model",
+                                "size": 17645,
+                                "sloc": 119
+                            },
+                            "name": "Parameters.kt",
+                            "temperature": 1,
+                            "value": 4
+                        },
                         {
                             "easy_path": "turbo-connect-core/src/protocol/bike_parameters.h",
                             "meta": {
@@ -388,8 +436,8 @@
                                 "is_code": true,
                                 "is_directory": false,
                                 "libraries": [
-                                    "vector",
-                                    "map"
+                                    "map",
+                                    "vector"
                                 ],
                                 "loc": 31,
                                 "messages": [],
@@ -1054,20 +1102,20 @@
                         }
                     ],
                     "counter": {
-                        "bytes_count": 273483,
-                        "sloc_count": 2278,
-                        "source_files": 29,
-                        "value_count": 137
+                        "bytes_count": 294616,
+                        "sloc_count": 2500,
+                        "source_files": 31,
+                        "value_count": 144
                     },
                     "easy_path": "turbo-connect-core/src/protocol",
                     "name": "protocol"
                 }
             ],
             "counter": {
-                "bytes_count": 295275,
-                "sloc_count": 2869,
-                "source_files": 40,
-                "value_count": 287
+                "bytes_count": 316408,
+                "sloc_count": 3091,
+                "source_files": 42,
+                "value_count": 294
             },
             "easy_path": "turbo-connect-core/src",
             "name": "src"
@@ -1088,10 +1136,10 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "map",
                             "gtest/gtest.h",
-                            "vector",
-                            "string"
+                            "map",
+                            "string",
+                            "vector"
                         ],
                         "loc": 105,
                         "messages": [],
@@ -1168,8 +1216,8 @@
                         "extension": ".cpp",
                         "filename": "parameter_test.cpp",
                         "imports": [
-                            "turbo-connect-core/test/test_utils.h",
-                            "turbo-connect-core/src/turbo-connect-core.h"
+                            "turbo-connect-core/src/turbo-connect-core.h",
+                            "turbo-connect-core/test/test_utils.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
@@ -1196,15 +1244,15 @@
                         "extension": ".cpp",
                         "filename": "property_decoding_test.cpp",
                         "imports": [
-                            "turbo-connect-core/test/test_utils.h",
-                            "turbo-connect-core/src/turbo-connect-core.h"
+                            "turbo-connect-core/src/turbo-connect-core.h",
+                            "turbo-connect-core/test/test_utils.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
                             "gtest/gtest.h",
-                            "vector",
-                            "string"
+                            "string",
+                            "vector"
                         ],
                         "loc": 202,
                         "messages": [],
@@ -1258,8 +1306,8 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "iostream",
                             "gtest/gtest.h",
+                            "iostream",
                             "string"
                         ],
                         "loc": 101,
@@ -1335,10 +1383,10 @@
         }
     ],
     "counter": {
-        "bytes_count": 321817,
-        "sloc_count": 3497,
-        "source_files": 49,
-        "value_count": 332
+        "bytes_count": 342950,
+        "sloc_count": 3719,
+        "source_files": 51,
+        "value_count": 339
     },
     "easy_path": "turbo-connect-core",
     "name": "turbo-connect-core"

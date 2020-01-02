@@ -18,7 +18,6 @@
                 "messages": [],
                 "name": "plugin_import",
                 "nested_complexity": 0,
-                "path": "/Users/fleorin/wrk/alber/gui/plugin_import.cpp",
                 "size": 735,
                 "sloc": 16
             },
@@ -44,7 +43,6 @@
                 "messages": [],
                 "name": "qml_plugin_import",
                 "nested_complexity": 0,
-                "path": "/Users/fleorin/wrk/alber/gui/qml_plugin_import.cpp",
                 "size": 652,
                 "sloc": 14
             },
@@ -64,31 +62,31 @@
                         "filename": "Controller.cpp",
                         "imports": [
                             "gui/src/Controller.h",
-                            "gui/src/QueryableWrapper.h",
-                            "gui/src/Log.h"
+                            "gui/src/Log.h",
+                            "gui/src/QueryableWrapper.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "bloks/GearShiftState.h",
                             "QFileInfo",
-                            "QNmeaPositionInfoSource",
-                            "bloks/MotorState.h",
                             "QFont",
+                            "QGeoPositionInfoSource",
+                            "QKeyEvent",
+                            "QMetaProperty",
+                            "QNmeaPositionInfoSource",
                             "QQmlComponent",
-                            "bloks/BatteryState.h",
-                            "bloks/LightState.h",
                             "QQmlContext",
-                            "sys/reboot.h",
-                            "bloks/RemoteState.h",
+                            "QSettings",
                             "QWindow",
+                            "bloks/BatteryState.h",
                             "bloks/BluetoothServer.h",
                             "bloks/DisplayState.h",
-                            "QSettings",
-                            "QGeoPositionInfoSource",
-                            "QMetaProperty",
-                            "QKeyEvent",
-                            "bloks/SensorState.h"
+                            "bloks/GearShiftState.h",
+                            "bloks/LightState.h",
+                            "bloks/MotorState.h",
+                            "bloks/RemoteState.h",
+                            "bloks/SensorState.h",
+                            "sys/reboot.h"
                         ],
                         "loc": 442,
                         "messages": [
@@ -97,7 +95,6 @@
                         ],
                         "name": "Controller",
                         "nested_complexity": 5,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/Controller.cpp",
                         "size": 13823,
                         "sloc": 355
                     },
@@ -119,23 +116,22 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "QString",
-                            "bloks/VehicleState.h",
-                            "QGuiApplication",
-                            "bloks/BluetoothServer.h",
-                            "QTimer",
-                            "QQmlApplicationEngine",
                             "QGeoPositionInfo",
-                            "bloks/Frontend.h",
-                            "QSettings",
                             "QGeoPositionInfoSource",
-                            "bloks/RemoteState.h"
+                            "QGuiApplication",
+                            "QQmlApplicationEngine",
+                            "QSettings",
+                            "QString",
+                            "QTimer",
+                            "bloks/BluetoothServer.h",
+                            "bloks/Frontend.h",
+                            "bloks/RemoteState.h",
+                            "bloks/VehicleState.h"
                         ],
                         "loc": 285,
                         "messages": [],
                         "name": "Controller",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/Controller.h",
                         "size": 6972,
                         "sloc": 144
                     },
@@ -166,7 +162,6 @@
                         "messages": [],
                         "name": "GuiSettings",
                         "nested_complexity": 5,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/GuiSettings.cpp",
                         "size": 5477,
                         "sloc": 178
                     },
@@ -186,17 +181,16 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "QTranslator",
                             "QObject",
-                            "QVector",
                             "QSettings",
-                            "QString"
+                            "QString",
+                            "QTranslator",
+                            "QVector"
                         ],
                         "loc": 213,
                         "messages": [],
                         "name": "GuiSettings",
                         "nested_complexity": 4,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/GuiSettings.h",
                         "size": 6036,
                         "sloc": 162
                     },
@@ -213,8 +207,8 @@
                         "extension": ".cpp",
                         "filename": "GuiSettingsBloks.cpp",
                         "imports": [
-                            "gui/src/Log.h",
-                            "gui/src/GuiSettingsBloks.h"
+                            "gui/src/GuiSettingsBloks.h",
+                            "gui/src/Log.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
@@ -225,7 +219,6 @@
                         "messages": [],
                         "name": "GuiSettingsBloks",
                         "nested_complexity": 4,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/GuiSettingsBloks.cpp",
                         "size": 2292,
                         "sloc": 68
                     },
@@ -251,7 +244,6 @@
                         "messages": [],
                         "name": "GuiSettingsBloks",
                         "nested_complexity": 3,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/GuiSettingsBloks.h",
                         "size": 621,
                         "sloc": 21
                     },
@@ -277,7 +269,6 @@
                         "messages": [],
                         "name": "GuiSettingsQt",
                         "nested_complexity": 3,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/GuiSettingsQt.cpp",
                         "size": 1356,
                         "sloc": 25
                     },
@@ -305,7 +296,6 @@
                         "messages": [],
                         "name": "GuiSettingsQt",
                         "nested_complexity": 3,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/GuiSettingsQt.h",
                         "size": 417,
                         "sloc": 18
                     },
@@ -331,7 +321,6 @@
                         "messages": [],
                         "name": "Log",
                         "nested_complexity": 0,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/Log.h",
                         "size": 111,
                         "sloc": 3
                     },
@@ -354,22 +343,21 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
+                            "QFont",
+                            "QMetaProperty",
                             "QQmlComponent",
+                            "QQmlContext",
+                            "QQuickWindow",
                             "bloks/BatteryState.h",
                             "bloks/GearShiftState.h",
-                            "QMetaProperty",
                             "bloks/LightState.h",
-                            "QQmlContext",
                             "bloks/MotorState.h",
-                            "QFont",
-                            "QQuickWindow",
                             "bloks/RemoteState.h"
                         ],
                         "loc": 198,
                         "messages": [],
                         "name": "MockController",
                         "nested_complexity": 3,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/MockController.cpp",
                         "size": 5889,
                         "sloc": 162
                     },
@@ -389,16 +377,15 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "bloks/VehicleState.h",
-                            "QTimer",
+                            "QGuiApplication",
                             "QQmlApplicationEngine",
-                            "QGuiApplication"
+                            "QTimer",
+                            "bloks/VehicleState.h"
                         ],
                         "loc": 142,
                         "messages": [],
                         "name": "MockController",
                         "nested_complexity": 1,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/MockController.h",
                         "size": 3033,
                         "sloc": 41
                     },
@@ -424,7 +411,6 @@
                         "messages": [],
                         "name": "QueryableWrapper",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/QueryableWrapper.cpp",
                         "size": 2836,
                         "sloc": 97
                     },
@@ -444,18 +430,17 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "bloks/QueryableFloat.h",
-                            "bloks/QueryableInt.h",
-                            "bloks/QueryableDate.h",
                             "QObject",
                             "QPointer",
+                            "bloks/QueryableDate.h",
+                            "bloks/QueryableFloat.h",
+                            "bloks/QueryableInt.h",
                             "bloks/QueryableString.h"
                         ],
                         "loc": 119,
                         "messages": [],
                         "name": "QueryableWrapper",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/QueryableWrapper.h",
                         "size": 2967,
                         "sloc": 82
                     },
@@ -477,17 +462,16 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "QtQml/QQmlApplicationEngine",
-                            "QtGui/QScreen",
                             "QAndroidJniObject",
                             "QtGui/QGuiApplication",
+                            "QtGui/QScreen",
+                            "QtQml/QQmlApplicationEngine",
                             "QtQml/QQmlContext"
                         ],
                         "loc": 62,
                         "messages": [],
                         "name": "ScreenDpi",
                         "nested_complexity": 2,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/ScreenDpi.h",
                         "size": 1586,
                         "sloc": 44
                     },
@@ -504,23 +488,22 @@
                         "extension": ".cpp",
                         "filename": "TripManager.cpp",
                         "imports": [
-                            "gui/src/TripManager.h",
-                            "gui/src/Log.h"
+                            "gui/src/Log.h",
+                            "gui/src/TripManager.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
+                            "QSettings",
+                            "QTimer",
                             "QtMath",
                             "bloks/BatteryState.h",
-                            "bloks/MotorState.h",
-                            "QTimer",
-                            "QSettings"
+                            "bloks/MotorState.h"
                         ],
                         "loc": 201,
                         "messages": [],
                         "name": "TripManager",
                         "nested_complexity": 6,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/TripManager.cpp",
                         "size": 6116,
                         "sloc": 146
                     },
@@ -540,15 +523,14 @@
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "bloks/PropertyFloat.h",
                             "QObject",
+                            "bloks/PropertyFloat.h",
                             "bloks/VehicleState.h"
                         ],
                         "loc": 89,
                         "messages": [],
                         "name": "TripManager",
                         "nested_complexity": 3,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/TripManager.h",
                         "size": 1965,
                         "sloc": 48
                     },
@@ -565,30 +547,29 @@
                         "extension": ".cpp",
                         "filename": "main.cpp",
                         "imports": [
-                            "gui/src/GuiSettingsBloks.h",
-                            "gui/src/MockController.h",
                             "gui/src/Controller.h",
+                            "gui/src/GuiSettingsBloks.h",
                             "gui/src/GuiSettingsQt.h",
-                            "gui/src/Log.h"
+                            "gui/src/Log.h",
+                            "gui/src/MockController.h"
                         ],
                         "is_code": true,
                         "is_directory": false,
                         "libraries": [
-                            "bloks/common/Log.h",
                             "QFontDatabase",
                             "QGuiApplication",
-                            "bloks/gui-version.h",
-                            "QtQml",
                             "QQmlApplicationEngine",
-                            "bloks/common/UnixSignals.h",
                             "QSettings",
+                            "QtQml",
+                            "bloks/common/Log.h",
+                            "bloks/common/UnixSignals.h",
+                            "bloks/gui-version.h",
                             "memory"
                         ],
                         "loc": 84,
                         "messages": [],
                         "name": "main",
                         "nested_complexity": 3,
-                        "path": "/Users/fleorin/wrk/alber/gui/src/main.cpp",
                         "size": 2193,
                         "sloc": 56
                     },

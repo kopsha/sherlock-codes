@@ -207,8 +207,8 @@ class CppStyleParser(CodeParserInterface):
                     else:
                         libraries.add(import_item)
 
-            node.meta['imports'] = list(local_imports)
-            node.meta['libraries'] = list(libraries)
+            node.meta['imports'] = sorted(list(local_imports))
+            node.meta['libraries'] = sorted(list(libraries))
 
 
     def inspect(self, source_code, messages):
