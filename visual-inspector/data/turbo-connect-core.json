@@ -1,155 +1,27 @@
 {
     "children": [
         {
-            "easy_path": "turbo-connect-core/run",
-            "meta": {
-                "aggregate_complexity": 5,
-                "blank_lines": 10,
-                "decision_complexity": 3,
-                "extension": "",
-                "imports": [],
-                "is_code": true,
-                "libraries": [],
-                "loc": 77,
-                "mime": "text/x-shellscript; charset=us-ascii",
-                "name": "run",
-                "nested_complexity": 2,
-                "risks": [],
-                "risks_points": 0,
-                "size": 1893,
-                "sloc": 67,
-                "type": "Bourne-Again shell script, ASCII text executable"
-            },
-            "name": "run",
-            "temperature": 8,
-            "value": 5
-        },
-        {
-            "easy_path": "turbo-connect-core/start-tdd",
-            "meta": {
-                "aggregate_complexity": 1,
-                "blank_lines": 2,
-                "decision_complexity": 0,
-                "extension": "",
-                "imports": [],
-                "is_code": true,
-                "libraries": [],
-                "loc": 6,
-                "mime": "text/x-shellscript; charset=us-ascii",
-                "name": "start-tdd",
-                "nested_complexity": 0,
-                "risks": [],
-                "risks_points": 0,
-                "size": 125,
-                "sloc": 4,
-                "type": "Bourne-Again shell script, ASCII text executable"
-            },
-            "name": "start-tdd",
-            "temperature": 4,
-            "value": 1
-        },
-        {
-            "children": [
-                {
-                    "easy_path": "turbo-connect-core/scripts/run-clang-format.py",
-                    "meta": {
-                        "aggregate_complexity": 67,
-                        "blank_lines": 58,
-                        "decision_complexity": 52,
-                        "extension": ".py",
-                        "imports": [],
-                        "is_code": true,
-                        "libraries": [
-                            "traceback",
-                            "errno",
-                            "subprocess",
-                            "signal",
-                            "fnmatch",
-                            "functools",
-                            "difflib",
-                            "codecs",
-                            "__future__",
-                            "os",
-                            "sys",
-                            "io",
-                            "argparse",
-                            "multiprocessing"
-                        ],
-                        "loc": 380,
-                        "mime": "text/x-python; charset=us-ascii",
-                        "name": "run-clang-format",
-                        "nested_complexity": 1,
-                        "risks": [
-                            "[info] Arguably many lines of code, this may be ok for now.",
-                            "[info] Arguably many decisions, it is ok if it makes other files less complicated."
-                        ],
-                        "risks_points": 7,
-                        "size": 11581,
-                        "sloc": 322,
-                        "type": "Python script, ASCII text executable"
-                    },
-                    "name": "run-clang-format.py",
-                    "temperature": 1,
-                    "value": 67
-                },
-                {
-                    "easy_path": "turbo-connect-core/scripts/unit_tests_and_coverage.sh",
-                    "meta": {
-                        "aggregate_complexity": 10,
-                        "blank_lines": 12,
-                        "decision_complexity": 9,
-                        "extension": ".sh",
-                        "imports": [],
-                        "is_code": true,
-                        "libraries": [],
-                        "loc": 73,
-                        "mime": "text/plain; charset=us-ascii",
-                        "name": "unit_tests_and_coverage",
-                        "nested_complexity": 1,
-                        "risks": [],
-                        "risks_points": 0,
-                        "size": 2143,
-                        "sloc": 61,
-                        "type": "ASCII text"
-                    },
-                    "name": "unit_tests_and_coverage.sh",
-                    "temperature": 3,
-                    "value": 10
-                }
-            ],
-            "counter": {
-                "bytes_count": 13724,
-                "risks_count": 2,
-                "sloc_count": 383,
-                "source_files": 2,
-                "value_count": 77
-            },
-            "easy_path": "turbo-connect-core/scripts",
-            "name": "scripts"
-        },
-        {
             "children": [
                 {
                     "easy_path": "turbo-connect-core/src/identification_sequence.cpp",
                     "meta": {
-                        "aggregate_complexity": 20,
                         "blank_lines": 24,
+                        "cognitive_complexity": 20,
                         "decision_complexity": 15,
                         "extension": ".cpp",
+                        "filename": "identification_sequence.cpp",
                         "imports": [
                             "turbo-connect-core/src/identification_sequence.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [],
                         "loc": 133,
-                        "mime": "text/x-c++; charset=us-ascii",
+                        "messages": [],
                         "name": "identification_sequence",
                         "nested_complexity": 4,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 3551,
-                        "sloc": 109,
-                        "type": "C++ source, ASCII text"
+                        "sloc": 109
                     },
                     "name": "identification_sequence.cpp",
                     "temperature": 7,
@@ -158,30 +30,29 @@
                 {
                     "easy_path": "turbo-connect-core/src/identification_sequence.h",
                     "meta": {
-                        "aggregate_complexity": 9,
                         "blank_lines": 10,
+                        "cognitive_complexity": 9,
                         "decision_complexity": 0,
                         "extension": ".h",
+                        "filename": "identification_sequence.h",
                         "imports": [
-                            "turbo-connect-core/src/protocol_factory.h",
-                            "turbo-connect-core/src/identify.h"
+                            "turbo-connect-core/src/identify.h",
+                            "turbo-connect-core/src/protocol/bike_parameters.h",
+                            "turbo-connect-core/src/protocol/protocol_identification.h",
+                            "turbo-connect-core/src/protocol_factory.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
-                            "string",
                             "vector",
-                            "protocol/protocol_identification.h",
-                            "protocol/bike_parameters.h"
+                            "string"
                         ],
                         "loc": 39,
-                        "mime": "text/x-c++; charset=us-ascii",
+                        "messages": [],
                         "name": "identification_sequence",
                         "nested_complexity": 3,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 824,
-                        "sloc": 29,
-                        "type": "C++ source, ASCII text"
+                        "sloc": 29
                     },
                     "name": "identification_sequence.h",
                     "temperature": 5,
@@ -190,29 +61,28 @@
                 {
                     "easy_path": "turbo-connect-core/src/identify.cpp",
                     "meta": {
-                        "aggregate_complexity": 19,
                         "blank_lines": 66,
+                        "cognitive_complexity": 19,
                         "decision_complexity": 9,
                         "extension": ".cpp",
+                        "filename": "identify.cpp",
                         "imports": [
                             "turbo-connect-core/src/identify.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
+                            "sstream",
                             "array",
-                            "algorithm",
                             "iomanip",
-                            "sstream"
+                            "algorithm"
                         ],
                         "loc": 172,
-                        "mime": "text/x-c++; charset=us-ascii",
+                        "messages": [],
                         "name": "identify",
                         "nested_complexity": 5,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 4784,
-                        "sloc": 106,
-                        "type": "C++ source, ASCII text"
+                        "sloc": 106
                     },
                     "name": "identify.cpp",
                     "temperature": 17,
@@ -221,28 +91,27 @@
                 {
                     "easy_path": "turbo-connect-core/src/identify.h",
                     "meta": {
-                        "aggregate_complexity": 6,
                         "blank_lines": 9,
+                        "cognitive_complexity": 6,
                         "decision_complexity": 0,
                         "extension": ".h",
+                        "filename": "identify.h",
                         "imports": [
                             "turbo-connect-core/src/parameter.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
                             "string",
                             "vector",
                             "map"
                         ],
                         "loc": 33,
-                        "mime": "text/x-c++; charset=us-ascii",
+                        "messages": [],
                         "name": "identify",
                         "nested_complexity": 2,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 663,
-                        "sloc": 24,
-                        "type": "C++ source, ASCII text"
+                        "sloc": 24
                     },
                     "name": "identify.h",
                     "temperature": 5,
@@ -251,52 +120,51 @@
                 {
                     "easy_path": "turbo-connect-core/src/parameter.cpp",
                     "meta": {
-                        "aggregate_complexity": 10,
                         "blank_lines": 13,
-                        "decision_complexity": 5,
+                        "cognitive_complexity": 17,
+                        "decision_complexity": 12,
                         "extension": ".cpp",
+                        "filename": "parameter.cpp",
                         "imports": [
-                            "turbo-connect-core/src/parameter_info.h",
-                            "turbo-connect-core/src/parameter.h"
+                            "turbo-connect-core/src/parameter.h",
+                            "turbo-connect-core/src/parameter_info.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [],
                         "loc": 72,
-                        "mime": "text/x-c++; charset=us-ascii",
+                        "messages": [],
                         "name": "parameter",
                         "nested_complexity": 3,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 1470,
-                        "sloc": 59,
-                        "type": "C++ source, ASCII text"
+                        "sloc": 59
                     },
                     "name": "parameter.cpp",
                     "temperature": 6,
-                    "value": 10
+                    "value": 17
                 },
                 {
                     "easy_path": "turbo-connect-core/src/parameter.h",
                     "meta": {
-                        "aggregate_complexity": 5,
                         "blank_lines": 9,
+                        "cognitive_complexity": 5,
                         "decision_complexity": 0,
                         "extension": ".h",
-                        "imports": [],
+                        "filename": "parameter.h",
+                        "imports": [
+                            "turbo-connect-core/src/protocol/bike_parameters.h"
+                        ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
-                            "string",
-                            "protocol/bike_parameters.h"
+                            "string"
                         ],
                         "loc": 35,
-                        "mime": "text/x-c++; charset=us-ascii",
+                        "messages": [],
                         "name": "parameter",
                         "nested_complexity": 3,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 644,
-                        "sloc": 26,
-                        "type": "C++ source, ASCII text"
+                        "sloc": 26
                     },
                     "name": "parameter.h",
                     "temperature": 11,
@@ -305,26 +173,25 @@
                 {
                     "easy_path": "turbo-connect-core/src/parameter_info.cpp",
                     "meta": {
-                        "aggregate_complexity": 15,
                         "blank_lines": 30,
+                        "cognitive_complexity": 15,
                         "decision_complexity": 9,
                         "extension": ".cpp",
+                        "filename": "parameter_info.cpp",
                         "imports": [
                             "turbo-connect-core/src/parameter_info.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
                             "iomanip"
                         ],
                         "loc": 144,
-                        "mime": "text/x-c++; charset=us-ascii",
+                        "messages": [],
                         "name": "parameter_info",
                         "nested_complexity": 4,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 4431,
-                        "sloc": 114,
-                        "type": "C++ source, ASCII text"
+                        "sloc": 114
                     },
                     "name": "parameter_info.cpp",
                     "temperature": 8,
@@ -333,30 +200,29 @@
                 {
                     "easy_path": "turbo-connect-core/src/parameter_info.h",
                     "meta": {
-                        "aggregate_complexity": 8,
                         "blank_lines": 13,
+                        "cognitive_complexity": 8,
                         "decision_complexity": 0,
                         "extension": ".h",
+                        "filename": "parameter_info.h",
                         "imports": [
-                            "turbo-connect-core/src/parameter.h"
+                            "turbo-connect-core/src/parameter.h",
+                            "turbo-connect-core/src/protocol/bike_parameters.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
-                            "string",
                             "vector",
                             "sstream",
-                            "protocol/bike_parameters.h",
-                            "functional"
+                            "functional",
+                            "string"
                         ],
                         "loc": 47,
-                        "mime": "text/x-c++; charset=us-ascii",
+                        "messages": [],
                         "name": "parameter_info",
                         "nested_complexity": 2,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 1910,
-                        "sloc": 34,
-                        "type": "C++ source, ASCII text"
+                        "sloc": 34
                     },
                     "name": "parameter_info.h",
                     "temperature": 9,
@@ -365,67 +231,64 @@
                 {
                     "easy_path": "turbo-connect-core/src/protocol_factory.cpp",
                     "meta": {
-                        "aggregate_complexity": 34,
                         "blank_lines": 10,
-                        "decision_complexity": 16,
+                        "cognitive_complexity": 40,
+                        "decision_complexity": 22,
                         "extension": ".cpp",
+                        "filename": "protocol_factory.cpp",
                         "imports": [
+                            "turbo-connect-core/src/protocol/protocol_rx15.h",
+                            "turbo-connect-core/src/protocol/protocol_rx12.h",
+                            "turbo-connect-core/src/protocol/protocol_legacy20.h",
+                            "turbo-connect-core/src/protocol/protocol_legacy22.h",
+                            "turbo-connect-core/src/protocol/protocol_rx0e.h",
+                            "turbo-connect-core/src/protocol/protocol_rx13.h",
+                            "turbo-connect-core/src/protocol/protocol_rx14.h",
+                            "turbo-connect-core/src/protocol/protocol_rx0f.h",
+                            "turbo-connect-core/src/protocol/protocol_rx10.h",
+                            "turbo-connect-core/src/protocol/protocol_rx0c.h",
+                            "turbo-connect-core/src/protocol/protocol_rx11.h",
+                            "turbo-connect-core/src/protocol/protocol_rx0d.h",
                             "turbo-connect-core/src/protocol_factory.h"
                         ],
                         "is_code": true,
-                        "libraries": [
-                            "protocol/protocol_rx0f.h",
-                            "protocol/protocol_rx12.h",
-                            "protocol/protocol_rx10.h",
-                            "protocol/protocol_rx11.h",
-                            "protocol/protocol_rx14.h",
-                            "protocol/protocol_rx15.h",
-                            "protocol/protocol_rx0d.h",
-                            "protocol/protocol_legacy20.h",
-                            "protocol/protocol_rx0e.h",
-                            "protocol/protocol_rx13.h",
-                            "protocol/protocol_legacy22.h",
-                            "protocol/protocol_rx0c.h"
-                        ],
+                        "is_directory": false,
+                        "libraries": [],
                         "loc": 85,
-                        "mime": "text/x-c++; charset=us-ascii",
+                        "messages": [],
                         "name": "protocol_factory",
                         "nested_complexity": 5,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 3066,
-                        "sloc": 75,
-                        "type": "C++ source, ASCII text"
+                        "sloc": 75
                     },
                     "name": "protocol_factory.cpp",
                     "temperature": 6,
-                    "value": 34
+                    "value": 40
                 },
                 {
                     "easy_path": "turbo-connect-core/src/protocol_factory.h",
                     "meta": {
-                        "aggregate_complexity": 5,
                         "blank_lines": 6,
+                        "cognitive_complexity": 5,
                         "decision_complexity": 0,
                         "extension": ".h",
+                        "filename": "protocol_factory.h",
                         "imports": [
-                            "turbo-connect-core/src/identify.h"
+                            "turbo-connect-core/src/identify.h",
+                            "turbo-connect-core/src/protocol/iprotocol.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
-                            "string",
                             "vector",
-                            "protocol/iprotocol.h"
+                            "string"
                         ],
                         "loc": 15,
-                        "mime": "text/x-c++; charset=us-ascii",
+                        "messages": [],
                         "name": "protocol_factory",
                         "nested_complexity": 1,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 295,
-                        "sloc": 9,
-                        "type": "C++ source, ASCII text"
+                        "sloc": 9
                     },
                     "name": "protocol_factory.h",
                     "temperature": 4,
@@ -434,28 +297,27 @@
                 {
                     "easy_path": "turbo-connect-core/src/turbo-connect-core.h",
                     "meta": {
-                        "aggregate_complexity": 6,
                         "blank_lines": 2,
+                        "cognitive_complexity": 6,
                         "decision_complexity": 0,
                         "extension": ".h",
+                        "filename": "turbo-connect-core.h",
                         "imports": [
                             "turbo-connect-core/src/identify.h",
-                            "turbo-connect-core/src/protocol_factory.h",
-                            "turbo-connect-core/src/identification_sequence.h",
                             "turbo-connect-core/src/parameter_info.h",
-                            "turbo-connect-core/src/parameter.h"
+                            "turbo-connect-core/src/identification_sequence.h",
+                            "turbo-connect-core/src/parameter.h",
+                            "turbo-connect-core/src/protocol_factory.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [],
                         "loc": 8,
-                        "mime": "text/x-c; charset=us-ascii",
+                        "messages": [],
                         "name": "turbo-connect-core",
                         "nested_complexity": 0,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 154,
-                        "sloc": 6,
-                        "type": "C source, ASCII text"
+                        "sloc": 6
                     },
                     "name": "turbo-connect-core.h",
                     "temperature": 12,
@@ -464,214 +326,77 @@
                 {
                     "children": [
                         {
-                            "easy_path": "turbo-connect-core/src/protocol/BikeParameter.kt",
-                            "meta": {
-                                "aggregate_complexity": 3,
-                                "blank_lines": 7,
-                                "decision_complexity": 0,
-                                "extension": ".kt",
-                                "imports": [],
-                                "is_code": true,
-                                "libraries": [],
-                                "loc": 110,
-                                "mime": "text/plain; charset=us-ascii",
-                                "name": "BikeParameter",
-                                "nested_complexity": 3,
-                                "package": "com/specialized/turboconnect/model",
-                                "risks": [],
-                                "risks_points": 0,
-                                "size": 3488,
-                                "sloc": 103,
-                                "type": "ASCII text"
-                            },
-                            "name": "BikeParameter.kt",
-                            "temperature": 5,
-                            "value": 3
-                        },
-                        {
-                            "easy_path": "turbo-connect-core/src/protocol/BikeParameter.swift",
-                            "meta": {
-                                "aggregate_complexity": 2,
-                                "blank_lines": 5,
-                                "decision_complexity": 0,
-                                "extension": ".swift",
-                                "imports": [],
-                                "is_code": true,
-                                "libraries": [
-                                    "Foundation"
-                                ],
-                                "loc": 103,
-                                "mime": "text/plain; charset=us-ascii",
-                                "name": "BikeParameter",
-                                "nested_complexity": 1,
-                                "risks": [],
-                                "risks_points": 0,
-                                "size": 3460,
-                                "sloc": 98,
-                                "type": "ASCII text"
-                            },
-                            "name": "BikeParameter.swift",
-                            "temperature": 9,
-                            "value": 2
-                        },
-                        {
-                            "easy_path": "turbo-connect-core/src/protocol/Parameters.kt",
-                            "meta": {
-                                "aggregate_complexity": 6,
-                                "blank_lines": 6,
-                                "decision_complexity": 0,
-                                "extension": ".kt",
-                                "imports": [
-                                    "turbo-connect-core/src/protocol/BikeParameter.kt"
-                                ],
-                                "is_code": true,
-                                "libraries": [
-                                    "kotlinx/serialization/KSerializer"
-                                ],
-                                "loc": 125,
-                                "mime": "text/x-c++; charset=us-ascii",
-                                "name": "Parameters",
-                                "nested_complexity": 4,
-                                "package": "com/specialized/turboconnect/model",
-                                "risks": [],
-                                "risks_points": 0,
-                                "size": 17645,
-                                "sloc": 119,
-                                "type": "C++ source, ASCII text"
-                            },
-                            "name": "Parameters.kt",
-                            "temperature": 1,
-                            "value": 6
-                        },
-                        {
-                            "easy_path": "turbo-connect-core/src/protocol/Parameters.swift",
-                            "meta": {
-                                "aggregate_complexity": 1,
-                                "blank_lines": 6,
-                                "decision_complexity": 0,
-                                "extension": ".swift",
-                                "imports": [],
-                                "is_code": true,
-                                "libraries": [],
-                                "loc": 110,
-                                "mime": "text/plain; charset=us-ascii",
-                                "name": "Parameters",
-                                "nested_complexity": 1,
-                                "risks": [],
-                                "risks_points": 0,
-                                "size": 8442,
-                                "sloc": 104,
-                                "type": "ASCII text"
-                            },
-                            "name": "Parameters.swift",
-                            "temperature": 1,
-                            "value": 1
-                        },
-                        {
                             "easy_path": "turbo-connect-core/src/protocol/bike_parameters.h",
                             "meta": {
-                                "aggregate_complexity": 2,
                                 "blank_lines": 8,
+                                "cognitive_complexity": 2,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "filename": "bike_parameters.h",
                                 "imports": [],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 109,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "bike_parameters",
                                 "nested_complexity": 2,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 2889,
-                                "sloc": 101,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 101
                             },
                             "name": "bike_parameters.h",
                             "temperature": 7,
                             "value": 2
                         },
                         {
-                            "easy_path": "turbo-connect-core/src/protocol/generate_protocol_sources.py",
-                            "meta": {
-                                "aggregate_complexity": 22,
-                                "blank_lines": 424,
-                                "decision_complexity": 14,
-                                "extension": ".py",
-                                "imports": [],
-                                "is_code": true,
-                                "libraries": [
-                                    "collections",
-                                    "jinja2",
-                                    "re",
-                                    "operator",
-                                    "pandas"
-                                ],
-                                "loc": 604,
-                                "mime": "text/x-python; charset=us-ascii",
-                                "name": "generate_protocol_sources",
-                                "nested_complexity": 3,
-                                "risks": [],
-                                "risks_points": 0,
-                                "size": 19832,
-                                "sloc": 180,
-                                "type": "Python script, ASCII text executable"
-                            },
-                            "name": "generate_protocol_sources.py",
-                            "temperature": 14,
-                            "value": 22
-                        },
-                        {
                             "easy_path": "turbo-connect-core/src/protocol/iprotocol.cpp",
                             "meta": {
-                                "aggregate_complexity": 11,
                                 "blank_lines": 23,
-                                "decision_complexity": 6,
+                                "cognitive_complexity": 12,
+                                "decision_complexity": 7,
                                 "extension": ".cpp",
+                                "filename": "iprotocol.cpp",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/iprotocol.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 95,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "iprotocol",
                                 "nested_complexity": 4,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 2727,
-                                "sloc": 72,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 72
                             },
                             "name": "iprotocol.cpp",
                             "temperature": 12,
-                            "value": 11
+                            "value": 12
                         },
                         {
                             "easy_path": "turbo-connect-core/src/protocol/iprotocol.h",
                             "meta": {
-                                "aggregate_complexity": 6,
                                 "blank_lines": 10,
+                                "cognitive_complexity": 6,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "filename": "iprotocol.h",
                                 "imports": [
-                                    "turbo-connect-core/src/parameter_info.h",
-                                    "turbo-connect-core/src/parameter.h"
+                                    "turbo-connect-core/src/parameter.h",
+                                    "turbo-connect-core/src/parameter_info.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [
                                     "vector",
                                     "map"
                                 ],
                                 "loc": 31,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "iprotocol",
                                 "nested_complexity": 2,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 578,
-                                "sloc": 21,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 21
                             },
                             "name": "iprotocol.h",
                             "temperature": 6,
@@ -680,24 +405,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_identification.cpp",
                             "meta": {
-                                "aggregate_complexity": 6,
                                 "blank_lines": 12,
+                                "cognitive_complexity": 6,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
+                                "filename": "protocol_identification.cpp",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/protocol_identification.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 34,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "protocol_identification",
                                 "nested_complexity": 5,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 2138,
-                                "sloc": 22,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 22
                             },
                             "name": "protocol_identification.cpp",
                             "temperature": 6,
@@ -706,24 +430,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_identification.h",
                             "meta": {
-                                "aggregate_complexity": 3,
                                 "blank_lines": 3,
+                                "cognitive_complexity": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "filename": "protocol_identification.h",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/iprotocol.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 13,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "protocol_identification",
                                 "nested_complexity": 2,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 239,
-                                "sloc": 10,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 10
                             },
                             "name": "protocol_identification.h",
                             "temperature": 2,
@@ -732,24 +455,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_legacy20.cpp",
                             "meta": {
-                                "aggregate_complexity": 6,
                                 "blank_lines": 13,
+                                "cognitive_complexity": 6,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
+                                "filename": "protocol_legacy20.cpp",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/protocol_legacy20.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 119,
-                                "mime": "text/x-c++; charset=utf-8",
+                                "messages": [],
                                 "name": "protocol_legacy20",
                                 "nested_complexity": 5,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 14069,
-                                "sloc": 106,
-                                "type": "C++ source, UTF-8 Unicode text"
+                                "sloc": 106
                             },
                             "name": "protocol_legacy20.cpp",
                             "temperature": 6,
@@ -758,24 +480,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_legacy20.h",
                             "meta": {
-                                "aggregate_complexity": 3,
                                 "blank_lines": 3,
+                                "cognitive_complexity": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "filename": "protocol_legacy20.h",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/iprotocol.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 13,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "protocol_legacy20",
                                 "nested_complexity": 2,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 221,
-                                "sloc": 10,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 10
                             },
                             "name": "protocol_legacy20.h",
                             "temperature": 2,
@@ -784,24 +505,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_legacy22.cpp",
                             "meta": {
-                                "aggregate_complexity": 6,
                                 "blank_lines": 13,
+                                "cognitive_complexity": 6,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
+                                "filename": "protocol_legacy22.cpp",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/protocol_legacy22.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 119,
-                                "mime": "text/x-c++; charset=utf-8",
+                                "messages": [],
                                 "name": "protocol_legacy22",
                                 "nested_complexity": 5,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 14069,
-                                "sloc": 106,
-                                "type": "C++ source, UTF-8 Unicode text"
+                                "sloc": 106
                             },
                             "name": "protocol_legacy22.cpp",
                             "temperature": 6,
@@ -810,24 +530,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_legacy22.h",
                             "meta": {
-                                "aggregate_complexity": 3,
                                 "blank_lines": 3,
+                                "cognitive_complexity": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "filename": "protocol_legacy22.h",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/iprotocol.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 13,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "protocol_legacy22",
                                 "nested_complexity": 2,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 221,
-                                "sloc": 10,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 10
                             },
                             "name": "protocol_legacy22.h",
                             "temperature": 2,
@@ -836,24 +555,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx0c.cpp",
                             "meta": {
-                                "aggregate_complexity": 6,
                                 "blank_lines": 13,
+                                "cognitive_complexity": 6,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
+                                "filename": "protocol_rx0c.cpp",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/protocol_rx0c.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 173,
-                                "mime": "text/x-c++; charset=utf-8",
+                                "messages": [],
                                 "name": "protocol_rx0c",
                                 "nested_complexity": 5,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 21703,
-                                "sloc": 160,
-                                "type": "C++ source, UTF-8 Unicode text"
+                                "sloc": 160
                             },
                             "name": "protocol_rx0c.cpp",
                             "temperature": 7,
@@ -862,24 +580,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx0c.h",
                             "meta": {
-                                "aggregate_complexity": 3,
                                 "blank_lines": 3,
+                                "cognitive_complexity": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "filename": "protocol_rx0c.h",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/iprotocol.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 13,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "protocol_rx0c",
                                 "nested_complexity": 2,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 209,
-                                "sloc": 10,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 10
                             },
                             "name": "protocol_rx0c.h",
                             "temperature": 2,
@@ -888,24 +605,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx0d.cpp",
                             "meta": {
-                                "aggregate_complexity": 6,
                                 "blank_lines": 13,
+                                "cognitive_complexity": 6,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
+                                "filename": "protocol_rx0d.cpp",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/protocol_rx0d.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 173,
-                                "mime": "text/x-c++; charset=utf-8",
+                                "messages": [],
                                 "name": "protocol_rx0d",
                                 "nested_complexity": 5,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 21703,
-                                "sloc": 160,
-                                "type": "C++ source, UTF-8 Unicode text"
+                                "sloc": 160
                             },
                             "name": "protocol_rx0d.cpp",
                             "temperature": 7,
@@ -914,24 +630,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx0d.h",
                             "meta": {
-                                "aggregate_complexity": 3,
                                 "blank_lines": 3,
+                                "cognitive_complexity": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "filename": "protocol_rx0d.h",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/iprotocol.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 13,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "protocol_rx0d",
                                 "nested_complexity": 2,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 209,
-                                "sloc": 10,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 10
                             },
                             "name": "protocol_rx0d.h",
                             "temperature": 2,
@@ -940,24 +655,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx0e.cpp",
                             "meta": {
-                                "aggregate_complexity": 6,
                                 "blank_lines": 13,
+                                "cognitive_complexity": 6,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
+                                "filename": "protocol_rx0e.cpp",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/protocol_rx0e.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 185,
-                                "mime": "text/x-c++; charset=utf-8",
+                                "messages": [],
                                 "name": "protocol_rx0e",
                                 "nested_complexity": 5,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 23423,
-                                "sloc": 172,
-                                "type": "C++ source, UTF-8 Unicode text"
+                                "sloc": 172
                             },
                             "name": "protocol_rx0e.cpp",
                             "temperature": 7,
@@ -966,24 +680,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx0e.h",
                             "meta": {
-                                "aggregate_complexity": 3,
                                 "blank_lines": 3,
+                                "cognitive_complexity": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "filename": "protocol_rx0e.h",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/iprotocol.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 13,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "protocol_rx0e",
                                 "nested_complexity": 2,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 209,
-                                "sloc": 10,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 10
                             },
                             "name": "protocol_rx0e.h",
                             "temperature": 2,
@@ -992,24 +705,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx0f.cpp",
                             "meta": {
-                                "aggregate_complexity": 6,
                                 "blank_lines": 13,
+                                "cognitive_complexity": 6,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
+                                "filename": "protocol_rx0f.cpp",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/protocol_rx0f.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 185,
-                                "mime": "text/x-c++; charset=utf-8",
+                                "messages": [],
                                 "name": "protocol_rx0f",
                                 "nested_complexity": 5,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 23423,
-                                "sloc": 172,
-                                "type": "C++ source, UTF-8 Unicode text"
+                                "sloc": 172
                             },
                             "name": "protocol_rx0f.cpp",
                             "temperature": 7,
@@ -1018,24 +730,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx0f.h",
                             "meta": {
-                                "aggregate_complexity": 3,
                                 "blank_lines": 3,
+                                "cognitive_complexity": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "filename": "protocol_rx0f.h",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/iprotocol.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 13,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "protocol_rx0f",
                                 "nested_complexity": 2,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 209,
-                                "sloc": 10,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 10
                             },
                             "name": "protocol_rx0f.h",
                             "temperature": 2,
@@ -1044,24 +755,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx10.cpp",
                             "meta": {
-                                "aggregate_complexity": 6,
                                 "blank_lines": 13,
+                                "cognitive_complexity": 6,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
+                                "filename": "protocol_rx10.cpp",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/protocol_rx10.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 185,
-                                "mime": "text/x-c++; charset=utf-8",
+                                "messages": [],
                                 "name": "protocol_rx10",
                                 "nested_complexity": 5,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 23423,
-                                "sloc": 172,
-                                "type": "C++ source, UTF-8 Unicode text"
+                                "sloc": 172
                             },
                             "name": "protocol_rx10.cpp",
                             "temperature": 7,
@@ -1070,24 +780,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx10.h",
                             "meta": {
-                                "aggregate_complexity": 3,
                                 "blank_lines": 3,
+                                "cognitive_complexity": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "filename": "protocol_rx10.h",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/iprotocol.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 13,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "protocol_rx10",
                                 "nested_complexity": 2,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 209,
-                                "sloc": 10,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 10
                             },
                             "name": "protocol_rx10.h",
                             "temperature": 2,
@@ -1096,24 +805,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx11.cpp",
                             "meta": {
-                                "aggregate_complexity": 6,
                                 "blank_lines": 13,
+                                "cognitive_complexity": 6,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
+                                "filename": "protocol_rx11.cpp",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/protocol_rx11.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 187,
-                                "mime": "text/x-c++; charset=utf-8",
+                                "messages": [],
                                 "name": "protocol_rx11",
                                 "nested_complexity": 5,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 23708,
-                                "sloc": 174,
-                                "type": "C++ source, UTF-8 Unicode text"
+                                "sloc": 174
                             },
                             "name": "protocol_rx11.cpp",
                             "temperature": 7,
@@ -1122,24 +830,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx11.h",
                             "meta": {
-                                "aggregate_complexity": 3,
                                 "blank_lines": 3,
+                                "cognitive_complexity": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "filename": "protocol_rx11.h",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/iprotocol.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 13,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "protocol_rx11",
                                 "nested_complexity": 2,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 209,
-                                "sloc": 10,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 10
                             },
                             "name": "protocol_rx11.h",
                             "temperature": 2,
@@ -1148,24 +855,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx12.cpp",
                             "meta": {
-                                "aggregate_complexity": 6,
                                 "blank_lines": 13,
+                                "cognitive_complexity": 6,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
+                                "filename": "protocol_rx12.cpp",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/protocol_rx12.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 187,
-                                "mime": "text/x-c++; charset=utf-8",
+                                "messages": [],
                                 "name": "protocol_rx12",
                                 "nested_complexity": 5,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 23708,
-                                "sloc": 174,
-                                "type": "C++ source, UTF-8 Unicode text"
+                                "sloc": 174
                             },
                             "name": "protocol_rx12.cpp",
                             "temperature": 7,
@@ -1174,24 +880,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx12.h",
                             "meta": {
-                                "aggregate_complexity": 3,
                                 "blank_lines": 3,
+                                "cognitive_complexity": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "filename": "protocol_rx12.h",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/iprotocol.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 13,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "protocol_rx12",
                                 "nested_complexity": 2,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 209,
-                                "sloc": 10,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 10
                             },
                             "name": "protocol_rx12.h",
                             "temperature": 2,
@@ -1200,24 +905,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx13.cpp",
                             "meta": {
-                                "aggregate_complexity": 6,
                                 "blank_lines": 13,
+                                "cognitive_complexity": 6,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
+                                "filename": "protocol_rx13.cpp",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/protocol_rx13.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 187,
-                                "mime": "text/x-c++; charset=utf-8",
+                                "messages": [],
                                 "name": "protocol_rx13",
                                 "nested_complexity": 5,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 23708,
-                                "sloc": 174,
-                                "type": "C++ source, UTF-8 Unicode text"
+                                "sloc": 174
                             },
                             "name": "protocol_rx13.cpp",
                             "temperature": 7,
@@ -1226,24 +930,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx13.h",
                             "meta": {
-                                "aggregate_complexity": 3,
                                 "blank_lines": 3,
+                                "cognitive_complexity": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "filename": "protocol_rx13.h",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/iprotocol.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 13,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "protocol_rx13",
                                 "nested_complexity": 2,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 209,
-                                "sloc": 10,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 10
                             },
                             "name": "protocol_rx13.h",
                             "temperature": 2,
@@ -1252,24 +955,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx14.cpp",
                             "meta": {
-                                "aggregate_complexity": 6,
                                 "blank_lines": 13,
+                                "cognitive_complexity": 6,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
+                                "filename": "protocol_rx14.cpp",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/protocol_rx14.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 189,
-                                "mime": "text/x-c++; charset=utf-8",
+                                "messages": [],
                                 "name": "protocol_rx14",
                                 "nested_complexity": 5,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 23992,
-                                "sloc": 176,
-                                "type": "C++ source, UTF-8 Unicode text"
+                                "sloc": 176
                             },
                             "name": "protocol_rx14.cpp",
                             "temperature": 7,
@@ -1278,24 +980,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx14.h",
                             "meta": {
-                                "aggregate_complexity": 3,
                                 "blank_lines": 3,
+                                "cognitive_complexity": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "filename": "protocol_rx14.h",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/iprotocol.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 13,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "protocol_rx14",
                                 "nested_complexity": 2,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 209,
-                                "sloc": 10,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 10
                             },
                             "name": "protocol_rx14.h",
                             "temperature": 2,
@@ -1304,24 +1005,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx15.cpp",
                             "meta": {
-                                "aggregate_complexity": 6,
                                 "blank_lines": 13,
+                                "cognitive_complexity": 6,
                                 "decision_complexity": 0,
                                 "extension": ".cpp",
+                                "filename": "protocol_rx15.cpp",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/protocol_rx15.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 199,
-                                "mime": "text/x-c++; charset=utf-8",
+                                "messages": [],
                                 "name": "protocol_rx15",
                                 "nested_complexity": 5,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 25451,
-                                "sloc": 186,
-                                "type": "C++ source, UTF-8 Unicode text"
+                                "sloc": 186
                             },
                             "name": "protocol_rx15.cpp",
                             "temperature": 8,
@@ -1330,24 +1030,23 @@
                         {
                             "easy_path": "turbo-connect-core/src/protocol/protocol_rx15.h",
                             "meta": {
-                                "aggregate_complexity": 3,
                                 "blank_lines": 3,
+                                "cognitive_complexity": 3,
                                 "decision_complexity": 0,
                                 "extension": ".h",
+                                "filename": "protocol_rx15.h",
                                 "imports": [
                                     "turbo-connect-core/src/protocol/iprotocol.h"
                                 ],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [],
                                 "loc": 13,
-                                "mime": "text/x-c++; charset=us-ascii",
+                                "messages": [],
                                 "name": "protocol_rx15",
                                 "nested_complexity": 2,
-                                "risks": [],
-                                "risks_points": 0,
                                 "size": 209,
-                                "sloc": 10,
-                                "type": "C++ source, ASCII text"
+                                "sloc": 10
                             },
                             "name": "protocol_rx15.h",
                             "temperature": 2,
@@ -1355,22 +1054,20 @@
                         }
                     ],
                     "counter": {
-                        "bytes_count": 326350,
-                        "risks_count": 0,
-                        "sloc_count": 2882,
-                        "source_files": 34,
-                        "value_count": 170
+                        "bytes_count": 273483,
+                        "sloc_count": 2278,
+                        "source_files": 29,
+                        "value_count": 137
                     },
                     "easy_path": "turbo-connect-core/src/protocol",
                     "name": "protocol"
                 }
             ],
             "counter": {
-                "bytes_count": 348142,
-                "risks_count": 0,
-                "sloc_count": 3473,
-                "source_files": 45,
-                "value_count": 307
+                "bytes_count": 295275,
+                "sloc_count": 2869,
+                "source_files": 40,
+                "value_count": 287
             },
             "easy_path": "turbo-connect-core/src",
             "name": "src"
@@ -1380,29 +1077,28 @@
                 {
                     "easy_path": "turbo-connect-core/test/bike_identification_test.cpp",
                     "meta": {
-                        "aggregate_complexity": 8,
                         "blank_lines": 32,
+                        "cognitive_complexity": 8,
                         "decision_complexity": 0,
                         "extension": ".cpp",
+                        "filename": "bike_identification_test.cpp",
                         "imports": [
                             "turbo-connect-core/src/turbo-connect-core.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
-                            "string",
-                            "vector",
+                            "map",
                             "gtest/gtest.h",
-                            "map"
+                            "vector",
+                            "string"
                         ],
                         "loc": 105,
-                        "mime": "text/x-c++; charset=us-ascii",
+                        "messages": [],
                         "name": "bike_identification_test",
                         "nested_complexity": 3,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 2435,
-                        "sloc": 73,
-                        "type": "C++ source, ASCII text"
+                        "sloc": 73
                     },
                     "name": "bike_identification_test.cpp",
                     "temperature": 8,
@@ -1411,27 +1107,26 @@
                 {
                     "easy_path": "turbo-connect-core/test/ble_service_identification_test.cpp",
                     "meta": {
-                        "aggregate_complexity": 4,
                         "blank_lines": 16,
+                        "cognitive_complexity": 4,
                         "decision_complexity": 0,
                         "extension": ".cpp",
+                        "filename": "ble_service_identification_test.cpp",
                         "imports": [
                             "turbo-connect-core/src/turbo-connect-core.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
-                            "string",
-                            "gtest/gtest.h"
+                            "gtest/gtest.h",
+                            "string"
                         ],
                         "loc": 75,
-                        "mime": "text/x-c++; charset=us-ascii",
+                        "messages": [],
                         "name": "ble_service_identification_test",
                         "nested_complexity": 1,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 2838,
-                        "sloc": 59,
-                        "type": "C++ source, ASCII text"
+                        "sloc": 59
                     },
                     "name": "ble_service_identification_test.cpp",
                     "temperature": 4,
@@ -1440,26 +1135,25 @@
                 {
                     "easy_path": "turbo-connect-core/test/identification_sequence_test.cpp",
                     "meta": {
-                        "aggregate_complexity": 4,
                         "blank_lines": 68,
+                        "cognitive_complexity": 4,
                         "decision_complexity": 0,
                         "extension": ".cpp",
+                        "filename": "identification_sequence_test.cpp",
                         "imports": [
                             "turbo-connect-core/src/turbo-connect-core.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
                             "gtest/gtest.h"
                         ],
                         "loc": 236,
-                        "mime": "text/x-c++; charset=us-ascii",
+                        "messages": [],
                         "name": "identification_sequence_test",
                         "nested_complexity": 2,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 7207,
-                        "sloc": 168,
-                        "type": "C++ source, ASCII text"
+                        "sloc": 168
                     },
                     "name": "identification_sequence_test.cpp",
                     "temperature": 2,
@@ -1468,27 +1162,26 @@
                 {
                     "easy_path": "turbo-connect-core/test/parameter_test.cpp",
                     "meta": {
-                        "aggregate_complexity": 5,
                         "blank_lines": 8,
+                        "cognitive_complexity": 5,
                         "decision_complexity": 0,
                         "extension": ".cpp",
+                        "filename": "parameter_test.cpp",
                         "imports": [
-                            "turbo-connect-core/src/turbo-connect-core.h",
-                            "turbo-connect-core/test/test_utils.h"
+                            "turbo-connect-core/test/test_utils.h",
+                            "turbo-connect-core/src/turbo-connect-core.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
                             "gtest/gtest.h"
                         ],
                         "loc": 25,
-                        "mime": "text/x-c; charset=us-ascii",
+                        "messages": [],
                         "name": "parameter_test",
                         "nested_complexity": 2,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 544,
-                        "sloc": 17,
-                        "type": "C source, ASCII text"
+                        "sloc": 17
                     },
                     "name": "parameter_test.cpp",
                     "temperature": 1,
@@ -1497,29 +1190,28 @@
                 {
                     "easy_path": "turbo-connect-core/test/property_decoding_test.cpp",
                     "meta": {
-                        "aggregate_complexity": 9,
                         "blank_lines": 29,
+                        "cognitive_complexity": 9,
                         "decision_complexity": 1,
                         "extension": ".cpp",
+                        "filename": "property_decoding_test.cpp",
                         "imports": [
-                            "turbo-connect-core/src/turbo-connect-core.h",
-                            "turbo-connect-core/test/test_utils.h"
+                            "turbo-connect-core/test/test_utils.h",
+                            "turbo-connect-core/src/turbo-connect-core.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
-                            "string",
+                            "gtest/gtest.h",
                             "vector",
-                            "gtest/gtest.h"
+                            "string"
                         ],
                         "loc": 202,
-                        "mime": "text/x-c++; charset=us-ascii",
+                        "messages": [],
                         "name": "property_decoding_test",
                         "nested_complexity": 3,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 7381,
-                        "sloc": 173,
-                        "type": "C++ source, ASCII text"
+                        "sloc": 173
                     },
                     "name": "property_decoding_test.cpp",
                     "temperature": 9,
@@ -1528,26 +1220,25 @@
                 {
                     "easy_path": "turbo-connect-core/test/property_encoding_test.cpp",
                     "meta": {
-                        "aggregate_complexity": 6,
                         "blank_lines": 17,
+                        "cognitive_complexity": 6,
                         "decision_complexity": 1,
                         "extension": ".cpp",
+                        "filename": "property_encoding_test.cpp",
                         "imports": [
                             "turbo-connect-core/src/turbo-connect-core.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
                             "gtest/gtest.h"
                         ],
                         "loc": 56,
-                        "mime": "text/x-c++; charset=us-ascii",
+                        "messages": [],
                         "name": "property_encoding_test",
                         "nested_complexity": 3,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 1186,
-                        "sloc": 39,
-                        "type": "C++ source, ASCII text"
+                        "sloc": 39
                     },
                     "name": "property_encoding_test.cpp",
                     "temperature": 2,
@@ -1556,28 +1247,27 @@
                 {
                     "easy_path": "turbo-connect-core/test/protocol_factory_test.cpp",
                     "meta": {
-                        "aggregate_complexity": 5,
                         "blank_lines": 17,
+                        "cognitive_complexity": 5,
                         "decision_complexity": 0,
                         "extension": ".cpp",
+                        "filename": "protocol_factory_test.cpp",
                         "imports": [
                             "turbo-connect-core/src/turbo-connect-core.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
-                            "string",
                             "iostream",
-                            "gtest/gtest.h"
+                            "gtest/gtest.h",
+                            "string"
                         ],
                         "loc": 101,
-                        "mime": "text/x-c++; charset=us-ascii",
+                        "messages": [],
                         "name": "protocol_factory_test",
                         "nested_complexity": 1,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 4272,
-                        "sloc": 84,
-                        "type": "C++ source, ASCII text"
+                        "sloc": 84
                     },
                     "name": "protocol_factory_test.cpp",
                     "temperature": 5,
@@ -1586,26 +1276,25 @@
                 {
                     "easy_path": "turbo-connect-core/test/protocol_test.cpp",
                     "meta": {
-                        "aggregate_complexity": 3,
                         "blank_lines": 7,
+                        "cognitive_complexity": 3,
                         "decision_complexity": 0,
                         "extension": ".cpp",
+                        "filename": "protocol_test.cpp",
                         "imports": [
                             "turbo-connect-core/src/turbo-connect-core.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
                             "gtest/gtest.h"
                         ],
                         "loc": 16,
-                        "mime": "text/x-c; charset=us-ascii",
+                        "messages": [],
                         "name": "protocol_test",
                         "nested_complexity": 1,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 390,
-                        "sloc": 9,
-                        "type": "C source, ASCII text"
+                        "sloc": 9
                     },
                     "name": "protocol_test.cpp",
                     "temperature": 6,
@@ -1614,22 +1303,21 @@
                 {
                     "easy_path": "turbo-connect-core/test/test_utils.h",
                     "meta": {
-                        "aggregate_complexity": 1,
                         "blank_lines": 3,
+                        "cognitive_complexity": 1,
                         "decision_complexity": 0,
                         "extension": ".h",
+                        "filename": "test_utils.h",
                         "imports": [],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [],
                         "loc": 9,
-                        "mime": "text/x-c; charset=us-ascii",
+                        "messages": [],
                         "name": "test_utils",
                         "nested_complexity": 0,
-                        "risks": [],
-                        "risks_points": 0,
                         "size": 289,
-                        "sloc": 6,
-                        "type": "C source, ASCII text"
+                        "sloc": 6
                     },
                     "name": "test_utils.h",
                     "temperature": 1,
@@ -1638,7 +1326,6 @@
             ],
             "counter": {
                 "bytes_count": 26542,
-                "risks_count": 0,
                 "sloc_count": 628,
                 "source_files": 9,
                 "value_count": 45
@@ -1648,11 +1335,10 @@
         }
     ],
     "counter": {
-        "bytes_count": 390426,
-        "risks_count": 2,
-        "sloc_count": 4555,
-        "source_files": 58,
-        "value_count": 435
+        "bytes_count": 321817,
+        "sloc_count": 3497,
+        "source_files": 49,
+        "value_count": 332
     },
     "easy_path": "turbo-connect-core",
     "name": "turbo-connect-core"

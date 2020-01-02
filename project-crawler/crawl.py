@@ -13,7 +13,7 @@ import numpy
 from datetime import datetime
 from git.cmd import Git
 
-from utils import print_stage
+from utils import print_stage, pp
 from source_inspector import SourceInspector
 
 
@@ -54,99 +54,7 @@ def make_tree_path(root, path):
             current = anytree.Node(child, parent=current)
     return current
 
-def parse_git_repository(src_root, output=None):
-    project_name = os.path.basename(src_root)
-    print_stage(f'Analyzing {project_name}')
-
-    git = Git(src_root)
-    git_filelist = sorted(git.ls_files().split('\n'), key=lambda s : s.count(os.sep))
-    root = anytree.Node(project_name)
-
-    for filepath in git_filelist:
-        folder = os.path.dirname(filepath)
-        file = os.path.basename(filepath)
-        sherlock = SourceInspector(os.path.join(src_root,filepath))
-
-        if not sherlock.is_code:
-            continue
-
-        if folder:
-            parent = make_tree_path(root, folder)
-        else:
-            parent = root
-
-        sherlock.inspect()
-        meta = sherlock.metadata()
-        node = anytree.Node(file, parent=parent, value=meta['cognitive_complexity'], meta=meta)
-
-    # Count items up
-    aggregate_data(root)
-    data_bytes = root.counter['bytes_count']
-    print(f'Completed scan of {root.counter["source_files"]} files or {humanize.naturalsize(data_bytes)} of code.')
-
-    print('Processing imports...')
-    resolver = anytree.Resolver()
-
-    package_map = {}
-    for node in root.leaves:
-        pkg = node.meta.get('package')
-        if pkg:
-            refs = package_map.get(pkg, [])
-            refs.append(node.easy_path)
-            package_map[pkg] = refs
-
-    local_packages = list(set(package_map))
-
-    for m in root.leaves:
-        imports = m.meta.get('imports', [])
-        local_imports = set()
-        libraries = set()
-        for import_item in imports:
-            if import_item.count(os.sep) < 1:
-                # look in siblings
-                local_nodes =  anytree.search.findall_by_attr(m.parent, import_item)
-                if local_nodes:
-                    # add all nodes
-                    chk = [x.easy_path for x in local_nodes if x.is_leaf]
-                    if not chk:
-                        chk = [x.easy_path for x in local_nodes[-1].leaves]
-                    assert chk
-                    local_imports.update(chk)
-                else:
-                    # look in the entire project
-                    local_nodes = anytree.search.findall_by_attr(root, import_item)
-                    if local_nodes:
-                        chk = [x.easy_path for x in local_nodes if x.is_leaf]
-                        if not chk:
-                            chk = [x.easy_path for x in local_nodes[-1].leaves]
-                        assert chk
-                        local_imports.update(chk)
-                    else:
-                        libraries.add(import_item)
-            else:
-                # TODO: resolve relative paths (../)
-                package = import_item
-                was_found = False
-                while package.count('/') >= 3:
-                    package,symbol = os.path.split(package)
-                    if package in local_packages:
-                        found_local = [x for x in package_map[package] if symbol in x]
-                        if found_local:
-                            local_imports.add(found_local[0])
-                        else:
-                            local_imports.add( package_map[package][0] )  # :()
-                        was_found = True
-                        break
-                if not was_found:
-                    libraries.add(import_item)
-                    if import_item.startswith('com/specialized'):
-                        print('**** ', m.name, 'imports', import_item, 'but cannot be resolved inside project, is this a library?')
-
-        m.meta['imports'] = list(local_imports)
-        m.meta['libraries'] = list(libraries)
-
-    print('Inspecting git history...')
-
+def inspect_git_history(git, root):
     def remove_root_name(path):
         return os.sep.join(path.split(os.sep)[1:])
 
@@ -179,11 +87,49 @@ def parse_git_repository(src_root, output=None):
         else:
             commit_count += 1
 
-    print(f'Analyzed {commit_count} commits.')
-    for k in sorted(module_paths):
+    for k in module_paths:
         node = module_paths[k]
         if not hasattr(node, 'temperature'):
             raise ValueError(f'Module {node.name} does not appear in change log.')
+
+    return commit_count
+
+def parse_git_repository(src_root, output=None):
+    project_name = os.path.basename(src_root)
+    print_stage(f'Inspecting {project_name}')
+
+    git = Git(src_root)
+    git_filelist = sorted(git.ls_files().split('\n'), key=lambda s : s.count(os.sep))
+    root = anytree.Node(project_name)
+
+    for filepath in git_filelist:
+        folder = os.path.dirname(filepath)
+        file = os.path.basename(filepath)
+        sherlock = SourceInspector(os.path.join(src_root,filepath))
+
+        if not sherlock.is_code:
+            continue
+
+        if folder:
+            parent = make_tree_path(root, folder)
+        else:
+            parent = root
+
+        print('.', end='')
+        sherlock.inspect()
+        meta = sherlock.metadata()
+        node = anytree.Node(file, parent=parent, value=meta['cognitive_complexity'], meta=meta)
+
+    aggregate_data(root)
+    codebase_size = root.counter['bytes_count']
+    print(f'\nCompleted scan of {root.counter["source_files"]} files or {humanize.naturalsize(codebase_size)} of code.')
+
+    print('Digesting coupling information...')
+    SourceInspector.resolve_imports(root)
+
+    print('Inspecting git history...')
+    commit_count = inspect_git_history(git, root)
+    print(f'Completed analysis of {commit_count} commits.')
 
     if not output:
         output = f'{project_name}.json'

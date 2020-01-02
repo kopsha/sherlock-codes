@@ -7,84 +7,6 @@ import re
 import timeit
 
 
-def remove_cpp_comments_and_literals(source_code):
-    source_doubles = list(zip(source_code[:-1], source_code[1:]))
-
-    line_comment = False
-    block_comment = False
-    string_literal = False
-    skip = 0
-
-    clean_source = []
-
-    for i, (c1,c2) in enumerate(source_doubles):
-        if skip > 0:
-            skip -= 1
-            continue
-
-        # end conditions
-        if line_comment:
-            if c1 == '\\' and c2 =='\n':
-                # line comments continue on next line
-                clean_source.append(c2)
-                skip = 1
-            if c1 == '\n':
-                line_comment = False
-                clean_source.append(c1)
-                continue
-        elif block_comment:
-            if c1 == '*' and c2 == '/':
-                skip = 1
-                block_comment = False
-                continue
-        elif string_literal:
-            if c1 == '\\':
-                skip = 1
-                continue
-            elif c1 == '"':
-                string_literal = False
-                continue
-
-        # skip any comments
-        if any([line_comment, block_comment, string_literal]):
-            if c1 == '\n':   # keep newlines
-                clean_source.append(c1)
-            continue
-
-        # special case, do not touch import directives
-        if c1 == '#':
-            # read whole line from source_code[i]
-            line_ends = source_code.find('\n', i)
-            if (line_ends > 0):
-                whole_line = source_code[i:line_ends]
-                # is it an include or import ?
-                if re.match(r'#(?:include|import).+', whole_line):
-                    clean_source.extend(whole_line)
-                    # skip to the end of line
-                    skip = len(whole_line)-1
-                    continue
-
-        # start conditions
-        if c1 == '/' and c2 == '/':
-            line_comment = True
-            skip = 1
-            continue
-        elif c1 == '/' and c2 == '*':
-            skip = 1
-            block_comment = True
-            continue
-        elif c1 == '"':
-            string_literal = True
-            continue
-
-        # valid code
-        clean_source.append(c1)
-
-    clean_source.append(source_code[-1])
-
-    return ''.join(clean_source)
-
-
 def remove_python_comments_and_literals(source_code):
     assert(len(source_code) > 3 )
     source_triples = list(zip(source_code[:-2], source_code[1:-1], source_code[2:]))
@@ -160,28 +82,6 @@ def remove_python_comments_and_literals(source_code):
     return ''.join(clean_source)
 
 
-def parse_cpp_imports(source_code):
-    import_ref = re.compile(r'\s*?#(?:include|import)\s*[\"<]([/\w\.\-\+]+)[\">]\s*?')
-
-    imports = import_ref.findall(source_code)
-    return imports
-
-
-def parse_java_imports(source_code):
-    package_ref = re.compile(r'\s*package\s+([\w\.]+)\s*')
-    package_decl = package_ref.findall(source_code)
-    package = ''
-    if (package_decl):
-        assert(len(package_decl) == 1)
-        package = '/'.join(package_decl[0].split('.'))
-
-    import_refs = re.compile(r'\s*?import\s+([\w\.]+)\s*?')
-    imports = import_refs.findall(source_code)
-
-    imports_with_path = [p.replace('.', '/') for p in imports]
-
-    return imports_with_path, package
-
 
 def parse_swift_imports(source_code):
     import_refs = re.compile(r'\s*?import\s+(?:(?:typealias|struct|class|enum|protocol|let|var|func)\s+)?([/\w\.\-\+]+)\s*?')
@@ -201,26 +101,6 @@ def parse_python_imports(source_code):
             imports.append(node.module)
 
     return imports
-
-
-def parse_nested_blocks(source_code):
-    open_tag = '{'
-    close_tag = '}'
-    deepest = 0
-    deep = 0
-
-    for c in source_code:
-        if c == open_tag:
-            deep += 1
-            deepest = max(deep, deepest)
-        elif c == close_tag:
-            deep -= 1
-
-    if deep != 0:
-        # TODO: collect risks on each phase
-        print('*** [info] Nested blocks are not matched. If you used macro magic you are on your own.')
-
-    return deepest
 
 
 def test_source_parsing():

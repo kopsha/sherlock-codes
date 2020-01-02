@@ -5,9 +5,10 @@ from utils import print_stage, static_var, pp
 
 from code_parser_interface import CodeParserInterface
 from cpp_style_parser import CppStyleParser
+from java_style_parser import JavaStyleParser
 
 def make_extension_map():
-    extensions = {}
+    ext_map = {}
     current_module = sys.modules[__name__]
     all_parsers = [
         (name,cls) for name,cls in inspect.getmembers(current_module)
@@ -19,11 +20,11 @@ def make_extension_map():
     for name, cls in all_parsers:
         parser = cls()
         for ext in parser.supported_extensions:
-            if ext in extensions:
+            if ext in ext_map:
                 raise AttributeError(f'Class {name}, redefines an already existing extension.')
-            extensions[ext] = parser
+            ext_map[ext] = parser
 
-    return extensions
+    return ext_map
 
 @static_var('extension_map', {})
 def parser_factory(ext):

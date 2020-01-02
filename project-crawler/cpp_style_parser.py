@@ -1,5 +1,6 @@
 from code_parser_interface import CodeParserInterface
 
+import os
 import re
 
 class CppStyleParser(CodeParserInterface):
@@ -9,7 +10,20 @@ class CppStyleParser(CodeParserInterface):
             '.hpp', '.cxx', '.cc',
             '.mm', '.m',
         ]
-    
+        self._decision_markers = [
+            'case',
+            'catch'
+            'default',
+            'else',
+            'for',
+            'foreach',
+            'for_each',
+            'if',
+            'switch',
+            'try',
+            'while',
+        ]
+
     def remove_comments_and_literals(self, source_code, messages):
         src_doubles = list(zip(source_code[:-1], source_code[1:]))
 
@@ -136,20 +150,8 @@ class CppStyleParser(CodeParserInterface):
         return deepest
 
     def compute_decision_complexity(self, source_code, messages):
-        markers = [
-            'case',
-            'catch'
-            'default',
-            'else',
-            'for',
-            'foreach',
-            'for_each',
-            'if',
-            'switch',
-            'try',
-            'while',
-        ]
-        decisions = re.compile(r'(?:^|\W)('+'|'.join(markers)+')(?:$|\W)')
+
+        decisions = re.compile(r'(?:^|\W)('+'|'.join(self.decision_markers)+')(?:$|\W)')
         found = decisions.findall(source_code)
         decision_count = len(found)
 
@@ -166,6 +168,47 @@ class CppStyleParser(CodeParserInterface):
         import_ref = re.compile(r'\s*?#(?:include|import)\s*[\"<]([/\w\.\-\+]+)[\">]\s*?')
         imports = import_ref.findall(source_code)
         return imports
+
+    def resolve_imports(self, root):
+        """Resolve imports related to supported extensions"""
+
+        def walk_to(node, path):
+            try:
+                position = node
+                walk = path.split(os.sep)
+                for step in walk:
+                    if step == '..':
+                        if position.parent:
+                            position = position.parent
+                        else:
+                            raise StopIteration
+                    else:
+                        position = next(s for s in position.siblings if s.name == step)
+            except StopIteration:
+                return None
+
+            return position
+
+        source_nodes = [n for n in root.leaves if n.meta.get('extension') in self.supported_extensions]
+
+        for node in source_nodes:
+            imports = node.meta.get('imports', [])
+            local_imports = set()
+            libraries = set()
+            for import_item in imports:
+                dest = walk_to(node, import_item)
+                if dest:
+                    local_imports.add(dest.easy_path)
+                else:
+                    other_nodes = [n for n in source_nodes if n.name != node.name]
+                    options = [n for n in other_nodes if import_item in n.easy_path]
+                    if options:
+                        local_imports.update([o.easy_path for o in options])
+                    else:
+                        libraries.add(import_item)
+
+            node.meta['imports'] = list(local_imports)
+            node.meta['libraries'] = list(libraries)
 
 
     def inspect(self, source_code, messages):

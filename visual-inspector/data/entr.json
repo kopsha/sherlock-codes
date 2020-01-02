@@ -1,74 +1,26 @@
 {
     "children": [
         {
-            "easy_path": "entr/Makefile.bsd",
-            "meta": {
-                "aggregate_complexity": 1,
-                "blank_lines": 39,
-                "decision_complexity": 0,
-                "extension": ".bsd",
-                "imports": [],
-                "is_code": true,
-                "libraries": [],
-                "loc": 54,
-                "mime": "text/x-makefile; charset=us-ascii",
-                "name": "Makefile",
-                "nested_complexity": 1,
-                "risks": [],
-                "risks_points": 0,
-                "size": 1287,
-                "sloc": 15,
-                "type": "makefile script, ASCII text"
-            },
-            "name": "Makefile.bsd",
-            "temperature": 44,
-            "value": 1
-        },
-        {
-            "easy_path": "entr/configure",
-            "meta": {
-                "aggregate_complexity": 1,
-                "blank_lines": 9,
-                "decision_complexity": 0,
-                "extension": "",
-                "imports": [],
-                "is_code": true,
-                "libraries": [],
-                "loc": 30,
-                "mime": "text/x-shellscript; charset=us-ascii",
-                "name": "configure",
-                "nested_complexity": 1,
-                "risks": [],
-                "risks_points": 0,
-                "size": 507,
-                "sloc": 21,
-                "type": "POSIX shell script, ASCII text executable"
-            },
-            "name": "configure",
-            "temperature": 11,
-            "value": 1
-        },
-        {
             "easy_path": "entr/data.h",
             "meta": {
-                "aggregate_complexity": 2,
                 "blank_lines": 22,
+                "cognitive_complexity": 2,
                 "decision_complexity": 0,
                 "extension": ".h",
+                "filename": "data.h",
                 "imports": [],
                 "is_code": true,
+                "is_directory": false,
                 "libraries": [
                     "limits.h"
                 ],
                 "loc": 30,
-                "mime": "text/x-c; charset=us-ascii",
+                "messages": [],
                 "name": "data",
                 "nested_complexity": 1,
-                "risks": [],
-                "risks_points": 0,
+                "path": "/Users/fleorin/src/entr/data.h",
                 "size": 971,
-                "sloc": 8,
-                "type": "C source, ASCII text"
+                "sloc": 8
             },
             "name": "data.h",
             "temperature": 4,
@@ -77,128 +29,104 @@
         {
             "easy_path": "entr/entr.c",
             "meta": {
-                "aggregate_complexity": 94,
                 "blank_lines": 139,
-                "decision_complexity": 70,
+                "cognitive_complexity": 104,
+                "decision_complexity": 80,
                 "extension": ".c",
+                "filename": "entr.c",
                 "imports": [
+                    "entr/missing/compat.h",
+                    "entr/missing/sys/event.h",
                     "entr/data.h"
                 ],
                 "is_code": true,
+                "is_directory": false,
                 "libraries": [
-                    "sys/event.h",
-                    "paths.h",
                     "sys/stat.h",
-                    "sys/wait.h",
-                    "err.h",
-                    "stdlib.h",
-                    "signal.h",
-                    "sys/param.h",
-                    "errno.h",
-                    "fcntl.h",
                     "libgen.h",
-                    "time.h",
-                    "stdio.h",
-                    "string.h",
-                    "sys/resource.h",
-                    "missing/compat.h",
-                    "limits.h",
                     "dirent.h",
-                    "unistd.h"
+                    "fcntl.h",
+                    "time.h",
+                    "unistd.h",
+                    "sys/wait.h",
+                    "sys/resource.h",
+                    "signal.h",
+                    "string.h",
+                    "errno.h",
+                    "paths.h",
+                    "stdio.h",
+                    "stdlib.h",
+                    "sys/param.h",
+                    "limits.h",
+                    "err.h"
                 ],
                 "loc": 516,
-                "mime": "text/x-c; charset=us-ascii",
-                "name": "entr",
-                "nested_complexity": 4,
-                "risks": [
+                "messages": [
                     "[info] Arguably many lines of code, this may be ok for now.",
                     "[warning] Quite many decisions, consider adding more unit tests and review the entire file."
                 ],
-                "risks_points": 10,
+                "name": "entr",
+                "nested_complexity": 4,
+                "path": "/Users/fleorin/src/entr/entr.c",
                 "size": 12813,
-                "sloc": 377,
-                "type": "C source, ASCII text"
+                "sloc": 377
             },
             "name": "entr.c",
             "temperature": 121,
-            "value": 94
+            "value": 104
         },
         {
             "easy_path": "entr/entr_spec.c",
             "meta": {
-                "aggregate_complexity": 10,
                 "blank_lines": 238,
-                "decision_complexity": 7,
+                "cognitive_complexity": 11,
+                "decision_complexity": 8,
                 "extension": ".c",
+                "filename": "entr_spec.c",
                 "imports": [
                     "entr/entr.c"
                 ],
                 "is_code": true,
+                "is_directory": false,
                 "libraries": [],
                 "loc": 835,
-                "mime": "text/x-c; charset=us-ascii",
-                "name": "entr_spec",
-                "nested_complexity": 2,
-                "risks": [
+                "messages": [
                     "[warning] Quite many lines of code, plan on refactoring."
                 ],
-                "risks_points": 5,
+                "name": "entr_spec",
+                "nested_complexity": 2,
+                "path": "/Users/fleorin/src/entr/entr_spec.c",
                 "size": 20868,
-                "sloc": 597,
-                "type": "C source, ASCII text"
+                "sloc": 597
             },
             "name": "entr_spec.c",
             "temperature": 67,
-            "value": 10
-        },
-        {
-            "easy_path": "entr/system_test.sh",
-            "meta": {
-                "aggregate_complexity": 4,
-                "blank_lines": 263,
-                "decision_complexity": 2,
-                "extension": ".sh",
-                "imports": [],
-                "is_code": true,
-                "libraries": [],
-                "loc": 290,
-                "mime": "text/x-shellscript; charset=us-ascii",
-                "name": "system_test",
-                "nested_complexity": 2,
-                "risks": [],
-                "risks_points": 0,
-                "size": 8300,
-                "sloc": 27,
-                "type": "POSIX shell script, ASCII text executable"
-            },
-            "name": "system_test.sh",
-            "temperature": 56,
-            "value": 4
+            "value": 11
         },
         {
             "children": [
                 {
                     "easy_path": "entr/missing/compat.h",
                     "meta": {
-                        "aggregate_complexity": 7,
                         "blank_lines": 6,
+                        "cognitive_complexity": 7,
                         "decision_complexity": 4,
                         "extension": ".h",
+                        "filename": "compat.h",
                         "imports": [],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
                             "sys/types.h",
                             "stdio.h"
                         ],
                         "loc": 20,
-                        "mime": "text/x-c; charset=us-ascii",
+                        "messages": [],
                         "name": "compat",
                         "nested_complexity": 0,
-                        "risks": [],
-                        "risks_points": 0,
+                        "path": "/Users/fleorin/src/entr/missing/compat.h",
                         "size": 346,
-                        "sloc": 14,
-                        "type": "C source, ASCII text"
+                        "sloc": 14
                     },
                     "name": "compat.h",
                     "temperature": 8,
@@ -207,94 +135,94 @@
                 {
                     "easy_path": "entr/missing/fmemopen.c",
                     "meta": {
-                        "aggregate_complexity": 25,
                         "blank_lines": 54,
-                        "decision_complexity": 17,
+                        "cognitive_complexity": 30,
+                        "decision_complexity": 22,
                         "extension": ".c",
+                        "filename": "fmemopen.c",
                         "imports": [],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
-                            "stdlib.h",
+                            "fcntl.h",
+                            "string.h",
                             "stdio.h",
                             "errno.h",
-                            "string.h",
-                            "fcntl.h"
+                            "stdlib.h"
                         ],
                         "loc": 187,
-                        "mime": "text/x-c; charset=us-ascii",
+                        "messages": [],
                         "name": "fmemopen",
                         "nested_complexity": 3,
-                        "risks": [],
-                        "risks_points": 0,
+                        "path": "/Users/fleorin/src/entr/missing/fmemopen.c",
                         "size": 3695,
-                        "sloc": 133,
-                        "type": "C source, ASCII text"
+                        "sloc": 133
                     },
                     "name": "fmemopen.c",
                     "temperature": 4,
-                    "value": 25
+                    "value": 30
                 },
                 {
                     "easy_path": "entr/missing/kqueue_inotify.c",
                     "meta": {
-                        "aggregate_complexity": 37,
                         "blank_lines": 51,
-                        "decision_complexity": 20,
+                        "cognitive_complexity": 39,
+                        "decision_complexity": 22,
                         "extension": ".c",
+                        "filename": "kqueue_inotify.c",
                         "imports": [
-                            "entr/missing/compat.h"
+                            "entr/missing/compat.h",
+                            "entr/missing/sys/event.h",
+                            "entr/data.h"
                         ],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
-                            "sys/event.h",
                             "sys/stat.h",
-                            "sys/inotify.h",
-                            "limits.h",
                             "time.h",
-                            "../data.h",
-                            "unistd.h",
+                            "sys/inotify.h",
                             "sys/types.h",
-                            "stdio.h",
-                            "errno.h",
+                            "unistd.h",
                             "string.h",
-                            "poll.h"
+                            "errno.h",
+                            "stdio.h",
+                            "poll.h",
+                            "limits.h"
                         ],
                         "loc": 160,
-                        "mime": "text/x-c; charset=us-ascii",
+                        "messages": [],
                         "name": "kqueue_inotify",
                         "nested_complexity": 4,
-                        "risks": [],
-                        "risks_points": 0,
+                        "path": "/Users/fleorin/src/entr/missing/kqueue_inotify.c",
                         "size": 4023,
-                        "sloc": 109,
-                        "type": "C source, ASCII text"
+                        "sloc": 109
                     },
                     "name": "kqueue_inotify.c",
                     "temperature": 40,
-                    "value": 37
+                    "value": 39
                 },
                 {
                     "easy_path": "entr/missing/strlcpy.c",
                     "meta": {
-                        "aggregate_complexity": 11,
                         "blank_lines": 30,
+                        "cognitive_complexity": 11,
                         "decision_complexity": 6,
                         "extension": ".c",
+                        "filename": "strlcpy.c",
                         "imports": [],
                         "is_code": true,
+                        "is_directory": false,
                         "libraries": [
-                            "sys/types.h",
-                            "string.h"
+                            "string.h",
+                            "sys/types.h"
                         ],
                         "loc": 52,
-                        "mime": "text/x-c; charset=us-ascii",
+                        "messages": [],
                         "name": "strlcpy",
                         "nested_complexity": 3,
-                        "risks": [],
-                        "risks_points": 0,
+                        "path": "/Users/fleorin/src/entr/missing/strlcpy.c",
                         "size": 1561,
-                        "sloc": 22,
-                        "type": "C source, ASCII text"
+                        "sloc": 22
                     },
                     "name": "strlcpy.c",
                     "temperature": 2,
@@ -305,25 +233,25 @@
                         {
                             "easy_path": "entr/missing/sys/event.h",
                             "meta": {
-                                "aggregate_complexity": 4,
                                 "blank_lines": 42,
+                                "cognitive_complexity": 4,
                                 "decision_complexity": 1,
                                 "extension": ".h",
+                                "filename": "event.h",
                                 "imports": [],
                                 "is_code": true,
+                                "is_directory": false,
                                 "libraries": [
-                                    "sys/types.h",
-                                    "sys/time.h"
+                                    "sys/time.h",
+                                    "sys/types.h"
                                 ],
                                 "loc": 78,
-                                "mime": "text/x-c; charset=us-ascii",
+                                "messages": [],
                                 "name": "event",
                                 "nested_complexity": 1,
-                                "risks": [],
-                                "risks_points": 0,
+                                "path": "/Users/fleorin/src/entr/missing/sys/event.h",
                                 "size": 2949,
-                                "sloc": 36,
-                                "type": "C source, ASCII text"
+                                "sloc": 36
                             },
                             "name": "event.h",
                             "temperature": 6,
@@ -332,7 +260,6 @@
                     ],
                     "counter": {
                         "bytes_count": 2949,
-                        "risks_count": 0,
                         "sloc_count": 36,
                         "source_files": 1,
                         "value_count": 4
@@ -343,21 +270,19 @@
             ],
             "counter": {
                 "bytes_count": 12574,
-                "risks_count": 0,
                 "sloc_count": 314,
                 "source_files": 5,
-                "value_count": 84
+                "value_count": 91
             },
             "easy_path": "entr/missing",
             "name": "missing"
         }
     ],
     "counter": {
-        "bytes_count": 57320,
-        "risks_count": 3,
-        "sloc_count": 1359,
-        "source_files": 11,
-        "value_count": 196
+        "bytes_count": 47226,
+        "sloc_count": 1296,
+        "source_files": 8,
+        "value_count": 208
     },
     "easy_path": "entr",
     "name": "entr"

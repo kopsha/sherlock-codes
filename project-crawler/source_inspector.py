@@ -13,30 +13,39 @@ class SourceInspector:
     Runs all checks known to man
     And returns the right metadata"""
 
-    supported_extensions = [ext for ext in sherlock_parser.make_extension_map()]
+    available_parsers = sherlock_parser.make_extension_map()
+
+    def resolve_imports(root):
+        """Forward import resolution call to all available parsers"""
+        unique_parsers = set()
+        for ext,parser in SourceInspector.available_parsers.items():
+            unique_parsers.add(parser)
+
+        for parser in unique_parsers:
+            parser.resolve_imports(root)
 
     def __init__(self, path):
-        self.path = os.path.realpath(path)
+        self._path = os.path.realpath(path)
         self.is_code = False
         self.messages = []
 
-        self.is_directory = os.path.isdir(self.path)
+        self.is_directory = os.path.isdir(self._path)
         if self.is_directory:
             self.messages.append(f'The provided {path} is a directory, analysis will be skipped.')
             return
 
-        self.filename = os.path.basename(self.path)
+        self.filename = os.path.basename(self._path)
         self.name,self.extension = os.path.splitext(self.filename)
-        self.size = os.path.getsize(self.path)
+        self.size = os.path.getsize(self._path)
 
-        self.is_code = self.extension in SourceInspector.supported_extensions
+        self.is_code = self.extension in SourceInspector.available_parsers
 
     def inspect(self):
         if not self.is_code:
             self.messages.append(f'{self.extension} inspection is not supported.')
             return
 
-        with open(self.path, 'rt') as source_file:
+        with open(self._path, 'rt') as source_file:
             source_code = source_file.read()
 
         parser = sherlock_parser.parser_factory(self.extension)
@@ -55,8 +64,8 @@ def run_self_check():
     src_folder = './testdata'
     source_files = [fn for fn in os.listdir(src_folder)]
 
-    print_stage('supported_extensions')
-    pp(SourceInspector.supported_extensions)
+    print_stage('available_parsers')
+    pp(SourceInspector.available_parsers)
 
     print_stage('testdata files')
     for file in source_files:

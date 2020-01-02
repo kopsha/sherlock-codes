@@ -3,313 +3,160 @@
         {
             "children": [
                 {
-                    "easy_path": "sherlock-codes/etc/create_common_template.sh",
-                    "meta": {
-                        "aggregate_complexity": 1,
-                        "blank_lines": 1,
-                        "decision_complexity": 0,
-                        "extension": ".sh",
-                        "imports": [],
-                        "is_code": true,
-                        "libraries": [],
-                        "loc": 5,
-                        "mime": "text/x-shellscript; charset=us-ascii",
-                        "name": "create_common_template",
-                        "nested_complexity": 0,
-                        "risks": [],
-                        "risks_points": 0,
-                        "size": 58,
-                        "sloc": 4,
-                        "type": "Bourne-Again shell script, ASCII text executable"
+                    "children": [
+                        {
+                            "easy_path": "sherlock-codes/project-crawler/testdata/main.cpp",
+                            "meta": {
+                                "blank_lines": 14,
+                                "cognitive_complexity": 16,
+                                "decision_complexity": 1,
+                                "extension": ".cpp",
+                                "filename": "main.cpp",
+                                "imports": [
+                                    "sherlock-codes/project-crawler/testdata/styles.h"
+                                ],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [
+                                    "bikeregistration.h",
+                                    "QGuiApplication",
+                                    "QQmlApplicationEngine",
+                                    "specializedscreenmapping.h",
+                                    "appfilesystemapi.h",
+                                    "screenframework/screenframework.h",
+                                    "QObject",
+                                    "logsmanager.h",
+                                    "QtQml",
+                                    "QtWebView",
+                                    "screenframework/screenmanager.h",
+                                    "apis/apis.h"
+                                ],
+                                "loc": 50,
+                                "messages": [
+                                    "[warning] Nested blocks are not matched. If you used macro magic you are on your own."
+                                ],
+                                "name": "main",
+                                "nested_complexity": 2,
+                                "path": "/Users/fleorin/src/sherlock-codes/project-crawler/testdata/main.cpp",
+                                "size": 1341,
+                                "sloc": 36
+                            },
+                            "name": "main.cpp",
+                            "temperature": 2,
+                            "value": 16
+                        },
+                        {
+                            "easy_path": "sherlock-codes/project-crawler/testdata/qml_helpers.h",
+                            "meta": {
+                                "blank_lines": 5,
+                                "cognitive_complexity": 3,
+                                "decision_complexity": 1,
+                                "extension": ".h",
+                                "filename": "qml_helpers.h",
+                                "imports": [],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [],
+                                "loc": 30,
+                                "messages": [],
+                                "name": "qml_helpers",
+                                "nested_complexity": 2,
+                                "path": "/Users/fleorin/src/sherlock-codes/project-crawler/testdata/qml_helpers.h",
+                                "size": 785,
+                                "sloc": 25
+                            },
+                            "name": "qml_helpers.h",
+                            "temperature": 1,
+                            "value": 3
+                        },
+                        {
+                            "easy_path": "sherlock-codes/project-crawler/testdata/styles.cpp",
+                            "meta": {
+                                "blank_lines": 17,
+                                "cognitive_complexity": 10,
+                                "decision_complexity": 2,
+                                "extension": ".cpp",
+                                "filename": "styles.cpp",
+                                "imports": [
+                                    "sherlock-codes/project-crawler/testdata/styles.h"
+                                ],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [
+                                    "QScreen",
+                                    "QGuiApplication",
+                                    "QDir",
+                                    "QFontDatabase",
+                                    "QFileInfo"
+                                ],
+                                "loc": 131,
+                                "messages": [],
+                                "name": "styles",
+                                "nested_complexity": 2,
+                                "path": "/Users/fleorin/src/sherlock-codes/project-crawler/testdata/styles.cpp",
+                                "size": 3213,
+                                "sloc": 114
+                            },
+                            "name": "styles.cpp",
+                            "temperature": 1,
+                            "value": 10
+                        },
+                        {
+                            "easy_path": "sherlock-codes/project-crawler/testdata/styles.h",
+                            "meta": {
+                                "blank_lines": 24,
+                                "cognitive_complexity": 5,
+                                "decision_complexity": 0,
+                                "extension": ".h",
+                                "filename": "styles.h",
+                                "imports": [
+                                    "sherlock-codes/project-crawler/testdata/qml_helpers.h"
+                                ],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [
+                                    "QQuickItem",
+                                    "QFont",
+                                    "QColor"
+                                ],
+                                "loc": 129,
+                                "messages": [],
+                                "name": "styles",
+                                "nested_complexity": 1,
+                                "path": "/Users/fleorin/src/sherlock-codes/project-crawler/testdata/styles.h",
+                                "size": 3337,
+                                "sloc": 105
+                            },
+                            "name": "styles.h",
+                            "temperature": 1,
+                            "value": 5
+                        }
+                    ],
+                    "counter": {
+                        "bytes_count": 8676,
+                        "sloc_count": 280,
+                        "source_files": 4,
+                        "value_count": 34
                     },
-                    "name": "create_common_template.sh",
-                    "temperature": 1,
-                    "value": 1
-                },
-                {
-                    "easy_path": "sherlock-codes/etc/run-me-first.sh",
-                    "meta": {
-                        "aggregate_complexity": 1,
-                        "blank_lines": 6,
-                        "decision_complexity": 0,
-                        "extension": ".sh",
-                        "imports": [],
-                        "is_code": true,
-                        "libraries": [],
-                        "loc": 14,
-                        "mime": "text/x-shellscript; charset=us-ascii",
-                        "name": "run-me-first",
-                        "nested_complexity": 0,
-                        "risks": [],
-                        "risks_points": 0,
-                        "size": 264,
-                        "sloc": 8,
-                        "type": "Bourne-Again shell script, ASCII text executable"
-                    },
-                    "name": "run-me-first.sh",
-                    "temperature": 3,
-                    "value": 1
+                    "easy_path": "sherlock-codes/project-crawler/testdata",
+                    "name": "testdata"
                 }
             ],
             "counter": {
-                "bytes_count": 322,
-                "risks_count": 0,
-                "sloc_count": 12,
-                "source_files": 2,
-                "value_count": 2
-            },
-            "easy_path": "sherlock-codes/etc",
-            "name": "etc"
-        },
-        {
-            "children": [
-                {
-                    "easy_path": "sherlock-codes/project-crawler/code_parser.py",
-                    "meta": {
-                        "aggregate_complexity": 32,
-                        "blank_lines": 171,
-                        "decision_complexity": 25,
-                        "extension": ".py",
-                        "imports": [],
-                        "is_code": true,
-                        "libraries": [
-                            "re",
-                            "datetime",
-                            "utils",
-                            "os",
-                            "timeit",
-                            "ast"
-                        ],
-                        "loc": 272,
-                        "mime": "text/x-python; charset=us-ascii",
-                        "name": "code_parser",
-                        "nested_complexity": 0,
-                        "risks": [],
-                        "risks_points": 0,
-                        "size": 8056,
-                        "sloc": 101,
-                        "type": "Python script, ASCII text executable"
-                    },
-                    "name": "code_parser.py",
-                    "temperature": 9,
-                    "value": 32
-                },
-                {
-                    "easy_path": "sherlock-codes/project-crawler/crawl.py",
-                    "meta": {
-                        "aggregate_complexity": 90,
-                        "blank_lines": 69,
-                        "decision_complexity": 75,
-                        "extension": ".py",
-                        "imports": [],
-                        "is_code": true,
-                        "libraries": [
-                            "magic",
-                            "humanize",
-                            "argparse",
-                            "re",
-                            "anytree",
-                            "anytree.exporter",
-                            "numpy",
-                            "datetime",
-                            "os",
-                            "git.cmd",
-                            "utils",
-                            "timeit",
-                            "code_parser",
-                            "json"
-                        ],
-                        "loc": 364,
-                        "mime": "text/x-python; charset=us-ascii",
-                        "name": "crawl",
-                        "nested_complexity": 1,
-                        "risks": [
-                            "[warning] Quite many decisions, consider adding more unit tests and review the entire file."
-                        ],
-                        "risks_points": 8,
-                        "size": 11897,
-                        "sloc": 295,
-                        "type": "Python script, ASCII text executable"
-                    },
-                    "name": "crawl.py",
-                    "temperature": 35,
-                    "value": 90
-                },
-                {
-                    "easy_path": "sherlock-codes/project-crawler/scan_my_projects.sh",
-                    "meta": {
-                        "aggregate_complexity": 1,
-                        "blank_lines": 5,
-                        "decision_complexity": 0,
-                        "extension": ".sh",
-                        "imports": [],
-                        "is_code": true,
-                        "libraries": [],
-                        "loc": 18,
-                        "mime": "text/x-shellscript; charset=us-ascii",
-                        "name": "scan_my_projects",
-                        "nested_complexity": 0,
-                        "risks": [],
-                        "risks_points": 0,
-                        "size": 474,
-                        "sloc": 13,
-                        "type": "Bourne-Again shell script, ASCII text executable"
-                    },
-                    "name": "scan_my_projects.sh",
-                    "temperature": 1,
-                    "value": 1
-                }
-            ],
-            "counter": {
-                "bytes_count": 20427,
-                "risks_count": 1,
-                "sloc_count": 409,
-                "source_files": 3,
-                "value_count": 123
+                "bytes_count": 8676,
+                "sloc_count": 280,
+                "source_files": 4,
+                "value_count": 34
             },
             "easy_path": "sherlock-codes/project-crawler",
             "name": "project-crawler"
-        },
-        {
-            "children": [
-                {
-                    "easy_path": "sherlock-codes/visual-inspector/architecture-view.js",
-                    "meta": {
-                        "aggregate_complexity": 7,
-                        "blank_lines": 18,
-                        "decision_complexity": 3,
-                        "extension": ".js",
-                        "imports": [],
-                        "is_code": true,
-                        "libraries": [],
-                        "loc": 123,
-                        "mime": "text/x-c; charset=us-ascii",
-                        "name": "architecture-view",
-                        "nested_complexity": 4,
-                        "risks": [],
-                        "risks_points": 0,
-                        "size": 3692,
-                        "sloc": 105,
-                        "type": "C source, ASCII text"
-                    },
-                    "name": "architecture-view.js",
-                    "temperature": 1,
-                    "value": 7
-                },
-                {
-                    "easy_path": "sherlock-codes/visual-inspector/coupling-view.js",
-                    "meta": {
-                        "aggregate_complexity": 8,
-                        "blank_lines": 12,
-                        "decision_complexity": 4,
-                        "extension": ".js",
-                        "imports": [],
-                        "is_code": true,
-                        "libraries": [],
-                        "loc": 113,
-                        "mime": "text/x-asm; charset=us-ascii",
-                        "name": "coupling-view",
-                        "nested_complexity": 4,
-                        "risks": [],
-                        "risks_points": 0,
-                        "size": 3752,
-                        "sloc": 101,
-                        "type": "assembler source, ASCII text"
-                    },
-                    "name": "coupling-view.js",
-                    "temperature": 1,
-                    "value": 8
-                },
-                {
-                    "easy_path": "sherlock-codes/visual-inspector/heatmap-view.js",
-                    "meta": {
-                        "aggregate_complexity": 15,
-                        "blank_lines": 22,
-                        "decision_complexity": 9,
-                        "extension": ".js",
-                        "imports": [],
-                        "is_code": true,
-                        "libraries": [],
-                        "loc": 178,
-                        "mime": "text/x-c; charset=utf-8",
-                        "name": "heatmap-view",
-                        "nested_complexity": 6,
-                        "risks": [],
-                        "risks_points": 0,
-                        "size": 5263,
-                        "sloc": 156,
-                        "type": "C source, UTF-8 Unicode text"
-                    },
-                    "name": "heatmap-view.js",
-                    "temperature": 2,
-                    "value": 15
-                },
-                {
-                    "easy_path": "sherlock-codes/visual-inspector/inspector-utils.js",
-                    "meta": {
-                        "aggregate_complexity": 8,
-                        "blank_lines": 5,
-                        "decision_complexity": 4,
-                        "extension": ".js",
-                        "imports": [],
-                        "is_code": true,
-                        "libraries": [],
-                        "loc": 49,
-                        "mime": "text/plain; charset=us-ascii",
-                        "name": "inspector-utils",
-                        "nested_complexity": 4,
-                        "risks": [],
-                        "risks_points": 0,
-                        "size": 1773,
-                        "sloc": 44,
-                        "type": "ASCII text"
-                    },
-                    "name": "inspector-utils.js",
-                    "temperature": 2,
-                    "value": 8
-                },
-                {
-                    "easy_path": "sherlock-codes/visual-inspector/run",
-                    "meta": {
-                        "aggregate_complexity": 1,
-                        "blank_lines": 4,
-                        "decision_complexity": 0,
-                        "extension": "",
-                        "imports": [],
-                        "is_code": true,
-                        "libraries": [],
-                        "loc": 10,
-                        "mime": "text/x-shellscript; charset=us-ascii",
-                        "name": "run",
-                        "nested_complexity": 0,
-                        "risks": [],
-                        "risks_points": 0,
-                        "size": 87,
-                        "sloc": 6,
-                        "type": "Bourne-Again shell script, ASCII text executable"
-                    },
-                    "name": "run",
-                    "temperature": 1,
-                    "value": 1
-                }
-            ],
-            "counter": {
-                "bytes_count": 14567,
-                "risks_count": 0,
-                "sloc_count": 412,
-                "source_files": 5,
-                "value_count": 39
-            },
-            "easy_path": "sherlock-codes/visual-inspector",
-            "name": "visual-inspector"
         }
     ],
     "counter": {
-        "bytes_count": 35316,
-        "risks_count": 1,
-        "sloc_count": 833,
-        "source_files": 10,
-        "value_count": 164
+        "bytes_count": 8676,
+        "sloc_count": 280,
+        "source_files": 4,
+        "value_count": 34
     },
     "easy_path": "sherlock-codes",
     "name": "sherlock-codes"
