@@ -49,7 +49,7 @@ class JavaStyleParser(CppStyleParser):
             assert(len(package_decl) == 1)
             package = os.sep.join(package_decl[0].split('.'))
 
-        import_refs = re.compile(r'\s*?import\s+([\w\*\.]+)\s*?')
+        import_refs = re.compile(r'\s*?import\s+(?:static\s+)([\w\*\.]+)\s*?')
         imports = import_refs.findall(source_code)
 
         imports_with_path = [p.replace('.', os.sep) for p in imports]
