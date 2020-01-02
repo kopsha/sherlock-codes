@@ -353,14 +353,17 @@
                             "easy_path": "turbo-connect-core/src/protocol/Parameters.kt",
                             "meta": {
                                 "blank_lines": 6,
-                                "cognitive_complexity": 4,
+                                "cognitive_complexity": 6,
                                 "decision_complexity": 0,
                                 "extension": ".kt",
                                 "filename": "Parameters.kt",
                                 "imports": [],
                                 "is_code": true,
                                 "is_directory": false,
-                                "libraries": [],
+                                "libraries": [
+                                    "com/specialized/turboconnect/model/BikeParameter/*",
+                                    "kotlinx/serialization/KSerializer"
+                                ],
                                 "loc": 125,
                                 "messages": [],
                                 "name": "Parameters",
@@ -371,7 +374,7 @@
                             },
                             "name": "Parameters.kt",
                             "temperature": 1,
-                            "value": 4
+                            "value": 6
                         },
                         {
                             "easy_path": "turbo-connect-core/src/protocol/bike_parameters.h",
@@ -1105,7 +1108,7 @@
                         "bytes_count": 294616,
                         "sloc_count": 2500,
                         "source_files": 31,
-                        "value_count": 144
+                        "value_count": 146
                     },
                     "easy_path": "turbo-connect-core/src/protocol",
                     "name": "protocol"
@@ -1115,7 +1118,7 @@
                 "bytes_count": 316408,
                 "sloc_count": 3091,
                 "source_files": 42,
-                "value_count": 294
+                "value_count": 296
             },
             "easy_path": "turbo-connect-core/src",
             "name": "src"
@@ -1386,7 +1389,7 @@
         "bytes_count": 342950,
         "sloc_count": 3719,
         "source_files": 51,
-        "value_count": 339
+        "value_count": 341
     },
     "easy_path": "turbo-connect-core",
     "name": "turbo-connect-core"

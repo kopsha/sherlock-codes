@@ -103,14 +103,18 @@
                                                             "easy_path": "mission-control/call-receive/android/src/com/bitgriff/androidcalls/CallDetectService.java",
                                                             "meta": {
                                                                 "blank_lines": 8,
-                                                                "cognitive_complexity": 2,
+                                                                "cognitive_complexity": 5,
                                                                 "decision_complexity": 0,
                                                                 "extension": ".java",
                                                                 "filename": "CallDetectService.java",
                                                                 "imports": [],
                                                                 "is_code": true,
                                                                 "is_directory": false,
-                                                                "libraries": [],
+                                                                "libraries": [
+                                                                    "android/app/Service",
+                                                                    "android/content/Intent",
+                                                                    "android/os/IBinder"
+                                                                ],
                                                                 "loc": 34,
                                                                 "messages": [],
                                                                 "name": "CallDetectService",
@@ -121,20 +125,28 @@
                                                             },
                                                             "name": "CallDetectService.java",
                                                             "temperature": 1,
-                                                            "value": 2
+                                                            "value": 5
                                                         },
                                                         {
                                                             "easy_path": "mission-control/call-receive/android/src/com/bitgriff/androidcalls/CallHelper.java",
                                                             "meta": {
                                                                 "blank_lines": 21,
-                                                                "cognitive_complexity": 12,
+                                                                "cognitive_complexity": 19,
                                                                 "decision_complexity": 7,
                                                                 "extension": ".java",
                                                                 "filename": "CallHelper.java",
                                                                 "imports": [],
                                                                 "is_code": true,
                                                                 "is_directory": false,
-                                                                "libraries": [],
+                                                                "libraries": [
+                                                                    "android/content/BroadcastReceiver",
+                                                                    "android/content/Context",
+                                                                    "android/content/Intent",
+                                                                    "android/content/IntentFilter",
+                                                                    "android/telephony/PhoneStateListener",
+                                                                    "android/telephony/TelephonyManager",
+                                                                    "android/widget/Toast"
+                                                                ],
                                                                 "loc": 95,
                                                                 "messages": [],
                                                                 "name": "CallHelper",
@@ -145,20 +157,26 @@
                                                             },
                                                             "name": "CallHelper.java",
                                                             "temperature": 1,
-                                                            "value": 12
+                                                            "value": 19
                                                         },
                                                         {
                                                             "easy_path": "mission-control/call-receive/android/src/com/bitgriff/androidcalls/ContactsHelper.java",
                                                             "meta": {
                                                                 "blank_lines": 12,
-                                                                "cognitive_complexity": 6,
+                                                                "cognitive_complexity": 11,
                                                                 "decision_complexity": 2,
                                                                 "extension": ".java",
                                                                 "filename": "ContactsHelper.java",
                                                                 "imports": [],
                                                                 "is_code": true,
                                                                 "is_directory": false,
-                                                                "libraries": [],
+                                                                "libraries": [
+                                                                    "android/content/Context",
+                                                                    "android/database/Cursor",
+                                                                    "android/net/Uri",
+                                                                    "android/provider/Contacts",
+                                                                    "android/provider/Contacts/Phones"
+                                                                ],
                                                                 "loc": 50,
                                                                 "messages": [],
                                                                 "name": "ContactsHelper",
@@ -169,20 +187,30 @@
                                                             },
                                                             "name": "ContactsHelper.java",
                                                             "temperature": 1,
-                                                            "value": 6
+                                                            "value": 11
                                                         },
                                                         {
                                                             "easy_path": "mission-control/call-receive/android/src/com/bitgriff/androidcalls/MainActivity.java",
                                                             "meta": {
                                                                 "blank_lines": 6,
-                                                                "cognitive_complexity": 5,
+                                                                "cognitive_complexity": 14,
                                                                 "decision_complexity": 2,
                                                                 "extension": ".java",
                                                                 "filename": "MainActivity.java",
                                                                 "imports": [],
                                                                 "is_code": true,
                                                                 "is_directory": false,
-                                                                "libraries": [],
+                                                                "libraries": [
+                                                                    "android/app/Activity",
+                                                                    "android/content/Intent",
+                                                                    "android/os/Bundle",
+                                                                    "android/view/Menu",
+                                                                    "android/view/View",
+                                                                    "android/view/View/OnClickListener",
+                                                                    "android/widget/Button",
+                                                                    "android/widget/TextView",
+                                                                    "org/qtproject/qt5/android/bindings/QtActivity"
+                                                                ],
                                                                 "loc": 28,
                                                                 "messages": [],
                                                                 "name": "MainActivity",
@@ -193,7 +221,7 @@
                                                             },
                                                             "name": "MainActivity.java",
                                                             "temperature": 1,
-                                                            "value": 5
+                                                            "value": 14
                                                         },
                                                         {
                                                             "easy_path": "mission-control/call-receive/android/src/com/bitgriff/androidcalls/NativeFunctions.java",
@@ -223,14 +251,21 @@
                                                             "easy_path": "mission-control/call-receive/android/src/com/bitgriff/androidcalls/SmsListener.java",
                                                             "meta": {
                                                                 "blank_lines": 8,
-                                                                "cognitive_complexity": 12,
+                                                                "cognitive_complexity": 18,
                                                                 "decision_complexity": 6,
                                                                 "extension": ".java",
                                                                 "filename": "SmsListener.java",
                                                                 "imports": [],
                                                                 "is_code": true,
                                                                 "is_directory": false,
-                                                                "libraries": [],
+                                                                "libraries": [
+                                                                    "android/content/BroadcastReceiver",
+                                                                    "android/content/Context",
+                                                                    "android/content/Intent",
+                                                                    "android/content/SharedPreferences",
+                                                                    "android/os/Bundle",
+                                                                    "android/telephony/SmsMessage"
+                                                                ],
                                                                 "loc": 51,
                                                                 "messages": [],
                                                                 "name": "SmsListener",
@@ -241,14 +276,14 @@
                                                             },
                                                             "name": "SmsListener.java",
                                                             "temperature": 1,
-                                                            "value": 12
+                                                            "value": 18
                                                         }
                                                     ],
                                                     "counter": {
                                                         "bytes_count": 8076,
                                                         "sloc_count": 209,
                                                         "source_files": 6,
-                                                        "value_count": 38
+                                                        "value_count": 68
                                                     },
                                                     "easy_path": "mission-control/call-receive/android/src/com/bitgriff/androidcalls",
                                                     "name": "androidcalls"
@@ -258,7 +293,7 @@
                                                 "bytes_count": 8076,
                                                 "sloc_count": 209,
                                                 "source_files": 6,
-                                                "value_count": 38
+                                                "value_count": 68
                                             },
                                             "easy_path": "mission-control/call-receive/android/src/com/bitgriff",
                                             "name": "bitgriff"
@@ -268,7 +303,7 @@
                                         "bytes_count": 8076,
                                         "sloc_count": 209,
                                         "source_files": 6,
-                                        "value_count": 38
+                                        "value_count": 68
                                     },
                                     "easy_path": "mission-control/call-receive/android/src/com",
                                     "name": "com"
@@ -278,7 +313,7 @@
                                 "bytes_count": 8076,
                                 "sloc_count": 209,
                                 "source_files": 6,
-                                "value_count": 38
+                                "value_count": 68
                             },
                             "easy_path": "mission-control/call-receive/android/src",
                             "name": "src"
@@ -288,7 +323,7 @@
                         "bytes_count": 8076,
                         "sloc_count": 209,
                         "source_files": 6,
-                        "value_count": 38
+                        "value_count": 68
                     },
                     "easy_path": "mission-control/call-receive/android",
                     "name": "android"
@@ -298,7 +333,7 @@
                 "bytes_count": 11766,
                 "sloc_count": 315,
                 "source_files": 9,
-                "value_count": 58
+                "value_count": 88
             },
             "easy_path": "mission-control/call-receive",
             "name": "call-receive"
@@ -24190,14 +24225,25 @@
                                                                     "easy_path": "mission-control/mission-control/android/src/com/org/qtproject/androidsrc/BluetoothCustomHub.java",
                                                                     "meta": {
                                                                         "blank_lines": 26,
-                                                                        "cognitive_complexity": 8,
+                                                                        "cognitive_complexity": 17,
                                                                         "decision_complexity": 4,
                                                                         "extension": ".java",
                                                                         "filename": "BluetoothCustomHub.java",
-                                                                        "imports": [],
+                                                                        "imports": [
+                                                                            "mission-control/mission-control/android/src/com/org/qtproject/androidsrc/NativeFunctions.java"
+                                                                        ],
                                                                         "is_code": true,
                                                                         "is_directory": false,
-                                                                        "libraries": [],
+                                                                        "libraries": [
+                                                                            "android/bluetooth/BluetoothAdapter",
+                                                                            "android/bluetooth/BluetoothDevice",
+                                                                            "android/bluetooth/le/BluetoothLeScanner",
+                                                                            "android/bluetooth/le/ScanCallback",
+                                                                            "android/bluetooth/le/ScanRecord",
+                                                                            "android/bluetooth/le/ScanResult",
+                                                                            "android/os/Build/VERSION",
+                                                                            "android/util/Log"
+                                                                        ],
                                                                         "loc": 83,
                                                                         "messages": [],
                                                                         "name": "BluetoothCustomHub",
@@ -24208,20 +24254,36 @@
                                                                     },
                                                                     "name": "BluetoothCustomHub.java",
                                                                     "temperature": 4,
-                                                                    "value": 8
+                                                                    "value": 17
                                                                 },
                                                                 {
                                                                     "easy_path": "mission-control/mission-control/android/src/com/org/qtproject/androidsrc/FirebaseNotificationService.java",
                                                                     "meta": {
                                                                         "blank_lines": 8,
-                                                                        "cognitive_complexity": 8,
+                                                                        "cognitive_complexity": 23,
                                                                         "decision_complexity": 4,
                                                                         "extension": ".java",
                                                                         "filename": "FirebaseNotificationService.java",
                                                                         "imports": [],
                                                                         "is_code": true,
                                                                         "is_directory": false,
-                                                                        "libraries": [],
+                                                                        "libraries": [
+                                                                            "android/app/Notification",
+                                                                            "android/app/NotificationChannel",
+                                                                            "android/app/NotificationManager",
+                                                                            "android/app/PendingIntent",
+                                                                            "android/content/Context",
+                                                                            "android/content/Intent",
+                                                                            "android/graphics/Color",
+                                                                            "android/net/Uri",
+                                                                            "android/os/Build",
+                                                                            "android/os/Bundle",
+                                                                            "androidx/core/app/NotificationCompat",
+                                                                            "com/google/firebase/messaging/FirebaseMessagingService",
+                                                                            "com/google/firebase/messaging/RemoteMessage",
+                                                                            "com/specialized/turbo/R",
+                                                                            "java/util/Map"
+                                                                        ],
                                                                         "loc": 68,
                                                                         "messages": [],
                                                                         "name": "FirebaseNotificationService",
@@ -24232,20 +24294,35 @@
                                                                     },
                                                                     "name": "FirebaseNotificationService.java",
                                                                     "temperature": 4,
-                                                                    "value": 8
+                                                                    "value": 23
                                                                 },
                                                                 {
                                                                     "easy_path": "mission-control/mission-control/android/src/com/org/qtproject/androidsrc/ForegroundLocationService.java",
                                                                     "meta": {
                                                                         "blank_lines": 17,
-                                                                        "cognitive_complexity": 9,
+                                                                        "cognitive_complexity": 23,
                                                                         "decision_complexity": 5,
                                                                         "extension": ".java",
                                                                         "filename": "ForegroundLocationService.java",
                                                                         "imports": [],
                                                                         "is_code": true,
                                                                         "is_directory": false,
-                                                                        "libraries": [],
+                                                                        "libraries": [
+                                                                            "android/app/Application",
+                                                                            "android/app/Notification",
+                                                                            "android/app/NotificationChannel",
+                                                                            "android/app/NotificationManager",
+                                                                            "android/app/PendingIntent",
+                                                                            "android/app/Service",
+                                                                            "android/content/Context",
+                                                                            "android/content/Intent",
+                                                                            "android/graphics/Color",
+                                                                            "android/os/Build",
+                                                                            "android/os/Bundle",
+                                                                            "android/os/IBinder",
+                                                                            "androidx/core/app/NotificationCompat",
+                                                                            "com/specialized/turbo/R"
+                                                                        ],
                                                                         "loc": 88,
                                                                         "messages": [],
                                                                         "name": "ForegroundLocationService",
@@ -24256,13 +24333,13 @@
                                                                     },
                                                                     "name": "ForegroundLocationService.java",
                                                                     "temperature": 12,
-                                                                    "value": 9
+                                                                    "value": 23
                                                                 },
                                                                 {
                                                                     "easy_path": "mission-control/mission-control/android/src/com/org/qtproject/androidsrc/MainActivity.java",
                                                                     "meta": {
                                                                         "blank_lines": 95,
-                                                                        "cognitive_complexity": 48,
+                                                                        "cognitive_complexity": 94,
                                                                         "decision_complexity": 40,
                                                                         "extension": ".java",
                                                                         "filename": "MainActivity.java",
@@ -24270,7 +24347,53 @@
                                                                         "is_code": true,
                                                                         "is_directory": false,
                                                                         "libraries": [
-                                                                            "android/os/Environment/getExternalStorageDirectory"
+                                                                            "android/app/Activity",
+                                                                            "android/app/DatePickerDialog",
+                                                                            "android/bluetooth/BluetoothAdapter",
+                                                                            "android/content/BroadcastReceiver",
+                                                                            "android/content/Context",
+                                                                            "android/content/Intent",
+                                                                            "android/content/IntentFilter",
+                                                                            "android/database/Cursor",
+                                                                            "android/graphics/Rect",
+                                                                            "android/hardware/Sensor",
+                                                                            "android/hardware/SensorEvent",
+                                                                            "android/hardware/SensorEventListener",
+                                                                            "android/hardware/SensorManager",
+                                                                            "android/location/LocationManager",
+                                                                            "android/net/Uri",
+                                                                            "android/os/BatteryManager",
+                                                                            "android/os/Bundle",
+                                                                            "android/os/Environment/getExternalStorageDirectory",
+                                                                            "android/provider/MediaStore",
+                                                                            "android/util/Log",
+                                                                            "android/view/KeyEvent",
+                                                                            "android/view/View",
+                                                                            "android/view/ViewTreeObserver/*",
+                                                                            "android/widget/DatePicker",
+                                                                            "androidx/annotation/NonNull",
+                                                                            "androidx/core/app/ShareCompat",
+                                                                            "androidx/core/content/FileProvider",
+                                                                            "com/crashlytics/android/Crashlytics",
+                                                                            "com/crashlytics/android/ndk/CrashlyticsNdk",
+                                                                            "com/google/android/gms/tasks/OnCompleteListener",
+                                                                            "com/google/android/gms/tasks/Task",
+                                                                            "com/google/firebase/analytics/FirebaseAnalytics",
+                                                                            "com/google/firebase/iid/FirebaseInstanceId",
+                                                                            "com/google/firebase/iid/InstanceIdResult",
+                                                                            "com/google/firebase/messaging/FirebaseMessaging",
+                                                                            "io/fabric/sdk/android/Fabric",
+                                                                            "java/io/File",
+                                                                            "java/io/FileInputStream",
+                                                                            "java/io/FileOutputStream",
+                                                                            "java/io/IOException",
+                                                                            "java/io/InputStream",
+                                                                            "java/util/Enumeration",
+                                                                            "java/util/zip/ZipEntry",
+                                                                            "java/util/zip/ZipFile",
+                                                                            "java/util/zip/ZipInputStream",
+                                                                            "java/util/zip/ZipOutputStream",
+                                                                            "org/qtproject/qt5/android/bindings/QtActivity"
                                                                         ],
                                                                         "loc": 573,
                                                                         "messages": [
@@ -24285,20 +24408,22 @@
                                                                     },
                                                                     "name": "MainActivity.java",
                                                                     "temperature": 54,
-                                                                    "value": 48
+                                                                    "value": 94
                                                                 },
                                                                 {
                                                                     "easy_path": "mission-control/mission-control/android/src/com/org/qtproject/androidsrc/NativeFunctions.java",
                                                                     "meta": {
                                                                         "blank_lines": 22,
-                                                                        "cognitive_complexity": 1,
+                                                                        "cognitive_complexity": 2,
                                                                         "decision_complexity": 0,
                                                                         "extension": ".java",
                                                                         "filename": "NativeFunctions.java",
                                                                         "imports": [],
                                                                         "is_code": true,
                                                                         "is_directory": false,
-                                                                        "libraries": [],
+                                                                        "libraries": [
+                                                                            "android/bluetooth/BluetoothDevice"
+                                                                        ],
                                                                         "loc": 39,
                                                                         "messages": [],
                                                                         "name": "NativeFunctions",
@@ -24309,14 +24434,14 @@
                                                                     },
                                                                     "name": "NativeFunctions.java",
                                                                     "temperature": 14,
-                                                                    "value": 1
+                                                                    "value": 2
                                                                 }
                                                             ],
                                                             "counter": {
                                                                 "bytes_count": 28711,
                                                                 "sloc_count": 683,
                                                                 "source_files": 5,
-                                                                "value_count": 74
+                                                                "value_count": 159
                                                             },
                                                             "easy_path": "mission-control/mission-control/android/src/com/org/qtproject/androidsrc",
                                                             "name": "androidsrc"
@@ -24326,7 +24451,7 @@
                                                         "bytes_count": 28711,
                                                         "sloc_count": 683,
                                                         "source_files": 5,
-                                                        "value_count": 74
+                                                        "value_count": 159
                                                     },
                                                     "easy_path": "mission-control/mission-control/android/src/com/org/qtproject",
                                                     "name": "qtproject"
@@ -24336,7 +24461,7 @@
                                                 "bytes_count": 28711,
                                                 "sloc_count": 683,
                                                 "source_files": 5,
-                                                "value_count": 74
+                                                "value_count": 159
                                             },
                                             "easy_path": "mission-control/mission-control/android/src/com/org",
                                             "name": "org"
@@ -24346,7 +24471,7 @@
                                         "bytes_count": 28711,
                                         "sloc_count": 683,
                                         "source_files": 5,
-                                        "value_count": 74
+                                        "value_count": 159
                                     },
                                     "easy_path": "mission-control/mission-control/android/src/com",
                                     "name": "com"
@@ -24356,7 +24481,7 @@
                                 "bytes_count": 28711,
                                 "sloc_count": 683,
                                 "source_files": 5,
-                                "value_count": 74
+                                "value_count": 159
                             },
                             "easy_path": "mission-control/mission-control/android/src",
                             "name": "src"
@@ -24366,7 +24491,7 @@
                         "bytes_count": 28711,
                         "sloc_count": 683,
                         "source_files": 5,
-                        "value_count": 74
+                        "value_count": 159
                     },
                     "easy_path": "mission-control/mission-control/android",
                     "name": "android"
@@ -24376,7 +24501,7 @@
                 "bytes_count": 6517535,
                 "sloc_count": 120150,
                 "source_files": 817,
-                "value_count": 12476
+                "value_count": 12561
             },
             "easy_path": "mission-control/mission-control",
             "name": "mission-control"
@@ -24812,14 +24937,21 @@
                                                                     "easy_path": "mission-control/native-controls/android/src/com/org/qtproject/androidhack/MainActivity.java",
                                                                     "meta": {
                                                                         "blank_lines": 11,
-                                                                        "cognitive_complexity": 2,
+                                                                        "cognitive_complexity": 7,
                                                                         "decision_complexity": 0,
                                                                         "extension": ".java",
                                                                         "filename": "MainActivity.java",
-                                                                        "imports": [],
+                                                                        "imports": [
+                                                                            "mission-control/native-controls/android/src/com/org/qtproject/androidhack/NativeFunctions.java"
+                                                                        ],
                                                                         "is_code": true,
                                                                         "is_directory": false,
-                                                                        "libraries": [],
+                                                                        "libraries": [
+                                                                            "android/app/Activity",
+                                                                            "android/app/DatePickerDialog",
+                                                                            "android/widget/DatePicker",
+                                                                            "org/qtproject/qt5/android/bindings/QtActivity"
+                                                                        ],
                                                                         "loc": 55,
                                                                         "messages": [],
                                                                         "name": "MainActivity",
@@ -24830,7 +24962,7 @@
                                                                     },
                                                                     "name": "MainActivity.java",
                                                                     "temperature": 1,
-                                                                    "value": 2
+                                                                    "value": 7
                                                                 },
                                                                 {
                                                                     "easy_path": "mission-control/native-controls/android/src/com/org/qtproject/androidhack/NativeFunctions.java",
@@ -24861,7 +24993,7 @@
                                                                 "bytes_count": 1305,
                                                                 "sloc_count": 49,
                                                                 "source_files": 2,
-                                                                "value_count": 3
+                                                                "value_count": 8
                                                             },
                                                             "easy_path": "mission-control/native-controls/android/src/com/org/qtproject/androidhack",
                                                             "name": "androidhack"
@@ -24871,7 +25003,7 @@
                                                         "bytes_count": 1305,
                                                         "sloc_count": 49,
                                                         "source_files": 2,
-                                                        "value_count": 3
+                                                        "value_count": 8
                                                     },
                                                     "easy_path": "mission-control/native-controls/android/src/com/org/qtproject",
                                                     "name": "qtproject"
@@ -24881,7 +25013,7 @@
                                                 "bytes_count": 1305,
                                                 "sloc_count": 49,
                                                 "source_files": 2,
-                                                "value_count": 3
+                                                "value_count": 8
                                             },
                                             "easy_path": "mission-control/native-controls/android/src/com/org",
                                             "name": "org"
@@ -24891,7 +25023,7 @@
                                         "bytes_count": 1305,
                                         "sloc_count": 49,
                                         "source_files": 2,
-                                        "value_count": 3
+                                        "value_count": 8
                                     },
                                     "easy_path": "mission-control/native-controls/android/src/com",
                                     "name": "com"
@@ -24901,7 +25033,7 @@
                                 "bytes_count": 1305,
                                 "sloc_count": 49,
                                 "source_files": 2,
-                                "value_count": 3
+                                "value_count": 8
                             },
                             "easy_path": "mission-control/native-controls/android/src",
                             "name": "src"
@@ -24911,7 +25043,7 @@
                         "bytes_count": 1305,
                         "sloc_count": 49,
                         "source_files": 2,
-                        "value_count": 3
+                        "value_count": 8
                     },
                     "easy_path": "mission-control/native-controls/android",
                     "name": "android"
@@ -24921,7 +25053,7 @@
                 "bytes_count": 34647,
                 "sloc_count": 640,
                 "source_files": 15,
-                "value_count": 87
+                "value_count": 92
             },
             "easy_path": "mission-control/native-controls",
             "name": "native-controls"
@@ -25034,7 +25166,7 @@
         "bytes_count": 6658780,
         "sloc_count": 123673,
         "source_files": 875,
-        "value_count": 12963
+        "value_count": 13083
     },
     "easy_path": "mission-control",
     "name": "mission-control"
