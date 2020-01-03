@@ -7,16 +7,27 @@
 
 {% block style %}
 <style>
+    .node {
+        cursor: pointer;
+    }
+
+    .node:hover {
+        stroke: #000;
+        stroke-width: 1.5px;
+    }
+
     .small-label {
         font: 11px Tahoma, Geneva, sans-serif;
         text-anchor: middle;
         fill: black;
+        pointer-events: none;
     }
 
     .xsmall-label {
         font: 9px Tahoma, Geneva, sans-serif;
         text-anchor: middle;
         fill: black;
+        pointer-events: none;
     }
 </style>
 {% endblock %}

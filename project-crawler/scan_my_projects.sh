@@ -2,7 +2,7 @@
 set -e
 
 python crawl.py -r ~/src/entr
-#python crawl.py -r ~/src/optimal-transaction-hunter
+python crawl.py -r ~/src/optimal-transaction-hunter
 python crawl.py -r ~/src/sherlock-codes
 
 python crawl.py -r ~/wrk/alber/bloks

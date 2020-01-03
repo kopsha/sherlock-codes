@@ -4,6 +4,34 @@
     Sherlock Reports - Architecture
 {% endblock %}
 
+{% block style %}
+<style type="text/css">
+    .node {
+        cursor: pointer;
+    }
+
+    .node:hover {
+        stroke: #000;
+        stroke-width: 1.5px;
+    }
+
+    .node--leaf {
+        fill: white;
+    }
+
+    .node--root,
+    .node--leaf {
+    }
+
+    .label {
+        font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-anchor: middle;
+        text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+        pointer-events: none;
+    }
+</style>
+{% endblock %}
+
 {% block head_scripts %}
     <script src="architecture-view.js"></script>
 {% endblock %}

@@ -6,6 +6,7 @@ from utils import print_stage, static_var, pp
 from code_parser_interface import CodeParserInterface
 from cpp_style_parser import CppStyleParser
 from java_style_parser import JavaStyleParser
+from python_style_parser import PythonStyleParser
 
 def make_extension_map():
     ext_map = {}

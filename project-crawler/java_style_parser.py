@@ -5,8 +5,6 @@ import os
 import re
 from collections import defaultdict
 
-from utils import pp
-
 class JavaStyleParser(CppStyleParser):
     def __init__(self):
         self._supported_extensions = [
@@ -21,25 +19,11 @@ class JavaStyleParser(CppStyleParser):
             'default',
             'else',
             'for',
-            'foreach',
-            'for_each',
             'if',
             'switch',
             'try',
             'while',
         ]
-   
-    def remove_comments_and_literals(self, source_code, messages):
-        return super().remove_comments_and_literals(source_code, messages)
-
-    def count_effective_lines_of_code(self, source_code, messages):
-        return super().count_effective_lines_of_code(source_code, messages)
-
-    def compute_nested_complexity(self, source_code, messages):
-        return super().compute_nested_complexity(source_code, messages)
-
-    def compute_decision_complexity(self, source_code, messages):
-        return super().compute_decision_complexity(source_code, messages)
 
     def parse_imports(self, source_code, messages):
         package_ref = re.compile(r'\s*package\s+([\w\.]+)\s*')

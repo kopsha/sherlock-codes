@@ -3,6 +3,56 @@
         {
             "children": [
                 {
+                    "easy_path": "turbo-connect-core/scripts/run-clang-format.py",
+                    "meta": {
+                        "blank_lines": 93,
+                        "cognitive_complexity": 56,
+                        "decision_complexity": 36,
+                        "extension": ".py",
+                        "filename": "run-clang-format.py",
+                        "imports": [],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "__future__",
+                            "argparse",
+                            "codecs",
+                            "difflib",
+                            "errno",
+                            "fnmatch",
+                            "functools",
+                            "io",
+                            "multiprocessing",
+                            "os",
+                            "signal",
+                            "subprocess",
+                            "sys",
+                            "traceback"
+                        ],
+                        "loc": 380,
+                        "messages": [],
+                        "name": "run-clang-format",
+                        "nested_complexity": 6,
+                        "size": 11581,
+                        "sloc": 287
+                    },
+                    "name": "run-clang-format.py",
+                    "temperature": 1,
+                    "value": 56
+                }
+            ],
+            "counter": {
+                "bytes_count": 11581,
+                "sloc_count": 287,
+                "source_files": 1,
+                "value_count": 56
+            },
+            "easy_path": "turbo-connect-core/scripts",
+            "name": "scripts"
+        },
+        {
+            "children": [
+                {
                     "easy_path": "turbo-connect-core/src/identification_sequence.cpp",
                     "meta": {
                         "blank_lines": 24,
@@ -398,6 +448,38 @@
                             "name": "bike_parameters.h",
                             "temperature": 7,
                             "value": 2
+                        },
+                        {
+                            "easy_path": "turbo-connect-core/src/protocol/generate_protocol_sources.py",
+                            "meta": {
+                                "blank_lines": 154,
+                                "cognitive_complexity": 67,
+                                "decision_complexity": 58,
+                                "extension": ".py",
+                                "filename": "generate_protocol_sources.py",
+                                "imports": [],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [
+                                    "collections",
+                                    "jinja2",
+                                    "operator",
+                                    "pandas",
+                                    "re"
+                                ],
+                                "loc": 608,
+                                "messages": [
+                                    "[info] Arguably many lines of code, this may be ok for now.",
+                                    "[info] Arguably many decisions, it is ok if it makes other files less complicated."
+                                ],
+                                "name": "generate_protocol_sources",
+                                "nested_complexity": 4,
+                                "size": 19832,
+                                "sloc": 454
+                            },
+                            "name": "generate_protocol_sources.py",
+                            "temperature": 14,
+                            "value": 67
                         },
                         {
                             "easy_path": "turbo-connect-core/src/protocol/iprotocol.cpp",
@@ -1105,20 +1187,20 @@
                         }
                     ],
                     "counter": {
-                        "bytes_count": 294616,
-                        "sloc_count": 2500,
-                        "source_files": 31,
-                        "value_count": 146
+                        "bytes_count": 314448,
+                        "sloc_count": 2954,
+                        "source_files": 32,
+                        "value_count": 213
                     },
                     "easy_path": "turbo-connect-core/src/protocol",
                     "name": "protocol"
                 }
             ],
             "counter": {
-                "bytes_count": 316408,
-                "sloc_count": 3091,
-                "source_files": 42,
-                "value_count": 296
+                "bytes_count": 336240,
+                "sloc_count": 3545,
+                "source_files": 43,
+                "value_count": 363
             },
             "easy_path": "turbo-connect-core/src",
             "name": "src"
@@ -1386,10 +1468,10 @@
         }
     ],
     "counter": {
-        "bytes_count": 342950,
-        "sloc_count": 3719,
-        "source_files": 51,
-        "value_count": 341
+        "bytes_count": 374363,
+        "sloc_count": 4460,
+        "source_files": 53,
+        "value_count": 464
     },
     "easy_path": "turbo-connect-core",
     "name": "turbo-connect-core"

@@ -3,6 +3,856 @@
         {
             "children": [
                 {
+                    "easy_path": "bloks/scripts/add-copyright.py",
+                    "meta": {
+                        "blank_lines": 25,
+                        "cognitive_complexity": 15,
+                        "decision_complexity": 8,
+                        "extension": ".py",
+                        "filename": "add-copyright.py",
+                        "imports": [],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "io",
+                            "os",
+                            "sys"
+                        ],
+                        "loc": 63,
+                        "messages": [],
+                        "name": "add-copyright",
+                        "nested_complexity": 4,
+                        "size": 1703,
+                        "sloc": 38
+                    },
+                    "name": "add-copyright.py",
+                    "temperature": 2,
+                    "value": 15
+                },
+                {
+                    "easy_path": "bloks/scripts/template-renderer.py",
+                    "meta": {
+                        "blank_lines": 77,
+                        "cognitive_complexity": 18,
+                        "decision_complexity": 8,
+                        "extension": ".py",
+                        "filename": "template-renderer.py",
+                        "imports": [],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "argparse",
+                            "json",
+                            "os",
+                            "sys",
+                            "xml.etree.ElementTree"
+                        ],
+                        "loc": 206,
+                        "messages": [],
+                        "name": "template-renderer",
+                        "nested_complexity": 5,
+                        "size": 5738,
+                        "sloc": 129
+                    },
+                    "name": "template-renderer.py",
+                    "temperature": 4,
+                    "value": 18
+                }
+            ],
+            "counter": {
+                "bytes_count": 7441,
+                "sloc_count": 167,
+                "source_files": 2,
+                "value_count": 33
+            },
+            "easy_path": "bloks/scripts",
+            "name": "scripts"
+        },
+        {
+            "children": [
+                {
+                    "easy_path": "bloks/tests/eol_manual.py",
+                    "meta": {
+                        "blank_lines": 37,
+                        "cognitive_complexity": 17,
+                        "decision_complexity": 8,
+                        "extension": ".py",
+                        "filename": "eol_manual.py",
+                        "imports": [
+                            "bloks/tests/test_utils.py"
+                        ],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "argparse",
+                            "os",
+                            "sys"
+                        ],
+                        "loc": 102,
+                        "messages": [],
+                        "name": "eol_manual",
+                        "nested_complexity": 3,
+                        "size": 2884,
+                        "sloc": 65
+                    },
+                    "name": "eol_manual.py",
+                    "temperature": 6,
+                    "value": 17
+                },
+                {
+                    "easy_path": "bloks/tests/firmware_updater_sapi.py",
+                    "meta": {
+                        "blank_lines": 52,
+                        "cognitive_complexity": 37,
+                        "decision_complexity": 19,
+                        "extension": ".py",
+                        "filename": "firmware_updater_sapi.py",
+                        "imports": [
+                            "bloks/tests/test_utils.py"
+                        ],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "argparse",
+                            "io",
+                            "os",
+                            "re",
+                            "sys",
+                            "time"
+                        ],
+                        "loc": 285,
+                        "messages": [],
+                        "name": "firmware_updater_sapi",
+                        "nested_complexity": 6,
+                        "size": 12000,
+                        "sloc": 233
+                    },
+                    "name": "firmware_updater_sapi.py",
+                    "temperature": 37,
+                    "value": 37
+                },
+                {
+                    "easy_path": "bloks/tests/frame_id_test.py",
+                    "meta": {
+                        "blank_lines": 22,
+                        "cognitive_complexity": 17,
+                        "decision_complexity": 5,
+                        "extension": ".py",
+                        "filename": "frame_id_test.py",
+                        "imports": [
+                            "bloks/tests/test_utils.py"
+                        ],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "argparse",
+                            "os",
+                            "sys"
+                        ],
+                        "loc": 66,
+                        "messages": [],
+                        "name": "frame_id_test",
+                        "nested_complexity": 4,
+                        "size": 1773,
+                        "sloc": 44
+                    },
+                    "name": "frame_id_test.py",
+                    "temperature": 1,
+                    "value": 17
+                },
+                {
+                    "easy_path": "bloks/tests/frontend_sdk.py",
+                    "meta": {
+                        "blank_lines": 35,
+                        "cognitive_complexity": 26,
+                        "decision_complexity": 13,
+                        "extension": ".py",
+                        "filename": "frontend_sdk.py",
+                        "imports": [
+                            "bloks/tests/test_utils.py"
+                        ],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "argparse",
+                            "io",
+                            "json",
+                            "os",
+                            "sys"
+                        ],
+                        "loc": 156,
+                        "messages": [],
+                        "name": "frontend_sdk",
+                        "nested_complexity": 4,
+                        "size": 5526,
+                        "sloc": 121
+                    },
+                    "name": "frontend_sdk.py",
+                    "temperature": 7,
+                    "value": 26
+                },
+                {
+                    "easy_path": "bloks/tests/generate_login.py",
+                    "meta": {
+                        "blank_lines": 7,
+                        "cognitive_complexity": 13,
+                        "decision_complexity": 5,
+                        "extension": ".py",
+                        "filename": "generate_login.py",
+                        "imports": [],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "base64",
+                            "io",
+                            "json",
+                            "os",
+                            "subprocess",
+                            "sys"
+                        ],
+                        "loc": 29,
+                        "messages": [],
+                        "name": "generate_login",
+                        "nested_complexity": 2,
+                        "size": 925,
+                        "sloc": 22
+                    },
+                    "name": "generate_login.py",
+                    "temperature": 2,
+                    "value": 13
+                },
+                {
+                    "easy_path": "bloks/tests/heartbeat.py",
+                    "meta": {
+                        "blank_lines": 32,
+                        "cognitive_complexity": 24,
+                        "decision_complexity": 9,
+                        "extension": ".py",
+                        "filename": "heartbeat.py",
+                        "imports": [
+                            "bloks/tests/test_utils.py"
+                        ],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "argparse",
+                            "io",
+                            "os",
+                            "re",
+                            "sys"
+                        ],
+                        "loc": 114,
+                        "messages": [],
+                        "name": "heartbeat",
+                        "nested_complexity": 4,
+                        "size": 3527,
+                        "sloc": 82
+                    },
+                    "name": "heartbeat.py",
+                    "temperature": 9,
+                    "value": 24
+                },
+                {
+                    "easy_path": "bloks/tests/system.py",
+                    "meta": {
+                        "blank_lines": 28,
+                        "cognitive_complexity": 16,
+                        "decision_complexity": 7,
+                        "extension": ".py",
+                        "filename": "system.py",
+                        "imports": [
+                            "bloks/tests/test_utils.py"
+                        ],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "argparse",
+                            "os",
+                            "sys"
+                        ],
+                        "loc": 91,
+                        "messages": [],
+                        "name": "system",
+                        "nested_complexity": 3,
+                        "size": 2581,
+                        "sloc": 63
+                    },
+                    "name": "system.py",
+                    "temperature": 4,
+                    "value": 16
+                },
+                {
+                    "easy_path": "bloks/tests/test_utils.py",
+                    "meta": {
+                        "blank_lines": 244,
+                        "cognitive_complexity": 56,
+                        "decision_complexity": 39,
+                        "extension": ".py",
+                        "filename": "test_utils.py",
+                        "imports": [],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "difflib",
+                            "io",
+                            "json",
+                            "os",
+                            "re",
+                            "requests",
+                            "signal",
+                            "subprocess",
+                            "sys",
+                            "threading",
+                            "time",
+                            "traceback"
+                        ],
+                        "loc": 531,
+                        "messages": [
+                            "[error] Unindent does not match any outer indentation level on line 456.",
+                            "[error] Unindent does not match any outer indentation level on line 466.",
+                            "[error] Unindent does not match any outer indentation level on line 467.",
+                            "[error] Unindent does not match any outer indentation level on line 468.",
+                            "[error] Unindent does not match any outer indentation level on line 469.",
+                            "[error] Unindent does not match any outer indentation level on line 470.",
+                            "[error] Unindent does not match any outer indentation level on line 471.",
+                            "[error] Unindent does not match any outer indentation level on line 473.",
+                            "[error] Unindent does not match any outer indentation level on line 475.",
+                            "[error] Unindent does not match any outer indentation level on line 476.",
+                            "[error] Unindent does not match any outer indentation level on line 479.",
+                            "[error] Unindent does not match any outer indentation level on line 480.",
+                            "[error] Unindent does not match any outer indentation level on line 481.",
+                            "[error] Unindent does not match any outer indentation level on line 482.",
+                            "[error] Unindent does not match any outer indentation level on line 483.",
+                            "[error] Unindent does not match any outer indentation level on line 492.",
+                            "[error] Unindent does not match any outer indentation level on line 502.",
+                            "[error] Unindent does not match any outer indentation level on line 503.",
+                            "[error] Unindent does not match any outer indentation level on line 504.",
+                            "[error] Unindent does not match any outer indentation level on line 505.",
+                            "[error] Unindent does not match any outer indentation level on line 506.",
+                            "[error] Unindent does not match any outer indentation level on line 507.",
+                            "[error] Unindent does not match any outer indentation level on line 509.",
+                            "[error] Unindent does not match any outer indentation level on line 511.",
+                            "[error] Unindent does not match any outer indentation level on line 512.",
+                            "[error] Unindent does not match any outer indentation level on line 515.",
+                            "[error] Unindent does not match any outer indentation level on line 516.",
+                            "[error] Unindent does not match any outer indentation level on line 517.",
+                            "[error] Unindent does not match any outer indentation level on line 518.",
+                            "[error] Unindent does not match any outer indentation level on line 519."
+                        ],
+                        "name": "test_utils",
+                        "nested_complexity": 5,
+                        "size": 18559,
+                        "sloc": 287
+                    },
+                    "name": "test_utils.py",
+                    "temperature": 22,
+                    "value": 56
+                },
+                {
+                    "easy_path": "bloks/tests/vehicle_state_sapi.py",
+                    "meta": {
+                        "blank_lines": 32,
+                        "cognitive_complexity": 18,
+                        "decision_complexity": 8,
+                        "extension": ".py",
+                        "filename": "vehicle_state_sapi.py",
+                        "imports": [
+                            "bloks/tests/test_utils.py"
+                        ],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "argparse",
+                            "os",
+                            "sys"
+                        ],
+                        "loc": 220,
+                        "messages": [],
+                        "name": "vehicle_state_sapi",
+                        "nested_complexity": 4,
+                        "size": 9790,
+                        "sloc": 188
+                    },
+                    "name": "vehicle_state_sapi.py",
+                    "temperature": 26,
+                    "value": 18
+                }
+            ],
+            "counter": {
+                "bytes_count": 57565,
+                "sloc_count": 1105,
+                "source_files": 9,
+                "value_count": 224
+            },
+            "easy_path": "bloks/tests",
+            "name": "tests"
+        },
+        {
+            "children": [
+                {
+                    "easy_path": "bloks/uart2can/canalyzer.py",
+                    "meta": {
+                        "blank_lines": 22,
+                        "cognitive_complexity": 25,
+                        "decision_complexity": 8,
+                        "extension": ".py",
+                        "filename": "canalyzer.py",
+                        "imports": [],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "argparse",
+                            "binascii",
+                            "drive_train_sim",
+                            "lib",
+                            "logging",
+                            "os",
+                            "socket",
+                            "struct",
+                            "sys",
+                            "threading",
+                            "time",
+                            "traceback"
+                        ],
+                        "loc": 105,
+                        "messages": [
+                            "[error] Unindent does not match any outer indentation level on line 72.",
+                            "[error] Unindent does not match any outer indentation level on line 77."
+                        ],
+                        "name": "canalyzer",
+                        "nested_complexity": 4,
+                        "size": 3709,
+                        "sloc": 83
+                    },
+                    "name": "canalyzer.py",
+                    "temperature": 1,
+                    "value": 25
+                },
+                {
+                    "children": [
+                        {
+                            "easy_path": "bloks/uart2can/inc/CanFrame.h",
+                            "meta": {
+                                "blank_lines": 59,
+                                "cognitive_complexity": 11,
+                                "decision_complexity": 3,
+                                "extension": ".h",
+                                "filename": "CanFrame.h",
+                                "imports": [],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [
+                                    "algorithm",
+                                    "cstdint",
+                                    "iomanip",
+                                    "ostream",
+                                    "vector"
+                                ],
+                                "loc": 126,
+                                "messages": [],
+                                "name": "CanFrame",
+                                "nested_complexity": 3,
+                                "size": 2774,
+                                "sloc": 67
+                            },
+                            "name": "CanFrame.h",
+                            "temperature": 31,
+                            "value": 11
+                        },
+                        {
+                            "easy_path": "bloks/uart2can/inc/SocketCanDevice.h",
+                            "meta": {
+                                "blank_lines": 58,
+                                "cognitive_complexity": 7,
+                                "decision_complexity": 0,
+                                "extension": ".h",
+                                "filename": "SocketCanDevice.h",
+                                "imports": [],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [
+                                    "atomic",
+                                    "string",
+                                    "sys/select.h",
+                                    "sys/time.h",
+                                    "thread"
+                                ],
+                                "loc": 90,
+                                "messages": [],
+                                "name": "SocketCanDevice",
+                                "nested_complexity": 2,
+                                "size": 2442,
+                                "sloc": 32
+                            },
+                            "name": "SocketCanDevice.h",
+                            "temperature": 23,
+                            "value": 7
+                        },
+                        {
+                            "easy_path": "bloks/uart2can/inc/UartDevice.h",
+                            "meta": {
+                                "blank_lines": 127,
+                                "cognitive_complexity": 10,
+                                "decision_complexity": 0,
+                                "extension": ".h",
+                                "filename": "UartDevice.h",
+                                "imports": [
+                                    "bloks/uart2can/inc/CanFrame.h"
+                                ],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [
+                                    "atomic",
+                                    "cstdint",
+                                    "string",
+                                    "sys/select.h",
+                                    "sys/time.h",
+                                    "thread"
+                                ],
+                                "loc": 190,
+                                "messages": [],
+                                "name": "UartDevice",
+                                "nested_complexity": 3,
+                                "size": 5670,
+                                "sloc": 63
+                            },
+                            "name": "UartDevice.h",
+                            "temperature": 43,
+                            "value": 10
+                        },
+                        {
+                            "easy_path": "bloks/uart2can/inc/UartLog.h",
+                            "meta": {
+                                "blank_lines": 5,
+                                "cognitive_complexity": 3,
+                                "decision_complexity": 0,
+                                "extension": ".h",
+                                "filename": "UartLog.h",
+                                "imports": [
+                                    "bloks/common/inc/bloks/common/Log.h"
+                                ],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [
+                                    "QLoggingCategory"
+                                ],
+                                "loc": 11,
+                                "messages": [],
+                                "name": "UartLog",
+                                "nested_complexity": 0,
+                                "size": 212,
+                                "sloc": 6
+                            },
+                            "name": "UartLog.h",
+                            "temperature": 1,
+                            "value": 3
+                        }
+                    ],
+                    "counter": {
+                        "bytes_count": 11098,
+                        "sloc_count": 168,
+                        "source_files": 4,
+                        "value_count": 31
+                    },
+                    "easy_path": "bloks/uart2can/inc",
+                    "name": "inc"
+                },
+                {
+                    "children": [
+                        {
+                            "easy_path": "bloks/uart2can/src/CanFrame.cpp",
+                            "meta": {
+                                "blank_lines": 15,
+                                "cognitive_complexity": 21,
+                                "decision_complexity": 9,
+                                "extension": ".cpp",
+                                "filename": "CanFrame.cpp",
+                                "imports": [
+                                    "bloks/uart2can/inc/CanFrame.h",
+                                    "bloks/uart2can/inc/UartDevice.h",
+                                    "bloks/uart2can/tests/TestUartDevice.h"
+                                ],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [
+                                    "algorithm",
+                                    "cassert",
+                                    "cstdio",
+                                    "cstring",
+                                    "linux/can.h",
+                                    "linux/can/raw.h",
+                                    "stdexcept"
+                                ],
+                                "loc": 88,
+                                "messages": [],
+                                "name": "CanFrame",
+                                "nested_complexity": 3,
+                                "size": 2107,
+                                "sloc": 73
+                            },
+                            "name": "CanFrame.cpp",
+                            "temperature": 28,
+                            "value": 21
+                        },
+                        {
+                            "easy_path": "bloks/uart2can/src/SocketCanDevice.cpp",
+                            "meta": {
+                                "blank_lines": 27,
+                                "cognitive_complexity": 39,
+                                "decision_complexity": 16,
+                                "extension": ".cpp",
+                                "filename": "SocketCanDevice.cpp",
+                                "imports": [
+                                    "bloks/uart2can/inc/CanFrame.h",
+                                    "bloks/uart2can/inc/SocketCanDevice.h",
+                                    "bloks/uart2can/inc/UartDevice.h",
+                                    "bloks/uart2can/inc/UartLog.h",
+                                    "bloks/uart2can/tests/TestUartDevice.h"
+                                ],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [
+                                    "chrono",
+                                    "cstdio",
+                                    "cstring",
+                                    "exception",
+                                    "iostream",
+                                    "linux/can.h",
+                                    "net/if.h",
+                                    "sstream",
+                                    "stdexcept",
+                                    "string",
+                                    "sys/ioctl.h",
+                                    "thread",
+                                    "unistd.h",
+                                    "utility"
+                                ],
+                                "loc": 160,
+                                "messages": [],
+                                "name": "SocketCanDevice",
+                                "nested_complexity": 5,
+                                "size": 3809,
+                                "sloc": 133
+                            },
+                            "name": "SocketCanDevice.cpp",
+                            "temperature": 41,
+                            "value": 39
+                        },
+                        {
+                            "easy_path": "bloks/uart2can/src/UartDevice.cpp",
+                            "meta": {
+                                "blank_lines": 70,
+                                "cognitive_complexity": 84,
+                                "decision_complexity": 56,
+                                "extension": ".cpp",
+                                "filename": "UartDevice.cpp",
+                                "imports": [
+                                    "bloks/uart2can/inc/CanFrame.h",
+                                    "bloks/uart2can/inc/SocketCanDevice.h",
+                                    "bloks/uart2can/inc/UartDevice.h",
+                                    "bloks/uart2can/inc/UartLog.h",
+                                    "bloks/uart2can/tests/TestUartDevice.h"
+                                ],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [
+                                    "cerrno",
+                                    "chrono",
+                                    "cstdio",
+                                    "cstring",
+                                    "ctime",
+                                    "exception",
+                                    "fcntl.h",
+                                    "iostream",
+                                    "linux/can.h",
+                                    "sstream",
+                                    "stdexcept",
+                                    "sys/stat.h",
+                                    "sys/types.h",
+                                    "systemd/sd-daemon.h",
+                                    "termios.h",
+                                    "thread",
+                                    "unistd.h",
+                                    "utility"
+                                ],
+                                "loc": 507,
+                                "messages": [
+                                    "[info] Arguably many lines of code, this may be ok for now.",
+                                    "[info] Arguably many decisions, it is ok if it makes other files less complicated."
+                                ],
+                                "name": "UartDevice",
+                                "nested_complexity": 6,
+                                "size": 13688,
+                                "sloc": 437
+                            },
+                            "name": "UartDevice.cpp",
+                            "temperature": 70,
+                            "value": 84
+                        },
+                        {
+                            "easy_path": "bloks/uart2can/src/UartLog.cpp",
+                            "meta": {
+                                "blank_lines": 2,
+                                "cognitive_complexity": 2,
+                                "decision_complexity": 0,
+                                "extension": ".cpp",
+                                "filename": "UartLog.cpp",
+                                "imports": [
+                                    "bloks/uart2can/inc/UartLog.h"
+                                ],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [],
+                                "loc": 6,
+                                "messages": [],
+                                "name": "UartLog",
+                                "nested_complexity": 0,
+                                "size": 127,
+                                "sloc": 4
+                            },
+                            "name": "UartLog.cpp",
+                            "temperature": 1,
+                            "value": 2
+                        },
+                        {
+                            "easy_path": "bloks/uart2can/src/main.cpp",
+                            "meta": {
+                                "blank_lines": 29,
+                                "cognitive_complexity": 29,
+                                "decision_complexity": 9,
+                                "extension": ".cpp",
+                                "filename": "main.cpp",
+                                "imports": [
+                                    "bloks/uart2can/inc/SocketCanDevice.h",
+                                    "bloks/uart2can/inc/UartDevice.h",
+                                    "bloks/uart2can/inc/UartLog.h",
+                                    "bloks/uart2can/tests/TestUartDevice.h"
+                                ],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [
+                                    "bloks/uart2can-version.h",
+                                    "cerrno",
+                                    "chrono",
+                                    "cstdio",
+                                    "cstring",
+                                    "getopt.h",
+                                    "initializer_list",
+                                    "iostream",
+                                    "limits",
+                                    "sstream",
+                                    "stdexcept",
+                                    "string",
+                                    "thread",
+                                    "unistd.h"
+                                ],
+                                "loc": 130,
+                                "messages": [],
+                                "name": "main",
+                                "nested_complexity": 3,
+                                "size": 3827,
+                                "sloc": 101
+                            },
+                            "name": "main.cpp",
+                            "temperature": 37,
+                            "value": 29
+                        }
+                    ],
+                    "counter": {
+                        "bytes_count": 23558,
+                        "sloc_count": 748,
+                        "source_files": 5,
+                        "value_count": 175
+                    },
+                    "easy_path": "bloks/uart2can/src",
+                    "name": "src"
+                },
+                {
+                    "children": [
+                        {
+                            "easy_path": "bloks/uart2can/tests/TestUartDevice.cpp",
+                            "meta": {
+                                "blank_lines": 105,
+                                "cognitive_complexity": 18,
+                                "decision_complexity": 2,
+                                "extension": ".cpp",
+                                "filename": "TestUartDevice.cpp",
+                                "imports": [
+                                    "bloks/uart2can/inc/CanFrame.h",
+                                    "bloks/uart2can/inc/SocketCanDevice.h",
+                                    "bloks/uart2can/inc/UartDevice.h",
+                                    "bloks/uart2can/tests/TestUartDevice.h"
+                                ],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [
+                                    "QTest",
+                                    "cstdint",
+                                    "fcntl.h",
+                                    "iostream",
+                                    "linux/can.h",
+                                    "string",
+                                    "vector"
+                                ],
+                                "loc": 281,
+                                "messages": [],
+                                "name": "TestUartDevice",
+                                "nested_complexity": 5,
+                                "size": 8827,
+                                "sloc": 176
+                            },
+                            "name": "TestUartDevice.cpp",
+                            "temperature": 36,
+                            "value": 18
+                        },
+                        {
+                            "easy_path": "bloks/uart2can/tests/TestUartDevice.h",
+                            "meta": {
+                                "blank_lines": 7,
+                                "cognitive_complexity": 3,
+                                "decision_complexity": 0,
+                                "extension": ".h",
+                                "filename": "TestUartDevice.h",
+                                "imports": [],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [
+                                    "QObject"
+                                ],
+                                "loc": 21,
+                                "messages": [],
+                                "name": "TestUartDevice",
+                                "nested_complexity": 2,
+                                "size": 349,
+                                "sloc": 14
+                            },
+                            "name": "TestUartDevice.h",
+                            "temperature": 9,
+                            "value": 3
+                        }
+                    ],
+                    "counter": {
+                        "bytes_count": 9176,
+                        "sloc_count": 190,
+                        "source_files": 2,
+                        "value_count": 21
+                    },
+                    "easy_path": "bloks/uart2can/tests",
+                    "name": "tests"
+                }
+            ],
+            "counter": {
+                "bytes_count": 47541,
+                "sloc_count": 1189,
+                "source_files": 12,
+                "value_count": 252
+            },
+            "easy_path": "bloks/uart2can",
+            "name": "uart2can"
+        },
+        {
+            "children": [
+                {
                     "children": [
                         {
                             "easy_path": "bloks/bluetooth-client/src/BluetoothDeviceData.cpp",
@@ -9750,430 +10600,6 @@
                 {
                     "children": [
                         {
-                            "easy_path": "bloks/uart2can/inc/CanFrame.h",
-                            "meta": {
-                                "blank_lines": 59,
-                                "cognitive_complexity": 11,
-                                "decision_complexity": 3,
-                                "extension": ".h",
-                                "filename": "CanFrame.h",
-                                "imports": [],
-                                "is_code": true,
-                                "is_directory": false,
-                                "libraries": [
-                                    "algorithm",
-                                    "cstdint",
-                                    "iomanip",
-                                    "ostream",
-                                    "vector"
-                                ],
-                                "loc": 126,
-                                "messages": [],
-                                "name": "CanFrame",
-                                "nested_complexity": 3,
-                                "size": 2774,
-                                "sloc": 67
-                            },
-                            "name": "CanFrame.h",
-                            "temperature": 31,
-                            "value": 11
-                        },
-                        {
-                            "easy_path": "bloks/uart2can/inc/SocketCanDevice.h",
-                            "meta": {
-                                "blank_lines": 58,
-                                "cognitive_complexity": 7,
-                                "decision_complexity": 0,
-                                "extension": ".h",
-                                "filename": "SocketCanDevice.h",
-                                "imports": [],
-                                "is_code": true,
-                                "is_directory": false,
-                                "libraries": [
-                                    "atomic",
-                                    "string",
-                                    "sys/select.h",
-                                    "sys/time.h",
-                                    "thread"
-                                ],
-                                "loc": 90,
-                                "messages": [],
-                                "name": "SocketCanDevice",
-                                "nested_complexity": 2,
-                                "size": 2442,
-                                "sloc": 32
-                            },
-                            "name": "SocketCanDevice.h",
-                            "temperature": 23,
-                            "value": 7
-                        },
-                        {
-                            "easy_path": "bloks/uart2can/inc/UartDevice.h",
-                            "meta": {
-                                "blank_lines": 127,
-                                "cognitive_complexity": 10,
-                                "decision_complexity": 0,
-                                "extension": ".h",
-                                "filename": "UartDevice.h",
-                                "imports": [
-                                    "bloks/uart2can/inc/CanFrame.h"
-                                ],
-                                "is_code": true,
-                                "is_directory": false,
-                                "libraries": [
-                                    "atomic",
-                                    "cstdint",
-                                    "string",
-                                    "sys/select.h",
-                                    "sys/time.h",
-                                    "thread"
-                                ],
-                                "loc": 190,
-                                "messages": [],
-                                "name": "UartDevice",
-                                "nested_complexity": 3,
-                                "size": 5670,
-                                "sloc": 63
-                            },
-                            "name": "UartDevice.h",
-                            "temperature": 43,
-                            "value": 10
-                        },
-                        {
-                            "easy_path": "bloks/uart2can/inc/UartLog.h",
-                            "meta": {
-                                "blank_lines": 5,
-                                "cognitive_complexity": 3,
-                                "decision_complexity": 0,
-                                "extension": ".h",
-                                "filename": "UartLog.h",
-                                "imports": [
-                                    "bloks/common/inc/bloks/common/Log.h"
-                                ],
-                                "is_code": true,
-                                "is_directory": false,
-                                "libraries": [
-                                    "QLoggingCategory"
-                                ],
-                                "loc": 11,
-                                "messages": [],
-                                "name": "UartLog",
-                                "nested_complexity": 0,
-                                "size": 212,
-                                "sloc": 6
-                            },
-                            "name": "UartLog.h",
-                            "temperature": 1,
-                            "value": 3
-                        }
-                    ],
-                    "counter": {
-                        "bytes_count": 11098,
-                        "sloc_count": 168,
-                        "source_files": 4,
-                        "value_count": 31
-                    },
-                    "easy_path": "bloks/uart2can/inc",
-                    "name": "inc"
-                },
-                {
-                    "children": [
-                        {
-                            "easy_path": "bloks/uart2can/src/CanFrame.cpp",
-                            "meta": {
-                                "blank_lines": 15,
-                                "cognitive_complexity": 21,
-                                "decision_complexity": 9,
-                                "extension": ".cpp",
-                                "filename": "CanFrame.cpp",
-                                "imports": [
-                                    "bloks/uart2can/inc/CanFrame.h",
-                                    "bloks/uart2can/inc/UartDevice.h",
-                                    "bloks/uart2can/tests/TestUartDevice.h"
-                                ],
-                                "is_code": true,
-                                "is_directory": false,
-                                "libraries": [
-                                    "algorithm",
-                                    "cassert",
-                                    "cstdio",
-                                    "cstring",
-                                    "linux/can.h",
-                                    "linux/can/raw.h",
-                                    "stdexcept"
-                                ],
-                                "loc": 88,
-                                "messages": [],
-                                "name": "CanFrame",
-                                "nested_complexity": 3,
-                                "size": 2107,
-                                "sloc": 73
-                            },
-                            "name": "CanFrame.cpp",
-                            "temperature": 28,
-                            "value": 21
-                        },
-                        {
-                            "easy_path": "bloks/uart2can/src/SocketCanDevice.cpp",
-                            "meta": {
-                                "blank_lines": 27,
-                                "cognitive_complexity": 39,
-                                "decision_complexity": 16,
-                                "extension": ".cpp",
-                                "filename": "SocketCanDevice.cpp",
-                                "imports": [
-                                    "bloks/uart2can/inc/CanFrame.h",
-                                    "bloks/uart2can/inc/SocketCanDevice.h",
-                                    "bloks/uart2can/inc/UartDevice.h",
-                                    "bloks/uart2can/inc/UartLog.h",
-                                    "bloks/uart2can/tests/TestUartDevice.h"
-                                ],
-                                "is_code": true,
-                                "is_directory": false,
-                                "libraries": [
-                                    "chrono",
-                                    "cstdio",
-                                    "cstring",
-                                    "exception",
-                                    "iostream",
-                                    "linux/can.h",
-                                    "net/if.h",
-                                    "sstream",
-                                    "stdexcept",
-                                    "string",
-                                    "sys/ioctl.h",
-                                    "thread",
-                                    "unistd.h",
-                                    "utility"
-                                ],
-                                "loc": 160,
-                                "messages": [],
-                                "name": "SocketCanDevice",
-                                "nested_complexity": 5,
-                                "size": 3809,
-                                "sloc": 133
-                            },
-                            "name": "SocketCanDevice.cpp",
-                            "temperature": 41,
-                            "value": 39
-                        },
-                        {
-                            "easy_path": "bloks/uart2can/src/UartDevice.cpp",
-                            "meta": {
-                                "blank_lines": 70,
-                                "cognitive_complexity": 84,
-                                "decision_complexity": 56,
-                                "extension": ".cpp",
-                                "filename": "UartDevice.cpp",
-                                "imports": [
-                                    "bloks/uart2can/inc/CanFrame.h",
-                                    "bloks/uart2can/inc/SocketCanDevice.h",
-                                    "bloks/uart2can/inc/UartDevice.h",
-                                    "bloks/uart2can/inc/UartLog.h",
-                                    "bloks/uart2can/tests/TestUartDevice.h"
-                                ],
-                                "is_code": true,
-                                "is_directory": false,
-                                "libraries": [
-                                    "cerrno",
-                                    "chrono",
-                                    "cstdio",
-                                    "cstring",
-                                    "ctime",
-                                    "exception",
-                                    "fcntl.h",
-                                    "iostream",
-                                    "linux/can.h",
-                                    "sstream",
-                                    "stdexcept",
-                                    "sys/stat.h",
-                                    "sys/types.h",
-                                    "systemd/sd-daemon.h",
-                                    "termios.h",
-                                    "thread",
-                                    "unistd.h",
-                                    "utility"
-                                ],
-                                "loc": 507,
-                                "messages": [
-                                    "[info] Arguably many lines of code, this may be ok for now.",
-                                    "[info] Arguably many decisions, it is ok if it makes other files less complicated."
-                                ],
-                                "name": "UartDevice",
-                                "nested_complexity": 6,
-                                "size": 13688,
-                                "sloc": 437
-                            },
-                            "name": "UartDevice.cpp",
-                            "temperature": 70,
-                            "value": 84
-                        },
-                        {
-                            "easy_path": "bloks/uart2can/src/UartLog.cpp",
-                            "meta": {
-                                "blank_lines": 2,
-                                "cognitive_complexity": 2,
-                                "decision_complexity": 0,
-                                "extension": ".cpp",
-                                "filename": "UartLog.cpp",
-                                "imports": [
-                                    "bloks/uart2can/inc/UartLog.h"
-                                ],
-                                "is_code": true,
-                                "is_directory": false,
-                                "libraries": [],
-                                "loc": 6,
-                                "messages": [],
-                                "name": "UartLog",
-                                "nested_complexity": 0,
-                                "size": 127,
-                                "sloc": 4
-                            },
-                            "name": "UartLog.cpp",
-                            "temperature": 1,
-                            "value": 2
-                        },
-                        {
-                            "easy_path": "bloks/uart2can/src/main.cpp",
-                            "meta": {
-                                "blank_lines": 29,
-                                "cognitive_complexity": 29,
-                                "decision_complexity": 9,
-                                "extension": ".cpp",
-                                "filename": "main.cpp",
-                                "imports": [
-                                    "bloks/uart2can/inc/SocketCanDevice.h",
-                                    "bloks/uart2can/inc/UartDevice.h",
-                                    "bloks/uart2can/inc/UartLog.h",
-                                    "bloks/uart2can/tests/TestUartDevice.h"
-                                ],
-                                "is_code": true,
-                                "is_directory": false,
-                                "libraries": [
-                                    "bloks/uart2can-version.h",
-                                    "cerrno",
-                                    "chrono",
-                                    "cstdio",
-                                    "cstring",
-                                    "getopt.h",
-                                    "initializer_list",
-                                    "iostream",
-                                    "limits",
-                                    "sstream",
-                                    "stdexcept",
-                                    "string",
-                                    "thread",
-                                    "unistd.h"
-                                ],
-                                "loc": 130,
-                                "messages": [],
-                                "name": "main",
-                                "nested_complexity": 3,
-                                "size": 3827,
-                                "sloc": 101
-                            },
-                            "name": "main.cpp",
-                            "temperature": 37,
-                            "value": 29
-                        }
-                    ],
-                    "counter": {
-                        "bytes_count": 23558,
-                        "sloc_count": 748,
-                        "source_files": 5,
-                        "value_count": 175
-                    },
-                    "easy_path": "bloks/uart2can/src",
-                    "name": "src"
-                },
-                {
-                    "children": [
-                        {
-                            "easy_path": "bloks/uart2can/tests/TestUartDevice.cpp",
-                            "meta": {
-                                "blank_lines": 105,
-                                "cognitive_complexity": 18,
-                                "decision_complexity": 2,
-                                "extension": ".cpp",
-                                "filename": "TestUartDevice.cpp",
-                                "imports": [
-                                    "bloks/uart2can/inc/CanFrame.h",
-                                    "bloks/uart2can/inc/SocketCanDevice.h",
-                                    "bloks/uart2can/inc/UartDevice.h",
-                                    "bloks/uart2can/tests/TestUartDevice.h"
-                                ],
-                                "is_code": true,
-                                "is_directory": false,
-                                "libraries": [
-                                    "QTest",
-                                    "cstdint",
-                                    "fcntl.h",
-                                    "iostream",
-                                    "linux/can.h",
-                                    "string",
-                                    "vector"
-                                ],
-                                "loc": 281,
-                                "messages": [],
-                                "name": "TestUartDevice",
-                                "nested_complexity": 5,
-                                "size": 8827,
-                                "sloc": 176
-                            },
-                            "name": "TestUartDevice.cpp",
-                            "temperature": 36,
-                            "value": 18
-                        },
-                        {
-                            "easy_path": "bloks/uart2can/tests/TestUartDevice.h",
-                            "meta": {
-                                "blank_lines": 7,
-                                "cognitive_complexity": 3,
-                                "decision_complexity": 0,
-                                "extension": ".h",
-                                "filename": "TestUartDevice.h",
-                                "imports": [],
-                                "is_code": true,
-                                "is_directory": false,
-                                "libraries": [
-                                    "QObject"
-                                ],
-                                "loc": 21,
-                                "messages": [],
-                                "name": "TestUartDevice",
-                                "nested_complexity": 2,
-                                "size": 349,
-                                "sloc": 14
-                            },
-                            "name": "TestUartDevice.h",
-                            "temperature": 9,
-                            "value": 3
-                        }
-                    ],
-                    "counter": {
-                        "bytes_count": 9176,
-                        "sloc_count": 190,
-                        "source_files": 2,
-                        "value_count": 21
-                    },
-                    "easy_path": "bloks/uart2can/tests",
-                    "name": "tests"
-                }
-            ],
-            "counter": {
-                "bytes_count": 43832,
-                "sloc_count": 1106,
-                "source_files": 11,
-                "value_count": 227
-            },
-            "easy_path": "bloks/uart2can",
-            "name": "uart2can"
-        },
-        {
-            "children": [
-                {
-                    "children": [
-                        {
                             "easy_path": "bloks/webserver/src/Config.cpp",
                             "meta": {
                                 "blank_lines": 16,
@@ -12144,10 +12570,10 @@
         }
     ],
     "counter": {
-        "bytes_count": 1232771,
-        "sloc_count": 30849,
-        "source_files": 387,
-        "value_count": 5070
+        "bytes_count": 1301486,
+        "sloc_count": 32204,
+        "source_files": 399,
+        "value_count": 5352
     },
     "easy_path": "bloks",
     "name": "bloks"

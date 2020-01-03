@@ -6,34 +6,7 @@ body {
 }
 
 .pretty-text {
-    font: 9pt "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.node {
-    cursor: pointer;
-}
-
-.node:hover {
-    stroke: #000;
-    stroke-width: 1.5px;
-}
-
-.node--leaf {
-    fill: white;
-}
-
-.label {
-    font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-anchor: middle;
-    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
-}
-
-.label {
-    pointer-events: none;
-}
-
-.node--root,
-.node--leaf {
+    font: 10pt "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #project_selector, .palign {
@@ -61,16 +34,41 @@ body {
 }
 
 #graphic_view {
-    width: 768px;
-    height: 768px;
+    min-width: 768px;
+    min-height: 768px;
+    max-width: 1280px;
+    max-height: 1280px;
 }
 
 #info_view {
     min-width: 256px;
+    max-width: 320px;
     flex-grow: 1;
     height: 768px;
 
-    font-size: 12pt;
-    text-align: right;
+    font: 10pt "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
     padding-left: 12pt;
+}
+
+#info_view textarea {
+    font: 6pt "Lucida Console", Monaco, monospace;
+}
+
+.two-columns {
+    width: 100%;
+    text-align: center;
+    font: 9pt "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-top: double;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.left-column {
+    text-align: right;
+}
+.right-column {
+    text-align: right;
+    font-weight: bold;
 }
