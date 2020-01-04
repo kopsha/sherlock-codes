@@ -124,7 +124,7 @@ function render_heatmap(data)
 
 function render_heatmap_view()
 {
-    let svg = create_svg_element(1024, 768);
+    let svg = create_svg_element(768, 768);
     let json_url = project_selector.val();
 
     graphic_view.empty();

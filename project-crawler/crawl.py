@@ -7,8 +7,6 @@ import timeit
 import anytree
 import anytree.exporter
 import humanize
-import magic
-import numpy
 
 from datetime import datetime
 from git.cmd import Git

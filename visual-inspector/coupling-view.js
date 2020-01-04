@@ -37,6 +37,7 @@ function render_coupling(data)
         d3.selectAll(d.incoming.map(([d]) => d.text)).attr("fill", color_in).attr("font-weight", "bold");
         d3.selectAll(d.outgoing.map(d => d.path)).attr("stroke", color_out).raise();
         d3.selectAll(d.outgoing.map(([, d]) => d.text)).attr("fill", color_out).attr("font-weight", "bold");
+        update_info_view(d);
     }
 
     function outed(d)

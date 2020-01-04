@@ -42,9 +42,9 @@
                 {
                     "easy_path": "sherlock-codes/project-crawler/code_parser.py",
                     "meta": {
-                        "blank_lines": 23,
-                        "cognitive_complexity": 18,
-                        "decision_complexity": 8,
+                        "blank_lines": 7,
+                        "cognitive_complexity": 7,
+                        "decision_complexity": 0,
                         "extension": ".py",
                         "filename": "code_parser.py",
                         "imports": [
@@ -59,16 +59,16 @@
                             "re",
                             "timeit"
                         ],
-                        "loc": 78,
+                        "loc": 17,
                         "messages": [],
                         "name": "code_parser",
-                        "nested_complexity": 4,
-                        "size": 2335,
-                        "sloc": 55
+                        "nested_complexity": 1,
+                        "size": 341,
+                        "sloc": 10
                     },
                     "name": "code_parser.py",
                     "temperature": 12,
-                    "value": 18
+                    "value": 7
                 },
                 {
                     "easy_path": "sherlock-codes/project-crawler/code_parser_interface.py",
@@ -121,7 +121,7 @@
                         "sloc": 137
                     },
                     "name": "cpp_style_parser.py",
-                    "temperature": 9,
+                    "temperature": 8,
                     "value": 35
                 },
                 {
@@ -190,7 +190,7 @@
                         "sloc": 79
                     },
                     "name": "java_style_parser.py",
-                    "temperature": 5,
+                    "temperature": 4,
                     "value": 22
                 },
                 {
@@ -219,7 +219,7 @@
                         "sloc": 145
                     },
                     "name": "python_style_parser.py",
-                    "temperature": 2,
+                    "temperature": 1,
                     "value": 31
                 },
                 {
@@ -454,10 +454,10 @@
                 }
             ],
             "counter": {
-                "bytes_count": 40895,
-                "sloc_count": 1028,
+                "bytes_count": 38901,
+                "sloc_count": 983,
                 "source_files": 13,
-                "value_count": 232
+                "value_count": 221
             },
             "easy_path": "sherlock-codes/project-crawler",
             "name": "project-crawler"
@@ -508,10 +508,10 @@
         }
     ],
     "counter": {
-        "bytes_count": 43428,
-        "sloc_count": 1095,
+        "bytes_count": 41434,
+        "sloc_count": 1050,
         "source_files": 15,
-        "value_count": 254
+        "value_count": 243
     },
     "easy_path": "sherlock-codes",
     "name": "sherlock-codes"

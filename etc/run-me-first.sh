@@ -1,8 +1,9 @@
 #!/bin/bash
-
 CWD=$(pwd)
 
-PROJECT_ROOT=$(git rev-parse --show-toplevel)
+if [[ -z "${PROJECT_ROOT}" ]]; then
+    PROJECT_ROOT=$(git rev-parse --show-toplevel)
+fi
 cd $PROJECT_ROOT
 
 [ -d ./common/settings ] || mkdir -p ./common/settings
