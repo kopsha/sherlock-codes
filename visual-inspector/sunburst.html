@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Sherlock Reports - Dependencies
+{% endblock %}
+
+
+{% block style %}
+<style>
+
+</style>
+{% endblock %}
+
+{% block head_scripts %}
+    <script src="sunburst-view.js"></script>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+    project_selector.change(function () {
+        localStorage.setItem("lastSelectedProject", $(this).val());
+        render_sunburst_view();
+    });
+
+    window.onload = render_sunburst_view();
+</script>
+{% endblock %}

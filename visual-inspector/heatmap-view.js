@@ -54,6 +54,8 @@ function render_heatmap(data)
         .sum(d => Math.max(d.value, 3))
         .sort((a, b) => b.data.temperature - a.data.temperature);
 
+    update_info_view(root);
+
     let thermal_set = new Set(Array.from(root.leaves(), d => d.data.temperature ));
     let thermal_scale = Array.from(thermal_set).sort((a,b) => b-a)
     let legend_box_width = 60

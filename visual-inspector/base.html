@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="en">
     <title>{% block title %} {% endblock %}</title>
     <link rel="stylesheet" href="inspector.css">
 
@@ -16,23 +17,32 @@
 <body>
 
     <div id="top_view" class="full-width pretty-text">
-        <p class="palign">Watson just peeked into your code, which one is it:
-            <select id="project_selector">
-                {% for file_name in datafiles %}
-                    <option value="{{ file_name }}"> {{ file_name }} </option>
-                {% endfor %}
-            </select>
-        </p>
         <div id="top_menu">
             <div class="top_menu_item">
+                &nbsp;
+            </div>
+            <div class="top_menu_item">
                 <a href="/">architecture</a>
+            </div>
+            <div class="top_menu_item">
+                <a href="/sunburst.html">complexity pie</a>
+            </div>
+            <div class="top_menu_item">
+                <a href="/coupling.html">coupling</a>
             </div>
             <div class="top_menu_item">
                 <a href="/heatmap.html">heatmap</a>
             </div>
             <div class="top_menu_item">
-                <a href="/coupling.html">coupling</a>
+                &nbsp;
             </div>
+        </div>
+        <div id="top_right">choose:
+            <select id="project_selector">
+                {% for file_name in datafiles %}
+                    <option value="{{ file_name }}"> {{ file_name }} </option>
+                {% endfor %}
+            </select>
         </div>
     </div>
     <div id="main" class="full-height">

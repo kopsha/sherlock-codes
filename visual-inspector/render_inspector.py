@@ -18,6 +18,7 @@ def render_inspector_pages(data_folder, out_folder):
         env.get_template('index.html'),
         env.get_template('heatmap.html'),
         env.get_template('coupling.html'),
+        env.get_template('sunburst.html'),
     ]
 
     for page in pages:

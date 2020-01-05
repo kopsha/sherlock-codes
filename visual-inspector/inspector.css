@@ -9,18 +9,26 @@ body {
     font: 10pt "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-#project_selector, .palign {
+#project_selector {
     display: inline;
-    line-height: 23px;
+    line-height: 21px;
 }
 
 #main {
     display: flex;
 }
 
+#top_view {
+    min-width: 1024px;
+    max-width: 1280px;
+    text-align: right;
+    display: flex;
+    vertical-align: bottom;
+}
+
 #top_menu {
-    width: 100%;
-    height: 19px;
+    width: 768px;
+    height: 34px;
     display: flex;
     flex-direction: row;
     vertical-align: middle;
@@ -29,8 +37,24 @@ body {
 .top_menu_item {
     vertical-align: middle;
     text-align: center;
-    width: 256px;
-    height: 28px;
+    line-height: 21px;
+    flex-grow: 1;
+}
+
+.top_menu_item a {
+    background-color: white;
+    text-decoration: none;
+    padding: 1px 8px 1px 8px;
+    border-radius: 3px;
+}
+
+#top_right {
+    text-align: right;
+    vertical-align: middle;
+
+    min-width: 256px;
+    max-width: 320px;
+    flex-grow: 1;
 }
 
 #graphic_view {

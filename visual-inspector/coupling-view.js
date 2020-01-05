@@ -68,6 +68,7 @@ function render_coupling(data)
     let color_in = "#00f";
 
     const root = tree(bilink(d3.hierarchy(data)));
+    update_info_view(root);
     const node = svg.append("g")
         .attr("font-family", "sans-serif")
         .attr("font-size", 8)
