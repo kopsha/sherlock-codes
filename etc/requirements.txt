@@ -6,6 +6,5 @@ Jinja2==2.10.3
 MarkupSafe==1.1.1
 pyparsing==2.4.5
 pytz==2019.3
-Send2Trash==1.5.0
 six==1.13.0
 smmap2==2.0.5

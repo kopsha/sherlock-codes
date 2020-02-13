@@ -284,7 +284,7 @@
                                                 "sloc": 16
                                             },
                                             "name": "XCTest-Gherkin-umbrella.h",
-                                            "temperature": 2,
+                                            "temperature": 4,
                                             "value": 8
                                         }
                                     ],
@@ -744,7 +744,7 @@
                         {
                             "easy_path": "turbo-connect-ios-lib/TurboConnectLibrary.framework/Headers/TurboConnectLibrary-Swift.h",
                             "meta": {
-                                "blank_lines": 88,
+                                "blank_lines": 87,
                                 "cognitive_complexity": 63,
                                 "decision_complexity": 58,
                                 "extension": ".h",
@@ -758,18 +758,18 @@
                                     "stddef.h",
                                     "stdint.h"
                                 ],
-                                "loc": 401,
+                                "loc": 404,
                                 "messages": [
                                     "[info] Arguably many lines of code, this may be ok for now.",
                                     "[info] Arguably many decisions, it is ok if it makes other files less complicated."
                                 ],
                                 "name": "TurboConnectLibrary-Swift",
                                 "nested_complexity": 1,
-                                "size": 16813,
-                                "sloc": 313
+                                "size": 16946,
+                                "sloc": 317
                             },
                             "name": "TurboConnectLibrary-Swift.h",
-                            "temperature": 21,
+                            "temperature": 23,
                             "value": 63
                         },
                         {
@@ -800,8 +800,8 @@
                         }
                     ],
                     "counter": {
-                        "bytes_count": 17398,
-                        "sloc_count": 316,
+                        "bytes_count": 17531,
+                        "sloc_count": 320,
                         "source_files": 2,
                         "value_count": 66
                     },
@@ -810,8 +810,8 @@
                 }
             ],
             "counter": {
-                "bytes_count": 17398,
-                "sloc_count": 316,
+                "bytes_count": 17531,
+                "sloc_count": 320,
                 "source_files": 2,
                 "value_count": 66
             },
@@ -827,7 +827,7 @@
                                 {
                                     "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Private-TurboConnect.h",
                                     "meta": {
-                                        "blank_lines": 10,
+                                        "blank_lines": 9,
                                         "cognitive_complexity": 2,
                                         "decision_complexity": 0,
                                         "extension": ".h",
@@ -838,15 +838,15 @@
                                         "is_code": true,
                                         "is_directory": false,
                                         "libraries": [],
-                                        "loc": 11,
+                                        "loc": 10,
                                         "messages": [],
                                         "name": "Private-TurboConnect",
                                         "nested_complexity": 0,
-                                        "size": 239,
+                                        "size": 190,
                                         "sloc": 1
                                     },
                                     "name": "Private-TurboConnect.h",
-                                    "temperature": 6,
+                                    "temperature": 7,
                                     "value": 2
                                 },
                                 {
@@ -913,8 +913,8 @@
                                                 "filename": "CoreManager.mm",
                                                 "imports": [
                                                     "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/CoreManager.h",
-                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/NSString+Core.h",
-                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers/NSData+Core.h"
+                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/Helpers/NSData+Core.h",
+                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/NSString+Core.h"
                                                 ],
                                                 "is_code": true,
                                                 "is_directory": false,
@@ -984,175 +984,86 @@
                                             "name": "NSString+Core.m",
                                             "temperature": 2,
                                             "value": 2
-                                        }
-                                    ],
-                                    "counter": {
-                                        "bytes_count": 7312,
-                                        "sloc_count": 177,
-                                        "source_files": 4,
-                                        "value_count": 37
-                                    },
-                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core",
-                                    "name": "Core"
-                                },
-                                {
-                                    "children": [
-                                        {
-                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers/NSData+Core.h",
-                                            "meta": {
-                                                "blank_lines": 12,
-                                                "cognitive_complexity": 3,
-                                                "decision_complexity": 0,
-                                                "extension": ".h",
-                                                "filename": "NSData+Core.h",
-                                                "imports": [],
-                                                "is_code": true,
-                                                "is_directory": false,
-                                                "libraries": [
-                                                    "Foundation/Foundation.h",
-                                                    "vector"
-                                                ],
-                                                "loc": 18,
-                                                "messages": [],
-                                                "name": "NSData+Core",
-                                                "nested_complexity": 0,
-                                                "size": 334,
-                                                "sloc": 6
-                                            },
-                                            "name": "NSData+Core.h",
-                                            "temperature": 3,
-                                            "value": 3
                                         },
-                                        {
-                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers/NSData+Core.m",
-                                            "meta": {
-                                                "blank_lines": 15,
-                                                "cognitive_complexity": 4,
-                                                "decision_complexity": 1,
-                                                "extension": ".m",
-                                                "filename": "NSData+Core.m",
-                                                "imports": [
-                                                    "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers/NSData+Core.h"
-                                                ],
-                                                "is_code": true,
-                                                "is_directory": false,
-                                                "libraries": [],
-                                                "loc": 29,
-                                                "messages": [],
-                                                "name": "NSData+Core",
-                                                "nested_complexity": 2,
-                                                "size": 603,
-                                                "sloc": 14
-                                            },
-                                            "name": "NSData+Core.m",
-                                            "temperature": 3,
-                                            "value": 4
-                                        }
-                                    ],
-                                    "counter": {
-                                        "bytes_count": 937,
-                                        "sloc_count": 20,
-                                        "source_files": 2,
-                                        "value_count": 7
-                                    },
-                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Helpers",
-                                    "name": "Helpers"
-                                },
-                                {
-                                    "children": [
                                         {
                                             "children": [
                                                 {
-                                                    "children": [
-                                                        {
-                                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Frameworks/Alamofire.framework/Headers/Alamofire-Swift.h",
-                                                            "meta": {
-                                                                "blank_lines": 39,
-                                                                "cognitive_complexity": 63,
-                                                                "decision_complexity": 58,
-                                                                "extension": ".h",
-                                                                "filename": "Alamofire-Swift.h",
-                                                                "imports": [],
-                                                                "is_code": true,
-                                                                "is_directory": false,
-                                                                "libraries": [
-                                                                    "Foundation/Foundation.h",
-                                                                    "stdbool.h",
-                                                                    "stddef.h",
-                                                                    "stdint.h"
-                                                                ],
-                                                                "loc": 267,
-                                                                "messages": [
-                                                                    "[info] Arguably many decisions, it is ok if it makes other files less complicated."
-                                                                ],
-                                                                "name": "Alamofire-Swift",
-                                                                "nested_complexity": 0,
-                                                                "size": 11015,
-                                                                "sloc": 228
-                                                            },
-                                                            "name": "Alamofire-Swift.h",
-                                                            "temperature": 1,
-                                                            "value": 63
-                                                        },
-                                                        {
-                                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Frameworks/Alamofire.framework/Headers/Alamofire.h",
-                                                            "meta": {
-                                                                "blank_lines": 26,
-                                                                "cognitive_complexity": 1,
-                                                                "decision_complexity": 0,
-                                                                "extension": ".h",
-                                                                "filename": "Alamofire.h",
-                                                                "imports": [],
-                                                                "is_code": true,
-                                                                "is_directory": false,
-                                                                "libraries": [],
-                                                                "loc": 29,
-                                                                "messages": [],
-                                                                "name": "Alamofire",
-                                                                "nested_complexity": 0,
-                                                                "size": 1332,
-                                                                "sloc": 3
-                                                            },
-                                                            "name": "Alamofire.h",
-                                                            "temperature": 1,
-                                                            "value": 1
-                                                        }
-                                                    ],
-                                                    "counter": {
-                                                        "bytes_count": 12347,
-                                                        "sloc_count": 231,
-                                                        "source_files": 2,
-                                                        "value_count": 64
+                                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/Helpers/NSData+Core.h",
+                                                    "meta": {
+                                                        "blank_lines": 12,
+                                                        "cognitive_complexity": 3,
+                                                        "decision_complexity": 0,
+                                                        "extension": ".h",
+                                                        "filename": "NSData+Core.h",
+                                                        "imports": [],
+                                                        "is_code": true,
+                                                        "is_directory": false,
+                                                        "libraries": [
+                                                            "Foundation/Foundation.h",
+                                                            "vector"
+                                                        ],
+                                                        "loc": 18,
+                                                        "messages": [],
+                                                        "name": "NSData+Core",
+                                                        "nested_complexity": 0,
+                                                        "size": 334,
+                                                        "sloc": 6
                                                     },
-                                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Frameworks/Alamofire.framework/Headers",
-                                                    "name": "Headers"
+                                                    "name": "NSData+Core.h",
+                                                    "temperature": 4,
+                                                    "value": 3
+                                                },
+                                                {
+                                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/Helpers/NSData+Core.m",
+                                                    "meta": {
+                                                        "blank_lines": 15,
+                                                        "cognitive_complexity": 4,
+                                                        "decision_complexity": 1,
+                                                        "extension": ".m",
+                                                        "filename": "NSData+Core.m",
+                                                        "imports": [
+                                                            "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/Helpers/NSData+Core.h"
+                                                        ],
+                                                        "is_code": true,
+                                                        "is_directory": false,
+                                                        "libraries": [],
+                                                        "loc": 29,
+                                                        "messages": [],
+                                                        "name": "NSData+Core",
+                                                        "nested_complexity": 2,
+                                                        "size": 603,
+                                                        "sloc": 14
+                                                    },
+                                                    "name": "NSData+Core.m",
+                                                    "temperature": 4,
+                                                    "value": 4
                                                 }
                                             ],
                                             "counter": {
-                                                "bytes_count": 12347,
-                                                "sloc_count": 231,
+                                                "bytes_count": 937,
+                                                "sloc_count": 20,
                                                 "source_files": 2,
-                                                "value_count": 64
+                                                "value_count": 7
                                             },
-                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Frameworks/Alamofire.framework",
-                                            "name": "Alamofire.framework"
+                                            "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core/Helpers",
+                                            "name": "Helpers"
                                         }
                                     ],
                                     "counter": {
-                                        "bytes_count": 12347,
-                                        "sloc_count": 231,
-                                        "source_files": 2,
-                                        "value_count": 64
+                                        "bytes_count": 8249,
+                                        "sloc_count": 197,
+                                        "source_files": 6,
+                                        "value_count": 44
                                     },
-                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Frameworks",
-                                    "name": "Frameworks"
+                                    "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework/Core",
+                                    "name": "Core"
                                 }
                             ],
                             "counter": {
-                                "bytes_count": 21420,
-                                "sloc_count": 432,
-                                "source_files": 10,
-                                "value_count": 113
+                                "bytes_count": 9024,
+                                "sloc_count": 201,
+                                "source_files": 8,
+                                "value_count": 49
                             },
                             "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework/TurboConnectFramework",
                             "name": "TurboConnectFramework"
@@ -1194,30 +1105,30 @@
                         }
                     ],
                     "counter": {
-                        "bytes_count": 21524,
-                        "sloc_count": 432,
-                        "source_files": 11,
-                        "value_count": 114
+                        "bytes_count": 9128,
+                        "sloc_count": 201,
+                        "source_files": 9,
+                        "value_count": 50
                     },
                     "easy_path": "turbo-connect-ios-lib/TurboConnectFramework/TurboConnectFramework",
                     "name": "TurboConnectFramework"
                 }
             ],
             "counter": {
-                "bytes_count": 21524,
-                "sloc_count": 432,
-                "source_files": 11,
-                "value_count": 114
+                "bytes_count": 9128,
+                "sloc_count": 201,
+                "source_files": 9,
+                "value_count": 50
             },
             "easy_path": "turbo-connect-ios-lib/TurboConnectFramework",
             "name": "TurboConnectFramework"
         }
     ],
     "counter": {
-        "bytes_count": 237262,
-        "sloc_count": 4854,
-        "source_files": 34,
-        "value_count": 1002
+        "bytes_count": 224999,
+        "sloc_count": 4627,
+        "source_files": 32,
+        "value_count": 938
     },
     "easy_path": "turbo-connect-ios-lib",
     "name": "turbo-connect-ios-lib"

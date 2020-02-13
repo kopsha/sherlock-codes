@@ -128,7 +128,7 @@
                     "easy_path": "sherlock-codes/project-crawler/crawl.py",
                     "meta": {
                         "blank_lines": 33,
-                        "cognitive_complexity": 35,
+                        "cognitive_complexity": 33,
                         "decision_complexity": 15,
                         "extension": ".py",
                         "filename": "crawl.py",
@@ -146,22 +146,20 @@
                             "git.cmd",
                             "humanize",
                             "json",
-                            "magic",
-                            "numpy",
                             "os",
                             "re",
                             "timeit"
                         ],
-                        "loc": 158,
+                        "loc": 156,
                         "messages": [],
                         "name": "crawl",
                         "nested_complexity": 6,
-                        "size": 4851,
-                        "sloc": 125
+                        "size": 4825,
+                        "sloc": 123
                     },
                     "name": "crawl.py",
-                    "temperature": 39,
-                    "value": 35
+                    "temperature": 40,
+                    "value": 33
                 },
                 {
                     "easy_path": "sherlock-codes/project-crawler/java_style_parser.py",
@@ -454,10 +452,10 @@
                 }
             ],
             "counter": {
-                "bytes_count": 38901,
-                "sloc_count": 983,
+                "bytes_count": 38875,
+                "sloc_count": 981,
                 "source_files": 13,
-                "value_count": 221
+                "value_count": 219
             },
             "easy_path": "sherlock-codes/project-crawler",
             "name": "project-crawler"
@@ -485,21 +483,21 @@
                             "shutil",
                             "timeit"
                         ],
-                        "loc": 63,
+                        "loc": 64,
                         "messages": [],
                         "name": "render_inspector",
                         "nested_complexity": 3,
-                        "size": 1892,
-                        "sloc": 47
+                        "size": 1935,
+                        "sloc": 48
                     },
                     "name": "render_inspector.py",
-                    "temperature": 8,
+                    "temperature": 9,
                     "value": 16
                 }
             ],
             "counter": {
-                "bytes_count": 1892,
-                "sloc_count": 47,
+                "bytes_count": 1935,
+                "sloc_count": 48,
                 "source_files": 1,
                 "value_count": 16
             },
@@ -508,10 +506,10 @@
         }
     ],
     "counter": {
-        "bytes_count": 41434,
-        "sloc_count": 1050,
+        "bytes_count": 41451,
+        "sloc_count": 1049,
         "source_files": 15,
-        "value_count": 243
+        "value_count": 241
     },
     "easy_path": "sherlock-codes",
     "name": "sherlock-codes"
