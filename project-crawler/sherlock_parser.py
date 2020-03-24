@@ -12,7 +12,7 @@ def make_extension_map():
     ext_map = {}
     current_module = sys.modules[__name__]
     all_parsers = [
-        (name,cls) for name,cls in inspect.getmembers(current_module)
+        (name, cls.__subclasses__(), cls) for name,cls in inspect.getmembers(current_module)
         if inspect.isclass(cls)
             and issubclass(cls, CodeParserInterface)
             and name != 'CodeParserInterface'

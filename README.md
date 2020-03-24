@@ -16,6 +16,15 @@ The source code inspector is back in town
 * [ ] improve coupling based on usage of top-level symbols
 * [ ] improve UI layout
 
+Next sprint
+* [ ] run analysis as a service
+* [ ] add support for cloning a git repo and run analysis on it
+* [ ] filtering
+
+* [ ] render a project as static portable html
+* [ ] complexity trends
+* [ ] symbolic wordcloud
+
 * [x] parse c/c++/obj-c files
 * [x] parse python files
 * [x] parse java/kotlin files
@@ -24,13 +33,8 @@ The source code inspector is back in town
 * [ ] add go parser
 * [ ] add javascript parser
 
-* [ ] symbolic wordcloud
-* [ ] complexity trends
-* [ ] filtering
 * [ ] external libraries report
 
 * [ ] add a view to display aggregated data
 * [ ] add an admin (or restricted) view for adding a new git repo url
 
-* [ ] add support for cloning a git repo and run analysis on it
-* [ ] render a project as static portable html
