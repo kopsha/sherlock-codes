@@ -2,7 +2,7 @@ anytree==2.7.3
 gitdb2==2.0.6
 GitPython==3.0.5
 humanize==0.5.1
-Jinja2==2.10.3
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 pyparsing==2.4.5
 pytz==2019.3
