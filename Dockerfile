@@ -1,30 +1,32 @@
-FROM python:3.8.1-alpine
+FROM python:3-slim
+
+RUN apt-get update && \
+    apt-get install -y entr git && \
+    pip install --upgrade pip
 
 RUN mkdir /app
 WORKDIR /app
 
 # pick all source files
-ADD common/*.py ./common/
-ADD etc/* ./etc/
-ADD project-crawler/*.py ./project-crawler/
-ADD visual-inspector/*.py ./visual-inspector/
-ADD visual-inspector/*.js ./visual-inspector/
-ADD visual-inspector/*.html ./visual-inspector/
-ADD visual-inspector/*.css ./visual-inspector/
-ADD visual-inspector/run ./visual-inspector/
-ADD visual-inspector/data/*.json ./visual-inspector/data/
-ADD visual-inspector/html/*.min.js ./visual-inspector/html/
+COPY common/*.py ./common/
+COPY etc/* ./etc/
+COPY project-crawler/*.py ./project-crawler/
+COPY visual-inspector/*.py ./visual-inspector/
+COPY visual-inspector/*.js ./visual-inspector/
+COPY visual-inspector/*.html ./visual-inspector/
+COPY visual-inspector/*.css ./visual-inspector/
+COPY visual-inspector/data/*.json ./visual-inspector/data/
+COPY visual-inspector/html/*.min.js ./visual-inspector/html/
 
 # prepare the machine
-WORKDIR /app/etc/
-RUN pip install -r requirements.txt
-
-# project setup
+RUN pip install -r ./etc/requirements.txt
 ENV PROJECT_ROOT=/app
-RUN source ./run-me-first.sh
+RUN mkdir -p ./common/settings
+RUN echo "PROJECT_ROOT = \"$PROJECT_ROOT\""> ./common/settings/__init__.py
 ENV PYTHONPATH=$PROJECT_ROOT/common
 
 # and goooo
-WORKDIR /app/visual-inspector
+WORKDIR /app
+COPY ./entrypoint.sh ./
 EXPOSE 8000/tcp
-CMD [ "/bin/sh", "./run" ]
+ENTRYPOINT [ "./entrypoint.sh" ]
