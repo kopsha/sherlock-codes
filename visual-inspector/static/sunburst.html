@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="en">
+    <title>
+    Sherlock Reports - Dependencies
+</title>
+    <link rel="stylesheet" href="inspector.css">
+
+    
+<style>
+
+</style>
+
+
+    <script src="d3.v5.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="inspector-utils.js"></script>
+
+    
+    <script src="sunburst-view.js"></script>
+
+</head>
+<body>
+
+    <div id="top_view" class="full-width pretty-text">
+        <div id="top_menu">
+            <div class="top_menu_item">
+                &nbsp;
+            </div>
+            <div class="top_menu_item">
+                <a href="/">architecture</a>
+            </div>
+            <div class="top_menu_item">
+                <a href="/sunburst.html">complexity pie</a>
+            </div>
+            <div class="top_menu_item">
+                <a href="/coupling.html">coupling</a>
+            </div>
+            <div class="top_menu_item">
+                <a href="/heatmap.html">heatmap</a>
+            </div>
+            <div class="top_menu_item">
+                &nbsp;
+            </div>
+        </div>
+        <div id="top_right">choose:
+            <select id="project_selector">
+                
+                    <option value="bloks.json"> bloks.json </option>
+                
+                    <option value="entr.json"> entr.json </option>
+                
+                    <option value="gui-lcd.json"> gui-lcd.json </option>
+                
+                    <option value="gui.json"> gui.json </option>
+                
+                    <option value="mission-control.json"> mission-control.json </option>
+                
+                    <option value="optimal-transaction-hunter.json"> optimal-transaction-hunter.json </option>
+                
+                    <option value="sherlock-codes.json"> sherlock-codes.json </option>
+                
+                    <option value="turbo-connect-android-lib.json"> turbo-connect-android-lib.json </option>
+                
+                    <option value="turbo-connect-core.json"> turbo-connect-core.json </option>
+                
+                    <option value="turbo-connect-ios-lib.json"> turbo-connect-ios-lib.json </option>
+                
+                    <option value="turbo-sdk.json"> turbo-sdk.json </option>
+                
+            </select>
+        </div>
+    </div>
+    <div id="main" class="full-height">
+        <div id="graphic_view">
+             
+        </div>
+        <div id="info_view">
+             
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // TODO: find a better way for exposing these variables
+        let project_selector = $("#project_selector");
+        let graphic_view = $("#graphic_view");
+        let info_view = $("#info_view");
+
+        lastProject = localStorage.getItem("lastSelectedProject")
+        if (lastProject) { project_selector.val(lastProject); }
+    </script>
+
+    
+<script type="text/javascript">
+    project_selector.change(function () {
+        localStorage.setItem("lastSelectedProject", $(this).val());
+        render_sunburst_view();
+    });
+
+    window.onload = render_sunburst_view();
+</script>
+
+
+</body>
+</html>

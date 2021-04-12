@@ -1,0 +1,257 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "easy_path": "root/aesthetic_tree_cutting/functional.py",
+                    "meta": {
+                        "blank_lines": 45,
+                        "cognitive_complexity": 21,
+                        "decision_complexity": 15,
+                        "extension": ".py",
+                        "filename": "functional.py",
+                        "imports": [],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "datetime",
+                            "timeit"
+                        ],
+                        "loc": 149,
+                        "messages": [],
+                        "name": "functional",
+                        "nested_complexity": 4,
+                        "size": 3839,
+                        "sloc": 104
+                    },
+                    "name": "functional.py",
+                    "temperature": 6,
+                    "value": 21
+                },
+                {
+                    "easy_path": "root/aesthetic_tree_cutting/iterative.py",
+                    "meta": {
+                        "blank_lines": 57,
+                        "cognitive_complexity": 10,
+                        "decision_complexity": 6,
+                        "extension": ".py",
+                        "filename": "iterative.py",
+                        "imports": [],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "itertools"
+                        ],
+                        "loc": 95,
+                        "messages": [],
+                        "name": "iterative",
+                        "nested_complexity": 3,
+                        "size": 2513,
+                        "sloc": 38
+                    },
+                    "name": "iterative.py",
+                    "temperature": 2,
+                    "value": 10
+                }
+            ],
+            "counter": {
+                "bytes_count": 6352,
+                "sloc_count": 142,
+                "source_files": 2,
+                "value_count": 31
+            },
+            "easy_path": "root/aesthetic_tree_cutting",
+            "name": "aesthetic_tree_cutting"
+        },
+        {
+            "children": [
+                {
+                    "easy_path": "root/frouting/easy.py",
+                    "meta": {
+                        "blank_lines": 86,
+                        "cognitive_complexity": 36,
+                        "decision_complexity": 22,
+                        "extension": ".py",
+                        "filename": "easy.py",
+                        "imports": [],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "collections",
+                            "copy",
+                            "csv",
+                            "datetime",
+                            "math",
+                            "matplotlib.pyplot",
+                            "timeit"
+                        ],
+                        "loc": 257,
+                        "messages": [],
+                        "name": "easy",
+                        "nested_complexity": 7,
+                        "size": 6562,
+                        "sloc": 171
+                    },
+                    "name": "easy.py",
+                    "temperature": 1,
+                    "value": 36
+                },
+                {
+                    "easy_path": "root/frouting/evolution.py",
+                    "meta": {
+                        "blank_lines": 194,
+                        "cognitive_complexity": 79,
+                        "decision_complexity": 58,
+                        "extension": ".py",
+                        "filename": "evolution.py",
+                        "imports": [
+                            "root/frouting/pathfinding.py"
+                        ],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "collections",
+                            "copy",
+                            "csv",
+                            "datetime",
+                            "functools",
+                            "math",
+                            "matplotlib.pyplot",
+                            "operator",
+                            "random",
+                            "statistics",
+                            "timeit"
+                        ],
+                        "loc": 694,
+                        "messages": [
+                            "[warning] Quite many lines of code, plan on refactoring.",
+                            "[info] Arguably many decisions, it is ok if it makes other files less complicated."
+                        ],
+                        "name": "evolution",
+                        "nested_complexity": 6,
+                        "size": 19949,
+                        "sloc": 500
+                    },
+                    "name": "evolution.py",
+                    "temperature": 7,
+                    "value": 79
+                },
+                {
+                    "easy_path": "root/frouting/pathfinding.py",
+                    "meta": {
+                        "blank_lines": 89,
+                        "cognitive_complexity": 57,
+                        "decision_complexity": 40,
+                        "extension": ".py",
+                        "filename": "pathfinding.py",
+                        "imports": [],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "collections",
+                            "copy",
+                            "csv",
+                            "datetime",
+                            "math",
+                            "matplotlib.pyplot",
+                            "queue",
+                            "random",
+                            "timeit"
+                        ],
+                        "loc": 361,
+                        "messages": [
+                            "[info] Arguably many decisions, it is ok if it makes other files less complicated."
+                        ],
+                        "name": "pathfinding",
+                        "nested_complexity": 7,
+                        "size": 10470,
+                        "sloc": 272
+                    },
+                    "name": "pathfinding.py",
+                    "temperature": 2,
+                    "value": 57
+                }
+            ],
+            "counter": {
+                "bytes_count": 36981,
+                "sloc_count": 943,
+                "source_files": 3,
+                "value_count": 172
+            },
+            "easy_path": "root/frouting",
+            "name": "frouting"
+        },
+        {
+            "children": [
+                {
+                    "easy_path": "root/pin-variations/almost_pythonic.py",
+                    "meta": {
+                        "blank_lines": 42,
+                        "cognitive_complexity": 8,
+                        "decision_complexity": 3,
+                        "extension": ".py",
+                        "filename": "almost_pythonic.py",
+                        "imports": [],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "collections"
+                        ],
+                        "loc": 78,
+                        "messages": [],
+                        "name": "almost_pythonic",
+                        "nested_complexity": 4,
+                        "size": 2246,
+                        "sloc": 36
+                    },
+                    "name": "almost_pythonic.py",
+                    "temperature": 2,
+                    "value": 8
+                },
+                {
+                    "easy_path": "root/pin-variations/pythonic.py",
+                    "meta": {
+                        "blank_lines": 20,
+                        "cognitive_complexity": 6,
+                        "decision_complexity": 1,
+                        "extension": ".py",
+                        "filename": "pythonic.py",
+                        "imports": [],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "datetime",
+                            "itertools",
+                            "timeit"
+                        ],
+                        "loc": 71,
+                        "messages": [],
+                        "name": "pythonic",
+                        "nested_complexity": 2,
+                        "size": 1706,
+                        "sloc": 51
+                    },
+                    "name": "pythonic.py",
+                    "temperature": 1,
+                    "value": 6
+                }
+            ],
+            "counter": {
+                "bytes_count": 3952,
+                "sloc_count": 87,
+                "source_files": 2,
+                "value_count": 14
+            },
+            "easy_path": "root/pin-variations",
+            "name": "pin-variations"
+        }
+    ],
+    "counter": {
+        "bytes_count": 47285,
+        "sloc_count": 1172,
+        "source_files": 7,
+        "value_count": 217
+    },
+    "easy_path": "root",
+    "name": "root"
+}
