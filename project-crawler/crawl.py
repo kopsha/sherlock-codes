@@ -11,7 +11,7 @@ import humanize
 from datetime import datetime
 from git.cmd import Git
 
-from utils import print_stage, pp
+from common.utils import print_stage
 from source_inspector import SourceInspector
 
 

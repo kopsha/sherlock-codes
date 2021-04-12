@@ -1,7 +1,8 @@
 import inspect
 import sys
+from pprint import pprint
 
-from utils import print_stage, static_var, pp
+from common.utils import print_stage, static_var
 
 from code_parser_interface import CodeParserInterface
 from cpp_style_parser import CppStyleParser
@@ -12,7 +13,8 @@ def make_extension_map():
     ext_map = {}
     current_module = sys.modules[__name__]
     all_parsers = [
-        (name, cls.__subclasses__(), cls) for name,cls in inspect.getmembers(current_module)
+        (name, cls)
+        for name, cls in inspect.getmembers(current_module)
         if inspect.isclass(cls)
             and issubclass(cls, CodeParserInterface)
             and name != 'CodeParserInterface'
@@ -40,14 +42,15 @@ def parser_factory(ext):
 
 def self_check():
     print_stage('Self check')
-    
+
     cStyleParser = parser_factory('.cpp')
     another = parser_factory('.mm')
 
     cStyleParser.remove_comments_and_literals('qwertyuiop', [])
     another.remove_comments_and_literals('qwertyuiop', [])
 
-    pp(parser_factory.extension_map, pretext='Supported extension map')
+    print('Supported extensions map')
+    pprint(parser_factory.extension_map)
 
 
 if __name__ == '__main__':

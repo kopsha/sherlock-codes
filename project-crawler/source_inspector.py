@@ -1,5 +1,6 @@
 from datetime import datetime
-from utils import print_stage, pp
+from common.utils import print_stage
+from pprint import pprint
 
 import os
 import re
@@ -65,13 +66,14 @@ def run_self_check():
     source_files = [fn for fn in os.listdir(src_folder)]
 
     print_stage('available_parsers')
-    pp(SourceInspector.available_parsers)
+    pprint(SourceInspector.available_parsers)
 
     print_stage('testdata files')
     for file in source_files:
         parser = SourceInspector(os.sep.join([src_folder, file]))
         parser.inspect()
-        pp(parser.metadata(), pretext=file)
+        print(file)
+        pprint(parser.metadata())
 
 
 if __name__ == '__main__':

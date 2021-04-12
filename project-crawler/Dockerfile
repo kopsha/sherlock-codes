@@ -12,7 +12,8 @@ COPY ./etc/ ./etc/
 RUN pip install -r ./etc/requirements.txt
 
 # pick all source files
-COPY *.py ./
+COPY ./*.py ./
+COPY ./common/ ./common/
 COPY ./entrypoint.sh /
 
 RUN mkdir ./scope
