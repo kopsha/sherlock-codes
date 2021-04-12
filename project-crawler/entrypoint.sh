@@ -3,8 +3,9 @@ set -e
 
 crawl()
 {
-	echo "crawl() invoked with '$@'"
-    python crawl.py
+    out="./out/$2"
+	echo "crawl will write to ${out}"
+    python crawl.py -r ./scope -o $out
 }
 
 run_all_tests()
@@ -19,6 +20,12 @@ show_usage_instructions()
     echo "./$(basename $0) says: I help those who help themselves."
 }
 
+try_exec()
+{
+    echo "trying '$@'"
+    command=$@
+    $command
+}
 
 main()
 {
@@ -27,7 +34,7 @@ main()
         crawl) crawl $@ ;;
         check | test) run_all_tests ;;
         help) show_usage_instructions ;;
-        *) help ;;
+        *) try_exec $@ ;;
     esac
 }
 

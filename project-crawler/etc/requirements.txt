@@ -1,0 +1,8 @@
+anytree
+gitdb2
+GitPython
+humanize
+pyparsing
+pytz
+smmap2
+pytest

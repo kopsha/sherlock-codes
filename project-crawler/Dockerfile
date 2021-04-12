@@ -8,15 +8,16 @@ RUN mkdir /main
 WORKDIR /main
 
 # prepare the machine
+COPY ./etc/ ./etc/
 RUN pip install -r ./etc/requirements.txt
-ENV PROJECT_ROOT=/app
-RUN mkdir -p ./common/settings
-RUN echo "PROJECT_ROOT = \"$PROJECT_ROOT\""> ./common/settings/__init__.py
-ENV PYTHONPATH=$PROJECT_ROOT/common
-
 
 # pick all source files
 COPY *.py ./
-COPY ./entrypoint.sh ./
+COPY ./entrypoint.sh /
 
-ENTRYPOINT [ "./entrypoint.sh" ]
+RUN mkdir ./scope
+RUN mkdir ./out
+VOLUME ["/main/scope"]
+VOLUME ["/main/out"]
+
+ENTRYPOINT [ "/entrypoint.sh" ]
