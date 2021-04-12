@@ -4,13 +4,12 @@ import shutil
 import timeit
 
 from datetime import datetime
-from utils import print_stage
 
 import jinja2
 
 
 def render_inspector_pages(data_folder, out_folder):
-    print_stage('Rendering templates')
+    print('Rendering templates')
 
     datafiles = sorted([f for f in os.listdir(data_folder) if f.endswith('.json')])
     env = jinja2.Environment(loader=jinja2.FileSystemLoader('./'))
@@ -41,6 +40,14 @@ def render_inspector_pages(data_folder, out_folder):
         print(f'{src} -> {dst}')
         shutil.copyfile(src, dst)
 
+    print('Copying lib files')
+    lib_files = [f for f in os.listdir('./static_lib') if f.endswith('.js')]
+    for f in lib_files:
+        src = os.path.join('./static_lib/', f)
+        dst = os.path.join(out_folder, f)
+        print(f'{src} -> {dst}')
+        shutil.copyfile(src, dst)
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -60,4 +67,4 @@ def main():
 if __name__ == '__main__':
     duration = timeit.timeit(main, number=1)
     now = datetime.now().strftime('%H:%M:%S')
-    print_stage(f'[{now}] Finished in {duration:.2f} seconds.')
+    print(f'[{now}] Finished in {duration:.2f} seconds.')

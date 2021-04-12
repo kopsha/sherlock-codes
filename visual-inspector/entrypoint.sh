@@ -3,30 +3,16 @@ set -e
 
 start_webserver()
 {
-    echo "Starting the web server."
-    cd ./visual-inspector
     python render_inspector.py
     cd ./html/
+    echo "Starting the web server."
     python -m http.server
-    cd ../../
-}
-
-crawl()
-{
-	echo "crawl() invoked with '$@'"
-    export PYTHONDONTWRITEBYTECODE=true
-    export DEBUG=true
-    #find . -name "*.py" | entr -r pytest -v
-    cd project-crawler
-    python crawl.py
-    cd ..
+    cd ../
 }
 
 run_all_tests()
 {
     echo "(not defined yet) Running all tests."
-    export APP_TEST_MODE=true
-    pytest -v
 }
 
 show_usage_instructions()
@@ -40,7 +26,6 @@ main()
     arg="$1"
     case ${arg} in
         start | webserver) start_webserver ;;
-        crawl) crawl $@ ;;
         check | test) run_all_tests ;;
         help) show_usage_instructions ;;
         *) start_webserver ;;
