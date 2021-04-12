@@ -16,9 +16,9 @@ COPY ./*.py ./
 COPY ./common/ ./common/
 COPY ./entrypoint.sh /
 
-RUN mkdir ./scope
+RUN mkdir ./root
 RUN mkdir ./out
-VOLUME ["/main/scope"]
+VOLUME ["/main/root"]
 VOLUME ["/main/out"]
 
 ENTRYPOINT [ "/entrypoint.sh" ]

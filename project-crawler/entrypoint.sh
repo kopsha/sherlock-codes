@@ -5,7 +5,7 @@ crawl()
 {
     out="./out/$2"
 	echo "crawl will write to ${out}"
-    python crawl.py -r ./scope -o $out
+    python crawl.py -r ./root -o $out
 }
 
 run_all_tests()
