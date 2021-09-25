@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns= "http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="en">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="inspector.css">
+
+    {% block style %} {% endblock %}
+
+    <script src="d3.v5.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="inspector-utils.js"></script>
+
+    {% block head_scripts %} {% endblock %}
+</head>
+<body>
+
+    <div id="top_view" class="full-width pretty-text">
+        <div id="top_menu">
+            <div class="top_menu_item">
+                &nbsp;
+            </div>
+            <div class="top_menu_item">
+                <a href="/">architecture</a>
+            </div>
+            <div class="top_menu_item">
+                <a href="/sunburst.html">complexity pie</a>
+            </div>
+            <div class="top_menu_item">
+                <a href="/coupling.html">coupling</a>
+            </div>
+            <div class="top_menu_item">
+                <a href="/heatmap.html">heatmap</a>
+            </div>
+            <div class="top_menu_item">
+                &nbsp;
+            </div>
+        </div>
+        <div id="top_right">choose:
+            <select id="project_selector">
+                {% for file_name in datafiles %}
+                    <option value="{{ file_name }}"> {{ file_name }} </option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+    <div id="main" class="full-height">
+        <div id="graphic_view">
+            {% block graphic_view %} {% endblock %}
+        </div>
+        <div id="info_view">
+            {% block info_view %} {% endblock %}
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // TODO: find a better way for exposing these variables
+        let project_selector = $("#project_selector");
+        let graphic_view = $("#graphic_view");
+        let info_view = $("#info_view");
+
+        lastProject = localStorage.getItem("lastSelectedProject")
+        if (lastProject) { project_selector.val(lastProject); }
+    </script>
+
+    {% block scripts %} {% endblock %}
+
+</body>
+</html>

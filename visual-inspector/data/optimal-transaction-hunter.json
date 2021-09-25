@@ -1,0 +1,339 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "easy_path": "optimal-transaction-hunter/src/buyers/__init__.py",
+                            "meta": {
+                                "blank_lines": 1,
+                                "cognitive_complexity": 1,
+                                "decision_complexity": 0,
+                                "extension": ".py",
+                                "filename": "__init__.py",
+                                "imports": [],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [],
+                                "loc": 1,
+                                "messages": [],
+                                "name": "__init__",
+                                "nested_complexity": 0,
+                                "size": 0,
+                                "sloc": 0
+                            },
+                            "name": "__init__.py",
+                            "temperature": 1,
+                            "value": 1
+                        },
+                        {
+                            "children": [
+                                {
+                                    "easy_path": "optimal-transaction-hunter/src/buyers/buyers/__init__.py",
+                                    "meta": {
+                                        "blank_lines": 1,
+                                        "cognitive_complexity": 1,
+                                        "decision_complexity": 0,
+                                        "extension": ".py",
+                                        "filename": "__init__.py",
+                                        "imports": [],
+                                        "is_code": true,
+                                        "is_directory": false,
+                                        "libraries": [],
+                                        "loc": 1,
+                                        "messages": [],
+                                        "name": "__init__",
+                                        "nested_complexity": 0,
+                                        "size": 0,
+                                        "sloc": 0
+                                    },
+                                    "name": "__init__.py",
+                                    "temperature": 1,
+                                    "value": 1
+                                },
+                                {
+                                    "easy_path": "optimal-transaction-hunter/src/buyers/buyers/items.py",
+                                    "meta": {
+                                        "blank_lines": 12,
+                                        "cognitive_complexity": 2,
+                                        "decision_complexity": 0,
+                                        "extension": ".py",
+                                        "filename": "items.py",
+                                        "imports": [],
+                                        "is_code": true,
+                                        "is_directory": false,
+                                        "libraries": [
+                                            "scrapy"
+                                        ],
+                                        "loc": 15,
+                                        "messages": [],
+                                        "name": "items",
+                                        "nested_complexity": 1,
+                                        "size": 287,
+                                        "sloc": 3
+                                    },
+                                    "name": "items.py",
+                                    "temperature": 1,
+                                    "value": 2
+                                },
+                                {
+                                    "easy_path": "optimal-transaction-hunter/src/buyers/buyers/middlewares.py",
+                                    "meta": {
+                                        "blank_lines": 71,
+                                        "cognitive_complexity": 4,
+                                        "decision_complexity": 0,
+                                        "extension": ".py",
+                                        "filename": "middlewares.py",
+                                        "imports": [],
+                                        "is_code": true,
+                                        "is_directory": false,
+                                        "libraries": [
+                                            "scrapy"
+                                        ],
+                                        "loc": 104,
+                                        "messages": [],
+                                        "name": "middlewares",
+                                        "nested_complexity": 3,
+                                        "size": 3597,
+                                        "sloc": 33
+                                    },
+                                    "name": "middlewares.py",
+                                    "temperature": 1,
+                                    "value": 4
+                                },
+                                {
+                                    "easy_path": "optimal-transaction-hunter/src/buyers/buyers/pipelines.py",
+                                    "meta": {
+                                        "blank_lines": 9,
+                                        "cognitive_complexity": 2,
+                                        "decision_complexity": 0,
+                                        "extension": ".py",
+                                        "filename": "pipelines.py",
+                                        "imports": [],
+                                        "is_code": true,
+                                        "is_directory": false,
+                                        "libraries": [],
+                                        "loc": 12,
+                                        "messages": [],
+                                        "name": "pipelines",
+                                        "nested_complexity": 2,
+                                        "size": 288,
+                                        "sloc": 3
+                                    },
+                                    "name": "pipelines.py",
+                                    "temperature": 1,
+                                    "value": 2
+                                },
+                                {
+                                    "easy_path": "optimal-transaction-hunter/src/buyers/buyers/selectors.py",
+                                    "meta": {
+                                        "blank_lines": 8,
+                                        "cognitive_complexity": 8,
+                                        "decision_complexity": 3,
+                                        "extension": ".py",
+                                        "filename": "selectors.py",
+                                        "imports": [],
+                                        "is_code": true,
+                                        "is_directory": false,
+                                        "libraries": [
+                                            "bs4",
+                                            "re"
+                                        ],
+                                        "loc": 34,
+                                        "messages": [],
+                                        "name": "selectors",
+                                        "nested_complexity": 3,
+                                        "size": 947,
+                                        "sloc": 26
+                                    },
+                                    "name": "selectors.py",
+                                    "temperature": 2,
+                                    "value": 8
+                                },
+                                {
+                                    "easy_path": "optimal-transaction-hunter/src/buyers/buyers/settings.py",
+                                    "meta": {
+                                        "blank_lines": 85,
+                                        "cognitive_complexity": 1,
+                                        "decision_complexity": 0,
+                                        "extension": ".py",
+                                        "filename": "settings.py",
+                                        "imports": [],
+                                        "is_code": true,
+                                        "is_directory": false,
+                                        "libraries": [],
+                                        "loc": 91,
+                                        "messages": [],
+                                        "name": "settings",
+                                        "nested_complexity": 0,
+                                        "size": 3127,
+                                        "sloc": 6
+                                    },
+                                    "name": "settings.py",
+                                    "temperature": 3,
+                                    "value": 1
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "easy_path": "optimal-transaction-hunter/src/buyers/buyers/spiders/__init__.py",
+                                            "meta": {
+                                                "blank_lines": 4,
+                                                "cognitive_complexity": 1,
+                                                "decision_complexity": 0,
+                                                "extension": ".py",
+                                                "filename": "__init__.py",
+                                                "imports": [],
+                                                "is_code": true,
+                                                "is_directory": false,
+                                                "libraries": [],
+                                                "loc": 5,
+                                                "messages": [],
+                                                "name": "__init__",
+                                                "nested_complexity": 0,
+                                                "size": 161,
+                                                "sloc": 1
+                                            },
+                                            "name": "__init__.py",
+                                            "temperature": 1,
+                                            "value": 1
+                                        },
+                                        {
+                                            "easy_path": "optimal-transaction-hunter/src/buyers/buyers/spiders/olx.py",
+                                            "meta": {
+                                                "blank_lines": 7,
+                                                "cognitive_complexity": 8,
+                                                "decision_complexity": 1,
+                                                "extension": ".py",
+                                                "filename": "olx.py",
+                                                "imports": [],
+                                                "is_code": true,
+                                                "is_directory": false,
+                                                "libraries": [
+                                                    "buyers.selectors",
+                                                    "localdb.db_setup",
+                                                    "scrapy"
+                                                ],
+                                                "loc": 26,
+                                                "messages": [],
+                                                "name": "olx",
+                                                "nested_complexity": 4,
+                                                "size": 883,
+                                                "sloc": 19
+                                            },
+                                            "name": "olx.py",
+                                            "temperature": 4,
+                                            "value": 8
+                                        }
+                                    ],
+                                    "counter": {
+                                        "bytes_count": 1044,
+                                        "sloc_count": 20,
+                                        "source_files": 2,
+                                        "value_count": 9
+                                    },
+                                    "easy_path": "optimal-transaction-hunter/src/buyers/buyers/spiders",
+                                    "name": "spiders"
+                                }
+                            ],
+                            "counter": {
+                                "bytes_count": 9290,
+                                "sloc_count": 91,
+                                "source_files": 8,
+                                "value_count": 27
+                            },
+                            "easy_path": "optimal-transaction-hunter/src/buyers/buyers",
+                            "name": "buyers"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "easy_path": "optimal-transaction-hunter/src/buyers/localdb/__init__.py",
+                                    "meta": {
+                                        "blank_lines": 1,
+                                        "cognitive_complexity": 1,
+                                        "decision_complexity": 0,
+                                        "extension": ".py",
+                                        "filename": "__init__.py",
+                                        "imports": [],
+                                        "is_code": true,
+                                        "is_directory": false,
+                                        "libraries": [],
+                                        "loc": 1,
+                                        "messages": [],
+                                        "name": "__init__",
+                                        "nested_complexity": 0,
+                                        "size": 0,
+                                        "sloc": 0
+                                    },
+                                    "name": "__init__.py",
+                                    "temperature": 1,
+                                    "value": 1
+                                },
+                                {
+                                    "easy_path": "optimal-transaction-hunter/src/buyers/localdb/db_setup.py",
+                                    "meta": {
+                                        "blank_lines": 7,
+                                        "cognitive_complexity": 5,
+                                        "decision_complexity": 1,
+                                        "extension": ".py",
+                                        "filename": "db_setup.py",
+                                        "imports": [],
+                                        "is_code": true,
+                                        "is_directory": false,
+                                        "libraries": [
+                                            "os",
+                                            "peewee"
+                                        ],
+                                        "loc": 20,
+                                        "messages": [],
+                                        "name": "db_setup",
+                                        "nested_complexity": 2,
+                                        "size": 414,
+                                        "sloc": 13
+                                    },
+                                    "name": "db_setup.py",
+                                    "temperature": 2,
+                                    "value": 5
+                                }
+                            ],
+                            "counter": {
+                                "bytes_count": 414,
+                                "sloc_count": 13,
+                                "source_files": 2,
+                                "value_count": 6
+                            },
+                            "easy_path": "optimal-transaction-hunter/src/buyers/localdb",
+                            "name": "localdb"
+                        }
+                    ],
+                    "counter": {
+                        "bytes_count": 9704,
+                        "sloc_count": 104,
+                        "source_files": 11,
+                        "value_count": 34
+                    },
+                    "easy_path": "optimal-transaction-hunter/src/buyers",
+                    "name": "buyers"
+                }
+            ],
+            "counter": {
+                "bytes_count": 9704,
+                "sloc_count": 104,
+                "source_files": 11,
+                "value_count": 34
+            },
+            "easy_path": "optimal-transaction-hunter/src",
+            "name": "src"
+        }
+    ],
+    "counter": {
+        "bytes_count": 9704,
+        "sloc_count": 104,
+        "source_files": 11,
+        "value_count": 34
+    },
+    "easy_path": "optimal-transaction-hunter",
+    "name": "optimal-transaction-hunter"
+}

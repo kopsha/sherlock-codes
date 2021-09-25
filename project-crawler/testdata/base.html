@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="inspector.css">
+
+    {% block style %} {% endblock %}
+
+    <script src="d3.v5.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="inspector-utils.js"></script>
+
+    {% block head_scripts %} {% endblock %}
+</head>
+<body>
+
+    <div id="top_view" class="full-width pretty-text">
+        <p class="palign">Watson just peeked into your code, which one is it:
+            <select id="project_selector">
+                {% for file_name in datafiles %}
+                    <option value="{{ file_name }}"> {{ file_name }} </option>
+                {% endfor %}
+            </select>
+        </p>
+        <div id="top_menu">
+            <div class="top_menu_item">
+                <a href="/">architecture</a>
+            </div>
+            <div class="top_menu_item">
+                <a href="/heatmap.html">heatmap</a>
+            </div>
+            <div class="top_menu_item">
+                <a href="/coupling.html">coupling</a>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="full-height">
+        <div id="graphic_view">
+            {% block graphic_view %} {% endblock %}
+        </div>
+        <div id="info_view" class="pretty-text">
+            {% block info_view %} {% endblock %}
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // TODO: find a better way for exposing these variables
+        let project_selector = $("#project_selector");
+        let graphic_view = $("#graphic_view");
+        let info_view = $("#info_view");
+
+        lastProject = localStorage.getItem("lastSelectedProject")
+        if (lastProject) { project_selector.val(lastProject); }
+    </script>
+
+    {% block scripts %} {% endblock %}
+
+</body>
+</html>

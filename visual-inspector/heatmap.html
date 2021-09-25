@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Sherlock Reports - Dependencies
+{% endblock %}
+
+
+{% block style %}
+<style>
+    .node {
+        cursor: pointer;
+    }
+
+    .node:hover {
+        stroke: #000;
+        stroke-width: 1.5px;
+    }
+
+    .small-label {
+        font: 11px Tahoma, Geneva, sans-serif;
+        text-anchor: middle;
+        fill: black;
+        pointer-events: none;
+    }
+
+    .xsmall-label {
+        font: 9px Tahoma, Geneva, sans-serif;
+        text-anchor: middle;
+        fill: black;
+        pointer-events: none;
+    }
+</style>
+{% endblock %}
+
+{% block head_scripts %}
+    <script src="heatmap-view.js"></script>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+    project_selector.change(function () {
+        localStorage.setItem("lastSelectedProject", $(this).val());
+        render_heatmap_view();
+    });
+
+    window.onload = render_heatmap_view();
+</script>
+{% endblock %}

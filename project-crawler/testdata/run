@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+python render_inspector.py
+
+cd ./html
+python -m http.server
+
+cd ..
