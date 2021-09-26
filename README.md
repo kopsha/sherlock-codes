@@ -1,6 +1,12 @@
 # Sherlock Code Inspector
 
-The source code inspector is back in town
+The source code inspector is back in town. \o/
+
+Sherlock service overview, for open source projects at least ...
+
+![What is up](./docs/open-sherlock-service.png)
+
+
 
 ## ToDo list
 
@@ -13,14 +19,13 @@ The source code inspector is back in town
 * [x] detect indentation width
 * [x] dockerize
 * [x] a smarter import resolution
-* [ ] improve coupling based on usage of top-level symbols
-* [ ] improve UI layout
 
-Next sprint
+* [ ] improve coupling based on usage of top-level symbols
 * [ ] run analysis as a service
 * [ ] add support for cloning a git repo and run analysis on it
 * [ ] filtering
 
+* [ ] improve UI layout
 * [ ] render a project as static portable html
 * [ ] complexity trends
 * [ ] symbolic wordcloud
@@ -37,4 +42,3 @@ Next sprint
 
 * [ ] add a view to display aggregated data
 * [ ] add an admin (or restricted) view for adding a new git repo url
-
