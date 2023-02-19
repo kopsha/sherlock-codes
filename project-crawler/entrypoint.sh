@@ -3,9 +3,9 @@ set -e
 
 crawl()
 {
-    out="./out/$2"
+    out="./out/$2.json"
 	echo "crawl will write to ${out}"
-    python crawl.py -r ./root -o $out
+    ./crawl.py -r ./root -o $out
 }
 
 run_all_tests()

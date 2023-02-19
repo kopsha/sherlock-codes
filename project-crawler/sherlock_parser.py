@@ -8,6 +8,7 @@ from code_parser_interface import CodeParserInterface
 from cpp_style_parser import CppStyleParser
 from java_style_parser import JavaStyleParser
 from python_style_parser import PythonStyleParser
+from cs_style_parser import CSharpStyleParser
 
 def make_extension_map():
     ext_map = {}

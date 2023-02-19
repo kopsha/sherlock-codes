@@ -1,0 +1,161 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "easy_path": "root/api/locustfile.py",
+                    "meta": {
+                        "blank_lines": 5,
+                        "cognitive_complexity": 7,
+                        "decision_complexity": 2,
+                        "extension": ".py",
+                        "filename": "locustfile.py",
+                        "imports": [],
+                        "is_code": true,
+                        "is_directory": false,
+                        "libraries": [
+                            "locust"
+                        ],
+                        "loc": 20,
+                        "messages": [],
+                        "name": "locustfile",
+                        "nested_complexity": 4,
+                        "size": 584,
+                        "sloc": 15
+                    },
+                    "name": "locustfile.py",
+                    "temperature": 3,
+                    "value": 7
+                },
+                {
+                    "children": [
+                        {
+                            "easy_path": "root/api/src/__init__.py",
+                            "meta": {
+                                "blank_lines": 1,
+                                "cognitive_complexity": 1,
+                                "decision_complexity": 0,
+                                "extension": ".py",
+                                "filename": "__init__.py",
+                                "imports": [],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [],
+                                "loc": 1,
+                                "messages": [],
+                                "name": "__init__",
+                                "nested_complexity": 0,
+                                "size": 0,
+                                "sloc": 0
+                            },
+                            "name": "__init__.py",
+                            "temperature": 1,
+                            "value": 1
+                        },
+                        {
+                            "easy_path": "root/api/src/main.py",
+                            "meta": {
+                                "blank_lines": 17,
+                                "cognitive_complexity": 8,
+                                "decision_complexity": 1,
+                                "extension": ".py",
+                                "filename": "main.py",
+                                "imports": [],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [
+                                    "flask",
+                                    "os",
+                                    "psycopg2",
+                                    "random",
+                                    "time"
+                                ],
+                                "loc": 50,
+                                "messages": [],
+                                "name": "main",
+                                "nested_complexity": 2,
+                                "size": 1080,
+                                "sloc": 33
+                            },
+                            "name": "main.py",
+                            "temperature": 7,
+                            "value": 8
+                        },
+                        {
+                            "easy_path": "root/api/src/test_main.py",
+                            "meta": {
+                                "blank_lines": 5,
+                                "cognitive_complexity": 7,
+                                "decision_complexity": 5,
+                                "extension": ".py",
+                                "filename": "test_main.py",
+                                "imports": [
+                                    "root/api/src/main.py"
+                                ],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [],
+                                "loc": 18,
+                                "messages": [],
+                                "name": "test_main",
+                                "nested_complexity": 1,
+                                "size": 419,
+                                "sloc": 13
+                            },
+                            "name": "test_main.py",
+                            "temperature": 2,
+                            "value": 7
+                        },
+                        {
+                            "easy_path": "root/api/src/xxx.py",
+                            "meta": {
+                                "blank_lines": 1,
+                                "cognitive_complexity": 1,
+                                "decision_complexity": 0,
+                                "extension": ".py",
+                                "filename": "xxx.py",
+                                "imports": [],
+                                "is_code": true,
+                                "is_directory": false,
+                                "libraries": [],
+                                "loc": 1,
+                                "messages": [],
+                                "name": "xxx",
+                                "nested_complexity": 0,
+                                "size": 0,
+                                "sloc": 0
+                            },
+                            "name": "xxx.py",
+                            "temperature": 1,
+                            "value": 1
+                        }
+                    ],
+                    "counter": {
+                        "bytes_count": 1499,
+                        "sloc_count": 46,
+                        "source_files": 4,
+                        "value_count": 17
+                    },
+                    "easy_path": "root/api/src",
+                    "name": "src"
+                }
+            ],
+            "counter": {
+                "bytes_count": 2083,
+                "sloc_count": 61,
+                "source_files": 5,
+                "value_count": 24
+            },
+            "easy_path": "root/api",
+            "name": "api"
+        }
+    ],
+    "counter": {
+        "bytes_count": 2083,
+        "sloc_count": 61,
+        "source_files": 5,
+        "value_count": 24
+    },
+    "easy_path": "root",
+    "name": "root"
+}
