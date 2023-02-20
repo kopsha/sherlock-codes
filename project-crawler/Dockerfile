@@ -16,8 +16,10 @@ COPY ./*.py ./
 COPY ./common/ ./common/
 COPY ./entrypoint.sh /
 
-RUN mkdir ./root
-RUN mkdir ./out
+RUN mkdir -p /main/root
+RUN mkdir -p /main/out
+RUN git config --global --add safe.directory /main/root
+
 VOLUME ["/main/root"]
 VOLUME ["/main/out"]
 
